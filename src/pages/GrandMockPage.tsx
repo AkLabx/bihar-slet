@@ -115,7 +115,7 @@ export const GrandMockPage: React.FC = () => {
           className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>मुख्य पृष्ठ (Back)</span>
+          <span>{language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}</span>
         </button>
 
         <div className="flex items-center gap-3">
@@ -132,20 +132,24 @@ export const GrandMockPage: React.FC = () => {
       <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-amber-700 text-white rounded-2xl p-6 shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <span className="bg-white/20 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wide">
-            बिहार SLET 2026 संपूर्ण मॉक परीक्षा
+            {language === 'english' ? 'Bihar SLET 2026 Full Mock Exam' : 'बिहार SLET 2026 संपूर्ण मॉक परीक्षा'}
           </span>
           <h1 className="text-xl sm:text-2xl font-extrabold mt-1">
-            ग्रैंड मॉक टेस्ट (150 बहुविकल्पीय प्रश्न)
+            {language === 'english' ? 'Grand Mock Test (150 Multiple Choice Questions)' : 'ग्रैंड मॉक टेस्ट (150 बहुविकल्पीय प्रश्न)'}
           </h1>
           <p className="text-amber-100 text-xs sm:text-sm mt-1">
-            भाग-1: 100 प्रश्न (पुस्तकालय विज्ञान) + भाग-2: 50 प्रश्न (सामान्य ज्ञान एवं तार्किक क्षमता) • समय: 150 मिनट
+            {language === 'english'
+              ? 'Part-1: 100 Questions (Library Science) + Part-2: 50 Questions (General Studies & Reasoning) • Duration: 150 Mins'
+              : 'भाग-1: 100 प्रश्न (पुस्तकालय विज्ञान) + भाग-2: 50 प्रश्न (सामान्य ज्ञान एवं तार्किक क्षमता) • समय: 150 मिनट'}
           </p>
         </div>
 
         <div className="text-right shrink-0">
-          <p className="text-xs text-amber-200">श्रेणीवार उत्तीर्णांक मानक:</p>
+          <p className="text-xs text-amber-200">
+            {language === 'english' ? 'Category Cutoff Benchmark:' : 'श्रेणीवार उत्तीर्णांक मानक:'}
+          </p>
           <p className="text-sm font-bold bg-white/10 px-3 py-1 rounded-lg mt-1 border border-white/20">
-            {currentCutoff.label_hi}: {currentCutoff.minPercent}% ({currentCutoff.minMarks} अंक)
+            {language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}: {currentCutoff.minPercent}% ({currentCutoff.minMarks} {language === 'english' ? 'Marks' : 'अंक'})
           </p>
         </div>
       </div>
@@ -161,7 +165,9 @@ export const GrandMockPage: React.FC = () => {
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">
-              {isQualified ? 'बधाई! आपने बिहार SLET 2026 अर्हता प्राप्त कर ली है! 🎉' : 'अभ्यास जारी रखें! और मेहनत की आवश्यकता है 📚'}
+              {isQualified
+                ? (language === 'english' ? 'Congratulations! You have Qualified Bihar SLET 2026! 🎉' : 'बधाई! आपने बिहार SLET 2026 अर्हता प्राप्त कर ली है! 🎉')
+                : (language === 'english' ? 'Keep Practicing! More preparation needed 📚' : 'अभ्यास जारी रखें! और मेहनत की आवश्यकता है 📚')}
             </h2>
 
             <div className="flex justify-center items-baseline gap-2">
@@ -173,15 +179,23 @@ export const GrandMockPage: React.FC = () => {
             {/* Detailed Subject-wise Marks Breakdown */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto pt-2 text-left">
               <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-xl border border-blue-200 dark:border-blue-900">
-                <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase">भाग-1: पुस्तकालय विज्ञान (100 अंक)</p>
+                <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase">
+                  {language === 'english' ? 'Part-1: Library Science (100 Marks)' : 'भाग-1: पुस्तकालय विज्ञान (100 अंक)'}
+                </p>
                 <p className="text-2xl font-bold text-blue-900 dark:text-blue-200 mt-1">{part1Score} / 100</p>
-                <p className="text-xs text-gray-500 mt-0.5">सटीकता: {((part1Score / 100) * 100).toFixed(1)}%</p>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  {language === 'english' ? 'Accuracy:' : 'सटीकता:'} {((part1Score / 100) * 100).toFixed(1)}%
+                </p>
               </div>
 
               <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-xl border border-purple-200 dark:border-purple-900">
-                <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 uppercase">भाग-2: सामान्य ज्ञान व रीजनिंग (50 अंक)</p>
+                <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 uppercase">
+                  {language === 'english' ? 'Part-2: GK & Reasoning (50 Marks)' : 'भाग-2: सामान्य ज्ञान व रीजनिंग (50 अंक)'}
+                </p>
                 <p className="text-2xl font-bold text-purple-900 dark:text-purple-200 mt-1">{part2Score} / 50</p>
-                <p className="text-xs text-gray-500 mt-0.5">सटीकता: {((part2Score / 50) * 100).toFixed(1)}%</p>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  {language === 'english' ? 'Accuracy:' : 'सटीकता:'} {((part2Score / 50) * 100).toFixed(1)}%
+                </p>
               </div>
             </div>
 
@@ -192,12 +206,20 @@ export const GrandMockPage: React.FC = () => {
                 : 'bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 border border-amber-300'
             }`}>
               <p>
-                <strong>{currentCutoff.label_hi}</strong> के अनुसार आवश्यक न्यूनतम उत्तीर्णांक: <strong>{currentCutoff.minPercent}% ({currentCutoff.minMarks} अंक)</strong>
+                <strong>{language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}</strong>
+                {language === 'english'
+                  ? ` Required Qualifying Marks: `
+                  : ` के अनुसार आवश्यक न्यूनतम उत्तीर्णांक: `}
+                <strong>{currentCutoff.minPercent}% ({currentCutoff.minMarks} {language === 'english' ? 'Marks' : 'अंक'})</strong>
               </p>
               <p className="font-bold text-base mt-1.5">
                 {isQualified
-                  ? `✅ परिणाम: सफल / उत्तीर्ण (QUALIFIED) — ${(totalScore - currentCutoff.minMarks).toFixed(1)} अंक अधिक!`
-                  : `⚠️ परिणाम: असफल (NOT QUALIFIED) — कटऑफ से ${(currentCutoff.minMarks - totalScore).toFixed(1)} अंक कम।`}
+                  ? (language === 'english'
+                      ? `✅ Result: QUALIFIED — ${(totalScore - currentCutoff.minMarks).toFixed(1)} marks above cutoff!`
+                      : `✅ परिणाम: सफल / उत्तीर्ण (QUALIFIED) — ${(totalScore - currentCutoff.minMarks).toFixed(1)} अंक अधिक!`)
+                  : (language === 'english'
+                      ? `⚠️ Result: NOT QUALIFIED — ${(currentCutoff.minMarks - totalScore).toFixed(1)} marks below cutoff.`
+                      : `⚠️ परिणाम: असफल (NOT QUALIFIED) — कटऑफ से ${(currentCutoff.minMarks - totalScore).toFixed(1)} अंक कम।`)}
               </p>
             </div>
 
@@ -206,20 +228,24 @@ export const GrandMockPage: React.FC = () => {
                 onClick={handleRetake}
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-xs text-xs"
               >
-                <RotateCcw className="w-4 h-4" /> पुनः ग्रैंड टेस्ट दें
+                <RotateCcw className="w-4 h-4" /> {language === 'english' ? 'Retake Grand Mock Test' : 'पुनः ग्रैंड टेस्ट दें'}
               </button>
               <button
                 onClick={() => setReviewFilter(reviewFilter === 'wrong' ? 'all' : 'wrong')}
                 className="inline-flex items-center gap-1.5 px-5 py-2.5 bg-red-100 hover:bg-red-200 dark:bg-red-950/50 text-red-700 dark:text-red-300 font-bold rounded-xl text-xs"
               >
-                {reviewFilter === 'wrong' ? 'सभी 150 प्रश्न देखें' : `केवल गलत उत्तर देखें (${150 - totalScore})`}
+                {reviewFilter === 'wrong'
+                  ? (language === 'english' ? 'View All 150 Questions' : 'सभी 150 प्रश्न देखें')
+                  : (language === 'english' ? `View Only Incorrect Answers (${150 - totalScore})` : `केवल गलत उत्तर देखें (${150 - totalScore})`)}
               </button>
             </div>
           </div>
 
           {/* Solutions List */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">प्रश्नवार उत्तर विश्लेषण (150 प्रश्न)</h3>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              {language === 'english' ? 'Question-wise Solutions & Analysis (150 Questions)' : 'प्रश्नवार उत्तर विश्लेषण (150 प्रश्न)'}
+            </h3>
             
             {examQuestions.map((q, idx) => {
               const sel = selectedAnswers[idx];
@@ -242,9 +268,11 @@ export const GrandMockPage: React.FC = () => {
                   <div className="flex items-start justify-between gap-3 text-xs">
                     <div className="flex items-center gap-2">
                       <span className="font-bold bg-gray-100 dark:bg-slate-800 px-2 py-0.5 rounded text-gray-700 dark:text-gray-300">
-                        प्रश्न {idx + 1} ({idx < 100 ? 'भाग-1 LIS' : 'भाग-2 GK'})
+                        {language === 'english'
+                          ? `Question ${idx + 1} (${idx < 100 ? 'Part-1 LIS' : 'Part-2 GK'})`
+                          : `प्रश्न ${idx + 1} (${idx < 100 ? 'भाग-1 LIS' : 'भाग-2 GK'})`}
                       </span>
-                      <span className="text-gray-500">{q.unitTitle_hi}</span>
+                      <span className="text-gray-500">{language === 'english' ? q.unitTitle_en : q.unitTitle_hi}</span>
                     </div>
                     <button
                       onClick={() => toggleBookmark(q.globalId)}
@@ -254,11 +282,20 @@ export const GrandMockPage: React.FC = () => {
                     </button>
                   </div>
 
-                  <p className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">{q.q_hi}</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 italic">{q.q_en}</p>
+                  {/* Question Text */}
+                  <div className="space-y-1">
+                    {(language === 'bilingual' || language === 'hindi') && (
+                      <p className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">{q.q_hi}</p>
+                    )}
+                    {(language === 'bilingual' || language === 'english') && (
+                      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 italic">{q.q_en}</p>
+                    )}
+                  </div>
 
+                  {/* Options List */}
                   <div className="space-y-1.5 pt-1">
                     {q.options_hi.map((optHi, optIdx) => {
+                      const optEn = q.options_en[optIdx] || optHi;
                       const isOptionCorrect = optIdx === q.correct;
                       const isOptionSelected = optIdx === sel;
 
@@ -270,17 +307,32 @@ export const GrandMockPage: React.FC = () => {
                       }
 
                       return (
-                        <div key={optIdx} className={`p-2.5 rounded-lg border text-xs flex items-center gap-2 ${optClass}`}>
-                          <span className="font-mono font-bold">{['(A)', '(B)', '(C)', '(D)'][optIdx]}</span>
-                          <span>{optHi}</span>
+                        <div key={optIdx} className={`p-2.5 rounded-lg border text-xs flex items-start gap-2.5 ${optClass}`}>
+                          <span className="font-mono font-bold shrink-0">{['(A)', '(B)', '(C)', '(D)'][optIdx]}</span>
+                          <div className="space-y-0.5">
+                            {(language === 'bilingual' || language === 'hindi') && <div>{optHi}</div>}
+                            {(language === 'bilingual' || language === 'english') && (
+                              <div className="text-[11px] opacity-80">{optEn}</div>
+                            )}
+                          </div>
                         </div>
                       );
                     })}
                   </div>
 
-                  <div className="p-3 rounded-lg bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/50 text-xs text-gray-700 dark:text-gray-300">
-                    <p className="font-bold text-amber-800 dark:text-amber-300 mb-1">विश्लेषण:</p>
-                    <p>{q.exp_hi}</p>
+                  {/* Explanation Box */}
+                  <div className="p-3 rounded-lg bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/50 text-xs text-gray-700 dark:text-gray-300 space-y-1">
+                    <p className="font-bold text-amber-800 dark:text-amber-300">
+                      {language === 'english' ? 'Explanation:' : 'विश्लेषण (Explanation):'}
+                    </p>
+                    {(language === 'bilingual' || language === 'hindi') && (
+                      <p className="leading-relaxed">{q.exp_hi}</p>
+                    )}
+                    {(language === 'bilingual' || language === 'english') && (
+                      <p className={`italic text-gray-600 dark:text-gray-400 ${language === 'bilingual' ? 'pt-1 border-t border-amber-200/50 dark:border-amber-900/50' : ''}`}>
+                        {q.exp_en}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
@@ -294,10 +346,12 @@ export const GrandMockPage: React.FC = () => {
             <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-3 text-xs">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-                  प्रश्न {currentIdx + 1} / 150
+                  {language === 'english' ? `Question ${currentIdx + 1} / 150` : `प्रश्न ${currentIdx + 1} / 150`}
                 </span>
                 <span className="text-gray-500 font-medium hidden sm:inline">
-                  {currentIdx < 100 ? 'भाग-1: पुस्तकालय विज्ञान' : 'भाग-2: सामान्य ज्ञान व रीजनिंग'}
+                  {currentIdx < 100
+                    ? (language === 'english' ? 'Part-1: Library Science' : 'भाग-1: पुस्तकालय विज्ञान')
+                    : (language === 'english' ? 'Part-2: General Knowledge & Reasoning' : 'भाग-2: सामान्य ज्ञान व रीजनिंग')}
                 </span>
               </div>
 
@@ -311,7 +365,11 @@ export const GrandMockPage: React.FC = () => {
                   }`}
                 >
                   <Eye className="w-3.5 h-3.5" />
-                  <span>{markedForReview[currentIdx] ? 'चिह्नित है' : 'समीक्षा हेतु चिह्नित'}</span>
+                  <span>
+                    {markedForReview[currentIdx]
+                      ? (language === 'english' ? 'Marked' : 'चिह्नित है')
+                      : (language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित')}
+                  </span>
                 </button>
 
                 <button
@@ -323,15 +381,21 @@ export const GrandMockPage: React.FC = () => {
               </div>
             </div>
 
+            {/* Question Text in Solver */}
             <div className="space-y-2">
-              <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
-                {currentQ.q_hi}
-              </h3>
-              <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic">
-                {currentQ.q_en}
-              </p>
+              {(language === 'bilingual' || language === 'hindi') && (
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
+                  {currentQ.q_hi}
+                </h3>
+              )}
+              {(language === 'bilingual' || language === 'english') && (
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic">
+                  {currentQ.q_en}
+                </p>
+              )}
             </div>
 
+            {/* Options in Solver */}
             <div className="space-y-3">
               {currentQ.options_hi.map((optHi, optIdx) => {
                 const optEn = currentQ.options_en[optIdx] || optHi;
@@ -351,8 +415,12 @@ export const GrandMockPage: React.FC = () => {
                       {['A', 'B', 'C', 'D'][optIdx]}
                     </span>
                     <div className="space-y-0.5">
-                      <div className="text-xs sm:text-sm font-semibold">{optHi}</div>
-                      <div className="text-[11px] opacity-75">{optEn}</div>
+                      {(language === 'bilingual' || language === 'hindi') && (
+                        <div className="text-xs sm:text-sm font-semibold">{optHi}</div>
+                      )}
+                      {(language === 'bilingual' || language === 'english') && (
+                        <div className="text-[11px] opacity-75">{optEn}</div>
+                      )}
                     </div>
                   </button>
                 );
@@ -365,14 +433,14 @@ export const GrandMockPage: React.FC = () => {
                 onClick={() => setCurrentIdx(currentIdx - 1)}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
               >
-                <ChevronLeft className="w-4 h-4" /> पिछला
+                <ChevronLeft className="w-4 h-4" /> {language === 'english' ? 'Previous' : 'पिछला'}
               </button>
 
               <button
                 onClick={handleSubmit}
                 className="inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-xs text-xs cursor-pointer"
               >
-                <CheckCircle2 className="w-4 h-4" /> टेस्ट सबमिट करें (150 प्रश्न)
+                <CheckCircle2 className="w-4 h-4" /> {language === 'english' ? 'Submit Test (150 Questions)' : 'टेस्ट सबमिट करें (150 प्रश्न)'}
               </button>
 
               <button
@@ -380,7 +448,7 @@ export const GrandMockPage: React.FC = () => {
                 onClick={() => setCurrentIdx(currentIdx + 1)}
                 className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-xs text-xs disabled:opacity-30 cursor-pointer"
               >
-                अगला <ChevronRight className="w-4 h-4" />
+                {language === 'english' ? 'Next' : 'अगला'} <ChevronRight className="w-4 h-4" />
               </button>
             </div>
           </div>

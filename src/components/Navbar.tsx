@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
               }`}
             >
               <BookOpen className="w-4 h-4" />
-              <span>पाठ्यक्रम (Syllabus)</span>
+              <span>{language === 'english' ? 'Syllabus' : 'पाठ्यक्रम (Syllabus)'}</span>
             </Link>
 
             <Link
@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
               }`}
             >
               <Award className="w-4 h-4" />
-              <span>ग्रैंड मॉक (150 प्रश्न)</span>
+              <span>{language === 'english' ? 'Grand Mock (150 Qs)' : 'ग्रैंड मॉक (150 प्रश्न)'}</span>
               <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.2 rounded-full uppercase">Live</span>
             </Link>
 
@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
               }`}
             >
               <BookmarkCheck className="w-4 h-4" />
-              <span>बुकमार्क ({bookmarks.length})</span>
+              <span>{language === 'english' ? `Bookmarks (${bookmarks.length})` : `बुकमार्क (${bookmarks.length})`}</span>
             </Link>
           </nav>
 
@@ -81,13 +81,13 @@ export const Navbar: React.FC = () => {
                 className="text-xs font-semibold bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-gray-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
                 title="Select reservation category for cutoff tracking"
               >
-                <option value="UR">UR (सामान्य) - 50% / 75 अंक</option>
-                <option value="BC">BC (पिछड़ा वर्ग) - 45.5% / 68.25 अंक</option>
-                <option value="EBC">EBC (अत्यंत पिछड़ा) - 42.5% / 63.75 अंक</option>
-                <option value="SC">SC (अनुसूचित जाति) - 40% / 60 अंक</option>
-                <option value="ST">ST (अनुसूचित जनजाति) - 40% / 60 अंक</option>
-                <option value="PwD">दिव्यांग (PwD) - 40% / 60 अंक</option>
-                <option value="WOMEN">महिला (सभी वर्ग) - 40% / 60 अंक</option>
+                {Object.entries(CATEGORY_CUTOFFS).map(([key, val]) => (
+                  <option key={key} value={key}>
+                    {language === 'english'
+                      ? `${key} (${val.label_en}) - ${val.minPercent}% / ${val.minMarks} Marks`
+                      : `${key} (${val.label_hi.split(' ')[0]}) - ${val.minPercent}% / ${val.minMarks} अंक`}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -142,10 +142,15 @@ export const Navbar: React.FC = () => {
       <div className="bg-amber-50/70 dark:bg-slate-800/60 border-t border-amber-200/50 dark:border-slate-800 px-4 py-1.5 text-[11px] flex justify-between items-center text-amber-900 dark:text-amber-200">
         <span className="flex items-center gap-1 font-medium">
           <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-          <span>उत्तीर्णांक मानदंड: <strong>{currentCutoff.label_hi}</strong></span>
+          <span>
+            {language === 'english' ? 'Passing Cutoff Criteria: ' : 'उत्तीर्णांक मानदंड: '}
+            <strong>{language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}</strong>
+          </span>
         </span>
         <span className="font-bold bg-amber-200 dark:bg-amber-900/60 px-2 py-0.5 rounded text-amber-800 dark:text-amber-300">
-          न्यूनतम {currentCutoff.minPercent}% ({currentCutoff.minMarks}/150 अंक)
+          {language === 'english'
+            ? `Min ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 Marks)`
+            : `न्यूनतम ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 अंक)`}
         </span>
       </div>
     </header>
