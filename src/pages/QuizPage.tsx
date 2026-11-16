@@ -402,10 +402,16 @@ export const QuizPage: React.FC = () => {
                   <div className="p-4 rounded-xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/60 dark:border-amber-900/40 space-y-1.5 text-xs">
                     <p className="font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
                       <Sparkles className="w-3.5 h-3.5" />
-                      <span>विस्तृत विश्लेषण (Analytical Explanation):</span>
+                      <span>{language === 'english' ? 'Analytical Explanation:' : 'विस्तृत विश्लेषण (Analytical Explanation):'}</span>
                     </p>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{q.exp_hi}</p>
-                    <p className="text-gray-500 dark:text-gray-400 italic pt-1 border-t border-amber-200/40 dark:border-amber-900/40">{q.exp_en}</p>
+                    {(language === 'bilingual' || language === 'hindi') && (
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{q.exp_hi}</p>
+                    )}
+                    {(language === 'bilingual' || language === 'english') && (
+                      <p className={`text-gray-500 dark:text-gray-400 italic ${language === 'bilingual' ? 'pt-1 border-t border-amber-200/40 dark:border-amber-900/40' : ''}`}>
+                        {q.exp_en}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
@@ -422,7 +428,7 @@ export const QuizPage: React.FC = () => {
             {/* Question Progress & Review Toggle */}
             <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-3 text-xs">
               <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-                प्रश्न {currentIdx + 1} / {questions.length}
+                {language === 'english' ? `Question ${currentIdx + 1} / ${questions.length}` : `प्रश्न ${currentIdx + 1} / ${questions.length}`}
               </span>
 
               <div className="flex items-center gap-2">
@@ -435,7 +441,11 @@ export const QuizPage: React.FC = () => {
                   }`}
                 >
                   <Eye className="w-3.5 h-3.5" />
-                  <span>{markedForReview[currentIdx] ? 'चिह्नित है' : 'समीक्षा हेतु चिह्नित'}</span>
+                  <span>
+                    {markedForReview[currentIdx]
+                      ? (language === 'english' ? 'Marked' : 'चिह्नित है')
+                      : (language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित')}
+                  </span>
                 </button>
 
                 <button
@@ -515,10 +525,20 @@ export const QuizPage: React.FC = () => {
               <div className="p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 space-y-2 text-xs">
                 <div className="flex items-center gap-2 font-bold text-amber-900 dark:text-amber-300">
                   <Sparkles className="w-4 h-4 text-amber-500" />
-                  <span>सही उत्तर: विकल्प ({['A', 'B', 'C', 'D'][currentQ.correct]}) {currentQ.options_hi[currentQ.correct]}</span>
+                  <span>
+                    {language === 'english'
+                      ? `Correct Answer: Option (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_en[currentQ.correct] || currentQ.options_hi[currentQ.correct]}`
+                      : `सही उत्तर: विकल्प (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_hi[currentQ.correct]}`}
+                  </span>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{currentQ.exp_hi}</p>
-                <p className="text-gray-500 dark:text-gray-400 italic pt-1 border-t border-amber-200/50 dark:border-amber-900/50">{currentQ.exp_en}</p>
+                {(language === 'bilingual' || language === 'hindi') && (
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{currentQ.exp_hi}</p>
+                )}
+                {(language === 'bilingual' || language === 'english') && (
+                  <p className={`text-gray-500 dark:text-gray-400 italic ${language === 'bilingual' ? 'pt-1 border-t border-amber-200/50 dark:border-amber-900/50' : ''}`}>
+                    {currentQ.exp_en}
+                  </p>
+                )}
               </div>
             )}
 
@@ -529,7 +549,7 @@ export const QuizPage: React.FC = () => {
                 onClick={() => setCurrentIdx(currentIdx - 1)}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
               >
-                <ChevronLeft className="w-4 h-4" /> पिछला (Prev)
+                <ChevronLeft className="w-4 h-4" /> {language === 'english' ? 'Previous' : 'पिछला (Prev)'}
               </button>
 
               {currentIdx === questions.length - 1 ? (
@@ -537,14 +557,14 @@ export const QuizPage: React.FC = () => {
                   onClick={handleSubmit}
                   className="inline-flex items-center gap-1.5 px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md text-xs transition-colors cursor-pointer"
                 >
-                  <CheckCircle2 className="w-4 h-4" /> टेस्ट सबमिट करें (Submit)
+                  <CheckCircle2 className="w-4 h-4" /> {language === 'english' ? 'Submit Test' : 'टेस्ट सबमिट करें (Submit)'}
                 </button>
               ) : (
                 <button
                   onClick={() => setCurrentIdx(currentIdx + 1)}
                   className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-xs text-xs transition-colors cursor-pointer"
                 >
-                  अगला (Next) <ChevronRight className="w-4 h-4" />
+                  {language === 'english' ? 'Next' : 'अगला (Next)'} <ChevronRight className="w-4 h-4" />
                 </button>
               )}
             </div>
