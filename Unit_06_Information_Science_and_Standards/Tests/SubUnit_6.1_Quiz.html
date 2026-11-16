@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 6.1 Quiz: Bibliometrics & Research Metrics | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 6.1: Bibliometrics & Research Metrics | ग्रंथमिति के नियम (Bradford, Lotka, Zipf), h-index एवं Impact Factor</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_6.1_Bibliometrics_and_Research_Metrics.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">ग्रंथमिति एवं शोध मेट्रिक्स</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 मुख्य बिंदु (Key Tip):</strong>
+                <p style="margin-top: 0.4rem;">
+                    Bradford (1 : n : n²), Lotka (Inverse Square, ~60% single paper), Zipf (r × f = C), एवं h-index (Jorge Hirsch 2005) के सूत्र और सिद्धांतों को कंठस्थ रखें।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../Unit_05_IT_and_Library_Automation/Tests/SubUnit_5.4_Quiz.html">⬅️ Unit 5.4 टेस्ट (Networks Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "'सांख्यिकीय ग्रंथसूची' (Statistical Bibliography) के स्थान पर 'बिब्लियोमेट्रिक्स' (Bibliometrics / ग्रंथमिति) शब्द का सर्वप्रथम प्रयोग 1969 में किसने किया था?",
+            q_en: "Who coined the term 'Bibliometrics' in 1969 to replace the earlier phrase 'Statistical Bibliography'?",
+            options_hi: [
+                "एलन प्रिचार्ड (Alan Pritchard)",
+                "ई. विन्धम हुल्मे (E. Wyndham Hulme)",
+                "सैम्युअल सी. ब्रैडफोर्ड",
+                "यूजीन गारफील्ड"
+            ],
+            options_en: [
+                "Alan Pritchard",
+                "E. Wyndham Hulme",
+                "Samuel C. Bradford",
+                "Eugene Garfield"
+            ],
+            correct: 0,
+            exp_hi: "एलन प्रिचार्ड ने 1969 में अपने लेख 'Statistical Bibliography or Bibliometrics?' में पहली बार 'Bibliometrics' शब्द प्रतिपादित किया। विन्धम हुल्मे ने 1923 में 'Statistical Bibliography' शब्द गढ़ा था।",
+            exp_en: "Alan Pritchard coined 'Bibliometrics' in his seminal 1969 paper 'Statistical Bibliography or Bibliometrics?', standardizing the quantitative statistical study of recorded literature."
+        },
+        {
+            id: 2,
+            q_hi: "ब्रैडफोर्ड का प्रकीर्णन नियम (Bradford's Law of Scattering - 1934) किस विषय-वस्तु से संबंधित है?",
+            q_en: "Bradford's Law of Scattering (1934) fundamentally governs which bibliometric distribution?",
+            options_hi: [
+                "वैज्ञानिक शोध पत्रिकाओं में किसी विशिष्ट विषय पर प्रकाशित लेखों का फैलाव (Scattering of articles across journals)",
+                "पुस्तकालय में पुस्तकों के फटने की दर",
+                "लेखकों की जन्म-मृत्यु दर",
+                "पुस्तकालय के कर्मचारियों का वेतन"
+            ],
+            options_en: [
+                "The scattering of articles on a subject across scientific periodicals (Core and Peripheral zones)",
+                "The wear and tear rate of library books",
+                "Birth and mortality rates of authors",
+                "Library staff salary distribution"
+            ],
+            correct: 0,
+            exp_hi: "एस.सी. ब्रैडफोर्ड ने 1934 में पाया कि किसी विषय पर प्रकाशित शोध लेख कुछ कोर पत्रिकाओं में केंद्रित होते हैं और बाकी दूरस्थ पत्रिकाओं में 1 : n : n² के अनुपात में बिखरे (scattered) रहते हैं।",
+            exp_en: "Bradford's Law describes the mathematical distribution of articles across journals in a discipline, dividing sources into a core nucleus and progressive peripheral zones following a 1 : n : n² ratio."
+        },
+        {
+            id: 3,
+            q_hi: "वैज्ञानिकों एवं शोधकर्ताओं की प्रकाशन उत्पादकता से संबंधित 'लोटका का नियम' (Lotka's Law - 1926) अन्य किस नाम से प्रसिद्ध है?",
+            q_en: "By what other scientific name is Lotka's Law (1926) governing author productivity widely known?",
+            options_hi: [
+                "व्युत्क्रम वर्ग नियम (Inverse Square Law of Scientific Productivity)",
+                "घातीय वृद्धि नियम",
+                "सापेक्ष सूचकांक नियम",
+                "प्रकीर्णन नियम"
+            ],
+            options_en: [
+                "Inverse Square Law of Scientific Productivity",
+                "Exponential Growth Law",
+                "Relative Index Law",
+                "Law of Scattering"
+            ],
+            correct: 0,
+            exp_hi: "अल्फ्रेड जे. लोटका ने 1926 में 'व्युत्क्रम वर्ग नियम' (Inverse Square Law) दिया, जिसका सूत्र x² · y = C है। इसके अनुसार अधिक पत्र लिखने वाले लेखकों की संख्या बहुत कम होती है।",
+            exp_en: "Lotka's Law is widely known as the Inverse Square Law of scientific productivity, postulating that author numbers decrease inversely with the square of their publication count."
+        },
+        {
+            id: 4,
+            q_hi: "लोटका के नियम (Lotka's Law) के अनुसार, किसी विशिष्ट वैज्ञानिक विषय में कुल लेखकों में से लगभग कितने प्रतिशत लेखक केवल 'एक ही शोध-पत्र' (Only one paper) प्रकाशित करते हैं?",
+            q_en: "According to Lotka's Law of author productivity, approximately what percentage of all publishing authors in a discipline produce only ONE paper?",
+            options_hi: [
+                "लगभग 20%",
+                "लगभग 40%",
+                "लगभग 60% (या 60.79%)",
+                "लगभग 90%"
+            ],
+            options_en: [
+                "Around 20%",
+                "Around 40%",
+                "Around 60% (specifically 60.79%)",
+                "Around 90%"
+            ],
+            correct: 2,
+            exp_hi: "लोटका के नियम (सूत्र: y_x = C / x²) के अनुसार, किसी विषय के लगभग 60% (60.79%) लेखक अपने पूरे जीवन में केवल एक ही शोध पत्र लिखते हैं, जबकि 2 पत्र लिखने वाले लगभग 15% और 3 पत्र लिखने वाले लगभग 7% होते हैं।",
+            exp_en: "Under Lotka's inverse-square distribution, approximately 60.79% of all authors in any given field contribute only a single publication throughout their scholarly career."
+        },
+        {
+            id: 5,
+            q_hi: "जॉर्ज किंग्सले जिपफ (George K. Zipf - 1949) द्वारा प्रतिपादित 'शब्द आवृत्ति नियम' (Zipf's Law) का सही गणितीय सूत्र क्या है?",
+            q_en: "Which is the correct mathematical formulation of Zipf's Law of Word Frequency (1949)?",
+            options_hi: [
+                "r × f = C (Rank × Frequency = Constant)",
+                "r / f = C",
+                "r + f = C",
+                "r² × f = C"
+            ],
+            options_en: [
+                "r × f = C (Rank multiplied by Frequency equals a Constant)",
+                "r / f = C",
+                "r + f = C",
+                "r² × f = C"
+            ],
+            correct: 0,
+            exp_hi: "जिपफ का नियम बताता है कि किसी पाठ्य सामग्री में शब्द की वरीयता रैंक (r) और उसकी आवृत्ति (f) का गुणनफल सदैव स्थिर (Constant) रहता है: r · f = C।",
+            exp_en: "Zipf's Law states that the frequency of any word in a corpus is inversely proportional to its rank in the frequency table, yielding the formula r × f = Constant."
+        },
+        {
+            id: 6,
+            q_hi: "वर्ष 1969 में रूसी भाषा के शब्द 'Naukometriya' के रूप में 'साइंटोमेट्रिक्स' (Scientometrics) के जनक कौन माने जाते हैं?",
+            q_en: "Who is widely acknowledged as the founding pioneer of 'Scientometrics', coining the Russian term 'Naukometriya' in 1969?",
+            options_hi: [
+                "वसीली नलिमोव एवं जेड.एम. मुलचेंको (Vasily Nalimov & Z.M. Mulchenko)",
+                "एलन प्रिचार्ड",
+                "ओटो नाके",
+                "डेरेक डी सोला प्राइस"
+            ],
+            options_en: [
+                "Vasily Nalimov and Z.M. Mulchenko",
+                "Alan Pritchard",
+                "Otto Nacke",
+                "Derek de Solla Price"
+            ],
+            correct: 0,
+            exp_hi: "रूसी वैज्ञानिक वसीली नलिमोव (Vasily Nalimov) ने 1969 में 'Naukometriya' पुस्तक प्रकाशित कर साइंटोमेट्रिक्स की नींव रखी, जिसमें विज्ञान एवं शोध नीति का मात्रात्मक अध्ययन किया जाता है।",
+            exp_en: "Vasily Nalimov and Z.M. Mulchenko founded Scientometrics in 1969 with their Russian monograph 'Naukometriya', pioneering the quantitative measurement of scientific developments."
+        },
+        {
+            id: 7,
+            q_hi: "सूचना के सभी रूपों के गणितीय एवं सांख्यिकीय अध्ययन हेतु वर्ष 1979 में 'इन्फॉर्मेट्रिक्स' (Informetrics) शब्द किसने प्रतिपादित किया था?",
+            q_en: "Who coined the term 'Informetrics' in 1979 to represent the mathematical investigation of all manifestations of information?",
+            options_hi: [
+                "ओटो नाके (Otto Nacke)",
+                "पीटर इंगवरसन",
+                "यूजीन गारफील्ड",
+                "जॉर्ज हिर्श"
+            ],
+            options_en: [
+                "Otto Nacke",
+                "Peter Ingwersen",
+                "Eugene Garfield",
+                "Jorge Hirsch"
+            ],
+            correct: 0,
+            exp_hi: "जर्मन सूचना वैज्ञानिक ओटो नाके (Otto Nacke) ने 1979 में 'Informetrics' शब्द गढ़ा ताकि प्रलेखीय एवं गैर-प्रलेखीय दोनों प्रकार की सूचनाओं के सांख्यिकीय अध्ययन को समाहित किया जा सके।",
+            exp_en: "German scholar Otto Nacke coined 'Informetrics' in 1979, expanding the metric discipline beyond written literature to all electronic and non-documentary data phenomena."
+        },
+        {
+            id: 8,
+            q_hi: "वर्ल्ड वाइड वेब की संरचना, वेबपेजों और हाइपरलिंक नेटवर्क के मात्रात्मक अध्ययन हेतु 'वेबमेट्रिक्स' (Webometrics) शब्द 1997 में किसने गढ़ा था?",
+            q_en: "Who introduced the term 'Webometrics' in 1997 for the quantitative analysis of World Wide Web structures and hyperlinks?",
+            options_hi: [
+                "टॉमस अलमाइंड एवं पीटर इंगवरसन (Tomas Almind & Peter Ingwersen)",
+                "टिम बर्नर्स ली",
+                "जेसन प्रीम",
+                "लियो एग्घे"
+            ],
+            options_en: [
+                "Tomas Almind and Peter Ingwersen",
+                "Tim Berners-Lee",
+                "Jason Priem",
+                "Leo Egghe"
+            ],
+            correct: 0,
+            exp_hi: "टॉमस अलमाइंड और पीटर इंगवरसन ने 1997 में 'Webometrics' शब्द प्रतिपादित किया और वेब पर संस्थाओं के प्रभाव को मापने हेतु 'Web Impact Factor' की अवधारणा दी।",
+            exp_en: "Tomas Almind and Peter Ingwersen introduced 'Webometrics' in 1997, applying informetric methods to investigate hyperlink networks, web nodes, and Web Impact Factors."
+        },
+        {
+            id: 9,
+            q_hi: "वैज्ञानिक शोध पत्रिकाओं के मूल्यांकन हेतु 'जर्नल इम्पैक्ट फैक्टर' (Journal Impact Factor - JIF) की अवधारणा किसने विकसित की थी?",
+            q_en: "Who conceptualized and introduced the 'Journal Impact Factor' (JIF) published annually in Journal Citation Reports (JCR)?",
+            options_hi: [
+                "डॉ. यूजीन गारफील्ड (Dr. Eugene Garfield)",
+                "जॉर्ज ई. हिर्श",
+                "सैम्युअल ब्रैडफोर्ड",
+                "अल्फ्रेड लोटका"
+            ],
+            options_en: [
+                "Dr. Eugene Garfield",
+                "Jorge E. Hirsch",
+                "Samuel Bradford",
+                "Alfred Lotka"
+            ],
+            correct: 0,
+            exp_hi: "डॉ. यूजीन गारफील्ड (Institute for Scientific Information - ISI के संस्थापक) ने 1960 के दशक में जर्नल इम्पैक्ट फैक्टर विकसित किया, जो विगत 2 वर्षों के लेखों को चालू वर्ष में मिले औसत उद्धरणों को दर्शाता है।",
+            exp_en: "Dr. Eugene Garfield created the Journal Impact Factor (JIF) at ISI, which became the international benchmark for measuring journal influence within Clarivate's JCR."
+        },
+        {
+            id: 10,
+            q_hi: "मानक 'जर्नल इम्पैक्ट फैक्टर' (JIF) की गणना में किसी पत्रिका के विगत कितने वर्षों के शोध-पत्रों को आधार बनाया जाता है?",
+            q_en: "In the standard calculation of a Journal Impact Factor (JIF), how many preceding publication years are taken into account?",
+            options_hi: [
+                "विगत 2 वर्ष (Preceding 2 Years)",
+                "विगत 5 वर्ष",
+                "विगत 10 वर्ष",
+                "केवल 1 वर्ष"
+            ],
+            options_en: [
+                "Preceding 2 Years",
+                "Preceding 5 Years",
+                "Preceding 10 Years",
+                "Only 1 Year"
+            ],
+            correct: 0,
+            exp_hi: "मानक इम्पैक्ट फैक्टर में किसी पत्रिका द्वारा विगत 2 वर्षों में प्रकाशित शोध-पत्रों को वर्तमान वर्ष में प्राप्त कुल उद्धरणों को कुल प्रकाशित पत्रों से भाग दिया जाता है।",
+            exp_en: "The standard 2-year JIF divides citations received in the target year by the total citable items published by that journal in the preceding two calendar years."
+        },
+        {
+            id: 11,
+            q_hi: "किसी व्यक्तिगत शोधकर्ता की वैज्ञानिक उत्पादकता एवं उद्धरण प्रभाव दोनों को एक साथ मापने वाला 'एच-इंडेक्स' (h-index) 2005 में किसने प्रतिपादित किया था?",
+            q_en: "Who proposed the renowned 'h-index' in 2005 to simultaneously quantify an individual scientist's cumulative productivity and citation impact?",
+            options_hi: [
+                "जॉर्ज ई. हिर्श (Jorge E. Hirsch)",
+                "लियो एग्घे (Leo Egghe)",
+                "यूजीन गारफील्ड",
+                "स्टीवन हरनाड"
+            ],
+            options_en: [
+                "Jorge E. Hirsch",
+                "Leo Egghe",
+                "Eugene Garfield",
+                "Stevan Harnad"
+            ],
+            correct: 0,
+            exp_hi: "कैलिफोर्निया विश्वविद्यालय के भौतिकशास्त्री जॉर्ज ई. हिर्श (Jorge E. Hirsch) ने 2005 में h-index प्रतिपादित किया।",
+            exp_en: "Physicist Jorge E. Hirsch of UCSD introduced the h-index in 2005 as an elegant indicator balancing a scholar's quantity of output with their depth of citation impact."
+        },
+        {
+            id: 12,
+            q_hi: "यदि किसी वैज्ञानिक के 7 शोध-पत्रों को क्रमशः 50, 30, 20, 15, 8, 6, और 2 उद्धरण मिले हैं, तो उस वैज्ञानिक का 'एच-इंडेक्स' (h-index) कितना होगा?",
+            q_en: "If a researcher has published 7 papers receiving 50, 30, 20, 15, 8, 6, and 2 citations respectively, what is the researcher's h-index?",
+            options_hi: [
+                "6 (h = 6)",
+                "5 (h = 5)",
+                "7 (h = 7)",
+                "50"
+            ],
+            options_en: [
+                "6",
+                "5",
+                "7",
+                "50"
+            ],
+            correct: 0,
+            exp_hi: "यहाँ पहले 6 शोध-पत्रों में से प्रत्येक को कम से कम 6 या अधिक उद्धरण (50, 30, 20, 15, 8, 6) प्राप्त हुए हैं, लेकिन 7वें पत्र को केवल 2 उद्धरण मिले हैं (जो 7 से कम है)। अतः h-index = 6 होगा।",
+            exp_en: "The author has 6 publications with at least 6 citations each (50, 30, 20, 15, 8, 6), but the 7th paper has only 2 citations (less than 7). Hence, h-index = 6."
+        },
+        {
+            id: 13,
+            q_hi: "एच-इंडेक्स में अत्यधिक उद्धृत शीर्ष शोध-पत्रों को उचित भार देने हेतु वर्ष 2006 में 'जी-इंडेक्स' (g-index) का आविष्कार किसने किया था?",
+            q_en: "Who formulated the 'g-index' in 2006 to give more credit to a researcher's highly-cited blockbuster publications than the h-index does?",
+            options_hi: [
+                "लियो एग्घे (Leo Egghe)",
+                "जॉर्ज हिर्श",
+                "यूजीन गारफील्ड",
+                "एलन प्रिचार्ड"
+            ],
+            options_en: [
+                "Leo Egghe",
+                "Jorge Hirsch",
+                "Eugene Garfield",
+                "Alan Pritchard"
+            ],
+            correct: 0,
+            exp_hi: "बेल्जियम के वैज्ञानिक लियो एग्घे (Leo Egghe) ने 2006 में g-index दिया। g-index सदैव h-index के बराबर या उससे अधिक होता है (g ≥ h) क्योंकि यह संचयी उद्धरणों को जोड़ता है।",
+            exp_en: "Leo Egghe introduced the g-index in 2006, calculating the highest rank such that the top g papers have collectively received at least g² citations."
+        },
+        {
+            id: 14,
+            q_hi: "गूगल स्कॉलर (Google Scholar) द्वारा प्रयुक्त 'i10-इंडेक्स' (i10-index) से क्या तात्पर्य है?",
+            q_en: "What does the 'i10-index' metric introduced by Google Scholar in 2011 represent?",
+            options_hi: [
+                "किसी शोधकर्ता के उन शोध-पत्रों की संख्या जिन्हें कम से कम 10 या उससे अधिक उद्धरण (10+ citations) मिले हैं",
+                "विगत 10 दिनों में पढ़े गए लेखों की संख्या",
+                "शोधकर्ता की 10 सबसे पुरानी पुस्तकें",
+                "10 पृष्ठों से अधिक लंबे शोध-पत्रों की संख्या"
+            ],
+            options_en: [
+                "The count of publications by a researcher that have accumulated at least 10 citations each",
+                "Articles read in the last 10 days",
+                "The author's 10 oldest books",
+                "Papers that are over 10 pages in length"
+            ],
+            correct: 0,
+            exp_hi: "गूगल स्कॉलर पर 'i10-index' दर्शाता है कि किसी लेखक के कुल कितने शोध-पत्रों को कम से कम 10 या उससे अधिक बार उद्धृत किया गया है।",
+            exp_en: "The i10-index, formulated by Google Scholar, tallies the total number of scholarly publications by an author that have garnered 10 or more citations."
+        },
+        {
+            id: 15,
+            q_hi: "सोशल मीडिया, ब्लॉग्स, विकिपीडिया एवं समाचार वेबसाइटों पर शोध-पत्रों के तात्कालिक प्रसार को मापने वाले वैकल्पिक मेट्रिक्स को क्या कहा जाता है?",
+            q_en: "Alternative non-traditional metrics that track immediate scholarly engagement on social media, Twitter, Mendeley, and news outlets are called:",
+            options_hi: [
+                "ऑल्टमेट्रिक्स (Altmetrics - Alternative Metrics)",
+                "ग्रंथमिति (Bibliometrics)",
+                "साइंटोमेट्रिक्स (Scientometrics)",
+                "पारंपरिक इम्पैक्ट फैक्टर"
+            ],
+            options_en: [
+                "Altmetrics (Alternative Metrics)",
+                "Bibliometrics",
+                "Scientometrics",
+                "Traditional Impact Factor"
+            ],
+            correct: 0,
+            exp_hi: "जेसन प्रीम द्वारा 2010 में प्रस्तावित 'Altmetrics' (Alternative Metrics) शोध पत्रों के सोशल वेब पर तात्कालिक प्रभाव (Twitter, Blogs, News, Mendeley) को मापता है।",
+            exp_en: "Altmetrics (Alternative Metrics) track real-time online attention and societal reach across social networks, policy documents, news outlets, and reference managers."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let currentLang = 'both';
+    let timerInterval = null;
+    let timeLeft = 20 * 60;
+
+    const STORAGE_KEY = 'bihar_let_u6_1_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

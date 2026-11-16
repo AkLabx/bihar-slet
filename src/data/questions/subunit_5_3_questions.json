@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u5_sub5_3_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "ओपन सोर्स संस्थागत रिपॉजिटरी सॉफ्टवेयर 'डीस्पेस' (DSpace) को नवंबर 2002 में किन दो संस्थानों ने संयुक्त रूप से विकसित किया था?",
+    "q_en": "Which two institutions jointly developed and launched the open-source digital repository software DSpace in November 2002?",
+    "options_hi": [
+      "एमआईटी पुस्तकालय एवं हैवलेट-पैकर्ड लैब्स (MIT Libraries & HP Labs)",
+      "ऑक्सफोर्ड विश्वविद्यालय एवं आईबीएम",
+      "स्टैनफोर्ड विश्वविद्यालय एवं गूगल",
+      "यूनिवर्सिटी ऑफ वाइकाटो एवं यूनेस्को"
+    ],
+    "options_en": [
+      "MIT Libraries and Hewlett-Packard (HP) Labs",
+      "Oxford University and IBM",
+      "Stanford University and Google",
+      "University of Waikato and UNESCO"
+    ],
+    "options": [
+      {
+        "hi": "एमआईटी पुस्तकालय एवं हैवलेट-पैकर्ड लैब्स (MIT Libraries & HP Labs)",
+        "en": "MIT Libraries and Hewlett-Packard (HP) Labs"
+      },
+      {
+        "hi": "ऑक्सफोर्ड विश्वविद्यालय एवं आईबीएम",
+        "en": "Oxford University and IBM"
+      },
+      {
+        "hi": "स्टैनफोर्ड विश्वविद्यालय एवं गूगल",
+        "en": "Stanford University and Google"
+      },
+      {
+        "hi": "यूनिवर्सिटी ऑफ वाइकाटो एवं यूनेस्को",
+        "en": "University of Waikato and UNESCO"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "DSpace का विकास मैसाचुसेट्स इंस्टीट्यूट ऑफ टेक्नोलॉजी (MIT) और हेवलेट-पैकर्ड (HP Labs) द्वारा संयुक्त रूप से किया गया था। यह वर्तमान में दुनिया भर में सबसे लोकप्रिय रिपॉजिटरी सॉफ्टवेयर है।",
+    "exp_en": "DSpace was jointly developed by Massachusetts Institute of Technology (MIT) Libraries and HP Labs, released as open-source software in November 2002."
+  },
+  {
+    "globalId": "u5_sub5_3_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "'ग्रीनस्टोन डिजिटल लाइब्रेरी सॉफ्टवेयर' (GSDL) का विकास यूनेस्को (UNESCO) के सहयोग से किस विश्वविद्यालय द्वारा किया गया था?",
+    "q_en": "Greenstone Digital Library Software (GSDL) was developed in cooperation with UNESCO by which university?",
+    "options_hi": [
+      "यूनिवर्सिटी ऑफ वाइकाटो, न्यूजीलैंड (University of Waikato, New Zealand)",
+      "हार्वर्ड विश्वविद्यालय, अमेरिका",
+      "यूनिवर्सिटी ऑफ साउथेम्प्टन, यूके",
+      "मेलबर्न विश्वविद्यालय, ऑस्ट्रेलिया"
+    ],
+    "options_en": [
+      "University of Waikato, New Zealand",
+      "Harvard University, USA",
+      "University of Southampton, UK",
+      "University of Melbourne, Australia"
+    ],
+    "options": [
+      {
+        "hi": "यूनिवर्सिटी ऑफ वाइकाटो, न्यूजीलैंड (University of Waikato, New Zealand)",
+        "en": "University of Waikato, New Zealand"
+      },
+      {
+        "hi": "हार्वर्ड विश्वविद्यालय, अमेरिका",
+        "en": "Harvard University, USA"
+      },
+      {
+        "hi": "यूनिवर्सिटी ऑफ साउथेम्प्टन, यूके",
+        "en": "University of Southampton, UK"
+      },
+      {
+        "hi": "मेलबर्न विश्वविद्यालय, ऑस्ट्रेलिया",
+        "en": "University of Melbourne, Australia"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ग्रीनस्टोन (GSDL) का विकास न्यूजीलैंड की 'यूनिवर्सिटी ऑफ वाइकाटो' द्वारा यूनेस्को एवं ह्यूमन इन्फो एनजीओ के सहयोग से 1997 में किया गया। यह ऑफलाइन सीडी-रोम लाइब्रेरी निर्माण हेतु भी विख्यात है।",
+    "exp_en": "GSDL was produced by the New Zealand Digital Library Project at the University of Waikato, sponsored and distributed globally by UNESCO."
+  },
+  {
+    "globalId": "u5_sub5_3_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "डबलिन कोर मेटाडेटा इनिशिएटिव (Dublin Core - ISO 15836) में कुल कितने मूल ग्रंथपरक तत्व (Core Elements) निर्धारित किए गए हैं?",
+    "q_en": "How many core bibliographic metadata elements are specified in the Dublin Core Metadata Element Set (ISO 15836)?",
+    "options_hi": [
+      "10 तत्व",
+      "15 तत्व (Fifteen Core Elements)",
+      "21 तत्व",
+      "26 तत्व"
+    ],
+    "options_en": [
+      "10 Elements",
+      "15 Elements",
+      "21 Elements",
+      "26 Elements"
+    ],
+    "options": [
+      {
+        "hi": "10 तत्व",
+        "en": "10 Elements"
+      },
+      {
+        "hi": "15 तत्व (Fifteen Core Elements)",
+        "en": "15 Elements"
+      },
+      {
+        "hi": "21 तत्व",
+        "en": "21 Elements"
+      },
+      {
+        "hi": "26 तत्व",
+        "en": "26 Elements"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डबलिन कोर में कुल 15 मूल तत्व हैं: Title, Creator, Subject, Description, Publisher, Contributor, Date, Type, Format, Identifier, Source, Language, Relation, Coverage, Rights।",
+    "exp_en": "Dublin Core defines 15 foundational elements spanning Content (Title, Subject, etc.), Intellectual Property (Creator, Publisher, etc.), and Instantiation (Date, Format, Identifier, etc.)."
+  },
+  {
+    "globalId": "u5_sub5_3_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "वर्ष 1995 में जिस ऐतिहासिक कार्यशाला में 'डबलिन कोर' (Dublin Core) मेटाडेटा प्रारूप का जन्म हुआ, वह डबलिन नगर किस अमेरिकी राज्य में स्थित है?",
+    "q_en": "In which US state is the city of Dublin located, where the 1995 inaugural workshop creating Dublin Core took place at OCLC headquarters?",
+    "options_hi": [
+      "ओहियो (Ohio, USA)",
+      "कैलिफोर्निया",
+      "न्यूयॉर्क",
+      "टेक्सास"
+    ],
+    "options_en": [
+      "Ohio, USA",
+      "California",
+      "New York",
+      "Texas"
+    ],
+    "options": [
+      {
+        "hi": "ओहियो (Ohio, USA)",
+        "en": "Ohio, USA"
+      },
+      {
+        "hi": "कैलिफोर्निया",
+        "en": "California"
+      },
+      {
+        "hi": "न्यूयॉर्क",
+        "en": "New York"
+      },
+      {
+        "hi": "टेक्सास",
+        "en": "Texas"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "मार्च 1995 में OCLC और NCSA द्वारा ओहियो राज्य के 'डबलिन' (Dublin, Ohio) नगर में डिजिटल संसाधनों के मेटाडेटा मानकीकरण हेतु कार्यशाला आयोजित हुई, जिससे इसका नाम 'डबलिन कोर' पड़ा।",
+    "exp_en": "Dublin Core derives its name from Dublin, Ohio, USA, where OCLC convened the 1995 invitational metadata workshop."
+  },
+  {
+    "globalId": "u5_sub5_3_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "INFLIBNET केंद्र द्वारा प्रबंधित 'शोधगंगा' (Shodhganga) डिजिटल रिपॉजिटरी में किस प्रकार की सामग्री संग्रहीत की जाती है?",
+    "q_en": "What category of scholarly intellectual output is archived within the national repository 'Shodhganga' hosted by INFLIBNET Centre?",
+    "options_hi": [
+      "भारतीय विश्वविद्यालयों के स्वीकृत डॉक्टरेट शोध प्रबंध (Ph.D. Theses)",
+      "दैनिक समाचार पत्र",
+      "प्राथमिक विद्यालय की पाठ्यपुस्तकें",
+      "केवल पेटेंट एवं ट्रेडमार्क"
+    ],
+    "options_en": [
+      "Doctoral Ph.D. Theses awarded by Indian Universities",
+      "Daily Newspapers",
+      "Primary School Textbooks",
+      "Patents and Trademarks only"
+    ],
+    "options": [
+      {
+        "hi": "भारतीय विश्वविद्यालयों के स्वीकृत डॉक्टरेट शोध प्रबंध (Ph.D. Theses)",
+        "en": "Doctoral Ph.D. Theses awarded by Indian Universities"
+      },
+      {
+        "hi": "दैनिक समाचार पत्र",
+        "en": "Daily Newspapers"
+      },
+      {
+        "hi": "प्राथमिक विद्यालय की पाठ्यपुस्तकें",
+        "en": "Primary School Textbooks"
+      },
+      {
+        "hi": "केवल पेटेंट एवं ट्रेडमार्क",
+        "en": "Patents and Trademarks only"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "शोधगंगा (Shodhganga) भारतीय विश्वविद्यालयों के शोधार्थियों द्वारा प्रस्तुत Ph.D. शोध प्रबंधों का खुला राष्ट्रीय डिजिटल भंडार है। यह DSpace सॉफ्टवेयर पर आधारित है।",
+    "exp_en": "Shodhganga is India's national ETD (Electronic Theses and Dissertations) repository setup by INFLIBNET Centre, offering open access to hundreds of thousands of Indian doctoral theses."
+  },
+  {
+    "globalId": "u5_sub5_3_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "भारतीय विश्वविद्यालयों में चल रहे वर्तमान शोध कार्यों, स्वीकृत शोध प्रस्तावों एवं सिनॉप्सिस (Approved Synopses) के राष्ट्रीय भंडार को क्या कहा जाता है?",
+    "q_en": "What is the official name of the national repository archiving approved research proposals and ongoing M.Phil/Ph.D. synopses in Indian universities?",
+    "options_hi": [
+      "शोधगंगोत्री (Shodhgangotri)",
+      "शोधगंगा (Shodhganga)",
+      "इंडीकैट (IndCat)",
+      "ई-शोधसिंधु"
+    ],
+    "options_en": [
+      "Shodhgangotri",
+      "Shodhganga",
+      "IndCat",
+      "e-ShodhSindhu"
+    ],
+    "options": [
+      {
+        "hi": "शोधगंगोत्री (Shodhgangotri)",
+        "en": "Shodhgangotri"
+      },
+      {
+        "hi": "शोधगंगा (Shodhganga)",
+        "en": "Shodhganga"
+      },
+      {
+        "hi": "इंडीकैट (IndCat)",
+        "en": "IndCat"
+      },
+      {
+        "hi": "ई-शोधसिंधु",
+        "en": "e-ShodhSindhu"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'शोधगंगोत्री' (Shodhgangotri) में विश्वविद्यालयों में स्वीकृत शोध सिनॉप्सिस/प्रस्ताव जमा होते हैं, जिससे नए शोधार्थियों को यह पता चल सके कि किस विषय पर शोध पहले से जारी है (दोहराव रोकना)।",
+    "exp_en": "Shodhgangotri is INFLIBNET's repository for approved research proposals and synopses submitted by Indian doctoral candidates to prevent research topic duplication."
+  },
+  {
+    "globalId": "u5_sub5_3_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "भारत के 'राष्ट्रीय डिजिटल पुस्तकालय' (National Digital Library of India - NDLI) का विकास एवं रखरखाव किस प्रतिष्ठित संस्थान द्वारा किया जा रहा है?",
+    "q_en": "The National Digital Library of India (NDLI) project was designed, developed, and maintained by which premier institution?",
+    "options_hi": [
+      "आईआईटी खड़गपुर (IIT Kharagpur)",
+      "आईआईटी दिल्ली",
+      "आईआईएससी बेंगलुरु",
+      "राष्ट्रीय पुस्तकालय, कोलकाता"
+    ],
+    "options_en": [
+      "IIT Kharagpur",
+      "IIT Delhi",
+      "IISc Bangalore",
+      "National Library of India, Kolkata"
+    ],
+    "options": [
+      {
+        "hi": "आईआईटी खड़गपुर (IIT Kharagpur)",
+        "en": "IIT Kharagpur"
+      },
+      {
+        "hi": "आईआईटी दिल्ली",
+        "en": "IIT Delhi"
+      },
+      {
+        "hi": "आईआईएससी बेंगलुरु",
+        "en": "IISc Bangalore"
+      },
+      {
+        "hi": "राष्ट्रीय पुस्तकालय, कोलकाता",
+        "en": "National Library of India, Kolkata"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "NDLI (शिक्षा मंत्रालय, भारत सरकार के NMEICT मिशन के तहत) भारतीय प्रौद्योगिकी संस्थान, खड़गपुर (IIT Kharagpur) द्वारा विकसित किया गया है। यह देश का सबसे बड़ा बहुभाषी डिजिटल पुस्तकालय है।",
+    "exp_en": "NDLI is executed and hosted by the Indian Institute of Technology (IIT) Kharagpur under the aegis of the Ministry of Education, Government of India."
+  },
+  {
+    "globalId": "u5_sub5_3_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "वह पुस्तकालय जिसका कोई भौतिक भवन या दीवारें नहीं होतीं और जो पूर्णतः साइबरस्पेस एवं इंटरनेट पर वितरित रूप में उपलब्ध होता है, क्या कहलाता है?",
+    "q_en": "A library possessing no physical brick-and-mortar structure, operating entirely across cyberspace and computer networks, is termed a:",
+    "options_hi": [
+      "वर्चुअल पुस्तकालय / दीवार-विहीन पुस्तकालय (Virtual Library / Library without Walls)",
+      "पारंपरिक पुस्तकालय",
+      "अभिलेखीय पुस्तकालय",
+      "हस्तलिखित पुस्तकालय"
+    ],
+    "options_en": [
+      "Virtual Library / Library without Walls",
+      "Traditional Library",
+      "Archival Library",
+      "Manuscript Library"
+    ],
+    "options": [
+      {
+        "hi": "वर्चुअल पुस्तकालय / दीवार-विहीन पुस्तकालय (Virtual Library / Library without Walls)",
+        "en": "Virtual Library / Library without Walls"
+      },
+      {
+        "hi": "पारंपरिक पुस्तकालय",
+        "en": "Traditional Library"
+      },
+      {
+        "hi": "अभिलेखीय पुस्तकालय",
+        "en": "Archival Library"
+      },
+      {
+        "hi": "हस्तलिखित पुस्तकालय",
+        "en": "Manuscript Library"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "वर्चुअल पुस्तकालय (Virtual Library) को 'दीवार-विहीन पुस्तकालय' भी कहते हैं। इसका कोई भौतिक परिसर नहीं होता; इसके सभी संसाधन डिजिटल नेटवर्क पर वितरित और 24×7 सुलभ होते हैं।",
+    "exp_en": "A Virtual Library (also styled 'Library without Walls') has no tangible physical presence, existing purely as a networked federation of digital resources accessible via the web."
+  },
+  {
+    "globalId": "u5_sub5_3_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "पारंपरिक मुद्रित पुस्तकों और इलेक्ट्रॉनिक/डिजिटल संसाधनों दोनों का एक साथ समन्वित प्रबंधन करने वाला पुस्तकालय क्या कहलाता है?",
+    "q_en": "A library that seamlessly integrates and manages both traditional printed materials and electronic/digital resources is known as a:",
+    "options_hi": [
+      "हाइब्रिड पुस्तकालय (Hybrid Library)",
+      "बंद पुस्तकालय",
+      "पारंपरिक पुस्तकालय",
+      "मोबाइल पुस्तकालय"
+    ],
+    "options_en": [
+      "Hybrid Library",
+      "Closed Access Library",
+      "Traditional Library",
+      "Mobile Library"
+    ],
+    "options": [
+      {
+        "hi": "हाइब्रिड पुस्तकालय (Hybrid Library)",
+        "en": "Hybrid Library"
+      },
+      {
+        "hi": "बंद पुस्तकालय",
+        "en": "Closed Access Library"
+      },
+      {
+        "hi": "पारंपरिक पुस्तकालय",
+        "en": "Traditional Library"
+      },
+      {
+        "hi": "मोबाइल पुस्तकालय",
+        "en": "Mobile Library"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "हाइब्रिड पुस्तकालय (Hybrid Library) मुद्रित प्रलेखों और डिजिटल ई-संसाधनों का संयुक्त रूप होता है। आज के अधिकांश आधुनिक कॉलेज एवं विश्वविद्यालय पुस्तकालय हाइब्रिड पुस्तकालय की श्रेणी में आते हैं।",
+    "exp_en": "A Hybrid Library bridges the physical and electronic domains, providing integrated access to print volumes on shelves alongside digital databases and e-journals."
+  },
+  {
+    "globalId": "u5_sub5_3_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "डिजिटल रिपॉजिटरियों से मेटाडेटा संचयन (Metadata Harvesting) करने हेतु अंतरराष्ट्रीय स्तर पर स्वीकृत प्रोटोकॉल कौन-सा है?",
+    "q_en": "Which internationally recognized protocol is standard for harvesting metadata across distributed open access institutional repositories?",
+    "options_hi": [
+      "OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting)",
+      "FTP (File Transfer Protocol)",
+      "SMTP",
+      "DHCP"
+    ],
+    "options_en": [
+      "OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting)",
+      "FTP",
+      "SMTP",
+      "DHCP"
+    ],
+    "options": [
+      {
+        "hi": "OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting)",
+        "en": "OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting)"
+      },
+      {
+        "hi": "FTP (File Transfer Protocol)",
+        "en": "FTP"
+      },
+      {
+        "hi": "SMTP",
+        "en": "SMTP"
+      },
+      {
+        "hi": "DHCP",
+        "en": "DHCP"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "OAI-PMH प्रोटोकॉल के द्वारा विभिन्न रिपॉजिटरियां (Data Providers) अपने शोध पत्रों का मेटाडेटा ओपन आर्काइव्स मानक में साझा करती हैं, जिसे सर्च इंजन (Harvesters) एकत्र कर लेते हैं।",
+    "exp_en": "OAI-PMH is the interoperability protocol developed by the Open Archives Initiative enabling service providers to harvest structured XML metadata from repositories."
+  },
+  {
+    "globalId": "u5_sub5_3_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "वर्ष 2000 में स्टीवन हरनाड के मार्गदर्शन में 'ई-प्रिंट्स' (EPrints) ओपन एक्सेस रिपॉजिटरी सॉफ्टवेयर किस विश्वविद्यालय द्वारा बनाया गया था?",
+    "q_en": "In the year 2000, under the pioneer Stevan Harnad, the 'EPrints' open-access repository software was developed by which university?",
+    "options_hi": [
+      "यूनिवर्सिटी ऑफ साउथेम्प्टन, यूके (University of Southampton, UK)",
+      "कैम्ब्रिज विश्वविद्यालय",
+      "यूनिवर्सिटी ऑफ वाइकाटो",
+      "एमआईटी"
+    ],
+    "options_en": [
+      "University of Southampton, UK",
+      "Cambridge University",
+      "University of Waikato",
+      "MIT"
+    ],
+    "options": [
+      {
+        "hi": "यूनिवर्सिटी ऑफ साउथेम्प्टन, यूके (University of Southampton, UK)",
+        "en": "University of Southampton, UK"
+      },
+      {
+        "hi": "कैम्ब्रिज विश्वविद्यालय",
+        "en": "Cambridge University"
+      },
+      {
+        "hi": "यूनिवर्सिटी ऑफ वाइकाटो",
+        "en": "University of Waikato"
+      },
+      {
+        "hi": "एमआईटी",
+        "en": "MIT"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "EPrints का विकास यूनिवर्सिटी ऑफ साउथेम्प्टन (यूके) के स्कूल ऑफ इलेक्ट्रॉनिक्स एंड कंप्यूटर साइंस द्वारा किया गया। यह विश्व का प्रथम समर्पित ओपन एक्सेस आर्काइविंग सॉफ्टवेयर था।",
+    "exp_en": "EPrints was pioneered at the University of Southampton, UK in 2000, playing an instrumental role in the institutional self-archiving open-access movement."
+  },
+  {
+    "globalId": "u5_sub5_3_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "विश्वविद्यालय अनुदान आयोग (UGC) ने किस वर्ष के विनियम द्वारा भारतीय विश्वविद्यालयों में Ph.D. शोध प्रबंधों को शोधगंगा में डिजिटल रूप से जमा करना अनिवार्य किया?",
+    "q_en": "In which year did the University Grants Commission (UGC) mandate the electronic deposit of Ph.D. dissertations to Shodhganga through regulations?",
+    "options_hi": [
+      "2009 (UGC M.Phil/Ph.D. Regulations, 2009)",
+      "2000",
+      "2015",
+      "2020"
+    ],
+    "options_en": [
+      "2009 (UGC Regulations 2009)",
+      "2000",
+      "2015",
+      "2020"
+    ],
+    "options": [
+      {
+        "hi": "2009 (UGC M.Phil/Ph.D. Regulations, 2009)",
+        "en": "2009 (UGC Regulations 2009)"
+      },
+      {
+        "hi": "2000",
+        "en": "2000"
+      },
+      {
+        "hi": "2015",
+        "en": "2015"
+      },
+      {
+        "hi": "2020",
+        "en": "2020"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "UGC (Minimum Standards and Procedure for Award of M.Phil/Ph.D. Degree) Regulations, 2009 की अधिसूचना के तहत प्रत्येक भारतीय विश्वविद्यालय हेतु शोधगंगा में शोध प्रबंध जमा करना अनिवार्य किया गया।",
+    "exp_en": "The UGC Regulation 2009 mandated that all Indian universities submit an electronic copy of approved doctoral theses to INFLIBNET's Shodhganga repository."
+  },
+  {
+    "globalId": "u5_sub5_3_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "निम्नलिखित में से कौन-सा तत्व 'डबलिन कोर मेटाडेटा' (Dublin Core) के 15 मूल तत्वों में सम्मिलित नहीं है?",
+    "q_en": "Which of the following is NOT an element in the Dublin Core 15 Core Element Set?",
+    "options_hi": [
+      "Creator (रचनाकार)",
+      "Identifier (पहचानकर्ता)",
+      "Accession Number in Register (परिग्रहण पंजिका संख्या)",
+      "Rights (कॉपीराइट/अधिकार)"
+    ],
+    "options_en": [
+      "Creator",
+      "Identifier",
+      "Accession Number in Register",
+      "Rights"
+    ],
+    "options": [
+      {
+        "hi": "Creator (रचनाकार)",
+        "en": "Creator"
+      },
+      {
+        "hi": "Identifier (पहचानकर्ता)",
+        "en": "Identifier"
+      },
+      {
+        "hi": "Accession Number in Register (परिग्रहण पंजिका संख्या)",
+        "en": "Accession Number in Register"
+      },
+      {
+        "hi": "Rights (कॉपीराइट/अधिकार)",
+        "en": "Rights"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डबलिन कोर के 15 तत्वों में Title, Creator, Subject, Description, Publisher, Contributor, Date, Type, Format, Identifier, Source, Language, Relation, Coverage, Rights शामिल हैं। 'Accession Number in Register' इसका तत्व नहीं है।",
+    "exp_en": "Accession Number in Register is a local physical library inventory record, not a standardized Dublin Core metadata element."
+  },
+  {
+    "globalId": "u5_sub5_3_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "इंटरनेट के बिना भी स्वतंत्र रूप से सीडी-रोम या डीवीडी (Offline CD-ROM/DVD) पर संपूर्ण डिजिटल पुस्तकालय संग्रह बनाने की विशेष क्षमता किस सॉफ्टवेयर में है?",
+    "q_en": "Which digital library software is specifically celebrated for its built-in capability to construct and distribute standalone collections on offline CD-ROM/DVD?",
+    "options_hi": [
+      "ग्रीनस्टोन (GSDL - Greenstone Digital Library Software)",
+      "डीस्पेस (DSpace)",
+      "कोहा (KOHA)",
+      "सोल (SOUL)"
+    ],
+    "options_en": [
+      "Greenstone (GSDL)",
+      "DSpace",
+      "KOHA",
+      "SOUL"
+    ],
+    "options": [
+      {
+        "hi": "ग्रीनस्टोन (GSDL - Greenstone Digital Library Software)",
+        "en": "Greenstone (GSDL)"
+      },
+      {
+        "hi": "डीस्पेस (DSpace)",
+        "en": "DSpace"
+      },
+      {
+        "hi": "कोहा (KOHA)",
+        "en": "KOHA"
+      },
+      {
+        "hi": "सोल (SOUL)",
+        "en": "SOUL"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ग्रीनस्टोन (GSDL) की यह अद्वितीय खूबी है कि यह इंटरनेट विहीन विकासशील क्षेत्रों में संपूर्ण सर्च इंजन सहित डिजिटल लाइब्रेरी को सीडी-रोम या पेनड्राइव पर पोर्टेबल रूप से निर्यात कर सकता है।",
+    "exp_en": "Greenstone (GSDL) excels at building self-contained, offline CD-ROM/USB digital libraries equipped with full-text search capability for low-connectivity environments."
+  },
+  {
+    "globalId": "u5_sub5_3_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.3",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+    "q_hi": "शिक्षा मंत्रालय/यूजीसी द्वारा 70 से अधिक विषयों में स्नातकोत्तर (PG) विद्यार्थियों हेतु उच्च गुणवत्ता वाली डिजिटल ई-लर्निंग सामग्री उपलब्ध कराने वाली परियोजना कौन-सी है?",
+    "q_en": "Which Ministry of Education/UGC initiative executed by INFLIBNET delivers curriculum-based interactive e-learning content across 70+ Post-Graduate subjects?",
+    "options_hi": [
+      "ई-पीजी पाठशाला (e-PG Pathshala)",
+      "शोधगंगोत्री",
+      "इंडीकैट",
+      "डेलनेट"
+    ],
+    "options_en": [
+      "e-PG Pathshala",
+      "Shodhgangotri",
+      "IndCat",
+      "DELNET"
+    ],
+    "options": [
+      {
+        "hi": "ई-पीजी पाठशाला (e-PG Pathshala)",
+        "en": "e-PG Pathshala"
+      },
+      {
+        "hi": "शोधगंगोत्री",
+        "en": "Shodhgangotri"
+      },
+      {
+        "hi": "इंडीकैट",
+        "en": "IndCat"
+      },
+      {
+        "hi": "डेलनेट",
+        "en": "DELNET"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'e-PG Pathshala' मानव संसाधन विकास मंत्रालय/UGC की एक प्रमुख पहल है (INFLIBNET द्वारा संचालित), जिसमें 70+ स्नातकोत्तर विषयों में उच्च स्तरीय ई-टेक्स्ट और वीडियो ट्यूटोरियल निःशुल्क उपलब्ध हैं।",
+    "exp_en": "e-PG Pathshala is an MHRD/UGC flagship initiative executed by INFLIBNET Centre, offering high-quality, open-access curriculum modules for master's degree students."
+  }
+]

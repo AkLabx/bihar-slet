@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u4_sub4_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "सूचना स्रोतों को सर्वप्रथम 'प्राथमिक' (Primary), 'द्वितीयक' (Secondary) एवं 'तृतीयक' (Tertiary) तीन श्रेणियों में किसने वर्गीकृत किया था?",
+    "q_en": "Who originally categorized documentary information sources into three distinct tiers: Primary, Secondary, and Tertiary?",
+    "options_hi": [
+      "सी.डब्ल्यू. हैनसन (C.W. Hanson, 1971)",
+      "डेनिस ग्रोगन (Dennis Grogan, 1966)",
+      "डॉ. एस.आर. रंगनाथन",
+      "विलियम ए. काट्ज़ (William A. Katz)"
+    ],
+    "options_en": [
+      "C.W. Hanson (1971)",
+      "Dennis Grogan (1966)",
+      "Dr. S.R. Ranganathan",
+      "William A. Katz"
+    ],
+    "options": [
+      {
+        "hi": "सी.डब्ल्यू. हैनसन (C.W. Hanson, 1971)",
+        "en": "C.W. Hanson (1971)"
+      },
+      {
+        "hi": "डेनिस ग्रोगन (Dennis Grogan, 1966)",
+        "en": "Dennis Grogan (1966)"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "विलियम ए. काट्ज़ (William A. Katz)",
+        "en": "William A. Katz"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डेनिस ग्रोगन ने 1966 में अपनी पुस्तक 'Case Studies in Reference Work' में सूचना स्रोतों को तीन स्तरों—प्राथमिक, द्वितीयक एवं तृतीयक में वर्गीकृत किया। सी.डब्ल्यू. हैनसन ने केवल दो स्तर (प्राथमिक एवं द्वितीयक) माने थे।",
+    "exp_en": "Dennis Grogan in 1966 classified information sources into three categories: Primary, Secondary, and Tertiary. In contrast, C.W. Hanson (1971) recognized only Primary and Secondary categories."
+  },
+  {
+    "globalId": "u4_sub4_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "सी.डब्ल्यू. हैनसन (C.W. Hanson) ने 1971 में सूचना स्रोतों को कितनी श्रेणियों में विभाजित किया था?",
+    "q_en": "Into how many categories did C.W. Hanson divide information sources in his 1971 work?",
+    "options_hi": [
+      "दो श्रेणियों में: प्राथमिक एवं द्वितीयक",
+      "तीन श्रेणियों में: प्राथमिक, द्वितीयक एवं तृतीयक",
+      "चार श्रेणियों में: पारंपरिक, नव-पारंपरिक, अपारंपरिक एवं मेटा",
+      "पांच श्रेणियों में"
+    ],
+    "options_en": [
+      "Two categories: Primary and Secondary",
+      "Three categories: Primary, Secondary, and Tertiary",
+      "Four categories: Conventional, Neo-conventional, Non-conventional, and Meta",
+      "Five categories"
+    ],
+    "options": [
+      {
+        "hi": "दो श्रेणियों में: प्राथमिक एवं द्वितीयक",
+        "en": "Two categories: Primary and Secondary"
+      },
+      {
+        "hi": "तीन श्रेणियों में: प्राथमिक, द्वितीयक एवं तृतीयक",
+        "en": "Three categories: Primary, Secondary, and Tertiary"
+      },
+      {
+        "hi": "चार श्रेणियों में: पारंपरिक, नव-पारंपरिक, अपारंपरिक एवं मेटा",
+        "en": "Four categories: Conventional, Neo-conventional, Non-conventional, and Meta"
+      },
+      {
+        "hi": "पांच श्रेणियों में",
+        "en": "Five categories"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "सी.डब्ल्यू. हैनसन ने सूचना स्रोतों को केवल दो श्रेणियों—'प्राथमिक स्रोत' (Primary Sources) तथा 'द्वितीयक स्रोत' (Secondary Sources) में बांटा था। उन्होंने ग्रोगन के तृतीयक स्रोतों को भी द्वितीयक श्रेणी में ही सम्मिलित माना था।",
+    "exp_en": "C.W. Hanson divided information documents into two primary classes: Primary Sources and Secondary Sources (subsuming tertiary sources under secondary)."
+  },
+  {
+    "globalId": "u4_sub4_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "विश्व की प्रथम दो वैज्ञानिक शोध पत्रिकाएं (Scientific Journals) किस वर्ष में प्रकाशित हुई थीं?",
+    "q_en": "In which year were the world's first two scholarly research periodicals published?",
+    "options_hi": [
+      "1665 ई. (Journal des Sçavans एवं Philosophical Transactions)",
+      "1765 ई.",
+      "1876 ई.",
+      "1905 ई."
+    ],
+    "options_en": [
+      "1665 AD (Journal des Sçavans and Philosophical Transactions)",
+      "1765 AD",
+      "1876 AD",
+      "1905 AD"
+    ],
+    "options": [
+      {
+        "hi": "1665 ई. (Journal des Sçavans एवं Philosophical Transactions)",
+        "en": "1665 AD (Journal des Sçavans and Philosophical Transactions)"
+      },
+      {
+        "hi": "1765 ई.",
+        "en": "1765 AD"
+      },
+      {
+        "hi": "1876 ई.",
+        "en": "1876 AD"
+      },
+      {
+        "hi": "1905 ई.",
+        "en": "1905 AD"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "जनवरी 1665 में पेरिस से 'Journal des Sçavans' और मार्च 1665 में रॉयल सोसाइटी ऑफ लंदन से हेनरी ओल्डेनबर्ग के संपादन में 'Philosophical Transactions of the Royal Society' प्रकाशित हुई। ये प्राथमिक स्रोत हैं।",
+    "exp_en": "The year 1665 witnessed the birth of the first two scholarly journals: 'Journal des Sçavans' (January 1665, Paris) and 'Philosophical Transactions of the Royal Society' (March 1665, London)."
+  },
+  {
+    "globalId": "u4_sub4_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "भारतीय पेटेंट अधिनियम (Indian Patents Act, 1970) के अनुसार किसी नए आविष्कार हेतु पेटेंट की वैधता अवधि कितनी होती है?",
+    "q_en": "According to the Indian Patents Act, what is the statutory term of validity of a registered patent in India?",
+    "options_hi": [
+      "10 वर्ष",
+      "14 वर्ष",
+      "20 वर्ष (आवेदन दाखिल करने की तिथि से)",
+      "आजीवन (Lifetime)"
+    ],
+    "options_en": [
+      "10 years",
+      "14 years",
+      "20 years (from filing date)",
+      "Lifetime"
+    ],
+    "options": [
+      {
+        "hi": "10 वर्ष",
+        "en": "10 years"
+      },
+      {
+        "hi": "14 वर्ष",
+        "en": "14 years"
+      },
+      {
+        "hi": "20 वर्ष (आवेदन दाखिल करने की तिथि से)",
+        "en": "20 years (from filing date)"
+      },
+      {
+        "hi": "आजीवन (Lifetime)",
+        "en": "Lifetime"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "भारतीय पेटेंट अधिनियम 1970 (2005 संशोधन) के अनुसार किसी आविष्कार के पेटेंट की अवधि आवेदन दाखिल करने की तिथि (Filing Date) से 20 वर्ष तक मान्य होती है। पेटेंट एक प्राथमिक स्रोत है।",
+    "exp_en": "Under the Indian Patents Act 1970 (amended in 2005 to align with TRIPS), the term of protection for every granted patent is 20 years from the date of filing. Patents are primary sources."
+  },
+  {
+    "globalId": "u4_sub4_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "डॉ. एस.आर. रंगनाथन द्वारा प्रतिपादित प्रलेखों के वर्गीकरण में 'पेटेंट' (Patents) और 'मानक' (Standards) किस वर्ग के अंतर्गत आते हैं?",
+    "q_en": "In Dr. S.R. Ranganathan's physical classification of documents, under which category do 'Patents' and 'Standards' fall?",
+    "options_hi": [
+      "पारंपरिक प्रलेख (Conventional Documents)",
+      "नव-पारंपरिक प्रलेख (Neo-conventional Documents)",
+      "अपारंपरिक प्रलेख (Non-conventional Documents)",
+      "मेटा-दस्तावेज (Meta-documents)"
+    ],
+    "options_en": [
+      "Conventional Documents",
+      "Neo-conventional Documents",
+      "Non-conventional Documents",
+      "Meta-documents"
+    ],
+    "options": [
+      {
+        "hi": "पारंपरिक प्रलेख (Conventional Documents)",
+        "en": "Conventional Documents"
+      },
+      {
+        "hi": "नव-पारंपरिक प्रलेख (Neo-conventional Documents)",
+        "en": "Neo-conventional Documents"
+      },
+      {
+        "hi": "अपारंपरिक प्रलेख (Non-conventional Documents)",
+        "en": "Non-conventional Documents"
+      },
+      {
+        "hi": "मेटा-दस्तावेज (Meta-documents)",
+        "en": "Meta-documents"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रंगनाथन ने पुस्तकों और पत्रिकाओं को पारंपरिक (Conventional) माना, जबकि पेटेंट, मानक (Standards), विनिर्देश और डेटा शीट्स को 'नव-पारंपरिक प्रलेख' (Neo-conventional Documents) की श्रेणी में रखा।",
+    "exp_en": "Ranganathan categorized patents, standards, specifications, and data sheets as 'Neo-conventional Documents' because of their micro-thought content and specialized regulatory nature."
+  },
+  {
+    "globalId": "u4_sub4_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "अनुसंधानकर्ताओं द्वारा डॉक्टरेट उपाधि (Ph.D.) हेतु प्रस्तुत किए जाने वाले शोध प्रबंध (Theses/Dissertations) किस प्रकार के स्रोत हैं?",
+    "q_en": "Theses and Dissertations submitted for the award of doctoral degrees (Ph.D.) are categorized under which source?",
+    "options_hi": [
+      "प्राथमिक सूचना स्रोत (Primary Sources)",
+      "द्वितीयक सूचना स्रोत (Secondary Sources)",
+      "तृतीयक सूचना स्रोत (Tertiary Sources)",
+      "गैर-प्रलेखीय स्रोत (Non-Documentary Sources)"
+    ],
+    "options_en": [
+      "Primary Information Sources",
+      "Secondary Information Sources",
+      "Tertiary Information Sources",
+      "Non-Documentary Sources"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक सूचना स्रोत (Primary Sources)",
+        "en": "Primary Information Sources"
+      },
+      {
+        "hi": "द्वितीयक सूचना स्रोत (Secondary Sources)",
+        "en": "Secondary Information Sources"
+      },
+      {
+        "hi": "तृतीयक सूचना स्रोत (Tertiary Sources)",
+        "en": "Tertiary Information Sources"
+      },
+      {
+        "hi": "गैर-प्रलेखीय स्रोत (Non-Documentary Sources)",
+        "en": "Non-Documentary Sources"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "शोध प्रबंध (Theses and Dissertations) पूर्णतः मौलिक शोध एवं नए तथ्यों पर आधारित होते हैं, अतः ये सूचना के 'प्राथमिक स्रोत' हैं। भारत में इनका राष्ट्रीय डिजिटल भंडार INFLIBNET का 'शोधगंगा' (Shodhganga) है।",
+    "exp_en": "Theses and dissertations contain original experimental/analytical findings submitted for academic scrutiny, classifying them directly as Primary Information Sources."
+  },
+  {
+    "globalId": "u4_sub4_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "अमेरिकन केमिकल सोसाइटी द्वारा 1907 से निरंतर प्रकाशित 'केमिकल एब्सट्रैक्ट्स' (Chemical Abstracts) किस प्रकार का सूचना स्रोत है?",
+    "q_en": "The renowned 'Chemical Abstracts', published since 1907 by the American Chemical Society, is which kind of information source?",
+    "options_hi": [
+      "प्राथमिक स्रोत",
+      "द्वितीयक स्रोत (Secondary Source - सारकरण पत्रिका)",
+      "तृतीयक स्रोत",
+      "अप्रकाशित स्रोत"
+    ],
+    "options_en": [
+      "Primary Source",
+      "Secondary Source (Abstracting Journal)",
+      "Tertiary Source",
+      "Unpublished Source"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक स्रोत",
+        "en": "Primary Source"
+      },
+      {
+        "hi": "द्वितीयक स्रोत (Secondary Source - सारकरण पत्रिका)",
+        "en": "Secondary Source (Abstracting Journal)"
+      },
+      {
+        "hi": "तृतीयक स्रोत",
+        "en": "Tertiary Source"
+      },
+      {
+        "hi": "अप्रकाशित स्रोत",
+        "en": "Unpublished Source"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'Chemical Abstracts' एक विश्वप्रसिद्ध सारकरण पत्रिका (Abstracting Journal) है। चूंकि यह प्राथमिक शोध पत्रों को पढ़कर उनका सारांश व ग्रंथपरक विवरण प्रस्तुत करती है, अतः यह 'द्वितीयक स्रोत' (Secondary Source) है।",
+    "exp_en": "Chemical Abstracts is an abstracting service that synthesizes primary articles into structured summaries and citations, making it a classic Secondary Information Source."
+  },
+  {
+    "globalId": "u4_sub4_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "वैज्ञानिकों एवं शोधकर्ताओं के मध्य अनौपचारिक संचार नेटवर्क को व्यक्त करने वाली 'अदृश्य महाविद्यालय' (Invisible Colleges) की अवधारणा किसने दी थी?",
+    "q_en": "Who coined and popularized the sociological concept of 'Invisible Colleges' describing informal scientist communication networks?",
+    "options_hi": [
+      "डेनिस ग्रोगन (Dennis Grogan)",
+      "डेरेक जे. डी सोला प्राइस (Derek J. de Solla Price, 1963)",
+      "एस.आर. रंगनाथन",
+      "यूजीन गारफील्ड"
+    ],
+    "options_en": [
+      "Dennis Grogan",
+      "Derek J. de Solla Price (1963)",
+      "S.R. Ranganathan",
+      "Eugene Garfield"
+    ],
+    "options": [
+      {
+        "hi": "डेनिस ग्रोगन (Dennis Grogan)",
+        "en": "Dennis Grogan"
+      },
+      {
+        "hi": "डेरेक जे. डी सोला प्राइस (Derek J. de Solla Price, 1963)",
+        "en": "Derek J. de Solla Price (1963)"
+      },
+      {
+        "hi": "एस.आर. रंगनाथन",
+        "en": "S.R. Ranganathan"
+      },
+      {
+        "hi": "यूजीन गारफील्ड",
+        "en": "Eugene Garfield"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डेरेक जे. डी सोला प्राइस ने अपनी 1963 की पुस्तक 'Little Science, Big Science' में 'अदृश्य महाविद्यालय' (Invisible Colleges) शब्द का प्रयोग उन विशिष्ट वैज्ञानिकों के अनौपचारिक समूहों के लिए किया जो औपचारिक प्रकाशन से पूर्व ही शोध साझा करते हैं (गैर-प्रलेखीय स्रोत)।",
+    "exp_en": "Derek J. de Solla Price formulated the concept of 'Invisible Colleges' in 'Little Science, Big Science' (1963) to characterize elite informal scientific circles and non-documentary communications."
+  },
+  {
+    "globalId": "u4_sub4_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "थियोडोर बेस्टरमैन (Theodore Besterman) द्वारा संकलित विश्वप्रसिद्ध कृति 'ए वर्ल्ड बिब्लियोग्राफी ऑफ बिब्लियोग्राफीज' किस श्रेणी का सूचना स्रोत है?",
+    "q_en": "Theodore Besterman's monumental compilation 'A World Bibliography of Bibliographies' is an example of which information source?",
+    "options_hi": [
+      "प्राथमिक स्रोत (Primary)",
+      "द्वितीयक स्रोत (Secondary)",
+      "तृतीयक स्रोत (Tertiary Source)",
+      "मानक विनिर्देश (Standard)"
+    ],
+    "options_en": [
+      "Primary Source",
+      "Secondary Source",
+      "Tertiary Source",
+      "Standard Specification"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक स्रोत (Primary)",
+        "en": "Primary Source"
+      },
+      {
+        "hi": "द्वितीयक स्रोत (Secondary)",
+        "en": "Secondary Source"
+      },
+      {
+        "hi": "तृतीयक स्रोत (Tertiary Source)",
+        "en": "Tertiary Source"
+      },
+      {
+        "hi": "मानक विनिर्देश (Standard)",
+        "en": "Standard Specification"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "'A World Bibliography of Bibliographies' (1939-40) ग्रंथसूचियों की भी ग्रंथसूची (Bibliography of Bibliographies) है। चूंकि यह द्वितीयक स्रोतों की सूची प्रस्तुत करती है, इसलिए यह एक प्रामाणिक 'तृतीयक स्रोत' (Tertiary Source) है।",
+    "exp_en": "Besterman's work is a 'bibliography of bibliographies' (a guide to secondary sources), which places it firmly in the Tertiary Information Source category."
+  },
+  {
+    "globalId": "u4_sub4_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) द्वारा प्रकाशित 'गाइड टू रेफरेंस बुक्स' (मूल संकलनकर्ता: एलिस बी. क्रोगे, प्रसिद्ध संपादक: सी.एम. विंचेल) किस प्रकार का स्रोत है?",
+    "q_en": "'Guide to Reference Books' published by ALA (originated by Alice B. Kroeger, edited famously by C.M. Winchell) is which type of source?",
+    "options_hi": [
+      "प्राथमिक स्रोत",
+      "द्वितीयक स्रोत",
+      "तृतीयक स्रोत (साहित्य मार्गदर्शिका / Guide to Literature)",
+      "पारंपरिक शब्दकोश"
+    ],
+    "options_en": [
+      "Primary Source",
+      "Secondary Source",
+      "Tertiary Source (Guide to Literature)",
+      "Conventional Dictionary"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक स्रोत",
+        "en": "Primary Source"
+      },
+      {
+        "hi": "द्वितीयक स्रोत",
+        "en": "Secondary Source"
+      },
+      {
+        "hi": "तृतीयक स्रोत (साहित्य मार्गदर्शिका / Guide to Literature)",
+        "en": "Tertiary Source (Guide to Literature)"
+      },
+      {
+        "hi": "पारंपरिक शब्दकोश",
+        "en": "Conventional Dictionary"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "'Guide to Reference Books' संदर्भ ग्रंथों (विश्वकोशों, शब्दकोशों, ग्रंथसूचियों) की मार्गदर्शिका (Guide) है। संदर्भ साहित्य की सभी मार्गदर्शिकाएं (Guides to Reference Sources) 'तृतीयक स्रोत' (Tertiary Sources) कहलाती हैं।",
+    "exp_en": "'Guide to Reference Books' directs users to relevant reference materials and secondary databases; hence, guides to literature are categorized as Tertiary Sources."
+  },
+  {
+    "globalId": "u4_sub4_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "विश्व के सभी विश्वविद्यालयों, शोध संस्थानों, पुस्तकालयों और विद्वत परिषदों की जानकारी देने वाला 'वर्ल्ड ऑफ लर्निंग' (The World of Learning) क्या है?",
+    "q_en": "'The World of Learning', which provides comprehensive information on universities, academies, and libraries worldwide, is:",
+    "options_hi": [
+      "एक प्राथमिक शोध पत्रिका",
+      "एक संस्थागत निर्देशिका / तृतीयक स्रोत (Institutional Directory / Tertiary Source)",
+      "एक अमूर्त वैज्ञानिक पेटेंट",
+      "एक सरकारी गजट"
+    ],
+    "options_en": [
+      "A Primary Research Journal",
+      "An Institutional Directory / Tertiary Source",
+      "An Abstract Scientific Patent",
+      "A Government Gazette"
+    ],
+    "options": [
+      {
+        "hi": "एक प्राथमिक शोध पत्रिका",
+        "en": "A Primary Research Journal"
+      },
+      {
+        "hi": "एक संस्थागत निर्देशिका / तृतीयक स्रोत (Institutional Directory / Tertiary Source)",
+        "en": "An Institutional Directory / Tertiary Source"
+      },
+      {
+        "hi": "एक अमूर्त वैज्ञानिक पेटेंट",
+        "en": "An Abstract Scientific Patent"
+      },
+      {
+        "hi": "एक सरकारी गजट",
+        "en": "A Government Gazette"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'The World of Learning' लंदन से प्रकाशित एक अंतरराष्ट्रीय संस्थागत निर्देशिका (Directory) है जो उच्च शिक्षा संस्थानों व पुस्तकालयों के पते, अधिकारी व संकायों का विवरण देती है। निर्देशिकाएं तृतीयक स्रोतों में आती हैं।",
+    "exp_en": "'The World of Learning' is an authoritative global directory indexing academic, cultural, and scientific institutions, functioning as a Directory / Tertiary Source."
+  },
+  {
+    "globalId": "u4_sub4_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "एक 'सारकरण पत्रिका' (Abstracting Journal) और 'अनुक्रमणीकरण पत्रिका' (Indexing Journal) के मध्य मुख्य अंतर क्या होता है?",
+    "q_en": "What is the primary difference between an Abstracting Periodical and an Indexing Periodical?",
+    "options_hi": [
+      "सारकरण पत्रिका प्रलेख के ग्रंथपरक विवरण के साथ उसका संक्षिप्त सार (Abstract) भी प्रदान करती है",
+      "अनुक्रमणीकरण पत्रिका में लेखक का नाम नहीं होता",
+      "सारकरण पत्रिका केवल व्यापारिक विज्ञापनों का संग्रह होती है",
+      "दोनों में कोई अंतर नहीं है"
+    ],
+    "options_en": [
+      "Abstracting periodicals provide a substantive summary/abstract alongside bibliographical citations",
+      "Indexing periodicals do not record the author's name",
+      "Abstracting journals contain only trade commercials",
+      "There is no functional distinction"
+    ],
+    "options": [
+      {
+        "hi": "सारकरण पत्रिका प्रलेख के ग्रंथपरक विवरण के साथ उसका संक्षिप्त सार (Abstract) भी प्रदान करती है",
+        "en": "Abstracting periodicals provide a substantive summary/abstract alongside bibliographical citations"
+      },
+      {
+        "hi": "अनुक्रमणीकरण पत्रिका में लेखक का नाम नहीं होता",
+        "en": "Indexing periodicals do not record the author's name"
+      },
+      {
+        "hi": "सारकरण पत्रिका केवल व्यापारिक विज्ञापनों का संग्रह होती है",
+        "en": "Abstracting journals contain only trade commercials"
+      },
+      {
+        "hi": "दोनों में कोई अंतर नहीं है",
+        "en": "There is no functional distinction"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अनुक्रमणीकरण पत्रिका केवल प्रलेख का ग्रंथपरक विवरण (लेखक, शीर्षक, स्रोत) क्रमबद्ध करती है, जबकि सारकरण पत्रिका ग्रंथपरक विवरण के साथ-साथ शोध लेख की विषय-वस्तु का एक विश्लेषणात्मक सार (Abstract) भी देती है।",
+    "exp_en": "Indexing journals provide only bibliographic metadata (author, title, source), whereas abstracting journals additionally furnish a concise, informative synopsis (abstract) of the research article."
+  },
+  {
+    "globalId": "u4_sub4_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "सेंट्रल रेफरेंस लाइब्रेरी (CRL), कोलकाता द्वारा प्रकाशित 'इंडियन नेशनल बिब्लियोग्राफी' (INB) किस प्रकार का स्रोत है?",
+    "q_en": "'Indian National Bibliography' (INB), published by the Central Reference Library (CRL), Kolkata, is which kind of information source?",
+    "options_hi": [
+      "प्राथमिक स्रोत",
+      "द्वितीयक स्रोत (राष्ट्रीय ग्रंथसूची - National Bibliography)",
+      "तृतीयक स्रोत",
+      "गैर-प्रलेखीय स्रोत"
+    ],
+    "options_en": [
+      "Primary Source",
+      "Secondary Source (National Bibliography)",
+      "Tertiary Source",
+      "Non-Documentary Source"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक स्रोत",
+        "en": "Primary Source"
+      },
+      {
+        "hi": "द्वितीयक स्रोत (राष्ट्रीय ग्रंथसूची - National Bibliography)",
+        "en": "Secondary Source (National Bibliography)"
+      },
+      {
+        "hi": "तृतीयक स्रोत",
+        "en": "Tertiary Source"
+      },
+      {
+        "hi": "गैर-प्रलेखीय स्रोत",
+        "en": "Non-Documentary Source"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ग्रंथसूचियां (Bibliographies) प्रकाशित प्राथमिक पुस्तकों के विवरण को व्यवस्थित करती हैं, अतः सभी राष्ट्रीय एवं व्यापारिक ग्रंथसूचियां 'द्वितीयक स्रोत' (Secondary Sources) होती हैं। INB 1957 से प्रकाशित हो रही है।",
+    "exp_en": "Bibliographies list and organize books received under legal deposit; consequently, all national bibliographies like INB are categorized as Secondary Information Sources."
+  },
+  {
+    "globalId": "u4_sub4_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "निम्न में से कौन-सा सूचना स्रोत 'प्राथमिक स्रोत' (Primary Source) का उदाहरण नहीं है?",
+    "q_en": "Which of the following information sources is NOT an example of a Primary Source?",
+    "options_hi": [
+      "वैज्ञानिक पेटेंट (Patent)",
+      "शोध पत्रिका में प्रकाशित शोध-पत्र (Research Article)",
+      "विश्वकोश (Encyclopedia)",
+      "सम्मेलन कार्यवाही (Conference Proceedings)"
+    ],
+    "options_en": [
+      "Patent",
+      "Research Paper in a Peer-Reviewed Journal",
+      "Encyclopedia",
+      "Conference Proceedings"
+    ],
+    "options": [
+      {
+        "hi": "वैज्ञानिक पेटेंट (Patent)",
+        "en": "Patent"
+      },
+      {
+        "hi": "शोध पत्रिका में प्रकाशित शोध-पत्र (Research Article)",
+        "en": "Research Paper in a Peer-Reviewed Journal"
+      },
+      {
+        "hi": "विश्वकोश (Encyclopedia)",
+        "en": "Encyclopedia"
+      },
+      {
+        "hi": "सम्मेलन कार्यवाही (Conference Proceedings)",
+        "en": "Conference Proceedings"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "विश्वकोश (Encyclopedia) विभिन्न प्राथमिक और द्वितीयक स्रोतों से स्थापित ज्ञान को संकलित करके बनाया जाता है, इसलिए विश्वकोश 'द्वितीयक स्रोत' (Secondary Source) है, प्राथमिक नहीं। पेटेंट, शोध पत्र व सम्मेलन कार्यवाही प्राथमिक स्रोत हैं।",
+    "exp_en": "An Encyclopedia synthesizes established knowledge from various works; it is a Secondary Reference Source, whereas patents, research articles, and conference proceedings are Primary Sources."
+  },
+  {
+    "globalId": "u4_sub4_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.1",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+    "q_hi": "DIKW पदानुक्रम (Data-Information-Knowledge-Wisdom) के संबंध में निम्नलिखित में से कौन-सा कथन सत्य है?",
+    "q_en": "Regarding the DIKW hierarchy (Data-Information-Knowledge-Wisdom), which statement is correct?",
+    "options_hi": [
+      "डेटा सबसे शीर्ष पर होता है और ज्ञान सबसे नीचे",
+      "जब असंसाधित डेटा को संदर्भ और संरचना दी जाती है, तब वह 'सूचना' (Information) बनता है",
+      "सूचना और डेटा में कोई अंतर नहीं होता",
+      "प्रज्ञा (Wisdom) केवल कंप्यूटर द्वारा ही उत्पन्न की जा सकती है"
+    ],
+    "options_en": [
+      "Data sits at the apex and Knowledge at the bottom",
+      "When raw data is contextualized and structured, it transforms into Information",
+      "There is no distinction between data and information",
+      "Wisdom can solely be generated by computers"
+    ],
+    "options": [
+      {
+        "hi": "डेटा सबसे शीर्ष पर होता है और ज्ञान सबसे नीचे",
+        "en": "Data sits at the apex and Knowledge at the bottom"
+      },
+      {
+        "hi": "जब असंसाधित डेटा को संदर्भ और संरचना दी जाती है, तब वह 'सूचना' (Information) बनता है",
+        "en": "When raw data is contextualized and structured, it transforms into Information"
+      },
+      {
+        "hi": "सूचना और डेटा में कोई अंतर नहीं होता",
+        "en": "There is no distinction between data and information"
+      },
+      {
+        "hi": "प्रज्ञा (Wisdom) केवल कंप्यूटर द्वारा ही उत्पन्न की जा सकती है",
+        "en": "Wisdom can solely be generated by computers"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "DIKW पिरामिड का आधार 'डेटा' (असंसाधित तथ्य) है। जब डेटा को संदर्भ और अर्थ दिया जाता है, तो वह 'सूचना' बनती है। सूचना की समझ और अनुप्रयोग 'ज्ञान' है, और ज्ञान का विवेकपूर्ण उपयोग 'प्रज्ञा' (Wisdom) है।",
+    "exp_en": "In the DIKW pyramid, raw unorganized facts (Data) when processed into a meaningful context become Information; understanding information leads to Knowledge, and its judicious application constitutes Wisdom."
+  }
+]

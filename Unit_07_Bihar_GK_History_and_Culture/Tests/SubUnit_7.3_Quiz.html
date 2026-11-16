@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7.3 Quiz: Art, Culture, Fairs & Personalities | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 7.3: बिहार की कला, संस्कृति, मेले एवं प्रमुख व्यक्तित्व</h1>
+            <p>Unit 7.3 Quiz: Art, Culture, Fairs, Festivals & Famous Personalities | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_7.3_Bihar_Art_Culture_and_Personalities.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - कला, संस्कृति व व्यक्तित्व खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u7_3_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "मधुबनी (मिथिला) चित्रकला में नवविवाहितों के 'कोहबर घर' की दीवारों पर चित्रित किए जाने वाले बांस, कमल, मछली और कछुआ मुख्य रूप से किसके प्रतीक हैं?",
+            q_en: "In Madhubani (Mithila) painting, the depiction of bamboo, lotus, fish, and turtle on the walls of the 'Kohbar Ghar' of newlyweds primarily symbolizes what?",
+            options: [
+                { hi: "शत्रु विजय एवं युद्ध कौशल", en: "Victory over enemies and warfare" },
+                { hi: "वंश वृद्धि, उर्वरता, दीर्घायु एवं सौभाग्य", en: "Lineage proliferation, fertility, longevity, and auspiciousness" },
+                { hi: "धार्मिक संन्यास एवं मोक्ष", en: "Religious renunciation and salvation" },
+                { hi: "कृषि संकट एवं सूखा", en: "Agrarian crisis and drought" }
+            ],
+            correct: 1,
+            exp_hi: "कोहबर घर के भित्ति चित्रों में बांस वंश वृद्धि व पुरुषत्व का, कमल व मछली उर्वरता व सौभाग्य का तथा कछुआ दीर्घायु व धैर्य का प्रतीक माना जाता है।",
+            exp_en: "In Kohbar wall murals, bamboo represents lineage growth, lotus and fish denote fertility and good fortune, and the turtle symbolizes longevity and patience."
+        },
+        {
+            num: 2,
+            q_hi: "मधुबनी चित्रकला को राष्ट्रीय एवं अंतरराष्ट्रीय स्तर पर पहचान दिलाने वाली प्रथम महिला कलाकार कौन थीं, जिन्हें 1975 में 'पद्मश्री' से सम्मानित किया गया था?",
+            q_en: "Who was the first female artist to bring national and international acclaim to Madhubani painting, honored with the 'Padma Shri' in 1975?",
+            options: [
+                { hi: "सीता देवी", en: "Sita Devi" },
+                { hi: "जगदम्बा देवी", en: "Jagdamba Devi" },
+                { hi: "महासुंदरी देवी", en: "Mahasundari Devi" },
+                { hi: "दुलारी देवी", en: "Dulari Devi" }
+            ],
+            correct: 1,
+            exp_hi: "जगदम्बा देवी मधुबनी चित्रकला की प्रथम कलाकार थीं जिन्हें 1975 में भारत सरकार द्वारा पद्मश्री सम्मान प्रदान किया गया था। (दुलारी देवी को वर्ष 2021 में पद्मश्री मिला)।",
+            exp_en: "Jagdamba Devi was the pioneer Madhubani folk artist to be conferred the prestigious Padma Shri by the Government of India in 1975. (Dulari Devi received it in 2021)."
+        },
+        {
+            num: 3,
+            q_hi: "अंग क्षेत्र (भागलपुर) की कौन सी पारंपरिक लोक चित्रकला केवल तीन रंगों (गुलाबी, हरा एवं पीला) के प्रयोग तथा बिहुला-विषहरी की लोकगाथा के चित्रण हेतु प्रसिद्ध है?",
+            q_en: "Which traditional folk painting of the Ang region (Bhagalpur) is renowned for using only three colors (Pink, Green, and Yellow) and illustrating the Bihula-Bishahari folklore?",
+            options: [
+                { hi: "थंका चित्रकला", en: "Thangka Painting" },
+                { hi: "मंजूषा चित्रकला (अंगिका/सर्प कला)", en: "Manjusha Art (Angika / Snake Art)" },
+                { hi: "पटना कलम", en: "Patna Kalam" },
+                { hi: "सांझी कला", en: "Sanjhi Art" }
+            ],
+            correct: 1,
+            exp_hi: "मंजूषा चित्रकला भागलपुर (अंग प्रदेश) की विशिष्ट लोककला है। इसे 'सर्प चित्रकला' भी कहते हैं क्योंकि इसमें सर्प की प्रमुखता होती है। इसमें केवल तीन रंग- गुलाबी, हरा और पीला प्रयुक्त होते हैं।",
+            exp_en: "Manjusha Art of Bhagalpur (Ang region) is also called Snake Art due to recurring serpent motifs. It uniquely employs exclusively three colors: pink, green, and yellow."
+        },
+        {
+            num: 4,
+            q_hi: "बिना किसी पेंसिल रेखांकन के सीधे बारीक तूलिका (ब्रश) से रेखाएं खींचने की 'कजली स्याही' (Kajli Syahi) तकनीक किस चित्रकला शैली की प्रमुख विशेषता है?",
+            q_en: "The 'Kajli Syahi' technique of executing fine line drawings directly with a brush without prior pencil sketching is a hallmark of which painting school?",
+            options: [
+                { hi: "मधुबनी शैली", en: "Madhubani Style" },
+                { hi: "पटना कलम शैली (कंपनी शैली)", en: "Patna Kalam Style (Company School)" },
+                { hi: "पाल चित्रकला", en: "Pala Painting" },
+                { hi: "कांगड़ा शैली", en: "Kangra Style" }
+            ],
+            correct: 1,
+            exp_hi: "पटना कलम (18वीं-19वीं सदी) में चित्रकार बिना पेंसिल से खाका खींचे सीधे तूलिका से चित्र बनाते थे, जिसे 'कजली स्याही' कहा जाता था। इसके प्रमुख चित्रकार सेवक राम और अंतिम ईश्वरी प्रसाद वर्मा थे।",
+            exp_en: "Patna Kalam (Company School) painters drew directly using fine brush and ink without preparatory pencil outlines, termed 'Kajli Syahi'. Noted masters include Sevak Ram and Ishwari Prasad."
+        },
+        {
+            num: 5,
+            q_hi: "बिहार का महापर्व 'छठ पूजा' मुख्यतः किन दो प्रत्यक्ष शक्तियों / आराध्य देवों के पूजन एवं कृतज्ञता ज्ञापन हेतु समर्पित है?",
+            q_en: "The grand festival of Bihar, 'Chhath Puja', is dedicated primarily to worshiping and expressing gratitude to which two deities?",
+            options: [
+                { hi: "भगवान शिव एवं माता पार्वती", en: "Lord Shiva and Goddess Parvati" },
+                { hi: "भगवान सूर्य एवं षष्ठी मैया (छठी मइया)", en: "Sun God (Surya) and Shasthi Maiya (Chhathi Maiya)" },
+                { hi: "भगवान विष्णु एवं माता लक्ष्मी", en: "Lord Vishnu and Goddess Lakshmi" },
+                { hi: "भगवान इंद्र एवं वरुण देव", en: "Lord Indra and Lord Varuna" }
+            ],
+            correct: 1,
+            exp_hi: "छठ महापर्व प्रत्यक्ष देव भगवान सूर्य और उनकी बहन षष्ठी मैया (छठी मइया) की आराधना का पर्व है। इसमें अस्ताचलगामी (डूबते) और उदीयमान (उगते) सूर्य दोनों को अर्घ्य दिया जाता है।",
+            exp_en: "Chhath Puja is dedicated to the Sun God (Surya) and his sister Shasthi Maiya (Chhathi Maiya). It uniquely involves offering arghya to both setting and rising suns."
+        },
+        {
+            num: 6,
+            q_hi: "छठ पूजा के महापर्व पर सूप में रखकर सूर्यदेव को अर्पित किया जाने वाला प्रमुख पारंपरिक महाप्रसाद कौन सा है?",
+            q_en: "Which iconic traditional offering made of wheat flour, jaggery/sugar, and ghee is offered to the Sun God in a winnow (soop) during Chhath Puja?",
+            options: [
+                { hi: "अनरसा", en: "Anarsa" },
+                { hi: "ठेकुआ (Thekua)", en: "Thekua" },
+                { hi: "खाजा", en: "Khaja" },
+                { hi: "पेड़ा", en: "Peda" }
+            ],
+            correct: 1,
+            exp_hi: "ठेकुआ (गेहूं के आटे, गुड़ या चीनी और शुद्ध घी से निर्मित) छठ महापर्व का सर्वप्रमुख और पावन प्रसाद है। यह बिहार की समृद्ध पाक-कला एवं सांस्कृतिक पहचान का प्रतीक है।",
+            exp_en: "Thekua (prepared from whole wheat flour, jaggery/sugar, and pure ghee) is the principal and sacred prasad offered during Chhath Puja, embodying Bihar's cultural culinary identity."
+        },
+        {
+            num: 7,
+            q_hi: "कार्तिक पूर्णिमा के अवसर पर गंगा और गंडक (नारायणी) के पवित्र संगम पर लगने वाला एशिया का सबसे बड़ा पशु मेला कौन सा है?",
+            q_en: "Which is Asia's largest animal fair held on Kartik Purnima at the sacred confluence of the Ganga and Gandak (Narayani) rivers?",
+            options: [
+                { hi: "पुष्कर मेला", en: "Pushkar Fair" },
+                { hi: "सोनपुर पशु मेला (हरिहर क्षेत्र मेला)", en: "Sonpur Cattle Fair (Harihar Kshetra Mela)" },
+                { hi: "बटेश्वर मेला", en: "Bateshwar Fair" },
+                { hi: "नौचंदी मेला", en: "Nauchandi Fair" }
+            ],
+            correct: 1,
+            exp_hi: "सोनपुर (सारण जिला) में गंगा-गंडक संगम पर आयोजित होने वाला 'हरिहर क्षेत्र मेला' (सोनपुर मेला) एशिया का सबसे बड़ा पशु मेला है। प्राचीन काल से ही यह हाथियों, घोड़ों और मवेशियों के क्रय-विक्रय का केंद्र रहा है।",
+            exp_en: "The Sonpur Fair (Harihar Kshetra Mela) in Saran district at the Ganga-Gandak confluence is Asia's largest cattle fair, historic for elephant and livestock trading since antiquity."
+        },
+        {
+            num: 8,
+            q_hi: "गया में फल्गु नदी के तट पर प्रतिवर्ष आश्विन मास में आयोजित होने वाला प्रसिद्ध 'पितृपक्ष मेला' किस धार्मिक अनुष्ठान हेतु विख्यात है?",
+            q_en: "The famed 'Pitrapaksha Mela' held annually in the month of Ashwin on the banks of Falgu River in Gaya is renowned for which religious ritual?",
+            options: [
+                { hi: "कुंभ स्नान", en: "Kumbh Snan" },
+                { hi: "पूर्वजों के मोक्ष हेतु पिंडदान एवं तर्पण", en: "Pind Daan and Tarpan for ancestors' salvation" },
+                { hi: "रथ यात्रा", en: "Rath Yatra" },
+                { hi: "नौका दौड़", en: "Boat race" }
+            ],
+            correct: 1,
+            exp_hi: "गया का विष्णुपद मंदिर और फल्गु नदी का तट पितृपक्ष में पूर्वजों की आत्मा की शांति एवं मोक्ष के लिए पिंडदान और तर्पण हेतु विश्वभर के सनातन धर्मावलंबियों का प्रमुख केंद्र है।",
+            exp_en: "Gaya's Vishnupad Temple and Falgu river banks draw Hindu pilgrims from across the globe during Pitrapaksha for performing Pind Daan and Tarpan for ancestral peace."
+        },
+        {
+            num: 9,
+            q_hi: "यूनेस्को द्वारा बिहार के बोधगया स्थित 'महाबोधि मंदिर' तथा नालंदा स्थित 'नालंदा महाविहार के पुरातात्विक स्थल' को क्रमशः किन वर्षों में विश्व धरोहर स्थल घोषित किया गया?",
+            q_en: "In which years were the 'Mahabodhi Temple Complex' at Bodh Gaya and the 'Archaeological Site of Nalanda Mahavihara' inscribed as UNESCO World Heritage Sites respectively?",
+            options: [
+                { hi: "2002 एवं 2016", en: "2002 and 2016" },
+                { hi: "1999 एवं 2010", en: "1999 and 2010" },
+                { hi: "2005 एवं 2020", en: "2005 and 2020" },
+                { hi: "2000 एवं 2014", en: "2000 and 2014" }
+            ],
+            correct: 0,
+            exp_hi: "यूनेस्को (UNESCO) ने 2002 में बोधगया के महाबोधि मंदिर परिसर को तथा 2016 में नालंदा विश्वविद्यालय के प्राचीन पुरातात्विक अवशेषों को 'विश्व धरोहर स्थल' का दर्जा प्रदान किया।",
+            exp_en: "UNESCO inscribed the Mahabodhi Temple Complex in 2002 and the ancient Archaeological Site of Nalanda Mahavihara in 2016 into the prestigious World Heritage List."
+        },
+        {
+            num: 10,
+            q_hi: "जैन धर्म के 24वें तीर्थंकर भगवान महावीर स्वामी का निर्वाण (मोक्ष) स्थल 'पावापुरी' किस जिले में स्थित है, जहां कमल तालाब के मध्य 'जल मंदिर' बना है?",
+            q_en: "In which district is 'Pawapuri', the Nirvana (salvation) site of Lord Mahavira, the 24th Jain Tirthankara, situated, featuring the iconic 'Jal Mandir' amidst a lotus pond?",
+            options: [
+                { hi: "वैशाली", en: "Vaishali" },
+                { hi: "नालंदा", en: "Nalanda" },
+                { hi: "जमुई", en: "Jamui" },
+                { hi: "गया", en: "Gaya" }
+            ],
+            correct: 1,
+            exp_hi: "पावापुरी नालंदा जिले में स्थित है। यहीं 72 वर्ष की आयु में 527 ईसा पूर्व में भगवान महावीर ने मोक्ष प्राप्त किया था। उनके दाह-संस्कार स्थल पर एक भव्य 'जल मंदिर' कमल के तालाब के बीच स्थित है।",
+            exp_en: "Pawapuri is located in Nalanda district, where Lord Mahavira attained Nirvana in 527 BC. The white marble Jal Mandir stands in the middle of a scenic lotus pond commemorating this event."
+        },
+        {
+            num: 11,
+            q_hi: "पटना में 1770 के भयंकर अकाल के उपरांत 1786 में अनाज के विशाल सुरक्षित भंडारण हेतु 'गोलघर' (Golghar) का निर्माण किस ब्रिटिश इंजीनियर ने करवाया था?",
+            q_en: "Following the catastrophic famine of 1770, which British engineer designed and constructed the pillarless 'Golghar' in Patna in 1786 as a granary?",
+            options: [
+                { hi: "कैप्टन जॉन गार्स्टिन (Captain John Garstin)", en: "Captain John Garstin" },
+                { hi: "वारेन हेस्टिंग्स", en: "Warren Hastings" },
+                { hi: "लॉर्ड कॉर्नवालिस", en: "Lord Cornwallis" },
+                { hi: "रॉबर्ट क्लाइव", en: "Robert Clive" }
+            ],
+            correct: 0,
+            exp_hi: "पटना के गोलघर का निर्माण 1786 में कैप्टन जॉन गार्स्टिन द्वारा एक विशाल अनाज भंडार के रूप में किया गया था। यह बिना खंभे की 29 मीटर ऊंची गुंबदाकार स्तूपनुमा वास्तुकला का उदाहरण है।",
+            exp_en: "Golghar was built in 1786 by Captain John Garstin under Governor-General Warren Hastings as a massive beehive-shaped, pillarless granary with a capacity of 1,37,000 tonnes."
+        },
+        {
+            num: 12,
+            q_hi: "राष्ट्रकवि रामधारी सिंह 'दिनकर' को उनकी किस प्रसिद्ध कालजयी काव्य कृति के लिए वर्ष 1972 में भारतीय ज्ञानपीठ पुरस्कार से सम्मानित किया गया था?",
+            q_en: "For which timeless poetic masterpiece was Rashtrakavi Ramdhari Singh 'Dinkar' honored with the prestigious Bharatiya Jnanpith Award in 1972?",
+            options: [
+                { hi: "रश्मिरथी", en: "Rashmirathi" },
+                { hi: "उर्वशी (Urvashi)", en: "Urvashi" },
+                { hi: "कुरुक्षेत्र", en: "Kurukshetra" },
+                { hi: "संस्कृति के चार अध्याय", en: "Sanskriti Ke Chaar Adhyay" }
+            ],
+            correct: 1,
+            exp_hi: "दिनकर जी को 1972 में उनके महाकाव्य 'उर्वशी' के लिए सर्वोच्च साहित्यिक सम्मान 'ज्ञानपीठ पुरस्कार' मिला। (नोट: 'संस्कृति के चार अध्याय' के लिए उन्हें 1959 में साहित्य अकादमी पुरस्कार मिला था)।",
+            exp_en: "Dinkar was conferred the Jnanpith Award in 1972 for his philosophical epic poem 'Urvashi'. (He had won the Sahitya Akademi Award in 1959 for 'Sanskriti Ke Chaar Adhyay')."
+        },
+        {
+            num: 13,
+            q_hi: "वर्ष 2001 में 'भारत रत्न' से विभूषित विश्वविख्यात शहनाई वादक उस्ताद बिस्मिल्लाह खां का जन्म बिहार के किस ऐतिहासिक नगर में हुआ था?",
+            q_en: "In which historic town of Bihar was world-renowned Shehnai maestro Ustad Bismillah Khan, honored with the 'Bharat Ratna' in 2001, born?",
+            options: [
+                { hi: "आरा (भोजपुर)", en: "Arrah (Bhojpur)" },
+                { hi: "डुमरांव (बक्सर)", en: "Dumraon (Buxar)" },
+                { hi: "सासाराम (रोहतास)", en: "Sasaram (Rohtas)" },
+                { hi: "मुंगेर", en: "Munger" }
+            ],
+            correct: 1,
+            exp_hi: "उस्ताद बिस्मिल्लाह खां का जन्म 21 मार्च 1916 को डुमरांव (बक्सर) में हुआ था। उन्होंने 15 अगस्त 1947 को भारत की स्वतंत्रता के ऐतिहासिक अवसर पर लाल किले से शहनाई वादन किया था। 2001 में उन्हें 'भारत रत्न' मिला।",
+            exp_en: "Ustad Bismillah Khan was born on 21 March 1916 in Dumraon (Buxar). He performed from the ramparts of the Red Fort on India's first Independence Day in 1947 and was awarded Bharat Ratna in 2001."
+        },
+        {
+            num: 14,
+            q_hi: "बिहार के किस पूर्व मुख्यमंत्री को 'जननायक' की उपाधि प्राप्त है, जिन्हें जनवरी 2024 में मरणोपरांत भारत के सर्वोच्च नागरिक सम्मान 'भारत रत्न' से सम्मानित किया गया?",
+            q_en: "Which former Chief Minister of Bihar, revered with the title 'Jannayak', was posthumously conferred India's highest civilian honor 'Bharat Ratna' in January 2024?",
+            options: [
+                { hi: "डॉ. श्रीकृष्ण सिंह", en: "Dr. Shrikrishna Singh" },
+                { hi: "कर्पूरी ठाकुर (Karpoori Thakur)", en: "Karpoori Thakur" },
+                { hi: "भोला पासवान शास्त्री", en: "Bhola Paswan Shastri" },
+                { hi: "दरोगा प्रसाद राय", en: "Daroga Prasad Rai" }
+            ],
+            correct: 1,
+            exp_hi: "समस्तीपुर के पितौझिया (कर्पूरीग्राम) में जन्मे जननायक कर्पूरी ठाकुर बिहार के दो बार मुख्यमंत्री रहे। उन्होंने 1978 में पिछड़ों व महिलाओं हेतु आरक्षण मॉडल लागू किया। 2024 में उन्हें मरणोपरांत 'भारत रत्न' से सम्मानित किया गया।",
+            exp_en: "Born in Samastipur, 'Jannayak' Karpoori Thakur served twice as Bihar's Chief Minister and pioneered social justice and affirmative action quotas in 1978. He was awarded Bharat Ratna in 2024."
+        },
+        {
+            num: 15,
+            q_hi: "बिहार के पूर्णिया अंचल की पृष्ठभूमि पर हिंदी साहित्य का प्रथम युगांतरकारी आंचलिक उपन्यास 'मैला आंचल' (1954) किसने लिखा था?",
+            q_en: "Who authored the epoch-making regional novel 'Maila Aanchal' (1954) set against the rural socio-cultural backdrop of Purnia in Bihar?",
+            options: [
+                { hi: "नागार्जुन", en: "Nagarjun" },
+                { hi: "फणीश्वर नाथ 'रेणु' (Phanishwar Nath 'Renu')", en: "Phanishwar Nath 'Renu'" },
+                { hi: "रामवृक्ष बेनीपुरी", en: "Ramvriksh Benipuri" },
+                { hi: "शिवपूजन सहाय", en: "Shivpujan Sahay" }
+            ],
+            correct: 1,
+            exp_hi: "औराही हिंगना (अररिया/पूर्णिया) में जन्मे फणीश्वर नाथ 'रेणु' ने 'मैला आंचल' लिखकर हिंदी में आंचलिक उपन्यास विधा की स्थापना की। उनकी प्रसिद्ध कहानी 'मारे गए गुलफाम' पर राजकपूर अभिनीत फिल्म 'तीसरी कसम' बनी थी।",
+            exp_en: "Phanishwar Nath 'Renu' pioneered regional novels in Hindi literature through 'Maila Aanchal'. His acclaimed short story 'Maare Gaye Gulfam' was adapted into the classic Hindi film 'Teesri Kasam'."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

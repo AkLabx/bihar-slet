@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1.2 Quiz: Dr. S.R. Ranganathan & Five Laws | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        /* Controls Bar */
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Test Layout */
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Explanation Box */
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Navigation Controls */
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Palette */
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        /* Scorecard Section */
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 1.2: Dr. S.R. Ranganathan & Five Laws | डॉ. रंगनाथन की जीवनी, योगदान एवं पाँच सूत्र</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_1.2_Ranganathan_and_Five_Laws.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 1.2: Ranganathan & Five Laws</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा पुस्तकालय विज्ञान के पाँच सूत्रों का सर्वप्रथम मौखिक प्रतिपादन किस वर्ष और कहाँ किया गया था?",
+            q_en: "In which year and at which place were the Five Laws of Library Science first enunciated by Dr. S.R. Ranganathan?",
+            options_hi: [
+                "1924, यूनिवर्सिटी कॉलेज लंदन",
+                "1928, मीनाक्षी कॉलेज, अन्नामलाईनगर",
+                "1931, मद्रास विश्वविद्यालय",
+                "1933, बनारस हिंदू विश्वविद्यालय"
+            ],
+            options_en: [
+                "1924, University College London",
+                "1928, Meenakshi College, Annamalainagar",
+                "1931, University of Madras",
+                "1933, Banaras Hindu University"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. रंगनाथन ने दिसंबर 1928 में मीनाक्षी कॉलेज, अन्नामलाईनगर में आयोजित प्रांतीय शैक्षणिक सम्मेलन में पाँच सूत्रों का प्रथम बार प्रतिपादन किया था। 1931 में यह 'The Five Laws of Library Science' पुस्तक के रूप में मद्रास लाइब्रेरी एसोसिएशन द्वारा प्रकाशित हुआ।",
+            exp_en: "Dr. S.R. Ranganathan first formulated the Five Laws of Library Science in December 1928 at Meenakshi College, Annamalainagar. They were published in book form in 1931 by the Madras Library Association (MALA)."
+        },
+        {
+            id: 2,
+            q_hi: "डॉ. रंगनाथन की सुप्रसिद्ध पुस्तक 'The Five Laws of Library Science' (1931) की प्रस्तावना (Foreword) और भूमिका (Introduction) क्रमशः किन विद्वानों ने लिखी थी?",
+            q_en: "The Foreword and Introduction of Dr. Ranganathan's seminal book 'The Five Laws of Library Science' (1931) were contributed respectively by which scholars?",
+            options_hi: [
+                "मेल्विल डेवी एवं सी.ए. कटर",
+                "सर पी.एस. शिवस्वामी अय्यर एवं डब्ल्यू.सी. बेरविक सायर्स",
+                "सर मॉरिस ग्वायर एवं हरिनाथ डे",
+                "एडवर्ड बी. रॉस एवं पी.सी. महालनोबिस"
+            ],
+            options_en: [
+                "Melvil Dewey and C.A. Cutter",
+                "Sir P.S. Sivaswami Ayyar and W.C. Berwick Sayers",
+                "Sir Maurice Gwyer and Harinath De",
+                "Edward B. Ross and P.C. Mahalanobis"
+            ],
+            correct: 1,
+            exp_hi: "पुस्तक की प्रस्तावना (Foreword) प्रख्यात न्यायविद सर पी.एस. शिवस्वामी अय्यर ने लिखी थी और भूमिका (Introduction) डॉ. रंगनाथन के लंदन स्थित पुस्तकालय गुरु डब्ल्यू.सी. बेरविक सायर्स (W.C. Berwick Sayers) द्वारा लिखी गई थी।",
+            exp_en: "The Foreword was written by Sir P.S. Sivaswami Ayyar, and the Introduction was contributed by Dr. Ranganathan's teacher and mentor in England, W.C. Berwick Sayers."
+        },
+        {
+            id: 3,
+            q_hi: "भारत में पुस्तकालय विज्ञान में पहली बार Ph.D. उपाधि (1957) डॉ. रंगनाथन के निर्देशन में किसे प्रदान की गई थी?",
+            q_en: "Under the guidance of Dr. S.R. Ranganathan, who was awarded the first Ph.D. in Library Science in India (1957)?",
+            options_hi: [
+                "डॉ. पी.एन. कौला",
+                "डॉ. बी.एस. केशवन",
+                "डॉ. डी.बी. कृष्ण राव",
+                "डॉ. एम.ए. गोपीनाथ"
+            ],
+            options_en: [
+                "Dr. P.N. Kaula",
+                "Dr. B.S. Kesavan",
+                "Dr. D.B. Krishna Rao",
+                "Dr. M.A. Gopinath"
+            ],
+            correct: 2,
+            exp_hi: "वर्ष 1957 में दिल्ली विश्वविद्यालय से डॉ. डी.बी. कृष्ण राव (Dr. D.B. Krishna Rao) को भारत और राष्ट्रमंडल देशों में पुस्तकालय विज्ञान की पहली डॉक्टरेट (Ph.D.) उपाधि प्रदान की गई। उनके शोध का विषय था: 'Facet Analysis and Depth Classification of Agriculture'।",
+            exp_en: "In 1957, Dr. D.B. Krishna Rao was awarded the first Ph.D. in Library Science in India (and the Commonwealth) by the University of Delhi under Dr. Ranganathan on the topic 'Facet Analysis and Depth Classification of Agriculture'."
+        },
+        {
+            id: 4,
+            q_hi: "पुस्तकालय विज्ञान का कौन-सा सूत्र पुस्तकालय कानून (Library Legislation) और पुस्तकालय उपकर (Cess) के प्रावधान की अनिवार्य मांग करता है?",
+            q_en: "Which Law of Library Science essentially demands the enactment of Library Legislation and the provision of a Library Cess?",
+            options_hi: [
+                "प्रथम सूत्र (First Law)",
+                "द्वितीय सूत्र (Second Law)",
+                "तृतीय सूत्र (Third Law)",
+                "पंचम सूत्र (Fifth Law)"
+            ],
+            options_en: [
+                "First Law",
+                "Second Law",
+                "Third Law",
+                "Fifth Law"
+            ],
+            correct: 1,
+            exp_hi: "द्वितीय सूत्र ('प्रत्येक पाठक को उसकी पुस्तक' / 'Books for All') राज्य के दायित्व (Obligations of the State) को रेखांकित करता है, जिसमें संपूर्ण समाज को निःशुल्क ग्रंथालय सेवा देने हेतु पुस्तकालय अधिनियम पारित करना और उपकर लगाना शामिल है।",
+            exp_en: "The Second Law ('Every Reader His/Her Book') specifies the Obligations of the State, making library legislation and library cess statutory necessities to provide free book service to all citizens."
+        },
+        {
+            id: 5,
+            q_hi: "मुक्त प्रवेश प्रणाली (Open Access System) को सबसे सशक्त वैचारिक समर्थन मुख्य रूप से किस सूत्र से प्राप्त होता है?",
+            q_en: "Open Access System receives its strongest conceptual justification primarily from which Law?",
+            options_hi: [
+                "प्रथम एवं द्वितीय सूत्र",
+                "तृतीय सूत्र (प्रत्येक पुस्तक को उसका पाठक)",
+                "चतुर्थ सूत्र (पाठक का समय बचाएं)",
+                "पंचम सूत्र (वर्धनशील संस्था)"
+            ],
+            options_en: [
+                "First and Second Laws",
+                "Third Law (Every Book Its Reader)",
+                "Fourth Law (Save the Time of the Reader)",
+                "Fifth Law (Growing Organism)"
+            ],
+            correct: 1,
+            exp_hi: "यद्यपि ओपन एक्सेस कई सूत्रों से संबंधित है, परंतु डॉ. रंगनाथन के अनुसार तृतीय सूत्र ('प्रत्येक पुस्तक को उसका पाठक') का यह सबसे प्रमुख साधन है, क्योंकि खुली अलमारियों में पाठक उन अप्रत्याशित पुस्तकों को भी खोज लेता है (Serendipity) जो अन्यथा अनदेखी रह जातीं।",
+            exp_en: "Although Open Access benefits multiple laws, it is primarily the master instrument of the Third Law ('Every Book Its Reader') to ensure books reach readers through serendipitous browsing."
+        },
+        {
+            id: 6,
+            q_hi: "ब्राउन (Browne) और नेवार्क (Newark) जैसी त्वरित एवं वैज्ञानिक पुस्तक निर्गम-आगम (चार्जिंग-डिस्चार्जिंग) प्रणालियों का विकास किस सूत्र का परिणाम है?",
+            q_en: "The implementation of fast, scientific circulation systems like the Browne and Newark charging methods satisfies which Law?",
+            options_hi: [
+                "द्वितीय सूत्र",
+                "तृतीय सूत्र",
+                "चतुर्थ सूत्र (पाठक का समय बचाएं)",
+                "पंचम सूत्र"
+            ],
+            options_en: [
+                "Second Law",
+                "Third Law",
+                "Fourth Law (Save the Time of the Reader)",
+                "Fifth Law"
+            ],
+            correct: 2,
+            exp_hi: "चतुर्थ सूत्र 'पाठक का समय बचाएं' (Save the Time of the Reader) पुस्तकालय के प्रशासनिक व तकनीकी कार्यों में तेजी लाने पर जोर देता है। रजिस्टर प्रणाली के घंटों के स्थान पर कार्ड-आधारित त्वरित निर्गम-आगम समय की बचत करता है।",
+            exp_en: "The Fourth Law ('Save the Time of the Reader') demands streamlined administrative routines. Modern two-card charging systems eliminate queue delays and save the reader's valuable time."
+        },
+        {
+            id: 7,
+            q_hi: "अप्रासंगिक, पुरानी एवं जीर्ण-शीर्ण पुस्तकों का पुस्तकालय से निरसन / छंटाई (Weeding Out) किस सूत्र का जैविक एवं अनिवार्य निहितार्थ है?",
+            q_en: "Weeding out of obsolete, worn-out, and unserviceable books is a biological and mandatory corollary of which Law?",
+            options_hi: [
+                "प्रथम सूत्र",
+                "तृतीय सूत्र",
+                "चतुर्थ सूत्र",
+                "पंचम सूत्र (पुस्तकालय एक वर्धनशील संस्था है)"
+            ],
+            options_en: [
+                "First Law",
+                "Third Law",
+                "Fourth Law",
+                "Fifth Law (Library is a Growing Organism)"
+            ],
+            correct: 3,
+            exp_hi: "पंचम सूत्र पुस्तकालय को एक जीवित जीव मानता है। जिस प्रकार जीवित शरीर में पुरानी/मृत कोशिकाओं का निष्कासन अनिवार्य है, उसी प्रकार पुस्तकालय के स्वस्थ विकास के लिए अनुपयोगी पुस्तकों की छंटाई (Weeding) पंचम सूत्र की अनिवार्य मांग है।",
+            exp_en: "The Fifth Law ('Library is a Growing Organism') treats a library as a living entity. Just as a living body discards dead cells, a library must systematically weed out obsolete stock to remain vital."
+        },
+        {
+            id: 8,
+            q_hi: "डॉ. रंगनाथन द्वारा DRTC (Documentation Research and Training Centre) की स्थापना किस वर्ष और किस शहर में की गई थी?",
+            q_en: "In which year and in which city was DRTC (Documentation Research and Training Centre) founded by Dr. S.R. Ranganathan?",
+            options_hi: [
+                "1957, नई दिल्ली",
+                "1962, बेंगलुरु",
+                "1965, कोलकाता",
+                "1972, मद्रास"
+            ],
+            options_en: [
+                "1957, New Delhi",
+                "1962, Bangalore",
+                "1965, Kolkata",
+                "1972, Madras"
+            ],
+            correct: 1,
+            exp_hi: "जनवरी 1962 में डॉ. रंगनाथन ने प्रो. पी.सी. महालनोबिस के सहयोग से भारतीय सांख्यिकी संस्थान (ISI) के तहत बेंगलुरु में DRTC की स्थापना की। वे जीवनपर्यंत इसके मानद निदेशक रहे।",
+            exp_en: "In January 1962, Dr. Ranganathan founded DRTC in Bangalore under the auspices of the Indian Statistical Institute (ISI) in collaboration with Prof. P.C. Mahalanobis."
+        },
+        {
+            id: 9,
+            q_hi: "पुस्तकालय विकास में 'बालक वृद्धि' (Child Growth) और 'प्रौढ़ वृद्धि' (Adult Growth) की अवधारणा किस सूत्र में दी गई है?",
+            q_en: "The concepts of 'Child Growth' and 'Adult Growth' in library development are postulated in which Law?",
+            options_hi: [
+                "द्वितीय सूत्र",
+                "तृतीय सूत्र",
+                "चतुर्थ सूत्र",
+                "पंचम सूत्र"
+            ],
+            options_en: [
+                "Second Law",
+                "Third Law",
+                "Fourth Law",
+                "Fifth Law"
+            ],
+            correct: 3,
+            exp_hi: "पंचम सूत्र में डॉ. रंगनाथन ने स्पष्ट किया कि एक नया पुस्तकालय 'बालक वृद्धि' (आकार, भवन और संख्या में तीव्र वृद्धि) से गुजरता है, जबकि स्थापित पुस्तकालय 'प्रौढ़ वृद्धि' (गुणात्मक परिवर्तन और अप्रचलित सामग्री के स्थान पर नई सामग्री) प्रदर्शित करता है।",
+            exp_en: "Under the Fifth Law, Ranganathan differentiated between Child Growth (quantitative growth in size and bulk) and Adult Growth (qualitative replacement of parts without indefinite physical expansion)."
+        },
+        {
+            id: 10,
+            q_hi: "माइकल गोरमैन (Michael Gorman, 1998) द्वारा प्रतिपादित पुस्तकालय विज्ञान के नए पाँच सूत्रों में प्रथम सूत्र क्या है?",
+            q_en: "What is the First Law among the Five New Laws of Librarianship proposed by Michael Gorman in 1998?",
+            options_hi: [
+                "पुस्तकालय मानवता की सेवा करते हैं (Libraries serve humanity)",
+                "ज्ञान संप्रेषण के सभी रूपों का सम्मान करें",
+                "प्रौद्योगिकी का बुद्धिमत्तापूर्ण उपयोग करें",
+                "ज्ञान तक स्वतंत्र पहुंच की रक्षा करें"
+            ],
+            options_en: [
+                "Libraries serve humanity",
+                "Respect all forms by which knowledge is communicated",
+                "Use technology intelligently to enhance service",
+                "Protect free access to knowledge"
+            ],
+            correct: 0,
+            exp_hi: "माइकल गोरमैन ने 1998 में अपनी कृति 'Our Singular Strengths' में पाँच नए सूत्र दिए, जिसका पहला सूत्र है: 'पुस्तकालय मानवता की सेवा करते हैं' (Libraries serve humanity)।",
+            exp_en: "In 1998, Michael Gorman published 'Our Singular Strengths', formulating Five New Laws of Librarianship, the first of which is 'Libraries serve humanity'."
+        },
+        {
+            id: 11,
+            q_hi: "डॉ. एस.आर. रंगनाथन को भारत सरकार द्वारा 'राष्ट्रीय शोध प्राध्यापक' (National Research Professor) किस वर्ष नियुक्त किया गया था?",
+            q_en: "In which year was Dr. S.R. Ranganathan appointed as the 'National Research Professor' in Library Science by the Government of India?",
+            options_hi: [
+                "1957",
+                "1962",
+                "1965",
+                "1970"
+            ],
+            options_en: [
+                "1957",
+                "1962",
+                "1965",
+                "1970"
+            ],
+            correct: 2,
+            exp_hi: "भारत सरकार ने 1965 में डॉ. रंगनाथन को पुस्तकालय विज्ञान में राष्ट्रीय शोध प्राध्यापक नियुक्त किया। (नोट: पद्मश्री 1957 में तथा राव साहब 1935 में प्रदान किया गया था)।",
+            exp_en: "The Government of India honoured Dr. Ranganathan by appointing him National Research Professor in Library Science in 1965. (Padma Shri was awarded in 1957, Rao Sahib in 1935)."
+        },
+        {
+            id: 12,
+            q_hi: "पूर्व-प्रसूति सूचीकरण (Pre-natal Cataloguing) और केंद्रीकृत वर्गीकरण किस सूत्र की प्रत्यक्ष देन हैं?",
+            q_en: "Pre-natal Cataloguing (Cataloguing-in-Source) and centralized processing are the direct gifts of which Law?",
+            options_hi: [
+                "प्रथम सूत्र",
+                "तृतीय सूत्र",
+                "चतुर्थ सूत्र (Save the Time of the Reader and Staff)",
+                "पंचम सूत्र"
+            ],
+            options_en: [
+                "First Law",
+                "Third Law",
+                "Fourth Law (Save the Time of the Reader and Staff)",
+                "Fifth Law"
+            ],
+            correct: 2,
+            exp_hi: "चतुर्थ सूत्र के तहत डॉ. रंगनाथन ने पूर्व-प्रसूति सूचीकरण की संकल्पना दी, ताकि पुस्तक के बाजार में आने से पूर्व ही उसका वर्गीकरण व सूचीकरण हो जाए और अधिग्रहण के बाद पाठकों को बिना विलंब पुस्तक मिले।",
+            exp_en: "The Fourth Law inspired Pre-natal Cataloguing so that technical processing does not cause inordinate delays after book acquisition, saving reader and staff time."
+        },
+        {
+            id: 13,
+            q_hi: "डॉ. रंगनाथन ने अपनी सुप्रसिद्ध वर्गीकरण पद्धति 'कोलन क्लासिफिकेशन' (Colon Classification, 1933) को किसे समर्पित किया था?",
+            q_en: "To whom did Dr. S.R. Ranganathan dedicate his famous classification system 'Colon Classification' (1933)?",
+            options_hi: [
+                "डब्ल्यू.सी. बेरविक सायर्स को",
+                "प्रो. एडवर्ड बी. रॉस को",
+                "मेल्विल डेवी को",
+                "सर मॉरिस ग्वायर को"
+            ],
+            options_en: [
+                "To W.C. Berwick Sayers",
+                "To Prof. Edward B. Ross",
+                "To Melvil Dewey",
+                "To Sir Maurice Gwyer"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. रंगनाथन ने कोलन क्लासिफिकेशन को अपने प्रिय गणित प्राध्यापक प्रो. एडवर्ड बी. रॉस (मद्रास क्रिश्चियन कॉलेज) को समर्पित किया था, जिनसे वे गणितीय एवं विश्लेषणात्मक चिंतन में अत्यंत प्रभावित थे।",
+            exp_en: "Dr. Ranganathan dedicated Colon Classification to his beloved mathematics professor, Prof. Edward B. Ross of Madras Christian College."
+        },
+        {
+            id: 14,
+            q_hi: "पुस्तकालय सूची का मुद्रित पुस्तक स्वरूप (Book-form Catalogue) पाँच सूत्रों में से विशेष रूप से किस सूत्र का उल्लंघन करता है?",
+            q_en: "A printed Book-form catalogue violates which specific Law of Library Science due to its static, non-expandable nature?",
+            options_hi: [
+                "प्रथम सूत्र",
+                "द्वितीय सूत्र",
+                "तृतीय सूत्र",
+                "पंचम सूत्र (पुस्तकालय एक वर्धनशील संस्था है)"
+            ],
+            options_en: [
+                "First Law",
+                "Second Law",
+                "Third Law",
+                "Fifth Law (Library is a Growing Organism)"
+            ],
+            correct: 3,
+            exp_hi: "मुद्रित पुस्तक सूची (Book Form Catalogue) छपने के तुरंत बाद अप्रचलित हो जाती है और उसमें नई किताबों को वर्णानुक्रम में जोड़ना असंभव होता है। यह पंचम सूत्र (वर्धनशील संस्था) का प्रत्यक्ष उल्लंघन करती है, जिसके कारण कार्ड कैटलॉग या OPAC अनिवार्य बना।",
+            exp_en: "A printed book catalogue cannot easily accommodate continuous intake of new acquisitions without reprinting. Hence, it violates the Fifth Law (Growing Organism), giving rise to flexible Card and OPAC systems."
+        },
+        {
+            id: 15,
+            q_hi: "भारत में प्रतिवर्ष 'राष्ट्रीय पुस्तकालयाध्यक्ष दिवस' (National Librarian's Day) 12 अगस्त को किसके सम्मान में मनाया जाता है?",
+            q_en: "In India, 'National Librarian's Day' is celebrated annually on 12th August in honour of whose birth anniversary?",
+            options_hi: [
+                "बी.एस. केशवन",
+                "डॉ. एस.आर. रंगनाथन",
+                "डब्ल्यू.ए. बोर्डन",
+                "खान बहादुर मौलवी खुदा बख्श"
+            ],
+            options_en: [
+                "B.S. Kesavan",
+                "Dr. S.R. Ranganathan",
+                "W.A. Borden",
+                "Khan Bahadur Maulvi Khuda Bakhsh"
+            ],
+            correct: 1,
+            exp_hi: "भारत में पुस्तकालय आंदोलन के जनक डॉ. एस.आर. रंगनाथन के जन्मदिवस (12 अगस्त 1892) के उपलक्ष्य में प्रतिवर्ष 12 अगस्त को 'राष्ट्रीय पुस्तकालयाध्यक्ष दिवस' मनाया जाता है।",
+            exp_en: "National Librarian's Day is observed throughout India on 12th August every year to commemorate the birth anniversary of Dr. S.R. Ranganathan, Father of Library Science in India."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60; // 20 mins for 15 questions
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_1_2_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

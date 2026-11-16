@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 8.2 Quiz: General Science & Environment | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण</h1>
+            <p>Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_8.2_General_Science_and_Environment.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - सामान्य विज्ञान खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u8_2_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "आधुनिक दूरसंचार में उच्च गति से डेटा संचरण हेतु प्रयुक्त 'ऑप्टिकल फाइबर' (प्रकाशीय तंतु) प्रकाश की किस परिघटना पर कार्य करता है?",
+            q_en: "On which optical phenomenon does the 'Optical Fibre' used for high-speed data transmission in modern telecommunications operate?",
+            options: [
+                { hi: "प्रकाश का प्रकीर्णन (Scattering)", en: "Scattering of light" },
+                { hi: "पूर्ण आंतरिक परावर्तन (Total Internal Reflection - TIR)", en: "Total Internal Reflection (TIR)" },
+                { hi: "प्रकाश का विवर्तन (Diffraction)", en: "Diffraction of light" },
+                { hi: "प्रकाश का ध्रुवण (Polarization)", en: "Polarization of light" },
+            ],
+            correct: 1,
+            exp_hi: "ऑप्टिकल फाइबर पूर्ण आंतरिक परावर्तन (TIR) के सिद्धांत पर कार्य करता है। जब प्रकाश किरण कोर से क्लैडिंग में जाती है और आपतन कोण क्रांतिक कोण से अधिक होता है, तो ऊर्जा ह्रास के बिना सिग्नल आगे बढ़ता है।",
+            exp_en: "Optical fibres function on the principle of Total Internal Reflection (TIR), trapping and guiding light through the core with negligible signal attenuation."
+        },
+        {
+            num: 2,
+            q_hi: "नेत्र के 'निकट दृष्टि दोष' (Myopia) के निवारण के लिए चश्मे में किस प्रकार के लेंस का उपयोग किया जाता है?",
+            q_en: "Which type of lens is prescribed in eyeglasses to correct the defect of vision known as 'Myopia' (Short-sightedness)?",
+            options: [
+                { hi: "उत्तल लेंस (Convex Lens)", en: "Convex Lens" },
+                { hi: "अवतल लेंस (Concave Lens)", en: "Concave Lens" },
+                { hi: "द्विफोकसी लेंस (Bifocal Lens)", en: "Bifocal Lens" },
+                { hi: "बेलनाकार लेंस (Cylindrical Lens)", en: "Cylindrical Lens" }
+            ],
+            correct: 1,
+            exp_hi: "निकट दृष्टि दोष (Myopia) में पास की वस्तुएं साफ दिखती हैं किंतु दूर की धुंधली दिखती हैं क्योंकि प्रतिबिंब रेटिना के आगे बनता है। इसे ठीक करने के लिए अपसारी अर्थात् अवतल लेंस (Concave Lens) का प्रयोग किया जाता है।",
+            exp_en: "In Myopia (nearsightedness), images form in front of the retina. A diverging lens, i.e. Concave Lens, is used to push the focal point back onto the retina."
+        },
+        {
+            num: 3,
+            q_hi: "सामान्य स्वस्थ मनुष्य के शरीर में रक्त (Human Blood) का pH मान सामान्यतः कितना होता है?",
+            q_en: "What is the typical normal pH value of blood in a healthy human body?",
+            options: [
+                { hi: "6.2 (अम्लीय)", en: "6.2 (Acidic)" },
+                { hi: "7.0 (पूर्ण उदासीन)", en: "7.0 (Pure Neutral)" },
+                { hi: "7.35 – 7.45 (हल्का क्षारीय)", en: "7.35 – 7.45 (Slightly Alkaline)" },
+                { hi: "8.8 (प्रबल क्षारीय)", en: "8.8 (Strongly Alkaline)" }
+            ],
+            correct: 2,
+            exp_hi: "मानव रक्त का सामान्य pH मान लगभग 7.4 (7.35 से 7.45 के मध्य) होता है, जो कि हल्का क्षारीय (slightly alkaline) होता है।",
+            exp_en: "Human arterial blood maintains a strictly buffered pH of approximately 7.4 (ranging between 7.35 and 7.45), which is slightly alkaline."
+        },
+        {
+            num: 4,
+            q_hi: "रसोई घरों में प्रयुक्त होने वाले 'बेकिंग सोडा' (खाने का सोडा) का रासायनिक नाम एवं सूत्र क्या है?",
+            q_en: "What is the chemical name and formula of 'Baking Soda' commonly used in kitchens and bakeries?",
+            options: [
+                { hi: "सोडियम कार्बोनेट (Na2CO3)", en: "Sodium Carbonate (Na2CO3)" },
+                { hi: "सोडियम बाइकार्बोनेट (NaHCO3)", en: "Sodium Bicarbonate (NaHCO3)" },
+                { hi: "सोडियम क्लोराइड (NaCl)", en: "Sodium Chloride (NaCl)" },
+                { hi: "सोडियम हाइड्रॉक्साइड (NaOH)", en: "Sodium Hydroxide (NaOH)" }
+            ],
+            correct: 1,
+            exp_hi: "बेकिंग सोडा का रासायनिक नाम 'सोडियम हाइड्रोजन कार्बोनेट' या 'सोडियम बाइकार्बोनेट' (NaHCO3) है। धावन सोडा Na2CO3.10H2O होता है।",
+            exp_en: "Baking soda is chemically known as Sodium Hydrogen Carbonate or Sodium Bicarbonate (NaHCO3). Washing soda is Na2CO3.10H2O."
+        },
+        {
+            num: 5,
+            q_hi: "परमाणु ऊर्जा संयंत्रों (Nuclear Reactors) में तीव्रगामी न्यूट्रॉनों की गति को धीमा करने के लिए 'मंदक' (Moderator) के रूप में किसका उपयोग किया जाता है?",
+            q_en: "What is used as a 'Moderator' in nuclear power reactors to slow down the speed of fast-moving neutrons?",
+            options: [
+                { hi: "भारी जल (D2O) एवं ग्रेफाइट", en: "Heavy Water (D2O) and Graphite" },
+                { hi: "तरल सोडियम", en: "Liquid Sodium" },
+                { hi: "कैडमियम छड़ें", en: "Cadmium rods" },
+                { hi: "बोरॉन कार्बाइड", en: "Boron carbide" }
+            ],
+            correct: 0,
+            exp_hi: "नाभिकीय विखंडन में न्यूट्रॉनों को धीमा करने (मंदक के रूप में) भारी जल (ड्यूटिरियम ऑक्साइड - D2O) तथा ग्रेफाइट का उपयोग किया जाता है। (कैडमियम और बोरॉन छड़ों का उपयोग न्यूट्रॉन अवशोषक/नियंत्रक के रूप में होता है)।",
+            exp_en: "Heavy water (D2O) and graphite serve as moderators to slow down neutrons in nuclear reactors. (Cadmium and boron rods act as control rods)."
+        },
+        {
+            num: 6,
+            q_hi: "कोशिकीय श्वसन द्वारा ऊर्जा (ATP) उत्पन्न करने के कारण किस कोशिकांग को 'कोशिका का पावरहाउस' (Powerhouse of the Cell) कहा जाता है?",
+            q_en: "Which cellular organelle is designated as the 'Powerhouse of the Cell' owing to its generation of ATP through cellular respiration?",
+            options: [
+                { hi: "राइबोसोम (Ribosome)", en: "Ribosome" },
+                { hi: "माइटोकॉन्ड्रिया (Mitochondria)", en: "Mitochondria" },
+                { hi: "लाइसोसोम (Lysosome)", en: "Lysosome" },
+                { hi: "गॉल्जीकाय (Golgi body)", en: "Golgi apparatus" }
+            ],
+            correct: 1,
+            exp_hi: "माइटोकॉन्ड्रिया को कोशिका का पावरहाउस कहा जाता है क्योंकि यहां क्रेब्स चक्र के माध्यम से कोशिकीय श्वसन संपन्न होता है और एटीपी (ATP) के रूप में ऊर्जा मुक्त होती है।",
+            exp_en: "Mitochondria are known as the powerhouse of the cell because they synthesize cellular energy in the form of Adenosine Triphosphate (ATP) via aerobic respiration."
+        },
+        {
+            num: 7,
+            q_hi: "मानव रक्त समूह प्रणाली में किस रक्त समूह (Blood Group) को 'सर्वदाता' (Universal Donor) कहा जाता है, जो किसी भी व्यक्ति को दिया जा सकता है?",
+            q_en: "In the human blood group system, which blood type is universally designated as the 'Universal Donor' that can be transfused to any individual?",
+            options: [
+                { hi: "AB पॉजिटिव (AB+)", en: "AB Positive (AB+)" },
+                { hi: "O निगेटिव (O-)", en: "O Negative (O-)" },
+                { hi: "O पॉजिटिव (O+)", en: "O Positive (O+)" },
+                { hi: "A निगेटिव (A-)", en: "A Negative (A-)" }
+            ],
+            correct: 1,
+            exp_hi: "O नेगेटिव (O-) रक्त समूह की लाल रक्त कोशिकाओं पर कोई भी A, B या Rh एंटीजन नहीं होता है, इसलिए इसका रक्त किसी भी व्यक्ति को सुरक्षित रूप से दिया जा सकता है (सर्वदाता)। AB+ सर्वग्राही होता है।",
+            exp_en: "O Negative (O-) red blood cells lack A, B, and Rh antigens, rendering them non-reactive to recipient antibodies and making O- the true universal donor."
+        },
+        {
+            num: 8,
+            q_hi: "विटामिन B12 (सायनोकोबालामिन) का मुख्य घटक कौन सा धात्विक तत्व (Metallic Element) है, जिसकी कमी से परनिशियस एनीमिया (घातक रक्ताल्पता) हो जाती है?",
+            q_en: "Which metallic element is an essential constituent of Vitamin B12 (Cyanocobalamin), whose deficiency results in Pernicious Anaemia?",
+            options: [
+                { hi: "लोहा (Iron)", en: "Iron" },
+                { hi: "कोबाल्ट (Cobalt - Co)", en: "Cobalt (Co)" },
+                { hi: "मैग्नीशियम (Magnesium)", en: "Magnesium" },
+                { hi: "तांबा (Copper)", en: "Copper" }
+            ],
+            correct: 1,
+            exp_hi: "विटामिन B12 का रासायनिक नाम सायनोकोबालामिन है, जिसमें कोबाल्ट (Cobalt) धातु पाई जाती है। यह आरबीसी के परिपक्व होने में अत्यंत आवश्यक है। इसकी कमी से घातक रक्ताल्पता (Pernicious Anaemia) होती है।",
+            exp_en: "Vitamin B12 (Cyanocobalamin) contains Cobalt as its central coordination metal ion. It is crucial for erythropoiesis; its deficiency leads to pernicious anaemia."
+        },
+        {
+            num: 9,
+            q_hi: "चोट लगने पर रक्तस्राव को रोकने तथा 'रक्त का थक्का जमाने' (Blood Clotting / Coagulation) में कौन सा विटामिन अनिवार्य भूमिका निभाता है?",
+            q_en: "Which vitamin plays an indispensable role in the synthesis of prothrombin and facilitating 'Blood Clotting' (Coagulation)?",
+            options: [
+                { hi: "विटामिन A", en: "Vitamin A" },
+                { hi: "विटामिन C", en: "Vitamin C" },
+                { hi: "विटामिन K (फिलोक्विनोन)", en: "Vitamin K (Phylloquinone)" },
+                { hi: "विटामिन E", en: "Vitamin E" }
+            ],
+            correct: 2,
+            exp_hi: "विटामिन K (फिलोक्विनोन) यकृत में प्रोथ्रोम्बिन और फाइब्रिनोजेन जैसे थक्का-रोधी कारकों के निर्माण हेतु आवश्यक है। इसकी कमी होने पर रक्त का थक्का नहीं जमता और अधिक रक्त बह जाता है।",
+            exp_en: "Vitamin K is an essential cofactor for the hepatic synthesis of blood clotting factors (prothrombin, factors VII, IX, X), preventing excessive haemorrhage."
+        },
+        {
+            num: 10,
+            q_hi: "एक्वायर्ड इम्यूनो डेफिशिएंसी सिंड्रोम (AIDS) के कारक एचआईवी (HIV) वायरस की प्राथमिक जांच एवं पुष्टि हेतु कौन सा नैदानिक परीक्षण किया जाता है?",
+            q_en: "Which diagnostic serological test is standardly performed for screening and detecting antibodies against the HIV virus causing AIDS?",
+            options: [
+                { hi: "विडाल टेस्ट (Widal Test)", en: "Widal Test" },
+                { hi: "एलिसा टेस्ट (ELISA Test)", en: "ELISA Test" },
+                { hi: "मंटौक्स टेस्ट (Mantoux Test)", en: "Mantoux Test" },
+                { hi: "बायोप्सी (Biopsy)", en: "Biopsy" }
+            ],
+            correct: 1,
+            exp_hi: "एड्स (HIV) की जांच हेतु एंजाइम-लिंक्ड इम्यूनोसॉर्बेंट एसे (ELISA) टेस्ट तथा पुष्टिकरण हेतु वेस्टर्न ब्लॉट टेस्ट किया जाता है। (विडाल टेस्ट टाइफाइड हेतु तथा मंटौक्स टेस्ट टीबी हेतु होता है)।",
+            exp_en: "ELISA (Enzyme-Linked Immunosorbent Assay) is the primary antibody screening test for HIV/AIDS, confirmed via Western Blot. (Widal is for Typhoid, Mantoux for TB)."
+        },
+        {
+            num: 11,
+            q_hi: "बिहार के मैदानी भागों में होने वाला घातक प्रोटोजोआ रोग 'कालाजार' (Leishmaniasis) किस कीट (Vector) के काटने से फैलता है?",
+            q_en: "The deadly protozoan infection 'Kala-azar' (Visceral Leishmaniasis) prevalent in Bihar is transmitted by the bite of which insect vector?",
+            options: [
+                { hi: "मादा एनाफिलीज मच्छर", en: "Female Anopheles mosquito" },
+                { hi: "बालू मक्खी (सैंडफ्लाई / Phlebotomus Sandfly)", en: "Sandfly (Phlebotomus argentipes)" },
+                { hi: "सीसी मक्खी (Tsetse fly)", en: "Tsetse fly" },
+                { hi: "एडीज मच्छर", en: "Aedes mosquito" }
+            ],
+            correct: 1,
+            exp_hi: "कालाजार 'लीशमैनिया डोनोवानी' नामक प्रोटोजोआ परजीवी द्वारा होता है, जिसका वाहक बालू मक्खी (सैंडफ्लाई - Sandfly) है। बिहार सरकार ने इसके उन्मूलन हेतु बड़े पैमाने पर छिड़काव अभियान चलाया है।",
+            exp_en: "Kala-azar is caused by the intracellular protozoan parasite Leishmania donovani and is transmitted to humans by the bite of the female phlebotomine sandfly."
+        },
+        {
+            num: 12,
+            q_hi: "पारिस्थितिकी तंत्र में खाद्य शृंखला के एक पोषी स्तर से अगले पोषी स्तर पर ऊर्जा स्थानांतरण का प्रसिद्ध '10% का नियम' 1942 में किसने प्रतिपादित किया था?",
+            q_en: "Who formulated the renowned '10 Percent Law' in 1942 governing the efficiency of energy transfer between successive trophic levels in an ecosystem?",
+            options: [
+                { hi: "ए.जी. टांसले", en: "A.G. Tansley" },
+                { hi: "रेमंड लिंडमैन (Raymond Lindeman)", en: "Raymond Lindeman" },
+                { hi: "ई.पी. ओडम", en: "E.P. Odum" },
+                { hi: "चार्ल्स एल्टन", en: "Charles Elton" }
+            ],
+            correct: 1,
+            exp_hi: "रेमंड लिंडमैन ने 1942 में 10% ऊर्जा नियम दिया था, जिसके अनुसार प्रत्येक पोषी स्तर (Trophic Level) पर केवल 10% ऊर्जा ही अगले स्तर को उपलब्ध होती है, शेष 90% ऊर्जा उपापचय व ऊष्मा के रूप में नष्ट हो जाती है।",
+            exp_en: "Raymond Lindeman proposed the 10% Ecological Efficiency Law in 1942, stating that only roughly 10% of energy transferred from one trophic level is stored as biomass in the next."
+        },
+        {
+            num: 13,
+            q_hi: "सूर्य की हानिकारक पराबैंगनी किरणों (UV Rays) को अवशोषित करने वाली जीवनदायिनी 'ओजोन परत' (Ozone Layer) वायुमंडल के किस संस्तर में पाई जाती है?",
+            q_en: "In which atmospheric layer is the life-protecting 'Ozone Layer' (O3) situated, which absorbs harmful solar ultraviolet (UV) radiation?",
+            options: [
+                { hi: "क्षोभमंडल (Troposphere)", en: "Troposphere" },
+                { hi: "समताप मंडल (Stratosphere)", en: "Stratosphere" },
+                { hi: "मध्यमंडल (Mesosphere)", en: "Mesosphere" },
+                { hi: "आयनमंडल (Ionosphere)", en: "Ionosphere" }
+            ],
+            correct: 1,
+            exp_hi: "ओजोन परत (O3) वायुमंडल के समताप मंडल (Stratosphere) में धरातल से 15 से 35 किमी की ऊंचाई पर स्थित है। इसकी मोटाई मापने की इकाई 'डॉबसन' (Dobson Unit - DU) है।",
+            exp_en: "The ozone layer is located in the Stratosphere (approx. 15-35 km above sea level), shielding the biosphere from mutagenic solar UV-B rays. Its thickness is measured in Dobson Units."
+        },
+        {
+            num: 14,
+            q_hi: "ओजोन परत को नष्ट करने वाले पदार्थों (जैसे क्लोरोफ्लोरोकार्बन - CFC) के उत्पादन को चरणबद्ध रूप से रोकने हेतु 1987 में कौन सा ऐतिहासिक अंतरराष्ट्रीय प्रोटोकॉल हस्ताक्षरित हुआ था?",
+            q_en: "Which landmark international agreement was signed in 1987 to phase out substances that deplete the ozone layer (such as Chlorofluorocarbons - CFCs)?",
+            options: [
+                { hi: "क्योटो प्रोटोकॉल (Kyoto Protocol)", en: "Kyoto Protocol" },
+                { hi: "मॉन्ट्रियल प्रोटोकॉल (Montreal Protocol)", en: "Montreal Protocol" },
+                { hi: "पेरिस समझौता (Paris Agreement)", en: "Paris Agreement" },
+                { hi: "नागोया प्रोटोकॉल (Nagoya Protocol)", en: "Nagoya Protocol" }
+            ],
+            correct: 1,
+            exp_hi: "16 सितंबर 1987 को कनाडा के मॉन्ट्रियल शहर में 'मॉन्ट्रियल प्रोटोकॉल' हस्ताक्षरित हुआ, जिसका उद्देश्य ओजोन क्षयकारी पदार्थों (ODS) को समाप्त करना था। (क्योटो प्रोटोकॉल 1997 ग्रीनहाउस गैसों/ग्लोबल वार्मिंग से संबंधित है)।",
+            exp_en: "The Montreal Protocol on Substances that Deplete the Ozone Layer was signed on 16 September 1987 in Canada to protect the stratospheric ozone layer by phasing out ODS chemicals."
+        },
+        {
+            num: 15,
+            q_hi: "मॉन्ट्रियल प्रोटोकॉल पर हस्ताक्षर की स्मृति में प्रतिवर्ष विश्वभर में 'विश्व ओजोन दिवस' (World Ozone Day) किस तिथि को मनाया जाता है?",
+            q_en: "On which date is 'World Ozone Day' celebrated globally each year to commemorate the signing of the Montreal Protocol?",
+            options: [
+                { hi: "5 जून", en: "5 June" },
+                { hi: "22 अप्रैल", en: "22 April" },
+                { hi: "16 सितंबर (16 September)", en: "16 September" },
+                { hi: "1 दिसंबर", en: "1 December" }
+            ],
+            correct: 2,
+            exp_hi: "संयुक्त राष्ट्र महासभा द्वारा प्रतिवर्ष 16 सितंबर को 'अंतरराष्ट्रीय ओजोन परत संरक्षण दिवस' (विश्व ओजोन दिवस) के रूप में मनाया जाता है। (5 जून: विश्व पर्यावरण दिवस, 22 अप्रैल: पृथ्वी दिवस)।",
+            exp_en: "16 September is celebrated internationally as World Ozone Day pursuant to the United Nations proclamation in 1994, commemorating the Montreal Protocol's signing."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

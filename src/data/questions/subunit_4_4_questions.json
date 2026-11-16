@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u4_sub4_4_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "विश्व का सबसे विशाल एवं प्रमुख प्रलेख आपूर्ति केंद्र 'ब्रिटिश लाइब्रेरी डॉक्यूमेंट सप्लाई सेंटर' (BLDSC) कहां स्थित है?",
+    "q_en": "Where is the world's largest document supply hub, the 'British Library Document Supply Centre' (BLDSC), located?",
+    "options_hi": [
+      "लंदन, यूके",
+      "बोस्टन स्पा, वेस्ट यॉर्कशायर, यूके (Boston Spa, UK)",
+      "एडिनबर्ग, स्कॉटलैंड",
+      "कैम्ब्रिज, यूके"
+    ],
+    "options_en": [
+      "London, UK",
+      "Boston Spa, West Yorkshire, UK",
+      "Edinburgh, Scotland",
+      "Cambridge, UK"
+    ],
+    "options": [
+      {
+        "hi": "लंदन, यूके",
+        "en": "London, UK"
+      },
+      {
+        "hi": "बोस्टन स्पा, वेस्ट यॉर्कशायर, यूके (Boston Spa, UK)",
+        "en": "Boston Spa, West Yorkshire, UK"
+      },
+      {
+        "hi": "एडिनबर्ग, स्कॉटलैंड",
+        "en": "Edinburgh, Scotland"
+      },
+      {
+        "hi": "कैम्ब्रिज, यूके",
+        "en": "Cambridge, UK"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "BLDSC (पूर्व में National Lending Library for Science and Technology - NLLST) बोस्टन स्पा (Boston Spa), वेस्ट यॉर्कशायर, यूके में स्थित है। यह दुनिया भर के पुस्तकालयों को प्रलेख आपूर्ति (DDS) प्रदान करता है।",
+    "exp_en": "BLDSC is located at Boston Spa, Wetherby, West Yorkshire, UK. Founded by Donald Urquhart, it serves as the premier global clearinghouse for document supply."
+  },
+  {
+    "globalId": "u4_sub4_4_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "पुस्तकालयों के मध्य 'अंतर-पुस्तकालय ऋण' (Inter-Library Loan - ILL) की प्रक्रिया को सफलतापूर्वक संचालित करने हेतु सबसे अनिवार्य औजार कौन-सा है?",
+    "q_en": "Which tool is an indispensable pre-requisite for successfully locating and borrowing items via Inter-Library Loan (ILL)?",
+    "options_hi": [
+      "संघ सूची (Union Catalogue)",
+      "परिग्रहण पंजिका (Accession Register)",
+      "शेल्फ सूची (Shelf List)",
+      "पुस्तकालय का आगंतुक रजिस्टर"
+    ],
+    "options_en": [
+      "Union Catalogue",
+      "Accession Register",
+      "Shelf List",
+      "Library Visitors' Register"
+    ],
+    "options": [
+      {
+        "hi": "संघ सूची (Union Catalogue)",
+        "en": "Union Catalogue"
+      },
+      {
+        "hi": "परिग्रहण पंजिका (Accession Register)",
+        "en": "Accession Register"
+      },
+      {
+        "hi": "शेल्फ सूची (Shelf List)",
+        "en": "Shelf List"
+      },
+      {
+        "hi": "पुस्तकालय का आगंतुक रजिस्टर",
+        "en": "Library Visitors' Register"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "संघ सूची (Union Catalogue) दो या अधिक स्वतंत्र पुस्तकालयों के संयुक्त संग्रह को दर्शाती है। इसके बिना किसी लाइब्रेरियन को यह पता नहीं चल सकता कि अमुक वांछित पुस्तक किस बाहरी पुस्तकालय में उपलब्ध है।",
+    "exp_en": "A Union Catalogue documents the holdings of multiple participating libraries; without it, pinpointing which partner institution holds the requested item for ILL is impossible."
+  },
+  {
+    "globalId": "u4_sub4_4_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "अंतरराष्ट्रीय स्तर पर अंतर-पुस्तकालय ऋण और प्रलेख आपूर्ति के वित्तीय लेन-देन को सरल बनाने हेतु 'IFLA वाउचर योजना' (IFLA Voucher Scheme) किस वर्ष प्रारंभ की गई थी?",
+    "q_en": "In which year was the 'IFLA Voucher Scheme' introduced to simplify international payment transactions for ILL and document supply?",
+    "options_hi": [
+      "1974 ई.",
+      "1985 ई.",
+      "1995 ई. (1995)",
+      "2005 ई."
+    ],
+    "options_en": [
+      "1974",
+      "1985",
+      "1995",
+      "2005"
+    ],
+    "options": [
+      {
+        "hi": "1974 ई.",
+        "en": "1974"
+      },
+      {
+        "hi": "1985 ई.",
+        "en": "1985"
+      },
+      {
+        "hi": "1995 ई. (1995)",
+        "en": "1995"
+      },
+      {
+        "hi": "2005 ई.",
+        "en": "2005"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "IFLA ने 1995 में वाउचर योजना प्रारंभ की ताकि विभिन्न देशों के पुस्तकालय बिना विदेशी मुद्रा विनिमय शुल्क या बैंक ड्राफ्ट की झंझट के प्लास्टिक वाउचर द्वारा ILL व फोटोकॉपी का वित्तीय निपटान कर सकें।",
+    "exp_en": "The IFLA Voucher Scheme was launched in 1995 as a reusable coupon transaction system enabling cross-border library ILL payments without foreign exchange overheads."
+  },
+  {
+    "globalId": "u4_sub4_4_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "महाविद्यालयी पाठ्यक्रम के साथ उपयोगकर्ता शिक्षा (User Education) को एकीकृत करने हेतु 1966 में 'मोंटीथ कॉलेज लाइब्रेरी एक्सपेरिमेंट' किसने किया था?",
+    "q_en": "Who conducted the landmark 1966 'Monteith College Library Experiment' integrating user education with collegiate coursework?",
+    "options_hi": [
+      "पैट्रिशिया बी. नैप (Patricia B. Knapp)",
+      "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+      "मेलविल डेवी",
+      "एस.आर. रंगनाथन"
+    ],
+    "options_en": [
+      "Patricia B. Knapp",
+      "Paul G. Zurkowski",
+      "Melvil Dewey",
+      "S.R. Ranganathan"
+    ],
+    "options": [
+      {
+        "hi": "पैट्रिशिया बी. नैप (Patricia B. Knapp)",
+        "en": "Patricia B. Knapp"
+      },
+      {
+        "hi": "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+        "en": "Paul G. Zurkowski"
+      },
+      {
+        "hi": "मेलविल डेवी",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "एस.आर. रंगनाथन",
+        "en": "S.R. Ranganathan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पैट्रिशिया बी. नैप ने वेन स्टेट यूनिवर्सिटी के मोंटीथ कॉलेज (1966) में यह ऐतिहासिक शोध प्रयोग किया, जिसमें यह सिद्ध हुआ कि पाठ्यक्रम-एकीकृत पुस्तकालय शिक्षा से विद्यार्थियों की शोध क्षमता अत्यधिक बढ़ती है।",
+    "exp_en": "Patricia B. Knapp directed the famous Monteith College Library Experiment (1966) at Wayne State University, establishing the pedagogical foundation of curriculum-integrated bibliographic instruction."
+  },
+  {
+    "globalId": "u4_sub4_4_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "डॉ. एस.आर. रंगनाथन ने नए प्रवेशित विद्यार्थियों को पुस्तकालय के भवन, नियमों और सेवाओं से परिचित कराने की प्रक्रिया को क्या नाम दिया था?",
+    "q_en": "What term did Dr. S.R. Ranganathan assign to the process of familiarizing freshly admitted students with the library layout and rules?",
+    "options_hi": [
+      "नवागंतुक दीक्षा (Initiation of a Freshman)",
+      "ग्रंथपरक अनुदेशन (Bibliographic Instruction)",
+      "सूचना पुनर्प्राप्ति (Information Retrieval)",
+      "भंडार सत्यापन"
+    ],
+    "options_en": [
+      "Initiation of a Freshman",
+      "Bibliographic Instruction",
+      "Information Retrieval",
+      "Stock Verification"
+    ],
+    "options": [
+      {
+        "hi": "नवागंतुक दीक्षा (Initiation of a Freshman)",
+        "en": "Initiation of a Freshman"
+      },
+      {
+        "hi": "ग्रंथपरक अनुदेशन (Bibliographic Instruction)",
+        "en": "Bibliographic Instruction"
+      },
+      {
+        "hi": "सूचना पुनर्प्राप्ति (Information Retrieval)",
+        "en": "Information Retrieval"
+      },
+      {
+        "hi": "भंडार सत्यापन",
+        "en": "Stock Verification"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "डॉ. रंगनाथन ने पुस्तकालय अभिविन्यास (Library Orientation) को 'Initiation of a Freshman' (नवागंतुक दीक्षा) कहा, जिसमें नए छात्रों का पुस्तकालय से पहला औपचारिक और आत्मीय परिचय कराया जाता है।",
+    "exp_en": "Dr. S.R. Ranganathan called the library orientation program for new entrants 'Initiation of a Freshman', easing their psychological hesitation in utilizing library resources."
+  },
+  {
+    "globalId": "u4_sub4_4_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "'सूचना साक्षरता' (Information Literacy) शब्द का सर्वप्रथम प्रयोग वर्ष 1974 में किसके द्वारा किया गया था?",
+    "q_en": "Who originally coined the term 'Information Literacy' in 1974 in a proposal to the US National Commission on Libraries and Information Science?",
+    "options_hi": [
+      "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+      "एफ.डब्ल्यू. लैनकेस्टर",
+      "डेनिस ग्रोगन",
+      "सैमुअल स्वेट ग्रीन"
+    ],
+    "options_en": [
+      "Paul G. Zurkowski",
+      "F.W. Lancaster",
+      "Dennis Grogan",
+      "Samuel Swett Green"
+    ],
+    "options": [
+      {
+        "hi": "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+        "en": "Paul G. Zurkowski"
+      },
+      {
+        "hi": "एफ.डब्ल्यू. लैनकेस्टर",
+        "en": "F.W. Lancaster"
+      },
+      {
+        "hi": "डेनिस ग्रोगन",
+        "en": "Dennis Grogan"
+      },
+      {
+        "hi": "सैमुअल स्वेट ग्रीन",
+        "en": "Samuel Swett Green"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पॉल जी. ज़ुरकोवस्की (Information Industry Association के तत्कालीन अध्यक्ष) ने 1974 में NCLIS को प्रस्तुत अपनी रिपोर्ट 'The Information Service Environment: Relationships and Priorities' में 'Information Literacy' शब्द गढ़ा।",
+    "exp_en": "Paul G. Zurkowski coined 'Information Literacy' in 1974, defining information-literate people as those trained in applying information resources to practical problem-solving."
+  },
+  {
+    "globalId": "u4_sub4_4_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "ब्रिटेन की SCONUL द्वारा 1999 में प्रतिपादित 'सूचना साक्षरता के सात स्तम्भ' (Seven Pillars of Information Literacy) का प्रथम स्तम्भ कौन-सा है?",
+    "q_en": "Which is the first pillar in the celebrated 'Seven Pillars of Information Literacy' model formulated by SCONUL (UK) in 1999?",
+    "options_hi": [
+      "पहचानना (Identify - सूचना आवश्यकता की पहचान)",
+      "मूल्यांकन करना (Evaluate)",
+      "प्रस्तुत करना (Present)",
+      "संग्रहीत करना (Store)"
+    ],
+    "options_en": [
+      "Identify (Recognizing information need)",
+      "Evaluate",
+      "Present",
+      "Store"
+    ],
+    "options": [
+      {
+        "hi": "पहचानना (Identify - सूचना आवश्यकता की पहचान)",
+        "en": "Identify (Recognizing information need)"
+      },
+      {
+        "hi": "मूल्यांकन करना (Evaluate)",
+        "en": "Evaluate"
+      },
+      {
+        "hi": "प्रस्तुत करना (Present)",
+        "en": "Present"
+      },
+      {
+        "hi": "संग्रहीत करना (Store)",
+        "en": "Store"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "SCONUL मॉडल का प्रथम स्तम्भ 'Identify' (पहचानना) है—अर्थात यह समझना कि मुझे किस सूचना की आवश्यकता है। इसके बाद Scope, Plan, Gather, Evaluate, Manage और Present आते हैं।",
+    "exp_en": "The first pillar in SCONUL's Seven Pillars framework is 'Identify', which entails recognizing a personal or professional need for new information."
+  },
+  {
+    "globalId": "u4_sub4_4_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "भारत में विश्वविद्यालयों, शोध संस्थानों एवं कॉलेजों को आपस में जोड़कर अंतर-पुस्तकालय ऋण (ILL) और प्रलेख आपूर्ति की सबसे बड़ी सुविधा कौन प्रदान करता है?",
+    "q_en": "Which network provides the largest inter-library loan (ILL) and document delivery service across Indian libraries?",
+    "options_hi": [
+      "डेलनेट (DELNET - Developing Library Network, New Delhi)",
+      "इनफ्लिबनेट (INFLIBNET)",
+      "केलिपनेट (CALIBNET)",
+      "मालिबनेट (MALIBNET)"
+    ],
+    "options_en": [
+      "DELNET (Developing Library Network, New Delhi)",
+      "INFLIBNET",
+      "CALIBNET",
+      "MALIBNET"
+    ],
+    "options": [
+      {
+        "hi": "डेलनेट (DELNET - Developing Library Network, New Delhi)",
+        "en": "DELNET (Developing Library Network, New Delhi)"
+      },
+      {
+        "hi": "इनफ्लिबनेट (INFLIBNET)",
+        "en": "INFLIBNET"
+      },
+      {
+        "hi": "केलिपनेट (CALIBNET)",
+        "en": "CALIBNET"
+      },
+      {
+        "hi": "मालिबनेट (MALIBNET)",
+        "en": "MALIBNET"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "DELNET (1988 में स्थापित) भारत का सबसे बड़ा पुस्तकालय नेटवर्क है जो 8,000 से अधिक सदस्य पुस्तकालयों के मध्य संघ सूची के माध्यम से ILL एवं प्रलेख आपूर्ति (DDS) का संचालन करता है।",
+    "exp_en": "DELNET (established in 1988) operates India's most expansive operational ILL and document supply service network spanning thousands of institutional members."
+  },
+  {
+    "globalId": "u4_sub4_4_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "INFLIBNET केंद्र द्वारा प्रबंधित भारतीय विश्वविद्यालयों की ऑनलाइन संघ सूची (Online Union Catalogue) को किस नाम से जाना जाता है?",
+    "q_en": "What is the official name of the Online Union Catalogue of Indian universities hosted and maintained by INFLIBNET Centre?",
+    "options_hi": [
+      "इंडीकैट (IndCat)",
+      "वर्ल्डकैट (WorldCat)",
+      "शोधगंगा (Shodhganga)",
+      "ई-शोधसिंधु (e-ShodhSindhu)"
+    ],
+    "options_en": [
+      "IndCat",
+      "WorldCat",
+      "Shodhganga",
+      "e-ShodhSindhu"
+    ],
+    "options": [
+      {
+        "hi": "इंडीकैट (IndCat)",
+        "en": "IndCat"
+      },
+      {
+        "hi": "वर्ल्डकैट (WorldCat)",
+        "en": "WorldCat"
+      },
+      {
+        "hi": "शोधगंगा (Shodhganga)",
+        "en": "Shodhganga"
+      },
+      {
+        "hi": "ई-शोधसिंधु (e-ShodhSindhu)",
+        "en": "e-ShodhSindhu"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'IndCat' INFLIBNET द्वारा विकसित भारतीय विश्वविद्यालयों का ऑनलाइन संघ कैटलॉग है, जिसमें करोड़ों पुस्तकों, शोध प्रबंधों और पत्रिकाओं का विवरण संकलित है।",
+    "exp_en": "IndCat is the centralized Online Union Catalogue of Indian Universities managed by INFLIBNET Centre, indexing books, theses, and serials across India."
+  },
+  {
+    "globalId": "u4_sub4_4_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "पुस्तकालय सेवाओं के विपणन (Marketing of Library Services) में फिलिप कोटलर के 4 'P' में से 'उत्पाद' (Product) किसे निरूपित करता है?",
+    "q_en": "In the application of Philip Kotler's 4 Ps of Marketing to libraries, what represents the 'Product'?",
+    "options_hi": [
+      "पुस्तकालय भवन की ईंटें और फर्नीचर",
+      "पुस्तकालय में उपलब्ध सूचना सामग्री, पुस्तकें, डेटाबेस एवं संदर्भ सेवाएं (Information resources and services)",
+      "लाइब्रेरियन का वेतन",
+      "पुस्तकालय का वार्षिक बजट"
+    ],
+    "options_en": [
+      "Library bricks and furniture",
+      "Information resources, books, databases, and reference services",
+      "Librarian's salary",
+      "Annual library budget"
+    ],
+    "options": [
+      {
+        "hi": "पुस्तकालय भवन की ईंटें और फर्नीचर",
+        "en": "Library bricks and furniture"
+      },
+      {
+        "hi": "पुस्तकालय में उपलब्ध सूचना सामग्री, पुस्तकें, डेटाबेस एवं संदर्भ सेवाएं (Information resources and services)",
+        "en": "Information resources, books, databases, and reference services"
+      },
+      {
+        "hi": "लाइब्रेरियन का वेतन",
+        "en": "Librarian's salary"
+      },
+      {
+        "hi": "पुस्तकालय का वार्षिक बजट",
+        "en": "Annual library budget"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पुस्तकालय विपणन में 'Product' पुस्तकालय द्वारा दी जाने वाली सूचना सेवाएं, पुस्तकें, शोध-पत्र, कैटलॉग, CAS और SDI सेवाएं होती हैं, जो उपयोगकर्ता की बौद्धिक संतुष्टि करती हैं।",
+    "exp_en": "In library marketing, the 'Product' constitutes the informational assets, bibliographic databases, digital services, and research consultations delivered to patrons."
+  },
+  {
+    "globalId": "u4_sub4_4_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "शोधकर्ताओं और उपयोगकर्ताओं द्वारा अपने प्रकाशित लेखों या शोध प्रबंधों के अंत में दी गई संदर्भ सूचियों का विश्लेषण कर उनकी सूचना आवश्यकताओं का अध्ययन करने वाली विधि क्या कहलाती है?",
+    "q_en": "The user study technique that analyzes bibliographic references appended to users' dissertations/papers to assess their literature needs is termed:",
+    "options_hi": [
+      "उद्धरण विश्लेषण (Citation Analysis)",
+      "साक्षात्कार विधि (Interview method)",
+      "प्रश्नावली विधि (Questionnaire method)",
+      "शेल्फ सत्यापन"
+    ],
+    "options_en": [
+      "Citation Analysis",
+      "Interview method",
+      "Questionnaire method",
+      "Shelf verification"
+    ],
+    "options": [
+      {
+        "hi": "उद्धरण विश्लेषण (Citation Analysis)",
+        "en": "Citation Analysis"
+      },
+      {
+        "hi": "साक्षात्कार विधि (Interview method)",
+        "en": "Interview method"
+      },
+      {
+        "hi": "प्रश्नावली विधि (Questionnaire method)",
+        "en": "Questionnaire method"
+      },
+      {
+        "hi": "शेल्फ सत्यापन",
+        "en": "Shelf verification"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "उद्धरण विश्लेषण (Citation Analysis) एक अप्रत्यक्ष, वस्तुनिष्ठ ग्रंथमितीय विधि है जिसमें उपयोगकर्ताओं द्वारा उद्धृत पत्रिकाओं और पुस्तकों के विश्लेषण से उनकी वास्तविक पठन आवश्यकताओं का पता लगाया जाता है।",
+    "exp_en": "Citation Analysis is an unobtrusive bibliometric user study method evaluating cited references in theses and faculty papers to determine actual collection usage patterns."
+  },
+  {
+    "globalId": "u4_sub4_4_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "'पुस्तकालय अभिविन्यास' (Library Orientation) और 'ग्रंथपरक अनुदेशन' (Bibliographic Instruction) के मध्य मुख्य अंतर क्या है?",
+    "q_en": "What is the key distinction between 'Library Orientation' and 'Bibliographic Instruction'?",
+    "options_hi": [
+      "अभिविन्यास भवन, नियमों व विभागों का सामान्य परिचय है, जबकि ग्रंथपरक अनुदेशन कैटलॉग, इंडेक्स व डेटाबेस में साहित्य खोजने का गहन प्रशिक्षण है",
+      "अभिविन्यास केवल शिक्षकों के लिए होता है",
+      "ग्रंथपरक अनुदेशन में केवल चित्रकारी सिखाई जाती है",
+      "दोनों में कोई अंतर नहीं है"
+    ],
+    "options_en": [
+      "Orientation introduces layout, rules, and sections; Bibliographic Instruction trains patrons in navigating catalogues, indexes, and academic databases",
+      "Orientation is exclusively for faculty members",
+      "Bibliographic instruction teaches painting",
+      "There is no distinction"
+    ],
+    "options": [
+      {
+        "hi": "अभिविन्यास भवन, नियमों व विभागों का सामान्य परिचय है, जबकि ग्रंथपरक अनुदेशन कैटलॉग, इंडेक्स व डेटाबेस में साहित्य खोजने का गहन प्रशिक्षण है",
+        "en": "Orientation introduces layout, rules, and sections; Bibliographic Instruction trains patrons in navigating catalogues, indexes, and academic databases"
+      },
+      {
+        "hi": "अभिविन्यास केवल शिक्षकों के लिए होता है",
+        "en": "Orientation is exclusively for faculty members"
+      },
+      {
+        "hi": "ग्रंथपरक अनुदेशन में केवल चित्रकारी सिखाई जाती है",
+        "en": "Bibliographic instruction teaches painting"
+      },
+      {
+        "hi": "दोनों में कोई अंतर नहीं है",
+        "en": "There is no distinction"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Orientation नवागंतुकों को पुस्तकालय भवन, कर्मचारियों और नियमों से परिचित कराता है (प्रारंभिक स्तर), जबकि Bibliographic Instruction विशिष्ट विषयों में सूचना खोजने, OPAC चलाने और संदर्भ साधनों के उपयोग का व्यावहारिक कौशल सिखाता है।",
+    "exp_en": "Library Orientation provides an overarching tour of facilities and borrowing rules, whereas Bibliographic Instruction imparts concrete tactical skills for information retrieval and database search."
+  },
+  {
+    "globalId": "u4_sub4_4_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "इलेक्ट्रॉनिक प्रलेख वितरण सेवा (EDDS) पारंपरिक प्रलेख वितरण (DDS) से किस प्रकार भिन्न है?",
+    "q_en": "How does Electronic Document Delivery Service (EDDS) fundamentally differ from traditional DDS?",
+    "options_hi": [
+      "इसमें प्रलेखों को डाक से भेजने के बजाय डिजिटल स्वरूप (PDF/इलेक्ट्रॉनिक फाइलों) में कंप्यूटर नेटवर्क व ई-मेल द्वारा भेजा जाता है",
+      "यह केवल हस्तलिखित पांडुलिपियों के लिए होती है",
+      "इसमें कोई कंप्यूटर प्रयुक्त नहीं होता",
+      "यह केवल रेडियो प्रसारण द्वारा दी जाती है"
+    ],
+    "options_en": [
+      "Documents are transmitted in digital formats (PDF/electronic files) via networks and email rather than physical postal mail",
+      "It is strictly used for handwritten manuscripts",
+      "It involves no computers",
+      "It operates via radio broadcast only"
+    ],
+    "options": [
+      {
+        "hi": "इसमें प्रलेखों को डाक से भेजने के बजाय डिजिटल स्वरूप (PDF/इलेक्ट्रॉनिक फाइलों) में कंप्यूटर नेटवर्क व ई-मेल द्वारा भेजा जाता है",
+        "en": "Documents are transmitted in digital formats (PDF/electronic files) via networks and email rather than physical postal mail"
+      },
+      {
+        "hi": "यह केवल हस्तलिखित पांडुलिपियों के लिए होती है",
+        "en": "It is strictly used for handwritten manuscripts"
+      },
+      {
+        "hi": "इसमें कोई कंप्यूटर प्रयुक्त नहीं होता",
+        "en": "It involves no computers"
+      },
+      {
+        "hi": "यह केवल रेडियो प्रसारण द्वारा दी जाती है",
+        "en": "It operates via radio broadcast only"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "EDDS में प्रलेखों को स्कैन कर डिजिटल प्रति (PDF) के रूप में ई-मेल या समर्पित पोर्टल के माध्यम से कुछ ही मिनटों में सीधे उपयोगकर्ता के कंप्यूटर या स्मार्टफोन पर पहुंचा दिया जाता है।",
+    "exp_en": "EDDS digitizes and transmits requested journal articles or chapters electronically over the Internet (via PDF, secure FTP, or portal download), drastically cutting turnaround times."
+  },
+  {
+    "globalId": "u4_sub4_4_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "भारत में विज्ञान एवं प्रौद्योगिकी के क्षेत्र में राष्ट्रीय प्रलेख वितरण केंद्र (National Document Delivery Centre) के रूप में कौन-सी संस्था कार्य करती है?",
+    "q_en": "Which premier institution functions as the national document delivery hub for scientific and technical literature in India?",
+    "options_hi": [
+      "CSIR-NIScPR (पूर्व INSDOC / NISCAIR, नई दिल्ली)",
+      "आईआईएम अहमदाबाद",
+      "राष्ट्रीय अभिलेखागार (National Archives)",
+      "साहित्य अकादमी"
+    ],
+    "options_en": [
+      "CSIR-NIScPR (formerly INSDOC / NISCAIR, New Delhi)",
+      "IIM Ahmedabad",
+      "National Archives of India",
+      "Sahitya Akademi"
+    ],
+    "options": [
+      {
+        "hi": "CSIR-NIScPR (पूर्व INSDOC / NISCAIR, नई दिल्ली)",
+        "en": "CSIR-NIScPR (formerly INSDOC / NISCAIR, New Delhi)"
+      },
+      {
+        "hi": "आईआईएम अहमदाबाद",
+        "en": "IIM Ahmedabad"
+      },
+      {
+        "hi": "राष्ट्रीय अभिलेखागार (National Archives)",
+        "en": "National Archives of India"
+      },
+      {
+        "hi": "साहित्य अकादमी",
+        "en": "Sahitya Akademi"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "CSIR-NIScPR (National Institute of Science Communication and Policy Research, पूर्व INSDOC / NISCAIR) अपने राष्ट्रीय विज्ञान पुस्तकालय (NSL) के माध्यम से भारत भर में वैज्ञानिक प्रलेख आपूर्ति सेवा का प्रमुख केंद्र है।",
+    "exp_en": "CSIR-NIScPR (formerly INSDOC/NISCAIR), housing the National Science Library in New Delhi, has historically served as India's apex Science Document Supply Centre."
+  },
+  {
+    "globalId": "u4_sub4_4_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.4",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+    "q_hi": "SCONUL (UK) द्वारा प्रतिपादित 'Seven Pillars of Information Literacy' में निम्नलिखित में से कौन-सा स्तम्भ सम्मिलित नहीं है?",
+    "q_en": "Which of the following is NOT one of the Seven Pillars of Information Literacy defined by SCONUL (UK)?",
+    "options_hi": [
+      "पहचानना (Identify)",
+      "मूल्यांकन करना (Evaluate)",
+      "पुस्तकों का निरसन एवं छंटाई (Weeding / Discarding of books)",
+      "प्रस्तुत करना (Present)"
+    ],
+    "options_en": [
+      "Identify",
+      "Evaluate",
+      "Weeding / Discarding of books",
+      "Present"
+    ],
+    "options": [
+      {
+        "hi": "पहचानना (Identify)",
+        "en": "Identify"
+      },
+      {
+        "hi": "मूल्यांकन करना (Evaluate)",
+        "en": "Evaluate"
+      },
+      {
+        "hi": "पुस्तकों का निरसन एवं छंटाई (Weeding / Discarding of books)",
+        "en": "Weeding / Discarding of books"
+      },
+      {
+        "hi": "प्रस्तुत करना (Present)",
+        "en": "Present"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "SCONUL के 7 स्तम्भ हैं: Identify, Scope, Plan, Gather, Evaluate, Manage, और Present। पुस्तकों का निरसन (Weeding) संग्रह प्रबंधन की प्रशासनिक प्रक्रिया है, सूचना साक्षरता का स्तम्भ नहीं।",
+    "exp_en": "Weeding is a library collection management operation, not an information literacy competency component within SCONUL's Seven Pillars framework."
+  }
+]

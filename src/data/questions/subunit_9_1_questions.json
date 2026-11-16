@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u9_sub9_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "1837 में 'एनालिटिकल इंजन' (Analytical Engine) की क्रांतिकारी अवधारणा देने के कारण किसे 'कंप्यूटर का जनक' (Father of the Computer) कहा जाता है?",
+    "q_en": "Who is widely acknowledged as the 'Father of the Computer' for designing the revolutionary concept of the Analytical Engine in 1837?",
+    "options_hi": [
+      "एलन ट्यूरिंग (Alan Turing)",
+      "चार्ल्स बैबेज (Charles Babbage)",
+      "जॉन वॉन न्यूमैन (John von Neumann)",
+      "ब्लेज पास्कल (Blaise Pascal)"
+    ],
+    "options_en": [
+      "Alan Turing",
+      "Charles Babbage",
+      "John von Neumann",
+      "Blaise Pascal"
+    ],
+    "options": [
+      {
+        "hi": "एलन ट्यूरिंग (Alan Turing)",
+        "en": "Alan Turing"
+      },
+      {
+        "hi": "चार्ल्स बैबेज (Charles Babbage)",
+        "en": "Charles Babbage"
+      },
+      {
+        "hi": "जॉन वॉन न्यूमैन (John von Neumann)",
+        "en": "John von Neumann"
+      },
+      {
+        "hi": "ब्लेज पास्कल (Blaise Pascal)",
+        "en": "Blaise Pascal"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "चार्ल्स बैबेज ने 1837 में पहले यांत्रिक सामान्य-उद्देश्यीय कंप्यूटर 'एनालिटिकल इंजन' की रूपरेखा बनाई थी, जिसमें इनपुट, मेमोरी, प्रोसेसर और आउटपुट का बुनियादी ढांचा था। अतः उन्हें 'कंप्यूटर का जनक' कहा जाता है।",
+    "exp_en": "Charles Babbage conceptualized the Analytical Engine featuring the fundamental components of modern computers (input, mill/CPU, store/memory, output), earning him the title 'Father of Computer'."
+  },
+  {
+    "globalId": "u9_sub9_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "प्रथम पीढ़ी के कंप्यूटरों (1940-1956) में मुख्य इलेक्ट्रॉनिक गणना घटक (Processing Element) के रूप में किसका उपयोग किया जाता था?",
+    "q_en": "What primary electronic hardware technology was utilized as the core processing and calculating component in First Generation computers (1940-1956)?",
+    "options_hi": [
+      "ट्रांजिस्टर (Transistor)",
+      "वैक्यूम ट्यूब्स (निर्वात नली / Vacuum Tubes)",
+      "इंटीग्रेटेड सर्किट (IC Chips)",
+      "माइक्रोप्रोसेसर (VLSI)"
+    ],
+    "options_en": [
+      "Transistors",
+      "Vacuum Tubes",
+      "Integrated Circuits",
+      "Microprocessors"
+    ],
+    "options": [
+      {
+        "hi": "ट्रांजिस्टर (Transistor)",
+        "en": "Transistors"
+      },
+      {
+        "hi": "वैक्यूम ट्यूब्स (निर्वात नली / Vacuum Tubes)",
+        "en": "Vacuum Tubes"
+      },
+      {
+        "hi": "इंटीग्रेटेड सर्किट (IC Chips)",
+        "en": "Integrated Circuits"
+      },
+      {
+        "hi": "माइक्रोप्रोसेसर (VLSI)",
+        "en": "Microprocessors"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रथम पीढ़ी के कंप्यूटरों (जैसे ENIAC, UNIVAC-1) में वैक्यूम ट्यूब (थर्मिओनिक वाल्व) का प्रयोग होता था। ये आकार में विशाल थे, अत्यधिक ऊष्मा उत्पन्न करते थे तथा मशीन भाषा पर चलते थे।",
+    "exp_en": "First-generation computers relied on vacuum tubes for circuitry and magnetic drums for memory. They dissipated massive heat and were programmed strictly in binary machine language."
+  },
+  {
+    "globalId": "u9_sub9_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "जैक किल्बी द्वारा 1958 में आविष्कृत 'इंटीग्रेटेड सर्किट' (IC Chips) का प्रयोग किस पीढ़ी के कंप्यूटरों से प्रारंभ हुआ?",
+    "q_en": "Integrated Circuits (IC Chips), invented by Jack Kilby in 1958, were incorporated starting from which generation of computers?",
+    "options_hi": [
+      "द्वितीय पीढ़ी (2nd Generation)",
+      "तृतीय पीढ़ी (3rd Generation)",
+      "चतुर्थ पीढ़ी (4th Generation)",
+      "पंचम पीढ़ी (5th Generation)"
+    ],
+    "options_en": [
+      "Second Generation",
+      "Third Generation",
+      "Fourth Generation",
+      "Fifth Generation"
+    ],
+    "options": [
+      {
+        "hi": "द्वितीय पीढ़ी (2nd Generation)",
+        "en": "Second Generation"
+      },
+      {
+        "hi": "तृतीय पीढ़ी (3rd Generation)",
+        "en": "Third Generation"
+      },
+      {
+        "hi": "चतुर्थ पीढ़ी (4th Generation)",
+        "en": "Fourth Generation"
+      },
+      {
+        "hi": "पंचम पीढ़ी (5th Generation)",
+        "en": "Fifth Generation"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "तृतीय पीढ़ी (1964-1971) में ट्रांजिस्टरों के स्थान पर सिलिकॉन पर बनी IC चिप्स (Integrated Circuits) का प्रयोग शुरू हुआ, जिससे कंप्यूटर अत्यधिक छोटे, तेज और विश्वसनीय हो गए।",
+    "exp_en": "Third-generation computers (1964-1971) substituted individual transistors with Integrated Circuits (ICs), vastly augmenting processing speeds and reducing footprint."
+  },
+  {
+    "globalId": "u9_sub9_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "CPU के किस भाग को कंप्यूटर का 'तंत्रिका तंत्र' (Nervous System) या ट्रैफिक पुलिस कहा जाता है, जो निर्देशों को लाने (Fetch) और डिकोड करने का कार्य करता है?",
+    "q_en": "Which unit of the CPU is designated as the 'Nervous System' or traffic controller of the computer, responsible for fetching and decoding instructions?",
+    "options_hi": [
+      "अंकगणित तर्क इकाई (ALU)",
+      "नियंत्रण इकाई (Control Unit - CU)",
+      "मेमोरी यूनिट (MU)",
+      "रजिस्टर्स (Registers)"
+    ],
+    "options_en": [
+      "Arithmetic Logic Unit (ALU)",
+      "Control Unit (CU)",
+      "Memory Unit (MU)",
+      "Registers"
+    ],
+    "options": [
+      {
+        "hi": "अंकगणित तर्क इकाई (ALU)",
+        "en": "Arithmetic Logic Unit (ALU)"
+      },
+      {
+        "hi": "नियंत्रण इकाई (Control Unit - CU)",
+        "en": "Control Unit (CU)"
+      },
+      {
+        "hi": "मेमोरी यूनिट (MU)",
+        "en": "Memory Unit (MU)"
+      },
+      {
+        "hi": "रजिस्टर्स (Registers)",
+        "en": "Registers"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कंट्रोल यूनिट (CU) कंप्यूटर के सभी घटकों के बीच डेटा और निर्देशों के प्रवाह को नियंत्रित व समन्वित करता है। यह मेमोरी से निर्देश लाता है, उन्हें डिकोड करता है और निष्पादन का आदेश देता है।",
+    "exp_en": "The Control Unit (CU) coordinates and supervises all operations of the computer system, directing data flow between the processor, memory, and peripheral devices."
+  },
+  {
+    "globalId": "u9_sub9_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर सिस्टम में सीधे सीपीयू (CPU) के भीतर स्थित सबसे तेज, अति-लघु एवं तुरंत उपलब्ध मेमोरी कौन सी होती है?",
+    "q_en": "Which is the fastest, ultra-low latency, and smallest memory placed directly inside the Central Processing Unit (CPU)?",
+    "options_hi": [
+      "कैश मेमोरी (Cache Memory)",
+      "रजिस्टर्स (Registers)",
+      "रैंडम एक्सेस मेमोरी (RAM)",
+      "सॉलिड स्टेट ड्राइव (SSD)"
+    ],
+    "options_en": [
+      "Cache Memory",
+      "Registers",
+      "Random Access Memory (RAM)",
+      "Solid State Drive (SSD)"
+    ],
+    "options": [
+      {
+        "hi": "कैश मेमोरी (Cache Memory)",
+        "en": "Cache Memory"
+      },
+      {
+        "hi": "रजिस्टर्स (Registers)",
+        "en": "Registers"
+      },
+      {
+        "hi": "रैंडम एक्सेस मेमोरी (RAM)",
+        "en": "Random Access Memory (RAM)"
+      },
+      {
+        "hi": "सॉलिड स्टेट ड्राइव (SSD)",
+        "en": "Solid State Drive (SSD)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रजिस्टर्स (जैसे Program Counter, Accumulator) CPU के आंतरिक भाग होते हैं और मेमोरी पदानुक्रम में सबसे तीव्र गति वाले होते हैं। इनकी गति कैश मेमोरी से भी तेज होती है।",
+    "exp_en": "Registers represent the fastest and top-tier memory in the hierarchy, located directly on the processor core to hold immediate execution data."
+  },
+  {
+    "globalId": "u9_sub9_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर की कौन सी मेमोरी 'वाष्पशील' (Volatile) प्रकृति की होती है, अर्थात् विद्युत आपूर्ति बंद होते ही उसका सारा डेटा नष्ट हो जाता है?",
+    "q_en": "Which type of computer memory is 'Volatile' in nature, meaning all its contents are wiped out as soon as power is turned off?",
+    "options_hi": [
+      "ROM (Read Only Memory)",
+      "RAM (Random Access Memory)",
+      "हार्ड डिस्क (HDD)",
+      "पेन ड्राइव (Flash Drive)"
+    ],
+    "options_en": [
+      "ROM",
+      "RAM",
+      "Hard Disk Drive",
+      "Pen Drive"
+    ],
+    "options": [
+      {
+        "hi": "ROM (Read Only Memory)",
+        "en": "ROM"
+      },
+      {
+        "hi": "RAM (Random Access Memory)",
+        "en": "RAM"
+      },
+      {
+        "hi": "हार्ड डिस्क (HDD)",
+        "en": "Hard Disk Drive"
+      },
+      {
+        "hi": "पेन ड्राइव (Flash Drive)",
+        "en": "Pen Drive"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "RAM (रैंडम एक्सेस मेमोरी) एक अस्थायी/वाष्पशील (Volatile) मेमोरी है। कंप्यूटर चालू रहने तक ही इसमें प्रोग्राम व डेटा रहते हैं, बिजली गुल होते ही डेटा समाप्त हो जाता है।",
+    "exp_en": "RAM is volatile primary memory. It requires continuous electrical power to maintain stored state; shutting down power instantaneously clears its contents."
+  },
+  {
+    "globalId": "u9_sub9_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर को चालू (Boot) करने वाला बुनियादी प्रोग्राम 'BIOS' (Basic Input Output System) स्थायी रूप से किस मेमोरी चिप में संग्रहित (Firmware) रहता है?",
+    "q_en": "The fundamental start-up program 'BIOS' (Basic Input Output System) is permanently etched as firmware in which memory chip?",
+    "options_hi": [
+      "DRAM",
+      "ROM (Read Only Memory)",
+      "SRAM",
+      "कैश मेमोरी"
+    ],
+    "options_en": [
+      "DRAM",
+      "ROM",
+      "SRAM",
+      "Cache Memory"
+    ],
+    "options": [
+      {
+        "hi": "DRAM",
+        "en": "DRAM"
+      },
+      {
+        "hi": "ROM (Read Only Memory)",
+        "en": "ROM"
+      },
+      {
+        "hi": "SRAM",
+        "en": "SRAM"
+      },
+      {
+        "hi": "कैश मेमोरी",
+        "en": "Cache Memory"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "BIOS प्रोग्राम निर्माता कंपनी द्वारा मदरबोर्ड पर स्थित ROM (Read Only Memory) चिप में स्थायी रूप से लिखा जाता है। इसे हार्डवेयर और सॉफ्टवेयर का संयुक्त रूप अर्थात् 'फर्मवेयर' (Firmware) कहते हैं।",
+    "exp_en": "BIOS is burned permanently into the non-volatile ROM chip on the motherboard by the manufacturer, functioning as foundational firmware for hardware bootstrapping."
+  },
+  {
+    "globalId": "u9_sub9_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "अत्यधिक तीव्र गति वाले सीपीयू (CPU) और अपेक्षाकृत धीमी मुख्य मेमोरी (RAM) के मध्य गति के अंतर को पाटने हेतु बफर के रूप में कौन सी मेमोरी कार्य करती है?",
+    "q_en": "Which high-speed memory acts as a buffer between the fast CPU and relatively slower main memory (RAM) to bridge the speed mismatch?",
+    "options_hi": [
+      "वर्चुअल मेमोरी",
+      "कैश मेमोरी (Cache Memory)",
+      "सेकेंडरी स्टोरेज",
+      "फ्लैश मेमोरी"
+    ],
+    "options_en": [
+      "Virtual Memory",
+      "Cache Memory",
+      "Secondary Storage",
+      "Flash Memory"
+    ],
+    "options": [
+      {
+        "hi": "वर्चुअल मेमोरी",
+        "en": "Virtual Memory"
+      },
+      {
+        "hi": "कैश मेमोरी (Cache Memory)",
+        "en": "Cache Memory"
+      },
+      {
+        "hi": "सेकेंडरी स्टोरेज",
+        "en": "Secondary Storage"
+      },
+      {
+        "hi": "फ्लैश मेमोरी",
+        "en": "Flash Memory"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कैश मेमोरी (L1, L2, L3) CPU और RAM के बीच अत्यधिक तीव्र गति की सेमीकंडक्टर मेमोरी है, जो उन डेटा व निर्देशों को रखती है जिनकी CPU को बार-बार आवश्यकता होती है।",
+    "exp_en": "Cache memory (L1/L2/L3) operates as an ultrafast intermediate buffer between processor and system RAM to accelerate instruction throughput."
+  },
+  {
+    "globalId": "u9_sub9_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर डेटा मापन में 1 'निबल' (Nibble) कितने बिट्स (Bits) के बराबर होता है?",
+    "q_en": "In computer data storage measurement, 1 'Nibble' is equivalent to how many bits?",
+    "options_hi": [
+      "2 बिट्स",
+      "4 बिट्स (4 Bits)",
+      "8 बिट्स",
+      "16 बिट्स"
+    ],
+    "options_en": [
+      "2 Bits",
+      "4 Bits",
+      "8 Bits",
+      "16 Bits"
+    ],
+    "options": [
+      {
+        "hi": "2 बिट्स",
+        "en": "2 Bits"
+      },
+      {
+        "hi": "4 बिट्स (4 Bits)",
+        "en": "4 Bits"
+      },
+      {
+        "hi": "8 बिट्स",
+        "en": "8 Bits"
+      },
+      {
+        "hi": "16 बिट्स",
+        "en": "16 Bits"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "4 बिट्स के समूह को 1 निबल (Nibble) कहा जाता है। 8 बिट्स मिलकर 1 बाइट (Byte) बनाते हैं (अतः 1 निबल = आधा बाइट)।",
+    "exp_en": "A sequence of 4 binary digits (bits) constitutes a 'Nibble'. Two nibbles (8 bits) constitute one byte."
+  },
+  {
+    "globalId": "u9_sub9_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "एक मेगाबाइट (1 MB) में कुल कितने किलोबाइट्स (KB) या बाइट्स होते हैं?",
+    "q_en": "How many Kilobytes (KB) or bytes are there in one Megabyte (1 MB)?",
+    "options_hi": [
+      "1000 KB",
+      "1024 KB (अर्थात् 2^20 बाइट्स)",
+      "1024 Bytes",
+      "1048 KB"
+    ],
+    "options_en": [
+      "1000 KB",
+      "1024 KB (i.e. 2^20 Bytes)",
+      "1024 Bytes",
+      "1048 KB"
+    ],
+    "options": [
+      {
+        "hi": "1000 KB",
+        "en": "1000 KB"
+      },
+      {
+        "hi": "1024 KB (अर्थात् 2^20 बाइट्स)",
+        "en": "1024 KB (i.e. 2^20 Bytes)"
+      },
+      {
+        "hi": "1024 Bytes",
+        "en": "1024 Bytes"
+      },
+      {
+        "hi": "1048 KB",
+        "en": "1048 KB"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "द्विआधारी (Binary) प्रणाली में 1 KB = 1024 बाइट्स (2^10), 1 MB = 1024 KB = 10,48,576 बाइट्स (2^20 बाइट्स), तथा 1 GB = 1024 MB होता है।",
+    "exp_en": "In the binary storage system, 1 MB equals 1024 KB, which equates to 1,048,576 bytes ($2^{20}$ bytes)."
+  },
+  {
+    "globalId": "u9_sub9_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "बैंकिंग प्रणाली में चेकों के तीव्र समाशोधन एवं प्रोसेसिंग हेतु चेक के नीचे छपे विशेष 9 अंकों के कोड को पढ़ने के लिए किस इनपुट डिवाइस का उपयोग किया जाता है?",
+    "q_en": "Which specialized input device is utilized in banking clearing systems to scan the 9-digit magnetically printed routing code on bank cheques?",
+    "options_hi": [
+      "OMR (ऑप्टिकल मार्क रीडर)",
+      "MICR (मैग्नेटिक इंक कैरेक्टर रिकॉग्निशन)",
+      "OCR (ऑप्टिकल कैरेक्टर रिकॉग्निशन)",
+      "बारकोड रीडर"
+    ],
+    "options_en": [
+      "OMR",
+      "MICR (Magnetic Ink Character Recognition)",
+      "OCR",
+      "Barcode Reader"
+    ],
+    "options": [
+      {
+        "hi": "OMR (ऑप्टिकल मार्क रीडर)",
+        "en": "OMR"
+      },
+      {
+        "hi": "MICR (मैग्नेटिक इंक कैरेक्टर रिकॉग्निशन)",
+        "en": "MICR (Magnetic Ink Character Recognition)"
+      },
+      {
+        "hi": "OCR (ऑप्टिकल कैरेक्टर रिकॉग्निशन)",
+        "en": "OCR"
+      },
+      {
+        "hi": "बारकोड रीडर",
+        "en": "Barcode Reader"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बैंकों में चेकों पर आयरन ऑक्साइड युक्त चुंबकीय स्याही से छपे 9 अंकों के कोड (MICR कोड: 3 अंक शहर, 3 अंक बैंक, 3 अंक शाखा) को पढ़ने हेतु MICR स्कैनर का उपयोग होता है।",
+    "exp_en": "Magnetic Ink Character Recognition (MICR) technology reads numbers printed with magnetic iron-oxide ink at the bottom of cheques for fast, fraud-resistant sorting."
+  },
+  {
+    "globalId": "u9_sub9_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर में कर्सर संचालन हेतु विश्व के प्रथम 'माउस' (Mouse) का आविष्कार 1964 में किसने किया था?",
+    "q_en": "Who invented the world's first computer 'Mouse' as an interactive pointing device in 1964?",
+    "options_hi": [
+      "टिम बर्नर्स ली",
+      "डगलस एंगेलबर्ट (Douglas Engelbart)",
+      "क्रिस्टोफर शोल्स",
+      "डेनिस रिची"
+    ],
+    "options_en": [
+      "Tim Berners-Lee",
+      "Douglas Engelbart",
+      "Christopher Sholes",
+      "Dennis Ritchie"
+    ],
+    "options": [
+      {
+        "hi": "टिम बर्नर्स ली",
+        "en": "Tim Berners-Lee"
+      },
+      {
+        "hi": "डगलस एंगेलबर्ट (Douglas Engelbart)",
+        "en": "Douglas Engelbart"
+      },
+      {
+        "hi": "क्रिस्टोफर शोल्स",
+        "en": "Christopher Sholes"
+      },
+      {
+        "hi": "डेनिस रिची",
+        "en": "Dennis Ritchie"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "स्टैनफोर्ड रिसर्च इंस्टीट्यूट में डॉ. डगलस एंगेलबर्ट ने 1964 में लकड़ी के खांचे से बने पहले कंप्यूटर माउस का आविष्कार किया था। (क्रिस्टोफर शोल्स ने QWERTY कीबोर्ड बनाया था)।",
+    "exp_en": "Dr. Douglas Engelbart at Stanford Research Institute invented the computer mouse in 1964, originally fashioned from a wooden block with two wheels."
+  },
+  {
+    "globalId": "u9_sub9_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "उच्च गति एवं स्पष्ट छपाई हेतु सूखे पाउडर स्याही 'टोनर' (Toner) तथा लेजर बीम का उपयोग करने वाला सबसे लोकप्रिय नॉन-इम्पैक्ट प्रिंटर कौन सा है?",
+    "q_en": "Which premier non-impact printer uses dry toner powder, an electrostatic drum, and a laser beam to achieve high-speed and crisp document printing?",
+    "options_hi": [
+      "डॉट मैट्रिक्स प्रिंटर (DMP)",
+      "लेजर प्रिंटर (Laser Printer)",
+      "डेज़ी व्हील प्रिंटर",
+      "लाइन प्रिंटर"
+    ],
+    "options_en": [
+      "Dot Matrix Printer",
+      "Laser Printer",
+      "Daisy Wheel Printer",
+      "Line Printer"
+    ],
+    "options": [
+      {
+        "hi": "डॉट मैट्रिक्स प्रिंटर (DMP)",
+        "en": "Dot Matrix Printer"
+      },
+      {
+        "hi": "लेजर प्रिंटर (Laser Printer)",
+        "en": "Laser Printer"
+      },
+      {
+        "hi": "डेज़ी व्हील प्रिंटर",
+        "en": "Daisy Wheel Printer"
+      },
+      {
+        "hi": "लाइन प्रिंटर",
+        "en": "Line Printer"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "लेजर प्रिंटर (Laser Printer) नॉन-इम्पैक्ट श्रेणी का सर्वाधिक तीव्र व उच्च गुणवत्ता वाला पेज प्रिंटर है। यह फोटोकॉपियर की तरह इलेक्ट्रोस्टैटिक तकनीक व सूखे पाउडर टोनर से छपाई करता है।",
+    "exp_en": "Laser printers are high-performance non-impact page printers utilizing xerographic technology, an electrostatic drum, and powdered toner cartridges."
+  },
+  {
+    "globalId": "u9_sub9_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "किसी भी प्रिंटर की छपाई गुणवत्ता और इमेज के तीखेपन (Sharpness) को मानक रूप से किस इकाई में मापा जाता है?",
+    "q_en": "The printing resolution and sharpness of image rendering in computer printers is standardly quantified in which unit?",
+    "options_hi": [
+      "PPM (Pages Per Minute)",
+      "DPI (Dots Per Inch)",
+      "CPS (Characters Per Second)",
+      "BPS (Bits Per Second)"
+    ],
+    "options_en": [
+      "PPM (Pages Per Minute)",
+      "DPI (Dots Per Inch)",
+      "CPS (Characters Per Second)",
+      "BPS (Bits Per Second)"
+    ],
+    "options": [
+      {
+        "hi": "PPM (Pages Per Minute)",
+        "en": "PPM (Pages Per Minute)"
+      },
+      {
+        "hi": "DPI (Dots Per Inch)",
+        "en": "DPI (Dots Per Inch)"
+      },
+      {
+        "hi": "CPS (Characters Per Second)",
+        "en": "CPS (Characters Per Second)"
+      },
+      {
+        "hi": "BPS (Bits Per Second)",
+        "en": "BPS (Bits Per Second)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रिंटर का रेजोल्यूशन (गुणवत्ता) DPI (डॉट्स प्रति इंच) में मापा जाता है। प्रति इंच जितने अधिक डॉट्स होंगे, प्रिंट उतना ही स्पष्ट होगा। (प्रिंटर की गति PPM - पेज प्रति मिनट में मापी जाती है)।",
+    "exp_en": "Printer output resolution is measured in DPI (Dots Per Inch). A higher DPI corresponds to greater dot density and sharper image reproduction. (Speed is measured in PPM)."
+  },
+  {
+    "globalId": "u9_sub9_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.1",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+    "subUnitTitle_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+    "q_hi": "आर्किटेक्ट्स, इंजीनियरों तथा सिटी प्लानर्स द्वारा बड़े इंजीनियरिंग नक्शे, आर्किटेक्चरल डिज़ाइन और विस्तृत ग्राफिक्स प्रिंट करने हेतु किस विशेष आउटपुट डिवाइस का उपयोग किया जाता है?",
+    "q_en": "Which specialized vector-based output hardware is used by architects and structural engineers to produce high-precision large blueprints, maps, and engineering drawings?",
+    "options_hi": [
+      "डॉट मैट्रिक्स प्रिंटर",
+      "प्लॉटर (Plotter)",
+      "इंकजेट प्रिंटर",
+      "स्कैनर"
+    ],
+    "options_en": [
+      "Dot Matrix Printer",
+      "Plotter",
+      "Inkjet Printer",
+      "Scanner"
+    ],
+    "options": [
+      {
+        "hi": "डॉट मैट्रिक्स प्रिंटर",
+        "en": "Dot Matrix Printer"
+      },
+      {
+        "hi": "प्लॉटर (Plotter)",
+        "en": "Plotter"
+      },
+      {
+        "hi": "इंकजेट प्रिंटर",
+        "en": "Inkjet Printer"
+      },
+      {
+        "hi": "स्कैनर",
+        "en": "Scanner"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्लॉटर (Plotter) एक विशिष्ट हार्ड-कॉपी आउटपुट डिवाइस है जो पेन या स्याही नोजल द्वारा बड़े आकारों के कागजों/शीट्स पर निरंतर वेक्टर रेखाएं खींचकर उच्च परिशुद्धता वाले नक्शे और ब्लू-प्रिंट तैयार करता है।",
+    "exp_en": "Plotters are specialized graphics output devices that use vector drawing mechanisms to generate large-format architectural blueprints, CAD designs, and topographic maps."
+  }
+]

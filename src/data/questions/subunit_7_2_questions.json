@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u7_sub7_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बिहार का कुल भौगोलिक क्षेत्रफल कितना है और यह भारत के कुल क्षेत्रफल का कितना प्रतिशत है?",
+    "q_en": "What is the total geographical area of Bihar and what percentage of India's total area does it constitute?",
+    "options_hi": [
+      "94,163 वर्ग किमी (2.86%)",
+      "88,240 वर्ग किमी (3.12%)",
+      "1,04,210 वर्ग किमी (4.02%)",
+      "92,500 वर्ग किमी (2.55%)"
+    ],
+    "options_en": [
+      "94,163 sq km (2.86%)",
+      "88,240 sq km (3.12%)",
+      "1,04,210 sq km (4.02%)",
+      "92,500 sq km (2.55%)"
+    ],
+    "options": [
+      {
+        "hi": "94,163 वर्ग किमी (2.86%)",
+        "en": "94,163 sq km (2.86%)"
+      },
+      {
+        "hi": "88,240 वर्ग किमी (3.12%)",
+        "en": "88,240 sq km (3.12%)"
+      },
+      {
+        "hi": "1,04,210 वर्ग किमी (4.02%)",
+        "en": "1,04,210 sq km (4.02%)"
+      },
+      {
+        "hi": "92,500 वर्ग किमी (2.55%)",
+        "en": "92,500 sq km (2.55%)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "बिहार का कुल क्षेत्रफल 94,163 वर्ग किलोमीटर है, जो भारत के कुल क्षेत्रफल का 2.86% है। क्षेत्रफल के आधार पर यह देश का 12वां सबसे बड़ा राज्य है (जम्मू-कश्मीर पुनर्गठन के बाद)।",
+    "exp_en": "The total area of Bihar is 94,163 sq km, representing 2.86% of India's total geographical expanse. By area, it ranks 12th among Indian states."
+  },
+  {
+    "globalId": "u7_sub7_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बिहार राज्य की सबसे ऊंची पर्वत चोटी निम्नलिखित में से कौन सी है और यह किस जिले में स्थित है?",
+    "q_en": "Which among the following is the highest mountain peak of Bihar and in which district is it located?",
+    "options_hi": [
+      "कैमूर पहाड़ी (रोहतास)",
+      "सोमेश्वर श्रेणी (पश्चिम चंपारण)",
+      "खड़गपुर पहाड़ी (मुंगेर)",
+      "बराबर पहाड़ी (जहानाबाद)"
+    ],
+    "options_en": [
+      "Kaimur Hill (Rohtas)",
+      "Someshwar Range (West Champaran)",
+      "Kharagpur Hill (Munger)",
+      "Barabar Hill (Jehanabad)"
+    ],
+    "options": [
+      {
+        "hi": "कैमूर पहाड़ी (रोहतास)",
+        "en": "Kaimur Hill (Rohtas)"
+      },
+      {
+        "hi": "सोमेश्वर श्रेणी (पश्चिम चंपारण)",
+        "en": "Someshwar Range (West Champaran)"
+      },
+      {
+        "hi": "खड़गपुर पहाड़ी (मुंगेर)",
+        "en": "Kharagpur Hill (Munger)"
+      },
+      {
+        "hi": "बराबर पहाड़ी (जहानाबाद)",
+        "en": "Barabar Hill (Jehanabad)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पश्चिम चंपारण जिले के पश्चिमोत्तर भाग में स्थित सोमेश्वर श्रेणी (Someshwar Range / Peak) की ऊंचाई 874 मीटर (लगभग 2,884 फीट) है, जो बिहार की सर्वोच्च भौगोलिक चोटी है।",
+    "exp_en": "Located in the north-western part of West Champaran district, the Someshwar Peak (874 meters / 2,884 feet) is the highest geographical peak in Bihar."
+  },
+  {
+    "globalId": "u7_sub7_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "गंगा नदी बिहार के कुल कितने जिलों से होकर प्रवाहित होती है और किस जिले में इसकी लंबाई सर्वाधिक है?",
+    "q_en": "Through how many districts of Bihar does the River Ganga flow, and in which district is its length the maximum?",
+    "options_hi": [
+      "10 जिले (भागलपुर में सर्वाधिक)",
+      "12 जिले (पटना में सर्वाधिक - 99 किमी)",
+      "14 जिले (मुंगेर में सर्वाधिक)",
+      "8 जिले (कटिहार में सर्वाधिक)"
+    ],
+    "options_en": [
+      "10 districts (Maximum in Bhagalpur)",
+      "12 districts (Maximum in Patna - 99 km)",
+      "14 districts (Maximum in Munger)",
+      "8 districts (Maximum in Katihar)"
+    ],
+    "options": [
+      {
+        "hi": "10 जिले (भागलपुर में सर्वाधिक)",
+        "en": "10 districts (Maximum in Bhagalpur)"
+      },
+      {
+        "hi": "12 जिले (पटना में सर्वाधिक - 99 किमी)",
+        "en": "12 districts (Maximum in Patna - 99 km)"
+      },
+      {
+        "hi": "14 जिले (मुंगेर में सर्वाधिक)",
+        "en": "14 districts (Maximum in Munger)"
+      },
+      {
+        "hi": "8 जिले (कटिहार में सर्वाधिक)",
+        "en": "8 districts (Maximum in Katihar)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "गंगा नदी बिहार के 12 जिलों (बक्सर, भोजपुर, सारण, पटना, वैशाली, समस्तीपुर, बेगूसराय, लखीसराय, मुंगेर, खगड़िया, भागलपुर, कटिहार) से होकर बहती है। इसकी सर्वाधिक लंबाई पटना जिले में (99 किमी) है।",
+    "exp_en": "The Ganga traverses 12 districts in Bihar with a total state length of 445 km. Its single longest stretch is within Patna district (99 km)."
+  },
+  {
+    "globalId": "u7_sub7_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बार-बार अपना प्रवाह मार्ग बदलने तथा विनाशकारी बाढ़ लाने के कारण किस नदी को 'बिहार का शोक' (Sorrow of Bihar) कहा जाता है?",
+    "q_en": "Which river is widely known as the 'Sorrow of Bihar' due to its frequent shifting of courses and catastrophic floods?",
+    "options_hi": [
+      "गंडक नदी",
+      "बूढ़ी गंडक नदी",
+      "कोसी नदी",
+      "कमला नदी"
+    ],
+    "options_en": [
+      "Gandak River",
+      "Budhi Gandak River",
+      "Kosi River",
+      "Kamla River"
+    ],
+    "options": [
+      {
+        "hi": "गंडक नदी",
+        "en": "Gandak River"
+      },
+      {
+        "hi": "बूढ़ी गंडक नदी",
+        "en": "Budhi Gandak River"
+      },
+      {
+        "hi": "कोसी नदी",
+        "en": "Kosi River"
+      },
+      {
+        "hi": "कमला नदी",
+        "en": "Kamla River"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "कोसी नदी (सप्तकोशी) हिमालय से भारी मात्रा में गाद (silt) लाती है, जिससे इसका तल भर जाता है और यह मार्ग बदल लेती है। यह कटिहार के कुर्सेला के निकट गंगा में मिलती है। इसे 'बिहार का शोक' कहा जाता है।",
+    "exp_en": "The Kosi River carries immense silt from the Himalayas, causing channel avulsion and severe flooding. It meets the Ganga near Kursela (Katihar) and is called the 'Sorrow of Bihar'."
+  },
+  {
+    "globalId": "u7_sub7_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "धार्मिक मान्यताओं और लोक परंपराओं में बिहार की किस नदी को 'अशुभ या अपवित्र' माना जाता है, जो चौसा के पास गंगा में मिलती है?",
+    "q_en": "Which river in Bihar is traditionally considered 'inauspicious or unholy' in religious beliefs, joining the Ganga near Chausa?",
+    "options_hi": [
+      "पुनपुन नदी",
+      "कर्मनाशा नदी",
+      "फल्गु नदी",
+      "सोन नदी"
+    ],
+    "options_en": [
+      "Punpun River",
+      "Karmanasa River",
+      "Falgu River",
+      "Son River"
+    ],
+    "options": [
+      {
+        "hi": "पुनपुन नदी",
+        "en": "Punpun River"
+      },
+      {
+        "hi": "कर्मनाशा नदी",
+        "en": "Karmanasa River"
+      },
+      {
+        "hi": "फल्गु नदी",
+        "en": "Falgu River"
+      },
+      {
+        "hi": "सोन नदी",
+        "en": "Son River"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कर्मनाशा नदी (नाम का अर्थ: 'कर्मों का नाश करने वाली') कैमूर पहाड़ियों से निकलती है और चौसा (बक्सर) के निकट गंगा में मिलती है। इसे पौराणिक रूप से अपवित्र माना जाता है।",
+    "exp_en": "The Karmanasa River (meaning 'destroyer of deeds') originates in the Kaimur hills and joins the Ganga near Chausa. Historically, touching its water was deemed inauspicious."
+  },
+  {
+    "globalId": "u7_sub7_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बंगाल की खाड़ी की मानसूनी शाखा से बिहार के किस जिले में सर्वाधिक औसत वार्षिक वर्षा दर्ज की जाती है?",
+    "q_en": "Which district of Bihar records the highest average annual rainfall from the Bay of Bengal branch of the southwest monsoon?",
+    "options_hi": [
+      "पश्चिम चंपारण",
+      "किशनगंज",
+      "अररिया",
+      "गया"
+    ],
+    "options_en": [
+      "West Champaran",
+      "Kishanganj",
+      "Araria",
+      "Gaya"
+    ],
+    "options": [
+      {
+        "hi": "पश्चिम चंपारण",
+        "en": "West Champaran"
+      },
+      {
+        "hi": "किशनगंज",
+        "en": "Kishanganj"
+      },
+      {
+        "hi": "अररिया",
+        "en": "Araria"
+      },
+      {
+        "hi": "गया",
+        "en": "Gaya"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बिहार के उत्तर-पूर्वी कोने पर स्थित किशनगंज जिले में दक्षिण-पश्चिम मानसून की बंगाल की खाड़ी शाखा से सबसे पहले वर्षा शुरू होती है और राज्य में सर्वाधिक औसत वर्षा (180 सेमी से अधिक) यहीं होती है।",
+    "exp_en": "Kishanganj, situated at Bihar's north-eastern corner, receives the earliest and highest average annual rainfall (exceeding 180 cm) via the Bay of Bengal monsoon branch."
+  },
+  {
+    "globalId": "u7_sub7_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बिहार का एकमात्र राष्ट्रीय उद्यान (National Park) एवं बाघ अभयारण्य 'वाल्मीकि राष्ट्रीय उद्यान' किस जिले में स्थित है?",
+    "q_en": "In which district is 'Valmiki National Park', the sole National Park and Tiger Reserve of Bihar, situated?",
+    "options_hi": [
+      "कैमूर",
+      "पश्चिम चंपारण",
+      "पूर्वी चंपारण",
+      "रोहतास"
+    ],
+    "options_en": [
+      "Kaimur",
+      "West Champaran",
+      "East Champaran",
+      "Rohtas"
+    ],
+    "options": [
+      {
+        "hi": "कैमूर",
+        "en": "Kaimur"
+      },
+      {
+        "hi": "पश्चिम चंपारण",
+        "en": "West Champaran"
+      },
+      {
+        "hi": "पूर्वी चंपारण",
+        "en": "East Champaran"
+      },
+      {
+        "hi": "रोहतास",
+        "en": "Rohtas"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "वाल्मीकि राष्ट्रीय उद्यान एवं टाइगर रिजर्व पश्चिम चंपारण जिले में नेपाल की सीमा पर स्थित है। यह बिहार का एकमात्र राष्ट्रीय उद्यान है (दूसरा टाइगर रिजर्व कैमूर में प्रस्तावित है)।",
+    "exp_en": "Valmiki National Park and Tiger Reserve is located in West Champaran bordering Nepal. It is the only national park in Bihar (a second tiger reserve is proposed in Kaimur)."
+  },
+  {
+    "globalId": "u7_sub7_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "एशिया की सबसे बड़ी मीठे पानी की गोखुर झील (Oxbow Lake) 'कावर झील' (कबरताल) किस जिले में स्थित है, जिसे बिहार का प्रथम रामसर स्थल घोषित किया गया है?",
+    "q_en": "In which district is 'Kabar Tal' (Kanwar Lake), Asia's largest freshwater oxbow lake, located, which was declared Bihar's first Ramsar site?",
+    "options_hi": [
+      "दरभंगा",
+      "कटिहार",
+      "बेगूसराय",
+      "सहरसा"
+    ],
+    "options_en": [
+      "Darbhanga",
+      "Katihar",
+      "Begusarai",
+      "Saharsa"
+    ],
+    "options": [
+      {
+        "hi": "दरभंगा",
+        "en": "Darbhanga"
+      },
+      {
+        "hi": "कटिहार",
+        "en": "Katihar"
+      },
+      {
+        "hi": "बेगूसराय",
+        "en": "Begusarai"
+      },
+      {
+        "hi": "सहरसा",
+        "en": "Saharsa"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "बेगूसराय जिले में स्थित कावर झील (कबरताल) बूढ़ी गंडक नदी के विसर्पण से बनी एशिया की सबसे बड़ी गोखुर झील है। इसे 2020 में भारत का 39वां और बिहार का पहला 'रामसर आर्द्रभूमि स्थल' घोषित किया गया।",
+    "exp_en": "Kabar Tal (Kanwar Lake) in Begusarai is Asia's largest freshwater oxbow lake formed by the meandering of Budhi Gandak. In 2020, it became Bihar's first Ramsar wetland site (39th in India)."
+  },
+  {
+    "globalId": "u7_sub7_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "भारत के कुल भंडार का लगभग 95% 'पाइराइट्स' (Pyrites - गंधक का मुख्य स्रोत) बिहार के किस स्थान पर पाया जाता है?",
+    "q_en": "About 95% of India's total reserves of 'Pyrites' (the principal ore of sulfur) is found at which location in Bihar?",
+    "options_hi": [
+      "अमझोर (रोहतास)",
+      "सोनो (जमुई)",
+      "रजौली (नवादा)",
+      "खड़गपुर (मुंगेर)"
+    ],
+    "options_en": [
+      "Amjhor (Rohtas)",
+      "Sono (Jamui)",
+      "Rajauli (Nawada)",
+      "Kharagpur (Munger)"
+    ],
+    "options": [
+      {
+        "hi": "अमझोर (रोहतास)",
+        "en": "Amjhor (Rohtas)"
+      },
+      {
+        "hi": "सोनो (जमुई)",
+        "en": "Sono (Jamui)"
+      },
+      {
+        "hi": "रजौली (नवादा)",
+        "en": "Rajauli (Nawada)"
+      },
+      {
+        "hi": "खड़गपुर (मुंगेर)",
+        "en": "Kharagpur (Munger)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "रोहतास जिले का अमझोर क्षेत्र भारत में पाइराइट्स का सबसे बड़ा उत्पादक व भंडार स्थल है (देश का लगभग 95%)। यहां पाइराइट्स फॉस्फेट्स एंड केमिकल्स लिमिटेड (PPCL) का कारखाना भी स्थित रहा है।",
+    "exp_en": "Amjhor in Rohtas district contains about 95% of India's total pyrite resources, used primarily in sulfuric acid and fertilizer production."
+  },
+  {
+    "globalId": "u7_sub7_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "भारतीय भूवैज्ञानिक सर्वेक्षण (GSI) के सर्वेक्षण के अनुसार देश का सबसे बड़ा प्राथमिक 'स्वर्ण भंडार' (Gold Reserves) बिहार के किस जिले में आकलित किया गया है?",
+    "q_en": "According to the Geological Survey of India (GSI), the country's largest primary 'Gold Reserves' have been estimated in which district of Bihar?",
+    "options_hi": [
+      "गया",
+      "जमुई (सोनो प्रखंड)",
+      "बांका",
+      "औरंगाबाद"
+    ],
+    "options_en": [
+      "Gaya",
+      "Jamui (Sono block)",
+      "Banka",
+      "Aurangabad"
+    ],
+    "options": [
+      {
+        "hi": "गया",
+        "en": "Gaya"
+      },
+      {
+        "hi": "जमुई (सोनो प्रखंड)",
+        "en": "Jamui (Sono block)"
+      },
+      {
+        "hi": "बांका",
+        "en": "Banka"
+      },
+      {
+        "hi": "औरंगाबाद",
+        "en": "Aurangabad"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "GSI के अनुसार जमुई जिले के सोनो प्रखंड में 222.88 मिलियन टन स्वर्ण धातु युक्त अयस्क (भारत के कुल स्वर्ण भंडार का लगभग 44%) होने का अनुमान लगाया गया है।",
+    "exp_en": "According to GSI findings, Jamui district's Sono block hosts an estimated 222.88 million tonnes of gold ore containing about 44% of India's total gold reserves."
+  },
+  {
+    "globalId": "u7_sub7_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "जनगणना 2011 के अनुसार बिहार का जनसंख्या घनत्व (Population Density) कितना है, जो सभी भारतीय राज्यों में सर्वोच्च है?",
+    "q_en": "As per Census 2011, what is the population density of Bihar, which is the highest among all Indian states?",
+    "options_hi": [
+      "1,106 व्यक्ति प्रति वर्ग किमी",
+      "1,028 व्यक्ति प्रति वर्ग किमी",
+      "980 व्यक्ति प्रति वर्ग किमी",
+      "860 व्यक्ति प्रति वर्ग किमी"
+    ],
+    "options_en": [
+      "1,106 persons per sq km",
+      "1,028 persons per sq km",
+      "980 persons per sq km",
+      "860 persons per sq km"
+    ],
+    "options": [
+      {
+        "hi": "1,106 व्यक्ति प्रति वर्ग किमी",
+        "en": "1,106 persons per sq km"
+      },
+      {
+        "hi": "1,028 व्यक्ति प्रति वर्ग किमी",
+        "en": "1,028 persons per sq km"
+      },
+      {
+        "hi": "980 व्यक्ति प्रति वर्ग किमी",
+        "en": "980 persons per sq km"
+      },
+      {
+        "hi": "860 व्यक्ति प्रति वर्ग किमी",
+        "en": "860 persons per sq km"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "2011 की जनगणना के अनुसार बिहार का जनसंख्या घनत्व 1,106 व्यक्ति प्रति वर्ग किमी है, जो पश्चिम बंगाल (1,028) को पीछे छोड़ते हुए सभी राज्यों में शीर्ष स्थान पर है।",
+    "exp_en": "Bihar's population density in Census 2011 is 1,106 persons per sq km, making it the most densely populated state in India ahead of West Bengal (1,028)."
+  },
+  {
+    "globalId": "u7_sub7_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "2011 की जनगणना के अनुसार बिहार में सर्वाधिक जनसंख्या घनत्व वाला जिला कौन सा है?",
+    "q_en": "Which district in Bihar recorded the highest population density according to Census 2011?",
+    "options_hi": [
+      "पटना (Patna)",
+      "शिवहर (Sheohar)",
+      "दरभंगा (Darbhanga)",
+      "वैशाली (Vaishali)"
+    ],
+    "options_en": [
+      "Patna",
+      "Sheohar",
+      "Darbhanga",
+      "Vaishali"
+    ],
+    "options": [
+      {
+        "hi": "पटना (Patna)",
+        "en": "Patna"
+      },
+      {
+        "hi": "शिवहर (Sheohar)",
+        "en": "Sheohar"
+      },
+      {
+        "hi": "दरभंगा (Darbhanga)",
+        "en": "Darbhanga"
+      },
+      {
+        "hi": "वैशाली (Vaishali)",
+        "en": "Vaishali"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "शिवहर जिला बिहार का सर्वाधिक जनसंख्या घनत्व वाला जिला है (1,880 व्यक्ति प्रति वर्ग किमी), जबकि सबसे कम जनसंख्या घनत्व कैमूर (488 व्यक्ति प्रति वर्ग किमी) में है।",
+    "exp_en": "Sheohar district has the highest population density in Bihar (1,880 persons/sq km), whereas Kaimur has the lowest (488 persons/sq km)."
+  },
+  {
+    "globalId": "u7_sub7_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "2011 की जनगणना के अनुसार बिहार में प्रति 1000 पुरुषों पर 1021 महिलाओं के साथ सर्वोच्च लिंगानुपात (Sex Ratio) वाला जिला कौन सा है?",
+    "q_en": "Which district in Bihar recorded the highest Sex Ratio with 1021 females per 1000 males as per Census 2011?",
+    "options_hi": [
+      "सीवान",
+      "गोपालगंज",
+      "सारण",
+      "किशनगंज"
+    ],
+    "options_en": [
+      "Siwan",
+      "Gopalganj",
+      "Saran",
+      "Kishanganj"
+    ],
+    "options": [
+      {
+        "hi": "सीवान",
+        "en": "Siwan"
+      },
+      {
+        "hi": "गोपालगंज",
+        "en": "Gopalganj"
+      },
+      {
+        "hi": "सारण",
+        "en": "Saran"
+      },
+      {
+        "hi": "किशनगंज",
+        "en": "Kishanganj"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "गोपालगंज बिहार का एकमात्र जिला है जहां लिंगानुपात 1000 से अधिक (1021) है। बिहार का औसत लिंगानुपात 918 है, जबकि सबसे कम लिंगानुपात मुंगेर (876) में है।",
+    "exp_en": "Gopalganj is the only district in Bihar with a sex ratio exceeding 1000 (1021 females/1000 males). State average is 918, and Munger has the lowest (876)."
+  },
+  {
+    "globalId": "u7_sub7_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "जनगणना 2011 के अनुसार बिहार की कुल साक्षरता दर (Total Literacy Rate) कितनी दर्ज की गई है?",
+    "q_en": "What was the total literacy rate recorded for Bihar according to Census 2011?",
+    "options_hi": [
+      "61.80%",
+      "65.40%",
+      "58.20%",
+      "53.70%"
+    ],
+    "options_en": [
+      "61.80%",
+      "65.40%",
+      "58.20%",
+      "53.70%"
+    ],
+    "options": [
+      {
+        "hi": "61.80%",
+        "en": "61.80%"
+      },
+      {
+        "hi": "65.40%",
+        "en": "65.40%"
+      },
+      {
+        "hi": "58.20%",
+        "en": "58.20%"
+      },
+      {
+        "hi": "53.70%",
+        "en": "53.70%"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "2011 की जनगणना के अनुसार बिहार की कुल साक्षरता दर 61.80% है (पुरुष साक्षरता: 71.20% तथा महिला साक्षरता: 51.50%)। यह देश में न्यूनतम साक्षरता दर वाला राज्य है।",
+    "exp_en": "As per Census 2011, Bihar's overall literacy rate is 61.80% (Male: 71.20%, Female: 51.50%), placing it at the bottom among all Indian states."
+  },
+  {
+    "globalId": "u7_sub7_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_07",
+    "unitNum": 7,
+    "subUnitNum": "7.2",
+    "unitTitle_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "unitTitle_en": "Bihar GK: History, Geography and Culture",
+    "subUnitTitle_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+    "subUnitTitle_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+    "q_hi": "बिहार का वह कौन सा एकमात्र जिला है जो कुल साक्षरता, पुरुष साक्षरता एवं महिला साक्षरता तीनों श्रेणियों में राज्य में प्रथम स्थान पर है?",
+    "q_en": "Which is the only district in Bihar that ranks first in the state across all three categories: total literacy, male literacy, and female literacy?",
+    "options_hi": [
+      "पटना (Patna)",
+      "रोहतास (Rohtas)",
+      "मुंगेर (Munger)",
+      "भागलपुर (Bhagalpur)"
+    ],
+    "options_en": [
+      "Patna",
+      "Rohtas",
+      "Munger",
+      "Bhagalpur"
+    ],
+    "options": [
+      {
+        "hi": "पटना (Patna)",
+        "en": "Patna"
+      },
+      {
+        "hi": "रोहतास (Rohtas)",
+        "en": "Rohtas"
+      },
+      {
+        "hi": "मुंगेर (Munger)",
+        "en": "Munger"
+      },
+      {
+        "hi": "भागलपुर (Bhagalpur)",
+        "en": "Bhagalpur"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रोहतास जिला कुल साक्षरता (73.37%), पुरुष साक्षरता (82.88%) और महिला साक्षरता (62.97%) — तीनों में बिहार में सर्वोच्च स्थान पर है। न्यूनतम कुल साक्षरता पूर्णिया (51.08%) तथा न्यूनतम महिला साक्षरता सहरसा (41.68%) में है।",
+    "exp_en": "Rohtas district tops Bihar in all three dimensions: total literacy (73.37%), male literacy (82.88%), and female literacy (62.97%). Purnia has the lowest overall and Saharsa the lowest female literacy."
+  }
+]

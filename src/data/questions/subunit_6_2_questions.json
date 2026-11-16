@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u6_sub6_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "विश्व भर में 10-अंकीय ISBN को 13-अंकीय ISBN में औपचारिक रूप से किस तिथि से परिवर्तित किया गया था?",
+    "q_en": "On which date did the global transition from a 10-digit ISBN to a 13-digit ISBN officially take effect under ISO 2108?",
+    "options_hi": [
+      "1 जनवरी 2000",
+      "1 जनवरी 2007 (1st January 2007)",
+      "1 जनवरी 2010",
+      "15 अगस्त 2015"
+    ],
+    "options_en": [
+      "1st January 2000",
+      "1st January 2007",
+      "1st January 2010",
+      "15th August 2015"
+    ],
+    "options": [
+      {
+        "hi": "1 जनवरी 2000",
+        "en": "1st January 2000"
+      },
+      {
+        "hi": "1 जनवरी 2007 (1st January 2007)",
+        "en": "1st January 2007"
+      },
+      {
+        "hi": "1 जनवरी 2010",
+        "en": "1st January 2010"
+      },
+      {
+        "hi": "15 अगस्त 2015",
+        "en": "15th August 2015"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "1 जनवरी 2007 से अंतरराष्ट्रीय मानक संगठन (ISO) ने 10-अंकीय ISBN को 13-अंकीय ISBN में परिवर्तित कर दिया ताकि यह EAN-13 वैश्विक बारकोड प्रणाली से पूर्णतः सुसंगत हो सके।",
+    "exp_en": "The global publishing ecosystem officially transitioned to 13-digit ISBNs on January 1, 2007 to align with the EAN-13 universal barcode symbology."
+  },
+  {
+    "globalId": "u6_sub6_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "एक 13-अंकीय ISBN (International Standard Book Number) में कुल कितने भाग / खंड (Parts) होते हैं?",
+    "q_en": "How many distinct parts/segments separated by hyphens comprise a standard 13-digit ISBN?",
+    "options_hi": [
+      "3 भाग",
+      "4 भाग",
+      "5 भाग (Five Parts)",
+      "7 भाग"
+    ],
+    "options_en": [
+      "3 Parts",
+      "4 Parts",
+      "5 Parts",
+      "7 Parts"
+    ],
+    "options": [
+      {
+        "hi": "3 भाग",
+        "en": "3 Parts"
+      },
+      {
+        "hi": "4 भाग",
+        "en": "4 Parts"
+      },
+      {
+        "hi": "5 भाग (Five Parts)",
+        "en": "5 Parts"
+      },
+      {
+        "hi": "7 भाग",
+        "en": "7 Parts"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "13-अंकीय ISBN में 5 भाग होते हैं: (1) GS1 उपसर्ग (978 या 979), (2) पंजीकरण समूह/देश कोड (भारत हेतु 81/93), (3) प्रकाशक कोड, (4) शीर्षक/संस्करण कोड, और (5) जांच अंक (Check Digit)।",
+    "exp_en": "A 13-digit ISBN comprises 5 parts: (1) GS1 Prefix (978/979), (2) Registration Group (Country), (3) Registrant (Publisher), (4) Publication (Title), and (5) Check digit."
+  },
+  {
+    "globalId": "u6_sub6_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारत में प्रकाशकों एवं लेखकों को अंतरराष्ट्रीय मानक पुस्तक संख्या (ISBN) आवंटित करने वाली राष्ट्रीय नोडल एजेंसी कौन-सी है?",
+    "q_en": "Which official national agency is authorized to allocate International Standard Book Numbers (ISBN) to publishers in India?",
+    "options_hi": [
+      "राजा राममोहन राय राष्ट्रीय ISBN एजेंसी (RRRNA, नई दिल्ली)",
+      "राष्ट्रीय पुस्तकालय, कोलकाता",
+      "साहित्य अकादमी, नई दिल्ली",
+      "सीएसआईआर-निस्पर (CSIR-NIScPR)"
+    ],
+    "options_en": [
+      "Raja Rammohun Roy National Agency for ISBN (RRRNA, New Delhi)",
+      "National Library of India, Kolkata",
+      "Sahitya Akademi, New Delhi",
+      "CSIR-NIScPR"
+    ],
+    "options": [
+      {
+        "hi": "राजा राममोहन राय राष्ट्रीय ISBN एजेंसी (RRRNA, नई दिल्ली)",
+        "en": "Raja Rammohun Roy National Agency for ISBN (RRRNA, New Delhi)"
+      },
+      {
+        "hi": "राष्ट्रीय पुस्तकालय, कोलकाता",
+        "en": "National Library of India, Kolkata"
+      },
+      {
+        "hi": "साहित्य अकादमी, नई दिल्ली",
+        "en": "Sahitya Akademi, New Delhi"
+      },
+      {
+        "hi": "सीएसआईआर-निस्पर (CSIR-NIScPR)",
+        "en": "CSIR-NIScPR"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "केंद्रीय शिक्षा मंत्रालय के उच्च शिक्षा विभाग के अधीन कार्यरत 'राजा राममोहन राय राष्ट्रीय ISBN एजेंसी' (RRRNA, नई दिल्ली) भारत में ISBN आवंटित करने वाली एकमात्र अधिकृत राष्ट्रीय संस्था है।",
+    "exp_en": "Raja Rammohun Roy National Agency for ISBN (RRRNA), operating under the Ministry of Education in New Delhi, is India's designated National ISBN Agency."
+  },
+  {
+    "globalId": "u6_sub6_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "13-अंकीय ISBN संरचना में 'भारत' (India) के लिए कौन-सा देश / भाषा पहचान कोड निर्धारित किया गया है?",
+    "q_en": "Which country/language registration group identifier code is assigned to India within the ISBN system?",
+    "options_hi": [
+      "`81` एवं `93`",
+      "`0` एवं `1`",
+      "`91`",
+      "`100`"
+    ],
+    "options_en": [
+      "`81` and `93`",
+      "`0` and `1` (English-speaking)",
+      "`91`",
+      "`100`"
+    ],
+    "options": [
+      {
+        "hi": "`81` एवं `93`",
+        "en": "`81` and `93`"
+      },
+      {
+        "hi": "`0` एवं `1`",
+        "en": "`0` and `1` (English-speaking)"
+      },
+      {
+        "hi": "`91`",
+        "en": "`91`"
+      },
+      {
+        "hi": "`100`",
+        "en": "`100`"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ISBN में भारत के लिए पंजीकरण समूह कोड '81' और '93' आवंटित हैं (उदा. 978-81-... या 978-93-...). '0' और '1' अमेरिका व यूके जैसे अंग्रेजी भाषी देशों के लिए हैं।",
+    "exp_en": "The registration group identifiers assigned to India in the international ISBN system are 81 and 93."
+  },
+  {
+    "globalId": "u6_sub6_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "सामयिक पत्रिकाओं एवं सीरियल्स हेतु प्रयुक्त अंतरराष्ट्रीय मानक संख्या 'ISSN' (ISO 3297) में कुल कितने अंक होते हैं?",
+    "q_en": "How many total digits make up an International Standard Serial Number (ISSN) under ISO 3297?",
+    "options_hi": [
+      "8 अंक (दो समूहों में 4-4 अंक)",
+      "10 अंक",
+      "13 अंक",
+      "16 अंक"
+    ],
+    "options_en": [
+      "8 digits (in two groups of 4)",
+      "10 digits",
+      "13 digits",
+      "16 digits"
+    ],
+    "options": [
+      {
+        "hi": "8 अंक (दो समूहों में 4-4 अंक)",
+        "en": "8 digits (in two groups of 4)"
+      },
+      {
+        "hi": "10 अंक",
+        "en": "10 digits"
+      },
+      {
+        "hi": "13 अंक",
+        "en": "13 digits"
+      },
+      {
+        "hi": "16 अंक",
+        "en": "16 digits"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ISSN में कुल 8 अंक होते हैं जो एक हाइफन द्वारा 4-4 अंकों के दो समूहों में लिखे जाते हैं (उदा. ISSN 1234-5679)। इसका अंतिम 8वां अंक मॉडयूलस 11 पर आधारित जांच अंक (Check Digit) होता है।",
+    "exp_en": "An ISSN consists of 8 digits partitioned into two four-digit segments separated by a hyphen, ending with a Modulus 11 check digit (which can be 'X')."
+  },
+  {
+    "globalId": "u6_sub6_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारत में प्रकाशित होने वाली पत्रिकाओं एवं शोध जर्नल्स को 'ISSN' आवंटित करने वाला राष्ट्रीय केंद्र कौन-सा है?",
+    "q_en": "Which premier institution serves as the National Centre for assigning ISSN to serials and periodicals published in India?",
+    "options_hi": [
+      "CSIR-NIScPR (राष्ट्रीय विज्ञान पुस्तकालय, नई दिल्ली)",
+      "राजा राममोहन राय एजेंसी (RRRNA)",
+      "इनफ्लिबनेट (INFLIBNET)",
+      "भारतीय प्रेस परिषद (Press Council of India)"
+    ],
+    "options_en": [
+      "CSIR-NIScPR (National Science Library, New Delhi)",
+      "RRRNA (New Delhi)",
+      "INFLIBNET",
+      "Press Council of India"
+    ],
+    "options": [
+      {
+        "hi": "CSIR-NIScPR (राष्ट्रीय विज्ञान पुस्तकालय, नई दिल्ली)",
+        "en": "CSIR-NIScPR (National Science Library, New Delhi)"
+      },
+      {
+        "hi": "राजा राममोहन राय एजेंसी (RRRNA)",
+        "en": "RRRNA (New Delhi)"
+      },
+      {
+        "hi": "इनफ्लिबनेट (INFLIBNET)",
+        "en": "INFLIBNET"
+      },
+      {
+        "hi": "भारतीय प्रेस परिषद (Press Council of India)",
+        "en": "Press Council of India"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "CSIR-NIScPR (पूर्व INSDOC / NISCAIR, नई दिल्ली) स्थित 'राष्ट्रीय विज्ञान पुस्तकालय' (NSL) भारत का राष्ट्रीय ISSN केंद्र है जो भारतीय पत्रिकाओं को ISSN जारी करता है।",
+    "exp_en": "The National Science Library at CSIR-NIScPR (formerly INSDOC/NISCAIR), New Delhi functions as the official National Centre for ISSN in India."
+  },
+  {
+    "globalId": "u6_sub6_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारतीय कॉपीराइट अधिनियम, 1957 के अनुसार किसी साहित्यिक या शोध कृति पर कॉपीराइट संरक्षण की कानूनी अवधि कितनी होती है?",
+    "q_en": "Under the Indian Copyright Act, 1957, what is the statutory duration of copyright protection for literary works?",
+    "options_hi": [
+      "लेखक का संपूर्ण जीवनकाल + लेखक की मृत्यु के वर्ष के बाद से 60 वर्ष (Life + 60 Years)",
+      "प्रकाशन से केवल 20 वर्ष",
+      "प्रकाशन से 50 वर्ष",
+      "आजीवन केवल (मृत्यु के साथ समाप्त)"
+    ],
+    "options_en": [
+      "Lifetime of the author plus 60 years after the death of the author",
+      "20 years from publication",
+      "50 years from publication",
+      "Lifetime only"
+    ],
+    "options": [
+      {
+        "hi": "लेखक का संपूर्ण जीवनकाल + लेखक की मृत्यु के वर्ष के बाद से 60 वर्ष (Life + 60 Years)",
+        "en": "Lifetime of the author plus 60 years after the death of the author"
+      },
+      {
+        "hi": "प्रकाशन से केवल 20 वर्ष",
+        "en": "20 years from publication"
+      },
+      {
+        "hi": "प्रकाशन से 50 वर्ष",
+        "en": "50 years from publication"
+      },
+      {
+        "hi": "आजीवन केवल (मृत्यु के साथ समाप्त)",
+        "en": "Lifetime only"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "भारतीय कॉपीराइट अधिनियम 1957 के अनुसार साहित्यिक, नाटकीय, संगीतमय और कलात्मक कृतियों पर कॉपीराइट लेखक के संपूर्ण जीवनकाल तथा उसकी मृत्यु के अगले कैलेंडर वर्ष से 60 वर्ष तक वैध रहता है।",
+    "exp_en": "In India, copyright in a published literary, dramatic, musical, or artistic work subsists during the lifetime of the author plus 60 years from the beginning of the year following the author's death."
+  },
+  {
+    "globalId": "u6_sub6_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारतीय कॉपीराइट अधिनियम, 1957 की कौन-सी धारा शोध, निजी अध्ययन और समालोचना हेतु सामग्री के 'न्यायसंगत उपयोग' (Fair Dealing / Fair Use) को संरक्षण प्रदान करती है?",
+    "q_en": "Which section of the Indian Copyright Act, 1957 provides legal immunity for 'Fair Dealing' for private study, research, and criticism?",
+    "options_hi": [
+      "धारा 52 (Section 52)",
+      "धारा 14",
+      "धारा 21",
+      "धारा 63"
+    ],
+    "options_en": [
+      "Section 52",
+      "Section 14",
+      "Section 21",
+      "Section 63"
+    ],
+    "options": [
+      {
+        "hi": "धारा 52 (Section 52)",
+        "en": "Section 52"
+      },
+      {
+        "hi": "धारा 14",
+        "en": "Section 14"
+      },
+      {
+        "hi": "धारा 21",
+        "en": "Section 21"
+      },
+      {
+        "hi": "धारा 63",
+        "en": "Section 63"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अधिनियम की धारा 52 (Section 52) के तहत निजी अध्ययन, शोध, समीक्षा, समाचार रिपोर्टिंग और पुस्तकालय संरक्षण हेतु प्रतियों के उपयोग को कॉपीराइट का उल्लंघन (Infringement) नहीं माना जाता।",
+    "exp_en": "Section 52 of the Indian Copyright Act, 1957 outlines statutory exceptions to copyright infringement, codifying Fair Dealing for private research, review, and library archival preservation."
+  },
+  {
+    "globalId": "u6_sub6_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "साहित्यिक एवं कलात्मक कृतियों के कॉपीराइट संरक्षण हेतु विश्व की सबसे प्राचीन एवं ऐतिहासिक अंतरराष्ट्रीय संधि 'बर्न कन्वेंशन' (Berne Convention) किस वर्ष में हुई थी?",
+    "q_en": "In which year was the historic 'Berne Convention for the Protection of Literary and Artistic Works' originally signed?",
+    "options_hi": [
+      "1886 ई. (1886, स्विट्जरलैंड)",
+      "1952 ई.",
+      "1967 ई.",
+      "1995 ई."
+    ],
+    "options_en": [
+      "1886 (Berne, Switzerland)",
+      "1952",
+      "1967",
+      "1995"
+    ],
+    "options": [
+      {
+        "hi": "1886 ई. (1886, स्विट्जरलैंड)",
+        "en": "1886 (Berne, Switzerland)"
+      },
+      {
+        "hi": "1952 ई.",
+        "en": "1952"
+      },
+      {
+        "hi": "1967 ई.",
+        "en": "1967"
+      },
+      {
+        "hi": "1995 ई.",
+        "en": "1995"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "बर्न कन्वेंशन 1886 में बर्न (स्विट्जरलैंड) में हस्ताक्षरित हुआ। इसका मुख्य सिद्धांत यह है कि किसी कृति का निर्माण होते ही उसे स्वतः अंतरराष्ट्रीय कॉपीराइट संरक्षण प्राप्त हो जाता है।",
+    "exp_en": "The Berne Convention was adopted in 1886 in Berne, Switzerland, establishing automatic copyright protection across member nations without mandatory registration."
+  },
+  {
+    "globalId": "u6_sub6_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "संयुक्त राष्ट्र (UN) की विशेषीकृत एजेंसी 'विश्व बौद्धिक संपदा संगठन' (WIPO) का मुख्यालय कहां स्थित है?",
+    "q_en": "Where is the global headquarters of the World Intellectual Property Organization (WIPO) situated?",
+    "options_hi": [
+      "जिनेवा, स्विट्जरलैंड (Geneva, Switzerland)",
+      "पेरिस, फ्रांस",
+      "न्यूयॉर्क, अमेरिका",
+      "लंदन, यूके"
+    ],
+    "options_en": [
+      "Geneva, Switzerland",
+      "Paris, France",
+      "New York, USA",
+      "London, UK"
+    ],
+    "options": [
+      {
+        "hi": "जिनेवा, स्विट्जरलैंड (Geneva, Switzerland)",
+        "en": "Geneva, Switzerland"
+      },
+      {
+        "hi": "पेरिस, फ्रांस",
+        "en": "Paris, France"
+      },
+      {
+        "hi": "न्यूयॉर्क, अमेरिका",
+        "en": "New York, USA"
+      },
+      {
+        "hi": "लंदन, यूके",
+        "en": "London, UK"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "WIPO (स्थापना: 14 जुलाई 1967) का मुख्यालय जिनेवा (स्विट्जरलैंड) में है। यह विश्व भर में बौद्धिक संपदा (पेटेंट, कॉपीराइट, ट्रेडमार्क) के संरक्षण हेतु संयुक्त राष्ट्र की एजेंसी है।",
+    "exp_en": "WIPO (World Intellectual Property Organization), established in 1967 and made a UN specialized agency in 1974, is headquartered in Geneva, Switzerland."
+  },
+  {
+    "globalId": "u6_sub6_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारतीय पेटेंट अधिनियम (Indian Patents Act, 1970) के अनुसार किसी नए वैज्ञानिक आविष्कार हेतु पेटेंट की अधिकतम संरक्षण अवधि कितनी होती है?",
+    "q_en": "According to the Indian Patents Act, what is the maximum statutory period of validity for an invention patent in India?",
+    "options_hi": [
+      "20 वर्ष (आवेदन दाखिल करने की तिथि से)",
+      "10 वर्ष",
+      "50 वर्ष",
+      "जीवन + 60 वर्ष"
+    ],
+    "options_en": [
+      "20 years from the date of filing",
+      "10 years",
+      "50 years",
+      "Life + 60 years"
+    ],
+    "options": [
+      {
+        "hi": "20 वर्ष (आवेदन दाखिल करने की तिथि से)",
+        "en": "20 years from the date of filing"
+      },
+      {
+        "hi": "10 वर्ष",
+        "en": "10 years"
+      },
+      {
+        "hi": "50 वर्ष",
+        "en": "50 years"
+      },
+      {
+        "hi": "जीवन + 60 वर्ष",
+        "en": "Life + 60 years"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "भारतीय पेटेंट अधिनियम 1970 (2005 संशोधन के अनुसार) पेटेंट की वैधता आवेदन की तिथि से 20 वर्ष तक मान्य होती है। इसके बाद आविष्कार पब्लिक डोमेन में आ जाता है।",
+    "exp_en": "Under Section 53 of the Indian Patents Act, 1970 (amended 2005), the statutory term of every patent is 20 years from the filing date."
+  },
+  {
+    "globalId": "u6_sub6_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "भारत में 'वस्तुओं का भौगोलिक उपदर्शन अधिनियम, 1999' के तहत पहला जीआई टैग (First GI Tag) वर्ष 2004 में किस उत्पाद को प्राप्त हुआ था?",
+    "q_en": "Which was the very first product in India to be awarded a Geographical Indication (GI Tag) in 2004 under the GI Act 1999?",
+    "options_hi": [
+      "दार्जिलिंग चाय (Darjeeling Tea)",
+      "बनारसी साड़ी",
+      "कतरनी चावल (बिहार)",
+      "शाही लीची (मुजफ्फरपुर, बिहार)"
+    ],
+    "options_en": [
+      "Darjeeling Tea",
+      "Banarasi Saree",
+      "Katarni Rice (Bihar)",
+      "Shahi Litchi (Muzaffarpur, Bihar)"
+    ],
+    "options": [
+      {
+        "hi": "दार्जिलिंग चाय (Darjeeling Tea)",
+        "en": "Darjeeling Tea"
+      },
+      {
+        "hi": "बनारसी साड़ी",
+        "en": "Banarasi Saree"
+      },
+      {
+        "hi": "कतरनी चावल (बिहार)",
+        "en": "Katarni Rice (Bihar)"
+      },
+      {
+        "hi": "शाही लीची (मुजफ्फरपुर, बिहार)",
+        "en": "Shahi Litchi (Muzaffarpur, Bihar)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "भारत में वर्ष 2004-2005 में सर्वप्रथम 'दार्जिलिंग चाय' (Darjeeling Tea) को जीआई टैग (Geographical Indication) प्रदान किया गया था। जीआई टैग 10 वर्षों के लिए वैध होता है।",
+    "exp_en": "Darjeeling Tea became the first Indian product to receive a Geographical Indication (GI) tag in 2004-2005 under the Geographical Indications of Goods Act, 1999."
+  },
+  {
+    "globalId": "u6_sub6_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "डिजिटल सामग्री के खुले प्रसार हेतु वर्ष 2001 में 'क्रिएटिव कॉमन्स' (Creative Commons - CC) लाइसेंसिंग प्रणाली की स्थापना किसने की थी?",
+    "q_en": "Who founded the 'Creative Commons' (CC) open licensing framework in 2001 to facilitate legal sharing of digital content?",
+    "options_hi": [
+      "लॉरेंस लेसिग (Lawrence Lessig)",
+      "टिम बर्नर्स ली",
+      "रिचर्ड स्टालमैन",
+      "जिमी वेल्स"
+    ],
+    "options_en": [
+      "Lawrence Lessig",
+      "Tim Berners-Lee",
+      "Richard Stallman",
+      "Jimmy Wales"
+    ],
+    "options": [
+      {
+        "hi": "लॉरेंस लेसिग (Lawrence Lessig)",
+        "en": "Lawrence Lessig"
+      },
+      {
+        "hi": "टिम बर्नर्स ली",
+        "en": "Tim Berners-Lee"
+      },
+      {
+        "hi": "रिचर्ड स्टालमैन",
+        "en": "Richard Stallman"
+      },
+      {
+        "hi": "जिमी वेल्स",
+        "en": "Jimmy Wales"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अमेरिकी विधि प्राध्यापक लॉरेंस लेसिग (Lawrence Lessig) ने 2001 में 'Creative Commons' की स्थापना की, जो रचनाकारों को BY, SA, NC, ND जैसी शर्तों के साथ अपनी सामग्री साझा करने की सुविधा देता है।",
+    "exp_en": "Professor Lawrence Lessig founded Creative Commons in 2001, introducing flexible modular copyright licenses (CC BY, CC BY-SA, CC BY-NC, CC BY-ND, and CC0)."
+  },
+  {
+    "globalId": "u6_sub6_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "पुस्तकालय आचार संहिता (Code of Ethics for Librarians) में 'पाठक गोपनीयता' (Patron Confidentiality / Privacy) का क्या अर्थ है?",
+    "q_en": "Within library professional ethics (ALA & IFLA Codes of Ethics), what is fundamentally required by 'Patron Confidentiality and Privacy'?",
+    "options_hi": [
+      "पाठक द्वारा ली गई पुस्तकों, उसकी पठन आदतों और संदर्भ प्रश्नों की जानकारी को सर्वथा गुप्त रखना",
+      "पाठकों का मोबाइल नंबर नोटिस बोर्ड पर चिपकाना",
+      "पाठक द्वारा पढ़ी जा रही किताबों को सार्वजनिक रूप से बताना",
+      "केवल अमीर पाठकों का डेटा सुरक्षित रखना"
+    ],
+    "options_en": [
+      "Keeping all records regarding borrowed books, reading preferences, and research inquiries strictly confidential",
+      "Pasting patron phone numbers on the library notice board",
+      "Publicly broadcasting what patrons read",
+      "Protecting records of wealthy patrons only"
+    ],
+    "options": [
+      {
+        "hi": "पाठक द्वारा ली गई पुस्तकों, उसकी पठन आदतों और संदर्भ प्रश्नों की जानकारी को सर्वथा गुप्त रखना",
+        "en": "Keeping all records regarding borrowed books, reading preferences, and research inquiries strictly confidential"
+      },
+      {
+        "hi": "पाठकों का मोबाइल नंबर नोटिस बोर्ड पर चिपकाना",
+        "en": "Pasting patron phone numbers on the library notice board"
+      },
+      {
+        "hi": "पाठक द्वारा पढ़ी जा रही किताबों को सार्वजनिक रूप से बताना",
+        "en": "Publicly broadcasting what patrons read"
+      },
+      {
+        "hi": "केवल अमीर पाठकों का डेटा सुरक्षित रखना",
+        "en": "Protecting records of wealthy patrons only"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पुस्तकालय आचार संहिता का मूल सिद्धांत है कि प्रत्येक पाठक की बौद्धिक स्वतंत्रता की रक्षा हेतु यह कभी उजागर न किया जाए कि वह क्या पढ़ रहा है या उसने क्या खोजा है (पूर्ण गोपनीयता)।",
+    "exp_en": "Patron Confidentiality obligates library personnel to safeguard user privacy by never disclosing borrowing records, queries, or reading history without due legal process."
+  },
+  {
+    "globalId": "u6_sub6_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_06",
+    "unitNum": 6,
+    "subUnitNum": "6.2",
+    "unitTitle_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "unitTitle_en": "Information Science and Standards",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+    "q_hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) द्वारा पुस्तकालय पेशेवरों हेतु औपचारिक 'आचार संहिता' (Code of Ethics) सर्वप्रथम किस वर्ष में स्वीकार की गई थी?",
+    "q_en": "In which year did the American Library Association (ALA) originally adopt its first formal 'Code of Ethics for Librarians'?",
+    "options_hi": [
+      "1939 ई. (1939)",
+      "1876 ई.",
+      "1905 ई.",
+      "1981 ई."
+    ],
+    "options_en": [
+      "1939",
+      "1876",
+      "1905",
+      "1981"
+    ],
+    "options": [
+      {
+        "hi": "1939 ई. (1939)",
+        "en": "1939"
+      },
+      {
+        "hi": "1876 ई.",
+        "en": "1876"
+      },
+      {
+        "hi": "1905 ई.",
+        "en": "1905"
+      },
+      {
+        "hi": "1981 ई.",
+        "en": "1981"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ALA ने सर्वप्रथम 1939 में पुस्तकालय पेशेवरों हेतु औपचारिक आचार संहिता (Code of Ethics) स्वीकार की, जिसमें बौद्धिक स्वतंत्रता, सेंसरशिप विरोध और समान सेवा पर बल दिया गया।",
+    "exp_en": "The American Library Association officially adopted its inaugural Code of Ethics for Librarians in 1939, codifying commitments to intellectual freedom and non-discrimination."
+  }
+]

@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u10_sub10_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "दी गई संख्या शृंखला में प्रश्नवाचक चिह्न (?) के स्थान पर कौन सी संख्या आएगी?\n2, 6, 12, 20, 30, ?",
+    "q_en": "Which number will replace the question mark (?) in the following number series?\n2, 6, 12, 20, 30, ?",
+    "options_hi": [
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "options_en": [
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "options": [
+      {
+        "hi": "40",
+        "en": "40"
+      },
+      {
+        "hi": "42",
+        "en": "42"
+      },
+      {
+        "hi": "44",
+        "en": "44"
+      },
+      {
+        "hi": "46",
+        "en": "46"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "तर्क 1: क्रमागत अंतर +4, +6, +8, +10, +12 है। अतः 30 + 12 = 42।\nतर्क 2: n(n+1) पैटर्न: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7 = 42।",
+    "exp_en": "Logic 1: Successive differences increase by 2 (+4, +6, +8, +10, +12). Thus, 30 + 12 = 42.\nLogic 2: Consecutive product n(n+1): 6 × 7 = 42."
+  },
+  {
+    "globalId": "u10_sub10_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "संख्या शृंखला 3, 5, 9, 17, 33, ? में अगला पद क्या होगा?",
+    "q_en": "What will be the next term in the number series 3, 5, 9, 17, 33, ?",
+    "options_hi": [
+      "65",
+      "67",
+      "69",
+      "63"
+    ],
+    "options_en": [
+      "65",
+      "67",
+      "69",
+      "63"
+    ],
+    "options": [
+      {
+        "hi": "65",
+        "en": "65"
+      },
+      {
+        "hi": "67",
+        "en": "67"
+      },
+      {
+        "hi": "69",
+        "en": "69"
+      },
+      {
+        "hi": "63",
+        "en": "63"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पैटर्न: प्रत्येक पद में अंतर दुगुना हो रहा है (+2, +4, +8, +16, +32)।\nअतः अगला पद = 33 + 32 = 65। (वैकल्पिक तर्क: पिछला पद × 2 - 1: 33 × 2 - 1 = 65)।",
+    "exp_en": "Pattern: The differences between consecutive terms double (+2, +4, +8, +16, +32). Next term = 33 + 32 = 65. Alternatively: term × 2 - 1 = 33 × 2 - 1 = 65."
+  },
+  {
+    "globalId": "u10_sub10_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "वर्ण शृंखला B, D, G, K, P, ? में अगला अक्षर कौन सा होगा?",
+    "q_en": "Which letter will come next in the letter series B, D, G, K, P, ?",
+    "options_hi": [
+      "U",
+      "V",
+      "W",
+      "T"
+    ],
+    "options_en": [
+      "U",
+      "V",
+      "W",
+      "T"
+    ],
+    "options": [
+      {
+        "hi": "U",
+        "en": "U"
+      },
+      {
+        "hi": "V",
+        "en": "V"
+      },
+      {
+        "hi": "W",
+        "en": "W"
+      },
+      {
+        "hi": "T",
+        "en": "T"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "अक्षरों के स्थान मान: B(2), D(4), G(7), K(11), P(16)।\nअंतर: +2, +3, +4, +5, +6।\nअतः 16 + 6 = 22, और 22वें स्थान पर अक्षर 'V' आता है।",
+    "exp_en": "Letter positions: B(2), D(4), G(7), K(11), P(16). Adding consecutive integers (+2, +3, +4, +5, +6) gives 16 + 6 = 22, which corresponds to the letter 'V'."
+  },
+  {
+    "globalId": "u10_sub10_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "एक निश्चित कूट भाषा में यदि 'TEACHER' को 'VGCEJGT' लिखा जाता है, तो उसी कूट भाषा में 'CHILDREN' को किस प्रकार लिखा जाएगा?",
+    "q_en": "In a certain code language, if 'TEACHER' is coded as 'VGCEJGT', then how will 'CHILDREN' be coded in that same language?",
+    "options_hi": [
+      "EJKNFTGP",
+      "EJKNFSTP",
+      "EJLNFTGP",
+      "FKLNGUHQ"
+    ],
+    "options_en": [
+      "EJKNFTGP",
+      "EJKNFSTP",
+      "EJLNFTGP",
+      "FKLNGUHQ"
+    ],
+    "options": [
+      {
+        "hi": "EJKNFTGP",
+        "en": "EJKNFTGP"
+      },
+      {
+        "hi": "EJKNFSTP",
+        "en": "EJKNFSTP"
+      },
+      {
+        "hi": "EJLNFTGP",
+        "en": "EJLNFTGP"
+      },
+      {
+        "hi": "FKLNGUHQ",
+        "en": "FKLNGUHQ"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पैटर्न: प्रत्येक अक्षर में +2 का विस्थापन है।\nC(+2)=E, H(+2)=J, I(+2)=K, L(+2)=N, D(+2)=F, R(+2)=T, E(+2)=G, N(+2)=P।\nअतः सही कूट 'EJKNFTGP' है।",
+    "exp_en": "Pattern: Each letter is shifted forward by +2. C->E, H->J, I->K, L->N, D->F, R->T, E->G, N->P = EJKNFTGP."
+  },
+  {
+    "globalId": "u10_sub10_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "यदि किसी कूट में A = 1 तथा CAT = 24 है, तो 'POLICE' का मान क्या होगा?",
+    "q_en": "If in a code language, A = 1 and CAT = 24, then what will be the value of 'POLICE'?",
+    "options_hi": [
+      "58",
+      "60",
+      "62",
+      "64"
+    ],
+    "options_en": [
+      "58",
+      "60",
+      "62",
+      "64"
+    ],
+    "options": [
+      {
+        "hi": "58",
+        "en": "58"
+      },
+      {
+        "hi": "60",
+        "en": "60"
+      },
+      {
+        "hi": "62",
+        "en": "62"
+      },
+      {
+        "hi": "64",
+        "en": "64"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "तर्क: सभी वर्णों के स्थान मानों का योग।\nCAT = 3 + 1 + 20 = 24।\nPOLICE = P(16) + O(15) + L(12) + I(9) + C(3) + E(5) = 60।",
+    "exp_en": "Logic: Sum of numerical positions of letters. POLICE = 16 + 15 + 12 + 9 + 3 + 5 = 60."
+  },
+  {
+    "globalId": "u10_sub10_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "यदि किसी कूट भाषा में 'LIGHT' को 'ORTSG' लिखा जाता है, तो उसी कूट भाषा में 'SPARK' को कैसे लिखा जाएगा?",
+    "q_en": "If in a code language, 'LIGHT' is coded as 'ORTSG', how will 'SPARK' be coded in that code language?",
+    "options_hi": [
+      "HKZIP",
+      "HKZIR",
+      "ILZIP",
+      "GJZHO"
+    ],
+    "options_en": [
+      "HKZIP",
+      "HKZIR",
+      "ILZIP",
+      "GJZHO"
+    ],
+    "options": [
+      {
+        "hi": "HKZIP",
+        "en": "HKZIP"
+      },
+      {
+        "hi": "HKZIR",
+        "en": "HKZIR"
+      },
+      {
+        "hi": "ILZIP",
+        "en": "ILZIP"
+      },
+      {
+        "hi": "GJZHO",
+        "en": "GJZHO"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "तर्क: विपरीत अक्षर युग्म (विपरीत अक्षरों का योग 27)।\nL-O, I-R, G-T, H-S, T-G।\nउसी प्रकार: S का विपरीत H, P का K, A का Z, R का I, K का P = 'HKZIP'।",
+    "exp_en": "Logic: Reverse alphabetical pairs (Sum = 27). S->H, P->K, A->Z, R->I, K->P = HKZIP."
+  },
+  {
+    "globalId": "u10_sub10_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "एक लड़के की तस्वीर की ओर इशारा करते हुए सुरेश ने कहा, \"वह मेरी माताजी के इकलौते पुत्र का पुत्र है।\" सुरेश का उस लड़के से क्या संबंध है?",
+    "q_en": "Pointing to a photograph of a boy, Suresh said, \"He is the son of the only son of my mother.\" How is Suresh related to that boy?",
+    "options_hi": [
+      "भाई (Brother)",
+      "चाचा (Uncle)",
+      "पिता (Father)",
+      "दादा (Grandfather)"
+    ],
+    "options_en": [
+      "Brother",
+      "Uncle",
+      "Father",
+      "Grandfather"
+    ],
+    "options": [
+      {
+        "hi": "भाई (Brother)",
+        "en": "Brother"
+      },
+      {
+        "hi": "चाचा (Uncle)",
+        "en": "Uncle"
+      },
+      {
+        "hi": "पिता (Father)",
+        "en": "Father"
+      },
+      {
+        "hi": "दादा (Grandfather)",
+        "en": "Grandfather"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "\"सुरेश की माताजी का इकलौता पुत्र\" = स्वयं सुरेश। अतः वह लड़का सुरेश का पुत्र है, और सुरेश उस लड़के का 'पिता' (Father) है।",
+    "exp_en": "\"The only son of my mother\" refers to Suresh himself. Therefore, the boy is Suresh's son, which makes Suresh the 'Father'."
+  },
+  {
+    "globalId": "u10_sub10_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "A, B का भाई है। C, B की माता है। M, C की बहन है। M का A से क्या संबंध है?",
+    "q_en": "A is the brother of B. C is the mother of B. M is the sister of C. How is M related to A?",
+    "options_hi": [
+      "दादी (Grandmother)",
+      "मौसी (Maternal Aunt)",
+      "बहन (Sister)",
+      "भांजी (Niece)"
+    ],
+    "options_en": [
+      "Grandmother",
+      "Maternal Aunt",
+      "Sister",
+      "Niece"
+    ],
+    "options": [
+      {
+        "hi": "दादी (Grandmother)",
+        "en": "Grandmother"
+      },
+      {
+        "hi": "मौसी (Maternal Aunt)",
+        "en": "Maternal Aunt"
+      },
+      {
+        "hi": "बहन (Sister)",
+        "en": "Sister"
+      },
+      {
+        "hi": "भांजी (Niece)",
+        "en": "Niece"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "C, B और A दोनों की माता है। M, C की बहन है। माता की बहन 'मौसी' (Maternal Aunt) होती है। अतः M, A की मौसी है।",
+    "exp_en": "C is the mother of both A and B. M is C's sister. One's mother's sister is their Maternal Aunt (Mausi)."
+  },
+  {
+    "globalId": "u10_sub10_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "एक व्यक्ति अपने घर से उत्तर दिशा में 12 किमी चलता है, फिर दाएं मुड़कर 5 किमी चलता है। वह अपने प्रारंभिक बिंदु से न्यूनतम कितनी सीधी दूरी पर है?",
+    "q_en": "A person walks 12 km North from his house, then turns right and walks 5 km. What is the shortest straight-line distance from his starting point?",
+    "options_hi": [
+      "17 किमी",
+      "13 किमी",
+      "15 किमी",
+      "14 किमी"
+    ],
+    "options_en": [
+      "17 km",
+      "13 km",
+      "15 km",
+      "14 km"
+    ],
+    "options": [
+      {
+        "hi": "17 किमी",
+        "en": "17 km"
+      },
+      {
+        "hi": "13 किमी",
+        "en": "13 km"
+      },
+      {
+        "hi": "15 किमी",
+        "en": "15 km"
+      },
+      {
+        "hi": "14 किमी",
+        "en": "14 km"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पाइथागोरस प्रमेय के अनुसार: सीधी दूरी = √(12² + 5²) = √(144 + 25) = √169 = 13 किमी।",
+    "exp_en": "Using the Pythagorean theorem: Distance = √(12² + 5²) = √(144 + 25) = √169 = 13 km."
+  },
+  {
+    "globalId": "u10_sub10_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "मोहन दक्षिण दिशा में 20 मीटर चलता है, फिर बाएं मुड़कर 15 मीटर चलता है, और पुनः बाएं मुड़कर 20 मीटर चलता है। अब वह अपने प्रारंभिक बिंदु से किस दिशा में है?",
+    "q_en": "Mohan walks 20 meters South, turns left and walks 15 meters, then turns left again and walks 20 meters. In which direction is he now from his starting point?",
+    "options_hi": [
+      "उत्तर (North)",
+      "पूर्व (East)",
+      "पश्चिम (West)",
+      "दक्षिण (South)"
+    ],
+    "options_en": [
+      "North",
+      "East",
+      "West",
+      "South"
+    ],
+    "options": [
+      {
+        "hi": "उत्तर (North)",
+        "en": "North"
+      },
+      {
+        "hi": "पूर्व (East)",
+        "en": "East"
+      },
+      {
+        "hi": "पश्चिम (West)",
+        "en": "West"
+      },
+      {
+        "hi": "दक्षिण (South)",
+        "en": "South"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दक्षिण में 20 मी जाने के बाद बाएं (पूर्व) 15 मी चला, फिर बाएं (उत्तर) 20 मी चलने से वह प्रारंभिक रेखा की सीध में आ गया। अतः वह अपने प्रारंभिक स्थान से ठीक 'पूर्व' (East) दिशा में 15 मी की दूरी पर है।",
+    "exp_en": "After walking 20m South, 15m East, and 20m North, his North-South displacement cancels out to zero. He is located exactly 15m due 'East' from the starting point."
+  },
+  {
+    "globalId": "u10_sub10_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "एक सुबह सूर्योदय के ठीक बाद, सुमित एक खंभे के सामने खड़ा था। खंभे की परछाई सुमित के ठीक दाईं ओर (Right) पड़ रही थी। सुमित का मुख किस दिशा में था?",
+    "q_en": "One morning after sunrise, Sumit was facing an electric pole. The shadow of the pole fell exactly to Sumit's right. In which direction was Sumit facing?",
+    "options_hi": [
+      "उत्तर (North)",
+      "दक्षिण (South)",
+      "पूर्व (East)",
+      "पश्चिम (West)"
+    ],
+    "options_en": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "options": [
+      {
+        "hi": "उत्तर (North)",
+        "en": "North"
+      },
+      {
+        "hi": "दक्षिण (South)",
+        "en": "South"
+      },
+      {
+        "hi": "पूर्व (East)",
+        "en": "East"
+      },
+      {
+        "hi": "पश्चिम (West)",
+        "en": "West"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सूर्योदय के समय सूर्य पूर्व में होता है, अतः सभी परछाइयां पश्चिम दिशा में बनती हैं। यदि परछाई सुमित के दाईं ओर पड़ रही है, तो सुमित का दायां हाथ पश्चिम में है। ऐसा तभी संभव है जब सुमित का मुख 'दक्षिण' (South) की ओर हो।",
+    "exp_en": "At sunrise, shadows cast towards the West. If the shadow falls to Sumit's right, his right side faces West. This occurs only when Sumit is facing 'South'."
+  },
+  {
+    "globalId": "u10_sub10_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "45 विद्यार्थियों की एक कक्षा में रोहन का स्थान ऊपर से 18वां है। उसका स्थान नीचे (Bottom) से क्या होगा?",
+    "q_en": "In a class of 45 students, Rohan's rank is 18th from the top. What is his rank from the bottom?",
+    "options_hi": [
+      "27वां",
+      "28वां (28th)",
+      "29वां",
+      "26वां"
+    ],
+    "options_en": [
+      "27th",
+      "28th",
+      "29th",
+      "26th"
+    ],
+    "options": [
+      {
+        "hi": "27वां",
+        "en": "27th"
+      },
+      {
+        "hi": "28वां (28th)",
+        "en": "28th"
+      },
+      {
+        "hi": "29वां",
+        "en": "29th"
+      },
+      {
+        "hi": "26वां",
+        "en": "26th"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सूत्र: नीचे से स्थान = (कुल छात्र - ऊपर से स्थान) + 1\n= (45 - 18) + 1 = 27 + 1 = 28वां।",
+    "exp_en": "Formula: Rank from bottom = (Total - Rank from top) + 1 = (45 - 18) + 1 = 28th."
+  },
+  {
+    "globalId": "u10_sub10_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "बालिकाओं की एक पंक्ति में सीता बाएं से 10वीं और गीता दाएं से 15वीं है। जब वे आपस में अपना स्थान बदल लेती हैं, तो सीता बाएं से 22वीं हो जाती है। पंक्ति में कुल कितनी बालिकाएं हैं?",
+    "q_en": "In a row of girls, Sita is 10th from the left and Gita is 15th from the right. When they interchange positions, Sita becomes 22nd from the left. How many girls are there in the row?",
+    "options_hi": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "options_en": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "options": [
+      {
+        "hi": "35",
+        "en": "35"
+      },
+      {
+        "hi": "36",
+        "en": "36"
+      },
+      {
+        "hi": "37",
+        "en": "37"
+      },
+      {
+        "hi": "38",
+        "en": "38"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सीता का नया स्थान (बाएं से 22वां) वही है जो गीता का पुराना स्थान (दाएं से 15वां) था।\nअतः कुल बालिकाएं = सीता का नया बायां स्थान + गीता का पुराना दायां स्थान - 1\n= 22 + 15 - 1 = 37 - 1 = 36।",
+    "exp_en": "Sita's new position (22nd from left) coincides with Gita's original position (15th from right). Total girls = 22 + 15 - 1 = 36."
+  },
+  {
+    "globalId": "u10_sub10_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "सादृश्यता पूर्ण करें: समाचार पत्र : प्रेस :: कपड़ा : ?",
+    "q_en": "Complete the Analogy: Newspaper : Press :: Cloth : ?",
+    "options_hi": [
+      "दर्जी (Tailor)",
+      "कपड़ा मिल (Mill)",
+      "कपास (Cotton)",
+      "दुकान (Shop)"
+    ],
+    "options_en": [
+      "Tailor",
+      "Mill",
+      "Cotton",
+      "Shop"
+    ],
+    "options": [
+      {
+        "hi": "दर्जी (Tailor)",
+        "en": "Tailor"
+      },
+      {
+        "hi": "कपड़ा मिल (Mill)",
+        "en": "Mill"
+      },
+      {
+        "hi": "कपास (Cotton)",
+        "en": "Cotton"
+      },
+      {
+        "hi": "दुकान (Shop)",
+        "en": "Shop"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "जिस प्रकार समाचार पत्र 'प्रेस' (मुद्रणालय) में तैयार/निर्मित होता है, उसी प्रकार कपड़ा 'कपड़ा मिल' (Mill) में निर्मित होता है।",
+    "exp_en": "Just as newspapers are manufactured in a printing press, cloth is produced in a textile mill."
+  },
+  {
+    "globalId": "u10_sub10_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.1",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+    "subUnitTitle_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+    "q_hi": "निम्नलिखित चार संख्याओं में से कौन सी एक संख्या अन्य तीन से भिन्न (Odd-One-Out) है?\n27, 64, 125, 144",
+    "q_en": "Which one of the following four numbers is the odd-one-out from the others?\n27, 64, 125, 144",
+    "options_hi": [
+      "27",
+      "64",
+      "125",
+      "144"
+    ],
+    "options_en": [
+      "27",
+      "64",
+      "125",
+      "144"
+    ],
+    "options": [
+      {
+        "hi": "27",
+        "en": "27"
+      },
+      {
+        "hi": "64",
+        "en": "64"
+      },
+      {
+        "hi": "125",
+        "en": "125"
+      },
+      {
+        "hi": "144",
+        "en": "144"
+      }
+    ],
+    "correct": 3,
+    "exp_hi": "तर्क: 27 = 3³, 64 = 4³, 125 = 5³ — ये तीनों पूर्ण घन (Cubes) संख्याएं हैं, जबकि 144 = 12² (पूर्ण वर्ग है, पूर्ण घन नहीं)। अतः 144 भिन्न है।",
+    "exp_en": "Logic: 27 (3³), 64 (4³), and 125 (5³) are perfect cubes. 144 (12²) is a perfect square but not a perfect cube. Hence 144 is the odd one."
+  }
+]

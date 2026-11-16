@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u1_sub1_3_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम किस वर्ष पारित किया गया था?",
+    "q_en": "In which year was 'The Bihar State Public Library and Information Centre Act' enacted?",
+    "options_hi": [
+      "वर्ष 2002 में",
+      "वर्ष 2006 में",
+      "वर्ष 2008 में",
+      "वर्ष 2012 में"
+    ],
+    "options_en": [
+      "Year 2002",
+      "Year 2006",
+      "Year 2008",
+      "Year 2012"
+    ],
+    "options": [
+      {
+        "hi": "वर्ष 2002 में",
+        "en": "Year 2002"
+      },
+      {
+        "hi": "वर्ष 2006 में",
+        "en": "Year 2006"
+      },
+      {
+        "hi": "वर्ष 2008 में",
+        "en": "Year 2008"
+      },
+      {
+        "hi": "वर्ष 2012 में",
+        "en": "Year 2012"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "बिहार विधानमंडल द्वारा 'बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम' वर्ष 2008 में पारित किया गया था। इस प्रकार सार्वजनिक पुस्तकालय कानून बनाने वाला बिहार भारत का 16वां राज्य बना।",
+    "exp_en": "The Bihar State Public Library and Information Centre Act was enacted in the year 2008, making Bihar the 16th state in India to adopt public library legislation."
+  },
+  {
+    "globalId": "u1_sub1_3_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "बिहार सार्वजनिक पुस्तकालय अधिनियम, 2008 के वित्तीय प्रावधानों के संदर्भ में निम्नलिखित में से कौन-सा कथन सत्य है?",
+    "q_en": "Regarding the financial provisions of the Bihar Public Library Act, 2008, which of the following statements is true?",
+    "options_hi": [
+      "संपत्ति कर पर 5% पुस्तकालय उपकर (Cess) लगाया जाता है।",
+      "इसमें कोई पुस्तकालय उपकर (No Cess) नहीं है; वित्तपोषण राज्य शिक्षा विभाग के बजट से होता है।",
+      "वाहनों के पंजीकरण पर 2% उपकर लिया जाता है।",
+      "शराब की बिक्री पर विशेष अधिभार द्वारा वित्तपोषण होता है।"
+    ],
+    "options_en": [
+      "A library cess of 5% is levied on property tax.",
+      "There is No Library Cess; funding is directly met from the State Education Department's budget.",
+      "A 2% cess is charged on motor vehicle registration.",
+      "Funded by a surcharge on sale of alcoholic liquor."
+    ],
+    "options": [
+      {
+        "hi": "संपत्ति कर पर 5% पुस्तकालय उपकर (Cess) लगाया जाता है।",
+        "en": "A library cess of 5% is levied on property tax."
+      },
+      {
+        "hi": "इसमें कोई पुस्तकालय उपकर (No Cess) नहीं है; वित्तपोषण राज्य शिक्षा विभाग के बजट से होता है।",
+        "en": "There is No Library Cess; funding is directly met from the State Education Department's budget."
+      },
+      {
+        "hi": "वाहनों के पंजीकरण पर 2% उपकर लिया जाता है।",
+        "en": "A 2% cess is charged on motor vehicle registration."
+      },
+      {
+        "hi": "शराब की बिक्री पर विशेष अधिभार द्वारा वित्तपोषण होता है।",
+        "en": "Funded by a surcharge on sale of alcoholic liquor."
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बिहार पुस्तकालय अधिनियम में कोई उपकर (No Library Cess) लगाने का प्रावधान नहीं है। पुस्तकालयों का संपूर्ण विकास एवं परिचालन खर्च राज्य सरकार (शिक्षा विभाग) के बजटीय आवंटन द्वारा वहन किया जाता है।",
+    "exp_en": "The Bihar Public Library Act, 2008 operates on a No-Cess model. Funds are allocated directly through the budgetary provisions of the State Department of Education."
+  },
+  {
+    "globalId": "u1_sub1_3_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "स्वतंत्र भारत में सार्वजनिक पुस्तकालय अधिनियम पारित करने वाला प्रथम राज्य कौन-सा था?",
+    "q_en": "Which was the first state in independent India to pass a Public Library Act?",
+    "options_hi": [
+      "आंध्र प्रदेश (1960)",
+      "मद्रास / तमिलनाडु (1948)",
+      "कर्नाटक (1965)",
+      "महाराष्ट्र (1967)"
+    ],
+    "options_en": [
+      "Andhra Pradesh (1960)",
+      "Madras / Tamil Nadu (1948)",
+      "Karnataka (1965)",
+      "Maharashtra (1967)"
+    ],
+    "options": [
+      {
+        "hi": "आंध्र प्रदेश (1960)",
+        "en": "Andhra Pradesh (1960)"
+      },
+      {
+        "hi": "मद्रास / तमिलनाडु (1948)",
+        "en": "Madras / Tamil Nadu (1948)"
+      },
+      {
+        "hi": "कर्नाटक (1965)",
+        "en": "Karnataka (1965)"
+      },
+      {
+        "hi": "महाराष्ट्र (1967)",
+        "en": "Maharashtra (1967)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "मद्रास (अब तमिलनाडु) सार्वजनिक पुस्तकालय अधिनियम 1948 में पारित हुआ था। यह डॉ. एस.आर. रंगनाथन के व्यक्तिगत प्रयासों से स्वतंत्र भारत में पारित होने वाला पहला पुस्तकालय कानून था।",
+    "exp_en": "Madras (now Tamil Nadu) Public Libraries Act, 1948 was the first library legislation enacted in independent India, primarily drafted and steered by Dr. S.R. Ranganathan."
+  },
+  {
+    "globalId": "u1_sub1_3_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में किसी विश्वविद्यालय द्वारा पुस्तकालय विज्ञान में नियमित प्रशिक्षण पाठ्यक्रम सर्वप्रथम 1915 में किसके द्वारा शुरू किया गया था?",
+    "q_en": "By whom was the first regular university-level training course in Library Science started in India in 1915?",
+    "options_hi": [
+      "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+      "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+      "डॉ. एस.आर. रंगनाथन",
+      "मेल्विल डेवी"
+    ],
+    "options_en": [
+      "W.A. Borden",
+      "Asa Don Dickinson",
+      "Dr. S.R. Ranganathan",
+      "Melvil Dewey"
+    ],
+    "options": [
+      {
+        "hi": "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+        "en": "W.A. Borden"
+      },
+      {
+        "hi": "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+        "en": "Asa Don Dickinson"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "मेल्विल डेवी",
+        "en": "Melvil Dewey"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "अमेरिकी पुस्तकालयाध्यक्ष आसा डॉन डिकिंसन (Asa Don Dickinson) ने 1915 में पंजाब विश्वविद्यालय, लाहौर में भारत का पहला विश्वविद्यालयी पुस्तकालय प्रशिक्षण पाठ्यक्रम शुरू किया। उन्होंने 1916 में 'Punjab Library Primer' पुस्तक भी लिखी।",
+    "exp_en": "American librarian Asa Don Dickinson initiated the first university certificate course in Library Science at Punjab University, Lahore in 1915 and authored 'Punjab Library Primer' in 1916."
+  },
+  {
+    "globalId": "u1_sub1_3_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में सार्वजनिक पुस्तकालयों के संवर्धन, विकास एवं वित्तीय सहायता हेतु स्थापित शीर्ष संस्था 'RRRLF' का मुख्यालय कहाँ स्थित है?",
+    "q_en": "Where is the headquarters of 'RRRLF' (Raja Rammohun Roy Library Foundation), the apex body for promoting and funding public libraries in India, situated?",
+    "options_hi": [
+      "नई दिल्ली",
+      "कोलकाता",
+      "मुंबई",
+      "चेन्नई"
+    ],
+    "options_en": [
+      "New Delhi",
+      "Kolkata",
+      "Mumbai",
+      "Chennai"
+    ],
+    "options": [
+      {
+        "hi": "नई दिल्ली",
+        "en": "New Delhi"
+      },
+      {
+        "hi": "कोलकाता",
+        "en": "Kolkata"
+      },
+      {
+        "hi": "मुंबई",
+        "en": "Mumbai"
+      },
+      {
+        "hi": "चेन्नई",
+        "en": "Chennai"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF) की स्थापना संस्कृति मंत्रालय द्वारा मई 1972 (राजा राममोहन राय के द्विशताब्दी वर्ष) में की गई थी। इसका मुख्यालय साल्ट लेक, कोलकाता में स्थित है।",
+    "exp_en": "Raja Rammohun Roy Library Foundation (RRRLF) was established in May 1972 by the Ministry of Culture, Government of India. Its headquarters is located at Salt Lake, Kolkata."
+  },
+  {
+    "globalId": "u1_sub1_3_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "सार्वजनिक पुस्तकालयों की स्थिति की समीक्षा हेतु भारत सरकार द्वारा 1957 में गठित 'परामर्शदात्री समिति' (Advisory Committee for Libraries) के अध्यक्ष कौन थे?",
+    "q_en": "Who was the Chairman of the Advisory Committee for Libraries appointed by the Government of India in 1957?",
+    "options_hi": [
+      "डॉ. एस.आर. रंगनाथन",
+      "के.पी. सिन्हा (K.P. Sinha)",
+      "डॉ. डी.एस. कोठारी",
+      "प्रो. डी.पी. चट्टोपाध्याय"
+    ],
+    "options_en": [
+      "Dr. S.R. Ranganathan",
+      "K.P. Sinha",
+      "Dr. D.S. Kothari",
+      "Prof. D.P. Chattopadhyaya"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "के.पी. सिन्हा (K.P. Sinha)",
+        "en": "K.P. Sinha"
+      },
+      {
+        "hi": "डॉ. डी.एस. कोठारी",
+        "en": "Dr. D.S. Kothari"
+      },
+      {
+        "hi": "प्रो. डी.पी. चट्टोपाध्याय",
+        "en": "Prof. D.P. Chattopadhyaya"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "भारत सरकार ने 1957 में के.पी. सिन्हा (K.P. Sinha) की अध्यक्षता में एडवाइजरी कमेटी फॉर लाइब्रेरीज का गठन किया था, जिसने 1959 में अपनी प्रसिद्ध रिपोर्ट सौंपी। इसे सामान्यतः 'सिन्हा समिति' कहा जाता है।",
+    "exp_en": "The Advisory Committee for Libraries was appointed by the Government of India in 1957 under the chairmanship of K.P. Sinha (commonly referred to as the Sinha Committee), which submitted its report in 1959."
+  },
+  {
+    "globalId": "u1_sub1_3_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत के किस राज्य के पुस्तकालय अधिनियम में शराब (IMFL) की बिक्री पर पुस्तकालय उपकर (Cess) लगाने का अनूठा वैधानिक प्रावधान है?",
+    "q_en": "In which Indian state's library legislation is there a unique statutory provision for levying a library cess on the sale of Indian Made Foreign Liquor (IMFL)?",
+    "options_hi": [
+      "केरल (1989)",
+      "गोवा (1993)",
+      "हरियाणा (1989)",
+      "कर्नाटक (1965)"
+    ],
+    "options_en": [
+      "Kerala (1989)",
+      "Goa (1993)",
+      "Haryana (1989)",
+      "Karnataka (1965)"
+    ],
+    "options": [
+      {
+        "hi": "केरल (1989)",
+        "en": "Kerala (1989)"
+      },
+      {
+        "hi": "गोवा (1993)",
+        "en": "Goa (1993)"
+      },
+      {
+        "hi": "हरियाणा (1989)",
+        "en": "Haryana (1989)"
+      },
+      {
+        "hi": "कर्नाटक (1965)",
+        "en": "Karnataka (1965)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "गोवा सार्वजनिक पुस्तकालय अधिनियम, 1993 के तहत भारत निर्मित विदेशी शराब (IMFL) की प्रत्येक बोतल पर अधिभार / उपकर लगाकर पुस्तकालय कोष जुटाया जाता है।",
+    "exp_en": "Under the Goa Public Libraries Act, 1993, a surcharge/cess is levied on the sale of Indian Made Foreign Liquor (IMFL) to create and sustain the public library fund."
+  },
+  {
+    "globalId": "u1_sub1_3_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "प्राचीन काल में नालंदा विश्वविद्यालय के प्रसिद्ध पुस्तकालय परिसर को किस नाम से जाना जाता था?",
+    "q_en": "In ancient times, the legendary library complex of Nalanda University was known by what collective name?",
+    "options_hi": [
+      "ज्ञान भंडार (Jnana Bhandara)",
+      "धर्मगंज (Dharmaganja)",
+      "सरस्वती महल (Saraswathi Mahal)",
+      "किताबखाना (Kitabkhana)"
+    ],
+    "options_en": [
+      "Jnana Bhandara",
+      "Dharmaganja",
+      "Saraswathi Mahal",
+      "Kitabkhana"
+    ],
+    "options": [
+      {
+        "hi": "ज्ञान भंडार (Jnana Bhandara)",
+        "en": "Jnana Bhandara"
+      },
+      {
+        "hi": "धर्मगंज (Dharmaganja)",
+        "en": "Dharmaganja"
+      },
+      {
+        "hi": "सरस्वती महल (Saraswathi Mahal)",
+        "en": "Saraswathi Mahal"
+      },
+      {
+        "hi": "किताबखाना (Kitabkhana)",
+        "en": "Kitabkhana"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नालंदा विश्वविद्यालय के पुस्तकालय को 'धर्मगंज' (Dharmaganja - धर्म का खजाना) कहा जाता था। इसमें रत्नसागर (9 मंजिला), रत्नोदधि और रत्नारंजक नामक तीन विशाल ग्रंथालय भवन शामिल थे।",
+    "exp_en": "The famous library of Nalanda University was named 'Dharmaganja' (Mountain of Truth). It comprised three grand multi-storeyed buildings: Ratnasagara, Ratnodadhi, and Ratnaranjaka."
+  },
+  {
+    "globalId": "u1_sub1_3_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "डॉ. एस.आर. रंगनाथन ने भारत के लिए अपना प्रथम 'मॉडल सार्वजनिक पुस्तकालय विधेयक' (Model Public Library Bill) किस सम्मेलन में प्रस्तुत किया था?",
+    "q_en": "At which conference did Dr. S.R. Ranganathan present his first 'Model Public Library Bill' for India?",
+    "options_hi": [
+      "प्रथम अखिल भारतीय पुस्तकालय सम्मेलन, कलकत्ता (1933)",
+      "प्रथम अखिल एशियाई शैक्षणिक सम्मेलन, बनारस (1930)",
+      "आईएलए वार्षिक सम्मेलन, मद्रास (1942)",
+      "यूनेस्को दिल्ली संगोष्ठी (1951)"
+    ],
+    "options_en": [
+      "First All India Library Conference, Calcutta (1933)",
+      "First All Asia Educational Conference, Banaras (1930)",
+      "ILA Annual Conference, Madras (1942)",
+      "UNESCO Delhi Seminar (1951)"
+    ],
+    "options": [
+      {
+        "hi": "प्रथम अखिल भारतीय पुस्तकालय सम्मेलन, कलकत्ता (1933)",
+        "en": "First All India Library Conference, Calcutta (1933)"
+      },
+      {
+        "hi": "प्रथम अखिल एशियाई शैक्षणिक सम्मेलन, बनारस (1930)",
+        "en": "First All Asia Educational Conference, Banaras (1930)"
+      },
+      {
+        "hi": "आईएलए वार्षिक सम्मेलन, मद्रास (1942)",
+        "en": "ILA Annual Conference, Madras (1942)"
+      },
+      {
+        "hi": "यूनेस्को दिल्ली संगोष्ठी (1951)",
+        "en": "UNESCO Delhi Seminar (1951)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दिसंबर 1930 में बनारस में आयोजित 'प्रथम अखिल एशियाई शैक्षणिक सम्मेलन' (First All Asia Educational Conference) के पुस्तकालय सेवा अनुभाग में डॉ. रंगनाथन ने मॉडल लाइब्रेरी एक्ट का प्रारूप प्रस्तुत किया था।",
+    "exp_en": "Dr. S.R. Ranganathan drafted and presented his first Model Public Library Bill in December 1930 at the First All Asia Educational Conference held at Banaras."
+  },
+  {
+    "globalId": "u1_sub1_3_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "निम्नलिखित में से किन दो राज्यों के पुस्तकालय अधिनियमों में कोई पुस्तकालय उपकर (No Library Cess) नहीं है और वे पूर्णतः राज्य बजट पर निर्भर हैं?",
+    "q_en": "Which pair of states among the following have No Library Cess in their legislation and depend entirely on state budgetary grants?",
+    "options_hi": [
+      "तमिलनाडु एवं आंध्र प्रदेश",
+      "कर्नाटक एवं हरियाणा",
+      "महाराष्ट्र एवं पश्चिम बंगाल",
+      "केरल एवं गोवा"
+    ],
+    "options_en": [
+      "Tamil Nadu and Andhra Pradesh",
+      "Karnataka and Haryana",
+      "Maharashtra and West Bengal",
+      "Kerala and Goa"
+    ],
+    "options": [
+      {
+        "hi": "तमिलनाडु एवं आंध्र प्रदेश",
+        "en": "Tamil Nadu and Andhra Pradesh"
+      },
+      {
+        "hi": "कर्नाटक एवं हरियाणा",
+        "en": "Karnataka and Haryana"
+      },
+      {
+        "hi": "महाराष्ट्र एवं पश्चिम बंगाल",
+        "en": "Maharashtra and West Bengal"
+      },
+      {
+        "hi": "केरल एवं गोवा",
+        "en": "Kerala and Goa"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "महाराष्ट्र (1967) और पश्चिम बंगाल (1979) दोनों के पुस्तकालय अधिनियमों में कोई उपकर (No Cess) नहीं है। दोनों राज्य अपनी संचित निधि/बजट से पुस्तकालयों को प्रत्यक्ष वित्तीय अनुदान देते हैं।",
+    "exp_en": "Both Maharashtra (1967) and West Bengal (1979) Public Library Acts have No Cess provision. Their library systems are financed directly from state consolidated fund/budgetary allocations."
+  },
+  {
+    "globalId": "u1_sub1_3_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में किस राज्य ने सर्वाधिक व्यापक पुस्तकालय उपकर (संपत्ति, वाहन, भूमि राजस्व व प्रवेश कर) का प्रावधान किया है?",
+    "q_en": "Which Indian state has enacted the most comprehensive multi-source library cess (covering property, motor vehicles, land revenue, and entry tax)?",
+    "options_hi": [
+      "तमिलनाडु (1948)",
+      "कर्नाटक / मैसूर (1965)",
+      "केरल (1989)",
+      "आंध्र प्रदेश (1960)"
+    ],
+    "options_en": [
+      "Tamil Nadu (1948)",
+      "Karnataka / Mysore (1965)",
+      "Kerala (1989)",
+      "Andhra Pradesh (1960)"
+    ],
+    "options": [
+      {
+        "hi": "तमिलनाडु (1948)",
+        "en": "Tamil Nadu (1948)"
+      },
+      {
+        "hi": "कर्नाटक / मैसूर (1965)",
+        "en": "Karnataka / Mysore (1965)"
+      },
+      {
+        "hi": "केरल (1989)",
+        "en": "Kerala (1989)"
+      },
+      {
+        "hi": "आंध्र प्रदेश (1960)",
+        "en": "Andhra Pradesh (1960)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कर्नाटक (मैसूर) सार्वजनिक पुस्तकालय अधिनियम 1965 में सबसे व्यापक उपकर संरचना है, जो संपत्ति कर, भूमि राजस्व, मोटर वाहन कर और प्रवेश कर पर लगाया जाता है।",
+    "exp_en": "The Karnataka (formerly Mysore) Public Libraries Act, 1965 has the most diverse tax base, levying library cess on property tax, land revenue, motor vehicles, and entry tax."
+  },
+  {
+    "globalId": "u1_sub1_3_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में वर्तमान समय (2026) तक कुल कितने राज्यों में सार्वजनिक पुस्तकालय अधिनियम पारित हो चुका है?",
+    "q_en": "Up to the present year (2026), how many states in India have successfully enacted Public Library Legislation?",
+    "options_hi": [
+      "14 राज्यों में",
+      "16 राज्यों में",
+      "19 राज्यों में",
+      "22 राज्यों में"
+    ],
+    "options_en": [
+      "14 States",
+      "16 States",
+      "19 States",
+      "22 States"
+    ],
+    "options": [
+      {
+        "hi": "14 राज्यों में",
+        "en": "14 States"
+      },
+      {
+        "hi": "16 राज्यों में",
+        "en": "16 States"
+      },
+      {
+        "hi": "19 राज्यों में",
+        "en": "19 States"
+      },
+      {
+        "hi": "22 राज्यों में",
+        "en": "22 States"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "भारत में अब तक कुल 19 राज्यों में पुस्तकालय अधिनियम पारित हो चुके हैं। 16वां राज्य बिहार (2008) था, और 19वां नवीनतम राज्य तेलंगाना (2015) है।",
+    "exp_en": "A total of 19 states in India have passed public library legislation so far. Bihar was the 16th state (2008), and Telangana is the 19th state (2015)."
+  },
+  {
+    "globalId": "u1_sub1_3_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में पहली बार मास्टर ऑफ लाइब्रेरी साइंस (M.Lib.Sc.) डिग्री कोर्स किस विश्वविद्यालय में और किस वर्ष शुरू किया गया था?",
+    "q_en": "In which university and in which year was the Master of Library Science (M.Lib.Sc.) degree course started for the first time in India?",
+    "options_hi": [
+      "मद्रास विश्वविद्यालय, 1931",
+      "दिल्ली विश्वविद्यालय, 1949",
+      "बनारस हिंदू विश्वविद्यालय, 1945",
+      "कलकत्ता विश्वविद्यालय, 1952"
+    ],
+    "options_en": [
+      "University of Madras, 1931",
+      "University of Delhi, 1949",
+      "Banaras Hindu University, 1945",
+      "University of Calcutta, 1952"
+    ],
+    "options": [
+      {
+        "hi": "मद्रास विश्वविद्यालय, 1931",
+        "en": "University of Madras, 1931"
+      },
+      {
+        "hi": "दिल्ली विश्वविद्यालय, 1949",
+        "en": "University of Delhi, 1949"
+      },
+      {
+        "hi": "बनारस हिंदू विश्वविद्यालय, 1945",
+        "en": "Banaras Hindu University, 1945"
+      },
+      {
+        "hi": "कलकत्ता विश्वविद्यालय, 1952",
+        "en": "University of Calcutta, 1952"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दिल्ली विश्वविद्यालय में डॉ. एस.आर. रंगनाथन के प्रयासों से वर्ष 1949 में भारत तथा संपूर्ण राष्ट्रमंडल (Commonwealth) का पहला M.Lib.Sc. पाठ्यक्रम प्रारंभ किया गया था।",
+    "exp_en": "The Master of Library Science (M.Lib.Sc.) course was introduced for the first time in India and the Commonwealth at the University of Delhi in 1949 under Dr. S.R. Ranganathan."
+  },
+  {
+    "globalId": "u1_sub1_3_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "भारत में राष्ट्रीय पुस्तकालय एवं सूचना प्रणाली नीति (NAPLIS) का मसौदा 1986 में किसकी अध्यक्षता में तैयार किया गया था?",
+    "q_en": "Under whose chairmanship was the National Policy on Library and Information Systems (NAPLIS) draft formulated in 1986 in India?",
+    "options_hi": [
+      "प्रो. डी.पी. चट्टोपाध्याय (Prof. D.P. Chattopadhyaya)",
+      "डॉ. एस.आर. रंगनाथन",
+      "डॉ. सी.आर. करिसिद्धप्पा",
+      "डॉ. मनमोहन सिंह"
+    ],
+    "options_en": [
+      "Prof. D.P. Chattopadhyaya",
+      "Dr. S.R. Ranganathan",
+      "Dr. C.R. Karisiddappa",
+      "Dr. Manmohan Singh"
+    ],
+    "options": [
+      {
+        "hi": "प्रो. डी.पी. चट्टोपाध्याय (Prof. D.P. Chattopadhyaya)",
+        "en": "Prof. D.P. Chattopadhyaya"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "डॉ. सी.आर. करिसिद्धप्पा",
+        "en": "Dr. C.R. Karisiddappa"
+      },
+      {
+        "hi": "डॉ. मनमोहन सिंह",
+        "en": "Dr. Manmohan Singh"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "भारत सरकार के संस्कृति विभाग द्वारा 1985 में गठित समिति ने प्रो. डी.पी. चट्टोपाध्याय की अध्यक्षता में मई 1986 में राष्ट्रीय पुस्तकालय एवं सूचना प्रणाली नीति (NAPLIS) का ऐतिहासिक मसौदा प्रस्तुत किया था।",
+    "exp_en": "The Committee on National Policy on Library and Information Systems (NAPLIS) was chaired by eminent philosopher Prof. D.P. Chattopadhyaya, submitting its report in May 1986."
+  },
+  {
+    "globalId": "u1_sub1_3_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.3",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+    "q_hi": "बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम, 2008 के तहत 'राज्य पुस्तकालय प्राधिकरण' (State Library Authority) के पदेन अध्यक्ष कौन होते हैं?",
+    "q_en": "Under the Bihar Public Library and Information Centre Act, 2008, who is the ex-officio Chairman of the State Library Authority?",
+    "options_hi": [
+      "बिहार के माननीय राज्यपाल",
+      "बिहार के माननीय मुख्यमंत्री",
+      "शिक्षा मंत्री, बिहार सरकार",
+      "निदेशक, राज्य केंद्रीय पुस्तकालय (सिन्हा लाइब्रेरी)"
+    ],
+    "options_en": [
+      "Hon'ble Governor of Bihar",
+      "Hon'ble Chief Minister of Bihar",
+      "Minister for Education, Govt. of Bihar",
+      "Director, State Central Library (Sinha Library)"
+    ],
+    "options": [
+      {
+        "hi": "बिहार के माननीय राज्यपाल",
+        "en": "Hon'ble Governor of Bihar"
+      },
+      {
+        "hi": "बिहार के माननीय मुख्यमंत्री",
+        "en": "Hon'ble Chief Minister of Bihar"
+      },
+      {
+        "hi": "शिक्षा मंत्री, बिहार सरकार",
+        "en": "Minister for Education, Govt. of Bihar"
+      },
+      {
+        "hi": "निदेशक, राज्य केंद्रीय पुस्तकालय (सिन्हा लाइब्रेरी)",
+        "en": "Director, State Central Library (Sinha Library)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "बिहार अधिनियम, 2008 के अनुसार राज्य पुस्तकालय प्राधिकरण (State Library Authority) के अध्यक्ष बिहार सरकार के शिक्षा मंत्री होते हैं। यह प्राधिकरण राज्य में पुस्तकालय नीति और विकास की सर्वोच्च संस्था है।",
+    "exp_en": "Under the Bihar Act of 2008, the Minister for Education, Government of Bihar serves as the ex-officio Chairman of the State Library Authority, the apex policymaking body in the state."
+  }
+]

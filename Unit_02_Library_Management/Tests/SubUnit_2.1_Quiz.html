@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2.1 Quiz: Collection Development & Acquisition | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_2.1_Collection_Development.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 2.1: Collection Development</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "पुस्तक चयन का सुप्रसिद्ध सिद्धांत \"To provide the right book to the right reader at the right time\" किसके द्वारा 1930 में प्रतिपादित किया गया था?",
+            q_en: "The well-known principle of book selection \"To provide the right book to the right reader at the right time\" was propounded in 1930 by:",
+            options_hi: [
+                "मेल्विल डेवी (Melvil Dewey)",
+                "एफ.के. ड्रूरी (Francis K. Drury)",
+                "एल.आर. मैककोल्विन (L.R. McColvin)",
+                "डॉ. एस.आर. रंगनाथन"
+            ],
+            options_en: [
+                "Melvil Dewey",
+                "Francis K. Drury",
+                "L.R. McColvin",
+                "Dr. S.R. Ranganathan"
+            ],
+            correct: 1,
+            exp_hi: "एफ.के. ड्रूरी (Francis K. Drury) ने अपनी 1930 में प्रकाशित पुस्तक 'Book Selection' में यह सिद्धांत प्रतिपादित किया था कि पुस्तकालय का मुख्य ध्येय 'उचित पाठक को, उचित समय पर, उचित पुस्तक प्रदान करना' है।",
+            exp_en: "Francis K. Drury formulated this classic maxim in his 1930 book 'Book Selection', emphasizing matching the right reader with the right book at the right time."
+        },
+        {
+            id: 2,
+            q_hi: "पुस्तक चयन के संदर्भ में 'मांग एवं पूर्ति का सिद्धांत' (Demand and Supply Theory) 1925 में किसने दिया था?",
+            q_en: "Who propounded the 'Demand and Supply Theory' of book selection in 1925?",
+            options_hi: [
+                "एल.आर. मैककोल्विन (L.R. McColvin)",
+                "हेलेन हेन्स (Helen Haines)",
+                "सी.ए. कटर (C.A. Cutter)",
+                "मेल्विल डेवी"
+            ],
+            options_en: [
+                "L.R. McColvin",
+                "Helen Haines",
+                "C.A. Cutter",
+                "Melvil Dewey"
+            ],
+            correct: 0,
+            exp_hi: "लायनेल रॉय मैककोल्विन (L.R. McColvin) ने 1925 में 'The Theory of Book Selection for Public Libraries' पुस्तक में मांग और पूर्ति का सिद्धांत दिया। उनके अनुसार पुस्तकें तभी खरीदी जानी चाहिए जब उनकी मांग हो या संभावित मांग उत्पन्न की जा सके।",
+            exp_en: "Lionel Roy McColvin advanced the Demand and Supply theory in 1925 in his work 'The Theory of Book Selection for Public Libraries', distinguishing between volume and value of demand."
+        },
+        {
+            id: 3,
+            q_hi: "\"The best reading for the largest number at the least cost\" पुस्तक चयन का आदर्श वाक्य किसने प्रतिपादित किया था?",
+            q_en: "Who coined the famous book selection motto: \"The best reading for the largest number at the least cost\"?",
+            options_hi: [
+                "मेल्विल डेवी (Melvil Dewey, 1876)",
+                "एफ.के. ड्रूरी (1930)",
+                "डॉ. एस.आर. रंगनाथन (1952)",
+                "जस्टिन विंसर"
+            ],
+            options_en: [
+                "Melvil Dewey (1876)",
+                "F.K. Drury (1930)",
+                "Dr. S.R. Ranganathan (1952)",
+                "Justin Winsor"
+            ],
+            correct: 0,
+            exp_hi: "मेल्विल डेवी ने 1876 में अमेरिकन लाइब्रेरी एसोसिएशन (ALA) की स्थापना के समय यह आदर्श वाक्य दिया था। यह तीन प्रमुख आयामों—गुणवत्ता (Best Reading), व्यापकता (Largest Number) और मितव्ययिता (Least Cost) पर केंद्रित है।",
+            exp_en: "Melvil Dewey formulated this motto in 1876 at the founding of the ALA, focusing on three core criteria: quality (best reading), breadth of readership (largest number), and economy (least cost)."
+        },
+        {
+            id: 4,
+            q_hi: "पुस्तकालय में जोड़ी जाने वाली प्रत्येक पुस्तक का स्थायी कानूनी एवं वित्तीय अभिलेख (Permanent Legal & Financial Record) क्या कहलाता है?",
+            q_en: "What is the permanent legal and financial record of every book acquired in a library called?",
+            options_hi: [
+                "शेल्फ लिस्ट (Shelf List)",
+                "परिग्रहण पंजिका (Accession Register)",
+                "कैटलॉग कार्ड (Catalogue Card)",
+                "चालान फाइल (Invoice File)"
+            ],
+            options_en: [
+                "Shelf List",
+                "Accession Register",
+                "Catalogue Card",
+                "Invoice File"
+            ],
+            correct: 1,
+            exp_hi: "परिग्रहण पंजिका (Accession Register) पुस्तकालय का सबसे महत्वपूर्ण और स्थायी वित्तीय/कानूनी दस्तावेज है। इसमें प्रत्येक पुस्तक का क्रमिक विवरण और उसकी यूनिक परिग्रहण संख्या (Accession Number) दर्ज होती है।",
+            exp_en: "The Accession Register is the permanent, legal, and financial inventory ledger of a library where books are systematically recorded in order of receipt with unique accession numbers."
+        },
+        {
+            id: 5,
+            q_hi: "भारतीय मानक ब्यूरो (BIS) एवं मानक पुस्तकालय पद्धति के अनुसार एक सामान्य परिग्रहण पंजिका (Accession Register) में कितने स्तंभ (कॉलम) होते हैं?",
+            q_en: "According to the Bureau of Indian Standards (BIS) and standard library practice, how many columns are there in an Accession Register?",
+            options_hi: [
+                "10 कॉलम",
+                "12 कॉलम",
+                "14 कॉलम",
+                "16 कॉलम"
+            ],
+            options_en: [
+                "10 Columns",
+                "12 Columns",
+                "14 Columns",
+                "16 Columns"
+            ],
+            correct: 2,
+            exp_hi: "मानक भारतीय परिग्रहण पंजिका में कुल 14 कॉलम (स्तंभ) होते हैं: 1. तिथि, 2. परिग्रहण सं., 3. लेखक, 4. शीर्षक, 5. संस्करण, 6. स्थान व प्रकाशक, 7. वर्ष, 8. पृष्ठ, 9. आकार, 10. जिल्द, 11. स्रोत, 12. मूल्य, 13. क्रमांक (Call No.), 14. रिमार्क्स।",
+            exp_en: "The standard Accession Register according to BIS guidelines contains 14 columns detailing acquisition date, accession number, author, title, edition, imprint, collation, binding, vendor, cost, call number, and withdrawal remarks."
+        },
+        {
+            id: 6,
+            q_hi: "सामयिक पत्र-पत्रिकाओं (Periodicals) के पंजीकरण एवं नियंत्रण हेतु डॉ. एस.आर. रंगनाथन द्वारा किस प्रणाली का आविष्कार किया गया था?",
+            q_en: "Which system was invented by Dr. S.R. Ranganathan for the registration and management of periodicals in libraries?",
+            options_hi: [
+                "कारडेक्स प्रणाली (Kardex System)",
+                "तीन-कार्ड प्रणाली (Three-Card System)",
+                "नेवार्क प्रणाली (Newark System)",
+                "ब्राउन प्रणाली (Browne System)"
+            ],
+            options_en: [
+                "Kardex System",
+                "Three-Card System",
+                "Newark System",
+                "Browne System"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. रंगनाथन ने पत्र-पत्रिकाओं के प्रभावी नियंत्रण हेतु 'तीन-कार्ड प्रणाली' (Three-Card System) का आविष्कार किया। इसमें रजिस्टर कार्ड, चेक कार्ड और क्लासीफाइड इंडेक्स कार्ड का उपयोग 5\"×3\" आकार में किया जाता है। (कारडेक्स रेमिंगटन रैंड कंपनी का है)।",
+            exp_en: "Dr. S.R. Ranganathan invented the 'Three-Card System' using 5\"×3\" cards (Register Card, Check Card, and Classified Index Card) for monitoring and acquiring periodical publications."
+        },
+        {
+            id: 7,
+            q_hi: "डॉ. रंगनाथन की तीन-कार्ड प्रणाली में से कौन-सा कार्ड पत्रिकाओं के न प्राप्त हुए अंकों के लिए प्रकाशक/विक्रेता को रिमाइंडर (स्मरण-पत्र) भेजने में प्रयुक्त होता है?",
+            q_en: "In Dr. Ranganathan's Three-Card System, which card is specifically used to detect missing issues and send reminders to publishers/vendors?",
+            options_hi: [
+                "पंजीकरण कार्ड (Register Card)",
+                "जांच कार्ड (Check Card)",
+                "वर्गीकृत सूचकांक कार्ड (Classified Index Card)",
+                "शेल्फ सूची कार्ड (Shelf List Card)"
+            ],
+            options_en: [
+                "Register Card",
+                "Check Card",
+                "Classified Index Card",
+                "Shelf List Card"
+            ],
+            correct: 1,
+            exp_hi: "जांच कार्ड (Check Card) का प्राथमिक कार्य यह निगरानी करना है कि पत्रिका का कौन-सा अंक नियत समय पर नहीं पहुँचा है, ताकि विक्रेता को समय पर दावा या स्मरण-पत्र (Reminder) भेजा जा सके।",
+            exp_en: "The Check Card is designed to monitor the regularity of incoming issues and systematically trigger reminders/claims to vendors or publishers for non-receipt."
+        },
+        {
+            id: 8,
+            q_hi: "पुस्तक चयन पर प्रसिद्ध शास्त्रीय ग्रंथ 'Living with Books: The Art of Book Selection' (1935) की लेखिका कौन हैं?",
+            q_en: "Who is the author of the celebrated classic treatise 'Living with Books: The Art of Book Selection' (1935)?",
+            options_hi: [
+                "हेलेन ई. हेन्स (Helen E. Haines)",
+                "नीना ई. ब्राउन (Nina E. Browne)",
+                "मार्गरेट मान (Margaret Mann)",
+                "एस.आर. रंगनाथन"
+            ],
+            options_en: [
+                "Helen E. Haines",
+                "Nina E. Browne",
+                "Margaret Mann",
+                "S.R. Ranganathan"
+            ],
+            correct: 0,
+            exp_hi: "हेलेन ई. हेन्स (Helen E. Haines) ने 1935 में 'Living with Books' पुस्तक लिखी। उन्होंने पुस्तक चयन को एक यांत्रिक कार्य न मानकर एक बौद्धिक एवं रचनात्मक कला माना।",
+            exp_en: "Helen E. Haines authored 'Living with Books: The Art of Book Selection' in 1935, championing book selection as an intellectual art that values literary quality and human interest."
+        },
+        {
+            id: 9,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा लिखित पुस्तक 'Library Book Selection' प्रथम बार किस वर्ष प्रकाशित हुई थी?",
+            q_en: "In which year was Dr. S.R. Ranganathan's book 'Library Book Selection' first published?",
+            options_hi: [
+                "1931",
+                "1944",
+                "1952",
+                "1960"
+            ],
+            options_en: [
+                "1931",
+                "1944",
+                "1952",
+                "1960"
+            ],
+            correct: 2,
+            exp_hi: "डॉ. रंगनाथन की पुस्तक 'Library Book Selection' वर्ष 1952 में प्रकाशित हुई थी। इसमें उन्होंने स्पष्ट किया कि पुस्तक चयन के मार्गदर्शक सिद्धांत सीधे पुस्तकालय विज्ञान के पाँच सूत्रों से निःसृत होते हैं।",
+            exp_en: "Dr. Ranganathan's 'Library Book Selection' was published in 1952, deriving book selection principles systematically from the Five Laws of Library Science."
+        },
+        {
+            id: 10,
+            q_hi: "पुस्तकालय में किसी पुस्तक की विशिष्ट पहचान हेतु प्रयुक्त 'क्रमांक' (Call Number) मुख्यतः किन घटकों से मिलकर बनता है?",
+            q_en: "The 'Call Number' used for the unique placement and identification of a book on shelves is composed primarily of:",
+            options_hi: [
+                "Class Number + Book Number",
+                "Accession Number + Bill Number",
+                "ISBN + ISSN",
+                "Author Mark + Title Mark"
+            ],
+            options_en: [
+                "Class Number + Book Number",
+                "Accession Number + Bill Number",
+                "ISBN + ISSN",
+                "Author Mark + Title Mark"
+            ],
+            correct: 0,
+            exp_hi: "रंगनाथन एवं मानक वर्गीकरण सिद्धांतों के अनुसार Call Number = Class Number (वर्गांक) + Book Number (ग्रंथांक) [+ Collection Number / संग्रह अंक]।",
+            exp_en: "A Call Number is fundamentally composed of Class Number (denoting the subject) + Book Number (distinguishing the individual book among works of the same subject)."
+        },
+        {
+            id: 11,
+            q_hi: "पुस्तक अधिग्रहण प्रक्रिया (Acquisition Process) में ऑर्डर देने से ठीक पूर्व 'डुप्लीकेशन चेकिंग' (Pre-order Search) क्यों की जाती है?",
+            q_en: "In the acquisition procedure, why is 'Pre-order Duplication Checking' performed right before placing a purchase order?",
+            options_hi: [
+                "पुस्तक के मूल्य में छूट की जांच हेतु",
+                "यह सत्यापित करने के लिए कि पुस्तक पहले से पुस्तकालय में या पूर्व ऑर्डर में उपलब्ध तो नहीं है",
+                "पुस्तक की जिल्द की गुणवत्ता जांचने हेतु",
+                "कॉपीराइट की अवधि समाप्त होने की जांच हेतु"
+            ],
+            options_en: [
+                "To check vendor discount",
+                "To verify that the title is not already present in the collection or under existing order",
+                "To inspect binding quality",
+                "To verify copyright expiration"
+            ],
+            correct: 1,
+            exp_hi: "डुप्लीकेशन जांच का मुख्य उद्देश्य पुस्तकालय के सीमित बजट का अपव्यय रोकना है ताकि वही पुस्तक दोबारा अनजाने में न खरीदी जाए जो पहले से स्टॉक में है अथवा जिसका ऑर्डर पहले ही दिया जा चुका है।",
+            exp_en: "Pre-order searching prevents unintended duplication of titles already in the library collection or in the active pipeline, conserving finite financial resources."
+        },
+        {
+            id: 12,
+            q_hi: "सामयिक पत्रिकाओं के प्रबंधन हेतु विश्वभर में प्रयुक्त व्यावसायिक 'कारडेक्स' (Kardex) प्रणाली का निर्माण किस कंपनी द्वारा किया गया था?",
+            q_en: "The commercial 'Kardex' system widely used in libraries for periodicals recording was manufactured by which company?",
+            options_hi: [
+                "आईबीएम (IBM)",
+                "रेमिंगटन रैंड (Remington Rand of India)",
+                "जेरॉक्स कॉर्पोरेशन",
+                "माइक्रोसॉफ्ट"
+            ],
+            options_en: [
+                "IBM",
+                "Remington Rand",
+                "Xerox Corporation",
+                "Microsoft"
+            ],
+            correct: 1,
+            exp_hi: "कारडेक्स (Kardex) एक दृश्य रिकॉर्ड फाइलिंग कैबिनेट प्रणाली है, जिसका निर्माण रेमिंगटन रैंड (Remington Rand) कंपनी द्वारा किया गया था। इसमें स्टील की दराजों में धातु की पट्टियों पर कार्ड लगे होते हैं।",
+            exp_en: "Kardex is a visible index filing equipment introduced by Remington Rand, utilizing steel cabinets with overlapping sliding trays for visual tracking of periodical issues."
+        },
+        {
+            id: 13,
+            q_hi: "संग्रह विकास चक्र (Collection Development Cycle) का प्रथम एवं सर्वाधिक महत्वपूर्ण चरण कौन-सा होता है?",
+            q_en: "Which is the first and most critical step in the Collection Development Cycle?",
+            options_hi: [
+                "चालान का भुगतान (Invoice payment)",
+                "उपयोगकर्ता आवश्यकता विश्लेषण (User Needs Assessment)",
+                "पुस्तक निरसन (Weeding)",
+                "जिल्दसाजी (Binding)"
+            ],
+            options_en: [
+                "Invoice payment",
+                "User Needs Assessment",
+                "Weeding",
+                "Binding"
+            ],
+            correct: 1,
+            exp_hi: "संग्रह विकास का शुभारंभ हमेशा समुदाय या उपयोगकर्ताओं की शैक्षणिक, सूचनात्मक व शोध संबंधी आवश्यकताओं के वैज्ञानिक विश्लेषण (User Needs Assessment) से होता है।",
+            exp_en: "Every sound collection development program begins with User Needs Assessment, identifying user demographics, educational priorities, and research trajectories."
+        },
+        {
+            id: 14,
+            q_hi: "पुस्तकालय में परिग्रहण संख्या (Accession Number) के संबंध में निम्नलिखित में से कौन-सा कथन सत्य है?",
+            q_en: "Which of the following statements is TRUE regarding the Accession Number in a library?",
+            options_hi: [
+                "यह एक ही विषय की सभी पुस्तकों के लिए समान होती है।",
+                "यह प्रत्येक भौतिक ग्रंथ/वॉल्यूम के लिए एक अद्वितीय एवं क्रमिक संख्या होती है।",
+                "यह पुस्तक के प्रकाशन वर्ष पर आधारित होती है।",
+                "यह पुस्तक के लेखक के नाम के अक्षरों से बनाई जाती है।"
+            ],
+            options_en: [
+                "It is identical for all books on the same subject.",
+                "It is a unique serial number assigned to each individual physical volume.",
+                "It is based on the publication year of the book.",
+                "It is constructed using the letters of the author's surname."
+            ],
+            correct: 1,
+            exp_hi: "परिग्रहण संख्या (Accession Number) एक अद्वितीय (Unique) क्रमिक संख्या है जो प्रत्येक प्रविष्टि को दी जाती है। भले ही किसी पुस्तक की दो प्रतियां (Copies) हों, दोनों का Call Number समान हो सकता है परंतु परिग्रहण संख्या भिन्न होगी।",
+            exp_en: "An Accession Number is an individual, non-repeating serial number assigned to each physical copy upon formal registration in the Accession Register."
+        },
+        {
+            id: 15,
+            q_hi: "डॉ. एस.आर. रंगनाथन की तीन-कार्ड प्रणाली में प्रयुक्त कार्डों का मानक आकार क्या होता है?",
+            q_en: "What is the standard dimension of the cards used in Dr. S.R. Ranganathan's Three-Card System?",
+            options_hi: [
+                "3\" × 2\" इंच",
+                "5\" × 3\" इंच (12.5 × 7.5 सेमी)",
+                "8\" × 5\" इंच",
+                "6\" × 4\" इंच"
+            ],
+            options_en: [
+                "3\" × 2\" inches",
+                "5\" × 3\" inches (12.5 × 7.5 cm)",
+                "8\" × 5\" inches",
+                "6\" × 4\" inches"
+            ],
+            correct: 1,
+            exp_hi: "पुस्तकालयों में कार्ड कैटलॉग और तीन-कार्ड प्रणाली दोनों में मानक कार्ड का आकार 5\" × 3\" इंच (12.5 सेमी × 7.5 सेमी) ही होता है।",
+            exp_en: "The universal standard size for library index and catalogue cards, including Ranganathan's Three-Card System, is 5\" × 3\" inches (12.5 cm × 7.5 cm)."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60;
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_2_1_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

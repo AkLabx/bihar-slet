@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3.1 Quiz: Library Classification (DDC, UDC, CC) | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_3.1_Classification.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 3.1: Classification</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "डेवी दशमलव वर्गीकरण (DDC) का प्रथम संस्करण 1876 में कितने पृष्ठों में और किस रूप में प्रकाशित हुआ था?",
+            q_en: "In how many pages and in what form was the first edition of the Dewey Decimal Classification (DDC) published in 1876?",
+            options_hi: [
+                "44 पृष्ठों में, अनामी (Anonymous) रूप से",
+                "100 पृष्ठों में, मेल्विल डेवी के नाम से",
+                "4 खंडों में, 1,000 पृष्ठों में",
+                "12 पृष्ठों में, पैम्फलेट रूप में"
+            ],
+            options_en: [
+                "In 44 pages, published anonymously",
+                "In 100 pages, under Melvil Dewey's name",
+                "In 4 volumes, 1,000 pages",
+                "In 12 pages, as a pamphlet"
+            ],
+            correct: 0,
+            exp_hi: "DDC का प्रथम संस्करण 1876 में 'A Classification and Subject Index for Cataloguing and Arranging the Books and Pamphlets of a Library' शीर्षक से बिना लेखक के नाम के (Anonymous) मात्र 44 पृष्ठों में प्रकाशित हुआ था।",
+            exp_en: "The first edition of DDC appeared anonymously in 1876 with only 44 pages, comprising 12 pages of introduction, 12 pages of tables, and 18 pages of relative index."
+        },
+        {
+            id: 2,
+            q_hi: "कोलन क्लासिफिकेशन (Colon Classification - CC) के 6वें संशोधित संस्करण (1963) में काल पक्ष [Time - T] के लिए कौन-सा योजक चिह्न निर्धारित किया गया था?",
+            q_en: "In the 6th revised edition of Colon Classification (1963), which connecting symbol was designated for the Time facet [T]?",
+            options_hi: [
+                "बिंदु / डॉट (.)",
+                "अल्पविराम / कॉमा (,)",
+                "उद्धरण चिह्न / सिंगल इनवर्टेड कॉमा (')",
+                "अपूर्णविराम / कोलन (:)"
+            ],
+            options_en: [
+                "Dot (.)",
+                "Comma (,)",
+                "Single Inverted Comma (')",
+                "Colon (:)"
+            ],
+            correct: 2,
+            exp_hi: "6वें संस्करण (1960) तक Space और Time दोनों का योजक चिह्न डॉट (.) था। 1963 के संशोधित संस्करण में डॉ. रंगनाथन ने Time [T] हेतु सिंगल इनवर्टेड कॉमा (') का प्रयोग किया ताकि स्थान और काल में स्पष्ट भेद हो सके।",
+            exp_en: "Prior to 1963, both Space and Time used a dot. In the 1963 revised 6th edition, Ranganathan assigned the single inverted comma (') to the Time facet [T] to eliminate ambiguity."
+        },
+        {
+            id: 3,
+            q_hi: "डेवी दशमलव वर्गीकरण (DDC) पर वर्तमान में कॉपीराइट और संपादन का स्वामित्व किस वैश्विक संस्था के पास है?",
+            q_en: "Which global institution currently owns the copyright and editorial stewardship of the Dewey Decimal Classification (DDC)?",
+            options_hi: [
+                "अमेरिकन लाइब्रेरी एसोसिएशन (ALA)",
+                "ओसीएलसी (OCLC - 1988 से)",
+                "लाइब्रेरी ऑफ कांग्रेस (LC)",
+                "फॉरेस्ट प्रेस (Forest Press)"
+            ],
+            options_en: [
+                "American Library Association (ALA)",
+                "OCLC (Online Computer Library Center - since 1988)",
+                "Library of Congress (LC)",
+                "Forest Press"
+            ],
+            correct: 1,
+            exp_hi: "वर्ष 1988 में OCLC (Online Computer Library Center) ने फॉरेस्ट प्रेस का अधिग्रहण कर DDC के सभी कॉपीराइट और संपादन अधिकार प्राप्त कर लिए। वर्तमान में OCLC ही WebDewey का संचालन करता है।",
+            exp_en: "OCLC acquired Forest Press in 1988, securing full copyright and editorial management of DDC and publishing both print editions and the online WebDewey."
+        },
+        {
+            id: 4,
+            q_hi: "यूनिवर्सल डेसिमल वर्गीकरण (UDC) में दो या दो से अधिक स्वतंत्र विषयों के मध्य 'संबंध' (Relation) दर्शाने हेतु किस योजक चिह्न का उपयोग किया जाता है?",
+            q_en: "In the Universal Decimal Classification (UDC), which punctuation symbol is used to indicate a simple 'Relation' between two or more distinct subjects?",
+            options_hi: [
+                "प्लस (+)",
+                "कोलन (:)",
+                "ऑब्लिक (/)",
+                "बराबर (=)"
+            ],
+            options_en: [
+                "Plus (+)",
+                "Colon (:)",
+                "Oblique (/)",
+                "Equals (=)"
+            ],
+            correct: 1,
+            exp_hi: "UDC में कोलन (:) का प्रयोग दो स्वतंत्र वर्गों के पारस्परिक संबंध (Relation) को व्यक्त करने के लिए किया जाता है (जैसे 17:7 = नीतिशास्त्र का कला से संबंध)।",
+            exp_en: "In UDC, the colon (:) serves as the simple relation sign linking two or more separate class numbers together to denote coordinate interaction."
+        },
+        {
+            id: 5,
+            q_hi: "DDC में किसी संपूर्ण पुराने विषय की अनुसूची को पूरी तरह समाप्त कर नए सिरे से पुनर्गठित करने की प्रक्रिया को क्या कहा जाता है?",
+            q_en: "In DDC, the complete destruction and total reorganization of an existing class schedule is called:",
+            options_hi: [
+                "स्थानिक अनुसूची (Area Schedule)",
+                "फीनिक्स अनुसूची (Phoenix Schedule)",
+                "सापेक्ष अनुक्रमणिका (Relative Index)",
+                "तालिका उप-विभाजन"
+            ],
+            options_en: [
+                "Area Schedule",
+                "Phoenix Schedule",
+                "Relative Index",
+                "Table Subdivision"
+            ],
+            correct: 1,
+            exp_hi: "फीनिक्स अनुसूची (Phoenix Schedule) का प्रयोग DDC के 16वें संस्करण (1958) से शुरू हुआ। जिस प्रकार पौराणिक अमर पक्षी फीनिक्स अपनी ही राख से नया जन्म लेता है, उसी प्रकार पुराने विषय को शून्य से नया स्वरूप दिया जाता है।",
+            exp_en: "Introduced in the 16th edition (1958), a Phoenix Schedule completely revamps an obsolete subject schedule from the ground up, discarding prior notations."
+        },
+        {
+            id: 6,
+            q_hi: "जैव रसायन (Biochemistry), भू-भौतिकी (Geophysics) और जैव-भौतिकी (Biophysics) किस विषय निर्माण विधि (Mode of Formation of Subjects) के उत्कृष्ट उदाहरण हैं?",
+            q_en: "Biochemistry, Geophysics, and Biophysics are quintessential examples of which Mode of Formation of Subjects?",
+            options_hi: [
+                "विखंडन (Fission)",
+                "विलयन (Fusion)",
+                "आसवन (Distillation)",
+                "पटलनीकरण (Lamination)"
+            ],
+            options_en: [
+                "Fission",
+                "Fusion",
+                "Distillation",
+                "Lamination"
+            ],
+            correct: 1,
+            exp_hi: "विलयन (Fusion) में दो स्वतंत्र मुख्य विषय आपस में इस प्रकार घनिष्ठता से घुल-मिल जाते हैं कि एक पूर्णतः नए विषय का जन्म होता है (जैसे Biology + Chemistry = Biochemistry)।",
+            exp_en: "Fusion occurs when two or more distinct subjects merge seamlessly together, forfeiting separate identities to form an integrated new field like Biochemistry."
+        },
+        {
+            id: 7,
+            q_hi: "कोलन क्लासिफिकेशन (CC) में प्रयुक्त पाँच मूलभूत श्रेणियों (PMEST) में से 'पदार्थ' (Matter - M) का योजक चिह्न क्या है?",
+            q_en: "Among the five Fundamental Categories (PMEST) in Colon Classification, what is the connecting symbol for 'Matter' [M]?",
+            options_hi: [
+                "अल्पविराम / कॉमा (,)",
+                "अर्धविराम / सेमीकोलन (;)",
+                "अपूर्णविराम / कोलन (:)",
+                "बिंदु / डॉट (.)"
+            ],
+            options_en: [
+                "Comma (,)",
+                "Semicolon (;)",
+                "Colon (:)",
+                "Dot (.)"
+            ],
+            correct: 1,
+            exp_hi: "रंगनाथन के अनुसार PMEST के योजक चिह्न हैं: Personality = , (कॉमा), Matter = ; (सेमीकोलन), Energy = : (कोलन), Space = . (डॉट), Time = ' (सिंगल इनवर्टेड कॉमा)।",
+            exp_en: "In Colon Classification, the connecting symbol for Matter [M] is the semicolon (;), introduced in the 4th edition (1952)."
+        },
+        {
+            id: 8,
+            q_hi: "DDC के 23वें संस्करण (2011) में कुल कितनी सहायक तालिकाएं (Auxiliary Tables) समाविष्ट हैं?",
+            q_en: "How many Auxiliary Tables are included in the 23rd edition (2011) of the Dewey Decimal Classification?",
+            options_hi: [
+                "4 तालिकाएं",
+                "6 तालिकाएं (6 Tables)",
+                "7 तालिकाएं",
+                "10 तालिकाएं"
+            ],
+            options_en: [
+                "4 Tables",
+                "6 Tables",
+                "7 Tables",
+                "10 Tables"
+            ],
+            correct: 1,
+            exp_hi: "DDC 23rd संस्करण में कुल 6 तालिकाएं हैं (Table 1: Standard Subdivisions से Table 6: Languages)। Table 7 (Persons) को 22वें संस्करण से ही समाप्त कर दिया गया था।",
+            exp_en: "DDC 23 features 6 Auxiliary Tables (Table 1 to Table 6). Table 7 (Individual Persons) was eliminated in the 22nd edition and integrated into Table 1 and schedules."
+        },
+        {
+            id: 9,
+            q_hi: "UDC का प्रथम संस्करण किस वर्ष, किस भाषा में और किस नाम से प्रकाशित हुआ था?",
+            q_en: "In which year, in which language, and under what title was the first full edition of UDC published?",
+            options_hi: [
+                "1876, अंग्रेजी, DDC Extension",
+                "1905, फ्रेंच, Manuel du Répertoire Bibliographique Universel",
+                "1927, जर्मन, Dezimal-Klassifikation",
+                "1933, लैटिन, Classification Universalis"
+            ],
+            options_en: [
+                "1876, English, DDC Extension",
+                "1905, French, Manuel du Répertoire Bibliographique Universel",
+                "1927, German, Dezimal-Klassifikation",
+                "1933, Latin, Classification Universalis"
+            ],
+            correct: 1,
+            exp_hi: "UDC का पहला संस्करण 1905 में बेल्जियम के पॉल ऑटलेट और हेनरी ला फोंटेन द्वारा फ्रेंच भाषा में 'Manuel du Répertoire Bibliographique Universel' के नाम से प्रकाशित किया गया था।",
+            exp_en: "The first international edition of UDC appeared in 1905 in French titled 'Manuel du Répertoire Bibliographique Universel', produced by the Institut International de Bibliographie."
+        },
+        {
+            id: 10,
+            q_hi: "डॉ. एस.आर. रंगनाथन ने वर्गीकरण कार्य को सुगम बनाने हेतु किन तीन 'कार्य तलों' (Planes of Work) का प्रतिपादन किया था?",
+            q_en: "To systematize classification methodology, Dr. S.R. Ranganathan postulated three distinct 'Planes of Work'. What are they?",
+            options_hi: [
+                "शारीरिक, मानसिक और आध्यात्मिक तल",
+                "वैचारिक (Idea), शाब्दिक (Verbal), और अंकन (Notational) धरातल",
+                "प्राथमिक, द्वितीयक और तृतीयक तल",
+                "परिगणनात्मक, पक्षात्मक और विश्लेषणात्मक तल"
+            ],
+            options_en: [
+                "Physical, Mental, and Spiritual planes",
+                "Idea Plane, Verbal Plane, and Notational Plane",
+                "Primary, Secondary, and Tertiary planes",
+                "Enumerative, Faceted, and Analytical planes"
+            ],
+            correct: 1,
+            exp_hi: "रंगनाथन ने वर्गीकरण के तीन कार्य तल प्रतिपादित किए: (1) Idea Plane (वैचारिक धरातल - सर्वाधिक सर्वोच्च), (2) Verbal Plane (शाब्दिक धरातल), और (3) Notational Plane (अंकन धरातल)।",
+            exp_en: "Ranganathan established the triad of Idea Plane (conceptual analysis), Verbal Plane (standard terminology), and Notational Plane (symbolic translation)."
+        },
+        {
+            id: 11,
+            q_hi: "कोलन क्लासिफिकेशन (CC) में प्रयुक्त 'पूर्ववर्ती सामान्य एकल' (Anteriorising Common Isolates - ACI) की सबसे प्रमुख विशेषता क्या है?",
+            q_en: "What is the defining characteristic of 'Anteriorising Common Isolates' (ACI) in Colon Classification?",
+            options_hi: [
+                "इन्हें जोड़ने हेतु कोलन (:) का प्रयोग अनिवार्य है",
+                "इन्हें बिना किसी योजक चिह्न के सीधे मुख्य वर्ग से जोड़ा जाता है और ये प्राथमिकता पाते हैं",
+                "ये केवल समय पक्ष के बाद ही जोड़े जा सकते हैं",
+                "इन्हें केवल बड़े अक्षरों में लिखा जाता है"
+            ],
+            options_en: [
+                "They mandate a colon (:) connecting symbol",
+                "They are attached directly to the host class without any connecting symbol and take precedence",
+                "They can only appear after the Time facet",
+                "They must be written in capital letters"
+            ],
+            correct: 1,
+            exp_hi: "पूर्ववर्ती सामान्य एकल (ACI, जैसे k-शब्दकोश, m-पत्रिका, v-इतिहास) बिना किसी योजक चिह्न के सीधे मुख्य वर्ग के साथ जुड़ते हैं और शेल्फ पर मूल विषय की सामान्य पुस्तकों से पहले (Anterior) आते हैं।",
+            exp_en: "ACIs (such as k for dictionary, m for periodical) are attached directly without connecting symbols and possess anteriorising value, shelving general/introductory works ahead of core treatises."
+        },
+        {
+            id: 12,
+            q_hi: "DDC में मुख्य वर्ग '300' और '800' क्रमशः किन विषय क्षेत्रों को दर्शाते हैं?",
+            q_en: "In DDC, Main Classes '300' and '800' represent which subject fields respectively?",
+            options_hi: [
+                "300 = धर्म, 800 = इतिहास",
+                "300 = सामाजिक विज्ञान (Social Sciences), 800 = साहित्य (Literature)",
+                "300 = भाषा, 800 = कला",
+                "300 = प्रौद्योगिकी, 800 = दर्शनशास्त्र"
+            ],
+            options_en: [
+                "300 = Religion, 800 = History",
+                "300 = Social Sciences, 800 = Literature",
+                "300 = Language, 800 = Arts",
+                "300 = Technology, 800 = Philosophy"
+            ],
+            correct: 1,
+            exp_hi: "DDC के 10 मुख्य वर्गों में: 300 = सामाजिक विज्ञान (अर्थशास्त्र, राजनीति, शिक्षा, विधि आदि) तथा 800 = साहित्य एवं वाककला (कविता, नाटक, निबंध आदि) को दर्शाता है।",
+            exp_en: "In DDC's First Summary: 300 denotes Social Sciences (sociology, law, education) and 800 denotes Literature and Rhetoric (poetry, drama, fiction)."
+        },
+        {
+            id: 13,
+            q_hi: "कोलन क्लासिफिकेशन का 7वां संस्करण (1987) डॉ. रंगनाथन के मरणोपरांत किसके संपादन में प्रकाशित हुआ था?",
+            q_en: "Under whose editorial stewardship was the 7th edition of Colon Classification (1987) published posthumously?",
+            options_hi: [
+                "डॉ. एम.ए. गोपीनाथ (Dr. M.A. Gopinath)",
+                "डॉ. पी.एन. कौला",
+                "ए. नीलमघन",
+                "बी.एस. केशवन"
+            ],
+            options_en: [
+                "Dr. M.A. Gopinath",
+                "Dr. P.N. Kaula",
+                "A. Neelameghan",
+                "B.S. Kesavan"
+            ],
+            correct: 0,
+            exp_hi: "कोलन क्लासिफिकेशन का 7वां संस्करण वर्ष 1987 में DRTC के प्रो. डॉ. एम.ए. गोपीनाथ के संपादन में प्रकाशित हुआ था। यह संस्करण पूर्णतः 'मुक्त पक्षात्मक' (Freely Faceted) था।",
+            exp_en: "The 7th edition of CC was edited and brought out in 1987 by Dr. M.A. Gopinath, classified structurally as a Freely Faceted Analytico-Synthetic scheme."
+        },
+        {
+            id: 14,
+            q_hi: "यूडीसी (UDC) में 'स्थान' (Place) के सामान्य सहायक उप-विभाजन को दर्शाने हेतु किस कोष्ठक का प्रयोग किया जाता है?",
+            q_en: "In UDC, which brackets are used to represent the Common Auxiliary of 'Place'?",
+            options_hi: [
+                "वर्गाकार कोष्ठक [...]",
+                "वृत्ताकार कोष्ठक (1/9) / Parentheses (...)",
+                "मंझला कोष्ठक {...}",
+                "उद्धरण चिह्न \"...\""
+            ],
+            options_en: [
+                "Square brackets [...]",
+                "Parentheses (...)",
+                "Curly braces {...}",
+                "Quotation marks \"...\""
+            ],
+            correct: 1,
+            exp_hi: "UDC में स्थान (Place) के लिए गोल कोष्ठक (...) का प्रयोग होता है, जैसे (540) = भारत। (समय हेतु \"...\" तथा रूप हेतु (0...) प्रयुक्त होता है)।",
+            exp_en: "In UDC, Common Auxiliaries of Place are designated by digits enclosed in circular parentheses (...), e.g., (540) for India."
+        },
+        {
+            id: 15,
+            q_hi: "पुस्तकालय विज्ञान में 'लाइब्रेरी ऑफ कांग्रेस वर्गीकरण' (LCC) किस प्रकार की वर्गीकरण पद्धति का सर्वश्रेष्ठ उदाहरण है?",
+            q_en: "In library classification, the Library of Congress Classification (LCC) is the foremost example of which scheme type?",
+            options_hi: [
+                "शुद्ध परिगणनात्मक (Purely Enumerative)",
+                "विश्लेषणात्मक-संश्लेषणात्मक (Analytico-Synthetic)",
+                "मुक्त पक्षात्मक (Freely Faceted)",
+                "कठोर पक्षात्मक"
+            ],
+            options_en: [
+                "Purely Enumerative",
+                "Analytico-Synthetic",
+                "Freely Faceted",
+                "Rigidly Faceted"
+            ],
+            correct: 0,
+            exp_hi: "Library of Congress Classification (LCC) और राइडर्स इंटरनेशनल क्लासिफिकेशन 'शुद्ध परिगणनात्मक' (Purely Enumerative) पद्धतियां हैं, जिनमें लगभग सभी ज्ञात विषयों के बने-बनाए नंबरों की लंबी सूचियां होती हैं।",
+            exp_en: "LCC is the premier example of a Purely Enumerative classification scheme, compiling exhaustive, ready-made alphanumeric schedules with minimal synthesis."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60;
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_3_1_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

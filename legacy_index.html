@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 | अध्ययन पोर्टल एवं टेस्ट सीरीज</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --border: #334155;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .hero-text h1 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+            max-width: 700px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .theme-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.6rem 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        /* Cutoff & Pattern Table Card */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            margin-top: 0.75rem;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            padding: 0.65rem 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .cutoff-table th {
+            background-color: var(--primary-light);
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        /* Units Grid */
+        .units-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1.25rem;
+            color: var(--text-main);
+        }
+
+        .unit-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .unit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .unit-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .status-pill {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 12px;
+        }
+
+        .status-ready {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .status-upcoming {
+            background-color: var(--bg-primary);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .subunits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .subunit-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.85rem 1.15rem;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .subunit-info h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .subunit-info p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 0.45rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-notes {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-notes:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-test {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-test:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-disabled {
+            background-color: var(--border);
+            color: var(--text-muted);
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Hero Banner -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Bihar School Librarian Eligibility Test (SLET / LET) — संपूर्ण डिजिटल अध्ययन सामग्री एवं इंटरैक्टिव टेस्ट सीरीज पोर्टल</p>
+            <div class="hero-badges">
+                <span class="hero-badge" style="background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #10b981;">✅ भाग-1: LIS पूर्ण (20 उप-इकाइयां | 295 MCQs)</span>
+                <span class="hero-badge" style="background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #10b981;">✅ भाग-2: सामान्य ज्ञान पूर्ण (10 उप-इकाइयां | 150 MCQs)</span>
+                <span class="hero-badge" style="background: rgba(59, 130, 246, 0.2); border: 1px solid #3b82f6; color: #3b82f6;">🎯 संपूर्ण पाठ्यक्रम 100% पूर्ण (30 उप-इकाइयां | 445 MCQs)</span>
+                <span class="hero-badge">🚫 नो नेगेटिव मार्किंग</span>
+            </div>
+        </div>
+        <div>
+            <button class="theme-btn" id="theme-btn">🌓 थीम बदलें</button>
+        </div>
+    </div>
+
+    <!-- Exam Pattern & Cutoff -->
+    <div class="card">
+        <h2>📋 कोटिवार न्यूनतम उत्तीर्णांक (Category-wise Qualifying Cutoff)</h2>
+        <table class="cutoff-table">
+            <thead>
+                <tr>
+                    <th>श्रेणी (Category)</th>
+                    <th>न्यूनतम प्रतिशत</th>
+                    <th>कुल 150 में से आवश्यक अंक</th>
+                    <th>पुस्तकालय खंड (100 में से आनुपातिक लक्ष्य)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>सामान्य वर्ग (General / UR)</strong></td>
+                    <td>50%</td>
+                    <td><strong>75 अंक</strong></td>
+                    <td>50+ अंक</td>
+                </tr>
+                <tr>
+                    <td><strong>पिछड़ा वर्ग (BC)</strong></td>
+                    <td>45.5%</td>
+                    <td><strong>68.25 अंक</strong></td>
+                    <td>46+ अंक</td>
+                </tr>
+                <tr>
+                    <td><strong>अत्यंत पिछड़ा वर्ग (EBC)</strong></td>
+                    <td>42.5%</td>
+                    <td><strong>63.75 अंक</strong></td>
+                    <td>43+ अंक</td>
+                </tr>
+                <tr>
+                    <td><strong>SC / ST / दिव्यांग (PwD) / महिला</strong></td>
+                    <td>40%</td>
+                    <td><strong>60 अंक</strong></td>
+                    <td>40+ अंक</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Syllabus Units Grid -->
+    <div class="units-section">
+        <h2>📖 भाग-1: पुस्तकालय एवं सूचना विज्ञान (100 अंक) — इकाइयां</h2>
+
+        <!-- UNIT 1 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 1 — पुस्तकालय की नींव एवं समाज (Foundations of Library Science)</div>
+                <span class="status-pill status-ready">🟢 इकाई 1 पूर्ण (Unit 1 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <!-- 1.1 -->
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>1.1 पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य</h4>
+                        <p>अकादमिक, सार्वजनिक, विशेष एवं राष्ट्रीय पुस्तकालय | आयोग एवं सिफारिशें | तुलनात्मक चार्ट</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_01_Foundations_of_Library_Science/Study_Notes/SubUnit_1.1_Types_of_Libraries.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_01_Foundations_of_Library_Science/Tests/SubUnit_1.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (10 MCQs)</a>
+                    </div>
+                </div>
+
+                <!-- 1.2 -->
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>1.2 डॉ. एस.आर. रंगनाथन की जीवनी, योगदान एवं पाँच सूत्र</h4>
+                        <p>Five Laws of Library Science | जीवन परिचय, DRTC, Ph.D., कृतियां एवं व्यापक निहितार्थ (Bilingual)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_01_Foundations_of_Library_Science/Study_Notes/SubUnit_1.2_Ranganathan_and_Five_Laws.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_01_Foundations_of_Library_Science/Tests/SubUnit_1.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+
+                <!-- 1.3 -->
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>1.3 भारत में पुस्तकालय आंदोलन, शिक्षा एवं पुस्तकालय अधिनियम</h4>
+                        <p>19 राज्य अधिनियम, बिहार अधिनियम 2008 (नो-सेस), बड़ौदा आंदोलन, LIS शिक्षा इतिहास (Bilingual)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_01_Foundations_of_Library_Science/Study_Notes/SubUnit_1.3_Library_Movement_and_Acts.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_01_Foundations_of_Library_Science/Tests/SubUnit_1.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+
+                <!-- 1.4 -->
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>1.4 राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ</h4>
+                        <p>ILA, IASLIC, RRRLF, ALA, IFLA, UNESCO, FID — स्थापना, इतिहास, प्रकाशन व पुरस्कार (Bilingual)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_01_Foundations_of_Library_Science/Study_Notes/SubUnit_1.4_Library_Associations.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_01_Foundations_of_Library_Science/Tests/SubUnit_1.4_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 2 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 2 — पुस्तकालय प्रबंधन एवं संगठन (Library Management)</div>
+                <span class="status-pill status-ready">🟢 इकाई 2 पूर्ण (Unit 2 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>2.1 संग्रह विकास (Collection Development) एवं अधिग्रहण प्रक्रिया</h4>
+                        <p>पुस्तक चयन सिद्धांत (Drury, Dewey, McColvin, Ranganathan), परिग्रहण पंजिका (14 कॉलम), तीन-कार्ड प्रणाली</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_02_Library_Management/Study_Notes/SubUnit_2.1_Collection_Development.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_02_Library_Management/Tests/SubUnit_2.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>2.2 परिसंचरण तंत्र (Circulation Systems)</h4>
+                        <p>ब्राउन (1895) एवं नेवार्क (1900) चार्जिंग विधियां, डिकमैन, डेट्रायट, फोटो-चार्जिंग एवं RFID</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_02_Library_Management/Study_Notes/SubUnit_2.2_Circulation_Systems.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_02_Library_Management/Tests/SubUnit_2.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>2.3 पुस्तकालय बजट, वित्तीय प्रबंधन, भंडार सत्यापन एवं निरसन (Weeding)</h4>
+                        <p>ZBB (1970, Peter Pyhrr), PPBS, GFR 2017 नियम 215 (5/1000 हानि), शेल्फ सूची सत्यापन, MUSTIE मानदंड</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_02_Library_Management/Study_Notes/SubUnit_2.3_Budgeting_and_Stock_Verification.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_02_Library_Management/Tests/SubUnit_2.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>2.4 मानव संसाधन प्रबंधन (HRM) एवं संपूर्ण गुणवत्ता प्रबंधन (TQM)</h4>
+                        <p>POSDCORB, टेलर व फेयोल सिद्धांत, रंगनाथन स्टाफ फॉर्मूला (6000/2000/500), डेमिंग PDCA चक्र, IS:1553-1989</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_02_Library_Management/Study_Notes/SubUnit_2.4_HRM_and_TQM.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_02_Library_Management/Tests/SubUnit_2.4_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 3 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 3 — ज्ञान संगठन: वर्गीकरण एवं सूचीकरण (Classification & Cataloguing)</div>
+                <span class="status-pill status-ready">🟢 इकाई 3 पूर्ण (Unit 3 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>3.1 ज्ञान जगत एवं वर्गीकरण पद्धतियां (Classification)</h4>
+                        <p>DDC (23वां संस्करण, 7 टेबल्स), UDC, कोलन वर्गीकरण (CC - PMEST, 6th ed., पक्षात्मक विश्लेषण)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_03_Classification_and_Cataloguing/Study_Notes/SubUnit_3.1_Classification.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_03_Classification_and_Cataloguing/Tests/SubUnit_3.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>3.2 सूचीकरण (Cataloguing) एवं अनुक्रमणीकरण पद्धतियां</h4>
+                        <p>AACR-2, RDA, MARC-21 टैग्स, ISBD, OPAC, शृंखला अनुक्रमणीकरण (Chain Indexing), PRECIS, POPSI, KWIC</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_03_Classification_and_Cataloguing/Study_Notes/SubUnit_3.2_Cataloguing_and_Indexing.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_03_Classification_and_Cataloguing/Tests/SubUnit_3.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 4 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 4 — संदर्भ एवं सूचना सेवाएं (Reference & Information Services)</div>
+                <span class="status-pill status-ready">🟢 इकाई 4 पूर्ण (Unit 4 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>4.1 सूचना स्रोतों के प्रकार (Information Sources)</h4>
+                        <p>प्राथमिक, द्वितीयक एवं तृतीयक स्रोत (Dennis Grogan & C.W. Hanson वर्गीकरण), DIKW पिरामिड, Invisible Colleges</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_04_Reference_and_Information_Services/Study_Notes/SubUnit_4.1_Types_of_Information_Sources.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_04_Reference_and_Information_Services/Tests/SubUnit_4.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>4.2 संदर्भ स्रोत (Reference Sources)</h4>
+                        <p>विश्वकोश (Britannica 1768/2012, Americana), शब्दकोश (OED), निर्देशिका (World of Learning), वार्षिकी, पंचांग, जीवनी एवं गजेटियर</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_04_Reference_and_Information_Services/Study_Notes/SubUnit_4.2_Reference_Sources.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_04_Reference_and_Information_Services/Tests/SubUnit_4.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>4.3 संदर्भ सेवाएं (Reference Services), CAS एवं SDI</h4>
+                        <p>Short Range vs. Long Range संदर्भ सेवा (रंगनाथन), सैमुअल स्वेट ग्रीन (1876), सामयिक अभिज्ञता सेवा, SDI के 6 चरण (H.P. Luhn)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_04_Reference_and_Information_Services/Study_Notes/SubUnit_4.3_Reference_Services_CAS_SDI.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_04_Reference_and_Information_Services/Tests/SubUnit_4.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>4.4 दस्तावेज वितरण (DDS), ILL, उपयोगकर्ता शिक्षा एवं जनसंपर्क</h4>
+                        <p>BLDSC (Boston Spa), अंतर-पुस्तकालय ऋण, संघ सूची (IndCat), मोंटीथ कॉलेज प्रयोग (Patricia Knapp), सूचना साक्षरता (Zurkowski 1974), SCONUL 7 स्तम्भ</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_04_Reference_and_Information_Services/Study_Notes/SubUnit_4.4_DDS_ILL_User_Education.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_04_Reference_and_Information_Services/Tests/SubUnit_4.4_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 5 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 5 — सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग (IT & Library Automation)</div>
+                <span class="status-pill status-ready">🟢 इकाई 5 पूर्ण (Unit 5 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>5.1 पुस्तकालय स्वचालन (Automation) एवं प्रमुख सॉफ्टवेयर</h4>
+                        <p>KOHA (ओपन सोर्स GPL 2000), SOUL 3.0 (INFLIBNET 2021), ई-ग्रंथालय 4.0 (NIC Cloud SaaS), CDS/ISIS, Z39.50</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_05_IT_and_Library_Automation/Study_Notes/SubUnit_5.1_Library_Automation_Software.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_05_IT_and_Library_Automation/Tests/SubUnit_5.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>5.2 बारकोड एवं RFID तकनीक</h4>
+                        <p>1D (Code 39) व 2D (QR Code 1994), RFID 13.56 MHz (HF Band), EAS सुरक्षा बिट, हैंडहेल्ड वैंड स्टॉक ऑडिट, SIP2 मानक</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_05_IT_and_Library_Automation/Study_Notes/SubUnit_5.2_Barcode_and_RFID.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_05_IT_and_Library_Automation/Tests/SubUnit_5.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>5.3 डिजिटल एवं वर्चुअल पुस्तकालय, डिजिटल रिपॉजिटरी</h4>
+                        <p>DSpace (MIT/HP 2002), Greenstone (GSDL), E-Prints, शोधगंगा (INFLIBNET 2009), शोधगंगोत्री, NDLI (IIT खड़गपुर), डबलिन कोर 15 तत्व</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_05_IT_and_Library_Automation/Study_Notes/SubUnit_5.3_Digital_Libraries_Repositories.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_05_IT_and_Library_Automation/Tests/SubUnit_5.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>5.4 पुस्तकालय नेटवर्क एवं संसाधन साझाकरण (Consortia)</h4>
+                        <p>INFLIBNET (गांधीनगर 1991/1996), e-ShodhSindhu (2015), N-LIST, विद्वान, DELNET (1988/1992), OCLC (1967/1981), WorldCat, CALIBNET</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_05_IT_and_Library_Automation/Study_Notes/SubUnit_5.4_Library_Networks_and_Consortia.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_05_IT_and_Library_Automation/Tests/SubUnit_5.4_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 6 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 6 — सूचना विज्ञान, शोध एवं मानक (Information Science & Standards)</div>
+                <span class="status-pill status-ready">🟢 इकाई 6 पूर्ण (Unit 6 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>6.1 ग्रंथमिति (Bibliometrics), साइंटोमेट्रिक्स एवं वेबमेट्रिक्स</h4>
+                        <p>ब्रैडफोर्ड का नियम (Scattering), लोटका का नियम (Scientific Productivity), जिपफ का नियम (Word Frequency), h-index, g-index, i10-index</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_06_Information_Science_and_Standards/Study_Notes/SubUnit_6.1_Bibliometrics_and_Research_Metrics.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_06_Information_Science_and_Standards/Tests/SubUnit_6.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>6.2 अंतरराष्ट्रीय मानक, कॉपीराइट एवं बौद्धिक संपदा अधिकार</h4>
+                        <p>ISBN (13 अंक संरचना), ISSN (8 अंक), भारतीय कॉपीराइट अधिनियम 1957, IPR, WIPO, फेयर डील, लाइब्रेरी आचार संहिता</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_06_Information_Science_and_Standards/Study_Notes/SubUnit_6.2_Standards_Copyright_IPR_Ethics.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_06_Information_Science_and_Standards/Tests/SubUnit_6.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION DIVIDER FOR PART 2 -->
+        <div style="margin: 2.5rem 0 1.5rem; border-top: 2px dashed var(--border); padding-top: 1.5rem;">
+            <h2>🧠 भाग-2: सामान्य ज्ञान एवं समसामयिकी (General Knowledge — 50 अंक)</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">बिहार विशेष, इतिहास, भूगोल, राजव्यवस्था, सामान्य विज्ञान, समसामयिकी, कंप्यूटर साक्षरता एवं तार्किक क्षमता</p>
+        </div>
+
+        <!-- UNIT 7 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 7 — बिहार विशेष: इतिहास, भूगोल, कला-संस्कृति एवं राष्ट्रीय आंदोलन</div>
+                <span class="status-pill status-ready">🟢 इकाई 7 पूर्ण (Unit 7 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>7.1 बिहार का इतिहास एवं 1857 से 1947 स्वतंत्रता संग्राम में बिहार की भूमिका</h4>
+                        <p>वीर कुंवर सिंह (1857), पीर अली, 22 मार्च 1912 बिहार दिवस, चंपारण सत्याग्रह 1917, किसान सभा (सहजानंद), 1942 सचिवालय गोलीकांड व आजाद दस्ता</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Study_Notes/SubUnit_7.1_Bihar_History_and_National_Movement.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Tests/SubUnit_7.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>7.2 बिहार का भौतिक भूगोल, नदियां, खनिज एवं जनगणना 2011</h4>
+                        <p>सोमेश्वर श्रेणी (874 मी), गंगा अपवाह तंत्र (445 किमी/12 जिले), कोसी, वाल्मीकि नेशनल पार्क, कावर झील रामसर, पाइराइट्स अमझोर, 2011 सांख्यिकी</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Study_Notes/SubUnit_7.2_Bihar_Geography_and_Economy.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Tests/SubUnit_7.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>7.3 बिहार की कला, संस्कृति, मेले, त्योहार, पर्यटन एवं प्रमुख व्यक्तित्व</h4>
+                        <p>मधुबनी पेंटिंग (कोहबर/अरिपन), मंजूषा कला (3 रंग), पटना कलम (कजली स्याही), छठ महापर्व (ठेकुआ), सोनपुर मेला, राजेन्द्र प्रसाद, दिनकर, बिस्मिल्लाह खां, कर्पूरी ठाकुर</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Study_Notes/SubUnit_7.3_Bihar_Art_Culture_and_Personalities.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_07_Bihar_GK_History_and_Culture/Tests/SubUnit_7.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 8 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 8 — भारतीय राजव्यवस्था, सामान्य विज्ञान एवं समसामयिकी</div>
+                <span class="status-pill status-ready">🟢 इकाई 8 पूर्ण (Unit 8 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>8.1 भारतीय संविधान, राजव्यवस्था एवं पंचायती राज</h4>
+                        <p>प्रस्तावना (42वां संशोधन), मौलिक अधिकार (अनु 14-32, 5 रिटें), DPSP (अनु 40/44), बिहार सीटें (लोकसभा 40, विस 243), बिहार पंचायती राज अधिनियम 2006 (50% महिला आरक्षण)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Study_Notes/SubUnit_8.1_Indian_Polity_and_Governance.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Tests/SubUnit_8.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>8.2 सामान्य विज्ञान एवं पर्यावरण (General Science & Ecology)</h4>
+                        <p>दैनिक भौतिकी (TIR, मायोपिया-अवतल लेंस), रसायन (pH 7.4, NaHCO3, D2O), जीव विज्ञान (माइटोकॉन्ड्रिया, विटामिन्स, कालाजार), ओजोन (समताप मंडल, 16 सितंबर)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Study_Notes/SubUnit_8.2_General_Science_and_Environment.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Tests/SubUnit_8.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>8.3 समसामयिकी (बिहार, राष्ट्रीय, अंतरराष्ट्रीय) एवं प्रमुख सरकारी योजनाएं</h4>
+                        <p>सात निश्चय-2 (इंटर ₹25k, स्नातक ₹50k), जल-जीवन-हरियाली, गंगाजल आपूर्ति योजना, गयाजी डैम, चंद्रयान-3 (23 अगस्त राष्ट्रीय अंतरिक्ष दिवस), नया संसद भवन, G20 AU</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Study_Notes/SubUnit_8.3_Current_Affairs_and_Govt_Schemes.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_08_Polity_Science_and_Current_Affairs/Tests/SubUnit_8.3_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 9 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 9 — बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी</div>
+                <span class="status-pill status-ready">🟢 इकाई 9 पूर्ण (Unit 9 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>9.1 कंप्यूटर की बुनियादी संरचना, पीढ़ियां, हार्डवेयर एवं मेमोरी</h4>
+                        <p>5 पीढ़ियां (वैक्यूम ट्यूब, ट्रांजिस्टर, IC, VLSI, AI), CPU (ALU, CU, Registers), RAM (Volatile) vs ROM (BIOS फर्मवेयर), मेमोरी इकाइयां, MICR, प्लॉटर</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_09_Basic_Computer_Knowledge/Study_Notes/SubUnit_9.1_Computer_Hardware_and_Fundamentals.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_09_Basic_Computer_Knowledge/Tests/SubUnit_9.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>9.2 ऑपरेटिंग सिस्टम, एमएस ऑफिस, इंटरनेट एवं साइबर सुरक्षा</h4>
+                        <p>Linux (ओपन सोर्स), MS Word (Ctrl+K, F7), Excel (= फॉर्मूला, Alt+= AutoSum), PPT (Ctrl+M, Shift+F5), DNS, SMTP/POP3, ट्रोजन, रैंसमवेयर, फ़िशिंग, फ़ायरवॉल</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_09_Basic_Computer_Knowledge/Study_Notes/SubUnit_9.2_MS_Office_Internet_and_Cyber_Security.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_09_Basic_Computer_Knowledge/Tests/SubUnit_9.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNIT 10 -->
+        <div class="unit-card">
+            <div class="unit-header">
+                <div class="unit-title">इकाई 10 — तार्किक क्षमता एवं मानसिक योग्यता (Reasoning & Mental Ability)</div>
+                <span class="status-pill status-ready">🟢 इकाई 10 पूर्ण (Unit 10 Complete — 100%)</span>
+            </div>
+            <div class="subunits-list">
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>10.1 मौखिक तर्कशक्ति (Verbal Reasoning)</h4>
+                        <p>संख्या व वर्ण शृंखला, कोडिंग-डिकोडिंग (EJOTY, विपरीत वर्ण योग 27), रक्त संबंध फैमिली ट्री, दिशा-दूरी (पाइथागोरस), परछाई नियम, रैंकिंग (L + R - 1)</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_10_Reasoning_and_Mental_Ability/Study_Notes/SubUnit_10.1_Verbal_Reasoning.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_10_Reasoning_and_Mental_Ability/Tests/SubUnit_10.1_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+                <div class="subunit-row">
+                    <div class="subunit-info">
+                        <h4>10.2 विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति (Analytical & Non-Verbal Reasoning)</h4>
+                        <p>न्याय निगमन (Syllogisms - Either/Or), वेन आरेख, कथन-निष्कर्ष, BODMAS गणितीय संक्रियाएं, आव्यूह लुप्त संख्या, दर्पण समय (11:60), मानक पासा</p>
+                    </div>
+                    <div class="action-btns">
+                        <a href="Unit_10_Reasoning_and_Mental_Ability/Study_Notes/SubUnit_10.2_Analytical_and_Non_Verbal_Reasoning.md" class="btn btn-notes">📖 अध्ययन नोट्स</a>
+                        <a href="Unit_10_Reasoning_and_Mental_Ability/Tests/SubUnit_10.2_Quiz.html" class="btn btn-test">📝 टेस्ट हल करें (15 MCQs)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Theme Toggle Handler
+    const themeBtn = document.getElementById("theme-btn");
+    const currentTheme = localStorage.getItem("portal_theme") || "light";
+    document.documentElement.setAttribute("data-theme", currentTheme);
+
+    themeBtn.addEventListener("click", () => {
+        const active = document.documentElement.getAttribute("data-theme");
+        const next = active === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("portal_theme", next);
+    });
+</script>
+
+</body>
+</html>

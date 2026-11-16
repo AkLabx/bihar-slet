@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u5_sub5_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "विश्व के प्रथम ओपन सोर्स इंटीग्रेटेड लाइब्रेरी सिस्टम (Open Source ILS) 'कोहा' (KOHA) का विकास किस देश में हुआ था?",
+    "q_en": "In which country was the world's first open-source Integrated Library System (ILS), KOHA, originally developed in 1999/2000?",
+    "options_hi": [
+      "संयुक्त राज्य अमेरिका (USA)",
+      "न्यूजीलैंड (New Zealand - Katipo Communications)",
+      "भारत (India)",
+      "यूनाइटेड किंगडम (UK)"
+    ],
+    "options_en": [
+      "United States of America (USA)",
+      "New Zealand (Katipo Communications)",
+      "India",
+      "United Kingdom (UK)"
+    ],
+    "options": [
+      {
+        "hi": "संयुक्त राज्य अमेरिका (USA)",
+        "en": "United States of America (USA)"
+      },
+      {
+        "hi": "न्यूजीलैंड (New Zealand - Katipo Communications)",
+        "en": "New Zealand (Katipo Communications)"
+      },
+      {
+        "hi": "भारत (India)",
+        "en": "India"
+      },
+      {
+        "hi": "यूनाइटेड किंगडम (UK)",
+        "en": "United Kingdom (UK)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "KOHA का विकास न्यूजीलैंड के हॉरोव्हेनुआ लाइब्रेरी ट्रस्ट हेतु 'कैटिपो कम्युनिकेशंस' द्वारा 1999 में किया गया और 1 जनवरी 2000 को इसे विश्व के प्रथम ओपन सोर्स ILS के रूप में लाइव किया गया।",
+    "exp_en": "KOHA was developed by Katipo Communications for the Horowhenua Library Trust in New Zealand, making its official debut on January 1, 2000 as the world's first open-source ILS."
+  },
+  {
+    "globalId": "u5_sub5_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "माओरी (Maori) भाषा में 'कोहा' (KOHA) शब्द का शाब्दिक अर्थ क्या होता है?",
+    "q_en": "What is the literal meaning of the word 'Koha' in the indigenous Maori language of New Zealand?",
+    "options_hi": [
+      "उपहार या योगदान (Gift or Contribution)",
+      "पुस्तकालय भवन (Library Building)",
+      "ज्ञान का सागर (Ocean of Knowledge)",
+      "कंप्यूटर नेटवर्क (Computer Network)"
+    ],
+    "options_en": [
+      "Gift or Contribution",
+      "Library Building",
+      "Ocean of Knowledge",
+      "Computer Network"
+    ],
+    "options": [
+      {
+        "hi": "उपहार या योगदान (Gift or Contribution)",
+        "en": "Gift or Contribution"
+      },
+      {
+        "hi": "पुस्तकालय भवन (Library Building)",
+        "en": "Library Building"
+      },
+      {
+        "hi": "ज्ञान का सागर (Ocean of Knowledge)",
+        "en": "Ocean of Knowledge"
+      },
+      {
+        "hi": "कंप्यूटर नेटवर्क (Computer Network)",
+        "en": "Computer Network"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "न्यूजीलैंड की स्थानीय माओरी भाषा में 'Koha' शब्द का अर्थ 'उपहार' (Gift) अथवा बिना किसी मूल्य के दिया गया 'योगदान' (Contribution) होता है।",
+    "exp_en": "In the Maori tongue, 'Koha' denotes a gift, present, or unconditional contribution, capturing the spirit of free open-source software."
+  },
+  {
+    "globalId": "u5_sub5_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "ओपन सोर्स सॉफ्टवेयर 'कोहा' (KOHA) किस लाइसेंस के अंतर्गत दुनिया भर में निःशुल्क वितरित किया जाता है?",
+    "q_en": "Under which open-source software license is KOHA distributed and modified globally?",
+    "options_hi": [
+      "GNU जनरल पब्लिक लाइसेंस (GNU General Public License - GPL)",
+      "अपाचे 2.0 लाइसेंस",
+      "माइक्रोसॉफ्ट मालिकाना लाइसेंस",
+      "क्रिएटिव कॉमन्स CC-BY"
+    ],
+    "options_en": [
+      "GNU General Public License (GPL)",
+      "Apache 2.0 License",
+      "Microsoft Proprietary License",
+      "Creative Commons CC-BY"
+    ],
+    "options": [
+      {
+        "hi": "GNU जनरल पब्लिक लाइसेंस (GNU General Public License - GPL)",
+        "en": "GNU General Public License (GPL)"
+      },
+      {
+        "hi": "अपाचे 2.0 लाइसेंस",
+        "en": "Apache 2.0 License"
+      },
+      {
+        "hi": "माइक्रोसॉफ्ट मालिकाना लाइसेंस",
+        "en": "Microsoft Proprietary License"
+      },
+      {
+        "hi": "क्रिएटिव कॉमन्स CC-BY",
+        "en": "Creative Commons CC-BY"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "KOHA को GNU GPL (General Public License) के तहत जारी किया गया है, जिसके अनुसार इसका सोर्स कोड पूरी तरह खुला, निःशुल्क डाउनलोड एवं संशोधित करने योग्य है।",
+    "exp_en": "KOHA is released under the GNU General Public License (GNU GPL), guaranteeing freedom to study, adapt, and redistribute its full source code."
+  },
+  {
+    "globalId": "u5_sub5_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "भारतीय विश्वविद्यालयों एवं कॉलेजों हेतु 'सोल' (SOUL - Software for University Libraries) का विकास किस संस्थान द्वारा किया गया है?",
+    "q_en": "'SOUL' (Software for University Libraries) was designed and developed specifically for Indian academic libraries by which agency?",
+    "options_hi": [
+      "राष्ट्रीय सूचना विज्ञान केंद्र (NIC, नई दिल्ली)",
+      "इनफ्लिबनेट केंद्र (INFLIBNET Centre, गांधीनगर, गुजरात)",
+      "डीआरटीसी (DRTC, बेंगलुरु)",
+      "आईआईएससी (IISc, बेंगलुरु)"
+    ],
+    "options_en": [
+      "National Informatics Centre (NIC, New Delhi)",
+      "INFLIBNET Centre (Gandhinagar, Gujarat)",
+      "DRTC (Bangalore)",
+      "IISc (Bangalore)"
+    ],
+    "options": [
+      {
+        "hi": "राष्ट्रीय सूचना विज्ञान केंद्र (NIC, नई दिल्ली)",
+        "en": "National Informatics Centre (NIC, New Delhi)"
+      },
+      {
+        "hi": "इनफ्लिबनेट केंद्र (INFLIBNET Centre, गांधीनगर, गुजरात)",
+        "en": "INFLIBNET Centre (Gandhinagar, Gujarat)"
+      },
+      {
+        "hi": "डीआरटीसी (DRTC, बेंगलुरु)",
+        "en": "DRTC (Bangalore)"
+      },
+      {
+        "hi": "आईआईएससी (IISc, बेंगलुरु)",
+        "en": "IISc (Bangalore)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "SOUL का विकास विश्वविद्यालय अनुदान आयोग (UGC) के स्वायत्त अंतर-विश्वविद्यालय केंद्र 'INFLIBNET' (गांधीनगर) द्वारा भारतीय शैक्षणिक पुस्तकालयों के लिए किया गया है।",
+    "exp_en": "SOUL was custom-designed by the INFLIBNET Centre (Information and Library Network Centre), Gandhinagar, an autonomous Inter-University Centre of UGC."
+  },
+  {
+    "globalId": "u5_sub5_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "INFLIBNET केंद्र द्वारा 'सोल' (SOUL) का नवीनतम संस्करण 'SOUL 3.0' किस वर्ष में विमोचित किया गया था?",
+    "q_en": "In which year was the latest major release, 'SOUL 3.0', officially launched by INFLIBNET Centre?",
+    "options_hi": [
+      "वर्ष 2000 में",
+      "वर्ष 2009 में",
+      "वर्ष 2021 में (February 2021)",
+      "वर्ष 2024 में"
+    ],
+    "options_en": [
+      "Year 2000 (SOUL 1.0)",
+      "Year 2009 (SOUL 2.0)",
+      "Year 2021 (SOUL 3.0)",
+      "Year 2024"
+    ],
+    "options": [
+      {
+        "hi": "वर्ष 2000 में",
+        "en": "Year 2000 (SOUL 1.0)"
+      },
+      {
+        "hi": "वर्ष 2009 में",
+        "en": "Year 2009 (SOUL 2.0)"
+      },
+      {
+        "hi": "वर्ष 2021 में (February 2021)",
+        "en": "Year 2021 (SOUL 3.0)"
+      },
+      {
+        "hi": "वर्ष 2024 में",
+        "en": "Year 2024"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "SOUL 1.0 वर्ष 2000 में, SOUL 2.0 जनवरी 2009 में, और नवीनतम वेब-सक्षम संस्करण 'SOUL 3.0' फरवरी 2021 में जारी किया गया था। यह MARC-21 और वेब आर्किटेक्चर पर कार्य करता है।",
+    "exp_en": "SOUL 3.0 was formally released in February 2021, succeeding SOUL 1.0 (2000) and SOUL 2.0 (2009) with enhanced Unicode, MARC-21, and web services."
+  },
+  {
+    "globalId": "u5_sub5_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "भारत सरकार के किस विभाग द्वारा देश के सरकारी एवं स्कूल पुस्तकालयों हेतु 'ई-ग्रंथालय' (e-Granthalaya) सॉफ्टवेयर विकसित किया गया है?",
+    "q_en": "By which Indian government agency was 'e-Granthalaya' library automation software developed for government and school libraries?",
+    "options_hi": [
+      "राष्ट्रीय सूचना विज्ञान केंद्र (National Informatics Centre - NIC)",
+      "इसरो (ISRO)",
+      "सी-डैक (C-DAC, पुणे)",
+      "नीति आयोग (NITI Aayog)"
+    ],
+    "options_en": [
+      "National Informatics Centre (NIC, MeitY)",
+      "ISRO",
+      "C-DAC (Pune)",
+      "NITI Aayog"
+    ],
+    "options": [
+      {
+        "hi": "राष्ट्रीय सूचना विज्ञान केंद्र (National Informatics Centre - NIC)",
+        "en": "National Informatics Centre (NIC, MeitY)"
+      },
+      {
+        "hi": "इसरो (ISRO)",
+        "en": "ISRO"
+      },
+      {
+        "hi": "सी-डैक (C-DAC, पुणे)",
+        "en": "C-DAC (Pune)"
+      },
+      {
+        "hi": "नीति आयोग (NITI Aayog)",
+        "en": "NITI Aayog"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ई-ग्रंथालय का विकास इलेक्ट्रॉनिकी एवं सूचना प्रौद्योगिकी मंत्रालय के अंतर्गत कार्यरत 'राष्ट्रीय सूचना विज्ञान केंद्र' (NIC) द्वारा 2003 में प्रारंभ किया गया था।",
+    "exp_en": "e-Granthalaya was engineered by the National Informatics Centre (NIC), Ministry of Electronics & IT, Government of India."
+  },
+  {
+    "globalId": "u5_sub5_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "'ई-ग्रंथालय 4.0' (e-Granthalaya 4.0) किस आधुनिक कंप्यूटिंग मॉडल पर आधारित है, जिसमें पुस्तकालय को स्थानीय सर्वर लगाने की आवश्यकता नहीं होती?",
+    "q_en": "On which modern cloud deployment model is 'e-Granthalaya 4.0' architected, relieving libraries from maintaining local hardware servers?",
+    "options_hi": [
+      "SaaS मॉडल (Software-as-a-Service on Cloud / क्लाउड पर सॉफ्टवेयर सेवा)",
+      "ऑफ़लाइन स्टैंडअलोन DOS मॉडल",
+      "केवल पंच-कार्ड मॉडल",
+      "लोकल एरिया नेटवर्क (LAN) केवल"
+    ],
+    "options_en": [
+      "Cloud-based SaaS Model (Software-as-a-Service)",
+      "Offline Standalone DOS Model",
+      "Punched-Card Model",
+      "Local Area Network (LAN) only"
+    ],
+    "options": [
+      {
+        "hi": "SaaS मॉडल (Software-as-a-Service on Cloud / क्लाउड पर सॉफ्टवेयर सेवा)",
+        "en": "Cloud-based SaaS Model (Software-as-a-Service)"
+      },
+      {
+        "hi": "ऑफ़लाइन स्टैंडअलोन DOS मॉडल",
+        "en": "Offline Standalone DOS Model"
+      },
+      {
+        "hi": "केवल पंच-कार्ड मॉडल",
+        "en": "Punched-Card Model"
+      },
+      {
+        "hi": "लोकल एरिया नेटवर्क (LAN) केवल",
+        "en": "Local Area Network (LAN) only"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ई-ग्रंथालय 4.0 क्लाउड-आधारित 'Software-as-a-Service' (SaaS) मॉडल पर आधारित है, जो भारत सरकार के मेघराज क्लाउड (MeghRaj NIC Cloud) पर होस्टेड है। इसमें किसी स्थानीय सर्वर की आवश्यकता नहीं होती।",
+    "exp_en": "e-Granthalaya 4.0 is deployed under the Software-as-a-Service (SaaS) paradigm on the NIC National Cloud (MeghRaj), centralizing hosting and databases."
+  },
+  {
+    "globalId": "u5_sub5_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "हैदराबाद स्थित वेरूस सॉल्यूशंस (Verus Solutions) द्वारा विकसित भारतीय ओपन सोर्स पुस्तकालय सॉफ्टवेयर कौन-सा है?",
+    "q_en": "Which Indian open-source integrated library management software was developed by Verus Solutions, Hyderabad?",
+    "options_hi": [
+      "न्यूजेनलिब (NewGenLib)",
+      "लिबसिस (LibSys)",
+      "कोहा (KOHA)",
+      "संजय (SANJAY)"
+    ],
+    "options_en": [
+      "NewGenLib",
+      "LibSys",
+      "KOHA",
+      "SANJAY"
+    ],
+    "options": [
+      {
+        "hi": "न्यूजेनलिब (NewGenLib)",
+        "en": "NewGenLib"
+      },
+      {
+        "hi": "लिबसिस (LibSys)",
+        "en": "LibSys"
+      },
+      {
+        "hi": "कोहा (KOHA)",
+        "en": "KOHA"
+      },
+      {
+        "hi": "संजय (SANJAY)",
+        "en": "SANJAY"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "NewGenLib का विकास वेरूस सॉल्यूशंस प्राइवेट लिमिटेड एवं केशव मेमोरियल टेक्निकल ट्रस्ट (हैदराबाद) द्वारा किया गया। मार्च 2008 में इसे ओपन सोर्स (GPL) घोषित किया गया।",
+    "exp_en": "NewGenLib is an enterprise-level open-source ILS developed by Verus Solutions Pvt Ltd and Keshav Memorial Technical Trust in Hyderabad, made open source in 2008."
+  },
+  {
+    "globalId": "u5_sub5_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "यूनेस्को (UNESCO) द्वारा 1985 में गैर-अंकीय पाठ्य डेटाबेस (Non-numerical textual database) के प्रबंधन हेतु कौन-सा ऐतिहासिक सॉफ्टवेयर जारी किया गया था?",
+    "q_en": "Which landmark software was released in 1985 by UNESCO for managing non-numerical structured textual databases?",
+    "options_hi": [
+      "CDS/ISIS",
+      "KOHA",
+      "SOUL",
+      "DSpace"
+    ],
+    "options_en": [
+      "CDS/ISIS",
+      "KOHA",
+      "SOUL",
+      "DSpace"
+    ],
+    "options": [
+      {
+        "hi": "CDS/ISIS",
+        "en": "CDS/ISIS"
+      },
+      {
+        "hi": "KOHA",
+        "en": "KOHA"
+      },
+      {
+        "hi": "SOUL",
+        "en": "SOUL"
+      },
+      {
+        "hi": "DSpace",
+        "en": "DSpace"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "यूनेस्को ने 1985 में CDS/ISIS (Computerized Documentation System / Integrated Set of Information Systems) जारी किया। यह विकासशील देशों के पुस्तकालयों में ग्रंथपरक डेटाबेस निर्माण में अत्यधिक लोकप्रिय हुआ।",
+    "exp_en": "UNESCO introduced CDS/ISIS in 1985, tailor-made for variable-length bibliographic textual records and extensively adopted across developing nations."
+  },
+  {
+    "globalId": "u5_sub5_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "यूनेस्को द्वारा विकसित CDS/ISIS सॉफ्टवेयर का माइक्रोसॉफ्ट विंडोज आधारित ग्राफिकल संस्करण क्या कहलाता है?",
+    "q_en": "What is the name of the Microsoft Windows-based graphical interface edition of UNESCO's CDS/ISIS software?",
+    "options_hi": [
+      "WINISIS",
+      "WinKoha",
+      "WebSOUL",
+      "MicroCDS"
+    ],
+    "options_en": [
+      "WINISIS",
+      "WinKoha",
+      "WebSOUL",
+      "MicroCDS"
+    ],
+    "options": [
+      {
+        "hi": "WINISIS",
+        "en": "WINISIS"
+      },
+      {
+        "hi": "WinKoha",
+        "en": "WinKoha"
+      },
+      {
+        "hi": "WebSOUL",
+        "en": "WebSOUL"
+      },
+      {
+        "hi": "MicroCDS",
+        "en": "MicroCDS"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "CDS/ISIS के विंडोज संस्करण को 'WINISIS' नाम दिया गया, जिसे यूनेस्को द्वारा 1995-1996 में ग्राफिकल यूजर इंटरफेस (GUI) के साथ जारी किया गया था।",
+    "exp_en": "WINISIS is the official Windows GUI-based incarnation of CDS/ISIS developed by UNESCO in 1995-1996."
+  },
+  {
+    "globalId": "u5_sub5_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "पुस्तकालय सॉफ्टवेयरों के मध्य दो अलग-अलग डेटाबेसों से कैटलॉग रिकॉर्ड खोजने और डाउनलोड (Copy Cataloguing) करने हेतु प्रयुक्त अंतरराष्ट्रीय क्लाइंट-सर्वर प्रोटोकॉल कौन-सा है?",
+    "q_en": "Which international client-server protocol enables library software to search and retrieve catalog records across remote library systems?",
+    "options_hi": [
+      "Z39.50 (ANSI/NISO Z39.50)",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "options_en": [
+      "Z39.50 (ANSI/NISO Z39.50)",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "options": [
+      {
+        "hi": "Z39.50 (ANSI/NISO Z39.50)",
+        "en": "Z39.50 (ANSI/NISO Z39.50)"
+      },
+      {
+        "hi": "HTTP",
+        "en": "HTTP"
+      },
+      {
+        "hi": "FTP",
+        "en": "FTP"
+      },
+      {
+        "hi": "SMTP",
+        "en": "SMTP"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Z39.50 एक अंतरराष्ट्रीय मानक क्लाइंट-सर्वर प्रोटोकॉल है (ANSI/NISO मानक), जो कोहा या सोल जैसे सॉफ्टवेयर को अन्य वैश्विक पुस्तकालयों (जैसे लाइब्रेरी ऑफ कांग्रेस) से सीधे कैटलॉग रिकॉर्ड खोजने व डाउनलोड करने की अनुमति देता है।",
+    "exp_en": "Z39.50 is the international standardized protocol (ISO 23950 / ANSI Z39.50) governing computer-to-computer bibliographic information search and retrieval."
+  },
+  {
+    "globalId": "u5_sub5_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "पुस्तकालय स्वचालन सॉफ्टवेयर को RFID कियोस्क, बुक ड्रॉप बॉक्स एवं सुरक्षा गेट्स से जोड़ने हेतु किस मानक प्रोटोकॉल का उपयोग किया जाता है?",
+    "q_en": "Which standard data exchange protocol is utilized by library management systems to interface with RFID kiosks and security barriers?",
+    "options_hi": [
+      "SIP2 (Standard Interchange Protocol 2)",
+      "POP3",
+      "IMAP",
+      "DNS"
+    ],
+    "options_en": [
+      "SIP2 (Standard Interchange Protocol 2)",
+      "POP3",
+      "IMAP",
+      "DNS"
+    ],
+    "options": [
+      {
+        "hi": "SIP2 (Standard Interchange Protocol 2)",
+        "en": "SIP2 (Standard Interchange Protocol 2)"
+      },
+      {
+        "hi": "POP3",
+        "en": "POP3"
+      },
+      {
+        "hi": "IMAP",
+        "en": "IMAP"
+      },
+      {
+        "hi": "DNS",
+        "en": "DNS"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "SIP2 (3M द्वारा विकसित Standard Interchange Protocol) पुस्तकालय ILS और सेल्फ-चेक कियोस्क, RFID स्मार्ट गेट्स व ऑटोमेटेड बुक ड्रॉप मशीनों के मध्य संचार का वैश्विक मानक है।",
+    "exp_en": "3M's SIP2 (Standard Interchange Protocol v2) is the industry benchmark protocol connecting circulation databases to RFID self-service terminals and gates."
+  },
+  {
+    "globalId": "u5_sub5_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "भारत में विश्वविद्यालयों एवं उच्च शिक्षण संस्थानों में व्यापक रूप से प्रयुक्त प्रसिद्ध 'वाणिज्यिक / बंद स्रोत' (Commercial / Proprietary) पुस्तकालय सॉफ्टवेयर कौन-सा है?",
+    "q_en": "Which is a leading commercial (proprietary / closed-source) library automation software widely installed in premier Indian academic institutions?",
+    "options_hi": [
+      "लिबसिस (LibSys - LibSys Ltd., Gurgaon)",
+      "कोहा (KOHA)",
+      "न्यूजेनलिब (NewGenLib)",
+      "ग्रीनस्टोन (Greenstone)"
+    ],
+    "options_en": [
+      "LibSys (LibSys Ltd., Gurgaon)",
+      "KOHA",
+      "NewGenLib",
+      "Greenstone"
+    ],
+    "options": [
+      {
+        "hi": "लिबसिस (LibSys - LibSys Ltd., Gurgaon)",
+        "en": "LibSys (LibSys Ltd., Gurgaon)"
+      },
+      {
+        "hi": "कोहा (KOHA)",
+        "en": "KOHA"
+      },
+      {
+        "hi": "न्यूजेनलिब (NewGenLib)",
+        "en": "NewGenLib"
+      },
+      {
+        "hi": "ग्रीनस्टोन (Greenstone)",
+        "en": "Greenstone"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "LibSys (LibSys 4, 7, 10) भारत की LibSys Ltd. (गुड़गांव) द्वारा निर्मित एक प्रमुख वाणिज्यिक (Commercial) सॉफ्टवेयर है, जबकि कोहा और न्यूजेनलिब ओपन सोर्स हैं।",
+    "exp_en": "LibSys is India's most prominent proprietary/commercial library management software package, developed by LibSys Ltd., Gurugram."
+  },
+  {
+    "globalId": "u5_sub5_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "इंटीग्रेटेड लाइब्रेरी सिस्टम (ILMS) का कौन-सा मॉड्यूल आवधिक पत्रिकाओं के आगमन, कार्डेक्स (Kardex) प्रविष्टि और वार्षिक सदस्यता नवीनीकरण का कार्य संभालता है?",
+    "q_en": "Which functional module of an ILMS handles serial arrivals, Kardex registration, and subscription renewals?",
+    "options_hi": [
+      "सामयिक पत्रिका नियंत्रण मॉड्यूल (Serials Control Module)",
+      "परिसंचरण मॉड्यूल (Circulation)",
+      "अधिग्रहण मॉड्यूल (Acquisition)",
+      "पुस्तक जिल्दसाजी मॉड्यूल"
+    ],
+    "options_en": [
+      "Serials Control Module",
+      "Circulation Module",
+      "Acquisition Module",
+      "Book Binding Module"
+    ],
+    "options": [
+      {
+        "hi": "सामयिक पत्रिका नियंत्रण मॉड्यूल (Serials Control Module)",
+        "en": "Serials Control Module"
+      },
+      {
+        "hi": "परिसंचरण मॉड्यूल (Circulation)",
+        "en": "Circulation Module"
+      },
+      {
+        "hi": "अधिग्रहण मॉड्यूल (Acquisition)",
+        "en": "Acquisition Module"
+      },
+      {
+        "hi": "पुस्तक जिल्दसाजी मॉड्यूल",
+        "en": "Book Binding Module"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Serials Control Module पत्रिकाओं की सदस्यता, अंकों के आगमन पर चेक-इन, कार्डेक्स प्रबंधन, गायब अंकों हेतु प्रकाशक को क्लेम लेटर भेजना और बाउंड वॉल्यूम तैयार करने का कार्य करता है।",
+    "exp_en": "The Serials Control module orchestrates subscriptions, invoice processing, issue-by-issue check-in (electronic Kardex), missing issue claims, and binding records."
+  },
+  {
+    "globalId": "u5_sub5_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.1",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+    "q_hi": "वर्ष 1936 में औद्योगिक उत्पादन के संदर्भ में 'स्वचालन' (Automation) शब्द को पहली बार किसने गढ़ा था?",
+    "q_en": "Who originally coined the term 'Automation' in 1936 within the context of automated industrial manufacturing?",
+    "options_hi": [
+      "डी.एस. हार्डर (D.S. Harder - General Motors)",
+      "हरमन हॉलेरिथ (Herman Hollerith)",
+      "चार्ल्स बैबेज (Charles Babbage)",
+      "एलन ट्यूरिंग (Alan Turing)"
+    ],
+    "options_en": [
+      "D.S. Harder (General Motors)",
+      "Herman Hollerith",
+      "Charles Babbage",
+      "Alan Turing"
+    ],
+    "options": [
+      {
+        "hi": "डी.एस. हार्डर (D.S. Harder - General Motors)",
+        "en": "D.S. Harder (General Motors)"
+      },
+      {
+        "hi": "हरमन हॉलेरिथ (Herman Hollerith)",
+        "en": "Herman Hollerith"
+      },
+      {
+        "hi": "चार्ल्स बैबेज (Charles Babbage)",
+        "en": "Charles Babbage"
+      },
+      {
+        "hi": "एलन ट्यूरिंग (Alan Turing)",
+        "en": "Alan Turing"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "जनरल मोटर्स के इंजीनियरिंग वाइस प्रेसिडेंट डी.एस. हार्डर (D.S. Harder) ने 1936 में उत्पादन संयंत्रों में पुर्जों के स्वचालित संचालन हेतु 'Automation' शब्द गढ़ा था।",
+    "exp_en": "D.S. Harder of General Motors coined 'Automation' in 1936 to describe the automatic handling and machining of parts between progressive production stages."
+  }
+]

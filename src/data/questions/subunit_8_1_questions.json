@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u8_sub8_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "9 दिसंबर 1946 को आयोजित भारत की संविधान सभा की प्रथम बैठक में किसे सर्वसम्मति से 'अस्थायी अध्यक्ष' (Provisional President) चुना गया था?",
+    "q_en": "Who was unanimously elected as the 'Provisional President' of the Constituent Assembly of India in its first meeting on 9 December 1946?",
+    "options_hi": [
+      "डॉ. राजेन्द्र प्रसाद",
+      "डॉ. सच्चिदानंद सिन्हा",
+      "डॉ. बी.आर. अंबेडकर",
+      "पंडित जवाहरलाल नेहरू"
+    ],
+    "options_en": [
+      "Dr. Rajendra Prasad",
+      "Dr. Sachchidananda Sinha",
+      "Dr. B.R. Ambedkar",
+      "Pandit Jawaharlal Nehru"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. राजेन्द्र प्रसाद",
+        "en": "Dr. Rajendra Prasad"
+      },
+      {
+        "hi": "डॉ. सच्चिदानंद सिन्हा",
+        "en": "Dr. Sachchidananda Sinha"
+      },
+      {
+        "hi": "डॉ. बी.आर. अंबेडकर",
+        "en": "Dr. B.R. Ambedkar"
+      },
+      {
+        "hi": "पंडित जवाहरलाल नेहरू",
+        "en": "Pandit Jawaharlal Nehru"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "वरिष्ठतम सदस्य होने की फ्रांसीसी परंपरा के अनुसार बिहार के डॉ. सच्चिदानंद सिन्हा को 9 दिसंबर 1946 को संविधान सभा का अस्थायी अध्यक्ष चुना गया था। 11 दिसंबर 1946 को डॉ. राजेन्द्र प्रसाद स्थायी अध्यक्ष बने।",
+    "exp_en": "Following the French convention of electing the oldest member, Dr. Sachchidananda Sinha was chosen temporary President on 9 Dec 1946. On 11 Dec 1946, Dr. Rajendra Prasad became the permanent President."
+  },
+  {
+    "globalId": "u8_sub8_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "42वें संविधान संशोधन अधिनियम, 1976 द्वारा भारतीय संविधान की प्रस्तावना (Preamble) में निम्नलिखित में से कौन से तीन नए शब्द जोड़े गए थे?",
+    "q_en": "Which three new words were inserted into the Preamble of the Indian Constitution by the 42nd Constitutional Amendment Act, 1976?",
+    "options_hi": [
+      "संप्रभुता, बंधुत्व, लोकतंत्र",
+      "समाजवादी, पंथनिरपेक्ष, अखंडता",
+      "स्वतंत्रता, समानता, न्याय",
+      "गणराज्य, निष्पक्षता, समाजवाद"
+    ],
+    "options_en": [
+      "Sovereignty, Fraternity, Democracy",
+      "Socialist, Secular, Integrity",
+      "Liberty, Equality, Justice",
+      "Republic, Impartiality, Socialism"
+    ],
+    "options": [
+      {
+        "hi": "संप्रभुता, बंधुत्व, लोकतंत्र",
+        "en": "Sovereignty, Fraternity, Democracy"
+      },
+      {
+        "hi": "समाजवादी, पंथनिरपेक्ष, अखंडता",
+        "en": "Socialist, Secular, Integrity"
+      },
+      {
+        "hi": "स्वतंत्रता, समानता, न्याय",
+        "en": "Liberty, Equality, Justice"
+      },
+      {
+        "hi": "गणराज्य, निष्पक्षता, समाजवाद",
+        "en": "Republic, Impartiality, Socialism"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "42वें संशोधन (1976) के द्वारा प्रस्तावना में 'समाजवादी' (Socialist), 'पंथनिरपेक्ष' (Secular) और राष्ट्र की 'अखंडता' (Integrity) शब्द जोड़े गए। प्रस्तावना में अब तक केवल एक बार संशोधन हुआ है।",
+    "exp_en": "The 42nd Amendment of 1976 added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble. This remains the sole constitutional amendment made to the Preamble to date."
+  },
+  {
+    "globalId": "u8_sub8_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "किस संविधान संशोधन अधिनियम द्वारा 'संपत्ति के अधिकार' को मौलिक अधिकारों की सूची से हटाकर अनुच्छेद 300A के अंतर्गत केवल एक विधिक/कानूनी अधिकार बना दिया गया?",
+    "q_en": "By which Constitutional Amendment Act was the 'Right to Property' removed from the list of Fundamental Rights and made merely a legal right under Article 300A?",
+    "options_hi": [
+      "42वां संशोधन (1976)",
+      "44वां संशोधन (1978)",
+      "86वां संशोधन (2002)",
+      "73वां संशोधन (1992)"
+    ],
+    "options_en": [
+      "42nd Amendment (1976)",
+      "44th Amendment (1978)",
+      "86th Amendment (2002)",
+      "73rd Amendment (1992)"
+    ],
+    "options": [
+      {
+        "hi": "42वां संशोधन (1976)",
+        "en": "42nd Amendment (1976)"
+      },
+      {
+        "hi": "44वां संशोधन (1978)",
+        "en": "44th Amendment (1978)"
+      },
+      {
+        "hi": "86वां संशोधन (2002)",
+        "en": "86th Amendment (2002)"
+      },
+      {
+        "hi": "73वां संशोधन (1992)",
+        "en": "73rd Amendment (1992)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "मोरारजी देसाई की जनता पार्टी सरकार के समय 44वें संविधान संशोधन 1978 द्वारा अनुच्छेद 31 (संपत्ति का मौलिक अधिकार) समाप्त कर इसे भाग XII में अनुच्छेद 300A के तहत सामान्य कानूनी अधिकार बना दिया गया।",
+    "exp_en": "The 44th Constitutional Amendment Act (1978) under the Janata Party government repealed Article 31 and reclassified the Right to Property as a legal right under Article 300A."
+  },
+  {
+    "globalId": "u8_sub8_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "भारतीय संविधान का कौन सा अनुच्छेद 'अस्पृश्यता का अंत' (Abolition of Untouchability) करता है और इसके किसी भी रूप में आचरण को दंडनीय अपराध घोषित करता है?",
+    "q_en": "Which Article of the Indian Constitution abolishes 'Untouchability' and declares its practice in any form a punishable offense?",
+    "options_hi": [
+      "अनुच्छेद 14",
+      "अनुच्छेद 17",
+      "अनुच्छेद 19",
+      "अनुच्छेद 23"
+    ],
+    "options_en": [
+      "Article 14",
+      "Article 17",
+      "Article 19",
+      "Article 23"
+    ],
+    "options": [
+      {
+        "hi": "अनुच्छेद 14",
+        "en": "Article 14"
+      },
+      {
+        "hi": "अनुच्छेद 17",
+        "en": "Article 17"
+      },
+      {
+        "hi": "अनुच्छेद 19",
+        "en": "Article 19"
+      },
+      {
+        "hi": "अनुच्छेद 23",
+        "en": "Article 23"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "अनुच्छेद 17 अस्पृश्यता के पूर्ण उन्मूलन का प्रावधान करता है। संसद ने इसे प्रभावी बनाने के लिए 'अस्पृश्यता (अपराध) अधिनियम 1955' पारित किया, जिसे बाद में 'नागरिक अधिकार संरक्षण अधिनियम 1955' नाम दिया गया।",
+    "exp_en": "Article 17 abolishes untouchability and forbids its practice. To give effect to this article, Parliament enacted the Untouchability (Offences) Act 1955, later renamed Civil Rights Protection Act."
+  },
+  {
+    "globalId": "u8_sub8_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "6 से 14 वर्ष के बच्चों के लिए अनिवार्य एवं निःशुल्क प्राथमिक शिक्षा को मौलिक अधिकार (अनुच्छेद 21A) बनाने वाला ऐतिहासिक संविधान संशोधन कौन सा था?",
+    "q_en": "Which landmark Constitutional Amendment made free and compulsory elementary education for children aged 6 to 14 a Fundamental Right under Article 21A?",
+    "options_hi": [
+      "86वां संविधान संशोधन (2002)",
+      "91वां संविधान संशोधन (2003)",
+      "73वां संविधान संशोधन (1992)",
+      "61वां संविधान संशोधन (1988)"
+    ],
+    "options_en": [
+      "86th Constitutional Amendment (2002)",
+      "91st Constitutional Amendment (2003)",
+      "73rd Constitutional Amendment (1992)",
+      "61st Constitutional Amendment (1988)"
+    ],
+    "options": [
+      {
+        "hi": "86वां संविधान संशोधन (2002)",
+        "en": "86th Constitutional Amendment (2002)"
+      },
+      {
+        "hi": "91वां संविधान संशोधन (2003)",
+        "en": "91st Constitutional Amendment (2003)"
+      },
+      {
+        "hi": "73वां संविधान संशोधन (1992)",
+        "en": "73rd Constitutional Amendment (1992)"
+      },
+      {
+        "hi": "61वां संविधान संशोधन (1988)",
+        "en": "61st Constitutional Amendment (1988)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "86वें संविधान संशोधन 2002 द्वारा अनुच्छेद 21A जोड़कर शिक्षा को मौलिक अधिकार बनाया गया। इसी के आधार पर संसद ने शिक्षा का अधिकार अधिनियम (RTE Act, 2009) पारित किया, जो 1 अप्रैल 2010 से प्रभावी हुआ।",
+    "exp_en": "The 86th Constitutional Amendment Act 2002 inserted Article 21A, making education a Fundamental Right. Following this, the Right to Education (RTE) Act 2009 was enforced on 1 April 2010."
+  },
+  {
+    "globalId": "u8_sub8_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "डॉ. बी.आर. अंबेडकर ने भारतीय संविधान के किस अनुच्छेद को 'संविधान की आत्मा और उसका हृदय' (Heart and Soul of the Constitution) कहा था?",
+    "q_en": "Which Article of the Indian Constitution was termed the 'Heart and Soul of the Constitution' by Dr. B.R. Ambedkar?",
+    "options_hi": [
+      "अनुच्छेद 19 (वाक् स्वतंत्रता)",
+      "अनुच्छेद 21 (जीवन का अधिकार)",
+      "अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)",
+      "अनुच्छेद 368 (संविधान संशोधन)"
+    ],
+    "options_en": [
+      "Article 19 (Freedom of Speech)",
+      "Article 21 (Right to Life)",
+      "Article 32 (Right to Constitutional Remedies)",
+      "Article 368 (Constitutional Amendment)"
+    ],
+    "options": [
+      {
+        "hi": "अनुच्छेद 19 (वाक् स्वतंत्रता)",
+        "en": "Article 19 (Freedom of Speech)"
+      },
+      {
+        "hi": "अनुच्छेद 21 (जीवन का अधिकार)",
+        "en": "Article 21 (Right to Life)"
+      },
+      {
+        "hi": "अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)",
+        "en": "Article 32 (Right to Constitutional Remedies)"
+      },
+      {
+        "hi": "अनुच्छेद 368 (संविधान संशोधन)",
+        "en": "Article 368 (Constitutional Amendment)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डॉ. अंबेडकर ने अनुच्छेद 32 को 'संविधान का हृदय और आत्मा' कहा था क्योंकि यह नागरिकों को अपने मौलिक अधिकारों के हनन पर सीधे सर्वोच्च न्यायालय जाने का अधिकार और सुरक्षा गारंटी देता है।",
+    "exp_en": "Dr. Ambedkar described Article 32 as the 'Heart and Soul of the Constitution' because it guarantees constitutional remedies through supreme judicial writs if fundamental rights are violated."
+  },
+  {
+    "globalId": "u8_sub8_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "न्यायालय द्वारा किसी लोक अधिकारी या संस्था को अपने कानूनी एवं सार्वजनिक कर्तव्यों का अनिवार्य पालन करने हेतु कौन सी रिट (Writ) जारी की जाती है?",
+    "q_en": "Which writ is issued by a court commanding a public official or body to perform their mandatory legal and statutory duties?",
+    "options_hi": [
+      "बंदी प्रत्यक्षीकरण (Habeas Corpus)",
+      "परमादेश (Mandamus)",
+      "अधिकार पृच्छा (Quo-Warranto)",
+      "प्रतिषेध (Prohibition)"
+    ],
+    "options_en": [
+      "Habeas Corpus",
+      "Mandamus",
+      "Quo-Warranto",
+      "Prohibition"
+    ],
+    "options": [
+      {
+        "hi": "बंदी प्रत्यक्षीकरण (Habeas Corpus)",
+        "en": "Habeas Corpus"
+      },
+      {
+        "hi": "परमादेश (Mandamus)",
+        "en": "Mandamus"
+      },
+      {
+        "hi": "अधिकार पृच्छा (Quo-Warranto)",
+        "en": "Quo-Warranto"
+      },
+      {
+        "hi": "प्रतिषेध (Prohibition)",
+        "en": "Prohibition"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "परमादेश (Mandamus) का शाब्दिक अर्थ है 'हम आदेश देते हैं' (We Command)। यह रिट किसी सार्वजनिक प्राधिकारी, निगम या निचली अदालत को विधिक कर्तव्य का पालन करने हेतु बाध्य करने के लिए जारी की जाती है।",
+    "exp_en": "Mandamus literally means 'We Command'. It is a judicial writ directed to any public officer, corporation, or inferior tribunal commanding the performance of a specific statutory public duty."
+  },
+  {
+    "globalId": "u8_sub8_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "संविधान के भाग IV (अनुच्छेद 36 से 51) में वर्णित 'राज्य के नीति निर्देशक तत्व' (DPSP) किस देश के संविधान से प्रेरित होकर अंगीकृत किए गए हैं?",
+    "q_en": "The 'Directive Principles of State Policy' (DPSP) enshrined in Part IV (Articles 36 to 51) of the Indian Constitution are borrowed from the constitution of which nation?",
+    "options_hi": [
+      "संयुक्त राज्य अमेरिका",
+      "आयरलैंड (Ireland)",
+      "ग्रेट ब्रिटेन",
+      "ऑस्ट्रेलिया"
+    ],
+    "options_en": [
+      "United States of America",
+      "Ireland",
+      "Great Britain",
+      "Australia"
+    ],
+    "options": [
+      {
+        "hi": "संयुक्त राज्य अमेरिका",
+        "en": "United States of America"
+      },
+      {
+        "hi": "आयरलैंड (Ireland)",
+        "en": "Ireland"
+      },
+      {
+        "hi": "ग्रेट ब्रिटेन",
+        "en": "Great Britain"
+      },
+      {
+        "hi": "ऑस्ट्रेलिया",
+        "en": "Australia"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "भारतीय संविधान में नीति निर्देशक तत्व 1937 के आयरिश संविधान से लिए गए हैं। ये गैर-न्यायसंगत हैं, परंतु देश के शासन में मूलभूत महत्व रखते हैं और कल्याणकारी राज्य की स्थापना का लक्ष्य रखते हैं।",
+    "exp_en": "The DPSPs were borrowed from the Irish Constitution of 1937. While non-justiciable in courts, they are fundamental in the governance of the country aiming to establish a welfare state."
+  },
+  {
+    "globalId": "u8_sub8_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "गांधीवादी दर्शन पर आधारित भारतीय संविधान का कौन सा अनुच्छेद राज्य को 'ग्राम पंचायतों के गठन' (Organization of Village Panchayats) का स्पष्ट निर्देश देता है?",
+    "q_en": "Which Article of the Indian Constitution rooted in Gandhian philosophy directs the State to organize Village Panchayats?",
+    "options_hi": [
+      "अनुच्छेद 40",
+      "अनुच्छेद 44",
+      "अनुच्छेद 48",
+      "अनुच्छेद 50"
+    ],
+    "options_en": [
+      "Article 40",
+      "Article 44",
+      "Article 48",
+      "Article 50"
+    ],
+    "options": [
+      {
+        "hi": "अनुच्छेद 40",
+        "en": "Article 40"
+      },
+      {
+        "hi": "अनुच्छेद 44",
+        "en": "Article 44"
+      },
+      {
+        "hi": "अनुच्छेद 48",
+        "en": "Article 48"
+      },
+      {
+        "hi": "अनुच्छेद 50",
+        "en": "Article 50"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "नीति निर्देशक तत्वों के अंतर्गत अनुच्छेद 40 में कहा गया है कि राज्य ग्राम पंचायतों का संगठन करने के लिए कदम उठाएगा और उन्हें ऐसी शक्तियां देगा जो उन्हें स्वायत्त शासन की इकाइयों के रूप में कार्य करने में समर्थ बनाएं।",
+    "exp_en": "Article 40 in Part IV directs the state to take steps to organize village panchayats and endow them with such powers and authority as may be necessary to function as units of self-government."
+  },
+  {
+    "globalId": "u8_sub8_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "वर्ष 1976 में किस समिति की अनुशंसा पर संविधान के भाग IV-A एवं अनुच्छेद 51A के तहत नागरिकों के लिए 'मौलिक कर्तव्य' (Fundamental Duties) जोड़े गए थे?",
+    "q_en": "On the recommendation of which committee in 1976 were 'Fundamental Duties' incorporated for citizens under Part IV-A and Article 51A?",
+    "options_hi": [
+      "बलवंत राय मेहता समिति",
+      "सरदार स्वर्ण सिंह समिति (Sardar Swaran Singh Committee)",
+      "सरकारिया आयोग",
+      "के. संथानम समिति"
+    ],
+    "options_en": [
+      "Balwant Rai Mehta Committee",
+      "Sardar Swaran Singh Committee",
+      "Sarkaria Commission",
+      "K. Santhanam Committee"
+    ],
+    "options": [
+      {
+        "hi": "बलवंत राय मेहता समिति",
+        "en": "Balwant Rai Mehta Committee"
+      },
+      {
+        "hi": "सरदार स्वर्ण सिंह समिति (Sardar Swaran Singh Committee)",
+        "en": "Sardar Swaran Singh Committee"
+      },
+      {
+        "hi": "सरकारिया आयोग",
+        "en": "Sarkaria Commission"
+      },
+      {
+        "hi": "के. संथानम समिति",
+        "en": "K. Santhanam Committee"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "42वें संशोधन 1976 द्वारा सरदार स्वर्ण सिंह समिति की सिफारिश पर सोवियत संघ (USSR) से प्रेरित 10 मौलिक कर्तव्य जोड़े गए। 86वें संशोधन 2002 द्वारा 11वां कर्तव्य जोड़ा गया। वर्तमान में कुल 11 कर्तव्य हैं।",
+    "exp_en": "The Sardar Swaran Singh Committee recommended incorporating 10 Fundamental Duties via the 42nd Amendment in 1976 (inspired by the USSR). An 11th duty was added in 2002 via the 86th Amendment."
+  },
+  {
+    "globalId": "u8_sub8_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "संसद के दोनों सदनों में बिहार राज्य के लिए आवंटित लोकसभा एवं राज्यसभा सीटों की कुल संख्या क्रमशः कितनी है?",
+    "q_en": "What is the total number of seats allocated to the state of Bihar in the Lok Sabha and Rajya Sabha respectively?",
+    "options_hi": [
+      "लोकसभा: 40, राज्यसभा: 16",
+      "लोकसभा: 54, राज्यसभा: 22",
+      "लोकसभा: 38, राज्यसभा: 14",
+      "लोकसभा: 42, राज्यसभा: 18"
+    ],
+    "options_en": [
+      "Lok Sabha: 40, Rajya Sabha: 16",
+      "Lok Sabha: 54, Rajya Sabha: 22",
+      "Lok Sabha: 38, Rajya Sabha: 14",
+      "Lok Sabha: 42, Rajya Sabha: 18"
+    ],
+    "options": [
+      {
+        "hi": "लोकसभा: 40, राज्यसभा: 16",
+        "en": "Lok Sabha: 40, Rajya Sabha: 16"
+      },
+      {
+        "hi": "लोकसभा: 54, राज्यसभा: 22",
+        "en": "Lok Sabha: 54, Rajya Sabha: 22"
+      },
+      {
+        "hi": "लोकसभा: 38, राज्यसभा: 14",
+        "en": "Lok Sabha: 38, Rajya Sabha: 14"
+      },
+      {
+        "hi": "लोकसभा: 42, राज्यसभा: 18",
+        "en": "Lok Sabha: 42, Rajya Sabha: 18"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "संसद में बिहार का प्रतिनिधित्व: लोकसभा में 40 सीटें (जिनमें 6 सीटें अनुसूचित जाति हेतु आरक्षित हैं) तथा राज्यसभा में 16 सीटें निर्धारित हैं।",
+    "exp_en": "Bihar has 40 seats in the Lok Sabha (of which 6 are reserved for Scheduled Castes) and 16 seats in the Rajya Sabha."
+  },
+  {
+    "globalId": "u8_sub8_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "बिहार विधानमंडल के निचले सदन अर्थात् 'बिहार विधानसभा' (Vidhan Sabha) में निर्वाचित सदस्यों की कुल संख्या कितनी है?",
+    "q_en": "What is the total number of elected members in the lower house of Bihar Legislature, namely the 'Bihar Vidhan Sabha' (Legislative Assembly)?",
+    "options_hi": [
+      "243 सीटें",
+      "250 सीटें",
+      "75 सीटें",
+      "324 सीटें"
+    ],
+    "options_en": [
+      "243 seats",
+      "250 seats",
+      "75 seats",
+      "324 seats"
+    ],
+    "options": [
+      {
+        "hi": "243 सीटें",
+        "en": "243 seats"
+      },
+      {
+        "hi": "250 सीटें",
+        "en": "250 seats"
+      },
+      {
+        "hi": "75 सीटें",
+        "en": "75 seats"
+      },
+      {
+        "hi": "324 सीटें",
+        "en": "324 seats"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "बिहार विधानसभा में कुल 243 निर्वाचित सदस्य (सीटें) हैं, जिनमें 38 सीटें अनुसूचित जाति (SC) तथा 2 सीटें अनुसूचित जनजाति (ST - कटोरिया एवं मनिहारी) के लिए आरक्षित हैं। विधान परिषद में 75 सीटें हैं।",
+    "exp_en": "The Bihar Legislative Assembly has 243 elected seats (38 reserved for SC, 2 for ST: Katoria & Manihari). The Legislative Council (Vidhan Parishad) comprises 75 seats."
+  },
+  {
+    "globalId": "u8_sub8_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "भारत में लोकतांत्रिक विकेंद्रीकरण की दिशा में 'त्रिस्तरीय पंचायती राज व्यवस्था' (ग्राम, प्रखंड व जिला स्तर) की सिफारिश सर्वप्रथम 1957 में किस समिति ने की थी?",
+    "q_en": "Which committee first recommended the 'Three-tier Panchayati Raj System' (village, block, and district levels) for democratic decentralization in India in 1957?",
+    "options_hi": [
+      "अशोक मेहता समिति",
+      "बलवंत राय मेहता समिति (Balwant Rai Mehta Committee)",
+      "एल.एम. सिंघवी समिति",
+      "जी.वी.के. राव समिति"
+    ],
+    "options_en": [
+      "Ashok Mehta Committee",
+      "Balwant Rai Mehta Committee",
+      "L.M. Singhvi Committee",
+      "G.V.K. Rao Committee"
+    ],
+    "options": [
+      {
+        "hi": "अशोक मेहता समिति",
+        "en": "Ashok Mehta Committee"
+      },
+      {
+        "hi": "बलवंत राय मेहता समिति (Balwant Rai Mehta Committee)",
+        "en": "Balwant Rai Mehta Committee"
+      },
+      {
+        "hi": "एल.एम. सिंघवी समिति",
+        "en": "L.M. Singhvi Committee"
+      },
+      {
+        "hi": "जी.वी.के. राव समिति",
+        "en": "G.V.K. Rao Committee"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "1957 में बलवंत राय मेहता समिति ने त्रिस्तरीय पंचायती राज व्यवस्था की सिफारिश की थी। इसके आधार पर 2 अक्टूबर 1959 को राजस्थान के नागौर में देश के प्रथम पंचायती राज का उद्घाटन पं. नेहरू ने किया था।",
+    "exp_en": "The Balwant Rai Mehta Committee (1957) proposed the 3-tier Panchayati Raj architecture, leading to its historic inaugural launch in Nagaur (Rajasthan) on 2 October 1959."
+  },
+  {
+    "globalId": "u8_sub8_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "73वें संविधान संशोधन अधिनियम 1992 द्वारा संविधान में कौन सी अनुसूची जोड़ी गई तथा इसमें पंचायतों को कितने विषय सौंपे गए हैं?",
+    "q_en": "Which Schedule was added to the Constitution by the 73rd Constitutional Amendment Act 1992 and how many functional matters were entrusted to Panchayats?",
+    "options_hi": [
+      "10वीं अनुसूची (22 विषय)",
+      "11वीं अनुसूची (29 विषय)",
+      "12वीं अनुसूची (18 विषय)",
+      "9वीं अनुसूची (35 विषय)"
+    ],
+    "options_en": [
+      "10th Schedule (22 subjects)",
+      "11th Schedule (29 subjects)",
+      "12th Schedule (18 subjects)",
+      "9th Schedule (35 subjects)"
+    ],
+    "options": [
+      {
+        "hi": "10वीं अनुसूची (22 विषय)",
+        "en": "10th Schedule (22 subjects)"
+      },
+      {
+        "hi": "11वीं अनुसूची (29 विषय)",
+        "en": "11th Schedule (29 subjects)"
+      },
+      {
+        "hi": "12वीं अनुसूची (18 विषय)",
+        "en": "12th Schedule (18 subjects)"
+      },
+      {
+        "hi": "9वीं अनुसूची (35 विषय)",
+        "en": "9th Schedule (35 subjects)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "73वें संशोधन (1992) द्वारा संविधान में भाग IX तथा '11वीं अनुसूची' जोड़ी गई, जिसमें पंचायतों के कार्यक्षेत्र हेतु 29 विषय निर्धारित किए गए। (12वीं अनुसूची 74वें संशोधन द्वारा नगरपालिकाओं हेतु 18 विषयों के साथ जोड़ी गई)।",
+    "exp_en": "The 73rd Amendment inserted Part IX and the 11th Schedule containing 29 functional items for Panchayats. (The 12th Schedule with 18 items pertains to Municipalities via the 74th Amendment)."
+  },
+  {
+    "globalId": "u8_sub8_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.1",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+    "subUnitTitle_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+    "q_hi": "बिहार पंचायती राज अधिनियम, 2006 लागू कर पंचायती राज संस्थाओं एवं नगर निकायों में महिलाओं को 50% आरक्षण देने वाला भारत का पहला राज्य कौन बना?",
+    "q_en": "By implementing the Bihar Panchayati Raj Act 2006, which state became the first in India to grant 50% reservation to women in Panchayati Raj institutions and urban local bodies?",
+    "options_hi": [
+      "मध्य प्रदेश",
+      "बिहार (Bihar)",
+      "केरल",
+      "राजस्थान"
+    ],
+    "options_en": [
+      "Madhya Pradesh",
+      "Bihar",
+      "Kerala",
+      "Rajasthan"
+    ],
+    "options": [
+      {
+        "hi": "मध्य प्रदेश",
+        "en": "Madhya Pradesh"
+      },
+      {
+        "hi": "बिहार (Bihar)",
+        "en": "Bihar"
+      },
+      {
+        "hi": "केरल",
+        "en": "Kerala"
+      },
+      {
+        "hi": "राजस्थान",
+        "en": "Rajasthan"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बिहार देश का प्रथम राज्य है जिसने 2006 में ऐतिहासिक कानून बनाकर पंचायती राज संस्थाओं के सभी स्तरों और पदों (मुखिया, प्रमुख, जिला परिषद अध्यक्ष आदि) में महिलाओं को 50% आरक्षण प्रदान किया।",
+    "exp_en": "Bihar made history in 2006 by enacting the Bihar Panchayati Raj Act, becoming the first state in India to mandate 50% reservation for women across all tiers and leadership posts of local self-government."
+  }
+]

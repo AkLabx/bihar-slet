@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u5_sub5_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "बारकोड (Barcode) तकनीक का आविष्कार 1949/1952 में किन दो शोधकर्ताओं द्वारा किया गया था?",
+    "q_en": "By which two researchers was Barcode technology invented and patented in the United States in 1949/1952?",
+    "options_hi": [
+      "नॉर्मन जोसेफ वुडलैंड एवं बर्नार्ड सिल्वर (N.J. Woodland & Bernard Silver)",
+      "मासाहिरो हारा एवं जॉर्ज लॉरर",
+      "हैरी स्टॉकमैन एवं चार्ल्स बैबेज",
+      "एलन ट्यूरिंग एवं टिम बर्नर्स ली"
+    ],
+    "options_en": [
+      "Norman Joseph Woodland and Bernard Silver",
+      "Masahiro Hara and George Laurer",
+      "Harry Stockman and Charles Babbage",
+      "Alan Turing and Tim Berners-Lee"
+    ],
+    "options": [
+      {
+        "hi": "नॉर्मन जोसेफ वुडलैंड एवं बर्नार्ड सिल्वर (N.J. Woodland & Bernard Silver)",
+        "en": "Norman Joseph Woodland and Bernard Silver"
+      },
+      {
+        "hi": "मासाहिरो हारा एवं जॉर्ज लॉरर",
+        "en": "Masahiro Hara and George Laurer"
+      },
+      {
+        "hi": "हैरी स्टॉकमैन एवं चार्ल्स बैबेज",
+        "en": "Harry Stockman and Charles Babbage"
+      },
+      {
+        "hi": "एलन ट्यूरिंग एवं टिम बर्नर्स ली",
+        "en": "Alan Turing and Tim Berners-Lee"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "एन.जे. वुडलैंड और बर्नार्ड सिल्वर ने मोर्स कोड से प्रेरणा लेकर 1949 में बारकोड प्रणाली तैयार की, जिसका अमेरिकी पेटेंट 1952 में प्राप्त हुआ।",
+    "exp_en": "Norman Joseph Woodland and Bernard Silver patented the linear barcode system in October 1952 (US Patent 2,612,994), deriving the concept from extended Morse code lines."
+  },
+  {
+    "globalId": "u5_sub5_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "जापान की डेंसो वेव कंपनी में वर्ष 1994 में द्वि-विमीय 'क्यूआर कोड' (QR Code - Quick Response) का आविष्कार किसने किया था?",
+    "q_en": "Who invented the 2D matrix 'QR Code' (Quick Response Code) in 1994 at Denso Wave, Japan?",
+    "options_hi": [
+      "मासाहिरो हारा (Masahiro Hara)",
+      "केनिची ओमाए",
+      "अकीओ मोरिता",
+      "योशिरो नाकामात्सु"
+    ],
+    "options_en": [
+      "Masahiro Hara",
+      "Kenichi Ohmae",
+      "Akio Morita",
+      "Yoshiro Nakamatsu"
+    ],
+    "options": [
+      {
+        "hi": "मासाहिरो हारा (Masahiro Hara)",
+        "en": "Masahiro Hara"
+      },
+      {
+        "hi": "केनिची ओमाए",
+        "en": "Kenichi Ohmae"
+      },
+      {
+        "hi": "अकीओ मोरिता",
+        "en": "Akio Morita"
+      },
+      {
+        "hi": "योशिरो नाकामात्सु",
+        "en": "Yoshiro Nakamatsu"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "मासाहिरो हारा (Masahiro Hara) ने 1994 में ऑटोमोबाइल उद्योग में पुर्जों की तीव्र ट्रैकिंग हेतु QR कोड का आविष्कार किया था। इसमें 3 कोनों में विशिष्ट स्थिति संसूचक वर्ग होते हैं।",
+    "exp_en": "Masahiro Hara developed the QR code in 1994 at Denso Wave to provide rapid decoding and high data storage through a 2D matrix with position detection markers."
+  },
+  {
+    "globalId": "u5_sub5_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकालयों में अक्षरों एवं अंकों दोनों (Alphanumeric) से युक्त परिग्रहण संख्या (Accession Number) मुद्रित करने हेतु कौन-सा 1D बारकोड सर्वाधिक प्रयुक्त होता है?",
+    "q_en": "Which 1D barcode symbology capable of encoding alphanumeric characters is most prevalent in libraries for accession numbers?",
+    "options_hi": [
+      "Code 39",
+      "UPC-A (केवल 12 अंक)",
+      "EAN-8",
+      "Postal Code"
+    ],
+    "options_en": [
+      "Code 39",
+      "UPC-A (numeric only)",
+      "EAN-8",
+      "Postal Code"
+    ],
+    "options": [
+      {
+        "hi": "Code 39",
+        "en": "Code 39"
+      },
+      {
+        "hi": "UPC-A (केवल 12 अंक)",
+        "en": "UPC-A (numeric only)"
+      },
+      {
+        "hi": "EAN-8",
+        "en": "EAN-8"
+      },
+      {
+        "hi": "Postal Code",
+        "en": "Postal Code"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Code 39 (3 of 9) अक्षरों (A-Z), अंकों (0-9) तथा विशेष प्रतीकों को कोडित कर सकता है, इसलिए पुस्तकालयों में पुस्तकों की परिग्रहण संख्या हेतु यह सर्वाधिक लोकप्रिय है।",
+    "exp_en": "Code 39 is widely deployed in library accessioning because it accommodates both alphabetic letters and numerical digits within variable-length barcodes."
+  },
+  {
+    "globalId": "u5_sub5_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "विश्व भर के पुस्तकालयों में आरएफआईडी (RFID) प्रणालियों के संचालन हेतु कौन-सी रेडियो आवृत्ति अंतरराष्ट्रीय मानक के रूप में स्वीकृत है?",
+    "q_en": "Which radio frequency band is universally standardized and adopted worldwide for library RFID operations under ISO 15693 / 18000-3?",
+    "options_hi": [
+      "125 kHz (लो-फ्रीक्वेंसी)",
+      "13.56 MHz (हाई-फ्रीक्वेंसी / HF Band)",
+      "865 MHz (UHF Band)",
+      "2.4 GHz (माइक्रोवेव)"
+    ],
+    "options_en": [
+      "125 kHz (Low Frequency)",
+      "13.56 MHz (High Frequency / HF Band)",
+      "865 MHz (UHF Band)",
+      "2.4 GHz (Microwave)"
+    ],
+    "options": [
+      {
+        "hi": "125 kHz (लो-फ्रीक्वेंसी)",
+        "en": "125 kHz (Low Frequency)"
+      },
+      {
+        "hi": "13.56 MHz (हाई-फ्रीक्वेंसी / HF Band)",
+        "en": "13.56 MHz (High Frequency / HF Band)"
+      },
+      {
+        "hi": "865 MHz (UHF Band)",
+        "en": "865 MHz (UHF Band)"
+      },
+      {
+        "hi": "2.4 GHz (माइक्रोवेव)",
+        "en": "2.4 GHz (Microwave)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पुस्तकालयों हेतु अंतरराष्ट्रीय स्तर पर 13.56 MHz (HF बैंड) स्वीकृत है क्योंकि यह आवृत्ति कागज और मानव शरीर से अप्रभावित रहती है और 1 मीटर के दायरे में अत्यधिक सटीक कार्य करती है।",
+    "exp_en": "The High Frequency (HF) 13.56 MHz band is the universal library RFID standard; it penetrates paper effectively without human tissue absorption interference within a 1-meter zone."
+  },
+  {
+    "globalId": "u5_sub5_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकालय की पुस्तकों में प्रयुक्त होने वाले RFID टैग्स सामान्यतः किस प्रकार के होते हैं?",
+    "q_en": "What type of RFID tags are predominantly pasted inside library books?",
+    "options_hi": [
+      "सक्रिय टैग (Active Tags - आंतरिक बैटरी सहित)",
+      "पैसिव टैग (Passive Tags - बिना बैटरी वाले, रेडियो तरंगों से ऊर्जा लेने वाले)",
+      "सौर ऊर्जा संचालित टैग",
+      "रासायनिक टैग"
+    ],
+    "options_en": [
+      "Active Tags (containing internal batteries)",
+      "Passive Tags (battery-less, powered magnetically by the reader's RF field)",
+      "Solar-powered Tags",
+      "Chemical Tags"
+    ],
+    "options": [
+      {
+        "hi": "सक्रिय टैग (Active Tags - आंतरिक बैटरी सहित)",
+        "en": "Active Tags (containing internal batteries)"
+      },
+      {
+        "hi": "पैसिव टैग (Passive Tags - बिना बैटरी वाले, रेडियो तरंगों से ऊर्जा लेने वाले)",
+        "en": "Passive Tags (battery-less, powered magnetically by the reader's RF field)"
+      },
+      {
+        "hi": "सौर ऊर्जा संचालित टैग",
+        "en": "Solar-powered Tags"
+      },
+      {
+        "hi": "रासायनिक टैग",
+        "en": "Chemical Tags"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पुस्तकालयों में 'पैसिव टैग' (Passive Tags) प्रयुक्त होते हैं। इनमें कोई बैटरी नहीं होती, ये अत्यंत सस्ते और पतले होते हैं तथा जब RFID रीडर के पास आते हैं तो उसकी रेडियो तरंगों से विद्युत ऊर्जा पाकर सक्रिय होते हैं।",
+    "exp_en": "Library RFID tags are Passive Transponders without internal power cells; they harvest energy electromagnetically from the interrogator's radio frequency field upon entering it."
+  },
+  {
+    "globalId": "u5_sub5_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "RFID टैग की चिप में मौजूद वह कौन-सा सुरक्षा घटक है जो पुस्तक की अनधिकृत चोरी होने पर सुरक्षा गेट्स (Exit Gates) पर अलार्म बजा देता है?",
+    "q_en": "Which anti-theft security element embedded inside a library RFID tag triggers audible alarms at exit gates if a book is stolen?",
+    "options_hi": [
+      "EAS बिट (Electronic Article Surveillance Bit)",
+      "कॉल नंबर",
+      "प्रकाशक का नाम",
+      "मूल्य टैग"
+    ],
+    "options_en": [
+      "EAS Bit (Electronic Article Surveillance Bit)",
+      "Call Number",
+      "Publisher's Name",
+      "Price Tag"
+    ],
+    "options": [
+      {
+        "hi": "EAS बिट (Electronic Article Surveillance Bit)",
+        "en": "EAS Bit (Electronic Article Surveillance Bit)"
+      },
+      {
+        "hi": "कॉल नंबर",
+        "en": "Call Number"
+      },
+      {
+        "hi": "प्रकाशक का नाम",
+        "en": "Publisher's Name"
+      },
+      {
+        "hi": "मूल्य टैग",
+        "en": "Price Tag"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "EAS (Electronic Article Surveillance) बिट RFID टैग का चोरी-निरोधक सुरक्षा स्विच है। यदि बिना निर्गमन कराए पुस्तक गेट से बाहर ले जाई जाती है, तो गेट का अलार्म बज उठता है।",
+    "exp_en": "The EAS (Electronic Article Surveillance) bit is the electronic security flag within the RFID chip; when active (armed), exit gate sensors trigger an audible and visual alarm."
+  },
+  {
+    "globalId": "u5_sub5_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "जब कोई पाठक परिसंचरण काउंटर या सेल्फ-कियोस्क पर पुस्तक को विधिवत निर्गमित (Check-out) कराता है, तो टैग की EAS बिट की स्थिति क्या हो जाती है?",
+    "q_en": "When a book is legitimately checked out by a patron at a circulation desk or self-kiosk, what happens to its EAS security bit?",
+    "options_hi": [
+      "सक्रिय (Armed / Activated)",
+      "अक्रिय / निष्क्रिय (Disarmed / Deactivated)",
+      "चिप स्थायी रूप से नष्ट हो जाती है",
+      "टैग का डेटा मिट जाता है"
+    ],
+    "options_en": [
+      "Armed / Activated",
+      "Disarmed / Deactivated",
+      "The chip is permanently destroyed",
+      "The tag data is completely erased"
+    ],
+    "options": [
+      {
+        "hi": "सक्रिय (Armed / Activated)",
+        "en": "Armed / Activated"
+      },
+      {
+        "hi": "अक्रिय / निष्क्रिय (Disarmed / Deactivated)",
+        "en": "Disarmed / Deactivated"
+      },
+      {
+        "hi": "चिप स्थायी रूप से नष्ट हो जाती है",
+        "en": "The chip is permanently destroyed"
+      },
+      {
+        "hi": "टैग का डेटा मिट जाता है",
+        "en": "The tag data is completely erased"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "वैध निर्गमन (Issue) के समय RFID रीडर EAS बिट को 'Deactivate / Disarm' कर देता है, जिससे पाठक बिना अलार्म बजे पुस्तक लेकर सुरक्षा गेट से बाहर जा सकता है। वापसी पर यह पुनः Activate हो जाता है।",
+    "exp_en": "During checkout, the circulation RFID reader disarms/deactivates the EAS security bit, permitting unhindered passage through security exit pedestals without alarms."
+  },
+  {
+    "globalId": "u5_sub5_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकालयों में बिना पुस्तकों को अलमारी से उतारे शेल्फ पर ही तीव्र 'भंडार सत्यापन' (Stock Verification) करने हेतु किस उपकरण का उपयोग किया जाता है?",
+    "q_en": "Which portable device is utilized to conduct ultra-fast inventory shelf-audits without removing books from their physical shelves?",
+    "options_hi": [
+      "हैंडहेल्ड RFID रीडर / वैंड (Handheld RFID Reader / Wand)",
+      "फ्लैटबेड स्कैनर",
+      "बारकोड प्रिंटर",
+      "वेब कैमरा"
+    ],
+    "options_en": [
+      "Handheld RFID Reader / Wand",
+      "Flatbed Scanner",
+      "Barcode Printer",
+      "Web Camera"
+    ],
+    "options": [
+      {
+        "hi": "हैंडहेल्ड RFID रीडर / वैंड (Handheld RFID Reader / Wand)",
+        "en": "Handheld RFID Reader / Wand"
+      },
+      {
+        "hi": "फ्लैटबेड स्कैनर",
+        "en": "Flatbed Scanner"
+      },
+      {
+        "hi": "बारकोड प्रिंटर",
+        "en": "Barcode Printer"
+      },
+      {
+        "hi": "वेब कैमरा",
+        "en": "Web Camera"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "हैंडहेल्ड RFID रीडर (ताररहित डंडा/वैंड) को अलमारी के सामने से गुजारने पर यह प्रति सेकंड दर्जनों पुस्तकों को शेल्फ पर ही पढ़ लेता है, जिससे हजारों पुस्तकों का स्टॉक सत्यापन कुछ ही घंटों में हो जाता है।",
+    "exp_en": "A Handheld RFID Wand scans dozens of shelf items per second via wireless RF emissions, instantly verifying inventory and locating misplaced call numbers without pulling books down."
+  },
+  {
+    "globalId": "u5_sub5_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकालयों में RFID टैग्स पर डेटा प्रारूप (Data Model) को मानकीकृत करने वाला अंतरराष्ट्रीय मानक कौन-सा है?",
+    "q_en": "Which international standard specifies the data model and encoding rules for RFID tags in libraries?",
+    "options_hi": [
+      "ISO 28560 (1, 2, 3)",
+      "ISO 9001",
+      "ISO 2709",
+      "ISO 14000"
+    ],
+    "options_en": [
+      "ISO 28560 (Parts 1, 2, 3)",
+      "ISO 9001",
+      "ISO 2709",
+      "ISO 14000"
+    ],
+    "options": [
+      {
+        "hi": "ISO 28560 (1, 2, 3)",
+        "en": "ISO 28560 (Parts 1, 2, 3)"
+      },
+      {
+        "hi": "ISO 9001",
+        "en": "ISO 9001"
+      },
+      {
+        "hi": "ISO 2709",
+        "en": "ISO 2709"
+      },
+      {
+        "hi": "ISO 14000",
+        "en": "ISO 14000"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ISO 28560 पुस्तकालयों में RFID टैग्स के डेटा मॉडल (Data Model for RFID in Libraries) का अंतरराष्ट्रीय मानक है, जो यह तय करता है कि प्राथमिक पहचानकर्ता (Accession No.) और देश कोड कैसे संग्रहीत होंगे।",
+    "exp_en": "ISO 28560 defines the unified data structure and encoding mechanisms governing library RFID microchips to ensure global equipment interoperability."
+  },
+  {
+    "globalId": "u5_sub5_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकालय स्वचालन सॉफ्टवेयर (जैसे KOHA) और RFID हार्डवेयर (कियोस्क, गेट्स) के मध्य संवाद स्थापित करने वाला मानक संचार प्रोटोकॉल कौन-सा है?",
+    "q_en": "Which standard data communication protocol bridges RFID hardware (kiosks, return chutes, security gates) with the library ILMS?",
+    "options_hi": [
+      "SIP2 (Standard Interchange Protocol 2) एवं NCIP",
+      "HTTP केवल",
+      "SMTP",
+      "SNMP"
+    ],
+    "options_en": [
+      "SIP2 (Standard Interchange Protocol 2) and NCIP",
+      "HTTP only",
+      "SMTP",
+      "SNMP"
+    ],
+    "options": [
+      {
+        "hi": "SIP2 (Standard Interchange Protocol 2) एवं NCIP",
+        "en": "SIP2 (Standard Interchange Protocol 2) and NCIP"
+      },
+      {
+        "hi": "HTTP केवल",
+        "en": "HTTP only"
+      },
+      {
+        "hi": "SMTP",
+        "en": "SMTP"
+      },
+      {
+        "hi": "SNMP",
+        "en": "SNMP"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "3M कंपनी द्वारा विकसित SIP2 (Standard Interchange Protocol) और NCIP प्रोटोकॉल RFID कियोस्क और ऑटोमेटेड गेट्स को पुस्तकालय के ILMS से जोड़ते हैं।",
+    "exp_en": "3M's SIP2 and NISO's NCIP protocol govern live message exchange between automated RFID self-service peripherals and the ILMS database."
+  },
+  {
+    "globalId": "u5_sub5_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पाठकों को पुस्तकालय बंद होने के बाद भी (24×7) बिना किसी कर्मचारी की सहायता के पुस्तकें वापस (Return) करने की सुविधा कौन-सा उपकरण देता है?",
+    "q_en": "Which automated RFID hardware terminal empowers patrons to return books 24×7 without staff intervention and receive instant SMS/receipts?",
+    "options_hi": [
+      "स्मार्ट बुक ड्रॉप बॉक्स / रिटर्न च्यूट (Smart Book Drop Box / Return Chute)",
+      "ओपेक टर्मिनल",
+      "फोटोकॉपी मशीन",
+      "प्रवेश द्वार बैरियर"
+    ],
+    "options_en": [
+      "Smart Book Drop Box / Return Chute",
+      "OPAC Terminal",
+      "Photocopy Machine",
+      "Entrance Barrier"
+    ],
+    "options": [
+      {
+        "hi": "स्मार्ट बुक ड्रॉप बॉक्स / रिटर्न च्यूट (Smart Book Drop Box / Return Chute)",
+        "en": "Smart Book Drop Box / Return Chute"
+      },
+      {
+        "hi": "ओपेक टर्मिनल",
+        "en": "OPAC Terminal"
+      },
+      {
+        "hi": "फोटोकॉपी मशीन",
+        "en": "Photocopy Machine"
+      },
+      {
+        "hi": "प्रवेश द्वार बैरियर",
+        "en": "Entrance Barrier"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "स्मार्ट बुक ड्रॉप बॉक्स पुस्तकालय के बाहर स्थापित होता है। इसमें पुस्तक डालते ही आंतरिक RFID रीडर पुस्तक की पहचान कर उसे उपयोगकर्ता के खाते से तुरंत डिस्चार्ज कर देता है।",
+    "exp_en": "A Smart Book Drop Box allows patrons to return items round the clock; internal readers sense the tag, automatically clear the patron's account, and re-arm the EAS bit."
+  },
+  {
+    "globalId": "u5_sub5_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "बारकोड तकनीक की तुलना में आरएफआईडी (RFID) तकनीक का सबसे बड़ा तकनीकी लाभ क्या है?",
+    "q_en": "What is the primary operational advantage of RFID technology over traditional optical barcodes?",
+    "options_hi": [
+      "इसमें दृष्टि-रेखा (Line of Sight) की आवश्यकता नहीं होती और एक साथ कई पुस्तकों को स्कैन किया जा सकता है (Bulk reading)",
+      "यह बारकोड से 100 गुना सस्ता होता है",
+      "इसमें किसी कंप्यूटर की आवश्यकता नहीं होती",
+      "यह केवल लकड़ी की किताबों पर काम करता है"
+    ],
+    "options_en": [
+      "It requires no line of sight and enables simultaneous bulk reading of multiple books",
+      "It is 100 times cheaper than barcode labels",
+      "It functions completely without computers",
+      "It works exclusively on wooden books"
+    ],
+    "options": [
+      {
+        "hi": "इसमें दृष्टि-रेखा (Line of Sight) की आवश्यकता नहीं होती और एक साथ कई पुस्तकों को स्कैन किया जा सकता है (Bulk reading)",
+        "en": "It requires no line of sight and enables simultaneous bulk reading of multiple books"
+      },
+      {
+        "hi": "यह बारकोड से 100 गुना सस्ता होता है",
+        "en": "It is 100 times cheaper than barcode labels"
+      },
+      {
+        "hi": "इसमें किसी कंप्यूटर की आवश्यकता नहीं होती",
+        "en": "It functions completely without computers"
+      },
+      {
+        "hi": "यह केवल लकड़ी की किताबों पर काम करता है",
+        "en": "It works exclusively on wooden books"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "बारकोड में स्कैनर को सीधे बारकोड के सामने रखना पड़ता है और एक बार में एक ही किताब पढ़ी जा सकती है। जबकि RFID में बिना पुस्तक खोले एक साथ 4-5 पुस्तकें सेकंडों में स्कैन (Bulk reading) हो जाती हैं।",
+    "exp_en": "Unlike optical barcodes requiring clear line-of-sight and single-item scanning, RFID radio waves pass through covers, allowing simultaneous multi-item bulk check-in/out."
+  },
+  {
+    "globalId": "u5_sub5_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "विश्व में सर्वप्रथम किस वर्ष में पुस्तकालयों में आरएफआईडी (RFID) प्रणाली का संस्थागत उपयोग प्रारंभ हुआ था?",
+    "q_en": "In which year was RFID technology first adopted at an institutional library scale (National Library of Singapore & Rockefeller University)?",
+    "options_hi": [
+      "1974 ई.",
+      "1985 ई.",
+      "1998 ई. (1998)",
+      "2010 ई."
+    ],
+    "options_en": [
+      "1974",
+      "1985",
+      "1998",
+      "2010"
+    ],
+    "options": [
+      {
+        "hi": "1974 ई.",
+        "en": "1974"
+      },
+      {
+        "hi": "1985 ई.",
+        "en": "1985"
+      },
+      {
+        "hi": "1998 ई. (1998)",
+        "en": "1998"
+      },
+      {
+        "hi": "2010 ई.",
+        "en": "2010"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "वर्ष 1998 में रॉकफेलर यूनिवर्सिटी लाइब्रेरी (न्यूयॉर्क) और नेशनल लाइब्रेरी ऑफ सिंगापुर दुनिया के पहले पुस्तकालय बने जिन्होंने पुस्तकालय प्रबंधन और सुरक्षा हेतु RFID प्रणाली स्थापित की।",
+    "exp_en": "Library deployment of RFID technology commenced in 1998, pioneered by Rockefeller University Library in the US and the National Library of Singapore."
+  },
+  {
+    "globalId": "u5_sub5_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "पुस्तकों पर मुद्रित 13-अंकीय अंतरराष्ट्रीय मानक पुस्तक संख्या (ISBN) को बारकोड में निरूपित करने हेतु किस प्रारूप का उपयोग किया जाता है?",
+    "q_en": "Which barcode symbology format is utilized globally to encode the 13-digit ISBN on the back covers of published books?",
+    "options_hi": [
+      "EAN-13 / बुकलैंड ईएएन (Bookland EAN)",
+      "Code 39",
+      "QR Code",
+      "PDF417"
+    ],
+    "options_en": [
+      "EAN-13 / Bookland EAN",
+      "Code 39",
+      "QR Code",
+      "PDF417"
+    ],
+    "options": [
+      {
+        "hi": "EAN-13 / बुकलैंड ईएएन (Bookland EAN)",
+        "en": "EAN-13 / Bookland EAN"
+      },
+      {
+        "hi": "Code 39",
+        "en": "Code 39"
+      },
+      {
+        "hi": "QR Code",
+        "en": "QR Code"
+      },
+      {
+        "hi": "PDF417",
+        "en": "PDF417"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पुस्तकों पर ISBN को प्रदर्शित करने हेतु अंतरराष्ट्रीय स्तर पर 'EAN-13' (Bookland EAN) बारकोड सिम्बोलॉजी का उपयोग किया जाता है जो 978 या 979 उपसर्ग से प्रारंभ होता है।",
+    "exp_en": "Bookland EAN (an EAN-13 barcode format prefixed with 978 or 979) is the global standard for printing machine-readable ISBNs on book covers."
+  },
+  {
+    "globalId": "u5_sub5_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.2",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+    "q_hi": "एक द्वि-विमीय क्यूआर कोड (QR Code) में 3 कोनों पर स्थित बड़े वर्गाकार चिन्हों को क्या कहा जाता है?",
+    "q_en": "What are the three distinctive square markers positioned at the corners of a 2D QR Code called?",
+    "options_hi": [
+      "स्थिति संसूचक वर्ग (Position Detection Patterns / Squares)",
+      "बैटरी चार्जिंग बिंदु",
+      "एंटीना कुंडलियां",
+      "कॉपीराइट प्रतीक"
+    ],
+    "options_en": [
+      "Position Detection Patterns / Squares",
+      "Battery charging points",
+      "Antenna coils",
+      "Copyright symbols"
+    ],
+    "options": [
+      {
+        "hi": "स्थिति संसूचक वर्ग (Position Detection Patterns / Squares)",
+        "en": "Position Detection Patterns / Squares"
+      },
+      {
+        "hi": "बैटरी चार्जिंग बिंदु",
+        "en": "Battery charging points"
+      },
+      {
+        "hi": "एंटीना कुंडलियां",
+        "en": "Antenna coils"
+      },
+      {
+        "hi": "कॉपीराइट प्रतीक",
+        "en": "Copyright symbols"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "QR कोड के तीन कोनों पर 'Position Detection Patterns' (स्थिति संसूचक वर्ग) बने होते हैं, जिनकी सहायता से स्कैनर किसी भी कोण (360 डिग्री) से कोड के सही ओरिएंटेशन और आकार को तुरंत पहचान लेता है।",
+    "exp_en": "The three corner squares are Position Detection Patterns; they allow optical scanner sensors to normalize perspective, skew, and orientation rapidly from any angle."
+  }
+]

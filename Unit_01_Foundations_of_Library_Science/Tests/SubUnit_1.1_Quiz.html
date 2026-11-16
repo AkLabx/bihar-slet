@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1.1 Quiz: Types of Libraries, Functions & Objectives | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        /* Control Bar (Modes & Language Switch) */
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Test Layout */
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Explanation Box */
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Navigation Controls */
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Palette */
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        /* Scorecard Section */
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें (Toggle Theme)">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_1.1_Types_of_Libraries.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <!-- Controls Bar -->
+    <div class="controls-bar">
+        <!-- Mode Switch -->
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <!-- Language Switch -->
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <!-- Timer (Shown only in exam mode) -->
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">15:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 10</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (5/10), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (4/10).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <!-- Question Box -->
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 10</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <!-- Instant Explanation for Practice Mode -->
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <!-- Question Palette -->
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Bihar SLET / LET 2026</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "किस आयोग ने विश्वविद्यालय पुस्तकालय को \"विश्वविद्यालय का हृदय\" (Heart of the University) कहा है?",
+            q_en: "Which commission referred to the university library as the \"Heart of the University\"?",
+            options_hi: [
+                "कोठारी आयोग (1964–66)",
+                "राधाकृष्णन आयोग (1948–49)",
+                "मुदालियर आयोग (1952–53)",
+                "हंटर आयोग (1882)"
+            ],
+            options_en: [
+                "Kothari Commission (1964–66)",
+                "Radhakrishnan Commission (1948–49)",
+                "Mudaliar Commission (1952–53)",
+                "Hunter Commission (1882)"
+            ],
+            correct: 1,
+            exp_hi: "स्वतंत्र भारत के पहले शिक्षा आयोग (विश्वविद्यालय शिक्षा आयोग, 1948–49), जिसके अध्यक्ष डॉ. एस. राधाकृष्णन थे, ने पुस्तकालय को विश्वविद्यालय का केंद्र बिंदु मानते हुए इसे \"विश्वविद्यालय का हृदय\" कहा था।",
+            exp_en: "The University Education Commission (1948–49) headed by Dr. S. Radhakrishnan observed that 'The library is the heart of all the university's work'. Mudaliar commission (1952–53) dealt with secondary school education."
+        },
+        {
+            id: 2,
+            q_hi: "कोठारी आयोग (1964–66) ने विश्वविद्यालय के कुल शैक्षणिक बजट का कितना प्रतिशत हिस्सा पुस्तकालय पर व्यय करने की सिफारिश की थी?",
+            q_en: "What percentage of the total university academic budget was recommended by the Kothari Commission (1964–66) to be spent on the library?",
+            options_hi: [
+                "4% से 5%",
+                "6.5% से 10%",
+                "10% से 15%",
+                "15% से 20%"
+            ],
+            options_en: [
+                "4% to 5%",
+                "6.5% to 10%",
+                "10% to 15%",
+                "15% to 20%"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. डी.एस. कोठारी की अध्यक्षता वाले राष्ट्रीय शिक्षा आयोग (1964–66) ने सिफारिश की थी कि विश्वविद्यालय के विकास की अवस्था और आवश्यकताओं के अनुसार कुल बजट का 6.5% से 10% पुस्तकालय पर खर्च किया जाना चाहिए।",
+            exp_en: "The Kothari Commission (1964–66) recommended that 6.5% to 10% of a university's educational budget should be earmarked for its library development."
+        },
+        {
+            id: 3,
+            q_hi: "'पुस्तक एवं समाचार पत्र परिदान अधिनियम, 1954' (Delivery of Books Act) के अंतर्गत निम्नलिखित में से कौन-सा पुस्तकालय 'निक्षेपागार पुस्तकालय' (Depository Library) की सूची में शामिल नहीं है?",
+            q_en: "Under the 'Delivery of Books and Newspapers Act, 1954', which of the following is NOT included among the four Depository Libraries in India?",
+            options_hi: [
+                "राष्ट्रीय पुस्तकालय, कोलकाता",
+                "कोनेमारा पब्लिक लाइब्रेरी, चेन्नई",
+                "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी, पटना",
+                "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली"
+            ],
+            options_en: [
+                "National Library of India, Kolkata",
+                "Connemara Public Library, Chennai",
+                "Khuda Bakhsh Oriental Public Library, Patna",
+                "Delhi Public Library, New Delhi"
+            ],
+            correct: 2,
+            exp_hi: "डिलीवरी ऑफ बुक्स एक्ट (1954/1956) के तहत केवल 4 निक्षेपागार पुस्तकालय हैं: (1) राष्ट्रीय पुस्तकालय कोलकाता, (2) कोनेमारा पब्लिक लाइब्रेरी चेन्नई, (3) एशियाटिक सोसाइटी सेंट्रल लाइब्रेरी मुंबई, और (4) दिल्ली पब्लिक लाइब्रेरी नई दिल्ली। खुदा बख्श लाइब्रेरी राष्ट्रीय महत्व का संस्थान है किंतु डिपॉजिटरी नहीं।",
+            exp_en: "Only four libraries are designated as legal depository libraries in India: National Library (Kolkata), Connemara Public Library (Chennai), Asiatic Society Central Library (Mumbai), and Delhi Public Library (Delhi). Khuda Bakhsh Library is an Institute of National Importance but not a legal deposit library."
+        },
+        {
+            id: 4,
+            q_hi: "विशेष पुस्तकालयों (Special Libraries) में प्रदान की जाने वाली SDI (Selective Dissemination of Information) सेवा की अवधारणा किसने प्रतिपादित की थी?",
+            q_en: "Who pioneered the concept of SDI (Selective Dissemination of Information) service predominantly used in special libraries?",
+            options_hi: [
+                "डॉ. एस.आर. रंगनाथन",
+                "मेल्विल डेवी",
+                "एच.पी. लुहान (H.P. Luhn)",
+                "पीटर लजार"
+            ],
+            options_en: [
+                "Dr. S.R. Ranganathan",
+                "Melvil Dewey",
+                "H.P. Luhn",
+                "Peter Lazar"
+            ],
+            correct: 2,
+            exp_hi: "SDI (चयनित सूचना प्रसार) सेवा की अवधारणा 1958 में IBM के वैज्ञानिक हंस पीटर लुहान (H.P. Luhn) द्वारा प्रतिपादित की गई थी। यह यूजर प्रोफाइल और डॉक्यूमेंट प्रोफाइल के मिलान पर आधारित एक वैयक्तिकृत कंप्यूटर-आधारित सेवा है।",
+            exp_en: "SDI service concept was formulated in 1958 by IBM scientist Hans Peter Luhn (H.P. Luhn). It matches user interest profiles with incoming document profiles to deliver pinpointed information."
+        },
+        {
+            id: 5,
+            q_hi: "यूनेस्को (UNESCO) द्वारा 'सार्वजनिक पुस्तकालय घोषणापत्र' (Public Library Manifesto) पहली बार किस वर्ष जारी किया गया था और इसका नवीनतम संशोधन कब हुआ?",
+            q_en: "In which year was the 'UNESCO Public Library Manifesto' first issued, and when was its latest revision published?",
+            options_hi: [
+                "1949 और 2022",
+                "1951 और 1994",
+                "1948 और 2020",
+                "1954 और 2022"
+            ],
+            options_en: [
+                "1949 and 2022",
+                "1951 and 1994",
+                "1948 and 2020",
+                "1954 and 2022"
+            ],
+            correct: 0,
+            exp_hi: "यूनेस्को ने सार्वजनिक पुस्तकालयों के महत्व पर 1949 में पहला घोषणापत्र जारी किया। इसके बाद 1972, 1994 (IFLA सहयोग) और नवीनतम संशोधन जुलाई 2022 में डिजिटल युग एवं सतत विकास लक्ष्यों (SDGs) को जोड़ते हुए किया गया।",
+            exp_en: "UNESCO issued its first Public Library Manifesto in 1949. Revisions followed in 1972, 1994 (with IFLA), and most recently in July 2022 emphasizing digital inclusion, media literacy, and UN SDGs."
+        },
+        {
+            id: 6,
+            q_hi: "स्वतंत्र भारत के राष्ट्रीय पुस्तकालय (कोलकाता) का औपचारिक उद्घाटन 1 फरवरी 1953 को किसके द्वारा किया गया था?",
+            q_en: "By whom was the National Library of India (Kolkata) formally dedicated to the nation on 1st February 1953?",
+            options_hi: [
+                "डॉ. राजेंद्र प्रसाद",
+                "पंडित जवाहरलाल नेहरू",
+                "मौलाना अबुल कलाम आजाद",
+                "डॉ. सर्वपल्ली राधाकृष्णन"
+            ],
+            options_en: [
+                "Dr. Rajendra Prasad",
+                "Pandit Jawaharlal Nehru",
+                "Maulana Abul Kalam Azad",
+                "Dr. Sarvepalli Radhakrishnan"
+            ],
+            correct: 2,
+            exp_hi: "तत्कालीन केंद्रीय शिक्षा मंत्री मौलाना अबुल कलाम आजाद ने 1 फरवरी 1953 को बेल्वेडियर एस्टेट, अलीपुर (कोलकाता) में राष्ट्रीय पुस्तकालय का उद्घाटन किया। इसके प्रथम राष्ट्रीय पुस्तकालयाध्यक्ष बी.एस. केशवन थे।",
+            exp_en: "Union Education Minister Maulana Abul Kalam Azad formally opened the National Library at Belvedere Estate, Kolkata on 1 February 1953. B.S. Kesavan was appointed as its first National Librarian."
+        },
+        {
+            id: 7,
+            q_hi: "भारतीय राष्ट्रीय ग्रंथसूची (INB - Indian National Bibliography) का संकलन एवं प्रकाशन किस संस्था द्वारा किया जाता है?",
+            q_en: "The Indian National Bibliography (INB) is compiled and published by which institution?",
+            options_hi: [
+                "राष्ट्रीय पुस्तकालय, कोलकाता",
+                "केंद्रीय संदर्भ पुस्तकालय (CRL), कोलकाता",
+                "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+                "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली"
+            ],
+            options_en: [
+                "National Library of India, Kolkata",
+                "Central Reference Library (CRL), Kolkata",
+                "Raja Rammohun Roy Library Foundation (RRRLF)",
+                "Delhi Public Library, New Delhi"
+            ],
+            correct: 1,
+            exp_hi: "INB का संकलन एवं प्रकाशन राष्ट्रीय पुस्तकालय परिसर में स्थित केंद्रीय संदर्भ पुस्तकालय (Central Reference Library - CRL), कोलकाता द्वारा किया जाता है। इसकी शुरुआत 1957 में हुई (प्रथम अंक 1958)। जनक: बी.एस. केशवन।",
+            exp_en: "The Indian National Bibliography (INB) is compiled and published by the Central Reference Library (CRL), Kolkata (located on the campus of the National Library). First volume appeared in 1958. Father of INB: B.S. Kesavan."
+        },
+        {
+            id: 8,
+            q_hi: "भारत में सार्वजनिक पुस्तकालय आंदोलन के जनक महाराजा सयाजीराव गायकवाड़ तृतीय ने 1910 में बड़ौदा में पुस्तकालय प्रणाली विकसित करने के लिए किस अमेरिकी विशेषज्ञ को आमंत्रित किया था?",
+            q_en: "To develop a library system in Baroda in 1910, Maharaja Sayajirao Gaekwad III invited which American library pioneer?",
+            options_hi: [
+                "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+                "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+                "मेल्विल डेवी (Melvil Dewey)",
+                "सी.ए. कटर (C.A. Cutter)"
+            ],
+            options_en: [
+                "Asa Don Dickinson",
+                "W.A. Borden",
+                "Melvil Dewey",
+                "C.A. Cutter"
+            ],
+            correct: 1,
+            exp_hi: "विलियम एलनसन बोर्डन (W.A. Borden) मेल्विल डेवी के छात्र थे, जिन्हें 1910 में बड़ौदा राज्य का पुस्तकालय निदेशक बनाया गया था। (आसा डॉन डिकिंसन को 1915 में पंजाब विश्वविद्यालय, लाहौर बुलाया गया था)।",
+            exp_en: "William Alanson Borden (W.A. Borden), a pupil of Melvil Dewey, was invited to Baroda in 1910. Asa Don Dickinson was invited to Punjab University, Lahore in 1915."
+        },
+        {
+            id: 9,
+            q_hi: "पटना स्थित किस ऐतिहासिक पुस्तकालय को बिहार के 'राज्य केंद्रीय पुस्तकालय' (State Central Library) का दर्जा प्राप्त है?",
+            q_en: "Which historical library located in Patna holds the official status of the 'State Central Library' of Bihar?",
+            options_hi: [
+                "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी",
+                "श्रीमती राधिका सिन्हा इंस्टीट्यूट एवं सच्चिदानंद सिन्हा लाइब्रेरी",
+                "बिहार विधानमंडल पुस्तकालय",
+                "नव नालंदा महाविहार पुस्तकालय"
+            ],
+            options_en: [
+                "Khuda Bakhsh Oriental Public Library",
+                "Radhika Sinha Institute and Sachchidananda Sinha Library",
+                "Bihar Legislature Library",
+                "Nava Nalanda Mahavihara Library"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. सच्चिदानंद सिन्हा द्वारा 1924 में स्थापित सिन्हा लाइब्रेरी (पटना) को बिहार सरकार द्वारा 'राज्य केंद्रीय पुस्तकालय' का दर्जा दिया गया है। खुदा बख्श लाइब्रेरी (1891) राष्ट्रीय महत्व का संस्थान है।",
+            exp_en: "Sinha Library (established in 1924 by Dr. Sachchidananda Sinha) serves as the official State Central Library of Bihar. Khuda Bakhsh Library (1891) is an Institute of National Importance under the Ministry of Culture."
+        },
+        {
+            id: 10,
+            q_hi: "सूची-I (पुस्तकालय का प्रकार) को सूची-II (मुख्य विशेषता) से सुमेलित कीजिए:\n[a. अकादमिक, b. सार्वजनिक, c. विशेष, d. राष्ट्रीय]\n[1. सूक्ष्म प्रलेख, 2. कानूनी निक्षेप व संरक्षण, 3. जनता का विश्वविद्यालय, 4. पाठ्यक्रम एवं शोध]",
+            q_en: "Match List-I (Type of Library) with List-II (Core Feature):\n[a. Academic, b. Public, c. Special, d. National]\n[1. Micro-documents, 2. Legal Deposit & Preservation, 3. People's University, 4. Curriculum & Research]",
+            options_hi: [
+                "a-4, b-3, c-1, d-2",
+                "a-3, b-4, c-1, d-2",
+                "a-4, b-1, c-3, d-2",
+                "a-2, b-3, c-1, d-4"
+            ],
+            options_en: [
+                "a-4, b-3, c-1, d-2",
+                "a-3, b-4, c-1, d-2",
+                "a-4, b-1, c-3, d-2",
+                "a-2, b-3, c-1, d-4"
+            ],
+            correct: 0,
+            exp_hi: "अकादमिक = पाठ्यक्रम व शोध (4); सार्वजनिक = जनता का विश्वविद्यालय (3); विशेष = सूक्ष्म प्रलेख (1); राष्ट्रीय = कानूनी निक्षेप व स्थायी संरक्षण (2)।",
+            exp_en: "Academic = Curriculum & research support (4); Public = People's University (3); Special = Micro-documents like patents and standards (1); National = Legal deposit & national preservation (2)."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice"; // 'practice' or 'exam'
+    let currentLang = "both";     // 'both', 'hi', or 'en'
+    let timerInterval = null;
+    let timeRemaining = 15 * 60;  // 15 minutes
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 15 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("Time up! Your test is automatically submitting. / समय समाप्त हो गया है!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+
+        currentQNum.textContent = index + 1;
+
+        // Render bilingual question text according to language preference
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        // Render Options
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_1_1_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

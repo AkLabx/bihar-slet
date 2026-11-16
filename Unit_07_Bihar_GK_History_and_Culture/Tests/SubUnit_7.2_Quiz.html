@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7.2 Quiz: Geography, Rivers & Census 2011 | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना</h1>
+            <p>Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_7.2_Bihar_Geography_and_Economy.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - भूगोल व जनगणना खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u7_2_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "बिहार का कुल भौगोलिक क्षेत्रफल कितना है और यह भारत के कुल क्षेत्रफल का कितना प्रतिशत है?",
+            q_en: "What is the total geographical area of Bihar and what percentage of India's total area does it constitute?",
+            options: [
+                { hi: "94,163 वर्ग किमी (2.86%)", en: "94,163 sq km (2.86%)" },
+                { hi: "88,240 वर्ग किमी (3.12%)", en: "88,240 sq km (3.12%)" },
+                { hi: "1,04,210 वर्ग किमी (4.02%)", en: "1,04,210 sq km (4.02%)" },
+                { hi: "92,500 वर्ग किमी (2.55%)", en: "92,500 sq km (2.55%)" }
+            ],
+            correct: 0,
+            exp_hi: "बिहार का कुल क्षेत्रफल 94,163 वर्ग किलोमीटर है, जो भारत के कुल क्षेत्रफल का 2.86% है। क्षेत्रफल के आधार पर यह देश का 12वां सबसे बड़ा राज्य है (जम्मू-कश्मीर पुनर्गठन के बाद)।",
+            exp_en: "The total area of Bihar is 94,163 sq km, representing 2.86% of India's total geographical expanse. By area, it ranks 12th among Indian states."
+        },
+        {
+            num: 2,
+            q_hi: "बिहार राज्य की सबसे ऊंची पर्वत चोटी निम्नलिखित में से कौन सी है और यह किस जिले में स्थित है?",
+            q_en: "Which among the following is the highest mountain peak of Bihar and in which district is it located?",
+            options: [
+                { hi: "कैमूर पहाड़ी (रोहतास)", en: "Kaimur Hill (Rohtas)" },
+                { hi: "सोमेश्वर श्रेणी (पश्चिम चंपारण)", en: "Someshwar Range (West Champaran)" },
+                { hi: "खड़गपुर पहाड़ी (मुंगेर)", en: "Kharagpur Hill (Munger)" },
+                { hi: "बराबर पहाड़ी (जहानाबाद)", en: "Barabar Hill (Jehanabad)" }
+            ],
+            correct: 1,
+            exp_hi: "पश्चिम चंपारण जिले के पश्चिमोत्तर भाग में स्थित सोमेश्वर श्रेणी (Someshwar Range / Peak) की ऊंचाई 874 मीटर (लगभग 2,884 फीट) है, जो बिहार की सर्वोच्च भौगोलिक चोटी है।",
+            exp_en: "Located in the north-western part of West Champaran district, the Someshwar Peak (874 meters / 2,884 feet) is the highest geographical peak in Bihar."
+        },
+        {
+            num: 3,
+            q_hi: "गंगा नदी बिहार के कुल कितने जिलों से होकर प्रवाहित होती है और किस जिले में इसकी लंबाई सर्वाधिक है?",
+            q_en: "Through how many districts of Bihar does the River Ganga flow, and in which district is its length the maximum?",
+            options: [
+                { hi: "10 जिले (भागलपुर में सर्वाधिक)", en: "10 districts (Maximum in Bhagalpur)" },
+                { hi: "12 जिले (पटना में सर्वाधिक - 99 किमी)", en: "12 districts (Maximum in Patna - 99 km)" },
+                { hi: "14 जिले (मुंगेर में सर्वाधिक)", en: "14 districts (Maximum in Munger)" },
+                { hi: "8 जिले (कटिहार में सर्वाधिक)", en: "8 districts (Maximum in Katihar)" }
+            ],
+            correct: 1,
+            exp_hi: "गंगा नदी बिहार के 12 जिलों (बक्सर, भोजपुर, सारण, पटना, वैशाली, समस्तीपुर, बेगूसराय, लखीसराय, मुंगेर, खगड़िया, भागलपुर, कटिहार) से होकर बहती है। इसकी सर्वाधिक लंबाई पटना जिले में (99 किमी) है।",
+            exp_en: "The Ganga traverses 12 districts in Bihar with a total state length of 445 km. Its single longest stretch is within Patna district (99 km)."
+        },
+        {
+            num: 4,
+            q_hi: "बार-बार अपना प्रवाह मार्ग बदलने तथा विनाशकारी बाढ़ लाने के कारण किस नदी को 'बिहार का शोक' (Sorrow of Bihar) कहा जाता है?",
+            q_en: "Which river is widely known as the 'Sorrow of Bihar' due to its frequent shifting of courses and catastrophic floods?",
+            options: [
+                { hi: "गंडक नदी", en: "Gandak River" },
+                { hi: "बूढ़ी गंडक नदी", en: "Budhi Gandak River" },
+                { hi: "कोसी नदी", en: "Kosi River" },
+                { hi: "कमला नदी", en: "Kamla River" }
+            ],
+            correct: 2,
+            exp_hi: "कोसी नदी (सप्तकोशी) हिमालय से भारी मात्रा में गाद (silt) लाती है, जिससे इसका तल भर जाता है और यह मार्ग बदल लेती है। यह कटिहार के कुर्सेला के निकट गंगा में मिलती है। इसे 'बिहार का शोक' कहा जाता है।",
+            exp_en: "The Kosi River carries immense silt from the Himalayas, causing channel avulsion and severe flooding. It meets the Ganga near Kursela (Katihar) and is called the 'Sorrow of Bihar'."
+        },
+        {
+            num: 5,
+            q_hi: "धार्मिक मान्यताओं और लोक परंपराओं में बिहार की किस नदी को 'अशुभ या अपवित्र' माना जाता है, जो चौसा के पास गंगा में मिलती है?",
+            q_en: "Which river in Bihar is traditionally considered 'inauspicious or unholy' in religious beliefs, joining the Ganga near Chausa?",
+            options: [
+                { hi: "पुनपुन नदी", en: "Punpun River" },
+                { hi: "कर्मनाशा नदी", en: "Karmanasa River" },
+                { hi: "फल्गु नदी", en: "Falgu River" },
+                { hi: "सोन नदी", en: "Son River" }
+            ],
+            correct: 1,
+            exp_hi: "कर्मनाशा नदी (नाम का अर्थ: 'कर्मों का नाश करने वाली') कैमूर पहाड़ियों से निकलती है और चौसा (बक्सर) के निकट गंगा में मिलती है। इसे पौराणिक रूप से अपवित्र माना जाता है।",
+            exp_en: "The Karmanasa River (meaning 'destroyer of deeds') originates in the Kaimur hills and joins the Ganga near Chausa. Historically, touching its water was deemed inauspicious."
+        },
+        {
+            num: 6,
+            q_hi: "बंगाल की खाड़ी की मानसूनी शाखा से बिहार के किस जिले में सर्वाधिक औसत वार्षिक वर्षा दर्ज की जाती है?",
+            q_en: "Which district of Bihar records the highest average annual rainfall from the Bay of Bengal branch of the southwest monsoon?",
+            options: [
+                { hi: "पश्चिम चंपारण", en: "West Champaran" },
+                { hi: "किशनगंज", en: "Kishanganj" },
+                { hi: "अररिया", en: "Araria" },
+                { hi: "गया", en: "Gaya" }
+            ],
+            correct: 1,
+            exp_hi: "बिहार के उत्तर-पूर्वी कोने पर स्थित किशनगंज जिले में दक्षिण-पश्चिम मानसून की बंगाल की खाड़ी शाखा से सबसे पहले वर्षा शुरू होती है और राज्य में सर्वाधिक औसत वर्षा (180 सेमी से अधिक) यहीं होती है।",
+            exp_en: "Kishanganj, situated at Bihar's north-eastern corner, receives the earliest and highest average annual rainfall (exceeding 180 cm) via the Bay of Bengal monsoon branch."
+        },
+        {
+            num: 7,
+            q_hi: "बिहार का एकमात्र राष्ट्रीय उद्यान (National Park) एवं बाघ अभयारण्य 'वाल्मीकि राष्ट्रीय उद्यान' किस जिले में स्थित है?",
+            q_en: "In which district is 'Valmiki National Park', the sole National Park and Tiger Reserve of Bihar, situated?",
+            options: [
+                { hi: "कैमूर", en: "Kaimur" },
+                { hi: "पश्चिम चंपारण", en: "West Champaran" },
+                { hi: "पूर्वी चंपारण", en: "East Champaran" },
+                { hi: "रोहतास", en: "Rohtas" }
+            ],
+            correct: 1,
+            exp_hi: "वाल्मीकि राष्ट्रीय उद्यान एवं टाइगर रिजर्व पश्चिम चंपारण जिले में नेपाल की सीमा पर स्थित है। यह बिहार का एकमात्र राष्ट्रीय उद्यान है (दूसरा टाइगर रिजर्व कैमूर में प्रस्तावित है)।",
+            exp_en: "Valmiki National Park and Tiger Reserve is located in West Champaran bordering Nepal. It is the only national park in Bihar (a second tiger reserve is proposed in Kaimur)."
+        },
+        {
+            num: 8,
+            q_hi: "एशिया की सबसे बड़ी मीठे पानी की गोखुर झील (Oxbow Lake) 'कावर झील' (कबरताल) किस जिले में स्थित है, जिसे बिहार का प्रथम रामसर स्थल घोषित किया गया है?",
+            q_en: "In which district is 'Kabar Tal' (Kanwar Lake), Asia's largest freshwater oxbow lake, located, which was declared Bihar's first Ramsar site?",
+            options: [
+                { hi: "दरभंगा", en: "Darbhanga" },
+                { hi: "कटिहार", en: "Katihar" },
+                { hi: "बेगूसराय", en: "Begusarai" },
+                { hi: "सहरसा", en: "Saharsa" }
+            ],
+            correct: 2,
+            exp_hi: "बेगूसराय जिले में स्थित कावर झील (कबरताल) बूढ़ी गंडक नदी के विसर्पण से बनी एशिया की सबसे बड़ी गोखुर झील है। इसे 2020 में भारत का 39वां और बिहार का पहला 'रामसर आर्द्रभूमि स्थल' घोषित किया गया।",
+            exp_en: "Kabar Tal (Kanwar Lake) in Begusarai is Asia's largest freshwater oxbow lake formed by the meandering of Budhi Gandak. In 2020, it became Bihar's first Ramsar wetland site (39th in India)."
+        },
+        {
+            num: 9,
+            q_hi: "भारत के कुल भंडार का लगभग 95% 'पाइराइट्स' (Pyrites - गंधक का मुख्य स्रोत) बिहार के किस स्थान पर पाया जाता है?",
+            q_en: "About 95% of India's total reserves of 'Pyrites' (the principal ore of sulfur) is found at which location in Bihar?",
+            options: [
+                { hi: "अमझोर (रोहतास)", en: "Amjhor (Rohtas)" },
+                { hi: "सोनो (जमुई)", en: "Sono (Jamui)" },
+                { hi: "रजौली (नवादा)", en: "Rajauli (Nawada)" },
+                { hi: "खड़गपुर (मुंगेर)", en: "Kharagpur (Munger)" }
+            ],
+            correct: 0,
+            exp_hi: "रोहतास जिले का अमझोर क्षेत्र भारत में पाइराइट्स का सबसे बड़ा उत्पादक व भंडार स्थल है (देश का लगभग 95%)। यहां पाइराइट्स फॉस्फेट्स एंड केमिकल्स लिमिटेड (PPCL) का कारखाना भी स्थित रहा है।",
+            exp_en: "Amjhor in Rohtas district contains about 95% of India's total pyrite resources, used primarily in sulfuric acid and fertilizer production."
+        },
+        {
+            num: 10,
+            q_hi: "भारतीय भूवैज्ञानिक सर्वेक्षण (GSI) के सर्वेक्षण के अनुसार देश का सबसे बड़ा प्राथमिक 'स्वर्ण भंडार' (Gold Reserves) बिहार के किस जिले में आकलित किया गया है?",
+            q_en: "According to the Geological Survey of India (GSI), the country's largest primary 'Gold Reserves' have been estimated in which district of Bihar?",
+            options: [
+                { hi: "गया", en: "Gaya" },
+                { hi: "जमुई (सोनो प्रखंड)", en: "Jamui (Sono block)" },
+                { hi: "बांका", en: "Banka" },
+                { hi: "औरंगाबाद", en: "Aurangabad" }
+            ],
+            correct: 1,
+            exp_hi: "GSI के अनुसार जमुई जिले के सोनो प्रखंड में 222.88 मिलियन टन स्वर्ण धातु युक्त अयस्क (भारत के कुल स्वर्ण भंडार का लगभग 44%) होने का अनुमान लगाया गया है।",
+            exp_en: "According to GSI findings, Jamui district's Sono block hosts an estimated 222.88 million tonnes of gold ore containing about 44% of India's total gold reserves."
+        },
+        {
+            num: 11,
+            q_hi: "जनगणना 2011 के अनुसार बिहार का जनसंख्या घनत्व (Population Density) कितना है, जो सभी भारतीय राज्यों में सर्वोच्च है?",
+            q_en: "As per Census 2011, what is the population density of Bihar, which is the highest among all Indian states?",
+            options: [
+                { hi: "1,106 व्यक्ति प्रति वर्ग किमी", en: "1,106 persons per sq km" },
+                { hi: "1,028 व्यक्ति प्रति वर्ग किमी", en: "1,028 persons per sq km" },
+                { hi: "980 व्यक्ति प्रति वर्ग किमी", en: "980 persons per sq km" },
+                { hi: "860 व्यक्ति प्रति वर्ग किमी", en: "860 persons per sq km" }
+            ],
+            correct: 0,
+            exp_hi: "2011 की जनगणना के अनुसार बिहार का जनसंख्या घनत्व 1,106 व्यक्ति प्रति वर्ग किमी है, जो पश्चिम बंगाल (1,028) को पीछे छोड़ते हुए सभी राज्यों में शीर्ष स्थान पर है।",
+            exp_en: "Bihar's population density in Census 2011 is 1,106 persons per sq km, making it the most densely populated state in India ahead of West Bengal (1,028)."
+        },
+        {
+            num: 12,
+            q_hi: "2011 की जनगणना के अनुसार बिहार में सर्वाधिक जनसंख्या घनत्व वाला जिला कौन सा है?",
+            q_en: "Which district in Bihar recorded the highest population density according to Census 2011?",
+            options: [
+                { hi: "पटना (Patna)", en: "Patna" },
+                { hi: "शिवहर (Sheohar)", en: "Sheohar" },
+                { hi: "दरभंगा (Darbhanga)", en: "Darbhanga" },
+                { hi: "वैशाली (Vaishali)", en: "Vaishali" }
+            ],
+            correct: 1,
+            exp_hi: "शिवहर जिला बिहार का सर्वाधिक जनसंख्या घनत्व वाला जिला है (1,880 व्यक्ति प्रति वर्ग किमी), जबकि सबसे कम जनसंख्या घनत्व कैमूर (488 व्यक्ति प्रति वर्ग किमी) में है।",
+            exp_en: "Sheohar district has the highest population density in Bihar (1,880 persons/sq km), whereas Kaimur has the lowest (488 persons/sq km)."
+        },
+        {
+            num: 13,
+            q_hi: "2011 की जनगणना के अनुसार बिहार में प्रति 1000 पुरुषों पर 1021 महिलाओं के साथ सर्वोच्च लिंगानुपात (Sex Ratio) वाला जिला कौन सा है?",
+            q_en: "Which district in Bihar recorded the highest Sex Ratio with 1021 females per 1000 males as per Census 2011?",
+            options: [
+                { hi: "सीवान", en: "Siwan" },
+                { hi: "गोपालगंज", en: "Gopalganj" },
+                { hi: "सारण", en: "Saran" },
+                { hi: "किशनगंज", en: "Kishanganj" }
+            ],
+            correct: 1,
+            exp_hi: "गोपालगंज बिहार का एकमात्र जिला है जहां लिंगानुपात 1000 से अधिक (1021) है। बिहार का औसत लिंगानुपात 918 है, जबकि सबसे कम लिंगानुपात मुंगेर (876) में है।",
+            exp_en: "Gopalganj is the only district in Bihar with a sex ratio exceeding 1000 (1021 females/1000 males). State average is 918, and Munger has the lowest (876)."
+        },
+        {
+            num: 14,
+            q_hi: "जनगणना 2011 के अनुसार बिहार की कुल साक्षरता दर (Total Literacy Rate) कितनी दर्ज की गई है?",
+            q_en: "What was the total literacy rate recorded for Bihar according to Census 2011?",
+            options: [
+                { hi: "61.80%", en: "61.80%" },
+                { hi: "65.40%", en: "65.40%" },
+                { hi: "58.20%", en: "58.20%" },
+                { hi: "53.70%", en: "53.70%" }
+            ],
+            correct: 0,
+            exp_hi: "2011 की जनगणना के अनुसार बिहार की कुल साक्षरता दर 61.80% है (पुरुष साक्षरता: 71.20% तथा महिला साक्षरता: 51.50%)। यह देश में न्यूनतम साक्षरता दर वाला राज्य है।",
+            exp_en: "As per Census 2011, Bihar's overall literacy rate is 61.80% (Male: 71.20%, Female: 51.50%), placing it at the bottom among all Indian states."
+        },
+        {
+            num: 15,
+            q_hi: "बिहार का वह कौन सा एकमात्र जिला है जो कुल साक्षरता, पुरुष साक्षरता एवं महिला साक्षरता तीनों श्रेणियों में राज्य में प्रथम स्थान पर है?",
+            q_en: "Which is the only district in Bihar that ranks first in the state across all three categories: total literacy, male literacy, and female literacy?",
+            options: [
+                { hi: "पटना (Patna)", en: "Patna" },
+                { hi: "रोहतास (Rohtas)", en: "Rohtas" },
+                { hi: "मुंगेर (Munger)", en: "Munger" },
+                { hi: "भागलपुर (Bhagalpur)", en: "Bhagalpur" }
+            ],
+            correct: 1,
+            exp_hi: "रोहतास जिला कुल साक्षरता (73.37%), पुरुष साक्षरता (82.88%) और महिला साक्षरता (62.97%) — तीनों में बिहार में सर्वोच्च स्थान पर है। न्यूनतम कुल साक्षरता पूर्णिया (51.08%) तथा न्यूनतम महिला साक्षरता सहरसा (41.68%) में है।",
+            exp_en: "Rohtas district tops Bihar in all three dimensions: total literacy (73.37%), male literacy (82.88%), and female literacy (62.97%). Purnia has the lowest overall and Saharsa the lowest female literacy."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

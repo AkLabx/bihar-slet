@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u4_sub4_3_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "आधुनिक पुस्तकालय विज्ञान में 'संदर्भ सेवा का जनक' (Father of Reference Service) किसे माना जाता है?",
+    "q_en": "Who is widely acknowledged as the 'Father of Reference Service' in modern librarianship?",
+    "options_hi": [
+      "सैमुअल स्वेट ग्रीन (Samuel Swett Green, 1876)",
+      "मेलविल डेवी (Melvil Dewey)",
+      "जेम्स आई. वायर (James I. Wyer)",
+      "डॉ. एस.आर. रंगनाथन"
+    ],
+    "options_en": [
+      "Samuel Swett Green (1876)",
+      "Melvil Dewey",
+      "James I. Wyer",
+      "Dr. S.R. Ranganathan"
+    ],
+    "options": [
+      {
+        "hi": "सैमुअल स्वेट ग्रीन (Samuel Swett Green, 1876)",
+        "en": "Samuel Swett Green (1876)"
+      },
+      {
+        "hi": "मेलविल डेवी (Melvil Dewey)",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "जेम्स आई. वायर (James I. Wyer)",
+        "en": "James I. Wyer"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "सैमुअल स्वेट ग्रीन ने 1876 में ALA के प्रथम सम्मेलन में 'Personal Relations Between Librarians and Readers' नामक शोध-पत्र प्रस्तुत किया और पाठकों को व्यक्तिगत सहायता देने की वकालत की। अतः उन्हें संदर्भ सेवा का जनक माना जाता है।",
+    "exp_en": "Samuel Swett Green presented his seminal paper 'Personal Relations Between Librarians and Readers' at the 1876 ALA conference, pioneering personal assistance to readers and earning the title Father of Reference Service."
+  },
+  {
+    "globalId": "u4_sub4_3_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "'संदर्भ सेवा सही पाठक और सही पुस्तक के मध्य सही समय पर व्यक्तिगत रूप से संपर्क स्थापित करने की प्रक्रिया है'—यह प्रसिद्ध परिभाषा किसने दी थी?",
+    "q_en": "'Reference service is the process of establishing contact between the right reader and the right book at the right time and in a personal way'—Who gave this definition?",
+    "options_hi": [
+      "विलियम ए. काट्ज़ (William A. Katz)",
+      "डॉ. एस.आर. रंगनाथन (Dr. S.R. Ranganathan)",
+      "जेम्स आई. वायर (James I. Wyer)",
+      "सैमुअल रोथस्टीन (Samuel Rothstein)"
+    ],
+    "options_en": [
+      "William A. Katz",
+      "Dr. S.R. Ranganathan",
+      "James I. Wyer",
+      "Samuel Rothstein"
+    ],
+    "options": [
+      {
+        "hi": "विलियम ए. काट्ज़ (William A. Katz)",
+        "en": "William A. Katz"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन (Dr. S.R. Ranganathan)",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "जेम्स आई. वायर (James I. Wyer)",
+        "en": "James I. Wyer"
+      },
+      {
+        "hi": "सैमुअल रोथस्टीन (Samuel Rothstein)",
+        "en": "Samuel Rothstein"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉ. एस.आर. रंगनाथन ने अपनी 1940 की पुस्तक 'Reference Service' में यह परिभाषा दी। उन्होंने संदर्भ सेवा को पुस्तकालय का 'सर्वोच्च कार्य' (Supreme Function) कहा।",
+    "exp_en": "Dr. S.R. Ranganathan coined this classic definition in his book 'Reference Service' (1940), emphasizing the personal, human mediation between the reader and the collection."
+  },
+  {
+    "globalId": "u4_sub4_3_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "जेम्स आई. वायर (James I. Wyer) ने 1930 में संदर्भ सेवा के कौन-से तीन सिद्धांत (Three Theories) प्रतिपादित किए थे?",
+    "q_en": "Which three theories of reference service were formulated by James I. Wyer in his 1930 treatise 'Reference Work'?",
+    "options_hi": [
+      "प्राथमिक, द्वितीयक एवं तृतीयक सिद्धांत",
+      "रूढ़िवादी (Conservative), मध्यम (Moderate) एवं उदारवादी (Liberal)",
+      "स्थानीय, राष्ट्रीय एवं अंतरराष्ट्रीय सिद्धांत",
+      "वर्णानुक्रमिक, विषयानुक्रमिक एवं कालानुक्रमिक सिद्धांत"
+    ],
+    "options_en": [
+      "Primary, Secondary, and Tertiary theories",
+      "Conservative (Minimum), Moderate (Middling), and Liberal (Maximum)",
+      "Local, National, and International theories",
+      "Alphabetical, Classified, and Chronological theories"
+    ],
+    "options": [
+      {
+        "hi": "प्राथमिक, द्वितीयक एवं तृतीयक सिद्धांत",
+        "en": "Primary, Secondary, and Tertiary theories"
+      },
+      {
+        "hi": "रूढ़िवादी (Conservative), मध्यम (Moderate) एवं उदारवादी (Liberal)",
+        "en": "Conservative (Minimum), Moderate (Middling), and Liberal (Maximum)"
+      },
+      {
+        "hi": "स्थानीय, राष्ट्रीय एवं अंतरराष्ट्रीय सिद्धांत",
+        "en": "Local, National, and International theories"
+      },
+      {
+        "hi": "वर्णानुक्रमिक, विषयानुक्रमिक एवं कालानुक्रमिक सिद्धांत",
+        "en": "Alphabetical, Classified, and Chronological theories"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "जेम्स आई. वायर (1930) ने तीन सिद्धांत दिए: (1) Conservative (न्यूनतम सहायता - पाठक स्वयं खोजे), (2) Moderate (मार्गदर्शन सहायता), (3) Liberal (अधिकतम सहायता - लाइब्रेरियन पूरा उत्तर खोजकर दे)।",
+    "exp_en": "James I. Wyer categorized reference service philosophies into Conservative (minimum help), Moderate (intermediate guidance), and Liberal (comprehensive/maximum information provisioning)."
+  },
+  {
+    "globalId": "u4_sub4_3_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "डॉ. रंगनाथन के अनुसार 'त्वरित संदर्भ सेवा' (Ready Reference Service) को हल करने में सामान्यतः कितना समय लगता है?",
+    "q_en": "According to Dr. S.R. Ranganathan, what is the usual time frame required to answer a 'Ready Reference Service' inquiry?",
+    "options_hi": [
+      "कुछ सेकंड से लेकर 30 मिनट के भीतर (Within moments to 30 minutes)",
+      "कम से कम 2 से 4 दिन",
+      "एक सप्ताह से एक माह तक",
+      "अनिश्चित समय"
+    ],
+    "options_en": [
+      "Within a few seconds up to 30 minutes",
+      "At least 2 to 4 days",
+      "From one week to one month",
+      "Indefinite time"
+    ],
+    "options": [
+      {
+        "hi": "कुछ सेकंड से लेकर 30 मिनट के भीतर (Within moments to 30 minutes)",
+        "en": "Within a few seconds up to 30 minutes"
+      },
+      {
+        "hi": "कम से कम 2 से 4 दिन",
+        "en": "At least 2 to 4 days"
+      },
+      {
+        "hi": "एक सप्ताह से एक माह तक",
+        "en": "From one week to one month"
+      },
+      {
+        "hi": "अनिश्चित समय",
+        "en": "Indefinite time"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "त्वरित संदर्भ सेवा तथ्यात्मक (Fact-finding) प्रश्नों से संबंधित होती है जिनका उत्तर शब्दकोश, विश्वकोश या वार्षिकी से कुछ सेकंड से लेकर अधिकतम 30 मिनट के भीतर दे दिया जाता है।",
+    "exp_en": "Ready reference questions are straightforward factual inquiries answered on the spot using standard reference books in a short span of time, typically under 30 minutes."
+  },
+  {
+    "globalId": "u4_sub4_3_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "'दीर्घकालीन संदर्भ सेवा' (Long Range Reference Service) के संबंध में निम्नलिखित में से कौन-सा कथन सत्य है?",
+    "q_en": "Which statement is true regarding 'Long Range Reference Service'?",
+    "options_hi": [
+      "यह केवल सामान्य शब्दकोश देखकर 5 मिनट में पूरी हो जाती है",
+      "इसमें घंटों, दिनों या हफ्तों का समय लग सकता है और इसमें प्राथमिक पत्रिकाओं, शोध प्रबंधों व बाहरी पुस्तकालयों की सहायता ली जाती है",
+      "यह केवल प्राथमिक कक्षाओं के बच्चों के लिए होती है",
+      "इसका उपयोग पुस्तकालय में कभी नहीं किया जाता"
+    ],
+    "options_en": [
+      "It takes under 5 minutes using simple dictionaries",
+      "It requires hours, days, or weeks, utilizing primary journals, dissertations, and inter-library loan networks",
+      "It is strictly designed for primary school pupils",
+      "It is never deployed in libraries"
+    ],
+    "options": [
+      {
+        "hi": "यह केवल सामान्य शब्दकोश देखकर 5 मिनट में पूरी हो जाती है",
+        "en": "It takes under 5 minutes using simple dictionaries"
+      },
+      {
+        "hi": "इसमें घंटों, दिनों या हफ्तों का समय लग सकता है और इसमें प्राथमिक पत्रिकाओं, शोध प्रबंधों व बाहरी पुस्तकालयों की सहायता ली जाती है",
+        "en": "It requires hours, days, or weeks, utilizing primary journals, dissertations, and inter-library loan networks"
+      },
+      {
+        "hi": "यह केवल प्राथमिक कक्षाओं के बच्चों के लिए होती है",
+        "en": "It is strictly designed for primary school pupils"
+      },
+      {
+        "hi": "इसका उपयोग पुस्तकालय में कभी नहीं किया जाता",
+        "en": "It is never deployed in libraries"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दीर्घकालीन संदर्भ सेवा गहन शोधपरक प्रश्नों के लिए होती है जिसमें समय 30 मिनट से अधिक (घंटों, दिनों या हफ्तों) लगता है। इसमें प्राथमिक पत्रिकाएं, शोध प्रबंध, सारकरण पत्रिकाएं और अन्य पुस्तकालयों (ILL) से सामग्री जुटाई जाती है।",
+    "exp_en": "Long range reference service caters to specialized, comprehensive information needs, often extending across hours or weeks and requiring extensive literature searches beyond standard reference tools."
+  },
+  {
+    "globalId": "u4_sub4_3_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "कंप्यूटर-आधारित 'चयनित सूचना प्रसार' (SDI - Selective Dissemination of Information) प्रणाली का आविष्कार 1958 में किसने किया था?",
+    "q_en": "Who invented and introduced the computerized 'Selective Dissemination of Information' (SDI) system at IBM in 1958/1961?",
+    "options_hi": [
+      "हंस पीटर लूह्न (Hans Peter Luhn)",
+      "डेरेक ऑस्टिन (Derek Austin)",
+      "सैमुअल स्वेट ग्रीन",
+      "एफ.डब्ल्यू. लैनकेस्टर (F.W. Lancaster)"
+    ],
+    "options_en": [
+      "Hans Peter Luhn (H.P. Luhn)",
+      "Derek Austin",
+      "Samuel Swett Green",
+      "F.W. Lancaster"
+    ],
+    "options": [
+      {
+        "hi": "हंस पीटर लूह्न (Hans Peter Luhn)",
+        "en": "Hans Peter Luhn (H.P. Luhn)"
+      },
+      {
+        "hi": "डेरेक ऑस्टिन (Derek Austin)",
+        "en": "Derek Austin"
+      },
+      {
+        "hi": "सैमुअल स्वेट ग्रीन",
+        "en": "Samuel Swett Green"
+      },
+      {
+        "hi": "एफ.डब्ल्यू. लैनकेस्टर (F.W. Lancaster)",
+        "en": "F.W. Lancaster"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "आईबीएम (IBM) के वैज्ञानिक हंस पीटर लूह्न (H.P. Luhn) ने 1958 में SDI की अवधारणा प्रस्तुत की और 1961 में इसे कंप्यूटर की सहायता से स्वचालित रूप से लागू किया।",
+    "exp_en": "Hans Peter Luhn (IBM) conceived and pioneered Selective Dissemination of Information (SDI) in 1958, demonstrating its operational computerized execution in 1961."
+  },
+  {
+    "globalId": "u4_sub4_3_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "SDI प्रणाली का वह कौन-सा सर्वाधिक महत्वपूर्ण घटक है जो उपयोगकर्ता की संतुष्टि जांचता है और सिस्टम में चक्रीय सुधार करता है?",
+    "q_en": "Which critical component of an SDI system monitors user satisfaction and drives cyclical system refinements?",
+    "options_hi": [
+      "पुस्तकालय बजट",
+      "प्रतिपुष्टि तंत्र (Feedback Mechanism)",
+      "परिग्रहण पंजिका",
+      "पुस्तक जिल्दसाजी"
+    ],
+    "options_en": [
+      "Library Budget",
+      "Feedback Mechanism",
+      "Accession Register",
+      "Book Binding"
+    ],
+    "options": [
+      {
+        "hi": "पुस्तकालय बजट",
+        "en": "Library Budget"
+      },
+      {
+        "hi": "प्रतिपुष्टि तंत्र (Feedback Mechanism)",
+        "en": "Feedback Mechanism"
+      },
+      {
+        "hi": "परिग्रहण पंजिका",
+        "en": "Accession Register"
+      },
+      {
+        "hi": "पुस्तक जिल्दसाजी",
+        "en": "Book Binding"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रतिपुष्टि तंत्र (Feedback Mechanism) SDI का हृदय है। इसके द्वारा उपयोगकर्ता बताता है कि प्रेषित सूचना प्रासंगिक (Relevant) थी या नहीं। इसी के आधार पर यूजर प्रोफाइल में संशोधन किया जाता है।",
+    "exp_en": "The Feedback Mechanism is the pivotal engine of an SDI service; user evaluation cards or clicks enable the system to recalibrate and refine user profiles continually."
+  },
+  {
+    "globalId": "u4_sub4_3_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "SDI प्रणाली में किसी शोधकर्ता के विशिष्ट विषय एवं कार्यक्षेत्र को दर्शाने वाले कीवर्ड्स की सूची को क्या कहा जाता है?",
+    "q_en": "In an SDI system, the structured list of keywords representing a researcher's specific subject interests is called:",
+    "options_hi": [
+      "डॉक्यूमेंट प्रोफाइल (Document Profile)",
+      "उपयोगकर्ता रूपरेखा (User Profile)",
+      "शेल्फ सूची (Shelf List)",
+      "पाठक टिकट"
+    ],
+    "options_en": [
+      "Document Profile",
+      "User Profile",
+      "Shelf List",
+      "Reader's Ticket"
+    ],
+    "options": [
+      {
+        "hi": "डॉक्यूमेंट प्रोफाइल (Document Profile)",
+        "en": "Document Profile"
+      },
+      {
+        "hi": "उपयोगकर्ता रूपरेखा (User Profile)",
+        "en": "User Profile"
+      },
+      {
+        "hi": "शेल्फ सूची (Shelf List)",
+        "en": "Shelf List"
+      },
+      {
+        "hi": "पाठक टिकट",
+        "en": "Reader's Ticket"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "उपयोगकर्ता रूपरेखा (User Profile) में शोधकर्ता के विशिष्ट अनुसंधान क्षेत्र के वर्णनात्मक शब्द/कीवर्ड्स दर्ज होते हैं। जब नए प्रलेखों (Document Profile) के कीवर्ड इससे मेल खाते हैं, तभी उपयोगकर्ता को सूचना भेजी जाती है।",
+    "exp_en": "A User Profile consists of a set of descriptors or search terms defining an individual's or group's current research topics and informational demands."
+  },
+  {
+    "globalId": "u4_sub4_3_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "सामयिक अभिज्ञता सेवा (CAS) और चयनित सूचना प्रसार (SDI) के मध्य मौलिक अंतर क्या है?",
+    "q_en": "What is the fundamental difference between Current Awareness Service (CAS) and Selective Dissemination of Information (SDI)?",
+    "options_hi": [
+      "CAS सामूहिक एवं सामान्य सेवा है, जबकि SDI व्यक्तिगत एवं कंप्यूटर-आधारित विशिष्ट सेवा है",
+      "CAS केवल बच्चों के लिए होती है, SDI शिक्षकों के लिए",
+      "CAS में केवल पुरानी किताबें दी जाती हैं",
+      "दोनों में कोई अंतर नहीं है"
+    ],
+    "options_en": [
+      "CAS is broad and group-oriented, whereas SDI is personalized, automated, and tailor-made for individuals",
+      "CAS is exclusively for children, SDI for teachers",
+      "CAS provides only antiquarian books",
+      "There is no distinction"
+    ],
+    "options": [
+      {
+        "hi": "CAS सामूहिक एवं सामान्य सेवा है, जबकि SDI व्यक्तिगत एवं कंप्यूटर-आधारित विशिष्ट सेवा है",
+        "en": "CAS is broad and group-oriented, whereas SDI is personalized, automated, and tailor-made for individuals"
+      },
+      {
+        "hi": "CAS केवल बच्चों के लिए होती है, SDI शिक्षकों के लिए",
+        "en": "CAS is exclusively for children, SDI for teachers"
+      },
+      {
+        "hi": "CAS में केवल पुरानी किताबें दी जाती हैं",
+        "en": "CAS provides only antiquarian books"
+      },
+      {
+        "hi": "दोनों में कोई अंतर नहीं है",
+        "en": "There is no distinction"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "CAS एक व्यापक सामूहिक सेवा (Broad announcement) है जो सभी पाठकों को सामान्य रूप से नवीनतम प्रलेखों की जानकारी देती है, जबकि SDI एक व्यक्तिगत (Personalized/Tailor-made) सेवा है जिसमें केवल उस व्यक्ति की रुचि के अनुसार मिलान करके सूचना दी जाती है।",
+    "exp_en": "CAS broadcasts current developments generally across broad user groups without individualized profiles, whereas SDI provides personalized, computer-matched alerts tied strictly to individual user profiles."
+  },
+  {
+    "globalId": "u4_sub4_3_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "पुस्तकालय में दैनिक समाचार पत्रों से संबंधित विषय की कतरनें एकत्र कर प्रबंधकों या शोधकर्ताओं को उपलब्ध कराना किस सेवा का उदाहरण है?",
+    "q_en": "Collecting relevant thematic clippings from daily newspapers and distributing them to administrators/researchers is an example of:",
+    "options_hi": [
+      "समाचार पत्र कतरन सेवा - सामयिक अभिज्ञता सेवा (Newspaper Clipping Service - CAS)",
+      "दीर्घकालीन संदर्भ सेवा",
+      "भंडार सत्यापन",
+      "तकनीकी प्रसंस्करण"
+    ],
+    "options_en": [
+      "Newspaper Clipping Service (a form of CAS)",
+      "Long Range Reference Service",
+      "Stock Verification",
+      "Technical Processing"
+    ],
+    "options": [
+      {
+        "hi": "समाचार पत्र कतरन सेवा - सामयिक अभिज्ञता सेवा (Newspaper Clipping Service - CAS)",
+        "en": "Newspaper Clipping Service (a form of CAS)"
+      },
+      {
+        "hi": "दीर्घकालीन संदर्भ सेवा",
+        "en": "Long Range Reference Service"
+      },
+      {
+        "hi": "भंडार सत्यापन",
+        "en": "Stock Verification"
+      },
+      {
+        "hi": "तकनीकी प्रसंस्करण",
+        "en": "Technical Processing"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "समाचार पत्र कतरन सेवा (Newspaper Clipping Service) सामयिक अभिज्ञता सेवा (CAS) का एक अत्यंत लोकप्रिय रूप है जो समसामयिक घटनाओं से तुरंत अवगत कराता है।",
+    "exp_en": "Newspaper Clipping Service is an established variant of Current Awareness Service (CAS), curating timely press coverage on pertinent organizational topics."
+  },
+  {
+    "globalId": "u4_sub4_3_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "पुस्तकालय में नई प्राप्त पत्रिकाओं की विषय-सूची (Table of Contents) की प्रतियां पाठकों को प्रसारित करने वाली सेवा क्या कहलाती है?",
+    "q_en": "The service that reproduces and distributes tables of contents of newly received journal issues to users is termed:",
+    "options_hi": [
+      "सामयिक विषय-सूची सेवा (Current Contents Service)",
+      "अनुक्रमणिका सेवा",
+      "दस्तावेज वितरण सेवा",
+      "अंतर-पुस्तकालय ऋण"
+    ],
+    "options_en": [
+      "Current Contents Service",
+      "Indexing Service",
+      "Document Delivery Service",
+      "Inter-Library Loan"
+    ],
+    "options": [
+      {
+        "hi": "सामयिक विषय-सूची सेवा (Current Contents Service)",
+        "en": "Current Contents Service"
+      },
+      {
+        "hi": "अनुक्रमणिका सेवा",
+        "en": "Indexing Service"
+      },
+      {
+        "hi": "दस्तावेज वितरण सेवा",
+        "en": "Document Delivery Service"
+      },
+      {
+        "hi": "अंतर-पुस्तकालय ऋण",
+        "en": "Inter-Library Loan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Current Contents सेवा CAS का एक प्रभावी प्रकार है, जिसमें शोध पत्रिकाओं के मुख्य विषय-सूची पृष्ठों (Contents pages) को स्कैन या फोटोकॉपी कर शोधकर्ताओं को तुरंत भेजा जाता है।",
+    "exp_en": "Current Contents alerting is a widely utilized CAS modality delivering tables of contents of newly published journal issues directly to patrons."
+  },
+  {
+    "globalId": "u4_sub4_3_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "संदर्भ सेवा का 'उदारवादी सिद्धांत' (Liberal Theory) या 'अधिकतम सेवा' (Maximum Help) सामान्यतः किस प्रकार के पुस्तकालयों में अनिवार्य रूप से लागू होती है?",
+    "q_en": "In which category of libraries is the 'Liberal Theory' or 'Maximum Help' approach of reference service predominantly implemented?",
+    "options_hi": [
+      "विद्यालय पुस्तकालय (School Libraries)",
+      "विशेष एवं अनुसंधान पुस्तकालय (Special, Corporate and Research Libraries)",
+      "ग्रामीण सार्वजनिक पुस्तकालय",
+      "बाल पुस्तकालय"
+    ],
+    "options_en": [
+      "School Libraries",
+      "Special, Corporate, and Industrial Research Libraries",
+      "Rural Public Libraries",
+      "Children's Libraries"
+    ],
+    "options": [
+      {
+        "hi": "विद्यालय पुस्तकालय (School Libraries)",
+        "en": "School Libraries"
+      },
+      {
+        "hi": "विशेष एवं अनुसंधान पुस्तकालय (Special, Corporate and Research Libraries)",
+        "en": "Special, Corporate, and Industrial Research Libraries"
+      },
+      {
+        "hi": "ग्रामीण सार्वजनिक पुस्तकालय",
+        "en": "Rural Public Libraries"
+      },
+      {
+        "hi": "बाल पुस्तकालय",
+        "en": "Children's Libraries"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "विशेष एवं कॉर्पोरेट पुस्तकालयों में वैज्ञानिक या अधिकारी स्वयं खोज करने का समय नहीं रखते; अतः वहां लाइब्रेरियन पूरी खोज, अनुवाद और तैयार रिपोर्ट (Liberal/Maximum service) प्रदान करता है।",
+    "exp_en": "Special and industrial research libraries implement the Liberal/Maximum theory because scientists and corporate executives require comprehensive ready-made answers rather than self-search guidance."
+  },
+  {
+    "globalId": "u4_sub4_3_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "निम्नलिखित में से कौन-सा चरण 'चयनित सूचना प्रसार' (SDI) प्रणाली का परिचालन चरण नहीं है?",
+    "q_en": "Which of the following is NOT an operational stage of the Selective Dissemination of Information (SDI) system?",
+    "options_hi": [
+      "उपयोगकर्ता रूपरेखा निर्माण (User Profile creation)",
+      "प्रलेख रूपरेखा निर्माण (Document Profile creation)",
+      "पुस्तकों का छंटाई एवं निरसन (Weeding of Books)",
+      "प्रतिपुष्टि एवं प्रोफाइल संशोधन (Feedback and Profile Modification)"
+    ],
+    "options_en": [
+      "User Profile creation",
+      "Document Profile creation",
+      "Weeding of Books",
+      "Feedback and Profile Modification"
+    ],
+    "options": [
+      {
+        "hi": "उपयोगकर्ता रूपरेखा निर्माण (User Profile creation)",
+        "en": "User Profile creation"
+      },
+      {
+        "hi": "प्रलेख रूपरेखा निर्माण (Document Profile creation)",
+        "en": "Document Profile creation"
+      },
+      {
+        "hi": "पुस्तकों का छंटाई एवं निरसन (Weeding of Books)",
+        "en": "Weeding of Books"
+      },
+      {
+        "hi": "प्रतिपुष्टि एवं प्रोफाइल संशोधन (Feedback and Profile Modification)",
+        "en": "Feedback and Profile Modification"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "SDI के 6 मुख्य चरण हैं: (1) User Profile, (2) Document Profile, (3) Matching, (4) Notification, (5) Feedback, (6) Profile Modification। पुस्तकों का निरसन (Weeding) संग्रह प्रबंधन का कार्य है, SDI का नहीं।",
+    "exp_en": "Weeding of books is a collection development task, completely outside the operational workflow of an SDI system."
+  },
+  {
+    "globalId": "u4_sub4_3_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "सैमुअल रोथस्टीन (Samuel Rothstein) ने 1961 में संदर्भ सेवा के किन तीन स्तरों की पहचान की थी?",
+    "q_en": "Which three levels of reference service were articulated by Samuel Rothstein in 1961?",
+    "options_hi": [
+      "Minimum, Middling, and Maximum",
+      "First, Second, and Third",
+      "Local, Regional, and Global",
+      "Alpha, Beta, and Gamma"
+    ],
+    "options_en": [
+      "Minimum, Middling, and Maximum",
+      "First, Second, and Third",
+      "Local, Regional, and Global",
+      "Alpha, Beta, and Gamma"
+    ],
+    "options": [
+      {
+        "hi": "Minimum, Middling, and Maximum",
+        "en": "Minimum, Middling, and Maximum"
+      },
+      {
+        "hi": "First, Second, and Third",
+        "en": "First, Second, and Third"
+      },
+      {
+        "hi": "Local, Regional, and Global",
+        "en": "Local, Regional, and Global"
+      },
+      {
+        "hi": "Alpha, Beta, and Gamma",
+        "en": "Alpha, Beta, and Gamma"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "सैमुअल रोथस्टीन (1961) ने संदर्भ सेवा सहायता के तीन स्तर बताए: Minimum (न्यूनतम), Middling (मध्यम), और Maximum (अधिकतम)।",
+    "exp_en": "Samuel Rothstein categorized reference assistance into Minimum (modest guidance), Middling (moderate help), and Maximum (complete information gathering)."
+  },
+  {
+    "globalId": "u4_sub4_3_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.3",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+    "q_hi": "सामयिक अभिज्ञता सेवा (CAS) की विषय-सामग्री का जीवन-काल कैसा होता है?",
+    "q_en": "What is the typical characteristic lifespan of information delivered via Current Awareness Services (CAS)?",
+    "options_hi": [
+      "अल्पकालिक / नश्वर (Perishable and transient value)",
+      "सदाबहार और कभी न बदलने वाला",
+      "कम से कम 100 वर्षों के लिए स्थायी",
+      "केवल ऐतिहासिक शोध हेतु उपयोगी"
+    ],
+    "options_en": [
+      "Short-lived, perishable, and transient value",
+      "Evergreen and permanently unchanging",
+      "Statutorily permanent for 100 years",
+      "Useful only for retrospective historical research"
+    ],
+    "options": [
+      {
+        "hi": "अल्पकालिक / नश्वर (Perishable and transient value)",
+        "en": "Short-lived, perishable, and transient value"
+      },
+      {
+        "hi": "सदाबहार और कभी न बदलने वाला",
+        "en": "Evergreen and permanently unchanging"
+      },
+      {
+        "hi": "कम से कम 100 वर्षों के लिए स्थायी",
+        "en": "Statutorily permanent for 100 years"
+      },
+      {
+        "hi": "केवल ऐतिहासिक शोध हेतु उपयोगी",
+        "en": "Useful only for retrospective historical research"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "CAS की सूचना अत्यंत तात्कालिक एवं अल्पकालिक (Perishable/Transient) होती है। इसका उद्देश्य पाठक को हालिया घटनाओं से तुरंत रूबरू कराना होता है। बाद में यह स्थायी ग्रंथसूचियों में दर्ज हो जाती है।",
+    "exp_en": "Information provided through CAS possesses a transient, perishable shelf-life designed for immediate awareness before being superseded or codified into permanent retrospective indexes."
+  }
+]

@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1.4 Quiz: National & International Library Associations | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_1.4_Library_Associations.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 1.4: Library Associations</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "भारतीय पुस्तकालय संघ (ILA - Indian Library Association) की स्थापना 13 सितंबर 1933 को किस शहर में आयोजित प्रथम अखिल भारतीय पुस्तकालय सम्मेलन में हुई थी?",
+            q_en: "The Indian Library Association (ILA) was founded on 13 September 1933 during the First All India Library Conference held in which city?",
+            options_hi: [
+                "मद्रास",
+                "कलकत्ता",
+                "नई दिल्ली",
+                "बॉम्बे"
+            ],
+            options_en: [
+                "Madras",
+                "Calcutta",
+                "New Delhi",
+                "Bombay"
+            ],
+            correct: 1,
+            exp_hi: "ILA की स्थापना 13 सितंबर 1933 को एशियाटिक सोसाइटी हॉल, कलकत्ता में आयोजित प्रथम अखिल भारतीय पुस्तकालय सम्मेलन में हुई थी। इसके प्रथम अध्यक्ष डॉ. एम.ओ. थॉमस और प्रथम सचिव के.एम. असदुल्लाह थे।",
+            exp_en: "The ILA was established on 13 September 1933 at the Asiatic Society Hall, Calcutta during the First All India Library Conference. Dr. M.O. Thomas was its first President and K.M. Asadullah was its first Secretary."
+        },
+        {
+            id: 2,
+            q_hi: "भारत में प्रतिवर्ष 'राष्ट्रीय पुस्तकालय सप्ताह' (National Library Week) 14 से 20 नवंबर के मध्य किस संस्था द्वारा 1968 से मनाया जाता है?",
+            q_en: "In India, 'National Library Week' is celebrated annually from 14 to 20 November since 1968 by which organization?",
+            options_hi: [
+                "आईयास्लिक (IASLIC)",
+                "भारतीय पुस्तकालय संघ (ILA)",
+                "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+                "राष्ट्रीय पुस्तकालय, कोलकाता"
+            ],
+            options_en: [
+                "IASLIC",
+                "Indian Library Association (ILA)",
+                "Raja Rammohun Roy Library Foundation (RRRLF)",
+                "National Library of India, Kolkata"
+            ],
+            correct: 1,
+            exp_hi: "ILA द्वारा वर्ष 1968 से प्रतिवर्ष 14 से 20 नवंबर तक 'राष्ट्रीय पुस्तकालय सप्ताह' मनाया जाता है। इसका शुभारंभ पंडित जवाहरलाल नेहरू के जन्मदिवस (14 नवंबर) के उपलक्ष्य में किया गया था।",
+            exp_en: "National Library Week is observed across India from 14 to 20 November every year by the Indian Library Association (ILA) since 1968, starting on Pt. Jawaharlal Nehru's birthday."
+        },
+        {
+            id: 3,
+            q_hi: "विश्व का सबसे पुराना और सबसे बड़ा राष्ट्रीय पुस्तकालय संघ कौन-सा है?",
+            q_en: "Which is the oldest and largest national library association in the world?",
+            options_hi: [
+                "द लाइब्रेरी एसोसिएशन (LA - UK)",
+                "अमेरिकन लाइब्रेरी एसोसिएशन (ALA - USA)",
+                "इफ़्ला (IFLA)",
+                "भारतीय पुस्तकालय संघ (ILA)"
+            ],
+            options_en: [
+                "The Library Association (LA - UK)",
+                "American Library Association (ALA - USA)",
+                "IFLA",
+                "Indian Library Association (ILA)"
+            ],
+            correct: 1,
+            exp_hi: "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) की स्थापना 6 अक्टूबर 1876 को फिलाडेल्फिया में मेल्विल डेवी, जस्टिन विंसर व अन्य द्वारा की गई थी। यह विश्व का सबसे पहला और विशालतम पुस्तकालय संघ है।",
+            exp_en: "The American Library Association (ALA), established on 6 October 1876 in Philadelphia by Melvil Dewey, Justin Winsor, and others, is the oldest and largest library association globally."
+        },
+        {
+            id: 4,
+            q_hi: "अंतरराष्ट्रीय पुस्तकालय संघ एवं संस्थान महासंघ (IFLA - International Federation of Library Associations) का स्थायी मुख्यालय कहाँ स्थित है?",
+            q_en: "Where is the permanent headquarters of IFLA (International Federation of Library Associations and Institutions) located?",
+            options_hi: [
+                "पेरिस, फ्रांस",
+                "द हेग, नीदरलैंड्स",
+                "जिनेवा, स्विट्जरलैंड",
+                "लंदन, यूके"
+            ],
+            options_en: [
+                "Paris, France",
+                "The Hague, Netherlands",
+                "Geneva, Switzerland",
+                "London, UK"
+            ],
+            correct: 1,
+            exp_hi: "IFLA की स्थापना 30 सितंबर 1927 को एडिनबर्ग (स्कॉटलैंड) में हुई थी, परंतु इसका स्थायी मुख्यालय 'द हेग' (The Hague, Netherlands) में नीदरलैंड्स के राष्ट्रीय पुस्तकालय परिसर में स्थित है।",
+            exp_en: "IFLA was founded on 30 September 1927 in Edinburgh, Scotland. Its permanent headquarters is located at The Hague, Netherlands, hosted by the National Library of the Netherlands."
+        },
+        {
+            id: 5,
+            q_hi: "भारत में विशेष पुस्तकालयों के संवर्धन हेतु समर्पित संघ 'IASLIC' की स्थापना 1955 में किस शहर में हुई थी?",
+            q_en: "In which city was IASLIC (Indian Association of Special Libraries and Information Centres) established in 1955?",
+            options_hi: [
+                "नई दिल्ली",
+                "कोलकाता",
+                "बेंगलुरु",
+                "हैदराबाद"
+            ],
+            options_en: [
+                "New Delhi",
+                "Kolkata",
+                "Bangalore",
+                "Hyderabad"
+            ],
+            correct: 1,
+            exp_hi: "IASLIC की स्थापना 3 सितंबर 1955 को कोलकाता में हुई थी। इसके प्रथम अध्यक्ष डॉ. एस.एल. होरा और प्रथम सचिव जे. साहा थे। इसे 'भारत का अस्लिब' (ASLIB of India) भी कहा जाता है।",
+            exp_en: "IASLIC was founded on 3 September 1955 in Kolkata. Dr. S.L. Hora was its first President and J. Saha was its first Honorary General Secretary. It is known as the 'ASLIB of India'."
+        },
+        {
+            id: 6,
+            q_hi: "पुस्तकालय एवं सूचना विज्ञान के क्षेत्र में भारत की एकमात्र राष्ट्रीय सारकरण पत्रिका 'Indian Library Science Abstracts' (ILSA) का प्रकाशन किसके द्वारा किया जाता है?",
+            q_en: "The only national abstracting periodical in Library and Information Science in India, 'Indian Library Science Abstracts' (ILSA), is published by:",
+            options_hi: [
+                "ILA",
+                "IASLIC",
+                "INFLIBNET",
+                "DRTC"
+            ],
+            options_en: [
+                "ILA",
+                "IASLIC",
+                "INFLIBNET",
+                "DRTC"
+            ],
+            correct: 1,
+            exp_hi: "ILSA (Indian Library Science Abstracts) का प्रकाशन वर्ष 1967 से IASLIC (कोलकाता) द्वारा किया जा रहा है। यह भारतीय पत्रिकाओं में प्रकाशित LIS शोध आलेखों का सार प्रस्तुत करता है।",
+            exp_en: "ILSA (Indian Library Science Abstracts) has been published since 1967 by IASLIC, Kolkata. It covers abstracts of LIS literature published in Indian periodicals."
+        },
+        {
+            id: 7,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा संपादित ऐतिहासिक त्रैमासिक पत्रिका 'ABGILA' (Annals, Bulletin, and Granthalaya of ILA) किस अवधि में प्रकाशित हुई थी?",
+            q_en: "During which period was the landmark quarterly journal 'ABGILA' (Annals, Bulletin, and Granthalaya of ILA) edited and published by Dr. S.R. Ranganathan?",
+            options_hi: [
+                "1933–1937",
+                "1944–1947",
+                "1949–1953",
+                "1960–1965"
+            ],
+            options_en: [
+                "1933–1937",
+                "1944–1947",
+                "1949–1953",
+                "1960–1965"
+            ],
+            correct: 2,
+            exp_hi: "डॉ. रंगनाथन के ILA अध्यक्षीय कार्यकाल (1944–1953) के दौरान वर्ष 1949 से 1953 तक 'ABGILA' का प्रकाशन हुआ। इसके तीन भाग थे— Annals (शोध), Bulletin (संघीय समाचार), और Granthalaya (हिंदी खंड)।",
+            exp_en: "ABGILA was edited and published by Dr. S.R. Ranganathan during his presidency of ILA from 1949 to 1953. It had three sections: Annals, Bulletin, and Granthalaya."
+        },
+        {
+            id: 8,
+            q_hi: "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF) द्वारा राज्यों को दी जाने वाली 'मैचिंग सहायता योजना' (Matching Scheme) के अंतर्गत सामान्य राज्यों हेतु केंद्र-राज्य वित्तीय अनुपात क्या है?",
+            q_en: "Under the Matching Assistance Scheme provided by RRRLF to states for public libraries, what is the central-state sharing ratio for general states?",
+            options_hi: [
+                "90:10",
+                "50:50",
+                "75:25",
+                "60:40"
+            ],
+            options_en: [
+                "90:10",
+                "50:50",
+                "75:25",
+                "60:40"
+            ],
+            correct: 1,
+            exp_hi: "RRRLF की मैचिंग योजनाओं के तहत सामान्य राज्यों के लिए 50:50 का अनुपात होता है, जबकि पूर्वोत्तर व विशेष श्रेणी राज्यों के लिए यह अनुपात 90:10 या 60:40 होता है।",
+            exp_en: "Under RRRLF's matching grant schemes, the financial sharing ratio between the Foundation and general state governments is 50:50 (and 90:10 for North Eastern states)."
+        },
+        {
+            id: 9,
+            q_hi: "यूनिवर्सल डेसिमल वर्गीकरण (UDC) का विकास किस अंतरराष्ट्रीय संस्था द्वारा 1895 से किया गया था?",
+            q_en: "The Universal Decimal Classification (UDC) was developed by which international organization founded in 1895?",
+            options_hi: [
+                "IFLA",
+                "FID (मूल नाम IIB)",
+                "UNESCO",
+                "ALA"
+            ],
+            options_en: [
+                "IFLA",
+                "FID (Originally IIB)",
+                "UNESCO",
+                "ALA"
+            ],
+            correct: 1,
+            exp_hi: "FID की स्थापना 12 सितंबर 1895 को पॉल ऑटलेट और हेनरी ला फोंटेन द्वारा ब्रुसेल्स में 'IIB' के रूप में की गई थी। इसी संस्था ने मेल्विल डेवी की DDC का विस्तार कर UDC (1905) का विकास किया था।",
+            exp_en: "FID was established as IIB in Brussels on 12 September 1895 by Paul Otlet and Henri La Fontaine. It developed the Universal Decimal Classification (UDC) based on DDC."
+        },
+        {
+            id: 10,
+            q_hi: "यूनेस्को (UNESCO) द्वारा ग्रंथपरक डेटाबेस प्रबंधन हेतु 1985 में विकसित किए गए बहुचर्चित निःशुल्क सॉफ्टवेयर का क्या नाम है?",
+            q_en: "What is the name of the renowned bibliographic database management software developed and released by UNESCO in 1985?",
+            options_hi: [
+                "KOHA",
+                "CDS/ISIS",
+                "SOUL",
+                "DSpace"
+            ],
+            options_en: [
+                "KOHA",
+                "CDS/ISIS",
+                "SOUL",
+                "DSpace"
+            ],
+            correct: 1,
+            exp_hi: "यूनेस्को ने 1985 में विकासशील देशों के पुस्तकालयों में ग्रंथपरक सूचना प्रबंधन हेतु CDS/ISIS (Computerized Documentation Service / Integrated Set of Information Systems) सॉफ्टवेयर जारी किया था।",
+            exp_en: "UNESCO developed and released CDS/ISIS in 1985 as a specialized, free software package for managing non-numerical, variable-length bibliographic databases."
+        },
+        {
+            id: 11,
+            q_hi: "इफ़्ला (IFLA) द्वारा वैश्विक ग्रंथपरक मानकीकरण हेतु विकसित 'ISBD' का पूर्ण रूप क्या है?",
+            q_en: "What is the full form of 'ISBD' developed by IFLA for universal bibliographic standardization?",
+            options_hi: [
+                "International Standard Book Description",
+                "International Standard Bibliographic Description",
+                "Indian Standard Bibliographic Details",
+                "Integrated System for Book Documentation"
+            ],
+            options_en: [
+                "International Standard Book Description",
+                "International Standard Bibliographic Description",
+                "Indian Standard Bibliographic Details",
+                "Integrated System for Book Documentation"
+            ],
+            correct: 1,
+            exp_hi: "ISBD का पूर्ण रूप 'International Standard Bibliographic Description' है। इसे IFLA ने 1970 के दशक में सभी प्रकार की पाठन सामग्री के अंतरराष्ट्रीय स्तर पर एकरूप सूचीकरण हेतु तैयार किया था।",
+            exp_en: "ISBD stands for International Standard Bibliographic Description. It was developed by IFLA to provide a standard format for bibliographic entries in national bibliographies and catalogues."
+        },
+        {
+            id: 12,
+            q_hi: "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) द्वारा बाल साहित्य (Children's Literature) में विशिष्ट योगदान हेतु 1922 से कौन-सा प्रसिद्ध पुरस्कार दिया जाता है?",
+            q_en: "Which prestigious medal has been awarded annually by the ALA since 1922 for distinguished contribution to children's literature?",
+            options_hi: [
+                "मेल्विल डेवी मेडल",
+                "न्यूबेरी मेडल (Newbery Medal)",
+                "कैल्डेकॉट मेडल (Caldecott Medal)",
+                "पुित्ज़र पुरस्कार"
+            ],
+            options_en: [
+                "Melvil Dewey Medal",
+                "Newbery Medal",
+                "Caldecott Medal",
+                "Pulitzer Prize"
+            ],
+            correct: 1,
+            exp_hi: "न्यूबेरी मेडल (Newbery Medal) की शुरुआत ALA द्वारा 1922 में 18वीं सदी के अंग्रेजी प्रकाशक जॉन न्यूबेरी के सम्मान में की गई थी। यह बाल साहित्य का विश्व का पहला और प्रतिष्ठित पुरस्कार है। (सचित्र पुस्तकों हेतु कैल्डेकॉट 1938 से है)।",
+            exp_en: "The Newbery Medal was instituted by ALA in 1922, named after 18th-century bookseller John Newbery. It is awarded annually to the author of the most distinguished American children's book."
+        },
+        {
+            id: 13,
+            q_hi: "दिल्ली पब्लिक लाइब्रेरी (DPL, 1951) की स्थापना भारत सरकार ने किस अंतरराष्ट्रीय संस्था के पायलट प्रोजेक्ट के तहत की थी?",
+            q_en: "Delhi Public Library (DPL, 1951) was established by the Government of India under a pilot project in collaboration with which international agency?",
+            options_hi: [
+                "IFLA",
+                "UNESCO",
+                "ALA",
+                "ब्रिटिश काउंसिल"
+            ],
+            options_en: [
+                "IFLA",
+                "UNESCO",
+                "ALA",
+                "British Council"
+            ],
+            correct: 1,
+            exp_hi: "दिल्ली पब्लिक लाइब्रेरी (DPL) की स्थापना 1951 में भारत सरकार और यूनेस्को (UNESCO) के संयुक्त पायलट प्रोजेक्ट के रूप में हुई थी, ताकि एशिया के नव-स्वतंत्र देशों के लिए एक मॉडल सार्वजनिक पुस्तकालय प्रस्तुत किया जा सके।",
+            exp_en: "Delhi Public Library was established in 1951 as a joint pilot project between the Government of India and UNESCO to serve as an exemplar model public library for developing nations in Asia."
+        },
+        {
+            id: 14,
+            q_hi: "इफ़्ला (IFLA) का सुप्रसिद्ध कार्यक्रम 'UAP' (1979) किस अवधारणा पर आधारित है?",
+            q_en: "The renowned IFLA programme 'UAP' initiated in 1979 stands for and is based on which concept?",
+            options_hi: [
+                "Universal Access to Periodicals",
+                "Universal Availability of Publications (प्रकाशनों की सार्वभौमिक सुलभता)",
+                "Union of Academic Publishers",
+                "Unified Automation Programme"
+            ],
+            options_en: [
+                "Universal Access to Periodicals",
+                "Universal Availability of Publications",
+                "Union of Academic Publishers",
+                "Unified Automation Programme"
+            ],
+            correct: 1,
+            exp_hi: "UAP का पूर्ण रूप 'Universal Availability of Publications' (प्रकाशनों की सार्वभौमिक सुलभता) है। इसका उद्देश्य यह सुनिश्चित करना है कि विश्व में कहीं भी किसी भी उपयोगकर्ता को आवश्यक मुद्रित या इलेक्ट्रॉनिक प्रकाशन सुलभ हो सके।",
+            exp_en: "UAP stands for Universal Availability of Publications. Launched by IFLA in 1979, its objective is to ensure the widest possible availability of published material to intending users worldwide."
+        },
+        {
+            id: 15,
+            q_hi: "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) के प्रथम सचिव कौन थे, जिन्होंने 1876 से 1890 तक इस पद पर कार्य किया?",
+            q_en: "Who was the first Secretary of the American Library Association (ALA), serving from 1876 to 1890?",
+            options_hi: [
+                "जस्टिन विंसर (Justin Winsor)",
+                "मेल्विल डेवी (Melvil Dewey)",
+                "चार्ल्स एम्मी कटर (C.A. Cutter)",
+                "विलियम फ्रेडरिक पूले"
+            ],
+            options_en: [
+                "Justin Winsor",
+                "Melvil Dewey",
+                "C.A. Cutter",
+                "William Frederick Poole"
+            ],
+            correct: 1,
+            exp_hi: "ALA के प्रथम सचिव मेल्विल डेवी (Melvil Dewey) थे (1876 से 1890 तक)। प्रथम अध्यक्ष जस्टिन विंसर थे। बाद में मेल्विल डेवी 1890–1893 तक ALA के अध्यक्ष भी रहे।",
+            exp_en: "Melvil Dewey served as the first Secretary of the ALA from its inception in 1876 until 1890 (Justin Winsor was President). Dewey later served as ALA President from 1890 to 1893."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60; // 20 mins for 15 questions
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_1_4_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

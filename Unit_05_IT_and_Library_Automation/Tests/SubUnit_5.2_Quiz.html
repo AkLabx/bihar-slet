@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 5.2 Quiz: Barcode & RFID Technology | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_5.2_Barcode_and_RFID.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">बारकोड एवं RFID तकनीक</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 मुख्य बिंदु (Key Tip):</strong>
+                <p style="margin-top: 0.4rem;">
+                    पुस्तकालय RFID की मानक आवृत्ति <strong>13.56 MHz (HF)</strong>, EAS बिट (चोरी निरोधक), और हैंडहेल्ड वैंड द्वारा तीव्र भंडार सत्यापन सर्वाधिक पूछे जाने वाले विषय हैं।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="SubUnit_5.1_Quiz.html">⬅️ Unit 5.1 टेस्ट (Software Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "बारकोड (Barcode) तकनीक का आविष्कार 1949/1952 में किन दो शोधकर्ताओं द्वारा किया गया था?",
+            q_en: "By which two researchers was Barcode technology invented and patented in the United States in 1949/1952?",
+            options_hi: [
+                "नॉर्मन जोसेफ वुडलैंड एवं बर्नार्ड सिल्वर (N.J. Woodland & Bernard Silver)",
+                "मासाहिरो हारा एवं जॉर्ज लॉरर",
+                "हैरी स्टॉकमैन एवं चार्ल्स बैबेज",
+                "एलन ट्यूरिंग एवं टिम बर्नर्स ली"
+            ],
+            options_en: [
+                "Norman Joseph Woodland and Bernard Silver",
+                "Masahiro Hara and George Laurer",
+                "Harry Stockman and Charles Babbage",
+                "Alan Turing and Tim Berners-Lee"
+            ],
+            correct: 0,
+            exp_hi: "एन.जे. वुडलैंड और बर्नार्ड सिल्वर ने मोर्स कोड से प्रेरणा लेकर 1949 में बारकोड प्रणाली तैयार की, जिसका अमेरिकी पेटेंट 1952 में प्राप्त हुआ।",
+            exp_en: "Norman Joseph Woodland and Bernard Silver patented the linear barcode system in October 1952 (US Patent 2,612,994), deriving the concept from extended Morse code lines."
+        },
+        {
+            id: 2,
+            q_hi: "जापान की डेंसो वेव कंपनी में वर्ष 1994 में द्वि-विमीय 'क्यूआर कोड' (QR Code - Quick Response) का आविष्कार किसने किया था?",
+            q_en: "Who invented the 2D matrix 'QR Code' (Quick Response Code) in 1994 at Denso Wave, Japan?",
+            options_hi: [
+                "मासाहिरो हारा (Masahiro Hara)",
+                "केनिची ओमाए",
+                "अकीओ मोरिता",
+                "योशिरो नाकामात्सु"
+            ],
+            options_en: [
+                "Masahiro Hara",
+                "Kenichi Ohmae",
+                "Akio Morita",
+                "Yoshiro Nakamatsu"
+            ],
+            correct: 0,
+            exp_hi: "मासाहिरो हारा (Masahiro Hara) ने 1994 में ऑटोमोबाइल उद्योग में पुर्जों की तीव्र ट्रैकिंग हेतु QR कोड का आविष्कार किया था। इसमें 3 कोनों में विशिष्ट स्थिति संसूचक वर्ग होते हैं।",
+            exp_en: "Masahiro Hara developed the QR code in 1994 at Denso Wave to provide rapid decoding and high data storage through a 2D matrix with position detection markers."
+        },
+        {
+            id: 3,
+            q_hi: "पुस्तकालयों में अक्षरों एवं अंकों दोनों (Alphanumeric) से युक्त परिग्रहण संख्या (Accession Number) मुद्रित करने हेतु कौन-सा 1D बारकोड सर्वाधिक प्रयुक्त होता है?",
+            q_en: "Which 1D barcode symbology capable of encoding alphanumeric characters is most prevalent in libraries for accession numbers?",
+            options_hi: [
+                "Code 39",
+                "UPC-A (केवल 12 अंक)",
+                "EAN-8",
+                "Postal Code"
+            ],
+            options_en: [
+                "Code 39",
+                "UPC-A (numeric only)",
+                "EAN-8",
+                "Postal Code"
+            ],
+            correct: 0,
+            exp_hi: "Code 39 (3 of 9) अक्षरों (A-Z), अंकों (0-9) तथा विशेष प्रतीकों को कोडित कर सकता है, इसलिए पुस्तकालयों में पुस्तकों की परिग्रहण संख्या हेतु यह सर्वाधिक लोकप्रिय है।",
+            exp_en: "Code 39 is widely deployed in library accessioning because it accommodates both alphabetic letters and numerical digits within variable-length barcodes."
+        },
+        {
+            id: 4,
+            q_hi: "विश्व भर के पुस्तकालयों में आरएफआईडी (RFID) प्रणालियों के संचालन हेतु कौन-सी रेडियो आवृत्ति अंतरराष्ट्रीय मानक के रूप में स्वीकृत है?",
+            q_en: "Which radio frequency band is universally standardized and adopted worldwide for library RFID operations under ISO 15693 / 18000-3?",
+            options_hi: [
+                "125 kHz (लो-फ्रीक्वेंसी)",
+                "13.56 MHz (हाई-फ्रीक्वेंसी / HF Band)",
+                "865 MHz (UHF Band)",
+                "2.4 GHz (माइक्रोवेव)"
+            ],
+            options_en: [
+                "125 kHz (Low Frequency)",
+                "13.56 MHz (High Frequency / HF Band)",
+                "865 MHz (UHF Band)",
+                "2.4 GHz (Microwave)"
+            ],
+            correct: 1,
+            exp_hi: "पुस्तकालयों हेतु अंतरराष्ट्रीय स्तर पर 13.56 MHz (HF बैंड) स्वीकृत है क्योंकि यह आवृत्ति कागज और मानव शरीर से अप्रभावित रहती है और 1 मीटर के दायरे में अत्यधिक सटीक कार्य करती है।",
+            exp_en: "The High Frequency (HF) 13.56 MHz band is the universal library RFID standard; it penetrates paper effectively without human tissue absorption interference within a 1-meter zone."
+        },
+        {
+            id: 5,
+            q_hi: "पुस्तकालय की पुस्तकों में प्रयुक्त होने वाले RFID टैग्स सामान्यतः किस प्रकार के होते हैं?",
+            q_en: "What type of RFID tags are predominantly pasted inside library books?",
+            options_hi: [
+                "सक्रिय टैग (Active Tags - आंतरिक बैटरी सहित)",
+                "पैसिव टैग (Passive Tags - बिना बैटरी वाले, रेडियो तरंगों से ऊर्जा लेने वाले)",
+                "सौर ऊर्जा संचालित टैग",
+                "रासायनिक टैग"
+            ],
+            options_en: [
+                "Active Tags (containing internal batteries)",
+                "Passive Tags (battery-less, powered magnetically by the reader's RF field)",
+                "Solar-powered Tags",
+                "Chemical Tags"
+            ],
+            correct: 1,
+            exp_hi: "पुस्तकालयों में 'पैसिव टैग' (Passive Tags) प्रयुक्त होते हैं। इनमें कोई बैटरी नहीं होती, ये अत्यंत सस्ते और पतले होते हैं तथा जब RFID रीडर के पास आते हैं तो उसकी रेडियो तरंगों से विद्युत ऊर्जा पाकर सक्रिय होते हैं।",
+            exp_en: "Library RFID tags are Passive Transponders without internal power cells; they harvest energy electromagnetically from the interrogator's radio frequency field upon entering it."
+        },
+        {
+            id: 6,
+            q_hi: "RFID टैग की चिप में मौजूद वह कौन-सा सुरक्षा घटक है जो पुस्तक की अनधिकृत चोरी होने पर सुरक्षा गेट्स (Exit Gates) पर अलार्म बजा देता है?",
+            q_en: "Which anti-theft security element embedded inside a library RFID tag triggers audible alarms at exit gates if a book is stolen?",
+            options_hi: [
+                "EAS बिट (Electronic Article Surveillance Bit)",
+                "कॉल नंबर",
+                "प्रकाशक का नाम",
+                "मूल्य टैग"
+            ],
+            options_en: [
+                "EAS Bit (Electronic Article Surveillance Bit)",
+                "Call Number",
+                "Publisher's Name",
+                "Price Tag"
+            ],
+            correct: 0,
+            exp_hi: "EAS (Electronic Article Surveillance) बिट RFID टैग का चोरी-निरोधक सुरक्षा स्विच है। यदि बिना निर्गमन कराए पुस्तक गेट से बाहर ले जाई जाती है, तो गेट का अलार्म बज उठता है।",
+            exp_en: "The EAS (Electronic Article Surveillance) bit is the electronic security flag within the RFID chip; when active (armed), exit gate sensors trigger an audible and visual alarm."
+        },
+        {
+            id: 7,
+            q_hi: "जब कोई पाठक परिसंचरण काउंटर या सेल्फ-कियोस्क पर पुस्तक को विधिवत निर्गमित (Check-out) कराता है, तो टैग की EAS बिट की स्थिति क्या हो जाती है?",
+            q_en: "When a book is legitimately checked out by a patron at a circulation desk or self-kiosk, what happens to its EAS security bit?",
+            options_hi: [
+                "सक्रिय (Armed / Activated)",
+                "अक्रिय / निष्क्रिय (Disarmed / Deactivated)",
+                "चिप स्थायी रूप से नष्ट हो जाती है",
+                "टैग का डेटा मिट जाता है"
+            ],
+            options_en: [
+                "Armed / Activated",
+                "Disarmed / Deactivated",
+                "The chip is permanently destroyed",
+                "The tag data is completely erased"
+            ],
+            correct: 1,
+            exp_hi: "वैध निर्गमन (Issue) के समय RFID रीडर EAS बिट को 'Deactivate / Disarm' कर देता है, जिससे पाठक बिना अलार्म बजे पुस्तक लेकर सुरक्षा गेट से बाहर जा सकता है। वापसी पर यह पुनः Activate हो जाता है।",
+            exp_en: "During checkout, the circulation RFID reader disarms/deactivates the EAS security bit, permitting unhindered passage through security exit pedestals without alarms."
+        },
+        {
+            id: 8,
+            q_hi: "पुस्तकालयों में बिना पुस्तकों को अलमारी से उतारे शेल्फ पर ही तीव्र 'भंडार सत्यापन' (Stock Verification) करने हेतु किस उपकरण का उपयोग किया जाता है?",
+            q_en: "Which portable device is utilized to conduct ultra-fast inventory shelf-audits without removing books from their physical shelves?",
+            options_hi: [
+                "हैंडहेल्ड RFID रीडर / वैंड (Handheld RFID Reader / Wand)",
+                "फ्लैटबेड स्कैनर",
+                "बारकोड प्रिंटर",
+                "वेब कैमरा"
+            ],
+            options_en: [
+                "Handheld RFID Reader / Wand",
+                "Flatbed Scanner",
+                "Barcode Printer",
+                "Web Camera"
+            ],
+            correct: 0,
+            exp_hi: "हैंडहेल्ड RFID रीडर (ताररहित डंडा/वैंड) को अलमारी के सामने से गुजारने पर यह प्रति सेकंड दर्जनों पुस्तकों को शेल्फ पर ही पढ़ लेता है, जिससे हजारों पुस्तकों का स्टॉक सत्यापन कुछ ही घंटों में हो जाता है।",
+            exp_en: "A Handheld RFID Wand scans dozens of shelf items per second via wireless RF emissions, instantly verifying inventory and locating misplaced call numbers without pulling books down."
+        },
+        {
+            id: 9,
+            q_hi: "पुस्तकालयों में RFID टैग्स पर डेटा प्रारूप (Data Model) को मानकीकृत करने वाला अंतरराष्ट्रीय मानक कौन-सा है?",
+            q_en: "Which international standard specifies the data model and encoding rules for RFID tags in libraries?",
+            options_hi: [
+                "ISO 28560 (1, 2, 3)",
+                "ISO 9001",
+                "ISO 2709",
+                "ISO 14000"
+            ],
+            options_en: [
+                "ISO 28560 (Parts 1, 2, 3)",
+                "ISO 9001",
+                "ISO 2709",
+                "ISO 14000"
+            ],
+            correct: 0,
+            exp_hi: "ISO 28560 पुस्तकालयों में RFID टैग्स के डेटा मॉडल (Data Model for RFID in Libraries) का अंतरराष्ट्रीय मानक है, जो यह तय करता है कि प्राथमिक पहचानकर्ता (Accession No.) और देश कोड कैसे संग्रहीत होंगे।",
+            exp_en: "ISO 28560 defines the unified data structure and encoding mechanisms governing library RFID microchips to ensure global equipment interoperability."
+        },
+        {
+            id: 10,
+            q_hi: "पुस्तकालय स्वचालन सॉफ्टवेयर (जैसे KOHA) और RFID हार्डवेयर (कियोस्क, गेट्स) के मध्य संवाद स्थापित करने वाला मानक संचार प्रोटोकॉल कौन-सा है?",
+            q_en: "Which standard data communication protocol bridges RFID hardware (kiosks, return chutes, security gates) with the library ILMS?",
+            options_hi: [
+                "SIP2 (Standard Interchange Protocol 2) एवं NCIP",
+                "HTTP केवल",
+                "SMTP",
+                "SNMP"
+            ],
+            options_en: [
+                "SIP2 (Standard Interchange Protocol 2) and NCIP",
+                "HTTP only",
+                "SMTP",
+                "SNMP"
+            ],
+            correct: 0,
+            exp_hi: "3M कंपनी द्वारा विकसित SIP2 (Standard Interchange Protocol) और NCIP प्रोटोकॉल RFID कियोस्क और ऑटोमेटेड गेट्स को पुस्तकालय के ILMS से जोड़ते हैं।",
+            exp_en: "3M's SIP2 and NISO's NCIP protocol govern live message exchange between automated RFID self-service peripherals and the ILMS database."
+        },
+        {
+            id: 11,
+            q_hi: "पाठकों को पुस्तकालय बंद होने के बाद भी (24×7) बिना किसी कर्मचारी की सहायता के पुस्तकें वापस (Return) करने की सुविधा कौन-सा उपकरण देता है?",
+            q_en: "Which automated RFID hardware terminal empowers patrons to return books 24×7 without staff intervention and receive instant SMS/receipts?",
+            options_hi: [
+                "स्मार्ट बुक ड्रॉप बॉक्स / रिटर्न च्यूट (Smart Book Drop Box / Return Chute)",
+                "ओपेक टर्मिनल",
+                "फोटोकॉपी मशीन",
+                "प्रवेश द्वार बैरियर"
+            ],
+            options_en: [
+                "Smart Book Drop Box / Return Chute",
+                "OPAC Terminal",
+                "Photocopy Machine",
+                "Entrance Barrier"
+            ],
+            correct: 0,
+            exp_hi: "स्मार्ट बुक ड्रॉप बॉक्स पुस्तकालय के बाहर स्थापित होता है। इसमें पुस्तक डालते ही आंतरिक RFID रीडर पुस्तक की पहचान कर उसे उपयोगकर्ता के खाते से तुरंत डिस्चार्ज कर देता है।",
+            exp_en: "A Smart Book Drop Box allows patrons to return items round the clock; internal readers sense the tag, automatically clear the patron's account, and re-arm the EAS bit."
+        },
+        {
+            id: 12,
+            q_hi: "बारकोड तकनीक की तुलना में आरएफआईडी (RFID) तकनीक का सबसे बड़ा तकनीकी लाभ क्या है?",
+            q_en: "What is the primary operational advantage of RFID technology over traditional optical barcodes?",
+            options_hi: [
+                "इसमें दृष्टि-रेखा (Line of Sight) की आवश्यकता नहीं होती और एक साथ कई पुस्तकों को स्कैन किया जा सकता है (Bulk reading)",
+                "यह बारकोड से 100 गुना सस्ता होता है",
+                "इसमें किसी कंप्यूटर की आवश्यकता नहीं होती",
+                "यह केवल लकड़ी की किताबों पर काम करता है"
+            ],
+            options_en: [
+                "It requires no line of sight and enables simultaneous bulk reading of multiple books",
+                "It is 100 times cheaper than barcode labels",
+                "It functions completely without computers",
+                "It works exclusively on wooden books"
+            ],
+            correct: 0,
+            exp_hi: "बारकोड में स्कैनर को सीधे बारकोड के सामने रखना पड़ता है और एक बार में एक ही किताब पढ़ी जा सकती है। जबकि RFID में बिना पुस्तक खोले एक साथ 4-5 पुस्तकें सेकंडों में स्कैन (Bulk reading) हो जाती हैं।",
+            exp_en: "Unlike optical barcodes requiring clear line-of-sight and single-item scanning, RFID radio waves pass through covers, allowing simultaneous multi-item bulk check-in/out."
+        },
+        {
+            id: 13,
+            q_hi: "विश्व में सर्वप्रथम किस वर्ष में पुस्तकालयों में आरएफआईडी (RFID) प्रणाली का संस्थागत उपयोग प्रारंभ हुआ था?",
+            q_en: "In which year was RFID technology first adopted at an institutional library scale (National Library of Singapore & Rockefeller University)?",
+            options_hi: [
+                "1974 ई.",
+                "1985 ई.",
+                "1998 ई. (1998)",
+                "2010 ई."
+            ],
+            options_en: [
+                "1974",
+                "1985",
+                "1998",
+                "2010"
+            ],
+            correct: 2,
+            exp_hi: "वर्ष 1998 में रॉकफेलर यूनिवर्सिटी लाइब्रेरी (न्यूयॉर्क) और नेशनल लाइब्रेरी ऑफ सिंगापुर दुनिया के पहले पुस्तकालय बने जिन्होंने पुस्तकालय प्रबंधन और सुरक्षा हेतु RFID प्रणाली स्थापित की।",
+            exp_en: "Library deployment of RFID technology commenced in 1998, pioneered by Rockefeller University Library in the US and the National Library of Singapore."
+        },
+        {
+            id: 14,
+            q_hi: "पुस्तकों पर मुद्रित 13-अंकीय अंतरराष्ट्रीय मानक पुस्तक संख्या (ISBN) को बारकोड में निरूपित करने हेतु किस प्रारूप का उपयोग किया जाता है?",
+            q_en: "Which barcode symbology format is utilized globally to encode the 13-digit ISBN on the back covers of published books?",
+            options_hi: [
+                "EAN-13 / बुकलैंड ईएएन (Bookland EAN)",
+                "Code 39",
+                "QR Code",
+                "PDF417"
+            ],
+            options_en: [
+                "EAN-13 / Bookland EAN",
+                "Code 39",
+                "QR Code",
+                "PDF417"
+            ],
+            correct: 0,
+            exp_hi: "पुस्तकों पर ISBN को प्रदर्शित करने हेतु अंतरराष्ट्रीय स्तर पर 'EAN-13' (Bookland EAN) बारकोड सिम्बोलॉजी का उपयोग किया जाता है जो 978 या 979 उपसर्ग से प्रारंभ होता है।",
+            exp_en: "Bookland EAN (an EAN-13 barcode format prefixed with 978 or 979) is the global standard for printing machine-readable ISBNs on book covers."
+        },
+        {
+            id: 15,
+            q_hi: "एक द्वि-विमीय क्यूआर कोड (QR Code) में 3 कोनों पर स्थित बड़े वर्गाकार चिन्हों को क्या कहा जाता है?",
+            q_en: "What are the three distinctive square markers positioned at the corners of a 2D QR Code called?",
+            options_hi: [
+                "स्थिति संसूचक वर्ग (Position Detection Patterns / Squares)",
+                "बैटरी चार्जिंग बिंदु",
+                "एंटीना कुंडलियां",
+                "कॉपीराइट प्रतीक"
+            ],
+            options_en: [
+                "Position Detection Patterns / Squares",
+                "Battery charging points",
+                "Antenna coils",
+                "Copyright symbols"
+            ],
+            correct: 0,
+            exp_hi: "QR कोड के तीन कोनों पर 'Position Detection Patterns' (स्थिति संसूचक वर्ग) बने होते हैं, जिनकी सहायता से स्कैनर किसी भी कोण (360 डिग्री) से कोड के सही ओरिएंटेशन और आकार को तुरंत पहचान लेता है।",
+            exp_en: "The three corner squares are Position Detection Patterns; they allow optical scanner sensors to normalize perspective, skew, and orientation rapidly from any angle."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let currentLang = 'both';
+    let timerInterval = null;
+    let timeLeft = 20 * 60;
+
+    const STORAGE_KEY = 'bihar_let_u5_2_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

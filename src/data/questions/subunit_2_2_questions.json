@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u2_sub2_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "ब्राउन परिसंचरण प्रणाली (Browne Charging System) का आविष्कार 1895 में किस अमेरिकी पुस्तकालयाध्यक्ष द्वारा किया गया था?",
+    "q_en": "The Browne Charging System was invented in 1895 by which American librarian?",
+    "options_hi": [
+      "नीना ई. ब्राउन (Nina E. Browne)",
+      "जॉन कॉटन डाना (John Cotton Dana)",
+      "राल्फ शॉ (Ralph Shaw)",
+      "मेल्विल डेवी"
+    ],
+    "options_en": [
+      "Nina E. Browne",
+      "John Cotton Dana",
+      "Ralph Shaw",
+      "Melvil Dewey"
+    ],
+    "options": [
+      {
+        "hi": "नीना ई. ब्राउन (Nina E. Browne)",
+        "en": "Nina E. Browne"
+      },
+      {
+        "hi": "जॉन कॉटन डाना (John Cotton Dana)",
+        "en": "John Cotton Dana"
+      },
+      {
+        "hi": "राल्फ शॉ (Ralph Shaw)",
+        "en": "Ralph Shaw"
+      },
+      {
+        "hi": "मेल्विल डेवी",
+        "en": "Melvil Dewey"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ब्राउन प्रणाली का आविष्कार 1895 में बोस्टन एथेनियम (USA) की लाइब्रेरियन नीना ई. ब्राउन (Nina E. Browne) द्वारा किया गया था। यह एक सरल, कार्ड-आधारित और नो-राइटिंग (बिना लिखावट वाली) प्रणाली है।",
+    "exp_en": "The Browne Charging System was devised in 1895 by Nina E. Browne, Librarian of the Boston Athenaeum, USA, based on an unwritten, pocket-in-pocket card-pairing principle."
+  },
+  {
+    "globalId": "u2_sub2_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "नेवार्क परिसंचरण प्रणाली (Newark Charging System) का प्रतिपादन 1900 में किसके द्वारा किया गया था?",
+    "q_en": "Who introduced the Newark Charging System in the year 1900?",
+    "options_hi": [
+      "डब्ल्यू.सी. बेरविक सायर्स",
+      "जॉन कॉटन डाना (John Cotton Dana)",
+      "नीना ई. ब्राउन",
+      "चार्ल्स एम्मी कटर"
+    ],
+    "options_en": [
+      "W.C. Berwick Sayers",
+      "John Cotton Dana",
+      "Nina E. Browne",
+      "C.A. Cutter"
+    ],
+    "options": [
+      {
+        "hi": "डब्ल्यू.सी. बेरविक सायर्स",
+        "en": "W.C. Berwick Sayers"
+      },
+      {
+        "hi": "जॉन कॉटन डाना (John Cotton Dana)",
+        "en": "John Cotton Dana"
+      },
+      {
+        "hi": "नीना ई. ब्राउन",
+        "en": "Nina E. Browne"
+      },
+      {
+        "hi": "चार्ल्स एम्मी कटर",
+        "en": "C.A. Cutter"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नेवार्क प्रणाली का आविष्कार वर्ष 1900 में जॉन कॉटन डाना (John Cotton Dana) द्वारा नेवार्क पब्लिक लाइब्रेरी (New Jersey, USA) में किया गया था।",
+    "exp_en": "The Newark Charging System was developed in 1900 by John Cotton Dana at the Newark Public Library in New Jersey, USA."
+  },
+  {
+    "globalId": "u2_sub2_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "ब्राउन परिसंचरण प्रणाली में 'पाठक टिकट' (Reader's Ticket) का भौतिक स्वरूप किस रूप में होता है?",
+    "q_en": "In the Browne Charging System, what is the physical form of the Reader's Ticket?",
+    "options_hi": [
+      "एक चपटा प्लास्टिक कार्ड",
+      "एक मुद्रित पर्ची",
+      "कार्डबोर्ड की जेब / थैली (Pocket / Envelope)",
+      "धातु की उत्कीर्णित प्लेट"
+    ],
+    "options_en": [
+      "A flat plastic card",
+      "A printed slip",
+      "A cardboard pocket / envelope",
+      "An engraved metal plate"
+    ],
+    "options": [
+      {
+        "hi": "एक चपटा प्लास्टिक कार्ड",
+        "en": "A flat plastic card"
+      },
+      {
+        "hi": "एक मुद्रित पर्ची",
+        "en": "A printed slip"
+      },
+      {
+        "hi": "कार्डबोर्ड की जेब / थैली (Pocket / Envelope)",
+        "en": "A cardboard pocket / envelope"
+      },
+      {
+        "hi": "धातु की उत्कीर्णित प्लेट",
+        "en": "An engraved metal plate"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "ब्राउन प्रणाली में पाठक की टिकट एक जेब (Pocket/Envelope) के रूप में होती है। जब पुस्तक जारी की जाती है, तो पुस्तक कार्ड को इस पाठक टिकट (पॉकेट) के अंदर डाल दिया जाता है (Pocket-in-Pocket principle)।",
+    "exp_en": "In the Browne system, the reader's ticket is shaped like a pocket or envelope. The book card is slid inside this reader's pocket to record the loan."
+  },
+  {
+    "globalId": "u2_sub2_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "निम्नलिखित में से किस परिसंचरण प्रणाली की सबसे प्रमुख विशेषता यह है कि इसमें 'स्थायी पठन रिकॉर्ड' (Permanent Circulation Record) सुरक्षित रहता है?",
+    "q_en": "Which of the following circulation systems is characterized by maintaining a 'Permanent Record' of borrowing history for both books and readers?",
+    "options_hi": [
+      "ब्राउन प्रणाली",
+      "नेवार्क प्रणाली",
+      "डमी प्रणाली",
+      "डेट्रायट प्रणाली"
+    ],
+    "options_en": [
+      "Browne System",
+      "Newark System",
+      "Dummy System",
+      "Detroit System"
+    ],
+    "options": [
+      {
+        "hi": "ब्राउन प्रणाली",
+        "en": "Browne System"
+      },
+      {
+        "hi": "नेवार्क प्रणाली",
+        "en": "Newark System"
+      },
+      {
+        "hi": "डमी प्रणाली",
+        "en": "Dummy System"
+      },
+      {
+        "hi": "डेट्रायट प्रणाली",
+        "en": "Detroit System"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नेवार्क प्रणाली में बुक कार्ड पर पाठक की सदस्यता संख्या और बॉरोअर कार्ड पर देय तिथि की मुहर लगाई जाती है, जिससे यह रिकॉर्ड हमेशा सुरक्षित रहता है कि पुस्तक किसने पढ़ी और पाठक ने कौन-सी पुस्तकें पढ़ीं।",
+    "exp_en": "The Newark system maintains permanent records because borrower numbers are written onto book cards and dates are stamped on borrower cards, preserving historical loan data."
+  },
+  {
+    "globalId": "u2_sub2_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "ब्राउन प्रणाली का सबसे मुख्य दोष (Major Limitation) क्या है?",
+    "q_en": "What is the primary drawback or limitation of the Browne Charging System?",
+    "options_hi": [
+      "यह बहुत धीमी और जटिल है",
+      "इसमें किसी भी पुस्तक या पाठक का स्थायी पठन इतिहास नहीं रहता",
+      "यह अत्यधिक महंगी है",
+      "इसके लिए बिजली की आवश्यकता होती है"
+    ],
+    "options_en": [
+      "It is excessively slow and complicated",
+      "It does not maintain any permanent reading history of borrowers or books",
+      "It is prohibitively expensive",
+      "It requires electric power"
+    ],
+    "options": [
+      {
+        "hi": "यह बहुत धीमी और जटिल है",
+        "en": "It is excessively slow and complicated"
+      },
+      {
+        "hi": "इसमें किसी भी पुस्तक या पाठक का स्थायी पठन इतिहास नहीं रहता",
+        "en": "It does not maintain any permanent reading history of borrowers or books"
+      },
+      {
+        "hi": "यह अत्यधिक महंगी है",
+        "en": "It is prohibitively expensive"
+      },
+      {
+        "hi": "इसके लिए बिजली की आवश्यकता होती है",
+        "en": "It requires electric power"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ब्राउन प्रणाली में पुस्तक वापस आते ही बुक कार्ड पुस्तक में और पाठक टिकट पाठक को लौटा दिया जाता है। अतः वर्ष के अंत में यह नहीं जाना जा सकता कि किसी विशिष्ट पाठक ने कौन-कौन सी पुस्तकें पढ़ीं या किसी पुस्तक को किन पाठकों ने पढ़ा।",
+    "exp_en": "In Browne charging, once a book is returned, the pair is separated with no trail left behind, making it impossible to reconstruct borrower reading histories or title circulation frequency."
+  },
+  {
+    "globalId": "u2_sub2_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "पुस्तकालयों में प्रयुक्त प्रथम 'यांत्रिक पुस्तक निर्गम मशीन' (First Mechanical Charging Machine) कौन-सी थी, जिसे 1927 में पेश किया गया था?",
+    "q_en": "Which was the first mechanical book charging machine introduced in libraries in 1927?",
+    "options_hi": [
+      "गेलॉर्ड इलेक्ट्रिक मशीन",
+      "डिकमैन चार्जिंग सिस्टम (Dickman System)",
+      "रिकॉर्डक फोटो-चार्जिंग",
+      "आईबीएम पंच कार्ड सिस्टम"
+    ],
+    "options_en": [
+      "Gaylord Electric Machine",
+      "Dickman Charging System",
+      "Recordak Photo-charging",
+      "IBM Punched Card System"
+    ],
+    "options": [
+      {
+        "hi": "गेलॉर्ड इलेक्ट्रिक मशीन",
+        "en": "Gaylord Electric Machine"
+      },
+      {
+        "hi": "डिकमैन चार्जिंग सिस्टम (Dickman System)",
+        "en": "Dickman Charging System"
+      },
+      {
+        "hi": "रिकॉर्डक फोटो-चार्जिंग",
+        "en": "Recordak Photo-charging"
+      },
+      {
+        "hi": "आईबीएम पंच कार्ड सिस्टम",
+        "en": "IBM Punched Card System"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डिकमैन चार्जिंग सिस्टम (1927) पहली यांत्रिक मशीन थी, जिसमें पाठक के धातु कार्ड (Metal Tag) और तारीख के पहिए द्वारा पुस्तक कार्ड पर विवरण मुद्रित किया जाता था।",
+    "exp_en": "The Dickman Bookcharger (1927) was the first mechanical charging device, using an embossed metal borrower tag and date wheels to stamp transaction data."
+  },
+  {
+    "globalId": "u2_sub2_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "पुस्तकालय कर्मचारियों का समय बचाने हेतु 'डेट्रायट सेल्फ-चार्जिंग सिस्टम' (Detroit Self-Charging System, 1929) का विकास किसके द्वारा किया गया था?",
+    "q_en": "The 'Detroit Self-Charging System' (1929), designed to save library staff time through patron self-charging, was devised by:",
+    "options_hi": [
+      "राल्फ उल्वेलिंग (Ralph Ulveling)",
+      "राल्फ शॉ (Ralph Shaw)",
+      "नीना ब्राउन",
+      "जॉन कॉटन डाना"
+    ],
+    "options_en": [
+      "Ralph Ulveling",
+      "Ralph Shaw",
+      "Nina Browne",
+      "John Cotton Dana"
+    ],
+    "options": [
+      {
+        "hi": "राल्फ उल्वेलिंग (Ralph Ulveling)",
+        "en": "Ralph Ulveling"
+      },
+      {
+        "hi": "राल्फ शॉ (Ralph Shaw)",
+        "en": "Ralph Shaw"
+      },
+      {
+        "hi": "नीना ब्राउन",
+        "en": "Nina Browne"
+      },
+      {
+        "hi": "जॉन कॉटन डाना",
+        "en": "John Cotton Dana"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "डेट्रायट सेल्फ-चार्जिंग प्रणाली का विकास 1929 में राल्फ उल्वेलिंग (Ralph Ulveling) ने किया था। इसमें पाठक स्वयं बुक कार्ड पर अपनी सदस्यता संख्या दर्ज करके काउंटर पर सत्यापन कराता है।",
+    "exp_en": "The Detroit Self-Charging System was developed in 1929 by Ralph Ulveling at the Detroit Public Library, having patrons write their own identification numbers on book cards."
+  },
+  {
+    "globalId": "u2_sub2_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "माइक्रोफिल्म कैमरे द्वारा पुस्तक कार्ड, पाठक कार्ड और देय तिथि पर्ची का एक साथ चित्र खींचकर निर्गम करने वाली 'फोटो-चार्जिंग' (Photo-charging, 1947) प्रणाली के जनक कौन थे?",
+    "q_en": "Who invented the 'Photo-charging' system (1947), which simultaneously microfilmed the book card, reader card, and date due slip?",
+    "options_hi": [
+      "राल्फ आर. शॉ (Ralph R. Shaw)",
+      "मेल्विल डेवी",
+      "एच.पी. लुहान",
+      "डॉ. रंगनाथन"
+    ],
+    "options_en": [
+      "Ralph R. Shaw",
+      "Melvil Dewey",
+      "H.P. Luhn",
+      "Dr. Ranganathan"
+    ],
+    "options": [
+      {
+        "hi": "राल्फ आर. शॉ (Ralph R. Shaw)",
+        "en": "Ralph R. Shaw"
+      },
+      {
+        "hi": "मेल्विल डेवी",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "एच.पी. लुहान",
+        "en": "H.P. Luhn"
+      },
+      {
+        "hi": "डॉ. रंगनाथन",
+        "en": "Dr. Ranganathan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अमेरिकी कृषि विभाग पुस्तकालय के लाइब्रेरियन राल्फ आर. शॉ (Ralph R. Shaw) ने 1947 में फोटो-चार्जिंग (Photo-charging / Recordak) प्रणाली का आविष्कार किया था।",
+    "exp_en": "Dr. Ralph R. Shaw invented the Photo-charging system in 1947 at the US Department of Agriculture Library, using a Recordak micro-camera to film transaction elements together."
+  },
+  {
+    "globalId": "u2_sub2_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "पुस्तकालय से बाहर जा चुके किसी प्रलेख को किसी अन्य पाठक की मांग पर वापस मंगाने या सुरक्षित रखने की प्रक्रिया क्या कहलाती है?",
+    "q_en": "What is the administrative procedure of holding or calling back a currently checked-out document for another intending user called?",
+    "options_hi": [
+      "अंतर-पुस्तकालय ऋण (ILL)",
+      "पुस्तक आरक्षण / रिकॉल (Reservation / Recall of Books)",
+      "भंडार सत्यापन (Stock Verification)",
+      "सामयिक अभिज्ञता सेवा (CAS)"
+    ],
+    "options_en": [
+      "Inter-Library Loan (ILL)",
+      "Reservation / Recall of Books",
+      "Stock Verification",
+      "Current Awareness Service (CAS)"
+    ],
+    "options": [
+      {
+        "hi": "अंतर-पुस्तकालय ऋण (ILL)",
+        "en": "Inter-Library Loan (ILL)"
+      },
+      {
+        "hi": "पुस्तक आरक्षण / रिकॉल (Reservation / Recall of Books)",
+        "en": "Reservation / Recall of Books"
+      },
+      {
+        "hi": "भंडार सत्यापन (Stock Verification)",
+        "en": "Stock Verification"
+      },
+      {
+        "hi": "सामयिक अभिज्ञता सेवा (CAS)",
+        "en": "Current Awareness Service (CAS)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "जब कोई मांगी गई पुस्तक पहले से किसी अन्य सदस्य को जारी हो, तो परिसंचरण पटल पर उसके लिए 'आरक्षण पर्ची' (Reservation Slip / Recall) भरी जाती है ताकि वापस आते ही वह पुस्तक आवेदक को मिल सके।",
+    "exp_en": "Reservation (or Recall) is the circulation service by which a checked-out book is reserved for another user and placed on hold immediately upon discharge."
+  },
+  {
+    "globalId": "u2_sub2_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "परिसंचरण में 'ब्राउन' और 'नेवार्क' दोनों प्रणालियां पुस्तकालय विज्ञान के किस आधारभूत सूत्र को संतुष्ट करने हेतु विकसित की गई थीं?",
+    "q_en": "Both the Browne and Newark circulation systems were fundamentally designed to fulfill which Law of Library Science?",
+    "options_hi": [
+      "प्रथम सूत्र (Books are for use)",
+      "द्वितीय सूत्र (Every reader his book)",
+      "चतुर्थ सूत्र (Save the time of the reader)",
+      "पंचम सूत्र (Library is a growing organism)"
+    ],
+    "options_en": [
+      "First Law (Books are for use)",
+      "Second Law (Every reader his book)",
+      "Fourth Law (Save the time of the reader)",
+      "Fifth Law (Library is a growing organism)"
+    ],
+    "options": [
+      {
+        "hi": "प्रथम सूत्र (Books are for use)",
+        "en": "First Law (Books are for use)"
+      },
+      {
+        "hi": "द्वितीय सूत्र (Every reader his book)",
+        "en": "Second Law (Every reader his book)"
+      },
+      {
+        "hi": "चतुर्थ सूत्र (Save the time of the reader)",
+        "en": "Fourth Law (Save the time of the reader)"
+      },
+      {
+        "hi": "पंचम सूत्र (Library is a growing organism)",
+        "en": "Fifth Law (Library is a growing organism)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "रजिस्टर प्रणाली में लगने वाले घंटों के विलंब को समाप्त कर सेकंडों में पुस्तक जारी/वापस करने हेतु कार्ड-आधारित प्रणालियां बनाई गईं, जो सीधे चतुर्थ सूत्र 'पाठक का समय बचाएं' (Save the Time of the Reader) को संतुष्ट करती हैं।",
+    "exp_en": "Card-based circulation eliminated long checkout queues and manual ledger recording, directly honoring the Fourth Law of Library Science: 'Save the Time of the Reader'."
+  },
+  {
+    "globalId": "u2_sub2_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "नेवार्क प्रणाली में 'उधारकर्ता कार्ड' (Borrower's Card) किसके पास रहता है?",
+    "q_en": "In the Newark Charging System, in whose custody does the 'Borrower's Card' remain?",
+    "options_hi": [
+      "पुस्तकालय के चार्जिंग ट्रे में जमा रहता है",
+      "उधारकर्ता / पाठक के स्वयं के पास रहता है",
+      "पुस्तक की जेब (Book Pocket) के अंदर रहता है",
+      "पुस्तकालयाध्यक्ष की अलमारी में बंद रहता है"
+    ],
+    "options_en": [
+      "Retained in the library charging tray",
+      "Retained by the borrower / patron",
+      "Placed inside the book pocket",
+      "Kept in the librarian's office"
+    ],
+    "options": [
+      {
+        "hi": "पुस्तकालय के चार्जिंग ट्रे में जमा रहता है",
+        "en": "Retained in the library charging tray"
+      },
+      {
+        "hi": "उधारकर्ता / पाठक के स्वयं के पास रहता है",
+        "en": "Retained by the borrower / patron"
+      },
+      {
+        "hi": "पुस्तक की जेब (Book Pocket) के अंदर रहता है",
+        "en": "Placed inside the book pocket"
+      },
+      {
+        "hi": "पुस्तकालयाध्यक्ष की अलमारी में बंद रहता है",
+        "en": "Kept in the librarian's office"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नेवार्क प्रणाली में Borrower's Card पर देय तिथि की मुहर लगाकर पाठक को तुरंत वापस कर दिया जाता है; जबकि बुक कार्ड को पुस्तकालय की ट्रे में फाइल किया जाता है। (ब्राउन में इसके विपरीत पाठक टिकट पुस्तकालय में जमा होता है)।",
+    "exp_en": "In the Newark system, the Borrower's Card is returned to the patron after being stamped with the due date, while the book card is filed in the charging tray."
+  },
+  {
+    "globalId": "u2_sub2_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "पुस्तकालय के बंद होने के बाद अथवा अवकाश के दिनों में भी पाठकों द्वारा पुस्तकें जमा करने हेतु किस उपकरण का उपयोग किया जाता है?",
+    "q_en": "Which equipment is used by libraries to allow patrons to return borrowed books after closing hours or during holidays?",
+    "options_hi": [
+      "सेल्फ चेक-आउट कियोस्क",
+      "बुक ड्रॉप बॉक्स (Book Drop Box / Smart Chute)",
+      "बारकोड प्रिंटर",
+      "RFID सुरक्षा गेट"
+    ],
+    "options_en": [
+      "Self Checkout Kiosk",
+      "Book Drop Box / Smart Chute",
+      "Barcode Printer",
+      "RFID Security Gate"
+    ],
+    "options": [
+      {
+        "hi": "सेल्फ चेक-आउट कियोस्क",
+        "en": "Self Checkout Kiosk"
+      },
+      {
+        "hi": "बुक ड्रॉप बॉक्स (Book Drop Box / Smart Chute)",
+        "en": "Book Drop Box / Smart Chute"
+      },
+      {
+        "hi": "बारकोड प्रिंटर",
+        "en": "Barcode Printer"
+      },
+      {
+        "hi": "RFID सुरक्षा गेट",
+        "en": "RFID Security Gate"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बुक ड्रॉप बॉक्स (Book Drop Box / Book Return Chute) एक सुरक्षित संदूक या स्वचालित स्लॉट होता है, जिसमें पाठक पुस्तकालय बंद होने पर भी अपनी पुस्तकें गिरा सकते हैं। आधुनिक आरएफआईडी ड्रॉप बॉक्स पुस्तक को तुरंत सिस्टम में डिस्चार्ज भी कर देते हैं।",
+    "exp_en": "A Book Drop Box (or Book Return Chute) allows 24/7 return of circulating books, which can automatically discharge materials when integrated with RFID smart chutes."
+  },
+  {
+    "globalId": "u2_sub2_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "पुस्तकालयों में बिना मानवीय सहायता के पाठकों द्वारा स्वयं पुस्तकें जारी (Issue) करने हेतु कौन-सी आधुनिक मशीन प्रयुक्त होती है?",
+    "q_en": "Which modern device enables patrons to self-checkout books independently without library staff intervention?",
+    "options_hi": [
+      "सेल्फ चेक-आउट कियोस्क (Self Check-out Kiosk)",
+      "माइक्रोफिल्म रीडर",
+      "OPAC टर्मिनल",
+      "हैंडहेल्ड बारकोड रीडर"
+    ],
+    "options_en": [
+      "Self Check-out Kiosk",
+      "Microfilm Reader",
+      "OPAC Terminal",
+      "Handheld Barcode Reader"
+    ],
+    "options": [
+      {
+        "hi": "सेल्फ चेक-आउट कियोस्क (Self Check-out Kiosk)",
+        "en": "Self Check-out Kiosk"
+      },
+      {
+        "hi": "माइक्रोफिल्म रीडर",
+        "en": "Microfilm Reader"
+      },
+      {
+        "hi": "OPAC टर्मिनल",
+        "en": "OPAC Terminal"
+      },
+      {
+        "hi": "हैंडहेल्ड बारकोड रीडर",
+        "en": "Handheld Barcode Reader"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "सेल्फ चेक-आउट कियोस्क (Self Check-out Kiosk) RFID या बारकोड और स्मार्ट कार्ड रीडर से लैस एक टचस्क्रीन मशीन है, जिस पर पाठक अपनी पुस्तकें रखकर स्वयं अपने खाते में जारी कर सकता है।",
+    "exp_en": "A Self Check-out Kiosk is a touch-screen, patron-facing station utilizing RFID/barcode technology enabling automated issuing of library items without staff assistance."
+  },
+  {
+    "globalId": "u2_sub2_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "ब्राउन प्रणाली में निर्गम (Issue) के पश्चात चार्ज किए गए कार्ड युग्मों (Charged Units) को ट्रे में किस क्रम में व्यवस्थित किया जाता है?",
+    "q_en": "In the Browne system, in what order are the charged card pairs filed in the circulation charging tray?",
+    "options_hi": [
+      "लेखक के नाम के वर्णानुक्रम में",
+      "देय तिथि (Date Due) के अनुसार और उसके भीतर कॉल नंबर के क्रम में",
+      "पाठक की सदस्यता संख्या के अनुसार",
+      "पुस्तक के परिग्रहण संख्या के अनुसार"
+    ],
+    "options_en": [
+      "Alphabetically by author's name",
+      "By Date Due, and sub-arranged by Call Number",
+      "By borrower's registration number",
+      "By book accession number"
+    ],
+    "options": [
+      {
+        "hi": "लेखक के नाम के वर्णानुक्रम में",
+        "en": "Alphabetically by author's name"
+      },
+      {
+        "hi": "देय तिथि (Date Due) के अनुसार और उसके भीतर कॉल नंबर के क्रम में",
+        "en": "By Date Due, and sub-arranged by Call Number"
+      },
+      {
+        "hi": "पाठक की सदस्यता संख्या के अनुसार",
+        "en": "By borrower's registration number"
+      },
+      {
+        "hi": "पुस्तक के परिग्रहण संख्या के अनुसार",
+        "en": "By book accession number"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ब्राउन प्रणाली में ट्रे में कार्ड्स को सबसे पहले देय तिथि (Due Date Guide) के पीछे रखा जाता है और प्रत्येक तिथि के अंतर्गत पुस्तकों को उनके वर्गांक/कॉल नंबर (Call Number) के आरोही क्रम में व्यवस्थित किया जाता है।",
+    "exp_en": "Charged card pairs in the Browne system are filed under date due guide cards, and sub-arranged in classified order by Call Number for prompt retrieval."
+  },
+  {
+    "globalId": "u2_sub2_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.2",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+    "q_hi": "नियत देय तिथि बीत जाने के बाद पुस्तक लौटाने पर पाठक से लिया जाने वाला अतिरिक्त शुल्क क्या कहलाता है?",
+    "q_en": "The fee charged to a borrower for returning books past the stipulated due date is officially termed as:",
+    "options_hi": [
+      "अभिदान शुल्क (Subscription Fee)",
+      "विलंब / दण्ड शुल्क (Overdue Fine)",
+      "पुस्तकालय उपकर (Library Cess)",
+      "परिग्रहण शुल्क (Accession Fee)"
+    ],
+    "options_en": [
+      "Subscription Fee",
+      "Overdue Fine",
+      "Library Cess",
+      "Accession Fee"
+    ],
+    "options": [
+      {
+        "hi": "अभिदान शुल्क (Subscription Fee)",
+        "en": "Subscription Fee"
+      },
+      {
+        "hi": "विलंब / दण्ड शुल्क (Overdue Fine)",
+        "en": "Overdue Fine"
+      },
+      {
+        "hi": "पुस्तकालय उपकर (Library Cess)",
+        "en": "Library Cess"
+      },
+      {
+        "hi": "परिग्रहण शुल्क (Accession Fee)",
+        "en": "Accession Fee"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नियत तिथि के बाद पुस्तक रखने पर पाठकों पर लगाया जाने वाला शुल्क विलंब शुल्क या ओवरड्यू फाइन (Overdue Fine) कहलाता है। इसका मुख्य उद्देश्य लाभ कमाना नहीं, बल्कि पाठकों में समय की पाबंदी और अन्य पाठकों के अधिकारों की रक्षा करना है।",
+    "exp_en": "An Overdue Fine is a disciplinary fee charged for overdue materials, primarily serving as a deterrent against unauthorized retention rather than a source of revenue."
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "globalId": "u1_sub1_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "किस आयोग ने विश्वविद्यालय पुस्तकालय को \"विश्वविद्यालय का हृदय\" (Heart of the University) कहा है?",
+    "q_en": "Which commission referred to the university library as the \"Heart of the University\"?",
+    "options_hi": [
+      "कोठारी आयोग (1964–66)",
+      "राधाकृष्णन आयोग (1948–49)",
+      "मुदालियर आयोग (1952–53)",
+      "हंटर आयोग (1882)"
+    ],
+    "options_en": [
+      "Kothari Commission (1964–66)",
+      "Radhakrishnan Commission (1948–49)",
+      "Mudaliar Commission (1952–53)",
+      "Hunter Commission (1882)"
+    ],
+    "options": [
+      {
+        "hi": "कोठारी आयोग (1964–66)",
+        "en": "Kothari Commission (1964–66)"
+      },
+      {
+        "hi": "राधाकृष्णन आयोग (1948–49)",
+        "en": "Radhakrishnan Commission (1948–49)"
+      },
+      {
+        "hi": "मुदालियर आयोग (1952–53)",
+        "en": "Mudaliar Commission (1952–53)"
+      },
+      {
+        "hi": "हंटर आयोग (1882)",
+        "en": "Hunter Commission (1882)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "स्वतंत्र भारत के पहले शिक्षा आयोग (विश्वविद्यालय शिक्षा आयोग, 1948–49), जिसके अध्यक्ष डॉ. एस. राधाकृष्णन थे, ने पुस्तकालय को विश्वविद्यालय का केंद्र बिंदु मानते हुए इसे \"विश्वविद्यालय का हृदय\" कहा था।",
+    "exp_en": "The University Education Commission (1948–49) headed by Dr. S. Radhakrishnan observed that 'The library is the heart of all the university's work'. Mudaliar commission (1952–53) dealt with secondary school education."
+  },
+  {
+    "globalId": "u1_sub1_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "कोठारी आयोग (1964–66) ने विश्वविद्यालय के कुल शैक्षणिक बजट का कितना प्रतिशत हिस्सा पुस्तकालय पर व्यय करने की सिफारिश की थी?",
+    "q_en": "What percentage of the total university academic budget was recommended by the Kothari Commission (1964–66) to be spent on the library?",
+    "options_hi": [
+      "4% से 5%",
+      "6.5% से 10%",
+      "10% से 15%",
+      "15% से 20%"
+    ],
+    "options_en": [
+      "4% to 5%",
+      "6.5% to 10%",
+      "10% to 15%",
+      "15% to 20%"
+    ],
+    "options": [
+      {
+        "hi": "4% से 5%",
+        "en": "4% to 5%"
+      },
+      {
+        "hi": "6.5% से 10%",
+        "en": "6.5% to 10%"
+      },
+      {
+        "hi": "10% से 15%",
+        "en": "10% to 15%"
+      },
+      {
+        "hi": "15% से 20%",
+        "en": "15% to 20%"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉ. डी.एस. कोठारी की अध्यक्षता वाले राष्ट्रीय शिक्षा आयोग (1964–66) ने सिफारिश की थी कि विश्वविद्यालय के विकास की अवस्था और आवश्यकताओं के अनुसार कुल बजट का 6.5% से 10% पुस्तकालय पर खर्च किया जाना चाहिए।",
+    "exp_en": "The Kothari Commission (1964–66) recommended that 6.5% to 10% of a university's educational budget should be earmarked for its library development."
+  },
+  {
+    "globalId": "u1_sub1_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "'पुस्तक एवं समाचार पत्र परिदान अधिनियम, 1954' (Delivery of Books Act) के अंतर्गत निम्नलिखित में से कौन-सा पुस्तकालय 'निक्षेपागार पुस्तकालय' (Depository Library) की सूची में शामिल नहीं है?",
+    "q_en": "Under the 'Delivery of Books and Newspapers Act, 1954', which of the following is NOT included among the four Depository Libraries in India?",
+    "options_hi": [
+      "राष्ट्रीय पुस्तकालय, कोलकाता",
+      "कोनेमारा पब्लिक लाइब्रेरी, चेन्नई",
+      "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी, पटना",
+      "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली"
+    ],
+    "options_en": [
+      "National Library of India, Kolkata",
+      "Connemara Public Library, Chennai",
+      "Khuda Bakhsh Oriental Public Library, Patna",
+      "Delhi Public Library, New Delhi"
+    ],
+    "options": [
+      {
+        "hi": "राष्ट्रीय पुस्तकालय, कोलकाता",
+        "en": "National Library of India, Kolkata"
+      },
+      {
+        "hi": "कोनेमारा पब्लिक लाइब्रेरी, चेन्नई",
+        "en": "Connemara Public Library, Chennai"
+      },
+      {
+        "hi": "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी, पटना",
+        "en": "Khuda Bakhsh Oriental Public Library, Patna"
+      },
+      {
+        "hi": "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली",
+        "en": "Delhi Public Library, New Delhi"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डिलीवरी ऑफ बुक्स एक्ट (1954/1956) के तहत केवल 4 निक्षेपागार पुस्तकालय हैं: (1) राष्ट्रीय पुस्तकालय कोलकाता, (2) कोनेमारा पब्लिक लाइब्रेरी चेन्नई, (3) एशियाटिक सोसाइटी सेंट्रल लाइब्रेरी मुंबई, और (4) दिल्ली पब्लिक लाइब्रेरी नई दिल्ली। खुदा बख्श लाइब्रेरी राष्ट्रीय महत्व का संस्थान है किंतु डिपॉजिटरी नहीं।",
+    "exp_en": "Only four libraries are designated as legal depository libraries in India: National Library (Kolkata), Connemara Public Library (Chennai), Asiatic Society Central Library (Mumbai), and Delhi Public Library (Delhi). Khuda Bakhsh Library is an Institute of National Importance but not a legal deposit library."
+  },
+  {
+    "globalId": "u1_sub1_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "विशेष पुस्तकालयों (Special Libraries) में प्रदान की जाने वाली SDI (Selective Dissemination of Information) सेवा की अवधारणा किसने प्रतिपादित की थी?",
+    "q_en": "Who pioneered the concept of SDI (Selective Dissemination of Information) service predominantly used in special libraries?",
+    "options_hi": [
+      "डॉ. एस.आर. रंगनाथन",
+      "मेल्विल डेवी",
+      "एच.पी. लुहान (H.P. Luhn)",
+      "पीटर लजार"
+    ],
+    "options_en": [
+      "Dr. S.R. Ranganathan",
+      "Melvil Dewey",
+      "H.P. Luhn",
+      "Peter Lazar"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "मेल्विल डेवी",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "एच.पी. लुहान (H.P. Luhn)",
+        "en": "H.P. Luhn"
+      },
+      {
+        "hi": "पीटर लजार",
+        "en": "Peter Lazar"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "SDI (चयनित सूचना प्रसार) सेवा की अवधारणा 1958 में IBM के वैज्ञानिक हंस पीटर लुहान (H.P. Luhn) द्वारा प्रतिपादित की गई थी। यह यूजर प्रोफाइल और डॉक्यूमेंट प्रोफाइल के मिलान पर आधारित एक वैयक्तिकृत कंप्यूटर-आधारित सेवा है।",
+    "exp_en": "SDI service concept was formulated in 1958 by IBM scientist Hans Peter Luhn (H.P. Luhn). It matches user interest profiles with incoming document profiles to deliver pinpointed information."
+  },
+  {
+    "globalId": "u1_sub1_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "यूनेस्को (UNESCO) द्वारा 'सार्वजनिक पुस्तकालय घोषणापत्र' (Public Library Manifesto) पहली बार किस वर्ष जारी किया गया था और इसका नवीनतम संशोधन कब हुआ?",
+    "q_en": "In which year was the 'UNESCO Public Library Manifesto' first issued, and when was its latest revision published?",
+    "options_hi": [
+      "1949 और 2022",
+      "1951 और 1994",
+      "1948 और 2020",
+      "1954 और 2022"
+    ],
+    "options_en": [
+      "1949 and 2022",
+      "1951 and 1994",
+      "1948 and 2020",
+      "1954 and 2022"
+    ],
+    "options": [
+      {
+        "hi": "1949 और 2022",
+        "en": "1949 and 2022"
+      },
+      {
+        "hi": "1951 और 1994",
+        "en": "1951 and 1994"
+      },
+      {
+        "hi": "1948 और 2020",
+        "en": "1948 and 2020"
+      },
+      {
+        "hi": "1954 और 2022",
+        "en": "1954 and 2022"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "यूनेस्को ने सार्वजनिक पुस्तकालयों के महत्व पर 1949 में पहला घोषणापत्र जारी किया। इसके बाद 1972, 1994 (IFLA सहयोग) और नवीनतम संशोधन जुलाई 2022 में डिजिटल युग एवं सतत विकास लक्ष्यों (SDGs) को जोड़ते हुए किया गया।",
+    "exp_en": "UNESCO issued its first Public Library Manifesto in 1949. Revisions followed in 1972, 1994 (with IFLA), and most recently in July 2022 emphasizing digital inclusion, media literacy, and UN SDGs."
+  },
+  {
+    "globalId": "u1_sub1_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "स्वतंत्र भारत के राष्ट्रीय पुस्तकालय (कोलकाता) का औपचारिक उद्घाटन 1 फरवरी 1953 को किसके द्वारा किया गया था?",
+    "q_en": "By whom was the National Library of India (Kolkata) formally dedicated to the nation on 1st February 1953?",
+    "options_hi": [
+      "डॉ. राजेंद्र प्रसाद",
+      "पंडित जवाहरलाल नेहरू",
+      "मौलाना अबुल कलाम आजाद",
+      "डॉ. सर्वपल्ली राधाकृष्णन"
+    ],
+    "options_en": [
+      "Dr. Rajendra Prasad",
+      "Pandit Jawaharlal Nehru",
+      "Maulana Abul Kalam Azad",
+      "Dr. Sarvepalli Radhakrishnan"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. राजेंद्र प्रसाद",
+        "en": "Dr. Rajendra Prasad"
+      },
+      {
+        "hi": "पंडित जवाहरलाल नेहरू",
+        "en": "Pandit Jawaharlal Nehru"
+      },
+      {
+        "hi": "मौलाना अबुल कलाम आजाद",
+        "en": "Maulana Abul Kalam Azad"
+      },
+      {
+        "hi": "डॉ. सर्वपल्ली राधाकृष्णन",
+        "en": "Dr. Sarvepalli Radhakrishnan"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "तत्कालीन केंद्रीय शिक्षा मंत्री मौलाना अबुल कलाम आजाद ने 1 फरवरी 1953 को बेल्वेडियर एस्टेट, अलीपुर (कोलकाता) में राष्ट्रीय पुस्तकालय का उद्घाटन किया। इसके प्रथम राष्ट्रीय पुस्तकालयाध्यक्ष बी.एस. केशवन थे।",
+    "exp_en": "Union Education Minister Maulana Abul Kalam Azad formally opened the National Library at Belvedere Estate, Kolkata on 1 February 1953. B.S. Kesavan was appointed as its first National Librarian."
+  },
+  {
+    "globalId": "u1_sub1_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "भारतीय राष्ट्रीय ग्रंथसूची (INB - Indian National Bibliography) का संकलन एवं प्रकाशन किस संस्था द्वारा किया जाता है?",
+    "q_en": "The Indian National Bibliography (INB) is compiled and published by which institution?",
+    "options_hi": [
+      "राष्ट्रीय पुस्तकालय, कोलकाता",
+      "केंद्रीय संदर्भ पुस्तकालय (CRL), कोलकाता",
+      "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+      "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली"
+    ],
+    "options_en": [
+      "National Library of India, Kolkata",
+      "Central Reference Library (CRL), Kolkata",
+      "Raja Rammohun Roy Library Foundation (RRRLF)",
+      "Delhi Public Library, New Delhi"
+    ],
+    "options": [
+      {
+        "hi": "राष्ट्रीय पुस्तकालय, कोलकाता",
+        "en": "National Library of India, Kolkata"
+      },
+      {
+        "hi": "केंद्रीय संदर्भ पुस्तकालय (CRL), कोलकाता",
+        "en": "Central Reference Library (CRL), Kolkata"
+      },
+      {
+        "hi": "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+        "en": "Raja Rammohun Roy Library Foundation (RRRLF)"
+      },
+      {
+        "hi": "दिल्ली पब्लिक लाइब्रेरी, नई दिल्ली",
+        "en": "Delhi Public Library, New Delhi"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "INB का संकलन एवं प्रकाशन राष्ट्रीय पुस्तकालय परिसर में स्थित केंद्रीय संदर्भ पुस्तकालय (Central Reference Library - CRL), कोलकाता द्वारा किया जाता है। इसकी शुरुआत 1957 में हुई (प्रथम अंक 1958)। जनक: बी.एस. केशवन।",
+    "exp_en": "The Indian National Bibliography (INB) is compiled and published by the Central Reference Library (CRL), Kolkata (located on the campus of the National Library). First volume appeared in 1958. Father of INB: B.S. Kesavan."
+  },
+  {
+    "globalId": "u1_sub1_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "भारत में सार्वजनिक पुस्तकालय आंदोलन के जनक महाराजा सयाजीराव गायकवाड़ तृतीय ने 1910 में बड़ौदा में पुस्तकालय प्रणाली विकसित करने के लिए किस अमेरिकी विशेषज्ञ को आमंत्रित किया था?",
+    "q_en": "To develop a library system in Baroda in 1910, Maharaja Sayajirao Gaekwad III invited which American library pioneer?",
+    "options_hi": [
+      "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+      "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+      "मेल्विल डेवी (Melvil Dewey)",
+      "सी.ए. कटर (C.A. Cutter)"
+    ],
+    "options_en": [
+      "Asa Don Dickinson",
+      "W.A. Borden",
+      "Melvil Dewey",
+      "C.A. Cutter"
+    ],
+    "options": [
+      {
+        "hi": "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+        "en": "Asa Don Dickinson"
+      },
+      {
+        "hi": "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+        "en": "W.A. Borden"
+      },
+      {
+        "hi": "मेल्विल डेवी (Melvil Dewey)",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "सी.ए. कटर (C.A. Cutter)",
+        "en": "C.A. Cutter"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "विलियम एलनसन बोर्डन (W.A. Borden) मेल्विल डेवी के छात्र थे, जिन्हें 1910 में बड़ौदा राज्य का पुस्तकालय निदेशक बनाया गया था। (आसा डॉन डिकिंसन को 1915 में पंजाब विश्वविद्यालय, लाहौर बुलाया गया था)।",
+    "exp_en": "William Alanson Borden (W.A. Borden), a pupil of Melvil Dewey, was invited to Baroda in 1910. Asa Don Dickinson was invited to Punjab University, Lahore in 1915."
+  },
+  {
+    "globalId": "u1_sub1_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "पटना स्थित किस ऐतिहासिक पुस्तकालय को बिहार के 'राज्य केंद्रीय पुस्तकालय' (State Central Library) का दर्जा प्राप्त है?",
+    "q_en": "Which historical library located in Patna holds the official status of the 'State Central Library' of Bihar?",
+    "options_hi": [
+      "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी",
+      "श्रीमती राधिका सिन्हा इंस्टीट्यूट एवं सच्चिदानंद सिन्हा लाइब्रेरी",
+      "बिहार विधानमंडल पुस्तकालय",
+      "नव नालंदा महाविहार पुस्तकालय"
+    ],
+    "options_en": [
+      "Khuda Bakhsh Oriental Public Library",
+      "Radhika Sinha Institute and Sachchidananda Sinha Library",
+      "Bihar Legislature Library",
+      "Nava Nalanda Mahavihara Library"
+    ],
+    "options": [
+      {
+        "hi": "खुदा बख्श ओरिएंटल पब्लिक लाइब्रेरी",
+        "en": "Khuda Bakhsh Oriental Public Library"
+      },
+      {
+        "hi": "श्रीमती राधिका सिन्हा इंस्टीट्यूट एवं सच्चिदानंद सिन्हा लाइब्रेरी",
+        "en": "Radhika Sinha Institute and Sachchidananda Sinha Library"
+      },
+      {
+        "hi": "बिहार विधानमंडल पुस्तकालय",
+        "en": "Bihar Legislature Library"
+      },
+      {
+        "hi": "नव नालंदा महाविहार पुस्तकालय",
+        "en": "Nava Nalanda Mahavihara Library"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉ. सच्चिदानंद सिन्हा द्वारा 1924 में स्थापित सिन्हा लाइब्रेरी (पटना) को बिहार सरकार द्वारा 'राज्य केंद्रीय पुस्तकालय' का दर्जा दिया गया है। खुदा बख्श लाइब्रेरी (1891) राष्ट्रीय महत्व का संस्थान है।",
+    "exp_en": "Sinha Library (established in 1924 by Dr. Sachchidananda Sinha) serves as the official State Central Library of Bihar. Khuda Bakhsh Library (1891) is an Institute of National Importance under the Ministry of Culture."
+  },
+  {
+    "globalId": "u1_sub1_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.1",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+    "q_hi": "सूची-I (पुस्तकालय का प्रकार) को सूची-II (मुख्य विशेषता) से सुमेलित कीजिए:\n[a. अकादमिक, b. सार्वजनिक, c. विशेष, d. राष्ट्रीय]\n[1. सूक्ष्म प्रलेख, 2. कानूनी निक्षेप व संरक्षण, 3. जनता का विश्वविद्यालय, 4. पाठ्यक्रम एवं शोध]",
+    "q_en": "Match List-I (Type of Library) with List-II (Core Feature):\n[a. Academic, b. Public, c. Special, d. National]\n[1. Micro-documents, 2. Legal Deposit & Preservation, 3. People's University, 4. Curriculum & Research]",
+    "options_hi": [
+      "a-4, b-3, c-1, d-2",
+      "a-3, b-4, c-1, d-2",
+      "a-4, b-1, c-3, d-2",
+      "a-2, b-3, c-1, d-4"
+    ],
+    "options_en": [
+      "a-4, b-3, c-1, d-2",
+      "a-3, b-4, c-1, d-2",
+      "a-4, b-1, c-3, d-2",
+      "a-2, b-3, c-1, d-4"
+    ],
+    "options": [
+      {
+        "hi": "a-4, b-3, c-1, d-2",
+        "en": "a-4, b-3, c-1, d-2"
+      },
+      {
+        "hi": "a-3, b-4, c-1, d-2",
+        "en": "a-3, b-4, c-1, d-2"
+      },
+      {
+        "hi": "a-4, b-1, c-3, d-2",
+        "en": "a-4, b-1, c-3, d-2"
+      },
+      {
+        "hi": "a-2, b-3, c-1, d-4",
+        "en": "a-2, b-3, c-1, d-4"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अकादमिक = पाठ्यक्रम व शोध (4); सार्वजनिक = जनता का विश्वविद्यालय (3); विशेष = सूक्ष्म प्रलेख (1); राष्ट्रीय = कानूनी निक्षेप व स्थायी संरक्षण (2)।",
+    "exp_en": "Academic = Curriculum & research support (4); Public = People's University (3); Special = Micro-documents like patents and standards (1); National = Legal deposit & national preservation (2)."
+  }
+]

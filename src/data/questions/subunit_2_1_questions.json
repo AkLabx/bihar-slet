@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u2_sub2_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तक चयन का सुप्रसिद्ध सिद्धांत \"To provide the right book to the right reader at the right time\" किसके द्वारा 1930 में प्रतिपादित किया गया था?",
+    "q_en": "The well-known principle of book selection \"To provide the right book to the right reader at the right time\" was propounded in 1930 by:",
+    "options_hi": [
+      "मेल्विल डेवी (Melvil Dewey)",
+      "एफ.के. ड्रूरी (Francis K. Drury)",
+      "एल.आर. मैककोल्विन (L.R. McColvin)",
+      "डॉ. एस.आर. रंगनाथन"
+    ],
+    "options_en": [
+      "Melvil Dewey",
+      "Francis K. Drury",
+      "L.R. McColvin",
+      "Dr. S.R. Ranganathan"
+    ],
+    "options": [
+      {
+        "hi": "मेल्विल डेवी (Melvil Dewey)",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "एफ.के. ड्रूरी (Francis K. Drury)",
+        "en": "Francis K. Drury"
+      },
+      {
+        "hi": "एल.आर. मैककोल्विन (L.R. McColvin)",
+        "en": "L.R. McColvin"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "एफ.के. ड्रूरी (Francis K. Drury) ने अपनी 1930 में प्रकाशित पुस्तक 'Book Selection' में यह सिद्धांत प्रतिपादित किया था कि पुस्तकालय का मुख्य ध्येय 'उचित पाठक को, उचित समय पर, उचित पुस्तक प्रदान करना' है।",
+    "exp_en": "Francis K. Drury formulated this classic maxim in his 1930 book 'Book Selection', emphasizing matching the right reader with the right book at the right time."
+  },
+  {
+    "globalId": "u2_sub2_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तक चयन के संदर्भ में 'मांग एवं पूर्ति का सिद्धांत' (Demand and Supply Theory) 1925 में किसने दिया था?",
+    "q_en": "Who propounded the 'Demand and Supply Theory' of book selection in 1925?",
+    "options_hi": [
+      "एल.आर. मैककोल्विन (L.R. McColvin)",
+      "हेलेन हेन्स (Helen Haines)",
+      "सी.ए. कटर (C.A. Cutter)",
+      "मेल्विल डेवी"
+    ],
+    "options_en": [
+      "L.R. McColvin",
+      "Helen Haines",
+      "C.A. Cutter",
+      "Melvil Dewey"
+    ],
+    "options": [
+      {
+        "hi": "एल.आर. मैककोल्विन (L.R. McColvin)",
+        "en": "L.R. McColvin"
+      },
+      {
+        "hi": "हेलेन हेन्स (Helen Haines)",
+        "en": "Helen Haines"
+      },
+      {
+        "hi": "सी.ए. कटर (C.A. Cutter)",
+        "en": "C.A. Cutter"
+      },
+      {
+        "hi": "मेल्विल डेवी",
+        "en": "Melvil Dewey"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "लायनेल रॉय मैककोल्विन (L.R. McColvin) ने 1925 में 'The Theory of Book Selection for Public Libraries' पुस्तक में मांग और पूर्ति का सिद्धांत दिया। उनके अनुसार पुस्तकें तभी खरीदी जानी चाहिए जब उनकी मांग हो या संभावित मांग उत्पन्न की जा सके।",
+    "exp_en": "Lionel Roy McColvin advanced the Demand and Supply theory in 1925 in his work 'The Theory of Book Selection for Public Libraries', distinguishing between volume and value of demand."
+  },
+  {
+    "globalId": "u2_sub2_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "\"The best reading for the largest number at the least cost\" पुस्तक चयन का आदर्श वाक्य किसने प्रतिपादित किया था?",
+    "q_en": "Who coined the famous book selection motto: \"The best reading for the largest number at the least cost\"?",
+    "options_hi": [
+      "मेल्विल डेवी (Melvil Dewey, 1876)",
+      "एफ.के. ड्रूरी (1930)",
+      "डॉ. एस.आर. रंगनाथन (1952)",
+      "जस्टिन विंसर"
+    ],
+    "options_en": [
+      "Melvil Dewey (1876)",
+      "F.K. Drury (1930)",
+      "Dr. S.R. Ranganathan (1952)",
+      "Justin Winsor"
+    ],
+    "options": [
+      {
+        "hi": "मेल्विल डेवी (Melvil Dewey, 1876)",
+        "en": "Melvil Dewey (1876)"
+      },
+      {
+        "hi": "एफ.के. ड्रूरी (1930)",
+        "en": "F.K. Drury (1930)"
+      },
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन (1952)",
+        "en": "Dr. S.R. Ranganathan (1952)"
+      },
+      {
+        "hi": "जस्टिन विंसर",
+        "en": "Justin Winsor"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "मेल्विल डेवी ने 1876 में अमेरिकन लाइब्रेरी एसोसिएशन (ALA) की स्थापना के समय यह आदर्श वाक्य दिया था। यह तीन प्रमुख आयामों—गुणवत्ता (Best Reading), व्यापकता (Largest Number) और मितव्ययिता (Least Cost) पर केंद्रित है।",
+    "exp_en": "Melvil Dewey formulated this motto in 1876 at the founding of the ALA, focusing on three core criteria: quality (best reading), breadth of readership (largest number), and economy (least cost)."
+  },
+  {
+    "globalId": "u2_sub2_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तकालय में जोड़ी जाने वाली प्रत्येक पुस्तक का स्थायी कानूनी एवं वित्तीय अभिलेख (Permanent Legal & Financial Record) क्या कहलाता है?",
+    "q_en": "What is the permanent legal and financial record of every book acquired in a library called?",
+    "options_hi": [
+      "शेल्फ लिस्ट (Shelf List)",
+      "परिग्रहण पंजिका (Accession Register)",
+      "कैटलॉग कार्ड (Catalogue Card)",
+      "चालान फाइल (Invoice File)"
+    ],
+    "options_en": [
+      "Shelf List",
+      "Accession Register",
+      "Catalogue Card",
+      "Invoice File"
+    ],
+    "options": [
+      {
+        "hi": "शेल्फ लिस्ट (Shelf List)",
+        "en": "Shelf List"
+      },
+      {
+        "hi": "परिग्रहण पंजिका (Accession Register)",
+        "en": "Accession Register"
+      },
+      {
+        "hi": "कैटलॉग कार्ड (Catalogue Card)",
+        "en": "Catalogue Card"
+      },
+      {
+        "hi": "चालान फाइल (Invoice File)",
+        "en": "Invoice File"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "परिग्रहण पंजिका (Accession Register) पुस्तकालय का सबसे महत्वपूर्ण और स्थायी वित्तीय/कानूनी दस्तावेज है। इसमें प्रत्येक पुस्तक का क्रमिक विवरण और उसकी यूनिक परिग्रहण संख्या (Accession Number) दर्ज होती है।",
+    "exp_en": "The Accession Register is the permanent, legal, and financial inventory ledger of a library where books are systematically recorded in order of receipt with unique accession numbers."
+  },
+  {
+    "globalId": "u2_sub2_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "भारतीय मानक ब्यूरो (BIS) एवं मानक पुस्तकालय पद्धति के अनुसार एक सामान्य परिग्रहण पंजिका (Accession Register) में कितने स्तंभ (कॉलम) होते हैं?",
+    "q_en": "According to the Bureau of Indian Standards (BIS) and standard library practice, how many columns are there in an Accession Register?",
+    "options_hi": [
+      "10 कॉलम",
+      "12 कॉलम",
+      "14 कॉलम",
+      "16 कॉलम"
+    ],
+    "options_en": [
+      "10 Columns",
+      "12 Columns",
+      "14 Columns",
+      "16 Columns"
+    ],
+    "options": [
+      {
+        "hi": "10 कॉलम",
+        "en": "10 Columns"
+      },
+      {
+        "hi": "12 कॉलम",
+        "en": "12 Columns"
+      },
+      {
+        "hi": "14 कॉलम",
+        "en": "14 Columns"
+      },
+      {
+        "hi": "16 कॉलम",
+        "en": "16 Columns"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "मानक भारतीय परिग्रहण पंजिका में कुल 14 कॉलम (स्तंभ) होते हैं: 1. तिथि, 2. परिग्रहण सं., 3. लेखक, 4. शीर्षक, 5. संस्करण, 6. स्थान व प्रकाशक, 7. वर्ष, 8. पृष्ठ, 9. आकार, 10. जिल्द, 11. स्रोत, 12. मूल्य, 13. क्रमांक (Call No.), 14. रिमार्क्स।",
+    "exp_en": "The standard Accession Register according to BIS guidelines contains 14 columns detailing acquisition date, accession number, author, title, edition, imprint, collation, binding, vendor, cost, call number, and withdrawal remarks."
+  },
+  {
+    "globalId": "u2_sub2_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "सामयिक पत्र-पत्रिकाओं (Periodicals) के पंजीकरण एवं नियंत्रण हेतु डॉ. एस.आर. रंगनाथन द्वारा किस प्रणाली का आविष्कार किया गया था?",
+    "q_en": "Which system was invented by Dr. S.R. Ranganathan for the registration and management of periodicals in libraries?",
+    "options_hi": [
+      "कारडेक्स प्रणाली (Kardex System)",
+      "तीन-कार्ड प्रणाली (Three-Card System)",
+      "नेवार्क प्रणाली (Newark System)",
+      "ब्राउन प्रणाली (Browne System)"
+    ],
+    "options_en": [
+      "Kardex System",
+      "Three-Card System",
+      "Newark System",
+      "Browne System"
+    ],
+    "options": [
+      {
+        "hi": "कारडेक्स प्रणाली (Kardex System)",
+        "en": "Kardex System"
+      },
+      {
+        "hi": "तीन-कार्ड प्रणाली (Three-Card System)",
+        "en": "Three-Card System"
+      },
+      {
+        "hi": "नेवार्क प्रणाली (Newark System)",
+        "en": "Newark System"
+      },
+      {
+        "hi": "ब्राउन प्रणाली (Browne System)",
+        "en": "Browne System"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉ. रंगनाथन ने पत्र-पत्रिकाओं के प्रभावी नियंत्रण हेतु 'तीन-कार्ड प्रणाली' (Three-Card System) का आविष्कार किया। इसमें रजिस्टर कार्ड, चेक कार्ड और क्लासीफाइड इंडेक्स कार्ड का उपयोग 5\"×3\" आकार में किया जाता है। (कारडेक्स रेमिंगटन रैंड कंपनी का है)।",
+    "exp_en": "Dr. S.R. Ranganathan invented the 'Three-Card System' using 5\"×3\" cards (Register Card, Check Card, and Classified Index Card) for monitoring and acquiring periodical publications."
+  },
+  {
+    "globalId": "u2_sub2_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "डॉ. रंगनाथन की तीन-कार्ड प्रणाली में से कौन-सा कार्ड पत्रिकाओं के न प्राप्त हुए अंकों के लिए प्रकाशक/विक्रेता को रिमाइंडर (स्मरण-पत्र) भेजने में प्रयुक्त होता है?",
+    "q_en": "In Dr. Ranganathan's Three-Card System, which card is specifically used to detect missing issues and send reminders to publishers/vendors?",
+    "options_hi": [
+      "पंजीकरण कार्ड (Register Card)",
+      "जांच कार्ड (Check Card)",
+      "वर्गीकृत सूचकांक कार्ड (Classified Index Card)",
+      "शेल्फ सूची कार्ड (Shelf List Card)"
+    ],
+    "options_en": [
+      "Register Card",
+      "Check Card",
+      "Classified Index Card",
+      "Shelf List Card"
+    ],
+    "options": [
+      {
+        "hi": "पंजीकरण कार्ड (Register Card)",
+        "en": "Register Card"
+      },
+      {
+        "hi": "जांच कार्ड (Check Card)",
+        "en": "Check Card"
+      },
+      {
+        "hi": "वर्गीकृत सूचकांक कार्ड (Classified Index Card)",
+        "en": "Classified Index Card"
+      },
+      {
+        "hi": "शेल्फ सूची कार्ड (Shelf List Card)",
+        "en": "Shelf List Card"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "जांच कार्ड (Check Card) का प्राथमिक कार्य यह निगरानी करना है कि पत्रिका का कौन-सा अंक नियत समय पर नहीं पहुँचा है, ताकि विक्रेता को समय पर दावा या स्मरण-पत्र (Reminder) भेजा जा सके।",
+    "exp_en": "The Check Card is designed to monitor the regularity of incoming issues and systematically trigger reminders/claims to vendors or publishers for non-receipt."
+  },
+  {
+    "globalId": "u2_sub2_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तक चयन पर प्रसिद्ध शास्त्रीय ग्रंथ 'Living with Books: The Art of Book Selection' (1935) की लेखिका कौन हैं?",
+    "q_en": "Who is the author of the celebrated classic treatise 'Living with Books: The Art of Book Selection' (1935)?",
+    "options_hi": [
+      "हेलेन ई. हेन्स (Helen E. Haines)",
+      "नीना ई. ब्राउन (Nina E. Browne)",
+      "मार्गरेट मान (Margaret Mann)",
+      "एस.आर. रंगनाथन"
+    ],
+    "options_en": [
+      "Helen E. Haines",
+      "Nina E. Browne",
+      "Margaret Mann",
+      "S.R. Ranganathan"
+    ],
+    "options": [
+      {
+        "hi": "हेलेन ई. हेन्स (Helen E. Haines)",
+        "en": "Helen E. Haines"
+      },
+      {
+        "hi": "नीना ई. ब्राउन (Nina E. Browne)",
+        "en": "Nina E. Browne"
+      },
+      {
+        "hi": "मार्गरेट मान (Margaret Mann)",
+        "en": "Margaret Mann"
+      },
+      {
+        "hi": "एस.आर. रंगनाथन",
+        "en": "S.R. Ranganathan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "हेलेन ई. हेन्स (Helen E. Haines) ने 1935 में 'Living with Books' पुस्तक लिखी। उन्होंने पुस्तक चयन को एक यांत्रिक कार्य न मानकर एक बौद्धिक एवं रचनात्मक कला माना।",
+    "exp_en": "Helen E. Haines authored 'Living with Books: The Art of Book Selection' in 1935, championing book selection as an intellectual art that values literary quality and human interest."
+  },
+  {
+    "globalId": "u2_sub2_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "डॉ. एस.आर. रंगनाथन द्वारा लिखित पुस्तक 'Library Book Selection' प्रथम बार किस वर्ष प्रकाशित हुई थी?",
+    "q_en": "In which year was Dr. S.R. Ranganathan's book 'Library Book Selection' first published?",
+    "options_hi": [
+      "1931",
+      "1944",
+      "1952",
+      "1960"
+    ],
+    "options_en": [
+      "1931",
+      "1944",
+      "1952",
+      "1960"
+    ],
+    "options": [
+      {
+        "hi": "1931",
+        "en": "1931"
+      },
+      {
+        "hi": "1944",
+        "en": "1944"
+      },
+      {
+        "hi": "1952",
+        "en": "1952"
+      },
+      {
+        "hi": "1960",
+        "en": "1960"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डॉ. रंगनाथन की पुस्तक 'Library Book Selection' वर्ष 1952 में प्रकाशित हुई थी। इसमें उन्होंने स्पष्ट किया कि पुस्तक चयन के मार्गदर्शक सिद्धांत सीधे पुस्तकालय विज्ञान के पाँच सूत्रों से निःसृत होते हैं।",
+    "exp_en": "Dr. Ranganathan's 'Library Book Selection' was published in 1952, deriving book selection principles systematically from the Five Laws of Library Science."
+  },
+  {
+    "globalId": "u2_sub2_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तकालय में किसी पुस्तक की विशिष्ट पहचान हेतु प्रयुक्त 'क्रमांक' (Call Number) मुख्यतः किन घटकों से मिलकर बनता है?",
+    "q_en": "The 'Call Number' used for the unique placement and identification of a book on shelves is composed primarily of:",
+    "options_hi": [
+      "Class Number + Book Number",
+      "Accession Number + Bill Number",
+      "ISBN + ISSN",
+      "Author Mark + Title Mark"
+    ],
+    "options_en": [
+      "Class Number + Book Number",
+      "Accession Number + Bill Number",
+      "ISBN + ISSN",
+      "Author Mark + Title Mark"
+    ],
+    "options": [
+      {
+        "hi": "Class Number + Book Number",
+        "en": "Class Number + Book Number"
+      },
+      {
+        "hi": "Accession Number + Bill Number",
+        "en": "Accession Number + Bill Number"
+      },
+      {
+        "hi": "ISBN + ISSN",
+        "en": "ISBN + ISSN"
+      },
+      {
+        "hi": "Author Mark + Title Mark",
+        "en": "Author Mark + Title Mark"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "रंगनाथन एवं मानक वर्गीकरण सिद्धांतों के अनुसार Call Number = Class Number (वर्गांक) + Book Number (ग्रंथांक) [+ Collection Number / संग्रह अंक]।",
+    "exp_en": "A Call Number is fundamentally composed of Class Number (denoting the subject) + Book Number (distinguishing the individual book among works of the same subject)."
+  },
+  {
+    "globalId": "u2_sub2_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तक अधिग्रहण प्रक्रिया (Acquisition Process) में ऑर्डर देने से ठीक पूर्व 'डुप्लीकेशन चेकिंग' (Pre-order Search) क्यों की जाती है?",
+    "q_en": "In the acquisition procedure, why is 'Pre-order Duplication Checking' performed right before placing a purchase order?",
+    "options_hi": [
+      "पुस्तक के मूल्य में छूट की जांच हेतु",
+      "यह सत्यापित करने के लिए कि पुस्तक पहले से पुस्तकालय में या पूर्व ऑर्डर में उपलब्ध तो नहीं है",
+      "पुस्तक की जिल्द की गुणवत्ता जांचने हेतु",
+      "कॉपीराइट की अवधि समाप्त होने की जांच हेतु"
+    ],
+    "options_en": [
+      "To check vendor discount",
+      "To verify that the title is not already present in the collection or under existing order",
+      "To inspect binding quality",
+      "To verify copyright expiration"
+    ],
+    "options": [
+      {
+        "hi": "पुस्तक के मूल्य में छूट की जांच हेतु",
+        "en": "To check vendor discount"
+      },
+      {
+        "hi": "यह सत्यापित करने के लिए कि पुस्तक पहले से पुस्तकालय में या पूर्व ऑर्डर में उपलब्ध तो नहीं है",
+        "en": "To verify that the title is not already present in the collection or under existing order"
+      },
+      {
+        "hi": "पुस्तक की जिल्द की गुणवत्ता जांचने हेतु",
+        "en": "To inspect binding quality"
+      },
+      {
+        "hi": "कॉपीराइट की अवधि समाप्त होने की जांच हेतु",
+        "en": "To verify copyright expiration"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डुप्लीकेशन जांच का मुख्य उद्देश्य पुस्तकालय के सीमित बजट का अपव्यय रोकना है ताकि वही पुस्तक दोबारा अनजाने में न खरीदी जाए जो पहले से स्टॉक में है अथवा जिसका ऑर्डर पहले ही दिया जा चुका है।",
+    "exp_en": "Pre-order searching prevents unintended duplication of titles already in the library collection or in the active pipeline, conserving finite financial resources."
+  },
+  {
+    "globalId": "u2_sub2_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "सामयिक पत्रिकाओं के प्रबंधन हेतु विश्वभर में प्रयुक्त व्यावसायिक 'कारडेक्स' (Kardex) प्रणाली का निर्माण किस कंपनी द्वारा किया गया था?",
+    "q_en": "The commercial 'Kardex' system widely used in libraries for periodicals recording was manufactured by which company?",
+    "options_hi": [
+      "आईबीएम (IBM)",
+      "रेमिंगटन रैंड (Remington Rand of India)",
+      "जेरॉक्स कॉर्पोरेशन",
+      "माइक्रोसॉफ्ट"
+    ],
+    "options_en": [
+      "IBM",
+      "Remington Rand",
+      "Xerox Corporation",
+      "Microsoft"
+    ],
+    "options": [
+      {
+        "hi": "आईबीएम (IBM)",
+        "en": "IBM"
+      },
+      {
+        "hi": "रेमिंगटन रैंड (Remington Rand of India)",
+        "en": "Remington Rand"
+      },
+      {
+        "hi": "जेरॉक्स कॉर्पोरेशन",
+        "en": "Xerox Corporation"
+      },
+      {
+        "hi": "माइक्रोसॉफ्ट",
+        "en": "Microsoft"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कारडेक्स (Kardex) एक दृश्य रिकॉर्ड फाइलिंग कैबिनेट प्रणाली है, जिसका निर्माण रेमिंगटन रैंड (Remington Rand) कंपनी द्वारा किया गया था। इसमें स्टील की दराजों में धातु की पट्टियों पर कार्ड लगे होते हैं।",
+    "exp_en": "Kardex is a visible index filing equipment introduced by Remington Rand, utilizing steel cabinets with overlapping sliding trays for visual tracking of periodical issues."
+  },
+  {
+    "globalId": "u2_sub2_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "संग्रह विकास चक्र (Collection Development Cycle) का प्रथम एवं सर्वाधिक महत्वपूर्ण चरण कौन-सा होता है?",
+    "q_en": "Which is the first and most critical step in the Collection Development Cycle?",
+    "options_hi": [
+      "चालान का भुगतान (Invoice payment)",
+      "उपयोगकर्ता आवश्यकता विश्लेषण (User Needs Assessment)",
+      "पुस्तक निरसन (Weeding)",
+      "जिल्दसाजी (Binding)"
+    ],
+    "options_en": [
+      "Invoice payment",
+      "User Needs Assessment",
+      "Weeding",
+      "Binding"
+    ],
+    "options": [
+      {
+        "hi": "चालान का भुगतान (Invoice payment)",
+        "en": "Invoice payment"
+      },
+      {
+        "hi": "उपयोगकर्ता आवश्यकता विश्लेषण (User Needs Assessment)",
+        "en": "User Needs Assessment"
+      },
+      {
+        "hi": "पुस्तक निरसन (Weeding)",
+        "en": "Weeding"
+      },
+      {
+        "hi": "जिल्दसाजी (Binding)",
+        "en": "Binding"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "संग्रह विकास का शुभारंभ हमेशा समुदाय या उपयोगकर्ताओं की शैक्षणिक, सूचनात्मक व शोध संबंधी आवश्यकताओं के वैज्ञानिक विश्लेषण (User Needs Assessment) से होता है।",
+    "exp_en": "Every sound collection development program begins with User Needs Assessment, identifying user demographics, educational priorities, and research trajectories."
+  },
+  {
+    "globalId": "u2_sub2_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "पुस्तकालय में परिग्रहण संख्या (Accession Number) के संबंध में निम्नलिखित में से कौन-सा कथन सत्य है?",
+    "q_en": "Which of the following statements is TRUE regarding the Accession Number in a library?",
+    "options_hi": [
+      "यह एक ही विषय की सभी पुस्तकों के लिए समान होती है।",
+      "यह प्रत्येक भौतिक ग्रंथ/वॉल्यूम के लिए एक अद्वितीय एवं क्रमिक संख्या होती है।",
+      "यह पुस्तक के प्रकाशन वर्ष पर आधारित होती है।",
+      "यह पुस्तक के लेखक के नाम के अक्षरों से बनाई जाती है।"
+    ],
+    "options_en": [
+      "It is identical for all books on the same subject.",
+      "It is a unique serial number assigned to each individual physical volume.",
+      "It is based on the publication year of the book.",
+      "It is constructed using the letters of the author's surname."
+    ],
+    "options": [
+      {
+        "hi": "यह एक ही विषय की सभी पुस्तकों के लिए समान होती है।",
+        "en": "It is identical for all books on the same subject."
+      },
+      {
+        "hi": "यह प्रत्येक भौतिक ग्रंथ/वॉल्यूम के लिए एक अद्वितीय एवं क्रमिक संख्या होती है।",
+        "en": "It is a unique serial number assigned to each individual physical volume."
+      },
+      {
+        "hi": "यह पुस्तक के प्रकाशन वर्ष पर आधारित होती है।",
+        "en": "It is based on the publication year of the book."
+      },
+      {
+        "hi": "यह पुस्तक के लेखक के नाम के अक्षरों से बनाई जाती है।",
+        "en": "It is constructed using the letters of the author's surname."
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "परिग्रहण संख्या (Accession Number) एक अद्वितीय (Unique) क्रमिक संख्या है जो प्रत्येक प्रविष्टि को दी जाती है। भले ही किसी पुस्तक की दो प्रतियां (Copies) हों, दोनों का Call Number समान हो सकता है परंतु परिग्रहण संख्या भिन्न होगी।",
+    "exp_en": "An Accession Number is an individual, non-repeating serial number assigned to each physical copy upon formal registration in the Accession Register."
+  },
+  {
+    "globalId": "u2_sub2_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.1",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+    "q_hi": "डॉ. एस.आर. रंगनाथन की तीन-कार्ड प्रणाली में प्रयुक्त कार्डों का मानक आकार क्या होता है?",
+    "q_en": "What is the standard dimension of the cards used in Dr. S.R. Ranganathan's Three-Card System?",
+    "options_hi": [
+      "3\" × 2\" इंच",
+      "5\" × 3\" इंच (12.5 × 7.5 सेमी)",
+      "8\" × 5\" इंच",
+      "6\" × 4\" इंच"
+    ],
+    "options_en": [
+      "3\" × 2\" inches",
+      "5\" × 3\" inches (12.5 × 7.5 cm)",
+      "8\" × 5\" inches",
+      "6\" × 4\" inches"
+    ],
+    "options": [
+      {
+        "hi": "3\" × 2\" इंच",
+        "en": "3\" × 2\" inches"
+      },
+      {
+        "hi": "5\" × 3\" इंच (12.5 × 7.5 सेमी)",
+        "en": "5\" × 3\" inches (12.5 × 7.5 cm)"
+      },
+      {
+        "hi": "8\" × 5\" इंच",
+        "en": "8\" × 5\" inches"
+      },
+      {
+        "hi": "6\" × 4\" इंच",
+        "en": "6\" × 4\" inches"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पुस्तकालयों में कार्ड कैटलॉग और तीन-कार्ड प्रणाली दोनों में मानक कार्ड का आकार 5\" × 3\" इंच (12.5 सेमी × 7.5 सेमी) ही होता है।",
+    "exp_en": "The universal standard size for library index and catalogue cards, including Ranganathan's Three-Card System, is 5\" × 3\" inches (12.5 cm × 7.5 cm)."
+  }
+]

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 9.1 Quiz: Computer Hardware & Fundamentals | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी</h1>
+            <p>Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_9.1_Computer_Hardware_and_Fundamentals.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - कंप्यूटर दक्षता खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u9_1_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "1837 में 'एनालिटिकल इंजन' (Analytical Engine) की क्रांतिकारी अवधारणा देने के कारण किसे 'कंप्यूटर का जनक' (Father of the Computer) कहा जाता है?",
+            q_en: "Who is widely acknowledged as the 'Father of the Computer' for designing the revolutionary concept of the Analytical Engine in 1837?",
+            options: [
+                { hi: "एलन ट्यूरिंग (Alan Turing)", en: "Alan Turing" },
+                { hi: "चार्ल्स बैबेज (Charles Babbage)", en: "Charles Babbage" },
+                { hi: "जॉन वॉन न्यूमैन (John von Neumann)", en: "John von Neumann" },
+                { hi: "ब्लेज पास्कल (Blaise Pascal)", en: "Blaise Pascal" }
+            ],
+            correct: 1,
+            exp_hi: "चार्ल्स बैबेज ने 1837 में पहले यांत्रिक सामान्य-उद्देश्यीय कंप्यूटर 'एनालिटिकल इंजन' की रूपरेखा बनाई थी, जिसमें इनपुट, मेमोरी, प्रोसेसर और आउटपुट का बुनियादी ढांचा था। अतः उन्हें 'कंप्यूटर का जनक' कहा जाता है।",
+            exp_en: "Charles Babbage conceptualized the Analytical Engine featuring the fundamental components of modern computers (input, mill/CPU, store/memory, output), earning him the title 'Father of Computer'."
+        },
+        {
+            num: 2,
+            q_hi: "प्रथम पीढ़ी के कंप्यूटरों (1940-1956) में मुख्य इलेक्ट्रॉनिक गणना घटक (Processing Element) के रूप में किसका उपयोग किया जाता था?",
+            q_en: "What primary electronic hardware technology was utilized as the core processing and calculating component in First Generation computers (1940-1956)?",
+            options: [
+                { hi: "ट्रांजिस्टर (Transistor)", en: "Transistors" },
+                { hi: "वैक्यूम ट्यूब्स (निर्वात नली / Vacuum Tubes)", en: "Vacuum Tubes" },
+                { hi: "इंटीग्रेटेड सर्किट (IC Chips)", en: "Integrated Circuits" },
+                { hi: "माइक्रोप्रोसेसर (VLSI)", en: "Microprocessors" }
+            ],
+            correct: 1,
+            exp_hi: "प्रथम पीढ़ी के कंप्यूटरों (जैसे ENIAC, UNIVAC-1) में वैक्यूम ट्यूब (थर्मिओनिक वाल्व) का प्रयोग होता था। ये आकार में विशाल थे, अत्यधिक ऊष्मा उत्पन्न करते थे तथा मशीन भाषा पर चलते थे।",
+            exp_en: "First-generation computers relied on vacuum tubes for circuitry and magnetic drums for memory. They dissipated massive heat and were programmed strictly in binary machine language."
+        },
+        {
+            num: 3,
+            q_hi: "जैक किल्बी द्वारा 1958 में आविष्कृत 'इंटीग्रेटेड सर्किट' (IC Chips) का प्रयोग किस पीढ़ी के कंप्यूटरों से प्रारंभ हुआ?",
+            q_en: "Integrated Circuits (IC Chips), invented by Jack Kilby in 1958, were incorporated starting from which generation of computers?",
+            options: [
+                { hi: "द्वितीय पीढ़ी (2nd Generation)", en: "Second Generation" },
+                { hi: "तृतीय पीढ़ी (3rd Generation)", en: "Third Generation" },
+                { hi: "चतुर्थ पीढ़ी (4th Generation)", en: "Fourth Generation" },
+                { hi: "पंचम पीढ़ी (5th Generation)", en: "Fifth Generation" }
+            ],
+            correct: 1,
+            exp_hi: "तृतीय पीढ़ी (1964-1971) में ट्रांजिस्टरों के स्थान पर सिलिकॉन पर बनी IC चिप्स (Integrated Circuits) का प्रयोग शुरू हुआ, जिससे कंप्यूटर अत्यधिक छोटे, तेज और विश्वसनीय हो गए।",
+            exp_en: "Third-generation computers (1964-1971) substituted individual transistors with Integrated Circuits (ICs), vastly augmenting processing speeds and reducing footprint."
+        },
+        {
+            num: 4,
+            q_hi: "CPU के किस भाग को कंप्यूटर का 'तंत्रिका तंत्र' (Nervous System) या ट्रैफिक पुलिस कहा जाता है, जो निर्देशों को लाने (Fetch) और डिकोड करने का कार्य करता है?",
+            q_en: "Which unit of the CPU is designated as the 'Nervous System' or traffic controller of the computer, responsible for fetching and decoding instructions?",
+            options: [
+                { hi: "अंकगणित तर्क इकाई (ALU)", en: "Arithmetic Logic Unit (ALU)" },
+                { hi: "नियंत्रण इकाई (Control Unit - CU)", en: "Control Unit (CU)" },
+                { hi: "मेमोरी यूनिट (MU)", en: "Memory Unit (MU)" },
+                { hi: "रजिस्टर्स (Registers)", en: "Registers" }
+            ],
+            correct: 1,
+            exp_hi: "कंट्रोल यूनिट (CU) कंप्यूटर के सभी घटकों के बीच डेटा और निर्देशों के प्रवाह को नियंत्रित व समन्वित करता है। यह मेमोरी से निर्देश लाता है, उन्हें डिकोड करता है और निष्पादन का आदेश देता है।",
+            exp_en: "The Control Unit (CU) coordinates and supervises all operations of the computer system, directing data flow between the processor, memory, and peripheral devices."
+        },
+        {
+            num: 5,
+            q_hi: "कंप्यूटर सिस्टम में सीधे सीपीयू (CPU) के भीतर स्थित सबसे तेज, अति-लघु एवं तुरंत उपलब्ध मेमोरी कौन सी होती है?",
+            q_en: "Which is the fastest, ultra-low latency, and smallest memory placed directly inside the Central Processing Unit (CPU)?",
+            options: [
+                { hi: "कैश मेमोरी (Cache Memory)", en: "Cache Memory" },
+                { hi: "रजिस्टर्स (Registers)", en: "Registers" },
+                { hi: "रैंडम एक्सेस मेमोरी (RAM)", en: "Random Access Memory (RAM)" },
+                { hi: "सॉलिड स्टेट ड्राइव (SSD)", en: "Solid State Drive (SSD)" }
+            ],
+            correct: 1,
+            exp_hi: "रजिस्टर्स (जैसे Program Counter, Accumulator) CPU के आंतरिक भाग होते हैं और मेमोरी पदानुक्रम में सबसे तीव्र गति वाले होते हैं। इनकी गति कैश मेमोरी से भी तेज होती है।",
+            exp_en: "Registers represent the fastest and top-tier memory in the hierarchy, located directly on the processor core to hold immediate execution data."
+        },
+        {
+            num: 6,
+            q_hi: "कंप्यूटर की कौन सी मेमोरी 'वाष्पशील' (Volatile) प्रकृति की होती है, अर्थात् विद्युत आपूर्ति बंद होते ही उसका सारा डेटा नष्ट हो जाता है?",
+            q_en: "Which type of computer memory is 'Volatile' in nature, meaning all its contents are wiped out as soon as power is turned off?",
+            options: [
+                { hi: "ROM (Read Only Memory)", en: "ROM" },
+                { hi: "RAM (Random Access Memory)", en: "RAM" },
+                { hi: "हार्ड डिस्क (HDD)", en: "Hard Disk Drive" },
+                { hi: "पेन ड्राइव (Flash Drive)", en: "Pen Drive" }
+            ],
+            correct: 1,
+            exp_hi: "RAM (रैंडम एक्सेस मेमोरी) एक अस्थायी/वाष्पशील (Volatile) मेमोरी है। कंप्यूटर चालू रहने तक ही इसमें प्रोग्राम व डेटा रहते हैं, बिजली गुल होते ही डेटा समाप्त हो जाता है।",
+            exp_en: "RAM is volatile primary memory. It requires continuous electrical power to maintain stored state; shutting down power instantaneously clears its contents."
+        },
+        {
+            num: 7,
+            q_hi: "कंप्यूटर को चालू (Boot) करने वाला बुनियादी प्रोग्राम 'BIOS' (Basic Input Output System) स्थायी रूप से किस मेमोरी चिप में संग्रहित (Firmware) रहता है?",
+            q_en: "The fundamental start-up program 'BIOS' (Basic Input Output System) is permanently etched as firmware in which memory chip?",
+            options: [
+                { hi: "DRAM", en: "DRAM" },
+                { hi: "ROM (Read Only Memory)", en: "ROM" },
+                { hi: "SRAM", en: "SRAM" },
+                { hi: "कैश मेमोरी", en: "Cache Memory" }
+            ],
+            correct: 1,
+            exp_hi: "BIOS प्रोग्राम निर्माता कंपनी द्वारा मदरबोर्ड पर स्थित ROM (Read Only Memory) चिप में स्थायी रूप से लिखा जाता है। इसे हार्डवेयर और सॉफ्टवेयर का संयुक्त रूप अर्थात् 'फर्मवेयर' (Firmware) कहते हैं।",
+            exp_en: "BIOS is burned permanently into the non-volatile ROM chip on the motherboard by the manufacturer, functioning as foundational firmware for hardware bootstrapping."
+        },
+        {
+            num: 8,
+            q_hi: "अत्यधिक तीव्र गति वाले सीपीयू (CPU) और अपेक्षाकृत धीमी मुख्य मेमोरी (RAM) के मध्य गति के अंतर को पाटने हेतु बफर के रूप में कौन सी मेमोरी कार्य करती है?",
+            q_en: "Which high-speed memory acts as a buffer between the fast CPU and relatively slower main memory (RAM) to bridge the speed mismatch?",
+            options: [
+                { hi: "वर्चुअल मेमोरी", en: "Virtual Memory" },
+                { hi: "कैश मेमोरी (Cache Memory)", en: "Cache Memory" },
+                { hi: "सेकेंडरी स्टोरेज", en: "Secondary Storage" },
+                { hi: "फ्लैश मेमोरी", en: "Flash Memory" }
+            ],
+            correct: 1,
+            exp_hi: "कैश मेमोरी (L1, L2, L3) CPU और RAM के बीच अत्यधिक तीव्र गति की सेमीकंडक्टर मेमोरी है, जो उन डेटा व निर्देशों को रखती है जिनकी CPU को बार-बार आवश्यकता होती है।",
+            exp_en: "Cache memory (L1/L2/L3) operates as an ultrafast intermediate buffer between processor and system RAM to accelerate instruction throughput."
+        },
+        {
+            num: 9,
+            q_hi: "कंप्यूटर डेटा मापन में 1 'निबल' (Nibble) कितने बिट्स (Bits) के बराबर होता है?",
+            q_en: "In computer data storage measurement, 1 'Nibble' is equivalent to how many bits?",
+            options: [
+                { hi: "2 बिट्स", en: "2 Bits" },
+                { hi: "4 बिट्स (4 Bits)", en: "4 Bits" },
+                { hi: "8 बिट्स", en: "8 Bits" },
+                { hi: "16 बिट्स", en: "16 Bits" }
+            ],
+            correct: 1,
+            exp_hi: "4 बिट्स के समूह को 1 निबल (Nibble) कहा जाता है। 8 बिट्स मिलकर 1 बाइट (Byte) बनाते हैं (अतः 1 निबल = आधा बाइट)।",
+            exp_en: "A sequence of 4 binary digits (bits) constitutes a 'Nibble'. Two nibbles (8 bits) constitute one byte."
+        },
+        {
+            num: 10,
+            q_hi: "एक मेगाबाइट (1 MB) में कुल कितने किलोबाइट्स (KB) या बाइट्स होते हैं?",
+            q_en: "How many Kilobytes (KB) or bytes are there in one Megabyte (1 MB)?",
+            options: [
+                { hi: "1000 KB", en: "1000 KB" },
+                { hi: "1024 KB (अर्थात् 2^20 बाइट्स)", en: "1024 KB (i.e. 2^20 Bytes)" },
+                { hi: "1024 Bytes", en: "1024 Bytes" },
+                { hi: "1048 KB", en: "1048 KB" }
+            ],
+            correct: 1,
+            exp_hi: "द्विआधारी (Binary) प्रणाली में 1 KB = 1024 बाइट्स (2^10), 1 MB = 1024 KB = 10,48,576 बाइट्स (2^20 बाइट्स), तथा 1 GB = 1024 MB होता है।",
+            exp_en: "In the binary storage system, 1 MB equals 1024 KB, which equates to 1,048,576 bytes ($2^{20}$ bytes)."
+        },
+        {
+            num: 11,
+            q_hi: "बैंकिंग प्रणाली में चेकों के तीव्र समाशोधन एवं प्रोसेसिंग हेतु चेक के नीचे छपे विशेष 9 अंकों के कोड को पढ़ने के लिए किस इनपुट डिवाइस का उपयोग किया जाता है?",
+            q_en: "Which specialized input device is utilized in banking clearing systems to scan the 9-digit magnetically printed routing code on bank cheques?",
+            options: [
+                { hi: "OMR (ऑप्टिकल मार्क रीडर)", en: "OMR" },
+                { hi: "MICR (मैग्नेटिक इंक कैरेक्टर रिकॉग्निशन)", en: "MICR (Magnetic Ink Character Recognition)" },
+                { hi: "OCR (ऑप्टिकल कैरेक्टर रिकॉग्निशन)", en: "OCR" },
+                { hi: "बारकोड रीडर", en: "Barcode Reader" }
+            ],
+            correct: 1,
+            exp_hi: "बैंकों में चेकों पर आयरन ऑक्साइड युक्त चुंबकीय स्याही से छपे 9 अंकों के कोड (MICR कोड: 3 अंक शहर, 3 अंक बैंक, 3 अंक शाखा) को पढ़ने हेतु MICR स्कैनर का उपयोग होता है।",
+            exp_en: "Magnetic Ink Character Recognition (MICR) technology reads numbers printed with magnetic iron-oxide ink at the bottom of cheques for fast, fraud-resistant sorting."
+        },
+        {
+            num: 12,
+            q_hi: "कंप्यूटर में कर्सर संचालन हेतु विश्व के प्रथम 'माउस' (Mouse) का आविष्कार 1964 में किसने किया था?",
+            q_en: "Who invented the world's first computer 'Mouse' as an interactive pointing device in 1964?",
+            options: [
+                { hi: "टिम बर्नर्स ली", en: "Tim Berners-Lee" },
+                { hi: "डगलस एंगेलबर्ट (Douglas Engelbart)", en: "Douglas Engelbart" },
+                { hi: "क्रिस्टोफर शोल्स", en: "Christopher Sholes" },
+                { hi: "डेनिस रिची", en: "Dennis Ritchie" }
+            ],
+            correct: 1,
+            exp_hi: "स्टैनफोर्ड रिसर्च इंस्टीट्यूट में डॉ. डगलस एंगेलबर्ट ने 1964 में लकड़ी के खांचे से बने पहले कंप्यूटर माउस का आविष्कार किया था। (क्रिस्टोफर शोल्स ने QWERTY कीबोर्ड बनाया था)।",
+            exp_en: "Dr. Douglas Engelbart at Stanford Research Institute invented the computer mouse in 1964, originally fashioned from a wooden block with two wheels."
+        },
+        {
+            num: 13,
+            q_hi: "उच्च गति एवं स्पष्ट छपाई हेतु सूखे पाउडर स्याही 'टोनर' (Toner) तथा लेजर बीम का उपयोग करने वाला सबसे लोकप्रिय नॉन-इम्पैक्ट प्रिंटर कौन सा है?",
+            q_en: "Which premier non-impact printer uses dry toner powder, an electrostatic drum, and a laser beam to achieve high-speed and crisp document printing?",
+            options: [
+                { hi: "डॉट मैट्रिक्स प्रिंटर (DMP)", en: "Dot Matrix Printer" },
+                { hi: "लेजर प्रिंटर (Laser Printer)", en: "Laser Printer" },
+                { hi: "डेज़ी व्हील प्रिंटर", en: "Daisy Wheel Printer" },
+                { hi: "लाइन प्रिंटर", en: "Line Printer" }
+            ],
+            correct: 1,
+            exp_hi: "लेजर प्रिंटर (Laser Printer) नॉन-इम्पैक्ट श्रेणी का सर्वाधिक तीव्र व उच्च गुणवत्ता वाला पेज प्रिंटर है। यह फोटोकॉपियर की तरह इलेक्ट्रोस्टैटिक तकनीक व सूखे पाउडर टोनर से छपाई करता है।",
+            exp_en: "Laser printers are high-performance non-impact page printers utilizing xerographic technology, an electrostatic drum, and powdered toner cartridges."
+        },
+        {
+            num: 14,
+            q_hi: "किसी भी प्रिंटर की छपाई गुणवत्ता और इमेज के तीखेपन (Sharpness) को मानक रूप से किस इकाई में मापा जाता है?",
+            q_en: "The printing resolution and sharpness of image rendering in computer printers is standardly quantified in which unit?",
+            options: [
+                { hi: "PPM (Pages Per Minute)", en: "PPM (Pages Per Minute)" },
+                { hi: "DPI (Dots Per Inch)", en: "DPI (Dots Per Inch)" },
+                { hi: "CPS (Characters Per Second)", en: "CPS (Characters Per Second)" },
+                { hi: "BPS (Bits Per Second)", en: "BPS (Bits Per Second)" }
+            ],
+            correct: 1,
+            exp_hi: "प्रिंटर का रेजोल्यूशन (गुणवत्ता) DPI (डॉट्स प्रति इंच) में मापा जाता है। प्रति इंच जितने अधिक डॉट्स होंगे, प्रिंट उतना ही स्पष्ट होगा। (प्रिंटर की गति PPM - पेज प्रति मिनट में मापी जाती है)।",
+            exp_en: "Printer output resolution is measured in DPI (Dots Per Inch). A higher DPI corresponds to greater dot density and sharper image reproduction. (Speed is measured in PPM)."
+        },
+        {
+            num: 15,
+            q_hi: "आर्किटेक्ट्स, इंजीनियरों तथा सिटी प्लानर्स द्वारा बड़े इंजीनियरिंग नक्शे, आर्किटेक्चरल डिज़ाइन और विस्तृत ग्राफिक्स प्रिंट करने हेतु किस विशेष आउटपुट डिवाइस का उपयोग किया जाता है?",
+            q_en: "Which specialized vector-based output hardware is used by architects and structural engineers to produce high-precision large blueprints, maps, and engineering drawings?",
+            options: [
+                { hi: "डॉट मैट्रिक्स प्रिंटर", en: "Dot Matrix Printer" },
+                { hi: "प्लॉटर (Plotter)", en: "Plotter" },
+                { hi: "इंकजेट प्रिंटर", en: "Inkjet Printer" },
+                { hi: "स्कैनर", en: "Scanner" }
+            ],
+            correct: 1,
+            exp_hi: "प्लॉटर (Plotter) एक विशिष्ट हार्ड-कॉपी आउटपुट डिवाइस है जो पेन या स्याही नोजल द्वारा बड़े आकारों के कागजों/शीट्स पर निरंतर वेक्टर रेखाएं खींचकर उच्च परिशुद्धता वाले नक्शे और ब्लू-प्रिंट तैयार करता है।",
+            exp_en: "Plotters are specialized graphics output devices that use vector drawing mechanisms to generate large-format architectural blueprints, CAD designs, and topographic maps."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

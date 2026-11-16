@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 5.1 Quiz: Library Automation Software | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_5.1_Library_Automation_Software.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">पुस्तकालय स्वचालन सॉफ्टवेयर</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 मुख्य बिंदु (Key Tip):</strong>
+                <p style="margin-top: 0.4rem;">
+                    KOHA (न्यूजीलैंड, 2000), SOUL (INFLIBNET, v3.0 2021), e-Granthalaya (NIC, SaaS v4.0), एवं CDS/ISIS (UNESCO 1985) के विकासकर्ताओं एवं वर्षों को कंठस्थ रखें।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../Unit_04_Reference_and_Information_Services/Tests/SubUnit_4.4_Quiz.html">⬅️ Unit 4.4 टेस्ट (User Education Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "विश्व के प्रथम ओपन सोर्स इंटीग्रेटेड लाइब्रेरी सिस्टम (Open Source ILS) 'कोहा' (KOHA) का विकास किस देश में हुआ था?",
+            q_en: "In which country was the world's first open-source Integrated Library System (ILS), KOHA, originally developed in 1999/2000?",
+            options_hi: [
+                "संयुक्त राज्य अमेरिका (USA)",
+                "न्यूजीलैंड (New Zealand - Katipo Communications)",
+                "भारत (India)",
+                "यूनाइटेड किंगडम (UK)"
+            ],
+            options_en: [
+                "United States of America (USA)",
+                "New Zealand (Katipo Communications)",
+                "India",
+                "United Kingdom (UK)"
+            ],
+            correct: 1,
+            exp_hi: "KOHA का विकास न्यूजीलैंड के हॉरोव्हेनुआ लाइब्रेरी ट्रस्ट हेतु 'कैटिपो कम्युनिकेशंस' द्वारा 1999 में किया गया और 1 जनवरी 2000 को इसे विश्व के प्रथम ओपन सोर्स ILS के रूप में लाइव किया गया।",
+            exp_en: "KOHA was developed by Katipo Communications for the Horowhenua Library Trust in New Zealand, making its official debut on January 1, 2000 as the world's first open-source ILS."
+        },
+        {
+            id: 2,
+            q_hi: "माओरी (Maori) भाषा में 'कोहा' (KOHA) शब्द का शाब्दिक अर्थ क्या होता है?",
+            q_en: "What is the literal meaning of the word 'Koha' in the indigenous Maori language of New Zealand?",
+            options_hi: [
+                "उपहार या योगदान (Gift or Contribution)",
+                "पुस्तकालय भवन (Library Building)",
+                "ज्ञान का सागर (Ocean of Knowledge)",
+                "कंप्यूटर नेटवर्क (Computer Network)"
+            ],
+            options_en: [
+                "Gift or Contribution",
+                "Library Building",
+                "Ocean of Knowledge",
+                "Computer Network"
+            ],
+            correct: 0,
+            exp_hi: "न्यूजीलैंड की स्थानीय माओरी भाषा में 'Koha' शब्द का अर्थ 'उपहार' (Gift) अथवा बिना किसी मूल्य के दिया गया 'योगदान' (Contribution) होता है।",
+            exp_en: "In the Maori tongue, 'Koha' denotes a gift, present, or unconditional contribution, capturing the spirit of free open-source software."
+        },
+        {
+            id: 3,
+            q_hi: "ओपन सोर्स सॉफ्टवेयर 'कोहा' (KOHA) किस लाइसेंस के अंतर्गत दुनिया भर में निःशुल्क वितरित किया जाता है?",
+            q_en: "Under which open-source software license is KOHA distributed and modified globally?",
+            options_hi: [
+                "GNU जनरल पब्लिक लाइसेंस (GNU General Public License - GPL)",
+                "अपाचे 2.0 लाइसेंस",
+                "माइक्रोसॉफ्ट मालिकाना लाइसेंस",
+                "क्रिएटिव कॉमन्स CC-BY"
+            ],
+            options_en: [
+                "GNU General Public License (GPL)",
+                "Apache 2.0 License",
+                "Microsoft Proprietary License",
+                "Creative Commons CC-BY"
+            ],
+            correct: 0,
+            exp_hi: "KOHA को GNU GPL (General Public License) के तहत जारी किया गया है, जिसके अनुसार इसका सोर्स कोड पूरी तरह खुला, निःशुल्क डाउनलोड एवं संशोधित करने योग्य है।",
+            exp_en: "KOHA is released under the GNU General Public License (GNU GPL), guaranteeing freedom to study, adapt, and redistribute its full source code."
+        },
+        {
+            id: 4,
+            q_hi: "भारतीय विश्वविद्यालयों एवं कॉलेजों हेतु 'सोल' (SOUL - Software for University Libraries) का विकास किस संस्थान द्वारा किया गया है?",
+            q_en: "'SOUL' (Software for University Libraries) was designed and developed specifically for Indian academic libraries by which agency?",
+            options_hi: [
+                "राष्ट्रीय सूचना विज्ञान केंद्र (NIC, नई दिल्ली)",
+                "इनफ्लिबनेट केंद्र (INFLIBNET Centre, गांधीनगर, गुजरात)",
+                "डीआरटीसी (DRTC, बेंगलुरु)",
+                "आईआईएससी (IISc, बेंगलुरु)"
+            ],
+            options_en: [
+                "National Informatics Centre (NIC, New Delhi)",
+                "INFLIBNET Centre (Gandhinagar, Gujarat)",
+                "DRTC (Bangalore)",
+                "IISc (Bangalore)"
+            ],
+            correct: 1,
+            exp_hi: "SOUL का विकास विश्वविद्यालय अनुदान आयोग (UGC) के स्वायत्त अंतर-विश्वविद्यालय केंद्र 'INFLIBNET' (गांधीनगर) द्वारा भारतीय शैक्षणिक पुस्तकालयों के लिए किया गया है।",
+            exp_en: "SOUL was custom-designed by the INFLIBNET Centre (Information and Library Network Centre), Gandhinagar, an autonomous Inter-University Centre of UGC."
+        },
+        {
+            id: 5,
+            q_hi: "INFLIBNET केंद्र द्वारा 'सोल' (SOUL) का नवीनतम संस्करण 'SOUL 3.0' किस वर्ष में विमोचित किया गया था?",
+            q_en: "In which year was the latest major release, 'SOUL 3.0', officially launched by INFLIBNET Centre?",
+            options_hi: [
+                "वर्ष 2000 में",
+                "वर्ष 2009 में",
+                "वर्ष 2021 में (February 2021)",
+                "वर्ष 2024 में"
+            ],
+            options_en: [
+                "Year 2000 (SOUL 1.0)",
+                "Year 2009 (SOUL 2.0)",
+                "Year 2021 (SOUL 3.0)",
+                "Year 2024"
+            ],
+            correct: 2,
+            exp_hi: "SOUL 1.0 वर्ष 2000 में, SOUL 2.0 जनवरी 2009 में, और नवीनतम वेब-सक्षम संस्करण 'SOUL 3.0' फरवरी 2021 में जारी किया गया था। यह MARC-21 और वेब आर्किटेक्चर पर कार्य करता है।",
+            exp_en: "SOUL 3.0 was formally released in February 2021, succeeding SOUL 1.0 (2000) and SOUL 2.0 (2009) with enhanced Unicode, MARC-21, and web services."
+        },
+        {
+            id: 6,
+            q_hi: "भारत सरकार के किस विभाग द्वारा देश के सरकारी एवं स्कूल पुस्तकालयों हेतु 'ई-ग्रंथालय' (e-Granthalaya) सॉफ्टवेयर विकसित किया गया है?",
+            q_en: "By which Indian government agency was 'e-Granthalaya' library automation software developed for government and school libraries?",
+            options_hi: [
+                "राष्ट्रीय सूचना विज्ञान केंद्र (National Informatics Centre - NIC)",
+                "इसरो (ISRO)",
+                "सी-डैक (C-DAC, पुणे)",
+                "नीति आयोग (NITI Aayog)"
+            ],
+            options_en: [
+                "National Informatics Centre (NIC, MeitY)",
+                "ISRO",
+                "C-DAC (Pune)",
+                "NITI Aayog"
+            ],
+            correct: 0,
+            exp_hi: "ई-ग्रंथालय का विकास इलेक्ट्रॉनिकी एवं सूचना प्रौद्योगिकी मंत्रालय के अंतर्गत कार्यरत 'राष्ट्रीय सूचना विज्ञान केंद्र' (NIC) द्वारा 2003 में प्रारंभ किया गया था।",
+            exp_en: "e-Granthalaya was engineered by the National Informatics Centre (NIC), Ministry of Electronics & IT, Government of India."
+        },
+        {
+            id: 7,
+            q_hi: "'ई-ग्रंथालय 4.0' (e-Granthalaya 4.0) किस आधुनिक कंप्यूटिंग मॉडल पर आधारित है, जिसमें पुस्तकालय को स्थानीय सर्वर लगाने की आवश्यकता नहीं होती?",
+            q_en: "On which modern cloud deployment model is 'e-Granthalaya 4.0' architected, relieving libraries from maintaining local hardware servers?",
+            options_hi: [
+                "SaaS मॉडल (Software-as-a-Service on Cloud / क्लाउड पर सॉफ्टवेयर सेवा)",
+                "ऑफ़लाइन स्टैंडअलोन DOS मॉडल",
+                "केवल पंच-कार्ड मॉडल",
+                "लोकल एरिया नेटवर्क (LAN) केवल"
+            ],
+            options_en: [
+                "Cloud-based SaaS Model (Software-as-a-Service)",
+                "Offline Standalone DOS Model",
+                "Punched-Card Model",
+                "Local Area Network (LAN) only"
+            ],
+            correct: 0,
+            exp_hi: "ई-ग्रंथालय 4.0 क्लाउड-आधारित 'Software-as-a-Service' (SaaS) मॉडल पर आधारित है, जो भारत सरकार के मेघराज क्लाउड (MeghRaj NIC Cloud) पर होस्टेड है। इसमें किसी स्थानीय सर्वर की आवश्यकता नहीं होती।",
+            exp_en: "e-Granthalaya 4.0 is deployed under the Software-as-a-Service (SaaS) paradigm on the NIC National Cloud (MeghRaj), centralizing hosting and databases."
+        },
+        {
+            id: 8,
+            q_hi: "हैदराबाद स्थित वेरूस सॉल्यूशंस (Verus Solutions) द्वारा विकसित भारतीय ओपन सोर्स पुस्तकालय सॉफ्टवेयर कौन-सा है?",
+            q_en: "Which Indian open-source integrated library management software was developed by Verus Solutions, Hyderabad?",
+            options_hi: [
+                "न्यूजेनलिब (NewGenLib)",
+                "लिबसिस (LibSys)",
+                "कोहा (KOHA)",
+                "संजय (SANJAY)"
+            ],
+            options_en: [
+                "NewGenLib",
+                "LibSys",
+                "KOHA",
+                "SANJAY"
+            ],
+            correct: 0,
+            exp_hi: "NewGenLib का विकास वेरूस सॉल्यूशंस प्राइवेट लिमिटेड एवं केशव मेमोरियल टेक्निकल ट्रस्ट (हैदराबाद) द्वारा किया गया। मार्च 2008 में इसे ओपन सोर्स (GPL) घोषित किया गया।",
+            exp_en: "NewGenLib is an enterprise-level open-source ILS developed by Verus Solutions Pvt Ltd and Keshav Memorial Technical Trust in Hyderabad, made open source in 2008."
+        },
+        {
+            id: 9,
+            q_hi: "यूनेस्को (UNESCO) द्वारा 1985 में गैर-अंकीय पाठ्य डेटाबेस (Non-numerical textual database) के प्रबंधन हेतु कौन-सा ऐतिहासिक सॉफ्टवेयर जारी किया गया था?",
+            q_en: "Which landmark software was released in 1985 by UNESCO for managing non-numerical structured textual databases?",
+            options_hi: [
+                "CDS/ISIS",
+                "KOHA",
+                "SOUL",
+                "DSpace"
+            ],
+            options_en: [
+                "CDS/ISIS",
+                "KOHA",
+                "SOUL",
+                "DSpace"
+            ],
+            correct: 0,
+            exp_hi: "यूनेस्को ने 1985 में CDS/ISIS (Computerized Documentation System / Integrated Set of Information Systems) जारी किया। यह विकासशील देशों के पुस्तकालयों में ग्रंथपरक डेटाबेस निर्माण में अत्यधिक लोकप्रिय हुआ।",
+            exp_en: "UNESCO introduced CDS/ISIS in 1985, tailor-made for variable-length bibliographic textual records and extensively adopted across developing nations."
+        },
+        {
+            id: 10,
+            q_hi: "यूनेस्को द्वारा विकसित CDS/ISIS सॉफ्टवेयर का माइक्रोसॉफ्ट विंडोज आधारित ग्राफिकल संस्करण क्या कहलाता है?",
+            q_en: "What is the name of the Microsoft Windows-based graphical interface edition of UNESCO's CDS/ISIS software?",
+            options_hi: [
+                "WINISIS",
+                "WinKoha",
+                "WebSOUL",
+                "MicroCDS"
+            ],
+            options_en: [
+                "WINISIS",
+                "WinKoha",
+                "WebSOUL",
+                "MicroCDS"
+            ],
+            correct: 0,
+            exp_hi: "CDS/ISIS के विंडोज संस्करण को 'WINISIS' नाम दिया गया, जिसे यूनेस्को द्वारा 1995-1996 में ग्राफिकल यूजर इंटरफेस (GUI) के साथ जारी किया गया था।",
+            exp_en: "WINISIS is the official Windows GUI-based incarnation of CDS/ISIS developed by UNESCO in 1995-1996."
+        },
+        {
+            id: 11,
+            q_hi: "पुस्तकालय सॉफ्टवेयरों के मध्य दो अलग-अलग डेटाबेसों से कैटलॉग रिकॉर्ड खोजने और डाउनलोड (Copy Cataloguing) करने हेतु प्रयुक्त अंतरराष्ट्रीय क्लाइंट-सर्वर प्रोटोकॉल कौन-सा है?",
+            q_en: "Which international client-server protocol enables library software to search and retrieve catalog records across remote library systems?",
+            options_hi: [
+                "Z39.50 (ANSI/NISO Z39.50)",
+                "HTTP",
+                "FTP",
+                "SMTP"
+            ],
+            options_en: [
+                "Z39.50 (ANSI/NISO Z39.50)",
+                "HTTP",
+                "FTP",
+                "SMTP"
+            ],
+            correct: 0,
+            exp_hi: "Z39.50 एक अंतरराष्ट्रीय मानक क्लाइंट-सर्वर प्रोटोकॉल है (ANSI/NISO मानक), जो कोहा या सोल जैसे सॉफ्टवेयर को अन्य वैश्विक पुस्तकालयों (जैसे लाइब्रेरी ऑफ कांग्रेस) से सीधे कैटलॉग रिकॉर्ड खोजने व डाउनलोड करने की अनुमति देता है।",
+            exp_en: "Z39.50 is the international standardized protocol (ISO 23950 / ANSI Z39.50) governing computer-to-computer bibliographic information search and retrieval."
+        },
+        {
+            id: 12,
+            q_hi: "पुस्तकालय स्वचालन सॉफ्टवेयर को RFID कियोस्क, बुक ड्रॉप बॉक्स एवं सुरक्षा गेट्स से जोड़ने हेतु किस मानक प्रोटोकॉल का उपयोग किया जाता है?",
+            q_en: "Which standard data exchange protocol is utilized by library management systems to interface with RFID kiosks and security barriers?",
+            options_hi: [
+                "SIP2 (Standard Interchange Protocol 2)",
+                "POP3",
+                "IMAP",
+                "DNS"
+            ],
+            options_en: [
+                "SIP2 (Standard Interchange Protocol 2)",
+                "POP3",
+                "IMAP",
+                "DNS"
+            ],
+            correct: 0,
+            exp_hi: "SIP2 (3M द्वारा विकसित Standard Interchange Protocol) पुस्तकालय ILS और सेल्फ-चेक कियोस्क, RFID स्मार्ट गेट्स व ऑटोमेटेड बुक ड्रॉप मशीनों के मध्य संचार का वैश्विक मानक है।",
+            exp_en: "3M's SIP2 (Standard Interchange Protocol v2) is the industry benchmark protocol connecting circulation databases to RFID self-service terminals and gates."
+        },
+        {
+            id: 13,
+            q_hi: "भारत में विश्वविद्यालयों एवं उच्च शिक्षण संस्थानों में व्यापक रूप से प्रयुक्त प्रसिद्ध 'वाणिज्यिक / बंद स्रोत' (Commercial / Proprietary) पुस्तकालय सॉफ्टवेयर कौन-सा है?",
+            q_en: "Which is a leading commercial (proprietary / closed-source) library automation software widely installed in premier Indian academic institutions?",
+            options_hi: [
+                "लिबसिस (LibSys - LibSys Ltd., Gurgaon)",
+                "कोहा (KOHA)",
+                "न्यूजेनलिब (NewGenLib)",
+                "ग्रीनस्टोन (Greenstone)"
+            ],
+            options_en: [
+                "LibSys (LibSys Ltd., Gurgaon)",
+                "KOHA",
+                "NewGenLib",
+                "Greenstone"
+            ],
+            correct: 0,
+            exp_hi: "LibSys (LibSys 4, 7, 10) भारत की LibSys Ltd. (गुड़गांव) द्वारा निर्मित एक प्रमुख वाणिज्यिक (Commercial) सॉफ्टवेयर है, जबकि कोहा और न्यूजेनलिब ओपन सोर्स हैं।",
+            exp_en: "LibSys is India's most prominent proprietary/commercial library management software package, developed by LibSys Ltd., Gurugram."
+        },
+        {
+            id: 14,
+            q_hi: "इंटीग्रेटेड लाइब्रेरी सिस्टम (ILMS) का कौन-सा मॉड्यूल आवधिक पत्रिकाओं के आगमन, कार्डेक्स (Kardex) प्रविष्टि और वार्षिक सदस्यता नवीनीकरण का कार्य संभालता है?",
+            q_en: "Which functional module of an ILMS handles serial arrivals, Kardex registration, and subscription renewals?",
+            options_hi: [
+                "सामयिक पत्रिका नियंत्रण मॉड्यूल (Serials Control Module)",
+                "परिसंचरण मॉड्यूल (Circulation)",
+                "अधिग्रहण मॉड्यूल (Acquisition)",
+                "पुस्तक जिल्दसाजी मॉड्यूल"
+            ],
+            options_en: [
+                "Serials Control Module",
+                "Circulation Module",
+                "Acquisition Module",
+                "Book Binding Module"
+            ],
+            correct: 0,
+            exp_hi: "Serials Control Module पत्रिकाओं की सदस्यता, अंकों के आगमन पर चेक-इन, कार्डेक्स प्रबंधन, गायब अंकों हेतु प्रकाशक को क्लेम लेटर भेजना और बाउंड वॉल्यूम तैयार करने का कार्य करता है।",
+            exp_en: "The Serials Control module orchestrates subscriptions, invoice processing, issue-by-issue check-in (electronic Kardex), missing issue claims, and binding records."
+        },
+        {
+            id: 15,
+            q_hi: "वर्ष 1936 में औद्योगिक उत्पादन के संदर्भ में 'स्वचालन' (Automation) शब्द को पहली बार किसने गढ़ा था?",
+            q_en: "Who originally coined the term 'Automation' in 1936 within the context of automated industrial manufacturing?",
+            options_hi: [
+                "डी.एस. हार्डर (D.S. Harder - General Motors)",
+                "हरमन हॉलेरिथ (Herman Hollerith)",
+                "चार्ल्स बैबेज (Charles Babbage)",
+                "एलन ट्यूरिंग (Alan Turing)"
+            ],
+            options_en: [
+                "D.S. Harder (General Motors)",
+                "Herman Hollerith",
+                "Charles Babbage",
+                "Alan Turing"
+            ],
+            correct: 0,
+            exp_hi: "जनरल मोटर्स के इंजीनियरिंग वाइस प्रेसिडेंट डी.एस. हार्डर (D.S. Harder) ने 1936 में उत्पादन संयंत्रों में पुर्जों के स्वचालित संचालन हेतु 'Automation' शब्द गढ़ा था।",
+            exp_en: "D.S. Harder of General Motors coined 'Automation' in 1936 to describe the automatic handling and machining of parts between progressive production stages."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let currentLang = 'both';
+    let timerInterval = null;
+    let timeLeft = 20 * 60;
+
+    const STORAGE_KEY = 'bihar_let_u5_1_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

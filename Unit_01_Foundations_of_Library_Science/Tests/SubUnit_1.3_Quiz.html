@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1.3 Quiz: Library Movement, Education & Acts | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_1.3_Library_Movement_and_Acts.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 1.3: Movement, Education & Acts</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम किस वर्ष पारित किया गया था?",
+            q_en: "In which year was 'The Bihar State Public Library and Information Centre Act' enacted?",
+            options_hi: [
+                "वर्ष 2002 में",
+                "वर्ष 2006 में",
+                "वर्ष 2008 में",
+                "वर्ष 2012 में"
+            ],
+            options_en: [
+                "Year 2002",
+                "Year 2006",
+                "Year 2008",
+                "Year 2012"
+            ],
+            correct: 2,
+            exp_hi: "बिहार विधानमंडल द्वारा 'बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम' वर्ष 2008 में पारित किया गया था। इस प्रकार सार्वजनिक पुस्तकालय कानून बनाने वाला बिहार भारत का 16वां राज्य बना।",
+            exp_en: "The Bihar State Public Library and Information Centre Act was enacted in the year 2008, making Bihar the 16th state in India to adopt public library legislation."
+        },
+        {
+            id: 2,
+            q_hi: "बिहार सार्वजनिक पुस्तकालय अधिनियम, 2008 के वित्तीय प्रावधानों के संदर्भ में निम्नलिखित में से कौन-सा कथन सत्य है?",
+            q_en: "Regarding the financial provisions of the Bihar Public Library Act, 2008, which of the following statements is true?",
+            options_hi: [
+                "संपत्ति कर पर 5% पुस्तकालय उपकर (Cess) लगाया जाता है।",
+                "इसमें कोई पुस्तकालय उपकर (No Cess) नहीं है; वित्तपोषण राज्य शिक्षा विभाग के बजट से होता है।",
+                "वाहनों के पंजीकरण पर 2% उपकर लिया जाता है।",
+                "शराब की बिक्री पर विशेष अधिभार द्वारा वित्तपोषण होता है।"
+            ],
+            options_en: [
+                "A library cess of 5% is levied on property tax.",
+                "There is No Library Cess; funding is directly met from the State Education Department's budget.",
+                "A 2% cess is charged on motor vehicle registration.",
+                "Funded by a surcharge on sale of alcoholic liquor."
+            ],
+            correct: 1,
+            exp_hi: "बिहार पुस्तकालय अधिनियम में कोई उपकर (No Library Cess) लगाने का प्रावधान नहीं है। पुस्तकालयों का संपूर्ण विकास एवं परिचालन खर्च राज्य सरकार (शिक्षा विभाग) के बजटीय आवंटन द्वारा वहन किया जाता है।",
+            exp_en: "The Bihar Public Library Act, 2008 operates on a No-Cess model. Funds are allocated directly through the budgetary provisions of the State Department of Education."
+        },
+        {
+            id: 3,
+            q_hi: "स्वतंत्र भारत में सार्वजनिक पुस्तकालय अधिनियम पारित करने वाला प्रथम राज्य कौन-सा था?",
+            q_en: "Which was the first state in independent India to pass a Public Library Act?",
+            options_hi: [
+                "आंध्र प्रदेश (1960)",
+                "मद्रास / तमिलनाडु (1948)",
+                "कर्नाटक (1965)",
+                "महाराष्ट्र (1967)"
+            ],
+            options_en: [
+                "Andhra Pradesh (1960)",
+                "Madras / Tamil Nadu (1948)",
+                "Karnataka (1965)",
+                "Maharashtra (1967)"
+            ],
+            correct: 1,
+            exp_hi: "मद्रास (अब तमिलनाडु) सार्वजनिक पुस्तकालय अधिनियम 1948 में पारित हुआ था। यह डॉ. एस.आर. रंगनाथन के व्यक्तिगत प्रयासों से स्वतंत्र भारत में पारित होने वाला पहला पुस्तकालय कानून था।",
+            exp_en: "Madras (now Tamil Nadu) Public Libraries Act, 1948 was the first library legislation enacted in independent India, primarily drafted and steered by Dr. S.R. Ranganathan."
+        },
+        {
+            id: 4,
+            q_hi: "भारत में किसी विश्वविद्यालय द्वारा पुस्तकालय विज्ञान में नियमित प्रशिक्षण पाठ्यक्रम सर्वप्रथम 1915 में किसके द्वारा शुरू किया गया था?",
+            q_en: "By whom was the first regular university-level training course in Library Science started in India in 1915?",
+            options_hi: [
+                "डब्ल्यू.ए. बोर्डन (W.A. Borden)",
+                "आसा डॉन डिकिंसन (Asa Don Dickinson)",
+                "डॉ. एस.आर. रंगनाथन",
+                "मेल्विल डेवी"
+            ],
+            options_en: [
+                "W.A. Borden",
+                "Asa Don Dickinson",
+                "Dr. S.R. Ranganathan",
+                "Melvil Dewey"
+            ],
+            correct: 1,
+            exp_hi: "अमेरिकी पुस्तकालयाध्यक्ष आसा डॉन डिकिंसन (Asa Don Dickinson) ने 1915 में पंजाब विश्वविद्यालय, लाहौर में भारत का पहला विश्वविद्यालयी पुस्तकालय प्रशिक्षण पाठ्यक्रम शुरू किया। उन्होंने 1916 में 'Punjab Library Primer' पुस्तक भी लिखी।",
+            exp_en: "American librarian Asa Don Dickinson initiated the first university certificate course in Library Science at Punjab University, Lahore in 1915 and authored 'Punjab Library Primer' in 1916."
+        },
+        {
+            id: 5,
+            q_hi: "भारत में सार्वजनिक पुस्तकालयों के संवर्धन, विकास एवं वित्तीय सहायता हेतु स्थापित शीर्ष संस्था 'RRRLF' का मुख्यालय कहाँ स्थित है?",
+            q_en: "Where is the headquarters of 'RRRLF' (Raja Rammohun Roy Library Foundation), the apex body for promoting and funding public libraries in India, situated?",
+            options_hi: [
+                "नई दिल्ली",
+                "कोलकाता",
+                "मुंबई",
+                "चेन्नई"
+            ],
+            options_en: [
+                "New Delhi",
+                "Kolkata",
+                "Mumbai",
+                "Chennai"
+            ],
+            correct: 1,
+            exp_hi: "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF) की स्थापना संस्कृति मंत्रालय द्वारा मई 1972 (राजा राममोहन राय के द्विशताब्दी वर्ष) में की गई थी। इसका मुख्यालय साल्ट लेक, कोलकाता में स्थित है।",
+            exp_en: "Raja Rammohun Roy Library Foundation (RRRLF) was established in May 1972 by the Ministry of Culture, Government of India. Its headquarters is located at Salt Lake, Kolkata."
+        },
+        {
+            id: 6,
+            q_hi: "सार्वजनिक पुस्तकालयों की स्थिति की समीक्षा हेतु भारत सरकार द्वारा 1957 में गठित 'परामर्शदात्री समिति' (Advisory Committee for Libraries) के अध्यक्ष कौन थे?",
+            q_en: "Who was the Chairman of the Advisory Committee for Libraries appointed by the Government of India in 1957?",
+            options_hi: [
+                "डॉ. एस.आर. रंगनाथन",
+                "के.पी. सिन्हा (K.P. Sinha)",
+                "डॉ. डी.एस. कोठारी",
+                "प्रो. डी.पी. चट्टोपाध्याय"
+            ],
+            options_en: [
+                "Dr. S.R. Ranganathan",
+                "K.P. Sinha",
+                "Dr. D.S. Kothari",
+                "Prof. D.P. Chattopadhyaya"
+            ],
+            correct: 1,
+            exp_hi: "भारत सरकार ने 1957 में के.पी. सिन्हा (K.P. Sinha) की अध्यक्षता में एडवाइजरी कमेटी फॉर लाइब्रेरीज का गठन किया था, जिसने 1959 में अपनी प्रसिद्ध रिपोर्ट सौंपी। इसे सामान्यतः 'सिन्हा समिति' कहा जाता है।",
+            exp_en: "The Advisory Committee for Libraries was appointed by the Government of India in 1957 under the chairmanship of K.P. Sinha (commonly referred to as the Sinha Committee), which submitted its report in 1959."
+        },
+        {
+            id: 7,
+            q_hi: "भारत के किस राज्य के पुस्तकालय अधिनियम में शराब (IMFL) की बिक्री पर पुस्तकालय उपकर (Cess) लगाने का अनूठा वैधानिक प्रावधान है?",
+            q_en: "In which Indian state's library legislation is there a unique statutory provision for levying a library cess on the sale of Indian Made Foreign Liquor (IMFL)?",
+            options_hi: [
+                "केरल (1989)",
+                "गोवा (1993)",
+                "हरियाणा (1989)",
+                "कर्नाटक (1965)"
+            ],
+            options_en: [
+                "Kerala (1989)",
+                "Goa (1993)",
+                "Haryana (1989)",
+                "Karnataka (1965)"
+            ],
+            correct: 1,
+            exp_hi: "गोवा सार्वजनिक पुस्तकालय अधिनियम, 1993 के तहत भारत निर्मित विदेशी शराब (IMFL) की प्रत्येक बोतल पर अधिभार / उपकर लगाकर पुस्तकालय कोष जुटाया जाता है।",
+            exp_en: "Under the Goa Public Libraries Act, 1993, a surcharge/cess is levied on the sale of Indian Made Foreign Liquor (IMFL) to create and sustain the public library fund."
+        },
+        {
+            id: 8,
+            q_hi: "प्राचीन काल में नालंदा विश्वविद्यालय के प्रसिद्ध पुस्तकालय परिसर को किस नाम से जाना जाता था?",
+            q_en: "In ancient times, the legendary library complex of Nalanda University was known by what collective name?",
+            options_hi: [
+                "ज्ञान भंडार (Jnana Bhandara)",
+                "धर्मगंज (Dharmaganja)",
+                "सरस्वती महल (Saraswathi Mahal)",
+                "किताबखाना (Kitabkhana)"
+            ],
+            options_en: [
+                "Jnana Bhandara",
+                "Dharmaganja",
+                "Saraswathi Mahal",
+                "Kitabkhana"
+            ],
+            correct: 1,
+            exp_hi: "नालंदा विश्वविद्यालय के पुस्तकालय को 'धर्मगंज' (Dharmaganja - धर्म का खजाना) कहा जाता था। इसमें रत्नसागर (9 मंजिला), रत्नोदधि और रत्नारंजक नामक तीन विशाल ग्रंथालय भवन शामिल थे।",
+            exp_en: "The famous library of Nalanda University was named 'Dharmaganja' (Mountain of Truth). It comprised three grand multi-storeyed buildings: Ratnasagara, Ratnodadhi, and Ratnaranjaka."
+        },
+        {
+            id: 9,
+            q_hi: "डॉ. एस.आर. रंगनाथन ने भारत के लिए अपना प्रथम 'मॉडल सार्वजनिक पुस्तकालय विधेयक' (Model Public Library Bill) किस सम्मेलन में प्रस्तुत किया था?",
+            q_en: "At which conference did Dr. S.R. Ranganathan present his first 'Model Public Library Bill' for India?",
+            options_hi: [
+                "प्रथम अखिल भारतीय पुस्तकालय सम्मेलन, कलकत्ता (1933)",
+                "प्रथम अखिल एशियाई शैक्षणिक सम्मेलन, बनारस (1930)",
+                "आईएलए वार्षिक सम्मेलन, मद्रास (1942)",
+                "यूनेस्को दिल्ली संगोष्ठी (1951)"
+            ],
+            options_en: [
+                "First All India Library Conference, Calcutta (1933)",
+                "First All Asia Educational Conference, Banaras (1930)",
+                "ILA Annual Conference, Madras (1942)",
+                "UNESCO Delhi Seminar (1951)"
+            ],
+            correct: 1,
+            exp_hi: "दिसंबर 1930 में बनारस में आयोजित 'प्रथम अखिल एशियाई शैक्षणिक सम्मेलन' (First All Asia Educational Conference) के पुस्तकालय सेवा अनुभाग में डॉ. रंगनाथन ने मॉडल लाइब्रेरी एक्ट का प्रारूप प्रस्तुत किया था।",
+            exp_en: "Dr. S.R. Ranganathan drafted and presented his first Model Public Library Bill in December 1930 at the First All Asia Educational Conference held at Banaras."
+        },
+        {
+            id: 10,
+            q_hi: "निम्नलिखित में से किन दो राज्यों के पुस्तकालय अधिनियमों में कोई पुस्तकालय उपकर (No Library Cess) नहीं है और वे पूर्णतः राज्य बजट पर निर्भर हैं?",
+            q_en: "Which pair of states among the following have No Library Cess in their legislation and depend entirely on state budgetary grants?",
+            options_hi: [
+                "तमिलनाडु एवं आंध्र प्रदेश",
+                "कर्नाटक एवं हरियाणा",
+                "महाराष्ट्र एवं पश्चिम बंगाल",
+                "केरल एवं गोवा"
+            ],
+            options_en: [
+                "Tamil Nadu and Andhra Pradesh",
+                "Karnataka and Haryana",
+                "Maharashtra and West Bengal",
+                "Kerala and Goa"
+            ],
+            correct: 2,
+            exp_hi: "महाराष्ट्र (1967) और पश्चिम बंगाल (1979) दोनों के पुस्तकालय अधिनियमों में कोई उपकर (No Cess) नहीं है। दोनों राज्य अपनी संचित निधि/बजट से पुस्तकालयों को प्रत्यक्ष वित्तीय अनुदान देते हैं।",
+            exp_en: "Both Maharashtra (1967) and West Bengal (1979) Public Library Acts have No Cess provision. Their library systems are financed directly from state consolidated fund/budgetary allocations."
+        },
+        {
+            id: 11,
+            q_hi: "भारत में किस राज्य ने सर्वाधिक व्यापक पुस्तकालय उपकर (संपत्ति, वाहन, भूमि राजस्व व प्रवेश कर) का प्रावधान किया है?",
+            q_en: "Which Indian state has enacted the most comprehensive multi-source library cess (covering property, motor vehicles, land revenue, and entry tax)?",
+            options_hi: [
+                "तमिलनाडु (1948)",
+                "कर्नाटक / मैसूर (1965)",
+                "केरल (1989)",
+                "आंध्र प्रदेश (1960)"
+            ],
+            options_en: [
+                "Tamil Nadu (1948)",
+                "Karnataka / Mysore (1965)",
+                "Kerala (1989)",
+                "Andhra Pradesh (1960)"
+            ],
+            correct: 1,
+            exp_hi: "कर्नाटक (मैसूर) सार्वजनिक पुस्तकालय अधिनियम 1965 में सबसे व्यापक उपकर संरचना है, जो संपत्ति कर, भूमि राजस्व, मोटर वाहन कर और प्रवेश कर पर लगाया जाता है।",
+            exp_en: "The Karnataka (formerly Mysore) Public Libraries Act, 1965 has the most diverse tax base, levying library cess on property tax, land revenue, motor vehicles, and entry tax."
+        },
+        {
+            id: 12,
+            q_hi: "भारत में वर्तमान समय (2026) तक कुल कितने राज्यों में सार्वजनिक पुस्तकालय अधिनियम पारित हो चुका है?",
+            q_en: "Up to the present year (2026), how many states in India have successfully enacted Public Library Legislation?",
+            options_hi: [
+                "14 राज्यों में",
+                "16 राज्यों में",
+                "19 राज्यों में",
+                "22 राज्यों में"
+            ],
+            options_en: [
+                "14 States",
+                "16 States",
+                "19 States",
+                "22 States"
+            ],
+            correct: 2,
+            exp_hi: "भारत में अब तक कुल 19 राज्यों में पुस्तकालय अधिनियम पारित हो चुके हैं। 16वां राज्य बिहार (2008) था, और 19वां नवीनतम राज्य तेलंगाना (2015) है।",
+            exp_en: "A total of 19 states in India have passed public library legislation so far. Bihar was the 16th state (2008), and Telangana is the 19th state (2015)."
+        },
+        {
+            id: 13,
+            q_hi: "भारत में पहली बार मास्टर ऑफ लाइब्रेरी साइंस (M.Lib.Sc.) डिग्री कोर्स किस विश्वविद्यालय में और किस वर्ष शुरू किया गया था?",
+            q_en: "In which university and in which year was the Master of Library Science (M.Lib.Sc.) degree course started for the first time in India?",
+            options_hi: [
+                "मद्रास विश्वविद्यालय, 1931",
+                "दिल्ली विश्वविद्यालय, 1949",
+                "बनारस हिंदू विश्वविद्यालय, 1945",
+                "कलकत्ता विश्वविद्यालय, 1952"
+            ],
+            options_en: [
+                "University of Madras, 1931",
+                "University of Delhi, 1949",
+                "Banaras Hindu University, 1945",
+                "University of Calcutta, 1952"
+            ],
+            correct: 1,
+            exp_hi: "दिल्ली विश्वविद्यालय में डॉ. एस.आर. रंगनाथन के प्रयासों से वर्ष 1949 में भारत तथा संपूर्ण राष्ट्रमंडल (Commonwealth) का पहला M.Lib.Sc. पाठ्यक्रम प्रारंभ किया गया था।",
+            exp_en: "The Master of Library Science (M.Lib.Sc.) course was introduced for the first time in India and the Commonwealth at the University of Delhi in 1949 under Dr. S.R. Ranganathan."
+        },
+        {
+            id: 14,
+            q_hi: "भारत में राष्ट्रीय पुस्तकालय एवं सूचना प्रणाली नीति (NAPLIS) का मसौदा 1986 में किसकी अध्यक्षता में तैयार किया गया था?",
+            q_en: "Under whose chairmanship was the National Policy on Library and Information Systems (NAPLIS) draft formulated in 1986 in India?",
+            options_hi: [
+                "प्रो. डी.पी. चट्टोपाध्याय (Prof. D.P. Chattopadhyaya)",
+                "डॉ. एस.आर. रंगनाथन",
+                "डॉ. सी.आर. करिसिद्धप्पा",
+                "डॉ. मनमोहन सिंह"
+            ],
+            options_en: [
+                "Prof. D.P. Chattopadhyaya",
+                "Dr. S.R. Ranganathan",
+                "Dr. C.R. Karisiddappa",
+                "Dr. Manmohan Singh"
+            ],
+            correct: 0,
+            exp_hi: "भारत सरकार के संस्कृति विभाग द्वारा 1985 में गठित समिति ने प्रो. डी.पी. चट्टोपाध्याय की अध्यक्षता में मई 1986 में राष्ट्रीय पुस्तकालय एवं सूचना प्रणाली नीति (NAPLIS) का ऐतिहासिक मसौदा प्रस्तुत किया था।",
+            exp_en: "The Committee on National Policy on Library and Information Systems (NAPLIS) was chaired by eminent philosopher Prof. D.P. Chattopadhyaya, submitting its report in May 1986."
+        },
+        {
+            id: 15,
+            q_hi: "बिहार राज्य सार्वजनिक पुस्तकालय एवं सूचना केंद्र अधिनियम, 2008 के तहत 'राज्य पुस्तकालय प्राधिकरण' (State Library Authority) के पदेन अध्यक्ष कौन होते हैं?",
+            q_en: "Under the Bihar Public Library and Information Centre Act, 2008, who is the ex-officio Chairman of the State Library Authority?",
+            options_hi: [
+                "बिहार के माननीय राज्यपाल",
+                "बिहार के माननीय मुख्यमंत्री",
+                "शिक्षा मंत्री, बिहार सरकार",
+                "निदेशक, राज्य केंद्रीय पुस्तकालय (सिन्हा लाइब्रेरी)"
+            ],
+            options_en: [
+                "Hon'ble Governor of Bihar",
+                "Hon'ble Chief Minister of Bihar",
+                "Minister for Education, Govt. of Bihar",
+                "Director, State Central Library (Sinha Library)"
+            ],
+            correct: 2,
+            exp_hi: "बिहार अधिनियम, 2008 के अनुसार राज्य पुस्तकालय प्राधिकरण (State Library Authority) के अध्यक्ष बिहार सरकार के शिक्षा मंत्री होते हैं। यह प्राधिकरण राज्य में पुस्तकालय नीति और विकास की सर्वोच्च संस्था है।",
+            exp_en: "Under the Bihar Act of 2008, the Minister for Education, Government of Bihar serves as the ex-officio Chairman of the State Library Authority, the apex policymaking body in the state."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60; // 20 mins for 15 questions
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_1_3_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u2_sub2_4_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "प्रबंधन के 7 प्रमुख कार्यों को संक्षेप में व्यक्त करने वाले बहुचर्चित परिवर्णी शब्द 'POSDCORB' का प्रतिपादन 1937 में किसने किया था?",
+    "q_en": "Who coined the famous acronym 'POSDCORB' in 1937 to delineate the seven key executive functions of management?",
+    "options_hi": [
+      "हेनरी फेयोल (Henri Fayol)",
+      "लूथर गुलिक एवं लिंडाल उर्विक (Luther Gulick & Lyndall Urwick)",
+      "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+      "मैक्स वेबर (Max Weber)"
+    ],
+    "options_en": [
+      "Henri Fayol",
+      "Luther Gulick and Lyndall Urwick",
+      "F.W. Taylor",
+      "Max Weber"
+    ],
+    "options": [
+      {
+        "hi": "हेनरी फेयोल (Henri Fayol)",
+        "en": "Henri Fayol"
+      },
+      {
+        "hi": "लूथर गुलिक एवं लिंडाल उर्विक (Luther Gulick & Lyndall Urwick)",
+        "en": "Luther Gulick and Lyndall Urwick"
+      },
+      {
+        "hi": "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+        "en": "F.W. Taylor"
+      },
+      {
+        "hi": "मैक्स वेबर (Max Weber)",
+        "en": "Max Weber"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "लूथर गुलिक और लिंडाल उर्विक ने 1937 में 'Papers on the Science of Administration' में POSDCORB सूत्र दिया। इसमें P=Planning, O=Organizing, S=Staffing, D=Directing, CO=Coordinating, R=Reporting, B=Budgeting है।",
+    "exp_en": "Luther Gulick and Lyndall Urwick coined POSDCORB in 1937 in their edited volume 'Papers on the Science of Administration' to represent seven foundational managerial duties."
+  },
+  {
+    "globalId": "u2_sub2_4_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "डॉ. एस.आर. रंगनाथन के स्टाफ फॉर्मूले (UGC Library Committee, 1957) के अनुसार 'तकनीकी अनुभाग' (वर्गीकरण एवं सूचीकरण) में कितने ग्रंथों के लिए 1 व्यक्ति की संस्तुति की गई है?",
+    "q_en": "According to Dr. S.R. Ranganathan's Staff Formula (UGC 1957), one technical staff member is recommended for how many volumes classified and catalogued annually?",
+    "options_hi": [
+      "प्रतिवर्ष 1,000 ग्रंथ",
+      "प्रतिवर्ष 2,000 ग्रंथ (2,000 volumes per year)",
+      "प्रतिवर्ष 6,000 ग्रंथ",
+      "प्रतिवर्ष 1,500 ग्रंथ"
+    ],
+    "options_en": [
+      "1,000 volumes per year",
+      "2,000 volumes per year",
+      "6,000 volumes per year",
+      "1,500 volumes per year"
+    ],
+    "options": [
+      {
+        "hi": "प्रतिवर्ष 1,000 ग्रंथ",
+        "en": "1,000 volumes per year"
+      },
+      {
+        "hi": "प्रतिवर्ष 2,000 ग्रंथ (2,000 volumes per year)",
+        "en": "2,000 volumes per year"
+      },
+      {
+        "hi": "प्रतिवर्ष 6,000 ग्रंथ",
+        "en": "6,000 volumes per year"
+      },
+      {
+        "hi": "प्रतिवर्ष 1,500 ग्रंथ",
+        "en": "1,500 volumes per year"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रंगनाथन स्टाफ फॉर्मूले के तहत तकनीकी अनुभाग (Technical Section) में प्रतिवर्ष जोड़े जाने वाले प्रत्येक 2,000 ग्रंथों (वर्गीकरण व सूचीकरण) के लिए 1 पेशेवर व्यक्ति की सिफारिश की गई है।",
+    "exp_en": "Under Ranganathan's Staff Formula, the Technical Section requires one person for every 2,000 volumes processed (classified and catalogued) in a year."
+  },
+  {
+    "globalId": "u2_sub2_4_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "रंगनाथन के स्टाफ फॉर्मूले के अनुसार 'पुस्तक अर्जन अनुभाग' (Book Section) में प्रतिवर्ष जोड़ी जाने वाली कितनी पुस्तकों के लिए 1 व्यक्ति की आवश्यकता होती है?",
+    "q_en": "According to Ranganathan's Staff Formula, one person is recommended in the Book Acquisition Section for every how many books added per year?",
+    "options_hi": [
+      "2,000 पुस्तकें",
+      "4,000 पुस्तकें",
+      "6,000 पुस्तकें (6,000 books per year)",
+      "10,000 पुस्तकें"
+    ],
+    "options_en": [
+      "2,000 books",
+      "4,000 books",
+      "6,000 books per year",
+      "10,000 books"
+    ],
+    "options": [
+      {
+        "hi": "2,000 पुस्तकें",
+        "en": "2,000 books"
+      },
+      {
+        "hi": "4,000 पुस्तकें",
+        "en": "4,000 books"
+      },
+      {
+        "hi": "6,000 पुस्तकें (6,000 books per year)",
+        "en": "6,000 books per year"
+      },
+      {
+        "hi": "10,000 पुस्तकें",
+        "en": "10,000 books"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "पुस्तक अर्जन अनुभाग (Book Section) में प्रतिवर्ष जोड़े जाने वाले प्रत्येक 6,000 ग्रंथों के लिए 1 पेशेवर कर्मचारी का मानक निर्धारित किया गया है।",
+    "exp_en": "For the Book Section (Acquisition), Ranganathan's formula mandates 1 staff member for every 6,000 volumes added to the library annually."
+  },
+  {
+    "globalId": "u2_sub2_4_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "रंगनाथन के स्टाफ फॉर्मूले के अनुसार 'सामयिक पत्रिका अनुभाग' (Periodicals Section) में कितनी पत्रिकाओं के अंशदान पर 1 व्यक्ति का प्रावधान है?",
+    "q_en": "Under Ranganathan's Staff Formula, one person is provided in the Periodicals Section for managing how many current periodicals subscribed?",
+    "options_hi": [
+      "200 पत्रिकाएं",
+      "500 पत्रिकाएं (500 periodicals subscribed)",
+      "1,000 पत्रिकाएं",
+      "1,500 पत्रिकाएं"
+    ],
+    "options_en": [
+      "200 periodicals",
+      "500 periodicals subscribed",
+      "1,000 periodicals",
+      "1,500 periodicals"
+    ],
+    "options": [
+      {
+        "hi": "200 पत्रिकाएं",
+        "en": "200 periodicals"
+      },
+      {
+        "hi": "500 पत्रिकाएं (500 periodicals subscribed)",
+        "en": "500 periodicals subscribed"
+      },
+      {
+        "hi": "1,000 पत्रिकाएं",
+        "en": "1,000 periodicals"
+      },
+      {
+        "hi": "1,500 पत्रिकाएं",
+        "en": "1,500 periodicals"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सामयिक पत्रिका अनुभाग (Periodical Section) में प्रतिवर्ष सब्सक्राइब की जाने वाली प्रत्येक 500 पत्रिकाओं (शीर्षकों) के पंजीकरण व प्रबंधन हेतु 1 कर्मचारी की सिफारिश की गई है।",
+    "exp_en": "The Periodicals Section requires 1 staff member for every 500 current periodical titles subscribed to by the library."
+  },
+  {
+    "globalId": "u2_sub2_4_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "'वैज्ञानिक प्रबंधन का जनक' (Father of Scientific Management) किसे कहा जाता है, जिन्होंने समय और गति अध्ययन (Time and Motion Study) का प्रवर्तन किया?",
+    "q_en": "Who is recognized as the 'Father of Scientific Management', introducing Time and Motion Studies in 1911?",
+    "options_hi": [
+      "हेनरी फेयोल",
+      "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+      "एल्टन मेयो",
+      "पीटर ड्रकर"
+    ],
+    "options_en": [
+      "Henri Fayol",
+      "F.W. Taylor",
+      "Elton Mayo",
+      "Peter Drucker"
+    ],
+    "options": [
+      {
+        "hi": "हेनरी फेयोल",
+        "en": "Henri Fayol"
+      },
+      {
+        "hi": "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+        "en": "F.W. Taylor"
+      },
+      {
+        "hi": "एल्टन मेयो",
+        "en": "Elton Mayo"
+      },
+      {
+        "hi": "पीटर ड्रकर",
+        "en": "Peter Drucker"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "फ्रेडरिक विंसलो टेलर (F.W. Taylor) को वैज्ञानिक प्रबंधन का जनक कहा जाता है। उन्होंने 1911 में 'Principles of Scientific Management' पुस्तक लिखी और कार्यकुशलता हेतु टाइम-मोशन स्टडीज शुरू कीं।",
+    "exp_en": "Frederick Winslow Taylor (F.W. Taylor) is the Father of Scientific Management, authoring 'The Principles of Scientific Management' (1911) and pioneering systematic time-and-motion studies."
+  },
+  {
+    "globalId": "u2_sub2_4_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "हेनरी फेयोल (Henri Fayol) द्वारा प्रतिपादित 14 सिद्धांतों में से 'आदेश की एकता' (Unity of Command) का क्या अर्थ है?",
+    "q_en": "Among the 14 principles of management formulated by Henri Fayol, what does 'Unity of Command' signify?",
+    "options_hi": [
+      "सभी कर्मचारियों का वेतन एक समान होना चाहिए",
+      "एक कर्मचारी को केवल एक ही उच्चाधिकारी से आदेश मिलना चाहिए",
+      "सभी विभागों का केवल एक ही लक्ष्य होना चाहिए",
+      "आदेश हमेशा लिखित रूप में होना चाहिए"
+    ],
+    "options_en": [
+      "All employees should receive equal compensation",
+      "An employee should receive orders from only one superior",
+      "All departments must share a single operational goal",
+      "Orders must always be issued in writing"
+    ],
+    "options": [
+      {
+        "hi": "सभी कर्मचारियों का वेतन एक समान होना चाहिए",
+        "en": "All employees should receive equal compensation"
+      },
+      {
+        "hi": "एक कर्मचारी को केवल एक ही उच्चाधिकारी से आदेश मिलना चाहिए",
+        "en": "An employee should receive orders from only one superior"
+      },
+      {
+        "hi": "सभी विभागों का केवल एक ही लक्ष्य होना चाहिए",
+        "en": "All departments must share a single operational goal"
+      },
+      {
+        "hi": "आदेश हमेशा लिखित रूप में होना चाहिए",
+        "en": "Orders must always be issued in writing"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "आदेश की एकता (Unity of Command) का अर्थ है कि किसी भी अधीनस्थ कर्मचारी को एक समय में केवल एक ही प्रत्यक्ष अधिकारी (One Boss) से आदेश मिलना चाहिए, ताकि भ्रम और उत्तरदायित्व के टकराव से बचा जा सके।",
+    "exp_en": "Unity of Command dictates that each subordinate should be accountable to, and receive orders from, strictly one direct supervisor to prevent conflicting directions."
+  },
+  {
+    "globalId": "u2_sub2_4_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "सोपान शृंखला (Scalar Chain) में आपातकालीन परिस्थितियों में समकक्ष स्तर के अधिकारियों के मध्य सीधे त्वरित संप्रेषण हेतु फेयोल ने किस व्यवस्था का सुझाव दिया था?",
+    "q_en": "In the Scalar Chain hierarchy, what bridge did Henri Fayol recommend for emergency direct cross-communication between employees at the same organizational level?",
+    "options_hi": [
+      "गैंग प्लैंक (Gang Plank)",
+      "एस्प्रिट डी कॉर्प्स (Esprit de Corps)",
+      "बेंचमार्किंग",
+      "कार्यात्मक फोरमैनशिप"
+    ],
+    "options_en": [
+      "Gang Plank",
+      "Esprit de Corps",
+      "Benchmarking",
+      "Functional Foremanship"
+    ],
+    "options": [
+      {
+        "hi": "गैंग प्लैंक (Gang Plank)",
+        "en": "Gang Plank"
+      },
+      {
+        "hi": "एस्प्रिट डी कॉर्प्स (Esprit de Corps)",
+        "en": "Esprit de Corps"
+      },
+      {
+        "hi": "बेंचमार्किंग",
+        "en": "Benchmarking"
+      },
+      {
+        "hi": "कार्यात्मक फोरमैनशिप",
+        "en": "Functional Foremanship"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "गैंग प्लैंक (Gang Plank) फेयोल की प्रशासनिक व्यवस्था में एक लघु-मार्ग (Short-circuit) है, जो पदसोपान के विलंब को दरकिनार कर दो समकक्ष सहयोगियों को सीधे संवाद की अनुमति देता है।",
+    "exp_en": "Gang Plank is an emergency horizontal shortcut devised by Fayol, allowing two employees of equal rank to bypass the formal chain of command to expedite urgent matters."
+  },
+  {
+    "globalId": "u2_sub2_4_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "अब्राहम मास्लो के 'आवश्यकता पदानुक्रम सिद्धांत' (Hierarchy of Needs, 1943) में पिरामिड के शीर्ष (सर्वोच्च स्तर) पर कौन-सी आवश्यकता स्थित है?",
+    "q_en": "In Abraham Maslow's 'Hierarchy of Needs' (1943), which need occupies the pinnacle (highest level) of the pyramid?",
+    "options_hi": [
+      "शारीरिक आवश्यकताएं (Physiological Needs)",
+      "सुरक्षा आवश्यकताएं (Safety Needs)",
+      "सम्मान आवश्यकताएं (Esteem Needs)",
+      "आत्म-प्राप्ति की आवश्यकता (Self-Actualization Need)"
+    ],
+    "options_en": [
+      "Physiological Needs",
+      "Safety Needs",
+      "Esteem Needs",
+      "Self-Actualization Need"
+    ],
+    "options": [
+      {
+        "hi": "शारीरिक आवश्यकताएं (Physiological Needs)",
+        "en": "Physiological Needs"
+      },
+      {
+        "hi": "सुरक्षा आवश्यकताएं (Safety Needs)",
+        "en": "Safety Needs"
+      },
+      {
+        "hi": "सम्मान आवश्यकताएं (Esteem Needs)",
+        "en": "Esteem Needs"
+      },
+      {
+        "hi": "आत्म-प्राप्ति की आवश्यकता (Self-Actualization Need)",
+        "en": "Self-Actualization Need"
+      }
+    ],
+    "correct": 3,
+    "exp_hi": "मास्लो के 5-स्तरीय पदानुक्रम में सबसे शीर्ष पर 'आत्म-प्राप्ति' (Self-Actualization - अपनी सम्पूर्ण आंतरिक क्षमता और रचनात्मकता को सिद्ध करना) स्थित है, जबकि आधार पर शारीरिक आवश्यकताएं हैं।",
+    "exp_en": "Self-Actualization (the realization of one's full potential and creative expression) resides at the top of Maslow's 5-tiered hierarchy of human motivation."
+  },
+  {
+    "globalId": "u2_sub2_4_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "फ्रेडरिक हर्ज़बर्ग के 'द्वि-घटक सिद्धांत' (Herzberg's Two-Factor Theory) के अनुसार निम्नलिखित में से कौन-सा एक 'स्वच्छता घटक' (Hygiene Factor) है?",
+    "q_en": "According to Frederick Herzberg's Two-Factor Theory, which of the following is classified as a 'Hygiene Factor' rather than a Motivator?",
+    "options_hi": [
+      "वेतन एवं कार्यस्थल की भौतिक दशाएं (Salary & Working Conditions)",
+      "कार्य में उपलब्धि (Achievement)",
+      "व्यक्तिगत पहचान (Recognition)",
+      "जिम्मेदारी (Responsibility)"
+    ],
+    "options_en": [
+      "Salary and Working Conditions",
+      "Achievement",
+      "Recognition",
+      "Responsibility"
+    ],
+    "options": [
+      {
+        "hi": "वेतन एवं कार्यस्थल की भौतिक दशाएं (Salary & Working Conditions)",
+        "en": "Salary and Working Conditions"
+      },
+      {
+        "hi": "कार्य में उपलब्धि (Achievement)",
+        "en": "Achievement"
+      },
+      {
+        "hi": "व्यक्तिगत पहचान (Recognition)",
+        "en": "Recognition"
+      },
+      {
+        "hi": "जिम्मेदारी (Responsibility)",
+        "en": "Responsibility"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "हर्ज़बर्ग के अनुसार वेतन, कंपनी नीति और कार्यस्थल की दशाएं बाह्य या 'स्वच्छता घटक' (Hygiene factors) हैं; यदि ये न हों तो असंतोष होता है, परंतु इनकी मौजूदगी से उच्च आंतरिक प्रेरणा नहीं मिलती।",
+    "exp_en": "Herzberg categorized salary, supervision, job security, and working conditions as Hygiene (extrinsic) factors; their absence causes dissatisfaction, but their presence alone does not motivate."
+  },
+  {
+    "globalId": "u2_sub2_4_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "मानव व्यवहार के संदर्भ में 'थ्योरी X और थ्योरी Y' (Theory X and Theory Y) का प्रतिपादन 1960 में किस विद्वान द्वारा किया गया था?",
+    "q_en": "Regarding workplace human behavior, who formulated 'Theory X and Theory Y' in 1960?",
+    "options_hi": [
+      "डगलस मैकग्रेगर (Douglas McGregor)",
+      "अब्राहम मास्लो",
+      "एल्टन मेयो",
+      "पीटर ड्रकर"
+    ],
+    "options_en": [
+      "Douglas McGregor",
+      "Abraham Maslow",
+      "Elton Mayo",
+      "Peter Drucker"
+    ],
+    "options": [
+      {
+        "hi": "डगलस मैकग्रेगर (Douglas McGregor)",
+        "en": "Douglas McGregor"
+      },
+      {
+        "hi": "अब्राहम मास्लो",
+        "en": "Abraham Maslow"
+      },
+      {
+        "hi": "एल्टन मेयो",
+        "en": "Elton Mayo"
+      },
+      {
+        "hi": "पीटर ड्रकर",
+        "en": "Peter Drucker"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "डगलस मैकग्रेगर ने 1960 में 'The Human Side of Enterprise' पुस्तक में थ्योरी X (कर्मचारी कामचोर होते हैं, नियंत्रण आवश्यक) और थ्योरी Y (कर्मचारी स्व-प्रेरित और रचनात्मक होते हैं) का प्रतिपादन किया।",
+    "exp_en": "Douglas McGregor proposed Theory X (authoritarian view of passive, lazy workers) and Theory Y (participative view of self-motivated, creative workers) in 1960."
+  },
+  {
+    "globalId": "u2_sub2_4_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "संपूर्ण गुणवत्ता प्रबंधन (TQM) में निरंतर सुधार हेतु प्रयुक्त 'PDCA चक्र' (Plan-Do-Check-Act) के प्रवर्तक कौन हैं?",
+    "q_en": "In Total Quality Management (TQM), who championed the 'PDCA Cycle' (Plan-Do-Check-Act) for continuous process improvement?",
+    "options_hi": [
+      "डब्ल्यू. एडवर्ड्स डेमिंग (W. Edwards Deming)",
+      "जोसेफ जुरान (Joseph Juran)",
+      "फिलिप क्रॉस्बी",
+      "काइज़ेन"
+    ],
+    "options_en": [
+      "W. Edwards Deming",
+      "Joseph Juran",
+      "Philip Crosby",
+      "Kaizen"
+    ],
+    "options": [
+      {
+        "hi": "डब्ल्यू. एडवर्ड्स डेमिंग (W. Edwards Deming)",
+        "en": "W. Edwards Deming"
+      },
+      {
+        "hi": "जोसेफ जुरान (Joseph Juran)",
+        "en": "Joseph Juran"
+      },
+      {
+        "hi": "फिलिप क्रॉस्बी",
+        "en": "Philip Crosby"
+      },
+      {
+        "hi": "काइज़ेन",
+        "en": "Kaizen"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "PDCA चक्र (Plan-Do-Check-Act), जिसे डेमिंग चक्र (Deming Wheel) भी कहा जाता है, गुणवत्ता गुरु डब्ल्यू. एडवर्ड्स डेमिंग द्वारा लोकप्रिय बनाया गया निरंतर गुणवत्ता संवर्धन का मॉडल है।",
+    "exp_en": "The PDCA (Plan-Do-Check-Act) cycle, widely recognized as the Deming Cycle, was championed by W. Edwards Deming as the core iterative loop for continuous quality improvement."
+  },
+  {
+    "globalId": "u2_sub2_4_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "पुस्तकालय एवं सूचना सेवाओं की गुणवत्ता का उपयोगकर्ताओं के दृष्टिकोण से मूल्यांकन करने हेतु विकसित अंतरराष्ट्रीय मानक पैमाना कौन-सा है?",
+    "q_en": "Which international survey instrument was specifically developed by the Association of Research Libraries (ARL) to assess library service quality?",
+    "options_hi": [
+      "लिबक्वाल (LibQUAL+)",
+      "सिक्स सिग्मा",
+      "आईएसबीएन (ISBN)",
+      "मार्क-21"
+    ],
+    "options_en": [
+      "LibQUAL+",
+      "Six Sigma",
+      "ISBN",
+      "MARC-21"
+    ],
+    "options": [
+      {
+        "hi": "लिबक्वाल (LibQUAL+)",
+        "en": "LibQUAL+"
+      },
+      {
+        "hi": "सिक्स सिग्मा",
+        "en": "Six Sigma"
+      },
+      {
+        "hi": "आईएसबीएन (ISBN)",
+        "en": "ISBN"
+      },
+      {
+        "hi": "मार्क-21",
+        "en": "MARC-21"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "LibQUAL+ एसोसिएशन ऑफ रिसर्च लाइब्रेरीज (ARL) द्वारा विकसित एक वेब-आधारित सर्वेक्षण उपकरण है, जो पुस्तकालयों को सेवा की प्रभावशीलता, सूचना तक पहुंच और भौतिक स्थान के आधार पर गुणवत्ता मापने में सहायता करता है।",
+    "exp_en": "LibQUAL+ is a specialized total quality assessment tool developed by the Association of Research Libraries (ARL) measuring user perceptions and expectations of library service quality."
+  },
+  {
+    "globalId": "u2_sub2_4_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "भारतीय मानक ब्यूरो (BIS) द्वारा 'पुस्तकालय भवन के प्राथमिक वास्तुशिल्प तत्वों एवं डिजाइन' हेतु निर्धारित मानक कोड कौन-सा है?",
+    "q_en": "Which Indian Standard code was formulated by the Bureau of Indian Standards (BIS) for the architectural design and construction of library buildings?",
+    "options_hi": [
+      "IS:1553-1989",
+      "IS:1829-1978",
+      "IS:2711-1979",
+      "IS:7400-1990"
+    ],
+    "options_en": [
+      "IS:1553-1989",
+      "IS:1829-1978",
+      "IS:2711-1979",
+      "IS:7400-1990"
+    ],
+    "options": [
+      {
+        "hi": "IS:1553-1989",
+        "en": "IS:1553-1989"
+      },
+      {
+        "hi": "IS:1829-1978",
+        "en": "IS:1829-1978"
+      },
+      {
+        "hi": "IS:2711-1979",
+        "en": "IS:2711-1979"
+      },
+      {
+        "hi": "IS:7400-1990",
+        "en": "IS:7400-1990"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "IS:1553-1989 भारतीय मानक ब्यूरो का मानक कोड है, जो पुस्तकालय भवन के डिजाइन, कमरों के आकार, प्रकाश, और वायु संचार के प्राथमिक तत्वों की सिफारिश करता है। (IS:1829 उपस्कर व फर्नीचर हेतु है)।",
+    "exp_en": "IS:1553-1989 is the Bureau of Indian Standards (BIS) code of practice for architectural layout and building recommendations for libraries. (IS:1829 covers library furniture)."
+  },
+  {
+    "globalId": "u2_sub2_4_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "मानक पुस्तकालय विनिर्देशों के अनुसार दो पुस्तक अलमारियों (स्टैक रैक) के बीच के आंतरिक गलियारे (Gangway / Aisle) की मानक चौड़ाई कितनी होनी चाहिए?",
+    "q_en": "According to standard library architectural specifications, what is the recommended aisle width between two parallel book stack racks (gangway)?",
+    "options_hi": [
+      "0.75 मीटर से 1.0 मीटर (लगभग 2.5 से 3 फीट)",
+      "2.5 मीटर से 3.0 मीटर",
+      "0.30 मीटर",
+      "4.0 मीटर"
+    ],
+    "options_en": [
+      "0.75 meter to 1.0 meter (approx. 2.5 to 3 feet)",
+      "2.5 meters to 3.0 meters",
+      "0.30 meter",
+      "4.0 meters"
+    ],
+    "options": [
+      {
+        "hi": "0.75 मीटर से 1.0 मीटर (लगभग 2.5 से 3 फीट)",
+        "en": "0.75 meter to 1.0 meter (approx. 2.5 to 3 feet)"
+      },
+      {
+        "hi": "2.5 मीटर से 3.0 मीटर",
+        "en": "2.5 meters to 3.0 meters"
+      },
+      {
+        "hi": "0.30 मीटर",
+        "en": "0.30 meter"
+      },
+      {
+        "hi": "4.0 मीटर",
+        "en": "4.0 meters"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "BIS और रंगनाथन के अनुसार अलमारियों के बीच का स्टैक गलियारा (Gangway) 0.75 से 1.0 मीटर (लगभग 3 फीट) होना चाहिए, ताकि पाठक और ट्रॉली आसानी से निकल सकें। मुख्य गलियारा (Main Aisle) 1.5 मीटर होना चाहिए।",
+    "exp_en": "The standard operating gangway between parallel book stacks is recommended to be 0.75 m to 1.0 m (approx 3 ft), whereas main cross aisles are planned at 1.5 m (5 ft)."
+  },
+  {
+    "globalId": "u2_sub2_4_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_02",
+    "unitNum": 2,
+    "subUnitNum": "2.4",
+    "unitTitle_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "unitTitle_en": "Library Management",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+    "q_hi": "प्रबंधन में 'हॉथॉर्न प्रयोग' (Hawthorne Studies, 1924–1932) किसके द्वारा किए गए थे, जिसने कार्यस्थल पर सामाजिक एवं मानवीय कारकों के महत्व को उजागर किया?",
+    "q_en": "The famous 'Hawthorne Studies' (1924–1932), which highlighted the preeminence of social and human factors in workplace productivity, were led by:",
+    "options_hi": [
+      "एल्टन मेयो (Elton Mayo)",
+      "एफ.डब्ल्यू. टेलर",
+      "हेनरी फेयोल",
+      "लूथर गुलिक"
+    ],
+    "options_en": [
+      "Elton Mayo",
+      "F.W. Taylor",
+      "Henri Fayol",
+      "Luther Gulick"
+    ],
+    "options": [
+      {
+        "hi": "एल्टन मेयो (Elton Mayo)",
+        "en": "Elton Mayo"
+      },
+      {
+        "hi": "एफ.डब्ल्यू. टेलर",
+        "en": "F.W. Taylor"
+      },
+      {
+        "hi": "हेनरी फेयोल",
+        "en": "Henri Fayol"
+      },
+      {
+        "hi": "लूथर गुलिक",
+        "en": "Luther Gulick"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "एल्टन मेयो (Elton Mayo) ने वेस्टर्न इलेक्ट्रिक कंपनी के हॉथॉर्न प्लांट में प्रयोग किए थे। उन्होंने सिद्ध किया कि केवल आर्थिक या भौतिक दशाएं ही नहीं, बल्कि अनौपचारिक समूह और मानवीय संबंध कर्मचारियों की उत्पादकता बढ़ाते हैं।",
+    "exp_en": "Elton Mayo led the landmark Hawthorne Studies (1924–1932) at Western Electric, founding the Human Relations School of management by proving social cohesion drives productivity."
+  }
+]

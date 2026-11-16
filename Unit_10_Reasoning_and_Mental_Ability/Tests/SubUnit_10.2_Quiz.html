@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 10.2 Quiz: Analytical & Non-Verbal Reasoning | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति</h1>
+            <p>Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_10.2_Analytical_and_Non_Verbal_Reasoning.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - विश्लेषणात्मक तर्कशक्ति खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u10_2_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "कथन:\n1. सभी पुस्तकें, कलम हैं।\n2. सभी कलम, पेंसिल हैं।\nनिष्कर्ष:\nI. सभी पुस्तकें, पेंसिल हैं।\nII. कुछ पेंसिल, पुस्तकें हैं।",
+            q_en: "Statements:\n1. All books are pens.\n2. All pens are pencils.\nConclusions:\nI. All books are pencils.\nII. Some pencils are books.",
+            options: [
+                { hi: "केवल निष्कर्ष I निकलता है", en: "Only conclusion I follows" },
+                { hi: "केवल निष्कर्ष II निकलता है", en: "Only conclusion II follows" },
+                { hi: "निष्कर्ष I और II दोनों निकलते हैं", en: "Both conclusions I and II follow" },
+                { hi: "न तो I और न ही II निकलता है", en: "Neither I nor II follows" }
+            ],
+            correct: 2,
+            exp_hi: "वेन आरेख: पुस्तकें ⊂ कलम ⊂ पेंसिल।\nचूंकि सभी पुस्तकें कलम हैं और सभी कलम पेंसिल हैं, अतः सभी पुस्तकें निश्चित रूप से पेंसिल होंगी (निष्कर्ष I सत्य है)। साथ ही, पेंसिलों का कुछ भाग पुस्तकों द्वारा घेरा गया है, अतः निष्कर्ष II भी सत्य है।",
+            exp_en: "Venn: Books ⊂ Pens ⊂ Pencils. All books are naturally inside pencils (Conclusion I holds). Also, a portion of pencils is occupied by books (Conclusion II holds). Both follow."
+        },
+        {
+            num: 2,
+            q_hi: "कथन:\n1. कुछ कुत्ते, बिल्लियां हैं।\n2. कोई बिल्ली, घोड़ा नहीं है।\nनिष्कर्ष:\nI. कुछ घोड़े, कुत्ते हैं।\nII. कोई घोड़ा, कुत्ता नहीं है।",
+            q_en: "Statements:\n1. Some dogs are cats.\n2. No cat is a horse.\nConclusions:\nI. Some horses are dogs.\nII. No horse is a dog.",
+            options: [
+                { hi: "केवल निष्कर्ष I निकलता है", en: "Only conclusion I follows" },
+                { hi: "केवल निष्कर्ष II निकलता है", en: "Only conclusion II follows" },
+                { hi: "या तो निष्कर्ष I या II निकलता है (Either-Or)", en: "Either conclusion I or II follows" },
+                { hi: "दोनों निष्कर्ष निकलते हैं", en: "Both conclusions follow" }
+            ],
+            correct: 2,
+            exp_hi: "घोड़े और कुत्ते के बीच कोई सीधा संबंध नहीं दिया गया है, अतः दोनों स्वतंत्र रूप से संदिग्ध (False) हैं। चूंकि दोनों के विषय समान हैं (घोड़ा व कुत्ता) तथा एक सकारात्मक (कुछ हैं) व एक नकारात्मक (कोई नहीं है) है, अतः यह 'या तो I या II' (Either-Or) का पूरक युग्म है।",
+            exp_en: "Since horse and dog have indeterminate relation, both are individually doubtful. With identical subject-predicate and a Some + No combination, this satisfies the Either-Or complementary pair criteria."
+        },
+        {
+            num: 3,
+            q_hi: "निम्नलिखित में से कौन सा वेन आरेख 'भारत, बिहार एवं पटना' के बीच सही संबंध को सर्वोत्तम रूप से निरूपित करता है?",
+            q_en: "Which of the following Venn diagrams best represents the relationship among 'India, Bihar, and Patna'?",
+            options: [
+                { hi: "तीन संकेंद्री वृत्त (एक के अंदर दूसरा, दूसरे के अंदर तीसरा)", en: "Three concentric circles (one inside another)" },
+                { hi: "तीन परस्पर प्रतिच्छेदी वृत्त", en: "Three mutually intersecting circles" },
+                { hi: "तीन अलग-अलग असंबद्ध वृत्त", en: "Three completely separate disjoint circles" },
+                { hi: "दो वृत्त एक-दूसरे को काटते हुए तीसरे के अंदर", en: "Two intersecting circles inside a third circle" }
+            ],
+            correct: 0,
+            exp_hi: "पटना बिहार की राजधानी है (पटना पूरी तरह बिहार में है) और बिहार पूरी तरह भारत देश के अंतर्गत आता है। अतः यह तीन संकेंद्री वृत्तों (Concentric Circles) द्वारा प्रदर्शित होगा।",
+            exp_en: "Patna is completely inside Bihar, and Bihar is entirely within India. Hence, three concentric circles accurately portray this hierarchical containment."
+        },
+        {
+            num: 4,
+            q_hi: "निम्नलिखित में से कौन सा वेन आरेख 'डॉक्टर, इंजीनियर और वकील' के बीच संबंध को सबसे सटीक रूप से प्रदर्शित करता है?",
+            q_en: "Which Venn diagram most accurately depicts the professional relationship among 'Doctors, Engineers, and Lawyers'?",
+            options: [
+                { hi: "तीन परस्पर प्रतिच्छेदी वृत्त", en: "Three overlapping circles" },
+                { hi: "तीन पूर्णतः पृथक एवं अलग-अलग वृत्त", en: "Three completely separate disjoint circles" },
+                { hi: "एक बड़े वृत्त के अंदर दो छोटे वृत्त", en: "Two small circles inside a large circle" },
+                { hi: "दो वृत्त आपस में जुड़े हुए, तीसरा अलग", en: "Two connected circles and one separate circle" }
+            ],
+            correct: 1,
+            exp_hi: "डॉक्टर, इंजीनियर और वकील तीनों पूरी तरह से अलग-अलग व्यवसाय/पेशे हैं। एक व्यक्ति एक ही समय में औपचारिक रूप से इन तीनों अलग व्यवसायों को नहीं अपनाता। अतः तीनों अलग-अलग वृत्त होंगे।",
+            exp_en: "Doctors, Engineers, and Lawyers are three mutually exclusive distinct professions with separate professional licensures. Hence, three disjoint circles represent them."
+        },
+        {
+            num: 5,
+            q_hi: "कथन: \"विद्यालय के अधिकांश शिक्षक परिश्रमी हैं।\"\nनिष्कर्ष:\nI. विद्यालय के कुछ शिक्षक परिश्रमी नहीं हैं।\nII. विद्यालय में कोई भी शिक्षक आलसी नहीं है।",
+            q_en: "Statement: \"Most teachers in the school are hardworking.\"\nConclusions:\nI. Some teachers in the school are not hardworking.\nII. No teacher in the school is lazy.",
+            options: [
+                { hi: "केवल निष्कर्ष I निकलता है", en: "Only conclusion I follows" },
+                { hi: "केवल निष्कर्ष II निकलता है", en: "Only conclusion II follows" },
+                { hi: "निष्कर्ष I और II दोनों निकलते हैं", en: "Both conclusions follow" },
+                { hi: "न तो I और न ही II निकलता है", en: "Neither I nor II follows" }
+            ],
+            correct: 0,
+            exp_hi: "'अधिकांश' (Most) का अर्थ 100% नहीं होता, बल्कि 50% से अधिक होता है। अतः यदि अधिकांश शिक्षक परिश्रमी हैं, तो इसका सीधा अर्थ है कि कुछ शिक्षक परिश्रमी नहीं हैं (निष्कर्ष I सत्य है)। आलसी होने का कोई सीधा उल्लेख नहीं है, अतः II असत्य है।",
+            exp_en: "'Most' implies a majority but less than all (not 100%). Therefore, it logically implies that some teachers are not hardworking (Conclusion I follows). Conclusion II is unwarranted."
+        },
+        {
+            num: 6,
+            q_hi: "यदि '+' का अर्थ '÷', '-' का अर्थ '×', '×' का अर्थ '+', और '÷' का अर्थ '-' है, तो निम्नलिखित समीकरण का मान क्या होगा?\n36 + 6 - 3 × 5 ÷ 8 = ?",
+            q_en: "If '+' means '÷', '-' means '×', '×' means '+', and '÷' means '-', then what is the value of the following equation?\n36 + 6 - 3 × 5 ÷ 8 = ?",
+            options: [
+                { hi: "12", en: "12" },
+                { hi: "15", en: "15" },
+                { hi: "18", en: "18" },
+                { hi: "20", en: "20" }
+            ],
+            correct: 1,
+            exp_hi: "चिह्न बदलने पर: 36 ÷ 6 × 3 + 5 - 8\nBODMAS के अनुसार:\n1) भाग: 36 ÷ 6 = 6\n2) गुणा: 6 × 3 = 18\n3) जोड़: 18 + 5 = 23\n4) घटाव: 23 - 8 = 15।",
+            exp_en: "Substituting signs: 36 ÷ 6 × 3 + 5 - 8. Applying BODMAS: (36 ÷ 6) = 6 -> 6 × 3 = 18 -> 18 + 5 = 23 -> 23 - 8 = 15."
+        },
+        {
+            num: 7,
+            q_hi: "यदि '+' का अर्थ '×', '-' का अर्थ '÷', '×' का अर्थ '-', और '÷' का अर्थ '+' हो, तो समीकरण का मान ज्ञात करें:\n16 × 4 + 2 - 2 ÷ 8 = ?",
+            q_en: "If '+' means '×', '-' means '÷', '×' means '-', and '÷' means '+', then evaluate the expression:\n16 × 4 + 2 - 2 ÷ 8 = ?",
+            options: [
+                { hi: "20", en: "20" },
+                { hi: "18", en: "18" },
+                { hi: "24", en: "24" },
+                { hi: "16", en: "16" }
+            ],
+            correct: 0,
+            exp_hi: "चिह्न बदलने पर: 16 - 4 × 2 ÷ 2 + 8\nBODMAS के अनुसार:\n1) भाग: 2 ÷ 2 = 1\n2) गुणा: 4 × 1 = 4\n3) व्यंजक: 16 - 4 + 8 = (16 + 8) - 4 = 24 - 4 = 20।",
+            exp_en: "Substituting signs: 16 - 4 × 2 ÷ 2 + 8. Following BODMAS: (2 ÷ 2) = 1 -> 4 × 1 = 4 -> 16 - 4 + 8 = 20."
+        },
+        {
+            num: 8,
+            q_hi: "दिए गए आव्यूह (Matrix) में प्रश्नवाचक चिह्न (?) के स्थान पर कौन सी संख्या आएगी?\n[ 2    4     8  ]\n[ 3    9    27  ]\n[ 4   16     ?  ]",
+            q_en: "Which number will replace the question mark (?) in the following matrix?\n[ 2    4     8  ]\n[ 3    9    27  ]\n[ 4   16     ?  ]",
+            options: [
+                { hi: "32", en: "32" },
+                { hi: "48", en: "48" },
+                { hi: "64", en: "64" },
+                { hi: "72", en: "72" }
+            ],
+            correct: 2,
+            exp_hi: "पैटर्न: पंक्तिवार n, n², n³ है।\nपंक्ति 1: 2, 2²=4, 2³=8।\nपंक्ति 2: 3, 3²=9, 3³=27।\nपंक्ति 3: 4, 4²=16, 4³= 64। अतः लुप्त संख्या 64 है।",
+            exp_en: "Pattern: Each row follows n, n², n³. Row 1: 2, 4, 8. Row 2: 3, 9, 27. Row 3: 4, 4²=16, 4³=64. The missing number is 64."
+        },
+        {
+            num: 9,
+            q_hi: "निम्नलिखित आव्यूह में लुप्त संख्या ज्ञात करें:\n[ 7    9    8 ]\n[ 2    2    2 ]\n[ 49  81    ? ]",
+            q_en: "Find the missing number in the following matrix:\n[ 7    9    8 ]\n[ 2    2    2 ]\n[ 49  81    ? ]",
+            options: [
+                { hi: "16", en: "16" },
+                { hi: "64", en: "64" },
+                { hi: "32", en: "32" },
+                { hi: "72", en: "72" }
+            ],
+            correct: 1,
+            exp_hi: "पैटर्न: पहली पंक्ति की संख्या की घात दूसरी पंक्ति की संख्या = तीसरी पंक्ति की संख्या।\nस्तंभ 1: 7² = 49\nस्तंभ 2: 9² = 81\nस्तंभ 3: 8² = 64।",
+            exp_en: "Pattern: (Row 1)^(Row 2) = Row 3. Column 1: 7² = 49. Column 2: 9² = 81. Column 3: 8² = 64."
+        },
+        {
+            num: 10,
+            q_hi: "यदि किसी समतल दर्पण के सामने रखी घड़ी में वास्तविक समय 3:25 हो रहा है, तो दर्पण में देखने पर क्या समय प्रतीत होगा?",
+            q_en: "If a wall clock displays the actual time as 3:25, what time will appear when viewed in a plane mirror reflection?",
+            options: [
+                { hi: "8:35", en: "8:35" },
+                { hi: "9:35", en: "9:35" },
+                { hi: "8:25", en: "8:25" },
+                { hi: "7:35", en: "7:35" }
+            ],
+            correct: 0,
+            exp_hi: "दर्पण समय सूत्र: दर्पण समय = 11:60 - वास्तविक समय\n= 11:60 - 3:25 = 8:35।\nअतः दर्पण में 8 बजकर 35 मिनट दिखेगा।",
+            exp_en: "Mirror time trick: Subtract actual time from 11:60. 11:60 - 3:25 = 8:35."
+        },
+        {
+            num: 11,
+            q_hi: "यदि दर्पण में देखने पर किसी घड़ी का समय 9:40 दिखाई दे रहा है, तो घड़ी का वास्तविक समय क्या है?",
+            q_en: "If a clock reflection in a mirror shows the time as 9:40, what is the actual time of the clock?",
+            options: [
+                { hi: "2:20", en: "2:20" },
+                { hi: "3:20", en: "3:20" },
+                { hi: "2:40", en: "2:40" },
+                { hi: "1:20", en: "1:20" }
+            ],
+            correct: 0,
+            exp_hi: "सूत्र: वास्तविक समय = 11:60 - दर्पण समय\n= 11:60 - 9:40 = 2:20।",
+            exp_en: "Formula: Actual time = 11:60 - Mirror time = 11:60 - 9:40 = 2:20."
+        },
+        {
+            num: 12,
+            q_hi: "अंग्रेजी वर्णमाला के निम्नलिखित बड़े अक्षरों में से किसका 'जल प्रतिबिम्ब' (Water Image) मूल अक्षर के बिल्कुल समान रहता है?",
+            q_en: "Which of the following capital letters of the English alphabet has a 'Water Image' identical to its original upright form?",
+            options: [
+                { hi: "M", en: "M" },
+                { hi: "H", en: "H" },
+                { hi: "R", en: "R" },
+                { hi: "P", en: "P" }
+            ],
+            correct: 1,
+            exp_hi: "जल प्रतिबिम्ब में ऊपर का भाग नीचे उलटता है। अक्षर H क्षैतिज रूप से सममित (Horizontally symmetrical) है, अतः इसका जल प्रतिबिम्ब H ही रहता है। (M का W बन जाता है)।",
+            exp_en: "Water reflection inverts objects vertically. 'H' has horizontal bilateral symmetry, so its water image remains identical to 'H'. (M flips to W)."
+        },
+        {
+            num: 13,
+            q_hi: "एक ऊर्ध्वाधर दर्पण में देखने पर शब्द 'BOMB' का सही दर्पण प्रतिबिम्ब क्या होगा?",
+            q_en: "What will be the correct mirror image of the word 'BOMB' when reflected in a vertical plane mirror?",
+            options: [
+                { hi: "BOMB", en: "BOMB" },
+                { hi: "ᙠMOᙠ (दाएं से बाएं उलटकर)", en: "Reversed order with flipped B's" },
+                { hi: "BMOB", en: "BMOB" },
+                { hi: "dWOB", en: "dWOB" }
+            ],
+            correct: 1,
+            exp_hi: "दर्पण में अंतिम अक्षर पहले दिखता है और पार्श्व परिवर्तन (Lateral inversion) होता है। BOMB में अंतिम B उल्टा होकर पहले आएगा, फिर M, फिर O, और फिर पहला B उल्टा होकर अंत में आएगा।",
+            exp_en: "In a vertical mirror, rightmost letters appear leftmost with individual lateral flips. The sequence reverses to B-M-O-B with the letters 'B' laterally inverted."
+        },
+        {
+            num: 14,
+            q_hi: "एक 'मानक पासे' (Standard Dice) में यदि ऊपरी फलक पर संख्या 5 है, तो उसके ठीक विपरीत (निचले) फलक पर कौन सी संख्या होगी?",
+            q_en: "In a 'Standard Dice', if the number on the top face is 5, which number will be on the exactly opposite bottom face?",
+            options: [
+                { hi: "1", en: "1" },
+                { hi: "2", en: "2" },
+                { hi: "3", en: "3" },
+                { hi: "4", en: "4" }
+            ],
+            correct: 1,
+            exp_hi: "मानक पासे (Standard Dice) का सर्वमान्य नियम है कि किन्हीं भी दो विपरीत फलकों का योग हमेशा 7 होता है।\nअतः 5 के विपरीत = 7 - 5 = 2 होगा।",
+            exp_en: "In any standard die, the sum of opposite faces is universally 7. Therefore, opposite of 5 = 7 - 5 = 2."
+        },
+        {
+            num: 15,
+            q_hi: "कथन: \"क्या भारत में सभी स्तरों पर पुस्तकालयों का पूर्ण डिजिटलीकरण अनिवार्य किया जाना चाहिए?\"\nतर्क:\nI. हां, इससे पुस्तकों का संरक्षण होगा और पाठक कहीं से भी तुरंत जानकारी प्राप्त कर सकेंगे।\nII. नहीं, भारत में कई ग्रामीण क्षेत्रों में इंटरनेट और कंप्यूटर की बुनियादी सुविधाएं अभी भी सीमित हैं।",
+            q_en: "Statement: \"Should complete digitization of libraries at all levels be made mandatory in India?\"\nArguments:\nI. Yes, it preserves intellectual heritage and empowers patrons to access info instantaneously.\nII. No, many rural areas in India still face limitations in power and digital infrastructure.",
+            options: [
+                { hi: "केवल तर्क I मजबूत है", en: "Only argument I is strong" },
+                { hi: "केवल तर्क II मजबूत है", en: "Only argument II is strong" },
+                { hi: "तर्क I और II दोनों मजबूत हैं", en: "Both arguments I and II are strong" },
+                { hi: "न तो I और न ही II मजबूत है", en: "Neither argument is strong" }
+            ],
+            correct: 2,
+            exp_hi: "तर्क I आधुनिक डिजिटल पहुंच और ज्ञान संरक्षण की दृष्टि से अत्यंत सशक्त है। तर्क II जमीनी यथार्थ और डिजिटल विभाजन (Digital Divide) की व्यावहारिक समस्या को उजागर करता है। अतः दोनों ही तर्क अपने-अपने परिप्रेक्ष्य में मजबूत (Strong) हैं।",
+            exp_en: "Argument I is strong regarding technological modernization and preservation. Argument II is equally strong regarding grassroots infrastructure disparities and digital divide. Both are strong arguments."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi.replace(/\n/g, '<br>')}</div>
+            <div class="lang-en">${q.num}. ${q.q_en.replace(/\n/g, '<br>')}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi.replace(/\n/g, '<br>')}</div>
+                <div class="lang-en">${q.exp_en.replace(/\n/g, '<br>')}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

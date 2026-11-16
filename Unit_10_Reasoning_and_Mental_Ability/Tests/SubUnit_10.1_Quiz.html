@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 10.1 Quiz: Verbal Reasoning | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)</h1>
+            <p>Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_10.1_Verbal_Reasoning.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - मौखिक तर्कशक्ति खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u10_1_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "दी गई संख्या शृंखला में प्रश्नवाचक चिह्न (?) के स्थान पर कौन सी संख्या आएगी?\n2, 6, 12, 20, 30, ?",
+            q_en: "Which number will replace the question mark (?) in the following number series?\n2, 6, 12, 20, 30, ?",
+            options: [
+                { hi: "40", en: "40" },
+                { hi: "42", en: "42" },
+                { hi: "44", en: "44" },
+                { hi: "46", en: "46" }
+            ],
+            correct: 1,
+            exp_hi: "तर्क 1: क्रमागत अंतर +4, +6, +8, +10, +12 है। अतः 30 + 12 = 42।\nतर्क 2: n(n+1) पैटर्न: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7 = 42।",
+            exp_en: "Logic 1: Successive differences increase by 2 (+4, +6, +8, +10, +12). Thus, 30 + 12 = 42.\nLogic 2: Consecutive product n(n+1): 6 × 7 = 42."
+        },
+        {
+            num: 2,
+            q_hi: "संख्या शृंखला 3, 5, 9, 17, 33, ? में अगला पद क्या होगा?",
+            q_en: "What will be the next term in the number series 3, 5, 9, 17, 33, ?",
+            options: [
+                { hi: "65", en: "65" },
+                { hi: "67", en: "67" },
+                { hi: "69", en: "69" },
+                { hi: "63", en: "63" }
+            ],
+            correct: 0,
+            exp_hi: "पैटर्न: प्रत्येक पद में अंतर दुगुना हो रहा है (+2, +4, +8, +16, +32)।\nअतः अगला पद = 33 + 32 = 65। (वैकल्पिक तर्क: पिछला पद × 2 - 1: 33 × 2 - 1 = 65)।",
+            exp_en: "Pattern: The differences between consecutive terms double (+2, +4, +8, +16, +32). Next term = 33 + 32 = 65. Alternatively: term × 2 - 1 = 33 × 2 - 1 = 65."
+        },
+        {
+            num: 3,
+            q_hi: "वर्ण शृंखला B, D, G, K, P, ? में अगला अक्षर कौन सा होगा?",
+            q_en: "Which letter will come next in the letter series B, D, G, K, P, ?",
+            options: [
+                { hi: "U", en: "U" },
+                { hi: "V", en: "V" },
+                { hi: "W", en: "W" },
+                { hi: "T", en: "T" }
+            ],
+            correct: 1,
+            exp_hi: "अक्षरों के स्थान मान: B(2), D(4), G(7), K(11), P(16)।\nअंतर: +2, +3, +4, +5, +6।\nअतः 16 + 6 = 22, और 22वें स्थान पर अक्षर 'V' आता है।",
+            exp_en: "Letter positions: B(2), D(4), G(7), K(11), P(16). Adding consecutive integers (+2, +3, +4, +5, +6) gives 16 + 6 = 22, which corresponds to the letter 'V'."
+        },
+        {
+            num: 4,
+            q_hi: "एक निश्चित कूट भाषा में यदि 'TEACHER' को 'VGCEJGT' लिखा जाता है, तो उसी कूट भाषा में 'CHILDREN' को किस प्रकार लिखा जाएगा?",
+            q_en: "In a certain code language, if 'TEACHER' is coded as 'VGCEJGT', then how will 'CHILDREN' be coded in that same language?",
+            options: [
+                { hi: "EJKNFTGP", en: "EJKNFTGP" },
+                { hi: "EJKNFSTP", en: "EJKNFSTP" },
+                { hi: "EJLNFTGP", en: "EJLNFTGP" },
+                { hi: "FKLNGUHQ", en: "FKLNGUHQ" }
+            ],
+            correct: 0,
+            exp_hi: "पैटर्न: प्रत्येक अक्षर में +2 का विस्थापन है।\nC(+2)=E, H(+2)=J, I(+2)=K, L(+2)=N, D(+2)=F, R(+2)=T, E(+2)=G, N(+2)=P।\nअतः सही कूट 'EJKNFTGP' है।",
+            exp_en: "Pattern: Each letter is shifted forward by +2. C->E, H->J, I->K, L->N, D->F, R->T, E->G, N->P = EJKNFTGP."
+        },
+        {
+            num: 5,
+            q_hi: "यदि किसी कूट में A = 1 तथा CAT = 24 है, तो 'POLICE' का मान क्या होगा?",
+            q_en: "If in a code language, A = 1 and CAT = 24, then what will be the value of 'POLICE'?",
+            options: [
+                { hi: "58", en: "58" },
+                { hi: "60", en: "60" },
+                { hi: "62", en: "62" },
+                { hi: "64", en: "64" }
+            ],
+            correct: 1,
+            exp_hi: "तर्क: सभी वर्णों के स्थान मानों का योग।\nCAT = 3 + 1 + 20 = 24।\nPOLICE = P(16) + O(15) + L(12) + I(9) + C(3) + E(5) = 60।",
+            exp_en: "Logic: Sum of numerical positions of letters. POLICE = 16 + 15 + 12 + 9 + 3 + 5 = 60."
+        },
+        {
+            num: 6,
+            q_hi: "यदि किसी कूट भाषा में 'LIGHT' को 'ORTSG' लिखा जाता है, तो उसी कूट भाषा में 'SPARK' को कैसे लिखा जाएगा?",
+            q_en: "If in a code language, 'LIGHT' is coded as 'ORTSG', how will 'SPARK' be coded in that code language?",
+            options: [
+                { hi: "HKZIP", en: "HKZIP" },
+                { hi: "HKZIR", en: "HKZIR" },
+                { hi: "ILZIP", en: "ILZIP" },
+                { hi: "GJZHO", en: "GJZHO" }
+            ],
+            correct: 0,
+            exp_hi: "तर्क: विपरीत अक्षर युग्म (विपरीत अक्षरों का योग 27)।\nL-O, I-R, G-T, H-S, T-G।\nउसी प्रकार: S का विपरीत H, P का K, A का Z, R का I, K का P = 'HKZIP'।",
+            exp_en: "Logic: Reverse alphabetical pairs (Sum = 27). S->H, P->K, A->Z, R->I, K->P = HKZIP."
+        },
+        {
+            num: 7,
+            q_hi: "एक लड़के की तस्वीर की ओर इशारा करते हुए सुरेश ने कहा, \"वह मेरी माताजी के इकलौते पुत्र का पुत्र है।\" सुरेश का उस लड़के से क्या संबंध है?",
+            q_en: "Pointing to a photograph of a boy, Suresh said, \"He is the son of the only son of my mother.\" How is Suresh related to that boy?",
+            options: [
+                { hi: "भाई (Brother)", en: "Brother" },
+                { hi: "चाचा (Uncle)", en: "Uncle" },
+                { hi: "पिता (Father)", en: "Father" },
+                { hi: "दादा (Grandfather)", en: "Grandfather" }
+            ],
+            correct: 2,
+            exp_hi: "\"सुरेश की माताजी का इकलौता पुत्र\" = स्वयं सुरेश। अतः वह लड़का सुरेश का पुत्र है, और सुरेश उस लड़के का 'पिता' (Father) है।",
+            exp_en: "\"The only son of my mother\" refers to Suresh himself. Therefore, the boy is Suresh's son, which makes Suresh the 'Father'."
+        },
+        {
+            num: 8,
+            q_hi: "A, B का भाई है। C, B की माता है। M, C की बहन है। M का A से क्या संबंध है?",
+            q_en: "A is the brother of B. C is the mother of B. M is the sister of C. How is M related to A?",
+            options: [
+                { hi: "दादी (Grandmother)", en: "Grandmother" },
+                { hi: "मौसी (Maternal Aunt)", en: "Maternal Aunt" },
+                { hi: "बहन (Sister)", en: "Sister" },
+                { hi: "भांजी (Niece)", en: "Niece" }
+            ],
+            correct: 1,
+            exp_hi: "C, B और A दोनों की माता है। M, C की बहन है। माता की बहन 'मौसी' (Maternal Aunt) होती है। अतः M, A की मौसी है।",
+            exp_en: "C is the mother of both A and B. M is C's sister. One's mother's sister is their Maternal Aunt (Mausi)."
+        },
+        {
+            num: 9,
+            q_hi: "एक व्यक्ति अपने घर से उत्तर दिशा में 12 किमी चलता है, फिर दाएं मुड़कर 5 किमी चलता है। वह अपने प्रारंभिक बिंदु से न्यूनतम कितनी सीधी दूरी पर है?",
+            q_en: "A person walks 12 km North from his house, then turns right and walks 5 km. What is the shortest straight-line distance from his starting point?",
+            options: [
+                { hi: "17 किमी", en: "17 km" },
+                { hi: "13 किमी", en: "13 km" },
+                { hi: "15 किमी", en: "15 km" },
+                { hi: "14 किमी", en: "14 km" }
+            ],
+            correct: 1,
+            exp_hi: "पाइथागोरस प्रमेय के अनुसार: सीधी दूरी = √(12² + 5²) = √(144 + 25) = √169 = 13 किमी।",
+            exp_en: "Using the Pythagorean theorem: Distance = √(12² + 5²) = √(144 + 25) = √169 = 13 km."
+        },
+        {
+            num: 10,
+            q_hi: "मोहन दक्षिण दिशा में 20 मीटर चलता है, फिर बाएं मुड़कर 15 मीटर चलता है, और पुनः बाएं मुड़कर 20 मीटर चलता है। अब वह अपने प्रारंभिक बिंदु से किस दिशा में है?",
+            q_en: "Mohan walks 20 meters South, turns left and walks 15 meters, then turns left again and walks 20 meters. In which direction is he now from his starting point?",
+            options: [
+                { hi: "उत्तर (North)", en: "North" },
+                { hi: "पूर्व (East)", en: "East" },
+                { hi: "पश्चिम (West)", en: "West" },
+                { hi: "दक्षिण (South)", en: "South" }
+            ],
+            correct: 1,
+            exp_hi: "दक्षिण में 20 मी जाने के बाद बाएं (पूर्व) 15 मी चला, फिर बाएं (उत्तर) 20 मी चलने से वह प्रारंभिक रेखा की सीध में आ गया। अतः वह अपने प्रारंभिक स्थान से ठीक 'पूर्व' (East) दिशा में 15 मी की दूरी पर है।",
+            exp_en: "After walking 20m South, 15m East, and 20m North, his North-South displacement cancels out to zero. He is located exactly 15m due 'East' from the starting point."
+        },
+        {
+            num: 11,
+            q_hi: "एक सुबह सूर्योदय के ठीक बाद, सुमित एक खंभे के सामने खड़ा था। खंभे की परछाई सुमित के ठीक दाईं ओर (Right) पड़ रही थी। सुमित का मुख किस दिशा में था?",
+            q_en: "One morning after sunrise, Sumit was facing an electric pole. The shadow of the pole fell exactly to Sumit's right. In which direction was Sumit facing?",
+            options: [
+                { hi: "उत्तर (North)", en: "North" },
+                { hi: "दक्षिण (South)", en: "South" },
+                { hi: "पूर्व (East)", en: "East" },
+                { hi: "पश्चिम (West)", en: "West" }
+            ],
+            correct: 1,
+            exp_hi: "सूर्योदय के समय सूर्य पूर्व में होता है, अतः सभी परछाइयां पश्चिम दिशा में बनती हैं। यदि परछाई सुमित के दाईं ओर पड़ रही है, तो सुमित का दायां हाथ पश्चिम में है। ऐसा तभी संभव है जब सुमित का मुख 'दक्षिण' (South) की ओर हो।",
+            exp_en: "At sunrise, shadows cast towards the West. If the shadow falls to Sumit's right, his right side faces West. This occurs only when Sumit is facing 'South'."
+        },
+        {
+            num: 12,
+            q_hi: "45 विद्यार्थियों की एक कक्षा में रोहन का स्थान ऊपर से 18वां है। उसका स्थान नीचे (Bottom) से क्या होगा?",
+            q_en: "In a class of 45 students, Rohan's rank is 18th from the top. What is his rank from the bottom?",
+            options: [
+                { hi: "27वां", en: "27th" },
+                { hi: "28वां (28th)", en: "28th" },
+                { hi: "29वां", en: "29th" },
+                { hi: "26वां", en: "26th" }
+            ],
+            correct: 1,
+            exp_hi: "सूत्र: नीचे से स्थान = (कुल छात्र - ऊपर से स्थान) + 1\n= (45 - 18) + 1 = 27 + 1 = 28वां।",
+            exp_en: "Formula: Rank from bottom = (Total - Rank from top) + 1 = (45 - 18) + 1 = 28th."
+        },
+        {
+            num: 13,
+            q_hi: "बालिकाओं की एक पंक्ति में सीता बाएं से 10वीं और गीता दाएं से 15वीं है। जब वे आपस में अपना स्थान बदल लेती हैं, तो सीता बाएं से 22वीं हो जाती है। पंक्ति में कुल कितनी बालिकाएं हैं?",
+            q_en: "In a row of girls, Sita is 10th from the left and Gita is 15th from the right. When they interchange positions, Sita becomes 22nd from the left. How many girls are there in the row?",
+            options: [
+                { hi: "35", en: "35" },
+                { hi: "36", en: "36" },
+                { hi: "37", en: "37" },
+                { hi: "38", en: "38" }
+            ],
+            correct: 1,
+            exp_hi: "सीता का नया स्थान (बाएं से 22वां) वही है जो गीता का पुराना स्थान (दाएं से 15वां) था।\nअतः कुल बालिकाएं = सीता का नया बायां स्थान + गीता का पुराना दायां स्थान - 1\n= 22 + 15 - 1 = 37 - 1 = 36।",
+            exp_en: "Sita's new position (22nd from left) coincides with Gita's original position (15th from right). Total girls = 22 + 15 - 1 = 36."
+        },
+        {
+            num: 14,
+            q_hi: "सादृश्यता पूर्ण करें: समाचार पत्र : प्रेस :: कपड़ा : ?",
+            q_en: "Complete the Analogy: Newspaper : Press :: Cloth : ?",
+            options: [
+                { hi: "दर्जी (Tailor)", en: "Tailor" },
+                { hi: "कपड़ा मिल (Mill)", en: "Mill" },
+                { hi: "कपास (Cotton)", en: "Cotton" },
+                { hi: "दुकान (Shop)", en: "Shop" }
+            ],
+            correct: 1,
+            exp_hi: "जिस प्रकार समाचार पत्र 'प्रेस' (मुद्रणालय) में तैयार/निर्मित होता है, उसी प्रकार कपड़ा 'कपड़ा मिल' (Mill) में निर्मित होता है।",
+            exp_en: "Just as newspapers are manufactured in a printing press, cloth is produced in a textile mill."
+        },
+        {
+            num: 15,
+            q_hi: "निम्नलिखित चार संख्याओं में से कौन सी एक संख्या अन्य तीन से भिन्न (Odd-One-Out) है?\n27, 64, 125, 144",
+            q_en: "Which one of the following four numbers is the odd-one-out from the others?\n27, 64, 125, 144",
+            options: [
+                { hi: "27", en: "27" },
+                { hi: "64", en: "64" },
+                { hi: "125", en: "125" },
+                { hi: "144", en: "144" }
+            ],
+            correct: 3,
+            exp_hi: "तर्क: 27 = 3³, 64 = 4³, 125 = 5³ — ये तीनों पूर्ण घन (Cubes) संख्याएं हैं, जबकि 144 = 12² (पूर्ण वर्ग है, पूर्ण घन नहीं)। अतः 144 भिन्न है।",
+            exp_en: "Logic: 27 (3³), 64 (4³), and 125 (5³) are perfect cubes. 144 (12²) is a perfect square but not a perfect cube. Hence 144 is the odd one."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi.replace(/\n/g, '<br>')}</div>
+            <div class="lang-en">${q.num}. ${q.q_en.replace(/\n/g, '<br>')}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi.replace(/\n/g, '<br>')}</div>
+                <div class="lang-en">${q.exp_en.replace(/\n/g, '<br>')}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

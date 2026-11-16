@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u3_sub3_1_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "डेवी दशमलव वर्गीकरण (DDC) का प्रथम संस्करण 1876 में कितने पृष्ठों में और किस रूप में प्रकाशित हुआ था?",
+    "q_en": "In how many pages and in what form was the first edition of the Dewey Decimal Classification (DDC) published in 1876?",
+    "options_hi": [
+      "44 पृष्ठों में, अनामी (Anonymous) रूप से",
+      "100 पृष्ठों में, मेल्विल डेवी के नाम से",
+      "4 खंडों में, 1,000 पृष्ठों में",
+      "12 पृष्ठों में, पैम्फलेट रूप में"
+    ],
+    "options_en": [
+      "In 44 pages, published anonymously",
+      "In 100 pages, under Melvil Dewey's name",
+      "In 4 volumes, 1,000 pages",
+      "In 12 pages, as a pamphlet"
+    ],
+    "options": [
+      {
+        "hi": "44 पृष्ठों में, अनामी (Anonymous) रूप से",
+        "en": "In 44 pages, published anonymously"
+      },
+      {
+        "hi": "100 पृष्ठों में, मेल्विल डेवी के नाम से",
+        "en": "In 100 pages, under Melvil Dewey's name"
+      },
+      {
+        "hi": "4 खंडों में, 1,000 पृष्ठों में",
+        "en": "In 4 volumes, 1,000 pages"
+      },
+      {
+        "hi": "12 पृष्ठों में, पैम्फलेट रूप में",
+        "en": "In 12 pages, as a pamphlet"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "DDC का प्रथम संस्करण 1876 में 'A Classification and Subject Index for Cataloguing and Arranging the Books and Pamphlets of a Library' शीर्षक से बिना लेखक के नाम के (Anonymous) मात्र 44 पृष्ठों में प्रकाशित हुआ था।",
+    "exp_en": "The first edition of DDC appeared anonymously in 1876 with only 44 pages, comprising 12 pages of introduction, 12 pages of tables, and 18 pages of relative index."
+  },
+  {
+    "globalId": "u3_sub3_1_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "कोलन क्लासिफिकेशन (Colon Classification - CC) के 6वें संशोधित संस्करण (1963) में काल पक्ष [Time - T] के लिए कौन-सा योजक चिह्न निर्धारित किया गया था?",
+    "q_en": "In the 6th revised edition of Colon Classification (1963), which connecting symbol was designated for the Time facet [T]?",
+    "options_hi": [
+      "बिंदु / डॉट (.)",
+      "अल्पविराम / कॉमा (,)",
+      "उद्धरण चिह्न / सिंगल इनवर्टेड कॉमा (')",
+      "अपूर्णविराम / कोलन (:)"
+    ],
+    "options_en": [
+      "Dot (.)",
+      "Comma (,)",
+      "Single Inverted Comma (')",
+      "Colon (:)"
+    ],
+    "options": [
+      {
+        "hi": "बिंदु / डॉट (.)",
+        "en": "Dot (.)"
+      },
+      {
+        "hi": "अल्पविराम / कॉमा (,)",
+        "en": "Comma (,)"
+      },
+      {
+        "hi": "उद्धरण चिह्न / सिंगल इनवर्टेड कॉमा (')",
+        "en": "Single Inverted Comma (')"
+      },
+      {
+        "hi": "अपूर्णविराम / कोलन (:)",
+        "en": "Colon (:)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "6वें संस्करण (1960) तक Space और Time दोनों का योजक चिह्न डॉट (.) था। 1963 के संशोधित संस्करण में डॉ. रंगनाथन ने Time [T] हेतु सिंगल इनवर्टेड कॉमा (') का प्रयोग किया ताकि स्थान और काल में स्पष्ट भेद हो सके।",
+    "exp_en": "Prior to 1963, both Space and Time used a dot. In the 1963 revised 6th edition, Ranganathan assigned the single inverted comma (') to the Time facet [T] to eliminate ambiguity."
+  },
+  {
+    "globalId": "u3_sub3_1_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "डेवी दशमलव वर्गीकरण (DDC) पर वर्तमान में कॉपीराइट और संपादन का स्वामित्व किस वैश्विक संस्था के पास है?",
+    "q_en": "Which global institution currently owns the copyright and editorial stewardship of the Dewey Decimal Classification (DDC)?",
+    "options_hi": [
+      "अमेरिकन लाइब्रेरी एसोसिएशन (ALA)",
+      "ओसीएलसी (OCLC - 1988 से)",
+      "लाइब्रेरी ऑफ कांग्रेस (LC)",
+      "फॉरेस्ट प्रेस (Forest Press)"
+    ],
+    "options_en": [
+      "American Library Association (ALA)",
+      "OCLC (Online Computer Library Center - since 1988)",
+      "Library of Congress (LC)",
+      "Forest Press"
+    ],
+    "options": [
+      {
+        "hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA)",
+        "en": "American Library Association (ALA)"
+      },
+      {
+        "hi": "ओसीएलसी (OCLC - 1988 से)",
+        "en": "OCLC (Online Computer Library Center - since 1988)"
+      },
+      {
+        "hi": "लाइब्रेरी ऑफ कांग्रेस (LC)",
+        "en": "Library of Congress (LC)"
+      },
+      {
+        "hi": "फॉरेस्ट प्रेस (Forest Press)",
+        "en": "Forest Press"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "वर्ष 1988 में OCLC (Online Computer Library Center) ने फॉरेस्ट प्रेस का अधिग्रहण कर DDC के सभी कॉपीराइट और संपादन अधिकार प्राप्त कर लिए। वर्तमान में OCLC ही WebDewey का संचालन करता है।",
+    "exp_en": "OCLC acquired Forest Press in 1988, securing full copyright and editorial management of DDC and publishing both print editions and the online WebDewey."
+  },
+  {
+    "globalId": "u3_sub3_1_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "यूनिवर्सल डेसिमल वर्गीकरण (UDC) में दो या दो से अधिक स्वतंत्र विषयों के मध्य 'संबंध' (Relation) दर्शाने हेतु किस योजक चिह्न का उपयोग किया जाता है?",
+    "q_en": "In the Universal Decimal Classification (UDC), which punctuation symbol is used to indicate a simple 'Relation' between two or more distinct subjects?",
+    "options_hi": [
+      "प्लस (+)",
+      "कोलन (:)",
+      "ऑब्लिक (/)",
+      "बराबर (=)"
+    ],
+    "options_en": [
+      "Plus (+)",
+      "Colon (:)",
+      "Oblique (/)",
+      "Equals (=)"
+    ],
+    "options": [
+      {
+        "hi": "प्लस (+)",
+        "en": "Plus (+)"
+      },
+      {
+        "hi": "कोलन (:)",
+        "en": "Colon (:)"
+      },
+      {
+        "hi": "ऑब्लिक (/)",
+        "en": "Oblique (/)"
+      },
+      {
+        "hi": "बराबर (=)",
+        "en": "Equals (=)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "UDC में कोलन (:) का प्रयोग दो स्वतंत्र वर्गों के पारस्परिक संबंध (Relation) को व्यक्त करने के लिए किया जाता है (जैसे 17:7 = नीतिशास्त्र का कला से संबंध)।",
+    "exp_en": "In UDC, the colon (:) serves as the simple relation sign linking two or more separate class numbers together to denote coordinate interaction."
+  },
+  {
+    "globalId": "u3_sub3_1_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "DDC में किसी संपूर्ण पुराने विषय की अनुसूची को पूरी तरह समाप्त कर नए सिरे से पुनर्गठित करने की प्रक्रिया को क्या कहा जाता है?",
+    "q_en": "In DDC, the complete destruction and total reorganization of an existing class schedule is called:",
+    "options_hi": [
+      "स्थानिक अनुसूची (Area Schedule)",
+      "फीनिक्स अनुसूची (Phoenix Schedule)",
+      "सापेक्ष अनुक्रमणिका (Relative Index)",
+      "तालिका उप-विभाजन"
+    ],
+    "options_en": [
+      "Area Schedule",
+      "Phoenix Schedule",
+      "Relative Index",
+      "Table Subdivision"
+    ],
+    "options": [
+      {
+        "hi": "स्थानिक अनुसूची (Area Schedule)",
+        "en": "Area Schedule"
+      },
+      {
+        "hi": "फीनिक्स अनुसूची (Phoenix Schedule)",
+        "en": "Phoenix Schedule"
+      },
+      {
+        "hi": "सापेक्ष अनुक्रमणिका (Relative Index)",
+        "en": "Relative Index"
+      },
+      {
+        "hi": "तालिका उप-विभाजन",
+        "en": "Table Subdivision"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "फीनिक्स अनुसूची (Phoenix Schedule) का प्रयोग DDC के 16वें संस्करण (1958) से शुरू हुआ। जिस प्रकार पौराणिक अमर पक्षी फीनिक्स अपनी ही राख से नया जन्म लेता है, उसी प्रकार पुराने विषय को शून्य से नया स्वरूप दिया जाता है।",
+    "exp_en": "Introduced in the 16th edition (1958), a Phoenix Schedule completely revamps an obsolete subject schedule from the ground up, discarding prior notations."
+  },
+  {
+    "globalId": "u3_sub3_1_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "जैव रसायन (Biochemistry), भू-भौतिकी (Geophysics) और जैव-भौतिकी (Biophysics) किस विषय निर्माण विधि (Mode of Formation of Subjects) के उत्कृष्ट उदाहरण हैं?",
+    "q_en": "Biochemistry, Geophysics, and Biophysics are quintessential examples of which Mode of Formation of Subjects?",
+    "options_hi": [
+      "विखंडन (Fission)",
+      "विलयन (Fusion)",
+      "आसवन (Distillation)",
+      "पटलनीकरण (Lamination)"
+    ],
+    "options_en": [
+      "Fission",
+      "Fusion",
+      "Distillation",
+      "Lamination"
+    ],
+    "options": [
+      {
+        "hi": "विखंडन (Fission)",
+        "en": "Fission"
+      },
+      {
+        "hi": "विलयन (Fusion)",
+        "en": "Fusion"
+      },
+      {
+        "hi": "आसवन (Distillation)",
+        "en": "Distillation"
+      },
+      {
+        "hi": "पटलनीकरण (Lamination)",
+        "en": "Lamination"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "विलयन (Fusion) में दो स्वतंत्र मुख्य विषय आपस में इस प्रकार घनिष्ठता से घुल-मिल जाते हैं कि एक पूर्णतः नए विषय का जन्म होता है (जैसे Biology + Chemistry = Biochemistry)।",
+    "exp_en": "Fusion occurs when two or more distinct subjects merge seamlessly together, forfeiting separate identities to form an integrated new field like Biochemistry."
+  },
+  {
+    "globalId": "u3_sub3_1_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "कोलन क्लासिफिकेशन (CC) में प्रयुक्त पाँच मूलभूत श्रेणियों (PMEST) में से 'पदार्थ' (Matter - M) का योजक चिह्न क्या है?",
+    "q_en": "Among the five Fundamental Categories (PMEST) in Colon Classification, what is the connecting symbol for 'Matter' [M]?",
+    "options_hi": [
+      "अल्पविराम / कॉमा (,)",
+      "अर्धविराम / सेमीकोलन (;)",
+      "अपूर्णविराम / कोलन (:)",
+      "बिंदु / डॉट (.)"
+    ],
+    "options_en": [
+      "Comma (,)",
+      "Semicolon (;)",
+      "Colon (:)",
+      "Dot (.)"
+    ],
+    "options": [
+      {
+        "hi": "अल्पविराम / कॉमा (,)",
+        "en": "Comma (,)"
+      },
+      {
+        "hi": "अर्धविराम / सेमीकोलन (;)",
+        "en": "Semicolon (;)"
+      },
+      {
+        "hi": "अपूर्णविराम / कोलन (:)",
+        "en": "Colon (:)"
+      },
+      {
+        "hi": "बिंदु / डॉट (.)",
+        "en": "Dot (.)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रंगनाथन के अनुसार PMEST के योजक चिह्न हैं: Personality = , (कॉमा), Matter = ; (सेमीकोलन), Energy = : (कोलन), Space = . (डॉट), Time = ' (सिंगल इनवर्टेड कॉमा)।",
+    "exp_en": "In Colon Classification, the connecting symbol for Matter [M] is the semicolon (;), introduced in the 4th edition (1952)."
+  },
+  {
+    "globalId": "u3_sub3_1_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "DDC के 23वें संस्करण (2011) में कुल कितनी सहायक तालिकाएं (Auxiliary Tables) समाविष्ट हैं?",
+    "q_en": "How many Auxiliary Tables are included in the 23rd edition (2011) of the Dewey Decimal Classification?",
+    "options_hi": [
+      "4 तालिकाएं",
+      "6 तालिकाएं (6 Tables)",
+      "7 तालिकाएं",
+      "10 तालिकाएं"
+    ],
+    "options_en": [
+      "4 Tables",
+      "6 Tables",
+      "7 Tables",
+      "10 Tables"
+    ],
+    "options": [
+      {
+        "hi": "4 तालिकाएं",
+        "en": "4 Tables"
+      },
+      {
+        "hi": "6 तालिकाएं (6 Tables)",
+        "en": "6 Tables"
+      },
+      {
+        "hi": "7 तालिकाएं",
+        "en": "7 Tables"
+      },
+      {
+        "hi": "10 तालिकाएं",
+        "en": "10 Tables"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "DDC 23rd संस्करण में कुल 6 तालिकाएं हैं (Table 1: Standard Subdivisions से Table 6: Languages)। Table 7 (Persons) को 22वें संस्करण से ही समाप्त कर दिया गया था।",
+    "exp_en": "DDC 23 features 6 Auxiliary Tables (Table 1 to Table 6). Table 7 (Individual Persons) was eliminated in the 22nd edition and integrated into Table 1 and schedules."
+  },
+  {
+    "globalId": "u3_sub3_1_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "UDC का प्रथम संस्करण किस वर्ष, किस भाषा में और किस नाम से प्रकाशित हुआ था?",
+    "q_en": "In which year, in which language, and under what title was the first full edition of UDC published?",
+    "options_hi": [
+      "1876, अंग्रेजी, DDC Extension",
+      "1905, फ्रेंच, Manuel du Répertoire Bibliographique Universel",
+      "1927, जर्मन, Dezimal-Klassifikation",
+      "1933, लैटिन, Classification Universalis"
+    ],
+    "options_en": [
+      "1876, English, DDC Extension",
+      "1905, French, Manuel du Répertoire Bibliographique Universel",
+      "1927, German, Dezimal-Klassifikation",
+      "1933, Latin, Classification Universalis"
+    ],
+    "options": [
+      {
+        "hi": "1876, अंग्रेजी, DDC Extension",
+        "en": "1876, English, DDC Extension"
+      },
+      {
+        "hi": "1905, फ्रेंच, Manuel du Répertoire Bibliographique Universel",
+        "en": "1905, French, Manuel du Répertoire Bibliographique Universel"
+      },
+      {
+        "hi": "1927, जर्मन, Dezimal-Klassifikation",
+        "en": "1927, German, Dezimal-Klassifikation"
+      },
+      {
+        "hi": "1933, लैटिन, Classification Universalis",
+        "en": "1933, Latin, Classification Universalis"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "UDC का पहला संस्करण 1905 में बेल्जियम के पॉल ऑटलेट और हेनरी ला फोंटेन द्वारा फ्रेंच भाषा में 'Manuel du Répertoire Bibliographique Universel' के नाम से प्रकाशित किया गया था।",
+    "exp_en": "The first international edition of UDC appeared in 1905 in French titled 'Manuel du Répertoire Bibliographique Universel', produced by the Institut International de Bibliographie."
+  },
+  {
+    "globalId": "u3_sub3_1_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "डॉ. एस.आर. रंगनाथन ने वर्गीकरण कार्य को सुगम बनाने हेतु किन तीन 'कार्य तलों' (Planes of Work) का प्रतिपादन किया था?",
+    "q_en": "To systematize classification methodology, Dr. S.R. Ranganathan postulated three distinct 'Planes of Work'. What are they?",
+    "options_hi": [
+      "शारीरिक, मानसिक और आध्यात्मिक तल",
+      "वैचारिक (Idea), शाब्दिक (Verbal), और अंकन (Notational) धरातल",
+      "प्राथमिक, द्वितीयक और तृतीयक तल",
+      "परिगणनात्मक, पक्षात्मक और विश्लेषणात्मक तल"
+    ],
+    "options_en": [
+      "Physical, Mental, and Spiritual planes",
+      "Idea Plane, Verbal Plane, and Notational Plane",
+      "Primary, Secondary, and Tertiary planes",
+      "Enumerative, Faceted, and Analytical planes"
+    ],
+    "options": [
+      {
+        "hi": "शारीरिक, मानसिक और आध्यात्मिक तल",
+        "en": "Physical, Mental, and Spiritual planes"
+      },
+      {
+        "hi": "वैचारिक (Idea), शाब्दिक (Verbal), और अंकन (Notational) धरातल",
+        "en": "Idea Plane, Verbal Plane, and Notational Plane"
+      },
+      {
+        "hi": "प्राथमिक, द्वितीयक और तृतीयक तल",
+        "en": "Primary, Secondary, and Tertiary planes"
+      },
+      {
+        "hi": "परिगणनात्मक, पक्षात्मक और विश्लेषणात्मक तल",
+        "en": "Enumerative, Faceted, and Analytical planes"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रंगनाथन ने वर्गीकरण के तीन कार्य तल प्रतिपादित किए: (1) Idea Plane (वैचारिक धरातल - सर्वाधिक सर्वोच्च), (2) Verbal Plane (शाब्दिक धरातल), और (3) Notational Plane (अंकन धरातल)।",
+    "exp_en": "Ranganathan established the triad of Idea Plane (conceptual analysis), Verbal Plane (standard terminology), and Notational Plane (symbolic translation)."
+  },
+  {
+    "globalId": "u3_sub3_1_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "कोलन क्लासिफिकेशन (CC) में प्रयुक्त 'पूर्ववर्ती सामान्य एकल' (Anteriorising Common Isolates - ACI) की सबसे प्रमुख विशेषता क्या है?",
+    "q_en": "What is the defining characteristic of 'Anteriorising Common Isolates' (ACI) in Colon Classification?",
+    "options_hi": [
+      "इन्हें जोड़ने हेतु कोलन (:) का प्रयोग अनिवार्य है",
+      "इन्हें बिना किसी योजक चिह्न के सीधे मुख्य वर्ग से जोड़ा जाता है और ये प्राथमिकता पाते हैं",
+      "ये केवल समय पक्ष के बाद ही जोड़े जा सकते हैं",
+      "इन्हें केवल बड़े अक्षरों में लिखा जाता है"
+    ],
+    "options_en": [
+      "They mandate a colon (:) connecting symbol",
+      "They are attached directly to the host class without any connecting symbol and take precedence",
+      "They can only appear after the Time facet",
+      "They must be written in capital letters"
+    ],
+    "options": [
+      {
+        "hi": "इन्हें जोड़ने हेतु कोलन (:) का प्रयोग अनिवार्य है",
+        "en": "They mandate a colon (:) connecting symbol"
+      },
+      {
+        "hi": "इन्हें बिना किसी योजक चिह्न के सीधे मुख्य वर्ग से जोड़ा जाता है और ये प्राथमिकता पाते हैं",
+        "en": "They are attached directly to the host class without any connecting symbol and take precedence"
+      },
+      {
+        "hi": "ये केवल समय पक्ष के बाद ही जोड़े जा सकते हैं",
+        "en": "They can only appear after the Time facet"
+      },
+      {
+        "hi": "इन्हें केवल बड़े अक्षरों में लिखा जाता है",
+        "en": "They must be written in capital letters"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पूर्ववर्ती सामान्य एकल (ACI, जैसे k-शब्दकोश, m-पत्रिका, v-इतिहास) बिना किसी योजक चिह्न के सीधे मुख्य वर्ग के साथ जुड़ते हैं और शेल्फ पर मूल विषय की सामान्य पुस्तकों से पहले (Anterior) आते हैं।",
+    "exp_en": "ACIs (such as k for dictionary, m for periodical) are attached directly without connecting symbols and possess anteriorising value, shelving general/introductory works ahead of core treatises."
+  },
+  {
+    "globalId": "u3_sub3_1_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "DDC में मुख्य वर्ग '300' और '800' क्रमशः किन विषय क्षेत्रों को दर्शाते हैं?",
+    "q_en": "In DDC, Main Classes '300' and '800' represent which subject fields respectively?",
+    "options_hi": [
+      "300 = धर्म, 800 = इतिहास",
+      "300 = सामाजिक विज्ञान (Social Sciences), 800 = साहित्य (Literature)",
+      "300 = भाषा, 800 = कला",
+      "300 = प्रौद्योगिकी, 800 = दर्शनशास्त्र"
+    ],
+    "options_en": [
+      "300 = Religion, 800 = History",
+      "300 = Social Sciences, 800 = Literature",
+      "300 = Language, 800 = Arts",
+      "300 = Technology, 800 = Philosophy"
+    ],
+    "options": [
+      {
+        "hi": "300 = धर्म, 800 = इतिहास",
+        "en": "300 = Religion, 800 = History"
+      },
+      {
+        "hi": "300 = सामाजिक विज्ञान (Social Sciences), 800 = साहित्य (Literature)",
+        "en": "300 = Social Sciences, 800 = Literature"
+      },
+      {
+        "hi": "300 = भाषा, 800 = कला",
+        "en": "300 = Language, 800 = Arts"
+      },
+      {
+        "hi": "300 = प्रौद्योगिकी, 800 = दर्शनशास्त्र",
+        "en": "300 = Technology, 800 = Philosophy"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "DDC के 10 मुख्य वर्गों में: 300 = सामाजिक विज्ञान (अर्थशास्त्र, राजनीति, शिक्षा, विधि आदि) तथा 800 = साहित्य एवं वाककला (कविता, नाटक, निबंध आदि) को दर्शाता है।",
+    "exp_en": "In DDC's First Summary: 300 denotes Social Sciences (sociology, law, education) and 800 denotes Literature and Rhetoric (poetry, drama, fiction)."
+  },
+  {
+    "globalId": "u3_sub3_1_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "कोलन क्लासिफिकेशन का 7वां संस्करण (1987) डॉ. रंगनाथन के मरणोपरांत किसके संपादन में प्रकाशित हुआ था?",
+    "q_en": "Under whose editorial stewardship was the 7th edition of Colon Classification (1987) published posthumously?",
+    "options_hi": [
+      "डॉ. एम.ए. गोपीनाथ (Dr. M.A. Gopinath)",
+      "डॉ. पी.एन. कौला",
+      "ए. नीलमघन",
+      "बी.एस. केशवन"
+    ],
+    "options_en": [
+      "Dr. M.A. Gopinath",
+      "Dr. P.N. Kaula",
+      "A. Neelameghan",
+      "B.S. Kesavan"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. एम.ए. गोपीनाथ (Dr. M.A. Gopinath)",
+        "en": "Dr. M.A. Gopinath"
+      },
+      {
+        "hi": "डॉ. पी.एन. कौला",
+        "en": "Dr. P.N. Kaula"
+      },
+      {
+        "hi": "ए. नीलमघन",
+        "en": "A. Neelameghan"
+      },
+      {
+        "hi": "बी.एस. केशवन",
+        "en": "B.S. Kesavan"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "कोलन क्लासिफिकेशन का 7वां संस्करण वर्ष 1987 में DRTC के प्रो. डॉ. एम.ए. गोपीनाथ के संपादन में प्रकाशित हुआ था। यह संस्करण पूर्णतः 'मुक्त पक्षात्मक' (Freely Faceted) था।",
+    "exp_en": "The 7th edition of CC was edited and brought out in 1987 by Dr. M.A. Gopinath, classified structurally as a Freely Faceted Analytico-Synthetic scheme."
+  },
+  {
+    "globalId": "u3_sub3_1_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "यूडीसी (UDC) में 'स्थान' (Place) के सामान्य सहायक उप-विभाजन को दर्शाने हेतु किस कोष्ठक का प्रयोग किया जाता है?",
+    "q_en": "In UDC, which brackets are used to represent the Common Auxiliary of 'Place'?",
+    "options_hi": [
+      "वर्गाकार कोष्ठक [...]",
+      "वृत्ताकार कोष्ठक (1/9) / Parentheses (...)",
+      "मंझला कोष्ठक {...}",
+      "उद्धरण चिह्न \"...\""
+    ],
+    "options_en": [
+      "Square brackets [...]",
+      "Parentheses (...)",
+      "Curly braces {...}",
+      "Quotation marks \"...\""
+    ],
+    "options": [
+      {
+        "hi": "वर्गाकार कोष्ठक [...]",
+        "en": "Square brackets [...]"
+      },
+      {
+        "hi": "वृत्ताकार कोष्ठक (1/9) / Parentheses (...)",
+        "en": "Parentheses (...)"
+      },
+      {
+        "hi": "मंझला कोष्ठक {...}",
+        "en": "Curly braces {...}"
+      },
+      {
+        "hi": "उद्धरण चिह्न \"...\"",
+        "en": "Quotation marks \"...\""
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "UDC में स्थान (Place) के लिए गोल कोष्ठक (...) का प्रयोग होता है, जैसे (540) = भारत। (समय हेतु \"...\" तथा रूप हेतु (0...) प्रयुक्त होता है)।",
+    "exp_en": "In UDC, Common Auxiliaries of Place are designated by digits enclosed in circular parentheses (...), e.g., (540) for India."
+  },
+  {
+    "globalId": "u3_sub3_1_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.1",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+    "q_hi": "पुस्तकालय विज्ञान में 'लाइब्रेरी ऑफ कांग्रेस वर्गीकरण' (LCC) किस प्रकार की वर्गीकरण पद्धति का सर्वश्रेष्ठ उदाहरण है?",
+    "q_en": "In library classification, the Library of Congress Classification (LCC) is the foremost example of which scheme type?",
+    "options_hi": [
+      "शुद्ध परिगणनात्मक (Purely Enumerative)",
+      "विश्लेषणात्मक-संश्लेषणात्मक (Analytico-Synthetic)",
+      "मुक्त पक्षात्मक (Freely Faceted)",
+      "कठोर पक्षात्मक"
+    ],
+    "options_en": [
+      "Purely Enumerative",
+      "Analytico-Synthetic",
+      "Freely Faceted",
+      "Rigidly Faceted"
+    ],
+    "options": [
+      {
+        "hi": "शुद्ध परिगणनात्मक (Purely Enumerative)",
+        "en": "Purely Enumerative"
+      },
+      {
+        "hi": "विश्लेषणात्मक-संश्लेषणात्मक (Analytico-Synthetic)",
+        "en": "Analytico-Synthetic"
+      },
+      {
+        "hi": "मुक्त पक्षात्मक (Freely Faceted)",
+        "en": "Freely Faceted"
+      },
+      {
+        "hi": "कठोर पक्षात्मक",
+        "en": "Rigidly Faceted"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "Library of Congress Classification (LCC) और राइडर्स इंटरनेशनल क्लासिफिकेशन 'शुद्ध परिगणनात्मक' (Purely Enumerative) पद्धतियां हैं, जिनमें लगभग सभी ज्ञात विषयों के बने-बनाए नंबरों की लंबी सूचियां होती हैं।",
+    "exp_en": "LCC is the premier example of a Purely Enumerative classification scheme, compiling exhaustive, ready-made alphanumeric schedules with minimal synthesis."
+  }
+]

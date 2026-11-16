@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u10_sub10_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "कथन:\n1. सभी पुस्तकें, कलम हैं।\n2. सभी कलम, पेंसिल हैं।\nनिष्कर्ष:\nI. सभी पुस्तकें, पेंसिल हैं।\nII. कुछ पेंसिल, पुस्तकें हैं।",
+    "q_en": "Statements:\n1. All books are pens.\n2. All pens are pencils.\nConclusions:\nI. All books are pencils.\nII. Some pencils are books.",
+    "options_hi": [
+      "केवल निष्कर्ष I निकलता है",
+      "केवल निष्कर्ष II निकलता है",
+      "निष्कर्ष I और II दोनों निकलते हैं",
+      "न तो I और न ही II निकलता है"
+    ],
+    "options_en": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions I and II follow",
+      "Neither I nor II follows"
+    ],
+    "options": [
+      {
+        "hi": "केवल निष्कर्ष I निकलता है",
+        "en": "Only conclusion I follows"
+      },
+      {
+        "hi": "केवल निष्कर्ष II निकलता है",
+        "en": "Only conclusion II follows"
+      },
+      {
+        "hi": "निष्कर्ष I और II दोनों निकलते हैं",
+        "en": "Both conclusions I and II follow"
+      },
+      {
+        "hi": "न तो I और न ही II निकलता है",
+        "en": "Neither I nor II follows"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "वेन आरेख: पुस्तकें ⊂ कलम ⊂ पेंसिल।\nचूंकि सभी पुस्तकें कलम हैं और सभी कलम पेंसिल हैं, अतः सभी पुस्तकें निश्चित रूप से पेंसिल होंगी (निष्कर्ष I सत्य है)। साथ ही, पेंसिलों का कुछ भाग पुस्तकों द्वारा घेरा गया है, अतः निष्कर्ष II भी सत्य है।",
+    "exp_en": "Venn: Books ⊂ Pens ⊂ Pencils. All books are naturally inside pencils (Conclusion I holds). Also, a portion of pencils is occupied by books (Conclusion II holds). Both follow."
+  },
+  {
+    "globalId": "u10_sub10_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "कथन:\n1. कुछ कुत्ते, बिल्लियां हैं।\n2. कोई बिल्ली, घोड़ा नहीं है।\nनिष्कर्ष:\nI. कुछ घोड़े, कुत्ते हैं।\nII. कोई घोड़ा, कुत्ता नहीं है।",
+    "q_en": "Statements:\n1. Some dogs are cats.\n2. No cat is a horse.\nConclusions:\nI. Some horses are dogs.\nII. No horse is a dog.",
+    "options_hi": [
+      "केवल निष्कर्ष I निकलता है",
+      "केवल निष्कर्ष II निकलता है",
+      "या तो निष्कर्ष I या II निकलता है (Either-Or)",
+      "दोनों निष्कर्ष निकलते हैं"
+    ],
+    "options_en": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Either conclusion I or II follows",
+      "Both conclusions follow"
+    ],
+    "options": [
+      {
+        "hi": "केवल निष्कर्ष I निकलता है",
+        "en": "Only conclusion I follows"
+      },
+      {
+        "hi": "केवल निष्कर्ष II निकलता है",
+        "en": "Only conclusion II follows"
+      },
+      {
+        "hi": "या तो निष्कर्ष I या II निकलता है (Either-Or)",
+        "en": "Either conclusion I or II follows"
+      },
+      {
+        "hi": "दोनों निष्कर्ष निकलते हैं",
+        "en": "Both conclusions follow"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "घोड़े और कुत्ते के बीच कोई सीधा संबंध नहीं दिया गया है, अतः दोनों स्वतंत्र रूप से संदिग्ध (False) हैं। चूंकि दोनों के विषय समान हैं (घोड़ा व कुत्ता) तथा एक सकारात्मक (कुछ हैं) व एक नकारात्मक (कोई नहीं है) है, अतः यह 'या तो I या II' (Either-Or) का पूरक युग्म है।",
+    "exp_en": "Since horse and dog have indeterminate relation, both are individually doubtful. With identical subject-predicate and a Some + No combination, this satisfies the Either-Or complementary pair criteria."
+  },
+  {
+    "globalId": "u10_sub10_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "निम्नलिखित में से कौन सा वेन आरेख 'भारत, बिहार एवं पटना' के बीच सही संबंध को सर्वोत्तम रूप से निरूपित करता है?",
+    "q_en": "Which of the following Venn diagrams best represents the relationship among 'India, Bihar, and Patna'?",
+    "options_hi": [
+      "तीन संकेंद्री वृत्त (एक के अंदर दूसरा, दूसरे के अंदर तीसरा)",
+      "तीन परस्पर प्रतिच्छेदी वृत्त",
+      "तीन अलग-अलग असंबद्ध वृत्त",
+      "दो वृत्त एक-दूसरे को काटते हुए तीसरे के अंदर"
+    ],
+    "options_en": [
+      "Three concentric circles (one inside another)",
+      "Three mutually intersecting circles",
+      "Three completely separate disjoint circles",
+      "Two intersecting circles inside a third circle"
+    ],
+    "options": [
+      {
+        "hi": "तीन संकेंद्री वृत्त (एक के अंदर दूसरा, दूसरे के अंदर तीसरा)",
+        "en": "Three concentric circles (one inside another)"
+      },
+      {
+        "hi": "तीन परस्पर प्रतिच्छेदी वृत्त",
+        "en": "Three mutually intersecting circles"
+      },
+      {
+        "hi": "तीन अलग-अलग असंबद्ध वृत्त",
+        "en": "Three completely separate disjoint circles"
+      },
+      {
+        "hi": "दो वृत्त एक-दूसरे को काटते हुए तीसरे के अंदर",
+        "en": "Two intersecting circles inside a third circle"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "पटना बिहार की राजधानी है (पटना पूरी तरह बिहार में है) और बिहार पूरी तरह भारत देश के अंतर्गत आता है। अतः यह तीन संकेंद्री वृत्तों (Concentric Circles) द्वारा प्रदर्शित होगा।",
+    "exp_en": "Patna is completely inside Bihar, and Bihar is entirely within India. Hence, three concentric circles accurately portray this hierarchical containment."
+  },
+  {
+    "globalId": "u10_sub10_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "निम्नलिखित में से कौन सा वेन आरेख 'डॉक्टर, इंजीनियर और वकील' के बीच संबंध को सबसे सटीक रूप से प्रदर्शित करता है?",
+    "q_en": "Which Venn diagram most accurately depicts the professional relationship among 'Doctors, Engineers, and Lawyers'?",
+    "options_hi": [
+      "तीन परस्पर प्रतिच्छेदी वृत्त",
+      "तीन पूर्णतः पृथक एवं अलग-अलग वृत्त",
+      "एक बड़े वृत्त के अंदर दो छोटे वृत्त",
+      "दो वृत्त आपस में जुड़े हुए, तीसरा अलग"
+    ],
+    "options_en": [
+      "Three overlapping circles",
+      "Three completely separate disjoint circles",
+      "Two small circles inside a large circle",
+      "Two connected circles and one separate circle"
+    ],
+    "options": [
+      {
+        "hi": "तीन परस्पर प्रतिच्छेदी वृत्त",
+        "en": "Three overlapping circles"
+      },
+      {
+        "hi": "तीन पूर्णतः पृथक एवं अलग-अलग वृत्त",
+        "en": "Three completely separate disjoint circles"
+      },
+      {
+        "hi": "एक बड़े वृत्त के अंदर दो छोटे वृत्त",
+        "en": "Two small circles inside a large circle"
+      },
+      {
+        "hi": "दो वृत्त आपस में जुड़े हुए, तीसरा अलग",
+        "en": "Two connected circles and one separate circle"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉक्टर, इंजीनियर और वकील तीनों पूरी तरह से अलग-अलग व्यवसाय/पेशे हैं। एक व्यक्ति एक ही समय में औपचारिक रूप से इन तीनों अलग व्यवसायों को नहीं अपनाता। अतः तीनों अलग-अलग वृत्त होंगे।",
+    "exp_en": "Doctors, Engineers, and Lawyers are three mutually exclusive distinct professions with separate professional licensures. Hence, three disjoint circles represent them."
+  },
+  {
+    "globalId": "u10_sub10_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "कथन: \"विद्यालय के अधिकांश शिक्षक परिश्रमी हैं।\"\nनिष्कर्ष:\nI. विद्यालय के कुछ शिक्षक परिश्रमी नहीं हैं।\nII. विद्यालय में कोई भी शिक्षक आलसी नहीं है।",
+    "q_en": "Statement: \"Most teachers in the school are hardworking.\"\nConclusions:\nI. Some teachers in the school are not hardworking.\nII. No teacher in the school is lazy.",
+    "options_hi": [
+      "केवल निष्कर्ष I निकलता है",
+      "केवल निष्कर्ष II निकलता है",
+      "निष्कर्ष I और II दोनों निकलते हैं",
+      "न तो I और न ही II निकलता है"
+    ],
+    "options_en": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both conclusions follow",
+      "Neither I nor II follows"
+    ],
+    "options": [
+      {
+        "hi": "केवल निष्कर्ष I निकलता है",
+        "en": "Only conclusion I follows"
+      },
+      {
+        "hi": "केवल निष्कर्ष II निकलता है",
+        "en": "Only conclusion II follows"
+      },
+      {
+        "hi": "निष्कर्ष I और II दोनों निकलते हैं",
+        "en": "Both conclusions follow"
+      },
+      {
+        "hi": "न तो I और न ही II निकलता है",
+        "en": "Neither I nor II follows"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'अधिकांश' (Most) का अर्थ 100% नहीं होता, बल्कि 50% से अधिक होता है। अतः यदि अधिकांश शिक्षक परिश्रमी हैं, तो इसका सीधा अर्थ है कि कुछ शिक्षक परिश्रमी नहीं हैं (निष्कर्ष I सत्य है)। आलसी होने का कोई सीधा उल्लेख नहीं है, अतः II असत्य है।",
+    "exp_en": "'Most' implies a majority but less than all (not 100%). Therefore, it logically implies that some teachers are not hardworking (Conclusion I follows). Conclusion II is unwarranted."
+  },
+  {
+    "globalId": "u10_sub10_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "यदि '+' का अर्थ '÷', '-' का अर्थ '×', '×' का अर्थ '+', और '÷' का अर्थ '-' है, तो निम्नलिखित समीकरण का मान क्या होगा?\n36 + 6 - 3 × 5 ÷ 8 = ?",
+    "q_en": "If '+' means '÷', '-' means '×', '×' means '+', and '÷' means '-', then what is the value of the following equation?\n36 + 6 - 3 × 5 ÷ 8 = ?",
+    "options_hi": [
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "options_en": [
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "options": [
+      {
+        "hi": "12",
+        "en": "12"
+      },
+      {
+        "hi": "15",
+        "en": "15"
+      },
+      {
+        "hi": "18",
+        "en": "18"
+      },
+      {
+        "hi": "20",
+        "en": "20"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "चिह्न बदलने पर: 36 ÷ 6 × 3 + 5 - 8\nBODMAS के अनुसार:\n1) भाग: 36 ÷ 6 = 6\n2) गुणा: 6 × 3 = 18\n3) जोड़: 18 + 5 = 23\n4) घटाव: 23 - 8 = 15।",
+    "exp_en": "Substituting signs: 36 ÷ 6 × 3 + 5 - 8. Applying BODMAS: (36 ÷ 6) = 6 -> 6 × 3 = 18 -> 18 + 5 = 23 -> 23 - 8 = 15."
+  },
+  {
+    "globalId": "u10_sub10_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "यदि '+' का अर्थ '×', '-' का अर्थ '÷', '×' का अर्थ '-', और '÷' का अर्थ '+' हो, तो समीकरण का मान ज्ञात करें:\n16 × 4 + 2 - 2 ÷ 8 = ?",
+    "q_en": "If '+' means '×', '-' means '÷', '×' means '-', and '÷' means '+', then evaluate the expression:\n16 × 4 + 2 - 2 ÷ 8 = ?",
+    "options_hi": [
+      "20",
+      "18",
+      "24",
+      "16"
+    ],
+    "options_en": [
+      "20",
+      "18",
+      "24",
+      "16"
+    ],
+    "options": [
+      {
+        "hi": "20",
+        "en": "20"
+      },
+      {
+        "hi": "18",
+        "en": "18"
+      },
+      {
+        "hi": "24",
+        "en": "24"
+      },
+      {
+        "hi": "16",
+        "en": "16"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "चिह्न बदलने पर: 16 - 4 × 2 ÷ 2 + 8\nBODMAS के अनुसार:\n1) भाग: 2 ÷ 2 = 1\n2) गुणा: 4 × 1 = 4\n3) व्यंजक: 16 - 4 + 8 = (16 + 8) - 4 = 24 - 4 = 20।",
+    "exp_en": "Substituting signs: 16 - 4 × 2 ÷ 2 + 8. Following BODMAS: (2 ÷ 2) = 1 -> 4 × 1 = 4 -> 16 - 4 + 8 = 20."
+  },
+  {
+    "globalId": "u10_sub10_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "दिए गए आव्यूह (Matrix) में प्रश्नवाचक चिह्न (?) के स्थान पर कौन सी संख्या आएगी?\n[ 2    4     8  ]\n[ 3    9    27  ]\n[ 4   16     ?  ]",
+    "q_en": "Which number will replace the question mark (?) in the following matrix?\n[ 2    4     8  ]\n[ 3    9    27  ]\n[ 4   16     ?  ]",
+    "options_hi": [
+      "32",
+      "48",
+      "64",
+      "72"
+    ],
+    "options_en": [
+      "32",
+      "48",
+      "64",
+      "72"
+    ],
+    "options": [
+      {
+        "hi": "32",
+        "en": "32"
+      },
+      {
+        "hi": "48",
+        "en": "48"
+      },
+      {
+        "hi": "64",
+        "en": "64"
+      },
+      {
+        "hi": "72",
+        "en": "72"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "पैटर्न: पंक्तिवार n, n², n³ है।\nपंक्ति 1: 2, 2²=4, 2³=8।\nपंक्ति 2: 3, 3²=9, 3³=27।\nपंक्ति 3: 4, 4²=16, 4³= 64। अतः लुप्त संख्या 64 है।",
+    "exp_en": "Pattern: Each row follows n, n², n³. Row 1: 2, 4, 8. Row 2: 3, 9, 27. Row 3: 4, 4²=16, 4³=64. The missing number is 64."
+  },
+  {
+    "globalId": "u10_sub10_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "निम्नलिखित आव्यूह में लुप्त संख्या ज्ञात करें:\n[ 7    9    8 ]\n[ 2    2    2 ]\n[ 49  81    ? ]",
+    "q_en": "Find the missing number in the following matrix:\n[ 7    9    8 ]\n[ 2    2    2 ]\n[ 49  81    ? ]",
+    "options_hi": [
+      "16",
+      "64",
+      "32",
+      "72"
+    ],
+    "options_en": [
+      "16",
+      "64",
+      "32",
+      "72"
+    ],
+    "options": [
+      {
+        "hi": "16",
+        "en": "16"
+      },
+      {
+        "hi": "64",
+        "en": "64"
+      },
+      {
+        "hi": "32",
+        "en": "32"
+      },
+      {
+        "hi": "72",
+        "en": "72"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पैटर्न: पहली पंक्ति की संख्या की घात दूसरी पंक्ति की संख्या = तीसरी पंक्ति की संख्या।\nस्तंभ 1: 7² = 49\nस्तंभ 2: 9² = 81\nस्तंभ 3: 8² = 64।",
+    "exp_en": "Pattern: (Row 1)^(Row 2) = Row 3. Column 1: 7² = 49. Column 2: 9² = 81. Column 3: 8² = 64."
+  },
+  {
+    "globalId": "u10_sub10_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "यदि किसी समतल दर्पण के सामने रखी घड़ी में वास्तविक समय 3:25 हो रहा है, तो दर्पण में देखने पर क्या समय प्रतीत होगा?",
+    "q_en": "If a wall clock displays the actual time as 3:25, what time will appear when viewed in a plane mirror reflection?",
+    "options_hi": [
+      "8:35",
+      "9:35",
+      "8:25",
+      "7:35"
+    ],
+    "options_en": [
+      "8:35",
+      "9:35",
+      "8:25",
+      "7:35"
+    ],
+    "options": [
+      {
+        "hi": "8:35",
+        "en": "8:35"
+      },
+      {
+        "hi": "9:35",
+        "en": "9:35"
+      },
+      {
+        "hi": "8:25",
+        "en": "8:25"
+      },
+      {
+        "hi": "7:35",
+        "en": "7:35"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "दर्पण समय सूत्र: दर्पण समय = 11:60 - वास्तविक समय\n= 11:60 - 3:25 = 8:35।\nअतः दर्पण में 8 बजकर 35 मिनट दिखेगा।",
+    "exp_en": "Mirror time trick: Subtract actual time from 11:60. 11:60 - 3:25 = 8:35."
+  },
+  {
+    "globalId": "u10_sub10_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "यदि दर्पण में देखने पर किसी घड़ी का समय 9:40 दिखाई दे रहा है, तो घड़ी का वास्तविक समय क्या है?",
+    "q_en": "If a clock reflection in a mirror shows the time as 9:40, what is the actual time of the clock?",
+    "options_hi": [
+      "2:20",
+      "3:20",
+      "2:40",
+      "1:20"
+    ],
+    "options_en": [
+      "2:20",
+      "3:20",
+      "2:40",
+      "1:20"
+    ],
+    "options": [
+      {
+        "hi": "2:20",
+        "en": "2:20"
+      },
+      {
+        "hi": "3:20",
+        "en": "3:20"
+      },
+      {
+        "hi": "2:40",
+        "en": "2:40"
+      },
+      {
+        "hi": "1:20",
+        "en": "1:20"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "सूत्र: वास्तविक समय = 11:60 - दर्पण समय\n= 11:60 - 9:40 = 2:20।",
+    "exp_en": "Formula: Actual time = 11:60 - Mirror time = 11:60 - 9:40 = 2:20."
+  },
+  {
+    "globalId": "u10_sub10_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "अंग्रेजी वर्णमाला के निम्नलिखित बड़े अक्षरों में से किसका 'जल प्रतिबिम्ब' (Water Image) मूल अक्षर के बिल्कुल समान रहता है?",
+    "q_en": "Which of the following capital letters of the English alphabet has a 'Water Image' identical to its original upright form?",
+    "options_hi": [
+      "M",
+      "H",
+      "R",
+      "P"
+    ],
+    "options_en": [
+      "M",
+      "H",
+      "R",
+      "P"
+    ],
+    "options": [
+      {
+        "hi": "M",
+        "en": "M"
+      },
+      {
+        "hi": "H",
+        "en": "H"
+      },
+      {
+        "hi": "R",
+        "en": "R"
+      },
+      {
+        "hi": "P",
+        "en": "P"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "जल प्रतिबिम्ब में ऊपर का भाग नीचे उलटता है। अक्षर H क्षैतिज रूप से सममित (Horizontally symmetrical) है, अतः इसका जल प्रतिबिम्ब H ही रहता है। (M का W बन जाता है)।",
+    "exp_en": "Water reflection inverts objects vertically. 'H' has horizontal bilateral symmetry, so its water image remains identical to 'H'. (M flips to W)."
+  },
+  {
+    "globalId": "u10_sub10_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "एक ऊर्ध्वाधर दर्पण में देखने पर शब्द 'BOMB' का सही दर्पण प्रतिबिम्ब क्या होगा?",
+    "q_en": "What will be the correct mirror image of the word 'BOMB' when reflected in a vertical plane mirror?",
+    "options_hi": [
+      "BOMB",
+      "ᙠMOᙠ (दाएं से बाएं उलटकर)",
+      "BMOB",
+      "dWOB"
+    ],
+    "options_en": [
+      "BOMB",
+      "Reversed order with flipped B's",
+      "BMOB",
+      "dWOB"
+    ],
+    "options": [
+      {
+        "hi": "BOMB",
+        "en": "BOMB"
+      },
+      {
+        "hi": "ᙠMOᙠ (दाएं से बाएं उलटकर)",
+        "en": "Reversed order with flipped B's"
+      },
+      {
+        "hi": "BMOB",
+        "en": "BMOB"
+      },
+      {
+        "hi": "dWOB",
+        "en": "dWOB"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दर्पण में अंतिम अक्षर पहले दिखता है और पार्श्व परिवर्तन (Lateral inversion) होता है। BOMB में अंतिम B उल्टा होकर पहले आएगा, फिर M, फिर O, और फिर पहला B उल्टा होकर अंत में आएगा।",
+    "exp_en": "In a vertical mirror, rightmost letters appear leftmost with individual lateral flips. The sequence reverses to B-M-O-B with the letters 'B' laterally inverted."
+  },
+  {
+    "globalId": "u10_sub10_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "एक 'मानक पासे' (Standard Dice) में यदि ऊपरी फलक पर संख्या 5 है, तो उसके ठीक विपरीत (निचले) फलक पर कौन सी संख्या होगी?",
+    "q_en": "In a 'Standard Dice', if the number on the top face is 5, which number will be on the exactly opposite bottom face?",
+    "options_hi": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "options_en": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "options": [
+      {
+        "hi": "1",
+        "en": "1"
+      },
+      {
+        "hi": "2",
+        "en": "2"
+      },
+      {
+        "hi": "3",
+        "en": "3"
+      },
+      {
+        "hi": "4",
+        "en": "4"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "मानक पासे (Standard Dice) का सर्वमान्य नियम है कि किन्हीं भी दो विपरीत फलकों का योग हमेशा 7 होता है।\nअतः 5 के विपरीत = 7 - 5 = 2 होगा।",
+    "exp_en": "In any standard die, the sum of opposite faces is universally 7. Therefore, opposite of 5 = 7 - 5 = 2."
+  },
+  {
+    "globalId": "u10_sub10_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_10",
+    "unitNum": 10,
+    "subUnitNum": "10.2",
+    "unitTitle_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "unitTitle_en": "Reasoning and Mental Ability",
+    "subUnitTitle_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+    "subUnitTitle_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+    "q_hi": "कथन: \"क्या भारत में सभी स्तरों पर पुस्तकालयों का पूर्ण डिजिटलीकरण अनिवार्य किया जाना चाहिए?\"\nतर्क:\nI. हां, इससे पुस्तकों का संरक्षण होगा और पाठक कहीं से भी तुरंत जानकारी प्राप्त कर सकेंगे।\nII. नहीं, भारत में कई ग्रामीण क्षेत्रों में इंटरनेट और कंप्यूटर की बुनियादी सुविधाएं अभी भी सीमित हैं।",
+    "q_en": "Statement: \"Should complete digitization of libraries at all levels be made mandatory in India?\"\nArguments:\nI. Yes, it preserves intellectual heritage and empowers patrons to access info instantaneously.\nII. No, many rural areas in India still face limitations in power and digital infrastructure.",
+    "options_hi": [
+      "केवल तर्क I मजबूत है",
+      "केवल तर्क II मजबूत है",
+      "तर्क I और II दोनों मजबूत हैं",
+      "न तो I और न ही II मजबूत है"
+    ],
+    "options_en": [
+      "Only argument I is strong",
+      "Only argument II is strong",
+      "Both arguments I and II are strong",
+      "Neither argument is strong"
+    ],
+    "options": [
+      {
+        "hi": "केवल तर्क I मजबूत है",
+        "en": "Only argument I is strong"
+      },
+      {
+        "hi": "केवल तर्क II मजबूत है",
+        "en": "Only argument II is strong"
+      },
+      {
+        "hi": "तर्क I और II दोनों मजबूत हैं",
+        "en": "Both arguments I and II are strong"
+      },
+      {
+        "hi": "न तो I और न ही II मजबूत है",
+        "en": "Neither argument is strong"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "तर्क I आधुनिक डिजिटल पहुंच और ज्ञान संरक्षण की दृष्टि से अत्यंत सशक्त है। तर्क II जमीनी यथार्थ और डिजिटल विभाजन (Digital Divide) की व्यावहारिक समस्या को उजागर करता है। अतः दोनों ही तर्क अपने-अपने परिप्रेक्ष्य में मजबूत (Strong) हैं।",
+    "exp_en": "Argument I is strong regarding technological modernization and preservation. Argument II is equally strong regarding grassroots infrastructure disparities and digital divide. Both are strong arguments."
+  }
+]

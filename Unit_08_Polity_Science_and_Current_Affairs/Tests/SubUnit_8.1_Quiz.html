@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 8.1 Quiz: Indian Polity & Panchayati Raj | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज</h1>
+            <p>Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_8.1_Indian_Polity_and_Governance.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - भारतीय राजव्यवस्था खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u8_1_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "9 दिसंबर 1946 को आयोजित भारत की संविधान सभा की प्रथम बैठक में किसे सर्वसम्मति से 'अस्थायी अध्यक्ष' (Provisional President) चुना गया था?",
+            q_en: "Who was unanimously elected as the 'Provisional President' of the Constituent Assembly of India in its first meeting on 9 December 1946?",
+            options: [
+                { hi: "डॉ. राजेन्द्र प्रसाद", en: "Dr. Rajendra Prasad" },
+                { hi: "डॉ. सच्चिदानंद सिन्हा", en: "Dr. Sachchidananda Sinha" },
+                { hi: "डॉ. बी.आर. अंबेडकर", en: "Dr. B.R. Ambedkar" },
+                { hi: "पंडित जवाहरलाल नेहरू", en: "Pandit Jawaharlal Nehru" }
+            ],
+            correct: 1,
+            exp_hi: "वरिष्ठतम सदस्य होने की फ्रांसीसी परंपरा के अनुसार बिहार के डॉ. सच्चिदानंद सिन्हा को 9 दिसंबर 1946 को संविधान सभा का अस्थायी अध्यक्ष चुना गया था। 11 दिसंबर 1946 को डॉ. राजेन्द्र प्रसाद स्थायी अध्यक्ष बने।",
+            exp_en: "Following the French convention of electing the oldest member, Dr. Sachchidananda Sinha was chosen temporary President on 9 Dec 1946. On 11 Dec 1946, Dr. Rajendra Prasad became the permanent President."
+        },
+        {
+            num: 2,
+            q_hi: "42वें संविधान संशोधन अधिनियम, 1976 द्वारा भारतीय संविधान की प्रस्तावना (Preamble) में निम्नलिखित में से कौन से तीन नए शब्द जोड़े गए थे?",
+            q_en: "Which three new words were inserted into the Preamble of the Indian Constitution by the 42nd Constitutional Amendment Act, 1976?",
+            options: [
+                { hi: "संप्रभुता, बंधुत्व, लोकतंत्र", en: "Sovereignty, Fraternity, Democracy" },
+                { hi: "समाजवादी, पंथनिरपेक्ष, अखंडता", en: "Socialist, Secular, Integrity" },
+                { hi: "स्वतंत्रता, समानता, न्याय", en: "Liberty, Equality, Justice" },
+                { hi: "गणराज्य, निष्पक्षता, समाजवाद", en: "Republic, Impartiality, Socialism" }
+            ],
+            correct: 1,
+            exp_hi: "42वें संशोधन (1976) के द्वारा प्रस्तावना में 'समाजवादी' (Socialist), 'पंथनिरपेक्ष' (Secular) और राष्ट्र की 'अखंडता' (Integrity) शब्द जोड़े गए। प्रस्तावना में अब तक केवल एक बार संशोधन हुआ है।",
+            exp_en: "The 42nd Amendment of 1976 added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble. This remains the sole constitutional amendment made to the Preamble to date."
+        },
+        {
+            num: 3,
+            q_hi: "किस संविधान संशोधन अधिनियम द्वारा 'संपत्ति के अधिकार' को मौलिक अधिकारों की सूची से हटाकर अनुच्छेद 300A के अंतर्गत केवल एक विधिक/कानूनी अधिकार बना दिया गया?",
+            q_en: "By which Constitutional Amendment Act was the 'Right to Property' removed from the list of Fundamental Rights and made merely a legal right under Article 300A?",
+            options: [
+                { hi: "42वां संशोधन (1976)", en: "42nd Amendment (1976)" },
+                { hi: "44वां संशोधन (1978)", en: "44th Amendment (1978)" },
+                { hi: "86वां संशोधन (2002)", en: "86th Amendment (2002)" },
+                { hi: "73वां संशोधन (1992)", en: "73rd Amendment (1992)" }
+            ],
+            correct: 1,
+            exp_hi: "मोरारजी देसाई की जनता पार्टी सरकार के समय 44वें संविधान संशोधन 1978 द्वारा अनुच्छेद 31 (संपत्ति का मौलिक अधिकार) समाप्त कर इसे भाग XII में अनुच्छेद 300A के तहत सामान्य कानूनी अधिकार बना दिया गया।",
+            exp_en: "The 44th Constitutional Amendment Act (1978) under the Janata Party government repealed Article 31 and reclassified the Right to Property as a legal right under Article 300A."
+        },
+        {
+            num: 4,
+            q_hi: "भारतीय संविधान का कौन सा अनुच्छेद 'अस्पृश्यता का अंत' (Abolition of Untouchability) करता है और इसके किसी भी रूप में आचरण को दंडनीय अपराध घोषित करता है?",
+            q_en: "Which Article of the Indian Constitution abolishes 'Untouchability' and declares its practice in any form a punishable offense?",
+            options: [
+                { hi: "अनुच्छेद 14", en: "Article 14" },
+                { hi: "अनुच्छेद 17", en: "Article 17" },
+                { hi: "अनुच्छेद 19", en: "Article 19" },
+                { hi: "अनुच्छेद 23", en: "Article 23" }
+            ],
+            correct: 1,
+            exp_hi: "अनुच्छेद 17 अस्पृश्यता के पूर्ण उन्मूलन का प्रावधान करता है। संसद ने इसे प्रभावी बनाने के लिए 'अस्पृश्यता (अपराध) अधिनियम 1955' पारित किया, जिसे बाद में 'नागरिक अधिकार संरक्षण अधिनियम 1955' नाम दिया गया।",
+            exp_en: "Article 17 abolishes untouchability and forbids its practice. To give effect to this article, Parliament enacted the Untouchability (Offences) Act 1955, later renamed Civil Rights Protection Act."
+        },
+        {
+            num: 5,
+            q_hi: "6 से 14 वर्ष के बच्चों के लिए अनिवार्य एवं निःशुल्क प्राथमिक शिक्षा को मौलिक अधिकार (अनुच्छेद 21A) बनाने वाला ऐतिहासिक संविधान संशोधन कौन सा था?",
+            q_en: "Which landmark Constitutional Amendment made free and compulsory elementary education for children aged 6 to 14 a Fundamental Right under Article 21A?",
+            options: [
+                { hi: "86वां संविधान संशोधन (2002)", en: "86th Constitutional Amendment (2002)" },
+                { hi: "91वां संविधान संशोधन (2003)", en: "91st Constitutional Amendment (2003)" },
+                { hi: "73वां संविधान संशोधन (1992)", en: "73rd Constitutional Amendment (1992)" },
+                { hi: "61वां संविधान संशोधन (1988)", en: "61st Constitutional Amendment (1988)" }
+            ],
+            correct: 0,
+            exp_hi: "86वें संविधान संशोधन 2002 द्वारा अनुच्छेद 21A जोड़कर शिक्षा को मौलिक अधिकार बनाया गया। इसी के आधार पर संसद ने शिक्षा का अधिकार अधिनियम (RTE Act, 2009) पारित किया, जो 1 अप्रैल 2010 से प्रभावी हुआ।",
+            exp_en: "The 86th Constitutional Amendment Act 2002 inserted Article 21A, making education a Fundamental Right. Following this, the Right to Education (RTE) Act 2009 was enforced on 1 April 2010."
+        },
+        {
+            num: 6,
+            q_hi: "डॉ. बी.आर. अंबेडकर ने भारतीय संविधान के किस अनुच्छेद को 'संविधान की आत्मा और उसका हृदय' (Heart and Soul of the Constitution) कहा था?",
+            q_en: "Which Article of the Indian Constitution was termed the 'Heart and Soul of the Constitution' by Dr. B.R. Ambedkar?",
+            options: [
+                { hi: "अनुच्छेद 19 (वाक् स्वतंत्रता)", en: "Article 19 (Freedom of Speech)" },
+                { hi: "अनुच्छेद 21 (जीवन का अधिकार)", en: "Article 21 (Right to Life)" },
+                { hi: "अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार)", en: "Article 32 (Right to Constitutional Remedies)" },
+                { hi: "अनुच्छेद 368 (संविधान संशोधन)", en: "Article 368 (Constitutional Amendment)" }
+            ],
+            correct: 2,
+            exp_hi: "डॉ. अंबेडकर ने अनुच्छेद 32 को 'संविधान का हृदय और आत्मा' कहा था क्योंकि यह नागरिकों को अपने मौलिक अधिकारों के हनन पर सीधे सर्वोच्च न्यायालय जाने का अधिकार और सुरक्षा गारंटी देता है।",
+            exp_en: "Dr. Ambedkar described Article 32 as the 'Heart and Soul of the Constitution' because it guarantees constitutional remedies through supreme judicial writs if fundamental rights are violated."
+        },
+        {
+            num: 7,
+            q_hi: "न्यायालय द्वारा किसी लोक अधिकारी या संस्था को अपने कानूनी एवं सार्वजनिक कर्तव्यों का अनिवार्य पालन करने हेतु कौन सी रिट (Writ) जारी की जाती है?",
+            q_en: "Which writ is issued by a court commanding a public official or body to perform their mandatory legal and statutory duties?",
+            options: [
+                { hi: "बंदी प्रत्यक्षीकरण (Habeas Corpus)", en: "Habeas Corpus" },
+                { hi: "परमादेश (Mandamus)", en: "Mandamus" },
+                { hi: "अधिकार पृच्छा (Quo-Warranto)", en: "Quo-Warranto" },
+                { hi: "प्रतिषेध (Prohibition)", en: "Prohibition" }
+            ],
+            correct: 1,
+            exp_hi: "परमादेश (Mandamus) का शाब्दिक अर्थ है 'हम आदेश देते हैं' (We Command)। यह रिट किसी सार्वजनिक प्राधिकारी, निगम या निचली अदालत को विधिक कर्तव्य का पालन करने हेतु बाध्य करने के लिए जारी की जाती है।",
+            exp_en: "Mandamus literally means 'We Command'. It is a judicial writ directed to any public officer, corporation, or inferior tribunal commanding the performance of a specific statutory public duty."
+        },
+        {
+            num: 8,
+            q_hi: "संविधान के भाग IV (अनुच्छेद 36 से 51) में वर्णित 'राज्य के नीति निर्देशक तत्व' (DPSP) किस देश के संविधान से प्रेरित होकर अंगीकृत किए गए हैं?",
+            q_en: "The 'Directive Principles of State Policy' (DPSP) enshrined in Part IV (Articles 36 to 51) of the Indian Constitution are borrowed from the constitution of which nation?",
+            options: [
+                { hi: "संयुक्त राज्य अमेरिका", en: "United States of America" },
+                { hi: "आयरलैंड (Ireland)", en: "Ireland" },
+                { hi: "ग्रेट ब्रिटेन", en: "Great Britain" },
+                { hi: "ऑस्ट्रेलिया", en: "Australia" }
+            ],
+            correct: 1,
+            exp_hi: "भारतीय संविधान में नीति निर्देशक तत्व 1937 के आयरिश संविधान से लिए गए हैं। ये गैर-न्यायसंगत हैं, परंतु देश के शासन में मूलभूत महत्व रखते हैं और कल्याणकारी राज्य की स्थापना का लक्ष्य रखते हैं।",
+            exp_en: "The DPSPs were borrowed from the Irish Constitution of 1937. While non-justiciable in courts, they are fundamental in the governance of the country aiming to establish a welfare state."
+        },
+        {
+            num: 9,
+            q_hi: "गांधीवादी दर्शन पर आधारित भारतीय संविधान का कौन सा अनुच्छेद राज्य को 'ग्राम पंचायतों के गठन' (Organization of Village Panchayats) का स्पष्ट निर्देश देता है?",
+            q_en: "Which Article of the Indian Constitution rooted in Gandhian philosophy directs the State to organize Village Panchayats?",
+            options: [
+                { hi: "अनुच्छेद 40", en: "Article 40" },
+                { hi: "अनुच्छेद 44", en: "Article 44" },
+                { hi: "अनुच्छेद 48", en: "Article 48" },
+                { hi: "अनुच्छेद 50", en: "Article 50" }
+            ],
+            correct: 0,
+            exp_hi: "नीति निर्देशक तत्वों के अंतर्गत अनुच्छेद 40 में कहा गया है कि राज्य ग्राम पंचायतों का संगठन करने के लिए कदम उठाएगा और उन्हें ऐसी शक्तियां देगा जो उन्हें स्वायत्त शासन की इकाइयों के रूप में कार्य करने में समर्थ बनाएं।",
+            exp_en: "Article 40 in Part IV directs the state to take steps to organize village panchayats and endow them with such powers and authority as may be necessary to function as units of self-government."
+        },
+        {
+            num: 10,
+            q_hi: "वर्ष 1976 में किस समिति की अनुशंसा पर संविधान के भाग IV-A एवं अनुच्छेद 51A के तहत नागरिकों के लिए 'मौलिक कर्तव्य' (Fundamental Duties) जोड़े गए थे?",
+            q_en: "On the recommendation of which committee in 1976 were 'Fundamental Duties' incorporated for citizens under Part IV-A and Article 51A?",
+            options: [
+                { hi: "बलवंत राय मेहता समिति", en: "Balwant Rai Mehta Committee" },
+                { hi: "सरदार स्वर्ण सिंह समिति (Sardar Swaran Singh Committee)", en: "Sardar Swaran Singh Committee" },
+                { hi: "सरकारिया आयोग", en: "Sarkaria Commission" },
+                { hi: "के. संथानम समिति", en: "K. Santhanam Committee" }
+            ],
+            correct: 1,
+            exp_hi: "42वें संशोधन 1976 द्वारा सरदार स्वर्ण सिंह समिति की सिफारिश पर सोवियत संघ (USSR) से प्रेरित 10 मौलिक कर्तव्य जोड़े गए। 86वें संशोधन 2002 द्वारा 11वां कर्तव्य जोड़ा गया। वर्तमान में कुल 11 कर्तव्य हैं।",
+            exp_en: "The Sardar Swaran Singh Committee recommended incorporating 10 Fundamental Duties via the 42nd Amendment in 1976 (inspired by the USSR). An 11th duty was added in 2002 via the 86th Amendment."
+        },
+        {
+            num: 11,
+            q_hi: "संसद के दोनों सदनों में बिहार राज्य के लिए आवंटित लोकसभा एवं राज्यसभा सीटों की कुल संख्या क्रमशः कितनी है?",
+            q_en: "What is the total number of seats allocated to the state of Bihar in the Lok Sabha and Rajya Sabha respectively?",
+            options: [
+                { hi: "लोकसभा: 40, राज्यसभा: 16", en: "Lok Sabha: 40, Rajya Sabha: 16" },
+                { hi: "लोकसभा: 54, राज्यसभा: 22", en: "Lok Sabha: 54, Rajya Sabha: 22" },
+                { hi: "लोकसभा: 38, राज्यसभा: 14", en: "Lok Sabha: 38, Rajya Sabha: 14" },
+                { hi: "लोकसभा: 42, राज्यसभा: 18", en: "Lok Sabha: 42, Rajya Sabha: 18" }
+            ],
+            correct: 0,
+            exp_hi: "संसद में बिहार का प्रतिनिधित्व: लोकसभा में 40 सीटें (जिनमें 6 सीटें अनुसूचित जाति हेतु आरक्षित हैं) तथा राज्यसभा में 16 सीटें निर्धारित हैं।",
+            exp_en: "Bihar has 40 seats in the Lok Sabha (of which 6 are reserved for Scheduled Castes) and 16 seats in the Rajya Sabha."
+        },
+        {
+            num: 12,
+            q_hi: "बिहार विधानमंडल के निचले सदन अर्थात् 'बिहार विधानसभा' (Vidhan Sabha) में निर्वाचित सदस्यों की कुल संख्या कितनी है?",
+            q_en: "What is the total number of elected members in the lower house of Bihar Legislature, namely the 'Bihar Vidhan Sabha' (Legislative Assembly)?",
+            options: [
+                { hi: "243 सीटें", en: "243 seats" },
+                { hi: "250 सीटें", en: "250 seats" },
+                { hi: "75 सीटें", en: "75 seats" },
+                { hi: "324 सीटें", en: "324 seats" }
+            ],
+            correct: 0,
+            exp_hi: "बिहार विधानसभा में कुल 243 निर्वाचित सदस्य (सीटें) हैं, जिनमें 38 सीटें अनुसूचित जाति (SC) तथा 2 सीटें अनुसूचित जनजाति (ST - कटोरिया एवं मनिहारी) के लिए आरक्षित हैं। विधान परिषद में 75 सीटें हैं।",
+            exp_en: "The Bihar Legislative Assembly has 243 elected seats (38 reserved for SC, 2 for ST: Katoria & Manihari). The Legislative Council (Vidhan Parishad) comprises 75 seats."
+        },
+        {
+            num: 13,
+            q_hi: "भारत में लोकतांत्रिक विकेंद्रीकरण की दिशा में 'त्रिस्तरीय पंचायती राज व्यवस्था' (ग्राम, प्रखंड व जिला स्तर) की सिफारिश सर्वप्रथम 1957 में किस समिति ने की थी?",
+            q_en: "Which committee first recommended the 'Three-tier Panchayati Raj System' (village, block, and district levels) for democratic decentralization in India in 1957?",
+            options: [
+                { hi: "अशोक मेहता समिति", en: "Ashok Mehta Committee" },
+                { hi: "बलवंत राय मेहता समिति (Balwant Rai Mehta Committee)", en: "Balwant Rai Mehta Committee" },
+                { hi: "एल.एम. सिंघवी समिति", en: "L.M. Singhvi Committee" },
+                { hi: "जी.वी.के. राव समिति", en: "G.V.K. Rao Committee" }
+            ],
+            correct: 1,
+            exp_hi: "1957 में बलवंत राय मेहता समिति ने त्रिस्तरीय पंचायती राज व्यवस्था की सिफारिश की थी। इसके आधार पर 2 अक्टूबर 1959 को राजस्थान के नागौर में देश के प्रथम पंचायती राज का उद्घाटन पं. नेहरू ने किया था।",
+            exp_en: "The Balwant Rai Mehta Committee (1957) proposed the 3-tier Panchayati Raj architecture, leading to its historic inaugural launch in Nagaur (Rajasthan) on 2 October 1959."
+        },
+        {
+            num: 14,
+            q_hi: "73वें संविधान संशोधन अधिनियम 1992 द्वारा संविधान में कौन सी अनुसूची जोड़ी गई तथा इसमें पंचायतों को कितने विषय सौंपे गए हैं?",
+            q_en: "Which Schedule was added to the Constitution by the 73rd Constitutional Amendment Act 1992 and how many functional matters were entrusted to Panchayats?",
+            options: [
+                { hi: "10वीं अनुसूची (22 विषय)", en: "10th Schedule (22 subjects)" },
+                { hi: "11वीं अनुसूची (29 विषय)", en: "11th Schedule (29 subjects)" },
+                { hi: "12वीं अनुसूची (18 विषय)", en: "12th Schedule (18 subjects)" },
+                { hi: "9वीं अनुसूची (35 विषय)", en: "9th Schedule (35 subjects)" }
+            ],
+            correct: 1,
+            exp_hi: "73वें संशोधन (1992) द्वारा संविधान में भाग IX तथा '11वीं अनुसूची' जोड़ी गई, जिसमें पंचायतों के कार्यक्षेत्र हेतु 29 विषय निर्धारित किए गए। (12वीं अनुसूची 74वें संशोधन द्वारा नगरपालिकाओं हेतु 18 विषयों के साथ जोड़ी गई)।",
+            exp_en: "The 73rd Amendment inserted Part IX and the 11th Schedule containing 29 functional items for Panchayats. (The 12th Schedule with 18 items pertains to Municipalities via the 74th Amendment)."
+        },
+        {
+            num: 15,
+            q_hi: "बिहार पंचायती राज अधिनियम, 2006 लागू कर पंचायती राज संस्थाओं एवं नगर निकायों में महिलाओं को 50% आरक्षण देने वाला भारत का पहला राज्य कौन बना?",
+            q_en: "By implementing the Bihar Panchayati Raj Act 2006, which state became the first in India to grant 50% reservation to women in Panchayati Raj institutions and urban local bodies?",
+            options: [
+                { hi: "मध्य प्रदेश", en: "Madhya Pradesh" },
+                { hi: "बिहार (Bihar)", en: "Bihar" },
+                { hi: "केरल", en: "Kerala" },
+                { hi: "राजस्थान", en: "Rajasthan" }
+            ],
+            correct: 1,
+            exp_hi: "बिहार देश का प्रथम राज्य है जिसने 2006 में ऐतिहासिक कानून बनाकर पंचायती राज संस्थाओं के सभी स्तरों और पदों (मुखिया, प्रमुख, जिला परिषद अध्यक्ष आदि) में महिलाओं को 50% आरक्षण प्रदान किया।",
+            exp_en: "Bihar made history in 2006 by enacting the Bihar Panchayati Raj Act, becoming the first state in India to mandate 50% reservation for women across all tiers and leadership posts of local self-government."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u8_sub8_3_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "बिहार सरकार की 'सात निश्चय-2' योजना (सशक्त महिला-सक्षम महिला) के अंतर्गत इंटरमीडिएट उत्तीर्ण अविवाहित तथा स्नातक उत्तीर्ण बालिकाओं को क्रमशः कितनी प्रोत्साहन राशि दी जाती है?",
+    "q_en": "Under Bihar Government's 'Saat Nishchay-2' scheme, what financial incentive amount is awarded to unmarried girls passing Intermediate and girls completing Graduation respectively?",
+    "options_hi": [
+      "₹10,000 एवं ₹25,000",
+      "₹25,000 एवं ₹50,000",
+      "₹15,000 एवं ₹30,000",
+      "₹20,000 एवं ₹40,000"
+    ],
+    "options_en": [
+      "₹10,000 and ₹25,000",
+      "₹25,000 and ₹50,000",
+      "₹15,000 and ₹30,000",
+      "₹20,000 and ₹40,000"
+    ],
+    "options": [
+      {
+        "hi": "₹10,000 एवं ₹25,000",
+        "en": "₹10,000 and ₹25,000"
+      },
+      {
+        "hi": "₹25,000 एवं ₹50,000",
+        "en": "₹25,000 and ₹50,000"
+      },
+      {
+        "hi": "₹15,000 एवं ₹30,000",
+        "en": "₹15,000 and ₹30,000"
+      },
+      {
+        "hi": "₹20,000 एवं ₹40,000",
+        "en": "₹20,000 and ₹40,000"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सात निश्चय-2 के तहत उच्च शिक्षा हेतु प्रोत्साहन राशि को दोगुना कर दिया गया है: अविवाहित इंटरमीडिएट उत्तीर्ण छात्राओं को ₹25,000 तथा स्नातक उत्तीर्ण बालिकाओं को ₹50,000 की वित्तीय सहायता सीधे बैंक खाते में दी जाती है।",
+    "exp_en": "Under Saat Nishchay-2, higher education incentives were enhanced to ₹25,000 for unmarried 12th pass girls and ₹50,000 for female college graduates directly via DBT."
+  },
+  {
+    "globalId": "u8_sub8_3_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "जलवायु परिवर्तन के दुष्प्रभावों से निपटने एवं जल संरक्षण को बढ़ावा देने हेतु बिहार सरकार द्वारा 2 अक्टूबर 2019 को कौन सा ऐतिहासिक अभियान शुरू किया गया था?",
+    "q_en": "Which landmark initiative was launched by the Bihar Government on 2 October 2019 to combat climate change and foster water conservation and afforestation?",
+    "options_hi": [
+      "हर घर नल का जल",
+      "जल-जीवन-हरियाली अभियान (Jal-Jeevan-Hariyali Mission)",
+      "मिशन अमृत सरोवर",
+      "हरित बिहार खुशहाल बिहार"
+    ],
+    "options_en": [
+      "Har Ghar Nal Ka Jal",
+      "Jal-Jeevan-Hariyali Mission",
+      "Mission Amrit Sarovar",
+      "Harit Bihar Khushhal Bihar"
+    ],
+    "options": [
+      {
+        "hi": "हर घर नल का जल",
+        "en": "Har Ghar Nal Ka Jal"
+      },
+      {
+        "hi": "जल-जीवन-हरियाली अभियान (Jal-Jeevan-Hariyali Mission)",
+        "en": "Jal-Jeevan-Hariyali Mission"
+      },
+      {
+        "hi": "मिशन अमृत सरोवर",
+        "en": "Mission Amrit Sarovar"
+      },
+      {
+        "hi": "हरित बिहार खुशहाल बिहार",
+        "en": "Harit Bihar Khushhal Bihar"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "महात्मा गांधी की 150वीं जयंती (2 अक्टूबर 2019) को 'जल-जीवन-हरियाली अभियान' की शुरुआत की गई। इसके तहत तालाबों-पोखरों का जीर्णोद्धार, पौधरोपण और सौर ऊर्जा का विस्तार किया जा रहा है।",
+    "exp_en": "On 2 October 2019, the Jal-Jeevan-Hariyali Mission was rolled out across Bihar focusing on traditional water-body rejuvenation, massive tree plantation, and rooftop solar adoption."
+  },
+  {
+    "globalId": "u8_sub8_3_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "बिहार सरकार की महत्वाकांक्षी 'गंगा जल आपूर्ति योजना' (हर घर गंगाजल) के तहत मोकामा के हाथीदह से अधिशेष गंगा जल को किन चार ऐतिहासिक नगरों तक पेयजल हेतु पहुंचाया गया है?",
+    "q_en": "Under Bihar's ambitious 'Ganga Water Supply Scheme' (Har Ghar Gangajal), surplus floodwaters of the Ganga are piped from Hathidah (Mokama) to which four historic cities?",
+    "options_hi": [
+      "मुंगेर, भागलपुर, कटिहार एवं पूर्णिया",
+      "राजगीर, गया, बोधगया एवं नवादा",
+      "आरा, बक्सर, सासाराम एवं भभुआ",
+      "सीतामढ़ी, मधुबनी, दरभंगा एवं सहरसा"
+    ],
+    "options_en": [
+      "Munger, Bhagalpur, Katihar and Purnia",
+      "Rajgir, Gaya, Bodh Gaya and Nawada",
+      "Arrah, Buxar, Sasaram and Bhabhua",
+      "Sitamarhi, Madhubani, Darbhanga and Saharsa"
+    ],
+    "options": [
+      {
+        "hi": "मुंगेर, भागलपुर, कटिहार एवं पूर्णिया",
+        "en": "Munger, Bhagalpur, Katihar and Purnia"
+      },
+      {
+        "hi": "राजगीर, गया, बोधगया एवं नवादा",
+        "en": "Rajgir, Gaya, Bodh Gaya and Nawada"
+      },
+      {
+        "hi": "आरा, बक्सर, सासाराम एवं भभुआ",
+        "en": "Arrah, Buxar, Sasaram and Bhabhua"
+      },
+      {
+        "hi": "सीतामढ़ी, मधुबनी, दरभंगा एवं सहरसा",
+        "en": "Sitamarhi, Madhubani, Darbhanga and Saharsa"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "गंगा जल आपूर्ति योजना के तहत 151 किमी लंबी पाइपलाइन द्वारा बरसात के अधिशेष गंगाजल को शुद्ध कर दक्षिण बिहार के चार जल-संकटग्रस्त नगरों: राजगीर, गया, बोधगया और नवादा में आपूर्ति की गई है।",
+    "exp_en": "The Ganga Water Supply Scheme utilizes a 151 km pipeline network pumping surplus flood runoff from Hathidah to provide clean drinking water to Rajgir, Gaya, Bodh Gaya, and Nawada."
+  },
+  {
+    "globalId": "u8_sub8_3_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "गया में तीर्थयात्रियों को वर्षभर स्नान व पिंडदान हेतु जल उपलब्ध कराने के उद्देश्य से फल्गु नदी पर भारत के सबसे बड़े रबर डैम 'गयाजी डैम' की लंबाई कितनी है?",
+    "q_en": "What is the length of India's largest rubber dam, the 'Gayaji Dam', constructed across the Falgu River in Gaya to ensure perennial water for pilgrims?",
+    "options_hi": [
+      "250 मीटर",
+      "411 मीटर",
+      "550 मीटर",
+      "620 मीटर"
+    ],
+    "options_en": [
+      "250 meters",
+      "411 meters",
+      "550 meters",
+      "620 meters"
+    ],
+    "options": [
+      {
+        "hi": "250 मीटर",
+        "en": "250 meters"
+      },
+      {
+        "hi": "411 मीटर",
+        "en": "411 meters"
+      },
+      {
+        "hi": "550 मीटर",
+        "en": "550 meters"
+      },
+      {
+        "hi": "620 मीटर",
+        "en": "620 meters"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "फल्गु नदी पर विष्णुपद मंदिर के निकट निर्मित 'गयाजी डैम' देश का सबसे बड़ा रबर डैम है। इसकी लंबाई 411 मीटर तथा ऊंचाई 3 मीटर है, जिसे IIT रुड़की के परामर्श से ऑस्ट्रियाई तकनीक से बनाया गया है।",
+    "exp_en": "The Gayaji Dam on Falgu river is India's largest rubber dam measuring 411 meters in length and 3 meters in height, built with Austrian engineering guidance and IIT Roorkee consultation."
+  },
+  {
+    "globalId": "u8_sub8_3_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "गंगा डॉल्फिन के संरक्षण एवं अनुसंधान हेतु भारत तथा एशिया का प्रथम 'राष्ट्रीय डॉल्फिन अनुसंधान केंद्र' (NDRC) कहां स्थापित किया गया है?",
+    "q_en": "Where has India and Asia's first 'National Dolphin Research Centre' (NDRC) been inaugurated for the scientific conservation of the Gangetic Dolphin?",
+    "options_hi": [
+      "भागलपुर विश्वविद्यालय परिसर",
+      "पटना विश्वविद्यालय परिसर (गंगा तट पर)",
+      "बीएचयू वाराणसी",
+      "इलाहाबाद विश्वविद्यालय"
+    ],
+    "options_en": [
+      "Bhagalpur University Campus",
+      "Patna University Campus (on Ganga riverbank)",
+      "BHU Varanasi",
+      "Allahabad University"
+    ],
+    "options": [
+      {
+        "hi": "भागलपुर विश्वविद्यालय परिसर",
+        "en": "Bhagalpur University Campus"
+      },
+      {
+        "hi": "पटना विश्वविद्यालय परिसर (गंगा तट पर)",
+        "en": "Patna University Campus (on Ganga riverbank)"
+      },
+      {
+        "hi": "बीएचयू वाराणसी",
+        "en": "BHU Varanasi"
+      },
+      {
+        "hi": "इलाहाबाद विश्वविद्यालय",
+        "en": "Allahabad University"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पटना विश्वविद्यालय परिसर में गंगा नदी के तट पर 30 करोड़ रुपये की लागत से भारत और पूरे एशिया का पहला राष्ट्रीय डॉल्फिन अनुसंधान केंद्र (NDRC) स्थापित किया गया है।",
+    "exp_en": "Asia's pioneer National Dolphin Research Centre (NDRC) was constructed at Patna University on the banks of Ganga to study Gangetic dolphins, India's national aquatic animal."
+  },
+  {
+    "globalId": "u8_sub8_3_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "छठ गीतों के लिए घर-घर में विख्यात 'बिहार कोकिला' के नाम से प्रसिद्ध किस पद्म भूषण सम्मानित महान लोकगायिका का नवंबर 2024 में निधन हुआ?",
+    "q_en": "Which legendary folk singer and Padma Bhushan recipient, fondly hailed as 'Bihar Kokila' and synonmous with Chhath folk music, passed away in November 2024?",
+    "options_hi": [
+      "विंध्यवासिनी देवी",
+      "शारदा सिन्हा (Sharda Sinha)",
+      "चंदन तिवारी",
+      "मैथिली ठाकुर"
+    ],
+    "options_en": [
+      "Vindhyavasini Devi",
+      "Sharda Sinha",
+      "Chandan Tiwari",
+      "Maithili Thakur"
+    ],
+    "options": [
+      {
+        "hi": "विंध्यवासिनी देवी",
+        "en": "Vindhyavasini Devi"
+      },
+      {
+        "hi": "शारदा सिन्हा (Sharda Sinha)",
+        "en": "Sharda Sinha"
+      },
+      {
+        "hi": "चंदन तिवारी",
+        "en": "Chandan Tiwari"
+      },
+      {
+        "hi": "मैथिली ठाकुर",
+        "en": "Maithili Thakur"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सुप्रसिद्ध लोकगायिका शारदा सिन्हा (1952–2024) को मैथिली व भोजपुरी लोकगीतों एवं विशेषकर छठ गीतों हेतु जाना जाता है। भारत सरकार ने उन्हें 1991 में पद्मश्री तथा 2018 में पद्म भूषण से सम्मानित किया था।",
+    "exp_en": "Famed classical/folk vocalist Sharda Sinha (1952–2024), widely revered as 'Bihar Kokila', passed away in Nov 2024. She was honored with Padma Shri in 1991 and Padma Bhushan in 2018."
+  },
+  {
+    "globalId": "u8_sub8_3_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "इसरो (ISRO) के 'चंद्रयान-3' मिशन के विक्रम लैंडर ने किस ऐतिहासिक तिथि को चंद्रमा के दक्षिणी ध्रुव पर सफल सॉफ्ट लैंडिंग की, जिसे 'राष्ट्रीय अंतरिक्ष दिवस' घोषित किया गया है?",
+    "q_en": "On which historic date did the Vikram lander of ISRO's 'Chandrayaan-3' mission successfully soft-land on the Moon's South Pole, designated as 'National Space Day'?",
+    "options_hi": [
+      "14 जुलाई 2023",
+      "15 अगस्त 2023",
+      "23 अगस्त 2023 (23 August 2023)",
+      "2 सितंबर 2023"
+    ],
+    "options_en": [
+      "14 July 2023",
+      "15 August 2023",
+      "23 August 2023",
+      "2 September 2023"
+    ],
+    "options": [
+      {
+        "hi": "14 जुलाई 2023",
+        "en": "14 July 2023"
+      },
+      {
+        "hi": "15 अगस्त 2023",
+        "en": "15 August 2023"
+      },
+      {
+        "hi": "23 अगस्त 2023 (23 August 2023)",
+        "en": "23 August 2023"
+      },
+      {
+        "hi": "2 सितंबर 2023",
+        "en": "2 September 2023"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "23 अगस्त 2023 को चंद्रयान-3 ने चंद्रमा के दक्षिणी ध्रुव पर उतरकर विश्व इतिहास रचा। भारत दक्षिणी ध्रुव पर पहुंचने वाला पहला देश बना। इस उपलक्ष्य में प्रतिवर्ष 23 अगस्त को 'राष्ट्रीय अंतरिक्ष दिवस' मनाया जाता है।",
+    "exp_en": "On 23 August 2023, Chandrayaan-3 achieved lunar touchdown, making India the first nation to land on the lunar south pole. 23 August is now observed annually as National Space Day."
+  },
+  {
+    "globalId": "u8_sub8_3_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "चंद्रमा पर जिस स्थान पर चंद्रयान-3 के विक्रम लैंडर ने ऐतिहासिक कदम रखा, उस टचडाउन स्थल को आधिकारिक तौर पर क्या नाम दिया गया है?",
+    "q_en": "What official nomenclature was assigned to the exact lunar touchdown site where Chandrayaan-3's Vikram lander made its historic soft landing?",
+    "options_hi": [
+      "तिरंगा पॉइंट",
+      "शिव शक्ति पॉइंट (Shiv Shakti Point)",
+      "कलाम पॉइंट",
+      "शक्ति स्थल"
+    ],
+    "options_en": [
+      "Tiranga Point",
+      "Shiv Shakti Point",
+      "Kalam Point",
+      "Shakti Sthal"
+    ],
+    "options": [
+      {
+        "hi": "तिरंगा पॉइंट",
+        "en": "Tiranga Point"
+      },
+      {
+        "hi": "शिव शक्ति पॉइंट (Shiv Shakti Point)",
+        "en": "Shiv Shakti Point"
+      },
+      {
+        "hi": "कलाम पॉइंट",
+        "en": "Kalam Point"
+      },
+      {
+        "hi": "शक्ति स्थल",
+        "en": "Shakti Sthal"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रधानमंत्री द्वारा चंद्रयान-3 के लैंडिंग स्थल का नाम 'शिव शक्ति पॉइंट' (Shiv Shakti Point) रखा गया। जबकि 2019 में जहां चंद्रयान-2 के पदचिह्न पड़े थे, उसे 'तिरंगा पॉइंट' नाम दिया गया था।",
+    "exp_en": "The Chandrayaan-3 landing site was named 'Shiv Shakti Point'. (The point where Chandrayaan-2 impacted in 2019 was designated as 'Tiranga Point')."
+  },
+  {
+    "globalId": "u8_sub8_3_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "नई दिल्ली में सेंट्रल विस्टा पुनर्विकास परियोजना के अंतर्गत नवनिर्मित भारत के नए संसद भवन के मुख्य वास्तुकार (Chief Architect) कौन हैं?",
+    "q_en": "Who was the Chief Architect behind the design and conceptualization of India's newly inaugurated Parliament building under the Central Vista project?",
+    "options_hi": [
+      "डॉ. विमल पटेल (Dr. Bimal Patel)",
+      "एडविन लुटियंस",
+      "हफीज कॉन्ट्रैक्टर",
+      "चार्ल्स कोरिया"
+    ],
+    "options_en": [
+      "Dr. Bimal Patel",
+      "Edwin Lutyens",
+      "Hafeez Contractor",
+      "Charles Correa"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. विमल पटेल (Dr. Bimal Patel)",
+        "en": "Dr. Bimal Patel"
+      },
+      {
+        "hi": "एडविन लुटियंस",
+        "en": "Edwin Lutyens"
+      },
+      {
+        "hi": "हफीज कॉन्ट्रैक्टर",
+        "en": "Hafeez Contractor"
+      },
+      {
+        "hi": "चार्ल्स कोरिया",
+        "en": "Charles Correa"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "अहमदाबाद के प्रसिद्ध वास्तुकार पद्मश्री डॉ. विमल पटेल (HCP डिज़ाइन्स) नए त्रिकोणीय संसद भवन के मुख्य वास्तुकार हैं। इसका उद्घाटन 28 मई 2023 को प्रधानमंत्री नरेंद्र मोदी द्वारा किया गया।",
+    "exp_en": "Padma Shri Dr. Bimal Patel of HCP Design is the chief architect of the new triangular Parliament building, which was inaugurated on 28 May 2023."
+  },
+  {
+    "globalId": "u8_sub8_3_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "नए संसद भवन के लोकसभा कक्ष का आंतरिक डिजाइन भारत के किस राष्ट्रीय प्रतीक की थीम पर आधारित है?",
+    "q_en": "The interior architectural design and color palette of the Lok Sabha chamber in the new Parliament House is styled after which National Symbol of India?",
+    "options_hi": [
+      "राष्ट्रीय पुष्प कमल",
+      "राष्ट्रीय पक्षी मयूर (Peacock)",
+      "राष्ट्रीय पशु बाघ",
+      "राष्ट्रीय वृक्ष बरगद"
+    ],
+    "options_en": [
+      "National Flower Lotus",
+      "National Bird Peacock",
+      "National Animal Tiger",
+      "National Tree Banyan"
+    ],
+    "options": [
+      {
+        "hi": "राष्ट्रीय पुष्प कमल",
+        "en": "National Flower Lotus"
+      },
+      {
+        "hi": "राष्ट्रीय पक्षी मयूर (Peacock)",
+        "en": "National Bird Peacock"
+      },
+      {
+        "hi": "राष्ट्रीय पशु बाघ",
+        "en": "National Animal Tiger"
+      },
+      {
+        "hi": "राष्ट्रीय वृक्ष बरगद",
+        "en": "National Tree Banyan"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "नए संसद भवन का लोकसभा कक्ष राष्ट्रीय पक्षी 'मयूर' (Peacock) की थीम पर 888 सदस्यों की क्षमता के साथ बनाया गया है, जबकि राज्यसभा कक्ष राष्ट्रीय पुष्प 'कमल' (Lotus) की थीम पर लाल-गुलाबी आभा में 384 सदस्यों हेतु निर्मित है।",
+    "exp_en": "The Lok Sabha hall is themed on the National Bird Peacock (888 seating capacity), while the Rajya Sabha chamber is themed on the National Flower Lotus (384 seating capacity)."
+  },
+  {
+    "globalId": "u8_sub8_3_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "चोल साम्राज्य की पवित्र परंपरा से प्रेरित सत्ता एवं न्याय के प्रतीक किस ऐतिहासिक राजदंड को नए संसद भवन में लोकसभा अध्यक्ष के आसन के निकट स्थापित किया गया है?",
+    "q_en": "Which historic scepter inspired by the sacred tradition of the Chola Empire, signifying just governance, was installed next to the Speaker's chair in the new Parliament?",
+    "options_hi": [
+      "धर्मदंड",
+      "सेंगोल (Sengol)",
+      "अशोक चक्र दंड",
+      "न्याय गदा"
+    ],
+    "options_en": [
+      "Dharmadanda",
+      "Sengol",
+      "Ashoka Chakra Danda",
+      "Nyaya Gada"
+    ],
+    "options": [
+      {
+        "hi": "धर्मदंड",
+        "en": "Dharmadanda"
+      },
+      {
+        "hi": "सेंगोल (Sengol)",
+        "en": "Sengol"
+      },
+      {
+        "hi": "अशोक चक्र दंड",
+        "en": "Ashoka Chakra Danda"
+      },
+      {
+        "hi": "न्याय गदा",
+        "en": "Nyaya Gada"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'सेंगोल' (तमिल शब्द 'सेम्मई' से, जिसका अर्थ है नीतिपरायणता/सत्यनिष्ठा) चोल परंपरा का प्रतीक है, जिसे 14 अगस्त 1947 को लॉर्ड माउंटबेटन द्वारा पं. नेहरू को सौंपा गया था। इसे अब नए संसद भवन में स्थापित किया गया है।",
+    "exp_en": "The golden 'Sengol', symbolizing righteous and equitable sovereignty derived from Tamil Chola heritage, was placed beside the Lok Sabha Speaker's chair."
+  },
+  {
+    "globalId": "u8_sub8_3_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "संसद तथा राज्य विधानसभाओं में महिलाओं को 33% आरक्षण प्रदान करने वाला 'नारी शक्ति वंदन अधिनियम' कौन सा संविधान संशोधन अधिनियम है?",
+    "q_en": "Which Constitutional Amendment Act is the historic 'Nari Shakti Vandan Adhiniyam' granting 33% reservation to women in Lok Sabha and State Legislative Assemblies?",
+    "options_hi": [
+      "103वां संविधान संशोधन",
+      "105वां संविधान संशोधन",
+      "106वां संविधान संशोधन अधिनियम, 2023",
+      "104वां संविधान संशोधन"
+    ],
+    "options_en": [
+      "103rd Constitutional Amendment",
+      "105th Constitutional Amendment",
+      "106th Constitutional Amendment Act, 2023",
+      "104th Constitutional Amendment"
+    ],
+    "options": [
+      {
+        "hi": "103वां संविधान संशोधन",
+        "en": "103rd Constitutional Amendment"
+      },
+      {
+        "hi": "105वां संविधान संशोधन",
+        "en": "105th Constitutional Amendment"
+      },
+      {
+        "hi": "106वां संविधान संशोधन अधिनियम, 2023",
+        "en": "106th Constitutional Amendment Act, 2023"
+      },
+      {
+        "hi": "104वां संविधान संशोधन",
+        "en": "104th Constitutional Amendment"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "128वां संविधान संशोधन विधेयक संसद द्वारा पारित होकर राष्ट्रपति की स्वीकृति के पश्चात '106वां संविधान संशोधन अधिनियम, 2023' बना। यह महिलाओं को 33% विधायी आरक्षण प्रदान करता है।",
+    "exp_en": "Passed as the 128th Amendment Bill and enacted as the 106th Constitutional Amendment Act 2023, the law reserves one-third (33%) of seats for women in the Lok Sabha and State Assemblies."
+  },
+  {
+    "globalId": "u8_sub8_3_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "सितंबर 2023 में नई दिल्ली में आयोजित 18वें जी-20 शिखर सम्मेलन (G20 Summit) में भारत की अध्यक्षता में किस क्षेत्रीय गुट को 21वें स्थायी सदस्य के रूप में शामिल किया गया?",
+    "q_en": "During the 18th G20 Summit hosted in New Delhi in September 2023 under India's presidency, which regional bloc was admitted as the 21st permanent member?",
+    "options_hi": [
+      "आसियान (ASEAN)",
+      "अफ्रीकी संघ (African Union - AU)",
+      "सार्क (SAARC)",
+      "ओपेक (OPEC)"
+    ],
+    "options_en": [
+      "ASEAN",
+      "African Union (AU)",
+      "SAARC",
+      "OPEC"
+    ],
+    "options": [
+      {
+        "hi": "आसियान (ASEAN)",
+        "en": "ASEAN"
+      },
+      {
+        "hi": "अफ्रीकी संघ (African Union - AU)",
+        "en": "African Union (AU)"
+      },
+      {
+        "hi": "सार्क (SAARC)",
+        "en": "SAARC"
+      },
+      {
+        "hi": "ओपेक (OPEC)",
+        "en": "OPEC"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "भारत की ऐतिहासिक पहल पर 55 अफ्रीकी देशों के संगठन 'अफ्रीकी संघ' (African Union) को जी-20 का स्थायी सदस्य बनाया गया। इसके बाद यह मंच अनौपचारिक रूप से G21 कहलाने लगा।",
+    "exp_en": "Under India's presidency, the 55-member African Union (AU) was formally admitted as a permanent member of the G20, marking a major milestone for Global South representation."
+  },
+  {
+    "globalId": "u8_sub8_3_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "टोक्यो पैरालंपिक खेलों में पुरुष एकल पैरा-बैडमिंटन में भारत के लिए ऐतिहासिक स्वर्ण पदक जीतने वाले तथा मेजर ध्यानचंद खेल रत्न पुरस्कार विजेता 'प्रमोद भगत' बिहार के किस जिले से संबंधित हैं?",
+    "q_en": "Tokyo Paralympics gold medalist and Major Dhyan Chand Khel Ratna awardee para-badminton champion 'Pramod Bhagat' hails from which district of Bihar?",
+    "options_hi": [
+      "मुजफ्फरपुर",
+      "वैशाली (Vaishali)",
+      "जमुई",
+      "भोजपुर"
+    ],
+    "options_en": [
+      "Muzaffarpur",
+      "Vaishali",
+      "Jamui",
+      "Bhojpur"
+    ],
+    "options": [
+      {
+        "hi": "मुजफ्फरपुर",
+        "en": "Muzaffarpur"
+      },
+      {
+        "hi": "वैशाली (Vaishali)",
+        "en": "Vaishali"
+      },
+      {
+        "hi": "जमुई",
+        "en": "Jamui"
+      },
+      {
+        "hi": "भोजपुर",
+        "en": "Bhojpur"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रमोद भगत मूल रूप से बिहार के वैशाली जिले के हाजीपुर के निवासी हैं। उन्होंने टोक्यो पैरालंपिक 2020 में SL3 श्रेणी में बैडमिंटन का स्वर्ण पदक जीतकर देश और बिहार का नाम रोशन किया।",
+    "exp_en": "Para-badminton star Pramod Bhagat, who won the gold medal in the SL3 category at the Tokyo 2020 Paralympics, hails from Hajipur in Vaishali district of Bihar."
+  },
+  {
+    "globalId": "u8_sub8_3_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.3",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+    "subUnitTitle_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+    "q_hi": "स्वतंत्र भारत में सामाजिक-आर्थिक नीतियों के निर्माण हेतु आधिकारिक 'जाति आधारित गणना' (Caste Survey) के आंकड़े 2 अक्टूबर 2023 को जारी करने वाला देश का पहला राज्य कौन बना?",
+    "q_en": "Which state became the first in independent India to publish its official 'Caste-based Survey' findings on 2 October 2023 to steer socio-economic affirmative action policies?",
+    "options_hi": [
+      "तमिलनाडु",
+      "बिहार (Bihar)",
+      "कर्नाटक",
+      "उत्तर प्रदेश"
+    ],
+    "options_en": [
+      "Tamil Nadu",
+      "Bihar",
+      "Karnataka",
+      "Uttar Pradesh"
+    ],
+    "options": [
+      {
+        "hi": "तमिलनाडु",
+        "en": "Tamil Nadu"
+      },
+      {
+        "hi": "बिहार (Bihar)",
+        "en": "Bihar"
+      },
+      {
+        "hi": "कर्नाटक",
+        "en": "Karnataka"
+      },
+      {
+        "hi": "उत्तर प्रदेश",
+        "en": "Uttar Pradesh"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बिहार देश का पहला राज्य बना जिसने 2 अक्टूबर 2023 को बिहार जाति आधारित गणना रिपोर्ट प्रकाशित की। रिपोर्ट के अनुसार बिहार की कुल आबादी में EBC 36.01%, BC 27.12%, SC 19.65%, ST 1.68% तथा अनारक्षित 15.52% पाए गए।",
+    "exp_en": "Bihar made history on 2 October 2023 by releasing its official Caste-based Survey report, revealing EBCs as 36.01%, OBCs as 27.12%, SCs as 19.65%, STs as 1.68%, and Unreserved as 15.52%."
+  }
+]

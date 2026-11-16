@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u8_sub8_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "आधुनिक दूरसंचार में उच्च गति से डेटा संचरण हेतु प्रयुक्त 'ऑप्टिकल फाइबर' (प्रकाशीय तंतु) प्रकाश की किस परिघटना पर कार्य करता है?",
+    "q_en": "On which optical phenomenon does the 'Optical Fibre' used for high-speed data transmission in modern telecommunications operate?",
+    "options_hi": [
+      "प्रकाश का प्रकीर्णन (Scattering)",
+      "पूर्ण आंतरिक परावर्तन (Total Internal Reflection - TIR)",
+      "प्रकाश का विवर्तन (Diffraction)",
+      "प्रकाश का ध्रुवण (Polarization)"
+    ],
+    "options_en": [
+      "Scattering of light",
+      "Total Internal Reflection (TIR)",
+      "Diffraction of light",
+      "Polarization of light"
+    ],
+    "options": [
+      {
+        "hi": "प्रकाश का प्रकीर्णन (Scattering)",
+        "en": "Scattering of light"
+      },
+      {
+        "hi": "पूर्ण आंतरिक परावर्तन (Total Internal Reflection - TIR)",
+        "en": "Total Internal Reflection (TIR)"
+      },
+      {
+        "hi": "प्रकाश का विवर्तन (Diffraction)",
+        "en": "Diffraction of light"
+      },
+      {
+        "hi": "प्रकाश का ध्रुवण (Polarization)",
+        "en": "Polarization of light"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ऑप्टिकल फाइबर पूर्ण आंतरिक परावर्तन (TIR) के सिद्धांत पर कार्य करता है। जब प्रकाश किरण कोर से क्लैडिंग में जाती है और आपतन कोण क्रांतिक कोण से अधिक होता है, तो ऊर्जा ह्रास के बिना सिग्नल आगे बढ़ता है।",
+    "exp_en": "Optical fibres function on the principle of Total Internal Reflection (TIR), trapping and guiding light through the core with negligible signal attenuation."
+  },
+  {
+    "globalId": "u8_sub8_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "नेत्र के 'निकट दृष्टि दोष' (Myopia) के निवारण के लिए चश्मे में किस प्रकार के लेंस का उपयोग किया जाता है?",
+    "q_en": "Which type of lens is prescribed in eyeglasses to correct the defect of vision known as 'Myopia' (Short-sightedness)?",
+    "options_hi": [
+      "उत्तल लेंस (Convex Lens)",
+      "अवतल लेंस (Concave Lens)",
+      "द्विफोकसी लेंस (Bifocal Lens)",
+      "बेलनाकार लेंस (Cylindrical Lens)"
+    ],
+    "options_en": [
+      "Convex Lens",
+      "Concave Lens",
+      "Bifocal Lens",
+      "Cylindrical Lens"
+    ],
+    "options": [
+      {
+        "hi": "उत्तल लेंस (Convex Lens)",
+        "en": "Convex Lens"
+      },
+      {
+        "hi": "अवतल लेंस (Concave Lens)",
+        "en": "Concave Lens"
+      },
+      {
+        "hi": "द्विफोकसी लेंस (Bifocal Lens)",
+        "en": "Bifocal Lens"
+      },
+      {
+        "hi": "बेलनाकार लेंस (Cylindrical Lens)",
+        "en": "Cylindrical Lens"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "निकट दृष्टि दोष (Myopia) में पास की वस्तुएं साफ दिखती हैं किंतु दूर की धुंधली दिखती हैं क्योंकि प्रतिबिंब रेटिना के आगे बनता है। इसे ठीक करने के लिए अपसारी अर्थात् अवतल लेंस (Concave Lens) का प्रयोग किया जाता है।",
+    "exp_en": "In Myopia (nearsightedness), images form in front of the retina. A diverging lens, i.e. Concave Lens, is used to push the focal point back onto the retina."
+  },
+  {
+    "globalId": "u8_sub8_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "सामान्य स्वस्थ मनुष्य के शरीर में रक्त (Human Blood) का pH मान सामान्यतः कितना होता है?",
+    "q_en": "What is the typical normal pH value of blood in a healthy human body?",
+    "options_hi": [
+      "6.2 (अम्लीय)",
+      "7.0 (पूर्ण उदासीन)",
+      "7.35 – 7.45 (हल्का क्षारीय)",
+      "8.8 (प्रबल क्षारीय)"
+    ],
+    "options_en": [
+      "6.2 (Acidic)",
+      "7.0 (Pure Neutral)",
+      "7.35 – 7.45 (Slightly Alkaline)",
+      "8.8 (Strongly Alkaline)"
+    ],
+    "options": [
+      {
+        "hi": "6.2 (अम्लीय)",
+        "en": "6.2 (Acidic)"
+      },
+      {
+        "hi": "7.0 (पूर्ण उदासीन)",
+        "en": "7.0 (Pure Neutral)"
+      },
+      {
+        "hi": "7.35 – 7.45 (हल्का क्षारीय)",
+        "en": "7.35 – 7.45 (Slightly Alkaline)"
+      },
+      {
+        "hi": "8.8 (प्रबल क्षारीय)",
+        "en": "8.8 (Strongly Alkaline)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "मानव रक्त का सामान्य pH मान लगभग 7.4 (7.35 से 7.45 के मध्य) होता है, जो कि हल्का क्षारीय (slightly alkaline) होता है।",
+    "exp_en": "Human arterial blood maintains a strictly buffered pH of approximately 7.4 (ranging between 7.35 and 7.45), which is slightly alkaline."
+  },
+  {
+    "globalId": "u8_sub8_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "रसोई घरों में प्रयुक्त होने वाले 'बेकिंग सोडा' (खाने का सोडा) का रासायनिक नाम एवं सूत्र क्या है?",
+    "q_en": "What is the chemical name and formula of 'Baking Soda' commonly used in kitchens and bakeries?",
+    "options_hi": [
+      "सोडियम कार्बोनेट (Na2CO3)",
+      "सोडियम बाइकार्बोनेट (NaHCO3)",
+      "सोडियम क्लोराइड (NaCl)",
+      "सोडियम हाइड्रॉक्साइड (NaOH)"
+    ],
+    "options_en": [
+      "Sodium Carbonate (Na2CO3)",
+      "Sodium Bicarbonate (NaHCO3)",
+      "Sodium Chloride (NaCl)",
+      "Sodium Hydroxide (NaOH)"
+    ],
+    "options": [
+      {
+        "hi": "सोडियम कार्बोनेट (Na2CO3)",
+        "en": "Sodium Carbonate (Na2CO3)"
+      },
+      {
+        "hi": "सोडियम बाइकार्बोनेट (NaHCO3)",
+        "en": "Sodium Bicarbonate (NaHCO3)"
+      },
+      {
+        "hi": "सोडियम क्लोराइड (NaCl)",
+        "en": "Sodium Chloride (NaCl)"
+      },
+      {
+        "hi": "सोडियम हाइड्रॉक्साइड (NaOH)",
+        "en": "Sodium Hydroxide (NaOH)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "बेकिंग सोडा का रासायनिक नाम 'सोडियम हाइड्रोजन कार्बोनेट' या 'सोडियम बाइकार्बोनेट' (NaHCO3) है। धावन सोडा Na2CO3.10H2O होता है।",
+    "exp_en": "Baking soda is chemically known as Sodium Hydrogen Carbonate or Sodium Bicarbonate (NaHCO3). Washing soda is Na2CO3.10H2O."
+  },
+  {
+    "globalId": "u8_sub8_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "परमाणु ऊर्जा संयंत्रों (Nuclear Reactors) में तीव्रगामी न्यूट्रॉनों की गति को धीमा करने के लिए 'मंदक' (Moderator) के रूप में किसका उपयोग किया जाता है?",
+    "q_en": "What is used as a 'Moderator' in nuclear power reactors to slow down the speed of fast-moving neutrons?",
+    "options_hi": [
+      "भारी जल (D2O) एवं ग्रेफाइट",
+      "तरल सोडियम",
+      "कैडमियम छड़ें",
+      "बोरॉन कार्बाइड"
+    ],
+    "options_en": [
+      "Heavy Water (D2O) and Graphite",
+      "Liquid Sodium",
+      "Cadmium rods",
+      "Boron carbide"
+    ],
+    "options": [
+      {
+        "hi": "भारी जल (D2O) एवं ग्रेफाइट",
+        "en": "Heavy Water (D2O) and Graphite"
+      },
+      {
+        "hi": "तरल सोडियम",
+        "en": "Liquid Sodium"
+      },
+      {
+        "hi": "कैडमियम छड़ें",
+        "en": "Cadmium rods"
+      },
+      {
+        "hi": "बोरॉन कार्बाइड",
+        "en": "Boron carbide"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "नाभिकीय विखंडन में न्यूट्रॉनों को धीमा करने (मंदक के रूप में) भारी जल (ड्यूटिरियम ऑक्साइड - D2O) तथा ग्रेफाइट का उपयोग किया जाता है। (कैडमियम और बोरॉन छड़ों का उपयोग न्यूट्रॉन अवशोषक/नियंत्रक के रूप में होता है)।",
+    "exp_en": "Heavy water (D2O) and graphite serve as moderators to slow down neutrons in nuclear reactors. (Cadmium and boron rods act as control rods)."
+  },
+  {
+    "globalId": "u8_sub8_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "कोशिकीय श्वसन द्वारा ऊर्जा (ATP) उत्पन्न करने के कारण किस कोशिकांग को 'कोशिका का पावरहाउस' (Powerhouse of the Cell) कहा जाता है?",
+    "q_en": "Which cellular organelle is designated as the 'Powerhouse of the Cell' owing to its generation of ATP through cellular respiration?",
+    "options_hi": [
+      "राइबोसोम (Ribosome)",
+      "माइटोकॉन्ड्रिया (Mitochondria)",
+      "लाइसोसोम (Lysosome)",
+      "गॉल्जीकाय (Golgi body)"
+    ],
+    "options_en": [
+      "Ribosome",
+      "Mitochondria",
+      "Lysosome",
+      "Golgi apparatus"
+    ],
+    "options": [
+      {
+        "hi": "राइबोसोम (Ribosome)",
+        "en": "Ribosome"
+      },
+      {
+        "hi": "माइटोकॉन्ड्रिया (Mitochondria)",
+        "en": "Mitochondria"
+      },
+      {
+        "hi": "लाइसोसोम (Lysosome)",
+        "en": "Lysosome"
+      },
+      {
+        "hi": "गॉल्जीकाय (Golgi body)",
+        "en": "Golgi apparatus"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "माइटोकॉन्ड्रिया को कोशिका का पावरहाउस कहा जाता है क्योंकि यहां क्रेब्स चक्र के माध्यम से कोशिकीय श्वसन संपन्न होता है और एटीपी (ATP) के रूप में ऊर्जा मुक्त होती है।",
+    "exp_en": "Mitochondria are known as the powerhouse of the cell because they synthesize cellular energy in the form of Adenosine Triphosphate (ATP) via aerobic respiration."
+  },
+  {
+    "globalId": "u8_sub8_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "मानव रक्त समूह प्रणाली में किस रक्त समूह (Blood Group) को 'सर्वदाता' (Universal Donor) कहा जाता है, जो किसी भी व्यक्ति को दिया जा सकता है?",
+    "q_en": "In the human blood group system, which blood type is universally designated as the 'Universal Donor' that can be transfused to any individual?",
+    "options_hi": [
+      "AB पॉजिटिव (AB+)",
+      "O निगेटिव (O-)",
+      "O पॉजिटिव (O+)",
+      "A निगेटिव (A-)"
+    ],
+    "options_en": [
+      "AB Positive (AB+)",
+      "O Negative (O-)",
+      "O Positive (O+)",
+      "A Negative (A-)"
+    ],
+    "options": [
+      {
+        "hi": "AB पॉजिटिव (AB+)",
+        "en": "AB Positive (AB+)"
+      },
+      {
+        "hi": "O निगेटिव (O-)",
+        "en": "O Negative (O-)"
+      },
+      {
+        "hi": "O पॉजिटिव (O+)",
+        "en": "O Positive (O+)"
+      },
+      {
+        "hi": "A निगेटिव (A-)",
+        "en": "A Negative (A-)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "O नेगेटिव (O-) रक्त समूह की लाल रक्त कोशिकाओं पर कोई भी A, B या Rh एंटीजन नहीं होता है, इसलिए इसका रक्त किसी भी व्यक्ति को सुरक्षित रूप से दिया जा सकता है (सर्वदाता)। AB+ सर्वग्राही होता है।",
+    "exp_en": "O Negative (O-) red blood cells lack A, B, and Rh antigens, rendering them non-reactive to recipient antibodies and making O- the true universal donor."
+  },
+  {
+    "globalId": "u8_sub8_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "विटामिन B12 (सायनोकोबालामिन) का मुख्य घटक कौन सा धात्विक तत्व (Metallic Element) है, जिसकी कमी से परनिशियस एनीमिया (घातक रक्ताल्पता) हो जाती है?",
+    "q_en": "Which metallic element is an essential constituent of Vitamin B12 (Cyanocobalamin), whose deficiency results in Pernicious Anaemia?",
+    "options_hi": [
+      "लोहा (Iron)",
+      "कोबाल्ट (Cobalt - Co)",
+      "मैग्नीशियम (Magnesium)",
+      "तांबा (Copper)"
+    ],
+    "options_en": [
+      "Iron",
+      "Cobalt (Co)",
+      "Magnesium",
+      "Copper"
+    ],
+    "options": [
+      {
+        "hi": "लोहा (Iron)",
+        "en": "Iron"
+      },
+      {
+        "hi": "कोबाल्ट (Cobalt - Co)",
+        "en": "Cobalt (Co)"
+      },
+      {
+        "hi": "मैग्नीशियम (Magnesium)",
+        "en": "Magnesium"
+      },
+      {
+        "hi": "तांबा (Copper)",
+        "en": "Copper"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "विटामिन B12 का रासायनिक नाम सायनोकोबालामिन है, जिसमें कोबाल्ट (Cobalt) धातु पाई जाती है। यह आरबीसी के परिपक्व होने में अत्यंत आवश्यक है। इसकी कमी से घातक रक्ताल्पता (Pernicious Anaemia) होती है।",
+    "exp_en": "Vitamin B12 (Cyanocobalamin) contains Cobalt as its central coordination metal ion. It is crucial for erythropoiesis; its deficiency leads to pernicious anaemia."
+  },
+  {
+    "globalId": "u8_sub8_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "चोट लगने पर रक्तस्राव को रोकने तथा 'रक्त का थक्का जमाने' (Blood Clotting / Coagulation) में कौन सा विटामिन अनिवार्य भूमिका निभाता है?",
+    "q_en": "Which vitamin plays an indispensable role in the synthesis of prothrombin and facilitating 'Blood Clotting' (Coagulation)?",
+    "options_hi": [
+      "विटामिन A",
+      "विटामिन C",
+      "विटामिन K (फिलोक्विनोन)",
+      "विटामिन E"
+    ],
+    "options_en": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin K (Phylloquinone)",
+      "Vitamin E"
+    ],
+    "options": [
+      {
+        "hi": "विटामिन A",
+        "en": "Vitamin A"
+      },
+      {
+        "hi": "विटामिन C",
+        "en": "Vitamin C"
+      },
+      {
+        "hi": "विटामिन K (फिलोक्विनोन)",
+        "en": "Vitamin K (Phylloquinone)"
+      },
+      {
+        "hi": "विटामिन E",
+        "en": "Vitamin E"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "विटामिन K (फिलोक्विनोन) यकृत में प्रोथ्रोम्बिन और फाइब्रिनोजेन जैसे थक्का-रोधी कारकों के निर्माण हेतु आवश्यक है। इसकी कमी होने पर रक्त का थक्का नहीं जमता और अधिक रक्त बह जाता है।",
+    "exp_en": "Vitamin K is an essential cofactor for the hepatic synthesis of blood clotting factors (prothrombin, factors VII, IX, X), preventing excessive haemorrhage."
+  },
+  {
+    "globalId": "u8_sub8_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "एक्वायर्ड इम्यूनो डेफिशिएंसी सिंड्रोम (AIDS) के कारक एचआईवी (HIV) वायरस की प्राथमिक जांच एवं पुष्टि हेतु कौन सा नैदानिक परीक्षण किया जाता है?",
+    "q_en": "Which diagnostic serological test is standardly performed for screening and detecting antibodies against the HIV virus causing AIDS?",
+    "options_hi": [
+      "विडाल टेस्ट (Widal Test)",
+      "एलिसा टेस्ट (ELISA Test)",
+      "मंटौक्स टेस्ट (Mantoux Test)",
+      "बायोप्सी (Biopsy)"
+    ],
+    "options_en": [
+      "Widal Test",
+      "ELISA Test",
+      "Mantoux Test",
+      "Biopsy"
+    ],
+    "options": [
+      {
+        "hi": "विडाल टेस्ट (Widal Test)",
+        "en": "Widal Test"
+      },
+      {
+        "hi": "एलिसा टेस्ट (ELISA Test)",
+        "en": "ELISA Test"
+      },
+      {
+        "hi": "मंटौक्स टेस्ट (Mantoux Test)",
+        "en": "Mantoux Test"
+      },
+      {
+        "hi": "बायोप्सी (Biopsy)",
+        "en": "Biopsy"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "एड्स (HIV) की जांच हेतु एंजाइम-लिंक्ड इम्यूनोसॉर्बेंट एसे (ELISA) टेस्ट तथा पुष्टिकरण हेतु वेस्टर्न ब्लॉट टेस्ट किया जाता है। (विडाल टेस्ट टाइफाइड हेतु तथा मंटौक्स टेस्ट टीबी हेतु होता है)।",
+    "exp_en": "ELISA (Enzyme-Linked Immunosorbent Assay) is the primary antibody screening test for HIV/AIDS, confirmed via Western Blot. (Widal is for Typhoid, Mantoux for TB)."
+  },
+  {
+    "globalId": "u8_sub8_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "बिहार के मैदानी भागों में होने वाला घातक प्रोटोजोआ रोग 'कालाजार' (Leishmaniasis) किस कीट (Vector) के काटने से फैलता है?",
+    "q_en": "The deadly protozoan infection 'Kala-azar' (Visceral Leishmaniasis) prevalent in Bihar is transmitted by the bite of which insect vector?",
+    "options_hi": [
+      "मादा एनाफिलीज मच्छर",
+      "बालू मक्खी (सैंडफ्लाई / Phlebotomus Sandfly)",
+      "सीसी मक्खी (Tsetse fly)",
+      "एडीज मच्छर"
+    ],
+    "options_en": [
+      "Female Anopheles mosquito",
+      "Sandfly (Phlebotomus argentipes)",
+      "Tsetse fly",
+      "Aedes mosquito"
+    ],
+    "options": [
+      {
+        "hi": "मादा एनाफिलीज मच्छर",
+        "en": "Female Anopheles mosquito"
+      },
+      {
+        "hi": "बालू मक्खी (सैंडफ्लाई / Phlebotomus Sandfly)",
+        "en": "Sandfly (Phlebotomus argentipes)"
+      },
+      {
+        "hi": "सीसी मक्खी (Tsetse fly)",
+        "en": "Tsetse fly"
+      },
+      {
+        "hi": "एडीज मच्छर",
+        "en": "Aedes mosquito"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कालाजार 'लीशमैनिया डोनोवानी' नामक प्रोटोजोआ परजीवी द्वारा होता है, जिसका वाहक बालू मक्खी (सैंडफ्लाई - Sandfly) है। बिहार सरकार ने इसके उन्मूलन हेतु बड़े पैमाने पर छिड़काव अभियान चलाया है।",
+    "exp_en": "Kala-azar is caused by the intracellular protozoan parasite Leishmania donovani and is transmitted to humans by the bite of the female phlebotomine sandfly."
+  },
+  {
+    "globalId": "u8_sub8_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "पारिस्थितिकी तंत्र में खाद्य शृंखला के एक पोषी स्तर से अगले पोषी स्तर पर ऊर्जा स्थानांतरण का प्रसिद्ध '10% का नियम' 1942 में किसने प्रतिपादित किया था?",
+    "q_en": "Who formulated the renowned '10 Percent Law' in 1942 governing the efficiency of energy transfer between successive trophic levels in an ecosystem?",
+    "options_hi": [
+      "ए.जी. टांसले",
+      "रेमंड लिंडमैन (Raymond Lindeman)",
+      "ई.पी. ओडम",
+      "चार्ल्स एल्टन"
+    ],
+    "options_en": [
+      "A.G. Tansley",
+      "Raymond Lindeman",
+      "E.P. Odum",
+      "Charles Elton"
+    ],
+    "options": [
+      {
+        "hi": "ए.जी. टांसले",
+        "en": "A.G. Tansley"
+      },
+      {
+        "hi": "रेमंड लिंडमैन (Raymond Lindeman)",
+        "en": "Raymond Lindeman"
+      },
+      {
+        "hi": "ई.पी. ओडम",
+        "en": "E.P. Odum"
+      },
+      {
+        "hi": "चार्ल्स एल्टन",
+        "en": "Charles Elton"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रेमंड लिंडमैन ने 1942 में 10% ऊर्जा नियम दिया था, जिसके अनुसार प्रत्येक पोषी स्तर (Trophic Level) पर केवल 10% ऊर्जा ही अगले स्तर को उपलब्ध होती है, शेष 90% ऊर्जा उपापचय व ऊष्मा के रूप में नष्ट हो जाती है।",
+    "exp_en": "Raymond Lindeman proposed the 10% Ecological Efficiency Law in 1942, stating that only roughly 10% of energy transferred from one trophic level is stored as biomass in the next."
+  },
+  {
+    "globalId": "u8_sub8_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "सूर्य की हानिकारक पराबैंगनी किरणों (UV Rays) को अवशोषित करने वाली जीवनदायिनी 'ओजोन परत' (Ozone Layer) वायुमंडल के किस संस्तर में पाई जाती है?",
+    "q_en": "In which atmospheric layer is the life-protecting 'Ozone Layer' (O3) situated, which absorbs harmful solar ultraviolet (UV) radiation?",
+    "options_hi": [
+      "क्षोभमंडल (Troposphere)",
+      "समताप मंडल (Stratosphere)",
+      "मध्यमंडल (Mesosphere)",
+      "आयनमंडल (Ionosphere)"
+    ],
+    "options_en": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Ionosphere"
+    ],
+    "options": [
+      {
+        "hi": "क्षोभमंडल (Troposphere)",
+        "en": "Troposphere"
+      },
+      {
+        "hi": "समताप मंडल (Stratosphere)",
+        "en": "Stratosphere"
+      },
+      {
+        "hi": "मध्यमंडल (Mesosphere)",
+        "en": "Mesosphere"
+      },
+      {
+        "hi": "आयनमंडल (Ionosphere)",
+        "en": "Ionosphere"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ओजोन परत (O3) वायुमंडल के समताप मंडल (Stratosphere) में धरातल से 15 से 35 किमी की ऊंचाई पर स्थित है। इसकी मोटाई मापने की इकाई 'डॉबसन' (Dobson Unit - DU) है।",
+    "exp_en": "The ozone layer is located in the Stratosphere (approx. 15-35 km above sea level), shielding the biosphere from mutagenic solar UV-B rays. Its thickness is measured in Dobson Units."
+  },
+  {
+    "globalId": "u8_sub8_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "ओजोन परत को नष्ट करने वाले पदार्थों (जैसे क्लोरोफ्लोरोकार्बन - CFC) के उत्पादन को चरणबद्ध रूप से रोकने हेतु 1987 में कौन सा ऐतिहासिक अंतरराष्ट्रीय प्रोटोकॉल हस्ताक्षरित हुआ था?",
+    "q_en": "Which landmark international agreement was signed in 1987 to phase out substances that deplete the ozone layer (such as Chlorofluorocarbons - CFCs)?",
+    "options_hi": [
+      "क्योटो प्रोटोकॉल (Kyoto Protocol)",
+      "मॉन्ट्रियल प्रोटोकॉल (Montreal Protocol)",
+      "पेरिस समझौता (Paris Agreement)",
+      "नागोया प्रोटोकॉल (Nagoya Protocol)"
+    ],
+    "options_en": [
+      "Kyoto Protocol",
+      "Montreal Protocol",
+      "Paris Agreement",
+      "Nagoya Protocol"
+    ],
+    "options": [
+      {
+        "hi": "क्योटो प्रोटोकॉल (Kyoto Protocol)",
+        "en": "Kyoto Protocol"
+      },
+      {
+        "hi": "मॉन्ट्रियल प्रोटोकॉल (Montreal Protocol)",
+        "en": "Montreal Protocol"
+      },
+      {
+        "hi": "पेरिस समझौता (Paris Agreement)",
+        "en": "Paris Agreement"
+      },
+      {
+        "hi": "नागोया प्रोटोकॉल (Nagoya Protocol)",
+        "en": "Nagoya Protocol"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "16 सितंबर 1987 को कनाडा के मॉन्ट्रियल शहर में 'मॉन्ट्रियल प्रोटोकॉल' हस्ताक्षरित हुआ, जिसका उद्देश्य ओजोन क्षयकारी पदार्थों (ODS) को समाप्त करना था। (क्योटो प्रोटोकॉल 1997 ग्रीनहाउस गैसों/ग्लोबल वार्मिंग से संबंधित है)।",
+    "exp_en": "The Montreal Protocol on Substances that Deplete the Ozone Layer was signed on 16 September 1987 in Canada to protect the stratospheric ozone layer by phasing out ODS chemicals."
+  },
+  {
+    "globalId": "u8_sub8_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_08",
+    "unitNum": 8,
+    "subUnitNum": "8.2",
+    "unitTitle_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "unitTitle_en": "Polity, Science and Current Affairs",
+    "subUnitTitle_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+    "subUnitTitle_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+    "q_hi": "मॉन्ट्रियल प्रोटोकॉल पर हस्ताक्षर की स्मृति में प्रतिवर्ष विश्वभर में 'विश्व ओजोन दिवस' (World Ozone Day) किस तिथि को मनाया जाता है?",
+    "q_en": "On which date is 'World Ozone Day' celebrated globally each year to commemorate the signing of the Montreal Protocol?",
+    "options_hi": [
+      "5 जून",
+      "22 अप्रैल",
+      "16 सितंबर (16 September)",
+      "1 दिसंबर"
+    ],
+    "options_en": [
+      "5 June",
+      "22 April",
+      "16 September",
+      "1 December"
+    ],
+    "options": [
+      {
+        "hi": "5 जून",
+        "en": "5 June"
+      },
+      {
+        "hi": "22 अप्रैल",
+        "en": "22 April"
+      },
+      {
+        "hi": "16 सितंबर (16 September)",
+        "en": "16 September"
+      },
+      {
+        "hi": "1 दिसंबर",
+        "en": "1 December"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "संयुक्त राष्ट्र महासभा द्वारा प्रतिवर्ष 16 सितंबर को 'अंतरराष्ट्रीय ओजोन परत संरक्षण दिवस' (विश्व ओजोन दिवस) के रूप में मनाया जाता है। (5 जून: विश्व पर्यावरण दिवस, 22 अप्रैल: पृथ्वी दिवस)।",
+    "exp_en": "16 September is celebrated internationally as World Ozone Day pursuant to the United Nations proclamation in 1994, commemorating the Montreal Protocol's signing."
+  }
+]

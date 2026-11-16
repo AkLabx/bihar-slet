@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4.4 Quiz: DDS, ILL, User Education & PR | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_4.4_DDS_ILL_User_Education.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">DDS, ILL, यूजर एजुकेशन एवं PR</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 मुख्य बिंदु (Key Tip):</strong>
+                <p style="margin-top: 0.4rem;">
+                    BLDSC (Boston Spa, UK), 'Information Literacy' शब्द (Paul Zurkowski 1974), मोंटीथ कॉलेज प्रयोग (Patricia Knapp), एवं अंतर-पुस्तकालय ऋण हेतु 'संघ सूची' (Union Catalogue) की आवश्यकता को याद रखें।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="SubUnit_4.3_Quiz.html">⬅️ Unit 4.3 टेस्ट (Reference Services Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "विश्व का सबसे विशाल एवं प्रमुख प्रलेख आपूर्ति केंद्र 'ब्रिटिश लाइब्रेरी डॉक्यूमेंट सप्लाई सेंटर' (BLDSC) कहां स्थित है?",
+            q_en: "Where is the world's largest document supply hub, the 'British Library Document Supply Centre' (BLDSC), located?",
+            options_hi: [
+                "लंदन, यूके",
+                "बोस्टन स्पा, वेस्ट यॉर्कशायर, यूके (Boston Spa, UK)",
+                "एडिनबर्ग, स्कॉटलैंड",
+                "कैम्ब्रिज, यूके"
+            ],
+            options_en: [
+                "London, UK",
+                "Boston Spa, West Yorkshire, UK",
+                "Edinburgh, Scotland",
+                "Cambridge, UK"
+            ],
+            correct: 1,
+            exp_hi: "BLDSC (पूर्व में National Lending Library for Science and Technology - NLLST) बोस्टन स्पा (Boston Spa), वेस्ट यॉर्कशायर, यूके में स्थित है। यह दुनिया भर के पुस्तकालयों को प्रलेख आपूर्ति (DDS) प्रदान करता है।",
+            exp_en: "BLDSC is located at Boston Spa, Wetherby, West Yorkshire, UK. Founded by Donald Urquhart, it serves as the premier global clearinghouse for document supply."
+        },
+        {
+            id: 2,
+            q_hi: "पुस्तकालयों के मध्य 'अंतर-पुस्तकालय ऋण' (Inter-Library Loan - ILL) की प्रक्रिया को सफलतापूर्वक संचालित करने हेतु सबसे अनिवार्य औजार कौन-सा है?",
+            q_en: "Which tool is an indispensable pre-requisite for successfully locating and borrowing items via Inter-Library Loan (ILL)?",
+            options_hi: [
+                "संघ सूची (Union Catalogue)",
+                "परिग्रहण पंजिका (Accession Register)",
+                "शेल्फ सूची (Shelf List)",
+                "पुस्तकालय का आगंतुक रजिस्टर"
+            ],
+            options_en: [
+                "Union Catalogue",
+                "Accession Register",
+                "Shelf List",
+                "Library Visitors' Register"
+            ],
+            correct: 0,
+            exp_hi: "संघ सूची (Union Catalogue) दो या अधिक स्वतंत्र पुस्तकालयों के संयुक्त संग्रह को दर्शाती है। इसके बिना किसी लाइब्रेरियन को यह पता नहीं चल सकता कि अमुक वांछित पुस्तक किस बाहरी पुस्तकालय में उपलब्ध है।",
+            exp_en: "A Union Catalogue documents the holdings of multiple participating libraries; without it, pinpointing which partner institution holds the requested item for ILL is impossible."
+        },
+        {
+            id: 3,
+            q_hi: "अंतरराष्ट्रीय स्तर पर अंतर-पुस्तकालय ऋण और प्रलेख आपूर्ति के वित्तीय लेन-देन को सरल बनाने हेतु 'IFLA वाउचर योजना' (IFLA Voucher Scheme) किस वर्ष प्रारंभ की गई थी?",
+            q_en: "In which year was the 'IFLA Voucher Scheme' introduced to simplify international payment transactions for ILL and document supply?",
+            options_hi: [
+                "1974 ई.",
+                "1985 ई.",
+                "1995 ई. (1995)",
+                "2005 ई."
+            ],
+            options_en: [
+                "1974",
+                "1985",
+                "1995",
+                "2005"
+            ],
+            correct: 2,
+            exp_hi: "IFLA ने 1995 में वाउचर योजना प्रारंभ की ताकि विभिन्न देशों के पुस्तकालय बिना विदेशी मुद्रा विनिमय शुल्क या बैंक ड्राफ्ट की झंझट के प्लास्टिक वाउचर द्वारा ILL व फोटोकॉपी का वित्तीय निपटान कर सकें।",
+            exp_en: "The IFLA Voucher Scheme was launched in 1995 as a reusable coupon transaction system enabling cross-border library ILL payments without foreign exchange overheads."
+        },
+        {
+            id: 4,
+            q_hi: "महाविद्यालयी पाठ्यक्रम के साथ उपयोगकर्ता शिक्षा (User Education) को एकीकृत करने हेतु 1966 में 'मोंटीथ कॉलेज लाइब्रेरी एक्सपेरिमेंट' किसने किया था?",
+            q_en: "Who conducted the landmark 1966 'Monteith College Library Experiment' integrating user education with collegiate coursework?",
+            options_hi: [
+                "पैट्रिशिया बी. नैप (Patricia B. Knapp)",
+                "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+                "मेलविल डेवी",
+                "एस.आर. रंगनाथन"
+            ],
+            options_en: [
+                "Patricia B. Knapp",
+                "Paul G. Zurkowski",
+                "Melvil Dewey",
+                "S.R. Ranganathan"
+            ],
+            correct: 0,
+            exp_hi: "पैट्रिशिया बी. नैप ने वेन स्टेट यूनिवर्सिटी के मोंटीथ कॉलेज (1966) में यह ऐतिहासिक शोध प्रयोग किया, जिसमें यह सिद्ध हुआ कि पाठ्यक्रम-एकीकृत पुस्तकालय शिक्षा से विद्यार्थियों की शोध क्षमता अत्यधिक बढ़ती है।",
+            exp_en: "Patricia B. Knapp directed the famous Monteith College Library Experiment (1966) at Wayne State University, establishing the pedagogical foundation of curriculum-integrated bibliographic instruction."
+        },
+        {
+            id: 5,
+            q_hi: "डॉ. एस.आर. रंगनाथन ने नए प्रवेशित विद्यार्थियों को पुस्तकालय के भवन, नियमों और सेवाओं से परिचित कराने की प्रक्रिया को क्या नाम दिया था?",
+            q_en: "What term did Dr. S.R. Ranganathan assign to the process of familiarizing freshly admitted students with the library layout and rules?",
+            options_hi: [
+                "नवागंतुक दीक्षा (Initiation of a Freshman)",
+                "ग्रंथपरक अनुदेशन (Bibliographic Instruction)",
+                "सूचना पुनर्प्राप्ति (Information Retrieval)",
+                "भंडार सत्यापन"
+            ],
+            options_en: [
+                "Initiation of a Freshman",
+                "Bibliographic Instruction",
+                "Information Retrieval",
+                "Stock Verification"
+            ],
+            correct: 0,
+            exp_hi: "डॉ. रंगनाथन ने पुस्तकालय अभिविन्यास (Library Orientation) को 'Initiation of a Freshman' (नवागंतुक दीक्षा) कहा, जिसमें नए छात्रों का पुस्तकालय से पहला औपचारिक और आत्मीय परिचय कराया जाता है।",
+            exp_en: "Dr. S.R. Ranganathan called the library orientation program for new entrants 'Initiation of a Freshman', easing their psychological hesitation in utilizing library resources."
+        },
+        {
+            id: 6,
+            q_hi: "'सूचना साक्षरता' (Information Literacy) शब्द का सर्वप्रथम प्रयोग वर्ष 1974 में किसके द्वारा किया गया था?",
+            q_en: "Who originally coined the term 'Information Literacy' in 1974 in a proposal to the US National Commission on Libraries and Information Science?",
+            options_hi: [
+                "पॉल जी. ज़ुरकोवस्की (Paul G. Zurkowski)",
+                "एफ.डब्ल्यू. लैनकेस्टर",
+                "डेनिस ग्रोगन",
+                "सैमुअल स्वेट ग्रीन"
+            ],
+            options_en: [
+                "Paul G. Zurkowski",
+                "F.W. Lancaster",
+                "Dennis Grogan",
+                "Samuel Swett Green"
+            ],
+            correct: 0,
+            exp_hi: "पॉल जी. ज़ुरकोवस्की (Information Industry Association के तत्कालीन अध्यक्ष) ने 1974 में NCLIS को प्रस्तुत अपनी रिपोर्ट 'The Information Service Environment: Relationships and Priorities' में 'Information Literacy' शब्द गढ़ा।",
+            exp_en: "Paul G. Zurkowski coined 'Information Literacy' in 1974, defining information-literate people as those trained in applying information resources to practical problem-solving."
+        },
+        {
+            id: 7,
+            q_hi: "ब्रिटेन की SCONUL द्वारा 1999 में प्रतिपादित 'सूचना साक्षरता के सात स्तम्भ' (Seven Pillars of Information Literacy) का प्रथम स्तम्भ कौन-सा है?",
+            q_en: "Which is the first pillar in the celebrated 'Seven Pillars of Information Literacy' model formulated by SCONUL (UK) in 1999?",
+            options_hi: [
+                "पहचानना (Identify - सूचना आवश्यकता की पहचान)",
+                "मूल्यांकन करना (Evaluate)",
+                "प्रस्तुत करना (Present)",
+                "संग्रहीत करना (Store)"
+            ],
+            options_en: [
+                "Identify (Recognizing information need)",
+                "Evaluate",
+                "Present",
+                "Store"
+            ],
+            correct: 0,
+            exp_hi: "SCONUL मॉडल का प्रथम स्तम्भ 'Identify' (पहचानना) है—अर्थात यह समझना कि मुझे किस सूचना की आवश्यकता है। इसके बाद Scope, Plan, Gather, Evaluate, Manage और Present आते हैं।",
+            exp_en: "The first pillar in SCONUL's Seven Pillars framework is 'Identify', which entails recognizing a personal or professional need for new information."
+        },
+        {
+            id: 8,
+            q_hi: "भारत में विश्वविद्यालयों, शोध संस्थानों एवं कॉलेजों को आपस में जोड़कर अंतर-पुस्तकालय ऋण (ILL) और प्रलेख आपूर्ति की सबसे बड़ी सुविधा कौन प्रदान करता है?",
+            q_en: "Which network provides the largest inter-library loan (ILL) and document delivery service across Indian libraries?",
+            options_hi: [
+                "डेलनेट (DELNET - Developing Library Network, New Delhi)",
+                "इनफ्लिबनेट (INFLIBNET)",
+                "केलिपनेट (CALIBNET)",
+                "मालिबनेट (MALIBNET)"
+            ],
+            options_en: [
+                "DELNET (Developing Library Network, New Delhi)",
+                "INFLIBNET",
+                "CALIBNET",
+                "MALIBNET"
+            ],
+            correct: 0,
+            exp_hi: "DELNET (1988 में स्थापित) भारत का सबसे बड़ा पुस्तकालय नेटवर्क है जो 8,000 से अधिक सदस्य पुस्तकालयों के मध्य संघ सूची के माध्यम से ILL एवं प्रलेख आपूर्ति (DDS) का संचालन करता है।",
+            exp_en: "DELNET (established in 1988) operates India's most expansive operational ILL and document supply service network spanning thousands of institutional members."
+        },
+        {
+            id: 9,
+            q_hi: "INFLIBNET केंद्र द्वारा प्रबंधित भारतीय विश्वविद्यालयों की ऑनलाइन संघ सूची (Online Union Catalogue) को किस नाम से जाना जाता है?",
+            q_en: "What is the official name of the Online Union Catalogue of Indian universities hosted and maintained by INFLIBNET Centre?",
+            options_hi: [
+                "इंडीकैट (IndCat)",
+                "वर्ल्डकैट (WorldCat)",
+                "शोधगंगा (Shodhganga)",
+                "ई-शोधसिंधु (e-ShodhSindhu)"
+            ],
+            options_en: [
+                "IndCat",
+                "WorldCat",
+                "Shodhganga",
+                "e-ShodhSindhu"
+            ],
+            correct: 0,
+            exp_hi: "'IndCat' INFLIBNET द्वारा विकसित भारतीय विश्वविद्यालयों का ऑनलाइन संघ कैटलॉग है, जिसमें करोड़ों पुस्तकों, शोध प्रबंधों और पत्रिकाओं का विवरण संकलित है।",
+            exp_en: "IndCat is the centralized Online Union Catalogue of Indian Universities managed by INFLIBNET Centre, indexing books, theses, and serials across India."
+        },
+        {
+            id: 10,
+            q_hi: "पुस्तकालय सेवाओं के विपणन (Marketing of Library Services) में फिलिप कोटलर के 4 'P' में से 'उत्पाद' (Product) किसे निरूपित करता है?",
+            q_en: "In the application of Philip Kotler's 4 Ps of Marketing to libraries, what represents the 'Product'?",
+            options_hi: [
+                "पुस्तकालय भवन की ईंटें और फर्नीचर",
+                "पुस्तकालय में उपलब्ध सूचना सामग्री, पुस्तकें, डेटाबेस एवं संदर्भ सेवाएं (Information resources and services)",
+                "लाइब्रेरियन का वेतन",
+                "पुस्तकालय का वार्षिक बजट"
+            ],
+            options_en: [
+                "Library bricks and furniture",
+                "Information resources, books, databases, and reference services",
+                "Librarian's salary",
+                "Annual library budget"
+            ],
+            correct: 1,
+            exp_hi: "पुस्तकालय विपणन में 'Product' पुस्तकालय द्वारा दी जाने वाली सूचना सेवाएं, पुस्तकें, शोध-पत्र, कैटलॉग, CAS और SDI सेवाएं होती हैं, जो उपयोगकर्ता की बौद्धिक संतुष्टि करती हैं।",
+            exp_en: "In library marketing, the 'Product' constitutes the informational assets, bibliographic databases, digital services, and research consultations delivered to patrons."
+        },
+        {
+            id: 11,
+            q_hi: "शोधकर्ताओं और उपयोगकर्ताओं द्वारा अपने प्रकाशित लेखों या शोध प्रबंधों के अंत में दी गई संदर्भ सूचियों का विश्लेषण कर उनकी सूचना आवश्यकताओं का अध्ययन करने वाली विधि क्या कहलाती है?",
+            q_en: "The user study technique that analyzes bibliographic references appended to users' dissertations/papers to assess their literature needs is termed:",
+            options_hi: [
+                "उद्धरण विश्लेषण (Citation Analysis)",
+                "साक्षात्कार विधि (Interview method)",
+                "प्रश्नावली विधि (Questionnaire method)",
+                "शेल्फ सत्यापन"
+            ],
+            options_en: [
+                "Citation Analysis",
+                "Interview method",
+                "Questionnaire method",
+                "Shelf verification"
+            ],
+            correct: 0,
+            exp_hi: "उद्धरण विश्लेषण (Citation Analysis) एक अप्रत्यक्ष, वस्तुनिष्ठ ग्रंथमितीय विधि है जिसमें उपयोगकर्ताओं द्वारा उद्धृत पत्रिकाओं और पुस्तकों के विश्लेषण से उनकी वास्तविक पठन आवश्यकताओं का पता लगाया जाता है।",
+            exp_en: "Citation Analysis is an unobtrusive bibliometric user study method evaluating cited references in theses and faculty papers to determine actual collection usage patterns."
+        },
+        {
+            id: 12,
+            q_hi: "'पुस्तकालय अभिविन्यास' (Library Orientation) और 'ग्रंथपरक अनुदेशन' (Bibliographic Instruction) के मध्य मुख्य अंतर क्या है?",
+            q_en: "What is the key distinction between 'Library Orientation' and 'Bibliographic Instruction'?",
+            options_hi: [
+                "अभिविन्यास भवन, नियमों व विभागों का सामान्य परिचय है, जबकि ग्रंथपरक अनुदेशन कैटलॉग, इंडेक्स व डेटाबेस में साहित्य खोजने का गहन प्रशिक्षण है",
+                "अभिविन्यास केवल शिक्षकों के लिए होता है",
+                "ग्रंथपरक अनुदेशन में केवल चित्रकारी सिखाई जाती है",
+                "दोनों में कोई अंतर नहीं है"
+            ],
+            options_en: [
+                "Orientation introduces layout, rules, and sections; Bibliographic Instruction trains patrons in navigating catalogues, indexes, and academic databases",
+                "Orientation is exclusively for faculty members",
+                "Bibliographic instruction teaches painting",
+                "There is no distinction"
+            ],
+            correct: 0,
+            exp_hi: "Orientation नवागंतुकों को पुस्तकालय भवन, कर्मचारियों और नियमों से परिचित कराता है (प्रारंभिक स्तर), जबकि Bibliographic Instruction विशिष्ट विषयों में सूचना खोजने, OPAC चलाने और संदर्भ साधनों के उपयोग का व्यावहारिक कौशल सिखाता है।",
+            exp_en: "Library Orientation provides an overarching tour of facilities and borrowing rules, whereas Bibliographic Instruction imparts concrete tactical skills for information retrieval and database search."
+        },
+        {
+            id: 13,
+            q_hi: "इलेक्ट्रॉनिक प्रलेख वितरण सेवा (EDDS) पारंपरिक प्रलेख वितरण (DDS) से किस प्रकार भिन्न है?",
+            q_en: "How does Electronic Document Delivery Service (EDDS) fundamentally differ from traditional DDS?",
+            options_hi: [
+                "इसमें प्रलेखों को डाक से भेजने के बजाय डिजिटल स्वरूप (PDF/इलेक्ट्रॉनिक फाइलों) में कंप्यूटर नेटवर्क व ई-मेल द्वारा भेजा जाता है",
+                "यह केवल हस्तलिखित पांडुलिपियों के लिए होती है",
+                "इसमें कोई कंप्यूटर प्रयुक्त नहीं होता",
+                "यह केवल रेडियो प्रसारण द्वारा दी जाती है"
+            ],
+            options_en: [
+                "Documents are transmitted in digital formats (PDF/electronic files) via networks and email rather than physical postal mail",
+                "It is strictly used for handwritten manuscripts",
+                "It involves no computers",
+                "It operates via radio broadcast only"
+            ],
+            correct: 0,
+            exp_hi: "EDDS में प्रलेखों को स्कैन कर डिजिटल प्रति (PDF) के रूप में ई-मेल या समर्पित पोर्टल के माध्यम से कुछ ही मिनटों में सीधे उपयोगकर्ता के कंप्यूटर या स्मार्टफोन पर पहुंचा दिया जाता है।",
+            exp_en: "EDDS digitizes and transmits requested journal articles or chapters electronically over the Internet (via PDF, secure FTP, or portal download), drastically cutting turnaround times."
+        },
+        {
+            id: 14,
+            q_hi: "भारत में विज्ञान एवं प्रौद्योगिकी के क्षेत्र में राष्ट्रीय प्रलेख वितरण केंद्र (National Document Delivery Centre) के रूप में कौन-सी संस्था कार्य करती है?",
+            q_en: "Which premier institution functions as the national document delivery hub for scientific and technical literature in India?",
+            options_hi: [
+                "CSIR-NIScPR (पूर्व INSDOC / NISCAIR, नई दिल्ली)",
+                "आईआईएम अहमदाबाद",
+                "राष्ट्रीय अभिलेखागार (National Archives)",
+                "साहित्य अकादमी"
+            ],
+            options_en: [
+                "CSIR-NIScPR (formerly INSDOC / NISCAIR, New Delhi)",
+                "IIM Ahmedabad",
+                "National Archives of India",
+                "Sahitya Akademi"
+            ],
+            correct: 0,
+            exp_hi: "CSIR-NIScPR (National Institute of Science Communication and Policy Research, पूर्व INSDOC / NISCAIR) अपने राष्ट्रीय विज्ञान पुस्तकालय (NSL) के माध्यम से भारत भर में वैज्ञानिक प्रलेख आपूर्ति सेवा का प्रमुख केंद्र है।",
+            exp_en: "CSIR-NIScPR (formerly INSDOC/NISCAIR), housing the National Science Library in New Delhi, has historically served as India's apex Science Document Supply Centre."
+        },
+        {
+            id: 15,
+            q_hi: "SCONUL (UK) द्वारा प्रतिपादित 'Seven Pillars of Information Literacy' में निम्नलिखित में से कौन-सा स्तम्भ सम्मिलित नहीं है?",
+            q_en: "Which of the following is NOT one of the Seven Pillars of Information Literacy defined by SCONUL (UK)?",
+            options_hi: [
+                "पहचानना (Identify)",
+                "मूल्यांकन करना (Evaluate)",
+                "पुस्तकों का निरसन एवं छंटाई (Weeding / Discarding of books)",
+                "प्रस्तुत करना (Present)"
+            ],
+            options_en: [
+                "Identify",
+                "Evaluate",
+                "Weeding / Discarding of books",
+                "Present"
+            ],
+            correct: 2,
+            exp_hi: "SCONUL के 7 स्तम्भ हैं: Identify, Scope, Plan, Gather, Evaluate, Manage, और Present। पुस्तकों का निरसन (Weeding) संग्रह प्रबंधन की प्रशासनिक प्रक्रिया है, सूचना साक्षरता का स्तम्भ नहीं।",
+            exp_en: "Weeding is a library collection management operation, not an information literacy competency component within SCONUL's Seven Pillars framework."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let currentLang = 'both';
+    let timerInterval = null;
+    let timeLeft = 20 * 60;
+
+    const STORAGE_KEY = 'bihar_let_u4_4_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

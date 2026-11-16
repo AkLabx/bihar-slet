@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2.4 Quiz: HRM, Staff Formula & TQM | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_2.4_HRM_and_TQM.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 2.4: HRM, Staff Formula & TQM</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "प्रबंधन के 7 प्रमुख कार्यों को संक्षेप में व्यक्त करने वाले बहुचर्चित परिवर्णी शब्द 'POSDCORB' का प्रतिपादन 1937 में किसने किया था?",
+            q_en: "Who coined the famous acronym 'POSDCORB' in 1937 to delineate the seven key executive functions of management?",
+            options_hi: [
+                "हेनरी फेयोल (Henri Fayol)",
+                "लूथर गुलिक एवं लिंडाल उर्विक (Luther Gulick & Lyndall Urwick)",
+                "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+                "मैक्स वेबर (Max Weber)"
+            ],
+            options_en: [
+                "Henri Fayol",
+                "Luther Gulick and Lyndall Urwick",
+                "F.W. Taylor",
+                "Max Weber"
+            ],
+            correct: 1,
+            exp_hi: "लूथर गुलिक और लिंडाल उर्विक ने 1937 में 'Papers on the Science of Administration' में POSDCORB सूत्र दिया। इसमें P=Planning, O=Organizing, S=Staffing, D=Directing, CO=Coordinating, R=Reporting, B=Budgeting है।",
+            exp_en: "Luther Gulick and Lyndall Urwick coined POSDCORB in 1937 in their edited volume 'Papers on the Science of Administration' to represent seven foundational managerial duties."
+        },
+        {
+            id: 2,
+            q_hi: "डॉ. एस.आर. रंगनाथन के स्टाफ फॉर्मूले (UGC Library Committee, 1957) के अनुसार 'तकनीकी अनुभाग' (वर्गीकरण एवं सूचीकरण) में कितने ग्रंथों के लिए 1 व्यक्ति की संस्तुति की गई है?",
+            q_en: "According to Dr. S.R. Ranganathan's Staff Formula (UGC 1957), one technical staff member is recommended for how many volumes classified and catalogued annually?",
+            options_hi: [
+                "प्रतिवर्ष 1,000 ग्रंथ",
+                "प्रतिवर्ष 2,000 ग्रंथ (2,000 volumes per year)",
+                "प्रतिवर्ष 6,000 ग्रंथ",
+                "प्रतिवर्ष 1,500 ग्रंथ"
+            ],
+            options_en: [
+                "1,000 volumes per year",
+                "2,000 volumes per year",
+                "6,000 volumes per year",
+                "1,500 volumes per year"
+            ],
+            correct: 1,
+            exp_hi: "रंगनाथन स्टाफ फॉर्मूले के तहत तकनीकी अनुभाग (Technical Section) में प्रतिवर्ष जोड़े जाने वाले प्रत्येक 2,000 ग्रंथों (वर्गीकरण व सूचीकरण) के लिए 1 पेशेवर व्यक्ति की सिफारिश की गई है।",
+            exp_en: "Under Ranganathan's Staff Formula, the Technical Section requires one person for every 2,000 volumes processed (classified and catalogued) in a year."
+        },
+        {
+            id: 3,
+            q_hi: "रंगनाथन के स्टाफ फॉर्मूले के अनुसार 'पुस्तक अर्जन अनुभाग' (Book Section) में प्रतिवर्ष जोड़ी जाने वाली कितनी पुस्तकों के लिए 1 व्यक्ति की आवश्यकता होती है?",
+            q_en: "According to Ranganathan's Staff Formula, one person is recommended in the Book Acquisition Section for every how many books added per year?",
+            options_hi: [
+                "2,000 पुस्तकें",
+                "4,000 पुस्तकें",
+                "6,000 पुस्तकें (6,000 books per year)",
+                "10,000 पुस्तकें"
+            ],
+            options_en: [
+                "2,000 books",
+                "4,000 books",
+                "6,000 books per year",
+                "10,000 books"
+            ],
+            correct: 2,
+            exp_hi: "पुस्तक अर्जन अनुभाग (Book Section) में प्रतिवर्ष जोड़े जाने वाले प्रत्येक 6,000 ग्रंथों के लिए 1 पेशेवर कर्मचारी का मानक निर्धारित किया गया है।",
+            exp_en: "For the Book Section (Acquisition), Ranganathan's formula mandates 1 staff member for every 6,000 volumes added to the library annually."
+        },
+        {
+            id: 4,
+            q_hi: "रंगनाथन के स्टाफ फॉर्मूले के अनुसार 'सामयिक पत्रिका अनुभाग' (Periodicals Section) में कितनी पत्रिकाओं के अंशदान पर 1 व्यक्ति का प्रावधान है?",
+            q_en: "Under Ranganathan's Staff Formula, one person is provided in the Periodicals Section for managing how many current periodicals subscribed?",
+            options_hi: [
+                "200 पत्रिकाएं",
+                "500 पत्रिकाएं (500 periodicals subscribed)",
+                "1,000 पत्रिकाएं",
+                "1,500 पत्रिकाएं"
+            ],
+            options_en: [
+                "200 periodicals",
+                "500 periodicals subscribed",
+                "1,000 periodicals",
+                "1,500 periodicals"
+            ],
+            correct: 1,
+            exp_hi: "सामयिक पत्रिका अनुभाग (Periodical Section) में प्रतिवर्ष सब्सक्राइब की जाने वाली प्रत्येक 500 पत्रिकाओं (शीर्षकों) के पंजीकरण व प्रबंधन हेतु 1 कर्मचारी की सिफारिश की गई है।",
+            exp_en: "The Periodicals Section requires 1 staff member for every 500 current periodical titles subscribed to by the library."
+        },
+        {
+            id: 5,
+            q_hi: "'वैज्ञानिक प्रबंधन का जनक' (Father of Scientific Management) किसे कहा जाता है, जिन्होंने समय और गति अध्ययन (Time and Motion Study) का प्रवर्तन किया?",
+            q_en: "Who is recognized as the 'Father of Scientific Management', introducing Time and Motion Studies in 1911?",
+            options_hi: [
+                "हेनरी फेयोल",
+                "एफ.डब्ल्यू. टेलर (F.W. Taylor)",
+                "एल्टन मेयो",
+                "पीटर ड्रकर"
+            ],
+            options_en: [
+                "Henri Fayol",
+                "F.W. Taylor",
+                "Elton Mayo",
+                "Peter Drucker"
+            ],
+            correct: 1,
+            exp_hi: "फ्रेडरिक विंसलो टेलर (F.W. Taylor) को वैज्ञानिक प्रबंधन का जनक कहा जाता है। उन्होंने 1911 में 'Principles of Scientific Management' पुस्तक लिखी और कार्यकुशलता हेतु टाइम-मोशन स्टडीज शुरू कीं।",
+            exp_en: "Frederick Winslow Taylor (F.W. Taylor) is the Father of Scientific Management, authoring 'The Principles of Scientific Management' (1911) and pioneering systematic time-and-motion studies."
+        },
+        {
+            id: 6,
+            q_hi: "हेनरी फेयोल (Henri Fayol) द्वारा प्रतिपादित 14 सिद्धांतों में से 'आदेश की एकता' (Unity of Command) का क्या अर्थ है?",
+            q_en: "Among the 14 principles of management formulated by Henri Fayol, what does 'Unity of Command' signify?",
+            options_hi: [
+                "सभी कर्मचारियों का वेतन एक समान होना चाहिए",
+                "एक कर्मचारी को केवल एक ही उच्चाधिकारी से आदेश मिलना चाहिए",
+                "सभी विभागों का केवल एक ही लक्ष्य होना चाहिए",
+                "आदेश हमेशा लिखित रूप में होना चाहिए"
+            ],
+            options_en: [
+                "All employees should receive equal compensation",
+                "An employee should receive orders from only one superior",
+                "All departments must share a single operational goal",
+                "Orders must always be issued in writing"
+            ],
+            correct: 1,
+            exp_hi: "आदेश की एकता (Unity of Command) का अर्थ है कि किसी भी अधीनस्थ कर्मचारी को एक समय में केवल एक ही प्रत्यक्ष अधिकारी (One Boss) से आदेश मिलना चाहिए, ताकि भ्रम और उत्तरदायित्व के टकराव से बचा जा सके।",
+            exp_en: "Unity of Command dictates that each subordinate should be accountable to, and receive orders from, strictly one direct supervisor to prevent conflicting directions."
+        },
+        {
+            id: 7,
+            q_hi: "सोपान शृंखला (Scalar Chain) में आपातकालीन परिस्थितियों में समकक्ष स्तर के अधिकारियों के मध्य सीधे त्वरित संप्रेषण हेतु फेयोल ने किस व्यवस्था का सुझाव दिया था?",
+            q_en: "In the Scalar Chain hierarchy, what bridge did Henri Fayol recommend for emergency direct cross-communication between employees at the same organizational level?",
+            options_hi: [
+                "गैंग प्लैंक (Gang Plank)",
+                "एस्प्रिट डी कॉर्प्स (Esprit de Corps)",
+                "बेंचमार्किंग",
+                "कार्यात्मक फोरमैनशिप"
+            ],
+            options_en: [
+                "Gang Plank",
+                "Esprit de Corps",
+                "Benchmarking",
+                "Functional Foremanship"
+            ],
+            correct: 0,
+            exp_hi: "गैंग प्लैंक (Gang Plank) फेयोल की प्रशासनिक व्यवस्था में एक लघु-मार्ग (Short-circuit) है, जो पदसोपान के विलंब को दरकिनार कर दो समकक्ष सहयोगियों को सीधे संवाद की अनुमति देता है।",
+            exp_en: "Gang Plank is an emergency horizontal shortcut devised by Fayol, allowing two employees of equal rank to bypass the formal chain of command to expedite urgent matters."
+        },
+        {
+            id: 8,
+            q_hi: "अब्राहम मास्लो के 'आवश्यकता पदानुक्रम सिद्धांत' (Hierarchy of Needs, 1943) में पिरामिड के शीर्ष (सर्वोच्च स्तर) पर कौन-सी आवश्यकता स्थित है?",
+            q_en: "In Abraham Maslow's 'Hierarchy of Needs' (1943), which need occupies the pinnacle (highest level) of the pyramid?",
+            options_hi: [
+                "शारीरिक आवश्यकताएं (Physiological Needs)",
+                "सुरक्षा आवश्यकताएं (Safety Needs)",
+                "सम्मान आवश्यकताएं (Esteem Needs)",
+                "आत्म-प्राप्ति की आवश्यकता (Self-Actualization Need)"
+            ],
+            options_en: [
+                "Physiological Needs",
+                "Safety Needs",
+                "Esteem Needs",
+                "Self-Actualization Need"
+            ],
+            correct: 3,
+            exp_hi: "मास्लो के 5-स्तरीय पदानुक्रम में सबसे शीर्ष पर 'आत्म-प्राप्ति' (Self-Actualization - अपनी सम्पूर्ण आंतरिक क्षमता और रचनात्मकता को सिद्ध करना) स्थित है, जबकि आधार पर शारीरिक आवश्यकताएं हैं।",
+            exp_en: "Self-Actualization (the realization of one's full potential and creative expression) resides at the top of Maslow's 5-tiered hierarchy of human motivation."
+        },
+        {
+            id: 9,
+            q_hi: "फ्रेडरिक हर्ज़बर्ग के 'द्वि-घटक सिद्धांत' (Herzberg's Two-Factor Theory) के अनुसार निम्नलिखित में से कौन-सा एक 'स्वच्छता घटक' (Hygiene Factor) है?",
+            q_en: "According to Frederick Herzberg's Two-Factor Theory, which of the following is classified as a 'Hygiene Factor' rather than a Motivator?",
+            options_hi: [
+                "वेतन एवं कार्यस्थल की भौतिक दशाएं (Salary & Working Conditions)",
+                "कार्य में उपलब्धि (Achievement)",
+                "व्यक्तिगत पहचान (Recognition)",
+                "जिम्मेदारी (Responsibility)"
+            ],
+            options_en: [
+                "Salary and Working Conditions",
+                "Achievement",
+                "Recognition",
+                "Responsibility"
+            ],
+            correct: 0,
+            exp_hi: "हर्ज़बर्ग के अनुसार वेतन, कंपनी नीति और कार्यस्थल की दशाएं बाह्य या 'स्वच्छता घटक' (Hygiene factors) हैं; यदि ये न हों तो असंतोष होता है, परंतु इनकी मौजूदगी से उच्च आंतरिक प्रेरणा नहीं मिलती।",
+            exp_en: "Herzberg categorized salary, supervision, job security, and working conditions as Hygiene (extrinsic) factors; their absence causes dissatisfaction, but their presence alone does not motivate."
+        },
+        {
+            id: 10,
+            q_hi: "मानव व्यवहार के संदर्भ में 'थ्योरी X और थ्योरी Y' (Theory X and Theory Y) का प्रतिपादन 1960 में किस विद्वान द्वारा किया गया था?",
+            q_en: "Regarding workplace human behavior, who formulated 'Theory X and Theory Y' in 1960?",
+            options_hi: [
+                "डगलस मैकग्रेगर (Douglas McGregor)",
+                "अब्राहम मास्लो",
+                "एल्टन मेयो",
+                "पीटर ड्रकर"
+            ],
+            options_en: [
+                "Douglas McGregor",
+                "Abraham Maslow",
+                "Elton Mayo",
+                "Peter Drucker"
+            ],
+            correct: 0,
+            exp_hi: "डगलस मैकग्रेगर ने 1960 में 'The Human Side of Enterprise' पुस्तक में थ्योरी X (कर्मचारी कामचोर होते हैं, नियंत्रण आवश्यक) और थ्योरी Y (कर्मचारी स्व-प्रेरित और रचनात्मक होते हैं) का प्रतिपादन किया।",
+            exp_en: "Douglas McGregor proposed Theory X (authoritarian view of passive, lazy workers) and Theory Y (participative view of self-motivated, creative workers) in 1960."
+        },
+        {
+            id: 11,
+            q_hi: "संपूर्ण गुणवत्ता प्रबंधन (TQM) में निरंतर सुधार हेतु प्रयुक्त 'PDCA चक्र' (Plan-Do-Check-Act) के प्रवर्तक कौन हैं?",
+            q_en: "In Total Quality Management (TQM), who championed the 'PDCA Cycle' (Plan-Do-Check-Act) for continuous process improvement?",
+            options_hi: [
+                "डब्ल्यू. एडवर्ड्स डेमिंग (W. Edwards Deming)",
+                "जोसेफ जुरान (Joseph Juran)",
+                "फिलिप क्रॉस्बी",
+                "काइज़ेन"
+            ],
+            options_en: [
+                "W. Edwards Deming",
+                "Joseph Juran",
+                "Philip Crosby",
+                "Kaizen"
+            ],
+            correct: 0,
+            exp_hi: "PDCA चक्र (Plan-Do-Check-Act), जिसे डेमिंग चक्र (Deming Wheel) भी कहा जाता है, गुणवत्ता गुरु डब्ल्यू. एडवर्ड्स डेमिंग द्वारा लोकप्रिय बनाया गया निरंतर गुणवत्ता संवर्धन का मॉडल है।",
+            exp_en: "The PDCA (Plan-Do-Check-Act) cycle, widely recognized as the Deming Cycle, was championed by W. Edwards Deming as the core iterative loop for continuous quality improvement."
+        },
+        {
+            id: 12,
+            q_hi: "पुस्तकालय एवं सूचना सेवाओं की गुणवत्ता का उपयोगकर्ताओं के दृष्टिकोण से मूल्यांकन करने हेतु विकसित अंतरराष्ट्रीय मानक पैमाना कौन-सा है?",
+            q_en: "Which international survey instrument was specifically developed by the Association of Research Libraries (ARL) to assess library service quality?",
+            options_hi: [
+                "लिबक्वाल (LibQUAL+)",
+                "सिक्स सिग्मा",
+                "आईएसबीएन (ISBN)",
+                "मार्क-21"
+            ],
+            options_en: [
+                "LibQUAL+",
+                "Six Sigma",
+                "ISBN",
+                "MARC-21"
+            ],
+            correct: 0,
+            exp_hi: "LibQUAL+ एसोसिएशन ऑफ रिसर्च लाइब्रेरीज (ARL) द्वारा विकसित एक वेब-आधारित सर्वेक्षण उपकरण है, जो पुस्तकालयों को सेवा की प्रभावशीलता, सूचना तक पहुंच और भौतिक स्थान के आधार पर गुणवत्ता मापने में सहायता करता है।",
+            exp_en: "LibQUAL+ is a specialized total quality assessment tool developed by the Association of Research Libraries (ARL) measuring user perceptions and expectations of library service quality."
+        },
+        {
+            id: 13,
+            q_hi: "भारतीय मानक ब्यूरो (BIS) द्वारा 'पुस्तकालय भवन के प्राथमिक वास्तुशिल्प तत्वों एवं डिजाइन' हेतु निर्धारित मानक कोड कौन-सा है?",
+            q_en: "Which Indian Standard code was formulated by the Bureau of Indian Standards (BIS) for the architectural design and construction of library buildings?",
+            options_hi: [
+                "IS:1553-1989",
+                "IS:1829-1978",
+                "IS:2711-1979",
+                "IS:7400-1990"
+            ],
+            options_en: [
+                "IS:1553-1989",
+                "IS:1829-1978",
+                "IS:2711-1979",
+                "IS:7400-1990"
+            ],
+            correct: 0,
+            exp_hi: "IS:1553-1989 भारतीय मानक ब्यूरो का मानक कोड है, जो पुस्तकालय भवन के डिजाइन, कमरों के आकार, प्रकाश, और वायु संचार के प्राथमिक तत्वों की सिफारिश करता है। (IS:1829 उपस्कर व फर्नीचर हेतु है)।",
+            exp_en: "IS:1553-1989 is the Bureau of Indian Standards (BIS) code of practice for architectural layout and building recommendations for libraries. (IS:1829 covers library furniture)."
+        },
+        {
+            id: 14,
+            q_hi: "मानक पुस्तकालय विनिर्देशों के अनुसार दो पुस्तक अलमारियों (स्टैक रैक) के बीच के आंतरिक गलियारे (Gangway / Aisle) की मानक चौड़ाई कितनी होनी चाहिए?",
+            q_en: "According to standard library architectural specifications, what is the recommended aisle width between two parallel book stack racks (gangway)?",
+            options_hi: [
+                "0.75 मीटर से 1.0 मीटर (लगभग 2.5 से 3 फीट)",
+                "2.5 मीटर से 3.0 मीटर",
+                "0.30 मीटर",
+                "4.0 मीटर"
+            ],
+            options_en: [
+                "0.75 meter to 1.0 meter (approx. 2.5 to 3 feet)",
+                "2.5 meters to 3.0 meters",
+                "0.30 meter",
+                "4.0 meters"
+            ],
+            correct: 0,
+            exp_hi: "BIS और रंगनाथन के अनुसार अलमारियों के बीच का स्टैक गलियारा (Gangway) 0.75 से 1.0 मीटर (लगभग 3 फीट) होना चाहिए, ताकि पाठक और ट्रॉली आसानी से निकल सकें। मुख्य गलियारा (Main Aisle) 1.5 मीटर होना चाहिए।",
+            exp_en: "The standard operating gangway between parallel book stacks is recommended to be 0.75 m to 1.0 m (approx 3 ft), whereas main cross aisles are planned at 1.5 m (5 ft)."
+        },
+        {
+            id: 15,
+            q_hi: "प्रबंधन में 'हॉथॉर्न प्रयोग' (Hawthorne Studies, 1924–1932) किसके द्वारा किए गए थे, जिसने कार्यस्थल पर सामाजिक एवं मानवीय कारकों के महत्व को उजागर किया?",
+            q_en: "The famous 'Hawthorne Studies' (1924–1932), which highlighted the preeminence of social and human factors in workplace productivity, were led by:",
+            options_hi: [
+                "एल्टन मेयो (Elton Mayo)",
+                "एफ.डब्ल्यू. टेलर",
+                "हेनरी फेयोल",
+                "लूथर गुलिक"
+            ],
+            options_en: [
+                "Elton Mayo",
+                "F.W. Taylor",
+                "Henri Fayol",
+                "Luther Gulick"
+            ],
+            correct: 0,
+            exp_hi: "एल्टन मेयो (Elton Mayo) ने वेस्टर्न इलेक्ट्रिक कंपनी के हॉथॉर्न प्लांट में प्रयोग किए थे। उन्होंने सिद्ध किया कि केवल आर्थिक या भौतिक दशाएं ही नहीं, बल्कि अनौपचारिक समूह और मानवीय संबंध कर्मचारियों की उत्पादकता बढ़ाते हैं।",
+            exp_en: "Elton Mayo led the landmark Hawthorne Studies (1924–1932) at Western Electric, founding the Human Relations School of management by proving social cohesion drives productivity."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60;
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_2_4_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

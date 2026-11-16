@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3.2 Quiz: Cataloguing, Metadata & Indexing | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_3.2_Cataloguing_and_Indexing.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <!-- Main Question Area -->
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">सूचीकरण एवं अनुक्रमणीकरण</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar / Question Palette -->
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 परीक्षा सुझाव:</strong>
+                <p style="margin-top: 0.4rem;">
+                    बिहार लाइब्रेरियन परीक्षा में कोई नेगेटिव मार्किंग नहीं है। सभी 15 प्रश्नों को हल करें और AACR-2, CCC, MARC-21 टैग्स तथा शृंखला अनुक्रमणीकरण को कंठस्थ रखें।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="SubUnit_3.1_Quiz.html">⬅️ Unit 3.1 टेस्ट (Classification Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "चार्ल्स एमी कटर (C.A. Cutter) ने 1876 में 'रूल्स फॉर ए डिक्शनरी कैटलॉग' (RDC) में पुस्तकालय सूची के कितने मुख्य उद्देश्य (Objects) प्रतिपादित किए थे?",
+            q_en: "How many main objects of a library catalogue were formulated by Charles Ammi Cutter in his 1876 work 'Rules for a Dictionary Catalog'?",
+            options_hi: [
+                "2 उद्देश्य (Two objects)",
+                "3 उद्देश्य (Three objects)",
+                "5 उद्देश्य (Five objects)",
+                "7 उद्देश्य (Seven objects)"
+            ],
+            options_en: [
+                "2 Objects",
+                "3 Objects",
+                "5 Objects",
+                "7 Objects"
+            ],
+            correct: 1,
+            exp_hi: "कटर ने 1876 में सूची के 3 प्रमुख उद्देश्य बताए: (1) किसी ज्ञात पुस्तक को लेखक, आख्या या विषय द्वारा खोजना (To find a book), (2) पुस्तकालय में किसी लेखक, विषय या साहित्य प्रकार की कौन-सी कृतियां हैं यह दर्शाना (To show what the library has), और (3) पुस्तक के संस्करण या चरित्र के आधार पर चयन में पाठक की सहायता करना (To assist in choice).",
+            exp_en: "C.A. Cutter formulated 3 cardinal objects of a library catalog in 1876: (1) To enable a person to find a book by Author, Title, or Subject; (2) To show what the library has; and (3) To assist in the choice of a book."
+        },
+        {
+            id: 2,
+            q_hi: "मानक सूची पत्रक (Standard Catalogue Card) का अंतरराष्ट्रीय स्तर पर स्वीकृत आकार (Size) कितना होता है?",
+            q_en: "What is the internationally accepted standard physical dimension of a Library Catalogue Card?",
+            options_hi: [
+                "10 सेमी × 5 सेमी (4 × 2 इंच)",
+                "12.5 सेमी × 7.5 सेमी (5 × 3 इंच)",
+                "15 सेमी × 10 सेमी (6 × 4 इंच)",
+                "20 सेमी × 12.5 सेमी (8 × 5 इंच)"
+            ],
+            options_en: [
+                "10 cm × 5 cm (4 × 2 inches)",
+                "12.5 cm × 7.5 cm (5 × 3 inches)",
+                "15 cm × 10 cm (6 × 4 inches)",
+                "20 cm × 12.5 cm (8 × 5 inches)"
+            ],
+            options_en_short: "12.5 cm x 7.5 cm (5 x 3 inches)",
+            correct: 1,
+            exp_hi: "सूची पत्रक का अंतरराष्ट्रीय मानक आकार 12.5 सेमी × 7.5 सेमी (5 × 3 इंच) होता है, जिसके निचले केंद्र में 6 मिमी का छिद्र (Punched hole) लॉकिंग रॉड हेतु होता है।",
+            exp_en: "The standard catalog card size recognized internationally is 12.5 cm × 7.5 cm (approximately 5 × 3 inches), with a circular punch-hole at the bottom center."
+        },
+        {
+            id: 3,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा रचित 'क्लासिफाइड कैटलॉग कोड' (CCC) की मुख्य प्रविष्टि (Main Entry) में कुल कितने अनुभाग (Sections) होते हैं?",
+            q_en: "How many sections are there in the Main Entry of Classified Catalogue Code (CCC) authored by Dr. S.R. Ranganathan?",
+            options_hi: [
+                "4 अनुभाग (Four sections)",
+                "5 अनुभाग (Five sections)",
+                "6 अनुभाग (Six sections)",
+                "8 अनुभाग (Eight sections)"
+            ],
+            options_en: [
+                "4 Sections",
+                "5 Sections",
+                "6 Sections",
+                "8 Sections"
+            ],
+            correct: 2,
+            exp_hi: "CCC की मुख्य प्रविष्टि में कुल 6 अनुभाग होते हैं: (1) अग्र अनुच्छेद (Leading Section - कॉल नंबर पेंसिल से), (2) शीर्षक (Heading), (3) आख्या (Title), (4) टिप्पणी (Note), (5) परिग्रहण संख्या (Accession Number - सबसे नीचे की रेखा पर), और (6) संसूचक/ट्रेसिंग (Tracing - पत्रक के पीछे/Reverse side).",
+            exp_en: "CCC Main Entry comprises 6 distinct sections: (1) Leading Section, (2) Heading Section, (3) Title Section, (4) Note Section, (5) Accession Number Section, and (6) Tracing Section (recorded on the reverse)."
+        },
+        {
+            id: 4,
+            q_hi: "CCC में मुख्य प्रविष्टि का कौन-सा अनुभाग अनिवार्य रूप से केवल पेंसिल (Pencil) से लिखा जाता है?",
+            q_en: "Which section of the Main Entry in Classified Catalogue Code (CCC) is strictly recorded in pencil only?",
+            options_hi: [
+                "शीर्षक अनुभाग (Heading Section)",
+                "अग्र अनुच्छेद / कॉल नंबर (Leading Section)",
+                "परिग्रहण संख्या (Accession Number)",
+                "आख्या अनुभाग (Title Section)"
+            ],
+            options_en: [
+                "Heading Section",
+                "Leading Section (Call Number)",
+                "Accession Number Section",
+                "Title Section"
+            ],
+            correct: 1,
+            exp_hi: "CCC में अग्र अनुच्छेद (Leading Section) में ग्रंथ का कॉलग्राम/क्रमांक (Call Number) लिखा जाता है। चूंकि पुस्तक का संस्करण या वर्गीकरण भविष्य में बदल सकता है, इसलिए इसे केवल पेंसिल से लिखा जाता है।",
+            exp_en: "In CCC, the Leading Section contains the Call Number and is recorded solely in pencil so it can be erased and updated whenever classification numbers change."
+        },
+        {
+            id: 5,
+            q_hi: "एंग्लो-अमेरिकन कैटलॉगिंग रूल्स-2 (AACR-2) के अनुसार, यदि किसी पुस्तक के चार (4) या उससे अधिक लेखक हों, तो मुख्य प्रविष्टि (Main Entry) किसके अंतर्गत बनेगी?",
+            q_en: "According to AACR-2, if a book is authored by four (4) or more personal authors, under which heading should the Main Entry be prepared?",
+            options_hi: [
+                "प्रथम लेखक के नाम के अंतर्गत",
+                "पुस्तक की आख्या / शीर्षक (Title) के अंतर्गत",
+                "प्रकाशक के नाम के अंतर्गत",
+                "संपादक के नाम के अंतर्गत"
+            ],
+            options_en: [
+                "Under the first named author",
+                "Under the Title of the book",
+                "Under the Publisher's name",
+                "Under the Editor's name"
+            ],
+            correct: 1,
+            exp_hi: "AACR-2 में 'तीन का नियम' (Rule of Three) लागू होता है: यदि लेखक 1 से 3 हों तो मुख्य प्रविष्टि प्रथम लेखक के नाम से बनती है। यदि लेखक 3 से अधिक (4 या अधिक) हों, तो मुख्य प्रविष्टि 'आख्या' (Title) के अंतर्गत बनती है और प्रथम लेखक के नाम से सहायक प्रविष्टि बनती है (साथ में '... [et al.]' जोड़कर)।",
+            exp_en: "Under AACR-2's Rule of Three, when responsibility is shared among more than three authors, the Main Entry is entered under the Title, and an added entry is made under the first named author followed by '... [et al.]'."
+        },
+        {
+            id: 6,
+            q_hi: "संसाधन विवरण एवं पहुंच (RDA - Resource Description and Access) किस पूर्ववर्ती सूचीकरण संहिता का आधुनिक उत्तराधिकारी है?",
+            q_en: "Resource Description and Access (RDA), released in 2010, is the modern successor to which prior cataloguing code?",
+            options_hi: [
+                "CCC (Classified Catalogue Code)",
+                "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)",
+                "कटर की RDC",
+                "पनिजी के 91 नियम"
+            ],
+            options_en: [
+                "CCC (Classified Catalogue Code)",
+                "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)",
+                "Cutter's RDC",
+                "Panizzi's 91 Rules"
+            ],
+            correct: 1,
+            exp_hi: "RDA वर्ष 2010 में प्रकाशित हुआ जो AACR-2 (1978) का प्रत्यक्ष उत्तराधिकारी है। यह डिजिटल युग में मेटाडेटा निर्माण हेतु IFLA के FRBR (Functional Requirements for Bibliographic Records) मॉडल पर आधारित है।",
+            exp_en: "RDA was published in 2010 as the direct successor to AACR-2. Designed for the digital networked environment, it is grounded in IFLA's FRBR entity-relationship conceptual model."
+        },
+        {
+            id: 7,
+            q_hi: "IFLA के FRBR वैचारिक मॉडल में 'WEMI' समूह-1 संस्थाओं का सही पदानुक्रम क्या है?",
+            q_en: "What is the correct hierarchical order of Group 1 entities in IFLA's FRBR model (WEMI)?",
+            options_hi: [
+                "Work -> Expression -> Manifestation -> Item",
+                "Work -> Manifestation -> Expression -> Item",
+                "Item -> Manifestation -> Expression -> Work",
+                "Expression -> Work -> Manifestation -> Item"
+            ],
+            options_en: [
+                "Work -> Expression -> Manifestation -> Item",
+                "Work -> Manifestation -> Expression -> Item",
+                "Item -> Manifestation -> Expression -> Work",
+                "Expression -> Work -> Manifestation -> Item"
+            ],
+            correct: 0,
+            exp_hi: "FRBR में बौद्धिक एवं कलात्मक कृतियों को 4 स्तरों पर परिभाषित किया गया है (WEMI): Work (बौद्धिक कृति का अमूर्त विचार) -> Expression (भाषा या लिपि में अभिव्यक्ति) -> Manifestation (भौतिक रूप/संस्करण) -> Item (पुस्तकालय में रखी गई वास्तविक एक प्रति)।",
+            exp_en: "The FRBR Group 1 entities follow the strict hierarchy: Work (distinct intellectual creation) -> Expression (realization of a work) -> Manifestation (physical embodiment) -> Item (single exemplar of a manifestation)."
+        },
+        {
+            id: 8,
+            q_hi: "मशीन-पठनीय सूचीकरण (MARC-21) में टैग '245' (Tag 245) किस ग्रंथपरक विवरण के लिए आरक्षित है?",
+            q_en: "In the MARC-21 bibliographic format, Tag 245 is designated for which bibliographic information?",
+            options_hi: [
+                "ISBN (अंतरराष्ट्रीय मानक पुस्तक संख्या)",
+                "व्यक्तिगत मुख्य प्रविष्टि (Main Entry - Personal Author)",
+                "आख्या एवं उत्तरदायित्व कथन (Title Statement)",
+                "विषय शीर्षक (Subject Heading)"
+            ],
+            options_en: [
+                "ISBN (Tag 020)",
+                "Main Entry - Personal Name (Tag 100)",
+                "Title Statement (Title and Statement of Responsibility)",
+                "Subject Added Entry - Topical Term (Tag 650)"
+            ],
+            correct: 2,
+            exp_hi: "MARC-21 में Tag 245 'Title Statement' (आख्या, उप-आख्या तथा लेखक/उत्तरदायित्व कथन) के लिए प्रयुक्त होता है। Tag 020=ISBN, Tag 100=व्यक्तिगत लेखक, Tag 260/264=प्रकाशन विवरण, Tag 650=विषय शीर्षक।",
+            exp_en: "Tag 245 in MARC-21 stores the Title Statement ($a Title, $b Subtitle, $c Statement of Responsibility). Other key tags include 020 for ISBN, 100 for Author, and 650 for Topical Subject."
+        },
+        {
+            id: 9,
+            q_hi: "MARC-21 में अंतरराष्ट्रीय मानक पुस्तक संख्या (ISBN) दर्ज करने हेतु किस चर फ़ील्ड टैग (Variable Field Tag) का उपयोग किया जाता है?",
+            q_en: "Which variable field tag is utilized in MARC-21 to record the International Standard Book Number (ISBN)?",
+            options_hi: [
+                "Tag 020",
+                "Tag 022",
+                "Tag 082",
+                "Tag 300"
+            ],
+            options_en: [
+                "Tag 020",
+                "Tag 022 (ISSN)",
+                "Tag 082 (DDC Number)",
+                "Tag 300 (Physical Description)"
+            ],
+            correct: 0,
+            exp_hi: "MARC-21 में Tag 020 का उपयोग ISBN (पुस्तक) तथा Tag 022 का उपयोग ISSN (पत्रिका) दर्ज करने हेतु किया जाता है। Tag 082 डेवी दशमलव वर्गीकरण संख्या (DDC) के लिए है।",
+            exp_en: "Tag 020 in MARC-21 is dedicated to ISBN. Tag 022 is for ISSN, Tag 082 records DDC numbers, and Tag 300 records physical description/collation."
+        },
+        {
+            id: 10,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा 1938 में अपनी पुस्तक 'थ्योरी ऑफ लाइब्रेरी कैटलॉग' में किस विषय अनुक्रमणीकरण पद्धति का आविष्कार किया गया था?",
+            q_en: "Which subject indexing method was invented by Dr. S.R. Ranganathan in 1938 in his book 'Theory of Library Catalogue'?",
+            options_hi: [
+                "प्रेसी (PRECIS)",
+                "पॉपसी (POPSI)",
+                "शृंखला अनुक्रमणीकरण (Chain Indexing)",
+                "क्विक (KWIC)"
+            ],
+            options_en: [
+                "PRECIS",
+                "POPSI",
+                "Chain Indexing / Chain Procedure",
+                "KWIC"
+            ],
+            correct: 2,
+            exp_hi: "डॉ. रंगनाथन ने 1938 में 'Chain Indexing' (शृंखला प्रक्रिया) का आविष्कार किया, जिसमें ग्रंथ की वर्ग संख्या (Class Number) की कड़ियों का विश्लेषण करके विषय प्रविष्टियां व्युत्पन्न की जाती हैं।",
+            exp_en: "Dr. S.R. Ranganathan developed Chain Indexing (Chain Procedure) in 1938, deriving alphabetized subject headings directly from the faceted links of a book's class number."
+        },
+        {
+            id: 11,
+            q_hi: "शृंखला अनुक्रमणीकरण (Chain Indexing) में वह कड़ी जिसके आधार पर उपयोगकर्ता सामान्यतः प्रलेख की खोज नहीं करता, क्या कहलाती है?",
+            q_en: "In Chain Indexing, a link under which a searcher is not expected to look for document is termed as:",
+            options_hi: [
+                "मिथ्या कड़ी (False Link)",
+                "अप्रार्थित कड़ी (Unsought Link)",
+                "प्रार्थित कड़ी (Sought Link)",
+                "लुप्त कड़ी (Missing Link)"
+            ],
+            options_en: [
+                "False Link",
+                "Unsought Link",
+                "Sought Link",
+                "Missing Link"
+            ],
+            correct: 1,
+            exp_hi: "शृंखला अनुक्रमणीकरण में 4 प्रकार की कड़ियां होती हैं: (1) Sought Link (प्रार्थित - जिससे पाठक खोजेगा), (2) Unsought Link (अप्रार्थित - जिस पर पाठक नहीं खोजेगा), (3) False Link (मिथ्या - जो योजक चिह्न या गैर-अर्थपूर्ण अंक हो), (4) Missing Link (लुप्त - जो श्रृंखला में छूट गई हो)।",
+            exp_en: "The 4 links in Chain Indexing are: Sought Link (substantive heading user seeks), Unsought Link (unlikely search point), False Link (connecting symbol without independent meaning), and Missing Link."
+        },
+        {
+            id: 12,
+            q_hi: "ब्रिटिश नेशनल बिब्लियोग्राफी (BNB) हेतु वर्ष 1974 में 'प्रेसी' (PRECIS) अनुक्रमणीकरण प्रणाली का विकास किसके द्वारा किया गया था?",
+            q_en: "By whom was the PRECIS (Preserved Context Index System) developed in 1974 for the British National Bibliography (BNB)?",
+            options_hi: [
+                "हंस पीटर लूह्न (H.P. Luhn)",
+                "डेरेक ऑस्टिन (Derek Austin)",
+                "गणेश भट्टाचार्य (Ganesh Bhattacharyya)",
+                "यूजीन गारफील्ड (Eugene Garfield)"
+            ],
+            options_en: [
+                "H.P. Luhn",
+                "Derek Austin",
+                "Ganesh Bhattacharyya",
+                "Eugene Garfield"
+            ],
+            correct: 1,
+            exp_hi: "PRECIS (Preserved Context Index System) का विकास डेरेक ऑस्टिन (Derek Austin) ने 1974 में BNB में शृंखला अनुक्रमणीकरण के स्थान पर कंप्यूटर-आधारित संदर्भ सूचकांक निर्माण हेतु किया था।",
+            exp_en: "Derek Austin devised PRECIS (Preserved Context Index System) in 1974 at the British Library to replace Chain Indexing in the computer-generated British National Bibliography (BNB)."
+        },
+        {
+            id: 13,
+            q_hi: "डीआरटीसी (DRTC), बेंगलुरु में वर्ष 1979 में 'पॉपसी' (POPSI - Postulate-based Permuted Subject Indexing) का विकास किसने किया था?",
+            q_en: "Who developed POPSI (Postulate-based Permuted Subject Indexing) at DRTC, Bangalore in 1979?",
+            options_hi: [
+                "डॉ. एस.आर. रंगनाथन",
+                "प्रो. गणेश भट्टाचार्य (G. Bhattacharyya)",
+                "ए. नीलगमेघन (A. Neelameghan)",
+                "पी.एन. कौला (P.N. Kaula)"
+            ],
+            options_en: [
+                "Dr. S.R. Ranganathan",
+                "Prof. Ganesh Bhattacharyya",
+                "A. Neelameghan",
+                "P.N. Kaula"
+            ],
+            correct: 1,
+            exp_hi: "POPSI का विकास प्रो. गणेश भट्टाचार्य ने 1979 में DRTC में किया। यह रंगनाथन के सामान्य सिद्धांतों एवं पक्षात्मक अभिधारणाओं (Discipline, Entity, Action, Property - DEAP) पर आधारित एक चक्रीय विषय अनुक्रमणीकरण पद्धति है।",
+            exp_en: "POPSI was formulated in 1979 by Prof. Ganesh Bhattacharyya at DRTC Bangalore. It is grounded on Ranganathan's postulates and categorizes concepts into DEAP (Discipline, Entity, Action, Property)."
+        },
+        {
+            id: 14,
+            q_hi: "कंप्यूटर-आधारित 'क्विक' (KWIC - KeyWord In Context) अनुक्रमणीकरण पद्धति का आविष्कार 1959 में किसने किया था?",
+            q_en: "Who invented the computer-generated KWIC (KeyWord In Context) indexing technique in 1959 at IBM?",
+            options_hi: [
+                "एच.पी. लूह्न (H.P. Luhn)",
+                "मोर्टिमर टॉबे (Mortimer Taube)",
+                "वाननेवर बुश (Vannevar Bush)",
+                "यूजीन गारफील्ड (Eugene Garfield)"
+            ],
+            options_en: [
+                "H.P. Luhn",
+                "Mortimer Taube",
+                "Vannevar Bush",
+                "Eugene Garfield"
+            ],
+            correct: 0,
+            exp_hi: "KWIC का आविष्कार आईबीएम (IBM) के वैज्ञानिक हंस पीटर लूह्न (H.P. Luhn) ने 1959 में किया था। इसमें कंप्यूटर आख्या (Title) के प्रत्येक महत्वपूर्ण कीवर्ड को वर्णमाला क्रम में केंद्र में रखकर चक्रीय अनुक्रमणिका बनाता है।",
+            exp_en: "KWIC was introduced in 1959 by Hans Peter Luhn at IBM. It extracts keywords from document titles and rotates them alphabetically into a fixed central column."
+        },
+        {
+            id: 15,
+            q_hi: "उद्धरण अनुक्रमणीकरण (Citation Indexing) के जनक के रूप में 'साइंस साइटेशन इंडेक्स' (SCI) की स्थापना 1964 में किसने की थी?",
+            q_en: "As the pioneer of Citation Indexing, who established the Science Citation Index (SCI) in 1964 at ISI?",
+            options_hi: [
+                "डेरेक डी सोला प्राइस (Derek de Solla Price)",
+                "यूजीन गारफील्ड (Eugene Garfield)",
+                "सैम्युअल सी. ब्रैडफोर्ड (S.C. Bradford)",
+                "अल्फ्रेड जे. लोटका (Alfred J. Lotka)"
+            ],
+            options_en: [
+                "Derek de Solla Price",
+                "Eugene Garfield",
+                "Samuel C. Bradford",
+                "Alfred J. Lotka"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. यूजीन गारफील्ड (Eugene Garfield) ने 1960 में इंस्टीट्यूट फॉर साइंटिफिक इंफॉर्मेशन (ISI) की स्थापना की तथा 1964 में विश्व का प्रथम 'साइंस साइटेशन इंडेक्स' (SCI) प्रकाशित किया।",
+            exp_en: "Dr. Eugene Garfield founded the Institute for Scientific Information (ISI) in 1960 and launched the ground-breaking Science Citation Index (SCI) in 1964, establishing citation indexing."
+        }
+    ];
+
+    // App State
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice'; // 'practice' or 'exam'
+    let currentLang = 'both';     // 'both', 'hi', or 'en'
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes in seconds
+
+    // Storage Key
+    const STORAGE_KEY = 'bihar_let_u3_2_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        // Explanation handling
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        // Nav buttons
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        // Review Button State
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return; // Prevent changing in practice once answered
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx); // Re-renders with explanation and colors
+        } else {
+            // Exam Mode: simply mark selection
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) {
+            loadQuestion(currentIdx + 1);
+        }
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) {
+            loadQuestion(currentIdx - 1);
+        }
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        // General qualifying mark is 50%
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    // Launch
+    window.onload = init;
+</script>
+</body>
+</html>

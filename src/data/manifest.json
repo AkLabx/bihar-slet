@@ -1,0 +1,342 @@
+[
+  {
+    "id": "unit_01",
+    "num": 1,
+    "dir": "Unit_01_Foundations_of_Library_Science",
+    "title_hi": "पुस्तकालय की नींव एवं समाज",
+    "title_en": "Foundations of Library Science",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "1.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 1.1: Types of Libraries, Functions & Objectives | पुस्तकालय के प्रकार, उनके कार्य व उद्देश्य",
+        "questionsCount": 10,
+        "jsonFile": "subunit_1_1_questions.json",
+        "noteFile": "1.1.md"
+      },
+      {
+        "subUnitNum": "1.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 1.2: Dr. S.R. Ranganathan & Five Laws | डॉ. रंगनाथन की जीवनी, योगदान एवं पाँच सूत्र",
+        "questionsCount": 15,
+        "jsonFile": "subunit_1_2_questions.json",
+        "noteFile": "1.2.md"
+      },
+      {
+        "subUnitNum": "1.3",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 1.3: Library Movement, Education & Legislation | पुस्तकालय आंदोलन, शिक्षा एवं अधिनियम",
+        "questionsCount": 15,
+        "jsonFile": "subunit_1_3_questions.json",
+        "noteFile": "1.3.md"
+      },
+      {
+        "subUnitNum": "1.4",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+        "questionsCount": 15,
+        "jsonFile": "subunit_1_4_questions.json",
+        "noteFile": "1.4.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_02",
+    "num": 2,
+    "dir": "Unit_02_Library_Management",
+    "title_hi": "पुस्तकालय प्रबंधन एवं संगठन",
+    "title_en": "Library Management",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "2.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 2.1: Collection Development & Acquisition | संग्रह विकास एवं अधिग्रहण प्रक्रिया",
+        "questionsCount": 15,
+        "jsonFile": "subunit_2_1_questions.json",
+        "noteFile": "2.1.md"
+      },
+      {
+        "subUnitNum": "2.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां",
+        "questionsCount": 15,
+        "jsonFile": "subunit_2_2_questions.json",
+        "noteFile": "2.2.md"
+      },
+      {
+        "subUnitNum": "2.3",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 2.3: Budgeting, Stock Verification & Weeding | बजट, भंडार सत्यापन एवं पुस्तक निरसन",
+        "questionsCount": 15,
+        "jsonFile": "subunit_2_3_questions.json",
+        "noteFile": "2.3.md"
+      },
+      {
+        "subUnitNum": "2.4",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 2.4: HRM, Staff Formula & TQM | मानव संसाधन, रंगनाथन स्टाफ फॉर्मूला एवं टीक्यूएम",
+        "questionsCount": 15,
+        "jsonFile": "subunit_2_4_questions.json",
+        "noteFile": "2.4.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_03",
+    "num": 3,
+    "dir": "Unit_03_Classification_and_Cataloguing",
+    "title_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "title_en": "Classification and Cataloguing",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "3.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 3.1: Classification Schemes (DDC, UDC, CC) | प्रमुख वर्गीकरण पद्धतियां एवं ज्ञान संगठन",
+        "questionsCount": 15,
+        "jsonFile": "subunit_3_1_questions.json",
+        "noteFile": "3.1.md"
+      },
+      {
+        "subUnitNum": "3.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+        "questionsCount": 15,
+        "jsonFile": "subunit_3_2_questions.json",
+        "noteFile": "3.2.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_04",
+    "num": 4,
+    "dir": "Unit_04_Reference_and_Information_Services",
+    "title_hi": "संदर्भ एवं सूचना सेवाएं",
+    "title_en": "Reference and Information Services",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "4.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत",
+        "questionsCount": 15,
+        "jsonFile": "subunit_4_1_questions.json",
+        "noteFile": "4.1.md"
+      },
+      {
+        "subUnitNum": "4.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+        "questionsCount": 15,
+        "jsonFile": "subunit_4_2_questions.json",
+        "noteFile": "4.2.md"
+      },
+      {
+        "subUnitNum": "4.3",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 4.3: Reference Services, CAS & SDI | संदर्भ सेवाएं, सामयिक अभिज्ञता सेवा एवं चयनित सूचना प्रसार",
+        "questionsCount": 15,
+        "jsonFile": "subunit_4_3_questions.json",
+        "noteFile": "4.3.md"
+      },
+      {
+        "subUnitNum": "4.4",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 4.4: DDS, ILL, User Education & PR | प्रलेख वितरण, अंतर-पुस्तकालय ऋण, उपयोगकर्ता शिक्षा एवं जनसंपर्क",
+        "questionsCount": 15,
+        "jsonFile": "subunit_4_4_questions.json",
+        "noteFile": "4.4.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_05",
+    "num": 5,
+    "dir": "Unit_05_IT_and_Library_Automation",
+    "title_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "title_en": "IT and Library Automation",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "5.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 5.1: Library Automation Software | पुस्तकालय स्वचालन, कोहा (KOHA), सोल (SOUL), ई-ग्रंथालय एवं CDS/ISIS",
+        "questionsCount": 15,
+        "jsonFile": "subunit_5_1_questions.json",
+        "noteFile": "5.1.md"
+      },
+      {
+        "subUnitNum": "5.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 5.2: Barcode & RFID Technology | बारकोड, आरएफआईडी (13.56 MHz), स्मार्ट गेट्स एवं कियोस्क",
+        "questionsCount": 15,
+        "jsonFile": "subunit_5_2_questions.json",
+        "noteFile": "5.2.md"
+      },
+      {
+        "subUnitNum": "5.3",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 5.3: Digital Libraries & Repositories | डिजिटल पुस्तकालय, डीस्पेस, शोधगंगा, NDLI एवं डबलिन कोर",
+        "questionsCount": 15,
+        "jsonFile": "subunit_5_3_questions.json",
+        "noteFile": "5.3.md"
+      },
+      {
+        "subUnitNum": "5.4",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+        "questionsCount": 15,
+        "jsonFile": "subunit_5_4_questions.json",
+        "noteFile": "5.4.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_06",
+    "num": 6,
+    "dir": "Unit_06_Information_Science_and_Standards",
+    "title_hi": "सूचना विज्ञान, शोध एवं मानक",
+    "title_en": "Information Science and Standards",
+    "part": 1,
+    "subUnits": [
+      {
+        "subUnitNum": "6.1",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 6.1: Bibliometrics & Research Metrics | ग्रंथमिति के नियम (Bradford, Lotka, Zipf), h-index एवं Impact Factor",
+        "questionsCount": 15,
+        "jsonFile": "subunit_6_1_questions.json",
+        "noteFile": "6.1.md"
+      },
+      {
+        "subUnitNum": "6.2",
+        "title_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+        "title_en": "Unit 6.2: Standards, Copyright, IPR & Ethics | ISBN, ISSN, कॉपीराइट अधिनियम 1957, IPR एवं आचार संहिता",
+        "questionsCount": 15,
+        "jsonFile": "subunit_6_2_questions.json",
+        "noteFile": "6.2.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_07",
+    "num": 7,
+    "dir": "Unit_07_Bihar_GK_History_and_Culture",
+    "title_hi": "बिहार विशेष: इतिहास, भूगोल, कला व आंदोलन",
+    "title_en": "Bihar GK: History, Geography and Culture",
+    "part": 2,
+    "subUnits": [
+      {
+        "subUnitNum": "7.1",
+        "title_hi": "इकाई 7.1: बिहार का इतिहास एवं राष्ट्रीय आंदोलन",
+        "title_en": "Unit 7.1 Quiz: History of Bihar & Contribution to National Movement | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_7_1_questions.json",
+        "noteFile": "7.1.md"
+      },
+      {
+        "subUnitNum": "7.2",
+        "title_hi": "इकाई 7.2: बिहार का भूगोल, नदियां, खनिज एवं जनगणना",
+        "title_en": "Unit 7.2 Quiz: Geography, Rivers, Minerals & Census 2011 | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_7_2_questions.json",
+        "noteFile": "7.2.md"
+      },
+      {
+        "subUnitNum": "7.3",
+        "title_hi": "इकाई 7.3: बिहार की कला, संस्कृति, मेले एवं प्रमुख व्यक्तित्व",
+        "title_en": "Unit 7.3 Quiz: Art, Culture, Fairs, Festivals & Famous Personalities | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_7_3_questions.json",
+        "noteFile": "7.3.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_08",
+    "num": 8,
+    "dir": "Unit_08_Polity_Science_and_Current_Affairs",
+    "title_hi": "भारतीय राजव्यवस्था, विज्ञान एवं समसामयिकी",
+    "title_en": "Polity, Science and Current Affairs",
+    "part": 2,
+    "subUnits": [
+      {
+        "subUnitNum": "8.1",
+        "title_hi": "इकाई 8.1: भारतीय संविधान, राजव्यवस्था एवं पंचायती राज",
+        "title_en": "Unit 8.1 Quiz: Indian Polity, Constitution & Panchayati Raj | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_8_1_questions.json",
+        "noteFile": "8.1.md"
+      },
+      {
+        "subUnitNum": "8.2",
+        "title_hi": "इकाई 8.2: सामान्य विज्ञान एवं पर्यावरण",
+        "title_en": "Unit 8.2 Quiz: General Science & Environmental Ecology | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_8_2_questions.json",
+        "noteFile": "8.2.md"
+      },
+      {
+        "subUnitNum": "8.3",
+        "title_hi": "इकाई 8.3: समसामयिकी एवं प्रमुख सरकारी योजनाएं",
+        "title_en": "Unit 8.3 Quiz: Current Affairs, Flagship Govt Schemes & Awards | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_8_3_questions.json",
+        "noteFile": "8.3.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_09",
+    "num": 9,
+    "dir": "Unit_09_Basic_Computer_Knowledge",
+    "title_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "title_en": "Basic Computer Knowledge",
+    "part": 2,
+    "subUnits": [
+      {
+        "subUnitNum": "9.1",
+        "title_hi": "इकाई 9.1: कंप्यूटर संरचना, पीढ़ियां एवं मेमोरी",
+        "title_en": "Unit 9.1 Quiz: Computer Hardware, Architecture & Memory | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_9_1_questions.json",
+        "noteFile": "9.1.md"
+      },
+      {
+        "subUnitNum": "9.2",
+        "title_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+        "title_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_9_2_questions.json",
+        "noteFile": "9.2.md"
+      }
+    ]
+  },
+  {
+    "id": "unit_10",
+    "num": 10,
+    "dir": "Unit_10_Reasoning_and_Mental_Ability",
+    "title_hi": "तार्किक क्षमता एवं मानसिक योग्यता",
+    "title_en": "Reasoning and Mental Ability",
+    "part": 2,
+    "subUnits": [
+      {
+        "subUnitNum": "10.1",
+        "title_hi": "इकाई 10.1: मौखिक तर्कशक्ति (Verbal Reasoning)",
+        "title_en": "Unit 10.1 Quiz: Series, Coding, Blood Relations, Direction & Ranking | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_10_1_questions.json",
+        "noteFile": "10.1.md"
+      },
+      {
+        "subUnitNum": "10.2",
+        "title_hi": "इकाई 10.2: विश्लेषणात्मक एवं गैर-मौखिक तर्कशक्ति",
+        "title_en": "Unit 10.2 Quiz: Syllogism, Venn Diagrams, Math Operations & Non-Verbal | Bihar Librarian 2026",
+        "questionsCount": 15,
+        "jsonFile": "subunit_10_2_questions.json",
+        "noteFile": "10.2.md"
+      }
+    ]
+  }
+]

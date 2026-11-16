@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2.3 Quiz: Budgeting, Stock Verification & Weeding | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 2.3: Budgeting, Stock Verification & Weeding | बजट, भंडार सत्यापन एवं पुस्तक निरसन</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_2.3_Budgeting_and_Stock_Verification.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 2.3: Budgeting & Verification</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "शून्य-आधारित बजट (Zero-Based Budgeting - ZBB) की अवधारणा 1970 में किसके द्वारा प्रतिपादित की गई थी?",
+            q_en: "Who conceptualized and introduced Zero-Based Budgeting (ZBB) in 1970?",
+            options_hi: [
+                "पीटर ए. पायर (Peter A. Pyhrr)",
+                "रॉबर्ट मैकनामारा (Robert McNamara)",
+                "एफ.डब्ल्यू. टेलर",
+                "डॉ. एस.आर. रंगनाथन"
+            ],
+            options_en: [
+                "Peter A. Pyhrr",
+                "Robert McNamara",
+                "F.W. Taylor",
+                "Dr. S.R. Ranganathan"
+            ],
+            correct: 0,
+            exp_hi: "शून्य-आधारित बजट (ZBB) का विकास पीटर ए. पायर (Peter A. Pyhrr) ने 1970 में टेक्सास इंस्ट्रूमेंट्स (USA) में किया था। इसमें प्रत्येक वर्ष व्यय की शुरुआत शून्य से मानी जाती है।",
+            exp_en: "Zero-Based Budgeting (ZBB) was developed by Peter A. Pyhrr in 1970 at Texas Instruments. It requires every program to justify its entire budget from scratch (ground zero)."
+        },
+        {
+            id: 2,
+            q_hi: "पीपीबीएस (Planning Programming Budgeting System - PPBS) का विकास 1961 में किसके द्वारा किया गया था?",
+            q_en: "The Planning Programming Budgeting System (PPBS) was developed in 1961 by:",
+            options_hi: [
+                "पीटर पायर",
+                "रॉबर्ट मैकनामारा (Robert McNamara)",
+                "लूथर गुलिक",
+                "हेनरी फेयोल"
+            ],
+            options_en: [
+                "Peter Pyhrr",
+                "Robert McNamara",
+                "Luther Gulick",
+                "Henri Fayol"
+            ],
+            correct: 1,
+            exp_hi: "अमेरिकी रक्षा विभाग में रॉबर्ट मैकनामारा (Robert McNamara) ने रैंड कॉर्पोरेशन के सहयोग से 1961 में PPBS का विकास किया था। यह नियोजन, प्रोग्रामिंग और बजट को एकीकृत करता है।",
+            exp_en: "PPBS was pioneered in 1961 by Robert McNamara, US Secretary of Defense, in conjunction with the Rand Corporation to integrate planning, programming, and budgeting."
+        },
+        {
+            id: 3,
+            q_hi: "भारत सरकार के सामान्य वित्तीय नियम (GFR 2017, नियम 215) के अनुसार पुस्तकालयों में प्रतिवर्ष कितनी पुस्तक हानि उचित व स्वीकार्य मानी गई है?",
+            q_en: "According to the General Financial Rules (GFR 2017, Rule 215) of the Government of India, what proportion of book loss is considered reasonable in a library?",
+            options_hi: [
+                "प्रति 1,000 निर्गमित/परामर्शित पुस्तकों पर 3 पुस्तकें",
+                "प्रति 1,000 निर्गमित/परामर्शित पुस्तकों पर 5 पुस्तकें",
+                "प्रति 10,000 पुस्तकों पर 10 पुस्तकें",
+                "कुल संग्रह का 2 प्रतिशत"
+            ],
+            options_en: [
+                "3 volumes per 1,000 volumes issued/consulted",
+                "5 volumes per 1,000 volumes issued/consulted",
+                "10 volumes per 10,000 volumes",
+                "2 percent of total collection"
+            ],
+            correct: 1,
+            exp_hi: "GFR 2017 के नियम 215 (पूर्ववर्ती GFR 2005 का नियम 194) के अनुसार, वर्ष में जारी या परामर्शित की गई प्रत्येक 1,000 पुस्तकों पर 5 पुस्तकों की हानि (5 volumes per 1,000) को उचित माना जाता है।",
+            exp_en: "Under Rule 215 of GFR 2017 (Government of India), loss of five volumes per 1,000 volumes of books issued or consulted in a year may be taken as reasonable and written off."
+        },
+        {
+            id: 4,
+            q_hi: "पुस्तकालय में भंडार सत्यापन (Stock Verification) करने की सर्वाधिक वैज्ञानिक, सुविधाजनक एवं मानक विधि कौन-सी मानी जाती है?",
+            q_en: "Which is considered the most scientific, convenient, and standard method for conducting Stock Verification in a library?",
+            options_hi: [
+                "परिग्रहण पंजिका द्वारा (By Accession Register)",
+                "शेल्फ सूची कार्ड द्वारा (By Shelf List Cards)",
+                "संख्यात्मक गणना द्वारा (By Numerical Counting)",
+                "वार्षिक निर्गम रजिस्टर द्वारा (By Issue Register)"
+            ],
+            options_en: [
+                "By Accession Register",
+                "By Shelf List Cards",
+                "By Numerical Counting",
+                "By Issue Register"
+            ],
+            correct: 1,
+            exp_hi: "शेल्फ सूची कार्ड (Shelf List Cards) द्वारा भंडार सत्यापन सबसे वैज्ञानिक विधि है, क्योंकि शेल्फ लिस्ट में कार्ड्स ठीक उसी क्रम में लगे होते हैं जिस क्रम में पुस्तकें अलमारियों में सजी होती हैं (Classified Order)।",
+            exp_en: "Stock verification by Shelf List Cards is the most standard and practical method because shelf list cards are arranged in the exact classified sequence of the books on the shelves."
+        },
+        {
+            id: 5,
+            q_hi: "पुस्तकालय से अप्रचलित, जीर्ण-शीर्ण और अनुपयोगी पुस्तकों को स्थायी रूप से हटाने (Weeding Out) का दार्शनिक आधार कौन-सा सूत्र है?",
+            q_en: "Which Law of Library Science provides the primary philosophical rationale for 'Weeding Out' obsolete and unserviceable books?",
+            options_hi: [
+                "प्रथम सूत्र",
+                "द्वितीय सूत्र",
+                "चतुर्थ सूत्र",
+                "पंचम सूत्र (पुस्तकालय एक वर्धनशील संस्था है)"
+            ],
+            options_en: [
+                "First Law",
+                "Second Law",
+                "Fourth Law",
+                "Fifth Law (Library is a growing organism)"
+            ],
+            correct: 3,
+            exp_hi: "पंचम सूत्र 'पुस्तकालय एक वर्धनशील संस्था है' (Growing Organism) कहता है कि जिस प्रकार जीवित शरीर में स्वस्थ रहने हेतु मृत कोशिकाओं का निष्कासन अनिवार्य है, उसी प्रकार पुस्तकालय में छंटाई (Weeding Out) अनिवार्य है।",
+            exp_en: "The Fifth Law ('Library is a Growing Organism') justifies weeding out. Just as a biological organism sheds obsolete cells to sustain life, a library must discard dead material to thrive."
+        },
+        {
+            id: 6,
+            q_hi: "पुस्तक छंटाई / निरसन की 'CREW विधि' के अंतर्गत प्रयुक्त 'MUSTIE' सूत्र में 'S' और 'U' का क्या अर्थ है?",
+            q_en: "In the 'MUSTIE' formula of the CREW method for weeding out library materials, what do 'S' and 'U' stand for?",
+            options_hi: [
+                "S = Simple, U = Useful",
+                "S = Superseded (प्रतिस्थापित), U = Ugly (जीर्ण-शीर्ण)",
+                "S = Standard, U = Unused",
+                "S = Scientific, U = Universal"
+            ],
+            options_en: [
+                "S = Simple, U = Useful",
+                "S = Superseded, U = Ugly",
+                "S = Standard, U = Unused",
+                "S = Scientific, U = Universal"
+            ],
+            correct: 1,
+            exp_hi: "MUSTIE में: M = Misleading (भ्रामक), U = Ugly (जर्जर/जीर्ण-शीर्ण), S = Superseded (नए संस्करण द्वारा प्रतिस्थापित), T = Trivial, I = Irrelevant, E = Elsewhere available।",
+            exp_en: "In the MUSTIE criteria: M = Misleading, U = Ugly (worn out), S = Superseded (by a new edition), T = Trivial, I = Irrelevant, and E = Elsewhere available."
+        },
+        {
+            id: 7,
+            q_hi: "डॉ. एस.आर. रंगनाथन के अनुसार खुली पहुंच प्रणाली (Open Access) में प्रति 1,000 निर्गमित पुस्तकों पर कितनी पुस्तक हानि को स्वाभाविक माना जाना चाहिए?",
+            q_en: "According to Dr. S.R. Ranganathan, what proportion of book loss is considered normal and acceptable per 1,000 volumes issued in open access?",
+            options_hi: [
+                "1 पुस्तक",
+                "3 पुस्तकें (3 volumes per 1,000 issued)",
+                "5 पुस्तकें",
+                "10 पुस्तकें"
+            ],
+            options_en: [
+                "1 volume",
+                "3 volumes per 1,000 issued",
+                "5 volumes",
+                "10 volumes"
+            ],
+            correct: 1,
+            exp_hi: "डॉ. रंगनाथन ने सिफारिश की थी कि खुली पहुंच प्रणाली में प्रति 1,000 निर्गमित पुस्तकों पर 3 पुस्तकों की हानि स्वाभाविक मानी जानी चाहिए और पुस्तकालयाध्यक्ष को इसके लिए व्यक्तिगत रूप से उत्तरदायी नहीं ठहराया जाना चाहिए।",
+            exp_en: "Dr. S.R. Ranganathan recommended that a loss of 3 volumes for every 1,000 volumes issued is normal in an open-access library, and the librarian should not be penalized for it."
+        },
+        {
+            id: 8,
+            q_hi: "वह बजट पद्धति जिसमें किसी भी पूर्व खर्च को स्वतः मान्यता नहीं दी जाती और प्रत्येक मद को 'निर्णय पैकेज' (Decision Package) द्वारा नए सिरे से सिद्ध करना होता है, क्या कहलाती है?",
+            q_en: "The budgeting method where past expenditures are not automatically renewed and every item must be freshly justified using 'Decision Packages' is called:",
+            options_hi: [
+                "लाइन-आइटम बजट",
+                "शून्य-आधारित बजट (ZBB)",
+                "सूत्र बजट",
+                "ऐतिहासिक बजट"
+            ],
+            options_en: [
+                "Line-Item Budget",
+                "Zero-Based Budget (ZBB)",
+                "Formula Budget",
+                "Historical Budget"
+            ],
+            correct: 1,
+            exp_hi: "शून्य-आधारित बजट (ZBB) में प्रत्येक विभाग को गतिविधियों के 'डिसीजन पैकेज' तैयार करने होते हैं, जिनकी लागत-लाभ के आधार पर रैंकिंग की जाती है और शून्य से बजट स्वीकृत होता है।",
+            exp_en: "Zero-Based Budgeting (ZBB) relies on formulating and ranking 'Decision Packages', forcing administrators to justify every single dollar requested from ground zero."
+        },
+        {
+            id: 9,
+            q_hi: "पुस्तकालय भवन निर्माण, नए विस्तार और महंगे उपकरणों की खरीद हेतु प्रदान किया जाने वाला एकमुश्त अनुदान किस श्रेणी में आता है?",
+            q_en: "A one-time grant allocated for constructing a library building, expansion, or purchasing heavy equipment falls under which category?",
+            options_hi: [
+                "आवर्ती अनुदान (Recurring Grant)",
+                "अनावर्ती / पूंजीगत अनुदान (Non-recurring / Capital Grant)",
+                "तदर्थ अनुदान (Ad-hoc Grant)",
+                "रखरखाव अनुदान (Maintenance Grant)"
+            ],
+            options_en: [
+                "Recurring Grant",
+                "Non-recurring / Capital Grant",
+                "Ad-hoc Grant",
+                "Maintenance Grant"
+            ],
+            correct: 1,
+            exp_hi: "स्थायी संपत्तियों जैसे भवन, फर्नीचर व कंप्यूटर सर्वर हेतु दिया जाने वाला अनुदान 'अनावर्ती या पूंजीगत अनुदान' (Non-recurring / Capital Grant) कहलाता है, जबकि वेतन व पत्रिकाओं के लिए आवर्ती (Recurring) अनुदान होता है।",
+            exp_en: "One-time allocations for durable infrastructural assets like buildings, furniture, and heavy machinery are classified as Non-recurring or Capital Grants."
+        },
+        {
+            id: 10,
+            q_hi: "कोठारी आयोग (1964–66) ने किसी विश्वविद्यालय के कुल बजट का कितना प्रतिशत हिस्सा पुस्तकालय पर व्यय करने की सिफारिश की थी?",
+            q_en: "What percentage of a university's total academic budget was recommended by the Kothari Commission (1964–66) to be spent on its library?",
+            options_hi: [
+                "3% से 5%",
+                "6.5% से 10%",
+                "12% से 15%",
+                "15% से 20%"
+            ],
+            options_en: [
+                "3% to 5%",
+                "6.5% to 10%",
+                "12% to 15%",
+                "15% to 20%"
+            ],
+            correct: 1,
+            exp_hi: "राष्ट्रीय शिक्षा आयोग (कोठारी आयोग, 1964–66) ने विश्वविद्यालय के कुल बजट का 6.5% से 10% हिस्सा पुस्तकालय के विकास पर व्यय करने की स्पष्ट सिफारिश की थी।",
+            exp_en: "The Kothari Commission (1964–66) recommended that 6.5% to 10% of a university's total operational budget should be devoted to library development."
+        },
+        {
+            id: 11,
+            q_hi: "वह बजट पद्धति जो इनपुट (खर्च होने वाली राशि) के स्थान पर वास्तविक गतिविधियों, कार्यों और अंतिम परिणामों (Outcomes) के मापन पर आधारित होती है, क्या कहलाती है?",
+            q_en: "The budgeting method that focuses on measuring actual activities, functions, and outcomes rather than inputs is known as:",
+            options_hi: [
+                "मद-वार बजट (Line-Item Budget)",
+                "निष्पादन बजट (Performance Budgeting)",
+                "ऐतिहासिक बजट",
+                "शून्य बजट"
+            ],
+            options_en: [
+                "Line-Item Budget",
+                "Performance Budgeting",
+                "Historical Budget",
+                "Zero Budget"
+            ],
+            correct: 1,
+            exp_hi: "निष्पादन बजट (Performance Budgeting) हूवर आयोग (USA, 1949) द्वारा प्रतिपादित किया गया था। यह यह देखता है कि आवंटित धन से क्या कार्य संपन्न हुआ (What was accomplished with the money spent)।",
+            exp_en: "Performance Budgeting, recommended by the First Hoover Commission (1949), emphasizes work programs, operational performance, and measurable output over line-item accounting."
+        },
+        {
+            id: 12,
+            q_hi: "पुस्तकालय में 'शेल्फ लिस्ट' (Shelf List) का प्राथमिक और प्रमुख उपयोग क्या होता है?",
+            q_en: "What is the primary and indispensable administrative use of a 'Shelf List' in a library?",
+            options_hi: [
+                "पाठकों द्वारा पुस्तकों की खोज करना",
+                "भंडार सत्यापन (Stock Verification) और वर्गीकरण क्रम की जांच करना",
+                "प्रकाशकों को भुगतान करना",
+                "पुस्तकों की जिल्दसाजी तय करना"
+            ],
+            options_en: [
+                "Searching by general readers",
+                "Stock Verification and checking classified shelf order",
+                "Paying publishers",
+                "Determining book binding"
+            ],
+            correct: 1,
+            exp_hi: "शेल्फ लिस्ट केवल पुस्तकालय कर्मचारियों के आंतरिक उपयोग हेतु होती है। इसका मुख्य कार्य भंडार सत्यापन (Stock Verification) करना और अलमारियों में कॉल नंबर क्रम का सटीक मिलान करना है।",
+            exp_en: "The Shelf List is an internal staff tool arranged strictly by call numbers, used indispensably for stock verification and maintaining shelf arrangement order."
+        },
+        {
+            id: 13,
+            q_hi: "हैंडहेल्ड आरएफआईडी रीडर (Handheld RFID Reader) द्वारा भंडार सत्यापन का सबसे बड़ा लाभ क्या है?",
+            q_en: "What is the biggest operational advantage of conducting stock verification using a Handheld RFID Reader?",
+            options_hi: [
+                "पुस्तकों को अलमारी से बिना उतारे केवल स्कैनर घुमाकर सेकंडों में शेल्फ का ऑडिट हो जाता है",
+                "इससे पुस्तकों का मूल्य बढ़ जाता है",
+                "इसके लिए बिजली की आवश्यकता नहीं होती",
+                "यह केवल पांडुलिपियों के लिए उपयोगी है"
+            ],
+            options_en: [
+                "Shelves are audited in seconds by sweeping the wand without removing books from shelves",
+                "It increases book value",
+                "It requires no electric power",
+                "It is only useful for manuscripts"
+            ],
+            correct: 0,
+            exp_hi: "आरएफआईडी भंडार सत्यापन में पुस्तकों को छूने या बाहर निकालने की आवश्यकता नहीं होती; स्कैनर को शेल्फ पर घुमाते ही रेडियो तरंगों द्वारा पुस्तकें स्कैन हो जाती हैं और गायब/गलत रखी पुस्तकों की सूची तुरंत बन जाती है।",
+            exp_en: "RFID wand scanning enables rapid inventory taking without pulling books off shelves; line-of-sight is not required, detecting missing or misplaced titles automatically."
+        },
+        {
+            id: 14,
+            q_hi: "पुस्तकालय में दुर्लभ (Rare), ऐतिहासिक एवं हस्तलिखित पांडुलिपियों के खो जाने पर सामान्य वित्तीय नियमों का क्या स्पष्ट प्रावधान है?",
+            q_en: "What is the explicit provision in government financial rules regarding the loss of rare, historical, or manuscript materials in a library?",
+            options_hi: [
+                "उन्हें सामान्य 5 प्रति 1000 हानि के अंतर्गत स्वतः अपलिखित (Write off) कर दिया जाता है",
+                "उनकी हानि को सामान्य नहीं माना जा सकता; विशेष जांच (Special Investigation) अनिवार्य है",
+                "पुस्तकालयाध्यक्ष के वेतन से 10 गुना कटौती की जाती है",
+                "संबंधित थाने में FIR दर्ज नहीं की जा सकती"
+            ],
+            options_en: [
+                "They are automatically written off under the 5 per 1,000 threshold",
+                "Loss cannot be treated as routine; a special formal investigation is mandatory",
+                "Ten times the cost is deducted from the librarian's salary",
+                "No FIR can be filed"
+            ],
+            correct: 1,
+            exp_hi: "GFR 2017 स्पष्ट करता है कि दुर्लभ और बहुमूल्य पुस्तकों की हानि को सामान्य पुस्तक हानि (5 प्रति 1000) में नहीं माना जा सकता; ऐसी किसी भी हानि के लिए सक्षम प्राधिकारी द्वारा विशेष जांच बैठाई जानी चाहिए।",
+            exp_en: "GFR rules strictly mandate that losses of rare, valuable, or irreplaceable books and manuscripts cannot be routinely written off; a formal, high-level inquiry is mandatory."
+        },
+        {
+            id: 15,
+            q_hi: "परंपरागत 'मद-वार या वर्द्धमान बजट' (Line-Item Budget) की सबसे बड़ी कमजोरी क्या मानी जाती है?",
+            q_en: "What is considered the biggest operational flaw of the traditional Line-Item / Incremental Budget?",
+            options_hi: [
+                "यह बहुत जटिल और गणितीय होता है",
+                "यह पूर्व के खर्चों की उपयोगिता का मूल्यांकन नहीं करता और अप्रचलित खर्च निरंतर जारी रहते हैं",
+                "इसे लेखा परीक्षकों (Auditors) द्वारा समझा नहीं जा सकता",
+                "यह केवल कंप्यूटर पर ही तैयार किया जा सकता है"
+            ],
+            options_en: [
+                "It is excessively complex and mathematical",
+                "It fails to evaluate the efficacy of past expenditures, allowing obsolete expenses to persist",
+                "It cannot be audited by official auditors",
+                "It can only be produced on computers"
+            ],
+            correct: 1,
+            exp_hi: "मद-वार बजट केवल पिछले वर्ष के आंकड़ों में 5-10% वृद्धि कर देता है, जिससे यह पता नहीं चलता कि खर्च किया गया पैसा वास्तव में उपयोगी रहा या नहीं। परिणामस्वरूप अनुपयोगी व्यय भी वर्षों तक खिंचते रहते हैं।",
+            exp_en: "Incremental budgeting merely adds a flat percentage to previous allocations without questioning their ongoing relevance, entrenching unproductive programs indefinitely."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60;
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_2_3_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

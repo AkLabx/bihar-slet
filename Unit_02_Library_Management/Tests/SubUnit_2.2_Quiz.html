@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2.2 Quiz: Circulation Systems (Browne & Newark) | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .switch-group span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .pill-tabs {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .pill-tab {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+
+        .pill-tab.active {
+            background: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .timer-badge {
+            font-family: monospace;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .palette-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .palette-box h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.marked {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .pal-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            border: 4px solid var(--primary);
+        }
+
+        .score-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-total {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            border-radius: 8px;
+        }
+
+        .stat-val {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 2.2: Circulation Systems (Browne & Newark) | परिसंचरण तंत्र — चार्जिंग व डिस्चार्जिंग विधियां</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_2.2_Circulation_Systems.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="test-layout" id="quiz-workspace">
+        <div class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न / Question <span id="current-q-num">1</span> of 15</span>
+                <span id="q-status-badge">1 अंक (1 Mark)</span>
+            </div>
+
+            <div class="q-text-hi" id="question-text-hi"></div>
+            <div class="q-text-en" id="question-text-en"></div>
+
+            <div class="options-list" id="options-container"></div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 उत्तर एवं विस्तृत व्याख्या (Answer & Detailed Explanation):</h4>
+                <div id="explanation-text"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅ पिछला (Prev)</button>
+                <button class="btn btn-review" id="mark-btn" onclick="toggleMarkReview()">🔖 समीक्षा हेतु चिह्नित (Mark)</button>
+                <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡</button>
+                <button class="btn btn-success" id="submit-btn" style="display: none;" onclick="submitExam()">✅ परीक्षा सबमिट करें (Submit)</button>
+            </div>
+        </div>
+
+        <div class="palette-box">
+            <h3>प्रश्न पैलेट (Question Palette)</h3>
+            <div class="palette-grid" id="palette-grid"></div>
+
+            <div class="pal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--success);"></div>
+                    <span>उत्तर दिया (Answered)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--review-btn);"></div>
+                    <span>समीक्षा हेतु चिह्नित (Marked)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                    <span>छोड़ा गया (Unattempted)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड पर लौटें (Return to Portal)</a>
+        <span>Bilingual Test Series | Unit 2.2: Circulation Systems</span>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "ब्राउन परिसंचरण प्रणाली (Browne Charging System) का आविष्कार 1895 में किस अमेरिकी पुस्तकालयाध्यक्ष द्वारा किया गया था?",
+            q_en: "The Browne Charging System was invented in 1895 by which American librarian?",
+            options_hi: [
+                "नीना ई. ब्राउन (Nina E. Browne)",
+                "जॉन कॉटन डाना (John Cotton Dana)",
+                "राल्फ शॉ (Ralph Shaw)",
+                "मेल्विल डेवी"
+            ],
+            options_en: [
+                "Nina E. Browne",
+                "John Cotton Dana",
+                "Ralph Shaw",
+                "Melvil Dewey"
+            ],
+            correct: 0,
+            exp_hi: "ब्राउन प्रणाली का आविष्कार 1895 में बोस्टन एथेनियम (USA) की लाइब्रेरियन नीना ई. ब्राउन (Nina E. Browne) द्वारा किया गया था। यह एक सरल, कार्ड-आधारित और नो-राइटिंग (बिना लिखावट वाली) प्रणाली है।",
+            exp_en: "The Browne Charging System was devised in 1895 by Nina E. Browne, Librarian of the Boston Athenaeum, USA, based on an unwritten, pocket-in-pocket card-pairing principle."
+        },
+        {
+            id: 2,
+            q_hi: "नेवार्क परिसंचरण प्रणाली (Newark Charging System) का प्रतिपादन 1900 में किसके द्वारा किया गया था?",
+            q_en: "Who introduced the Newark Charging System in the year 1900?",
+            options_hi: [
+                "डब्ल्यू.सी. बेरविक सायर्स",
+                "जॉन कॉटन डाना (John Cotton Dana)",
+                "नीना ई. ब्राउन",
+                "चार्ल्स एम्मी कटर"
+            ],
+            options_en: [
+                "W.C. Berwick Sayers",
+                "John Cotton Dana",
+                "Nina E. Browne",
+                "C.A. Cutter"
+            ],
+            correct: 1,
+            exp_hi: "नेवार्क प्रणाली का आविष्कार वर्ष 1900 में जॉन कॉटन डाना (John Cotton Dana) द्वारा नेवार्क पब्लिक लाइब्रेरी (New Jersey, USA) में किया गया था।",
+            exp_en: "The Newark Charging System was developed in 1900 by John Cotton Dana at the Newark Public Library in New Jersey, USA."
+        },
+        {
+            id: 3,
+            q_hi: "ब्राउन परिसंचरण प्रणाली में 'पाठक टिकट' (Reader's Ticket) का भौतिक स्वरूप किस रूप में होता है?",
+            q_en: "In the Browne Charging System, what is the physical form of the Reader's Ticket?",
+            options_hi: [
+                "एक चपटा प्लास्टिक कार्ड",
+                "एक मुद्रित पर्ची",
+                "कार्डबोर्ड की जेब / थैली (Pocket / Envelope)",
+                "धातु की उत्कीर्णित प्लेट"
+            ],
+            options_en: [
+                "A flat plastic card",
+                "A printed slip",
+                "A cardboard pocket / envelope",
+                "An engraved metal plate"
+            ],
+            correct: 2,
+            exp_hi: "ब्राउन प्रणाली में पाठक की टिकट एक जेब (Pocket/Envelope) के रूप में होती है। जब पुस्तक जारी की जाती है, तो पुस्तक कार्ड को इस पाठक टिकट (पॉकेट) के अंदर डाल दिया जाता है (Pocket-in-Pocket principle)।",
+            exp_en: "In the Browne system, the reader's ticket is shaped like a pocket or envelope. The book card is slid inside this reader's pocket to record the loan."
+        },
+        {
+            id: 4,
+            q_hi: "निम्नलिखित में से किस परिसंचरण प्रणाली की सबसे प्रमुख विशेषता यह है कि इसमें 'स्थायी पठन रिकॉर्ड' (Permanent Circulation Record) सुरक्षित रहता है?",
+            q_en: "Which of the following circulation systems is characterized by maintaining a 'Permanent Record' of borrowing history for both books and readers?",
+            options_hi: [
+                "ब्राउन प्रणाली",
+                "नेवार्क प्रणाली",
+                "डमी प्रणाली",
+                "डेट्रायट प्रणाली"
+            ],
+            options_en: [
+                "Browne System",
+                "Newark System",
+                "Dummy System",
+                "Detroit System"
+            ],
+            correct: 1,
+            exp_hi: "नेवार्क प्रणाली में बुक कार्ड पर पाठक की सदस्यता संख्या और बॉरोअर कार्ड पर देय तिथि की मुहर लगाई जाती है, जिससे यह रिकॉर्ड हमेशा सुरक्षित रहता है कि पुस्तक किसने पढ़ी और पाठक ने कौन-सी पुस्तकें पढ़ीं।",
+            exp_en: "The Newark system maintains permanent records because borrower numbers are written onto book cards and dates are stamped on borrower cards, preserving historical loan data."
+        },
+        {
+            id: 5,
+            q_hi: "ब्राउन प्रणाली का सबसे मुख्य दोष (Major Limitation) क्या है?",
+            q_en: "What is the primary drawback or limitation of the Browne Charging System?",
+            options_hi: [
+                "यह बहुत धीमी और जटिल है",
+                "इसमें किसी भी पुस्तक या पाठक का स्थायी पठन इतिहास नहीं रहता",
+                "यह अत्यधिक महंगी है",
+                "इसके लिए बिजली की आवश्यकता होती है"
+            ],
+            options_en: [
+                "It is excessively slow and complicated",
+                "It does not maintain any permanent reading history of borrowers or books",
+                "It is prohibitively expensive",
+                "It requires electric power"
+            ],
+            correct: 1,
+            exp_hi: "ब्राउन प्रणाली में पुस्तक वापस आते ही बुक कार्ड पुस्तक में और पाठक टिकट पाठक को लौटा दिया जाता है। अतः वर्ष के अंत में यह नहीं जाना जा सकता कि किसी विशिष्ट पाठक ने कौन-कौन सी पुस्तकें पढ़ीं या किसी पुस्तक को किन पाठकों ने पढ़ा।",
+            exp_en: "In Browne charging, once a book is returned, the pair is separated with no trail left behind, making it impossible to reconstruct borrower reading histories or title circulation frequency."
+        },
+        {
+            id: 6,
+            q_hi: "पुस्तकालयों में प्रयुक्त प्रथम 'यांत्रिक पुस्तक निर्गम मशीन' (First Mechanical Charging Machine) कौन-सी थी, जिसे 1927 में पेश किया गया था?",
+            q_en: "Which was the first mechanical book charging machine introduced in libraries in 1927?",
+            options_hi: [
+                "गेलॉर्ड इलेक्ट्रिक मशीन",
+                "डिकमैन चार्जिंग सिस्टम (Dickman System)",
+                "रिकॉर्डक फोटो-चार्जिंग",
+                "आईबीएम पंच कार्ड सिस्टम"
+            ],
+            options_en: [
+                "Gaylord Electric Machine",
+                "Dickman Charging System",
+                "Recordak Photo-charging",
+                "IBM Punched Card System"
+            ],
+            correct: 1,
+            exp_hi: "डिकमैन चार्जिंग सिस्टम (1927) पहली यांत्रिक मशीन थी, जिसमें पाठक के धातु कार्ड (Metal Tag) और तारीख के पहिए द्वारा पुस्तक कार्ड पर विवरण मुद्रित किया जाता था।",
+            exp_en: "The Dickman Bookcharger (1927) was the first mechanical charging device, using an embossed metal borrower tag and date wheels to stamp transaction data."
+        },
+        {
+            id: 7,
+            q_hi: "पुस्तकालय कर्मचारियों का समय बचाने हेतु 'डेट्रायट सेल्फ-चार्जिंग सिस्टम' (Detroit Self-Charging System, 1929) का विकास किसके द्वारा किया गया था?",
+            q_en: "The 'Detroit Self-Charging System' (1929), designed to save library staff time through patron self-charging, was devised by:",
+            options_hi: [
+                "राल्फ उल्वेलिंग (Ralph Ulveling)",
+                "राल्फ शॉ (Ralph Shaw)",
+                "नीना ब्राउन",
+                "जॉन कॉटन डाना"
+            ],
+            options_en: [
+                "Ralph Ulveling",
+                "Ralph Shaw",
+                "Nina Browne",
+                "John Cotton Dana"
+            ],
+            correct: 0,
+            exp_hi: "डेट्रायट सेल्फ-चार्जिंग प्रणाली का विकास 1929 में राल्फ उल्वेलिंग (Ralph Ulveling) ने किया था। इसमें पाठक स्वयं बुक कार्ड पर अपनी सदस्यता संख्या दर्ज करके काउंटर पर सत्यापन कराता है।",
+            exp_en: "The Detroit Self-Charging System was developed in 1929 by Ralph Ulveling at the Detroit Public Library, having patrons write their own identification numbers on book cards."
+        },
+        {
+            id: 8,
+            q_hi: "माइक्रोफिल्म कैमरे द्वारा पुस्तक कार्ड, पाठक कार्ड और देय तिथि पर्ची का एक साथ चित्र खींचकर निर्गम करने वाली 'फोटो-चार्जिंग' (Photo-charging, 1947) प्रणाली के जनक कौन थे?",
+            q_en: "Who invented the 'Photo-charging' system (1947), which simultaneously microfilmed the book card, reader card, and date due slip?",
+            options_hi: [
+                "राल्फ आर. शॉ (Ralph R. Shaw)",
+                "मेल्विल डेवी",
+                "एच.पी. लुहान",
+                "डॉ. रंगनाथन"
+            ],
+            options_en: [
+                "Ralph R. Shaw",
+                "Melvil Dewey",
+                "H.P. Luhn",
+                "Dr. Ranganathan"
+            ],
+            correct: 0,
+            exp_hi: "अमेरिकी कृषि विभाग पुस्तकालय के लाइब्रेरियन राल्फ आर. शॉ (Ralph R. Shaw) ने 1947 में फोटो-चार्जिंग (Photo-charging / Recordak) प्रणाली का आविष्कार किया था।",
+            exp_en: "Dr. Ralph R. Shaw invented the Photo-charging system in 1947 at the US Department of Agriculture Library, using a Recordak micro-camera to film transaction elements together."
+        },
+        {
+            id: 9,
+            q_hi: "पुस्तकालय से बाहर जा चुके किसी प्रलेख को किसी अन्य पाठक की मांग पर वापस मंगाने या सुरक्षित रखने की प्रक्रिया क्या कहलाती है?",
+            q_en: "What is the administrative procedure of holding or calling back a currently checked-out document for another intending user called?",
+            options_hi: [
+                "अंतर-पुस्तकालय ऋण (ILL)",
+                "पुस्तक आरक्षण / रिकॉल (Reservation / Recall of Books)",
+                "भंडार सत्यापन (Stock Verification)",
+                "सामयिक अभिज्ञता सेवा (CAS)"
+            ],
+            options_en: [
+                "Inter-Library Loan (ILL)",
+                "Reservation / Recall of Books",
+                "Stock Verification",
+                "Current Awareness Service (CAS)"
+            ],
+            correct: 1,
+            exp_hi: "जब कोई मांगी गई पुस्तक पहले से किसी अन्य सदस्य को जारी हो, तो परिसंचरण पटल पर उसके लिए 'आरक्षण पर्ची' (Reservation Slip / Recall) भरी जाती है ताकि वापस आते ही वह पुस्तक आवेदक को मिल सके।",
+            exp_en: "Reservation (or Recall) is the circulation service by which a checked-out book is reserved for another user and placed on hold immediately upon discharge."
+        },
+        {
+            id: 10,
+            q_hi: "परिसंचरण में 'ब्राउन' और 'नेवार्क' दोनों प्रणालियां पुस्तकालय विज्ञान के किस आधारभूत सूत्र को संतुष्ट करने हेतु विकसित की गई थीं?",
+            q_en: "Both the Browne and Newark circulation systems were fundamentally designed to fulfill which Law of Library Science?",
+            options_hi: [
+                "प्रथम सूत्र (Books are for use)",
+                "द्वितीय सूत्र (Every reader his book)",
+                "चतुर्थ सूत्र (Save the time of the reader)",
+                "पंचम सूत्र (Library is a growing organism)"
+            ],
+            options_en: [
+                "First Law (Books are for use)",
+                "Second Law (Every reader his book)",
+                "Fourth Law (Save the time of the reader)",
+                "Fifth Law (Library is a growing organism)"
+            ],
+            correct: 2,
+            exp_hi: "रजिस्टर प्रणाली में लगने वाले घंटों के विलंब को समाप्त कर सेकंडों में पुस्तक जारी/वापस करने हेतु कार्ड-आधारित प्रणालियां बनाई गईं, जो सीधे चतुर्थ सूत्र 'पाठक का समय बचाएं' (Save the Time of the Reader) को संतुष्ट करती हैं।",
+            exp_en: "Card-based circulation eliminated long checkout queues and manual ledger recording, directly honoring the Fourth Law of Library Science: 'Save the Time of the Reader'."
+        },
+        {
+            id: 11,
+            q_hi: "नेवार्क प्रणाली में 'उधारकर्ता कार्ड' (Borrower's Card) किसके पास रहता है?",
+            q_en: "In the Newark Charging System, in whose custody does the 'Borrower's Card' remain?",
+            options_hi: [
+                "पुस्तकालय के चार्जिंग ट्रे में जमा रहता है",
+                "उधारकर्ता / पाठक के स्वयं के पास रहता है",
+                "पुस्तक की जेब (Book Pocket) के अंदर रहता है",
+                "पुस्तकालयाध्यक्ष की अलमारी में बंद रहता है"
+            ],
+            options_en: [
+                "Retained in the library charging tray",
+                "Retained by the borrower / patron",
+                "Placed inside the book pocket",
+                "Kept in the librarian's office"
+            ],
+            correct: 1,
+            exp_hi: "नेवार्क प्रणाली में Borrower's Card पर देय तिथि की मुहर लगाकर पाठक को तुरंत वापस कर दिया जाता है; जबकि बुक कार्ड को पुस्तकालय की ट्रे में फाइल किया जाता है। (ब्राउन में इसके विपरीत पाठक टिकट पुस्तकालय में जमा होता है)।",
+            exp_en: "In the Newark system, the Borrower's Card is returned to the patron after being stamped with the due date, while the book card is filed in the charging tray."
+        },
+        {
+            id: 12,
+            q_hi: "पुस्तकालय के बंद होने के बाद अथवा अवकाश के दिनों में भी पाठकों द्वारा पुस्तकें जमा करने हेतु किस उपकरण का उपयोग किया जाता है?",
+            q_en: "Which equipment is used by libraries to allow patrons to return borrowed books after closing hours or during holidays?",
+            options_hi: [
+                "सेल्फ चेक-आउट कियोस्क",
+                "बुक ड्रॉप बॉक्स (Book Drop Box / Smart Chute)",
+                "बारकोड प्रिंटर",
+                "RFID सुरक्षा गेट"
+            ],
+            options_en: [
+                "Self Checkout Kiosk",
+                "Book Drop Box / Smart Chute",
+                "Barcode Printer",
+                "RFID Security Gate"
+            ],
+            correct: 1,
+            exp_hi: "बुक ड्रॉप बॉक्स (Book Drop Box / Book Return Chute) एक सुरक्षित संदूक या स्वचालित स्लॉट होता है, जिसमें पाठक पुस्तकालय बंद होने पर भी अपनी पुस्तकें गिरा सकते हैं। आधुनिक आरएफआईडी ड्रॉप बॉक्स पुस्तक को तुरंत सिस्टम में डिस्चार्ज भी कर देते हैं।",
+            exp_en: "A Book Drop Box (or Book Return Chute) allows 24/7 return of circulating books, which can automatically discharge materials when integrated with RFID smart chutes."
+        },
+        {
+            id: 13,
+            q_hi: "पुस्तकालयों में बिना मानवीय सहायता के पाठकों द्वारा स्वयं पुस्तकें जारी (Issue) करने हेतु कौन-सी आधुनिक मशीन प्रयुक्त होती है?",
+            q_en: "Which modern device enables patrons to self-checkout books independently without library staff intervention?",
+            options_hi: [
+                "सेल्फ चेक-आउट कियोस्क (Self Check-out Kiosk)",
+                "माइक्रोफिल्म रीडर",
+                "OPAC टर्मिनल",
+                "हैंडहेल्ड बारकोड रीडर"
+            ],
+            options_en: [
+                "Self Check-out Kiosk",
+                "Microfilm Reader",
+                "OPAC Terminal",
+                "Handheld Barcode Reader"
+            ],
+            correct: 0,
+            exp_hi: "सेल्फ चेक-आउट कियोस्क (Self Check-out Kiosk) RFID या बारकोड और स्मार्ट कार्ड रीडर से लैस एक टचस्क्रीन मशीन है, जिस पर पाठक अपनी पुस्तकें रखकर स्वयं अपने खाते में जारी कर सकता है।",
+            exp_en: "A Self Check-out Kiosk is a touch-screen, patron-facing station utilizing RFID/barcode technology enabling automated issuing of library items without staff assistance."
+        },
+        {
+            id: 14,
+            q_hi: "ब्राउन प्रणाली में निर्गम (Issue) के पश्चात चार्ज किए गए कार्ड युग्मों (Charged Units) को ट्रे में किस क्रम में व्यवस्थित किया जाता है?",
+            q_en: "In the Browne system, in what order are the charged card pairs filed in the circulation charging tray?",
+            options_hi: [
+                "लेखक के नाम के वर्णानुक्रम में",
+                "देय तिथि (Date Due) के अनुसार और उसके भीतर कॉल नंबर के क्रम में",
+                "पाठक की सदस्यता संख्या के अनुसार",
+                "पुस्तक के परिग्रहण संख्या के अनुसार"
+            ],
+            options_en: [
+                "Alphabetically by author's name",
+                "By Date Due, and sub-arranged by Call Number",
+                "By borrower's registration number",
+                "By book accession number"
+            ],
+            correct: 1,
+            exp_hi: "ब्राउन प्रणाली में ट्रे में कार्ड्स को सबसे पहले देय तिथि (Due Date Guide) के पीछे रखा जाता है और प्रत्येक तिथि के अंतर्गत पुस्तकों को उनके वर्गांक/कॉल नंबर (Call Number) के आरोही क्रम में व्यवस्थित किया जाता है।",
+            exp_en: "Charged card pairs in the Browne system are filed under date due guide cards, and sub-arranged in classified order by Call Number for prompt retrieval."
+        },
+        {
+            id: 15,
+            q_hi: "नियत देय तिथि बीत जाने के बाद पुस्तक लौटाने पर पाठक से लिया जाने वाला अतिरिक्त शुल्क क्या कहलाता है?",
+            q_en: "The fee charged to a borrower for returning books past the stipulated due date is officially termed as:",
+            options_hi: [
+                "अभिदान शुल्क (Subscription Fee)",
+                "विलंब / दण्ड शुल्क (Overdue Fine)",
+                "पुस्तकालय उपकर (Library Cess)",
+                "परिग्रहण शुल्क (Accession Fee)"
+            ],
+            options_en: [
+                "Subscription Fee",
+                "Overdue Fine",
+                "Library Cess",
+                "Accession Fee"
+            ],
+            correct: 1,
+            exp_hi: "नियत तिथि के बाद पुस्तक रखने पर पाठकों पर लगाया जाने वाला शुल्क विलंब शुल्क या ओवरड्यू फाइन (Overdue Fine) कहलाता है। इसका मुख्य उद्देश्य लाभ कमाना नहीं, बल्कि पाठकों में समय की पाबंदी और अन्य पाठकों के अधिकारों की रक्षा करना है।",
+            exp_en: "An Overdue Fine is a disciplinary fee charged for overdue materials, primarily serving as a deterrent against unauthorized retention rather than a source of revenue."
+        }
+    ];
+
+    let currentQuestionIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let markedForReview = new Array(questions.length).fill(false);
+    let currentMode = "practice";
+    let currentLang = "both";
+    let timerInterval = null;
+    let timeRemaining = 20 * 60;
+
+    const qTextHi = document.getElementById("question-text-hi");
+    const qTextEn = document.getElementById("question-text-en");
+    const optContainer = document.getElementById("options-container");
+    const expContainer = document.getElementById("explanation-container");
+    const expText = document.getElementById("explanation-text");
+    const currentQNum = document.getElementById("current-q-num");
+    const paletteGrid = document.getElementById("palette-grid");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const submitBtn = document.getElementById("submit-btn");
+    const markBtn = document.getElementById("mark-btn");
+    const timerDisplay = document.getElementById("timer");
+    const timerContainer = document.getElementById("timer-container");
+    const resultModal = document.getElementById("result-modal");
+    const quizWorkspace = document.getElementById("quiz-workspace");
+
+    function init() {
+        buildPalette();
+        loadQuestion(0);
+        setupTheme();
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById("tab-practice").classList.toggle("active", mode === "practice");
+        document.getElementById("tab-exam").classList.toggle("active", mode === "exam");
+
+        if (mode === "exam") {
+            timerContainer.style.display = "block";
+            startTimer();
+            expContainer.classList.remove("show");
+        } else {
+            timerContainer.style.display = "none";
+            clearInterval(timerInterval);
+            if (userAnswers[currentQuestionIdx] !== null) {
+                showExplanation();
+            }
+        }
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.getElementById("lang-both").classList.toggle("active", lang === "both");
+        document.getElementById("lang-hi").classList.toggle("active", lang === "hi");
+        document.getElementById("lang-en").classList.toggle("active", lang === "en");
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeRemaining = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeRemaining--;
+            updateTimerDisplay();
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा सबमिट हो रही है। / Time up!");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const m = Math.floor(timeRemaining / 60).toString().padStart(2, '0');
+        const s = (timeRemaining % 60).toString().padStart(2, '0');
+        timerDisplay.textContent = `${m}:${s}`;
+    }
+
+    function buildPalette() {
+        paletteGrid.innerHTML = "";
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.createElement("button");
+            btn.className = "pal-btn";
+            btn.id = `pal-${i}`;
+            btn.textContent = i + 1;
+            btn.onclick = () => loadQuestion(i);
+            paletteGrid.appendChild(btn);
+        }
+    }
+
+    function updatePalette() {
+        for (let i = 0; i < questions.length; i++) {
+            const btn = document.getElementById(`pal-${i}`);
+            btn.className = "pal-btn";
+            if (i === currentQuestionIdx) btn.classList.add("current");
+            if (userAnswers[i] !== null) btn.classList.add("answered");
+            if (markedForReview[i]) btn.classList.add("marked");
+        }
+    }
+
+    function loadQuestion(index) {
+        currentQuestionIdx = index;
+        const q = questions[index];
+        currentQNum.textContent = index + 1;
+
+        if (currentLang === "en") {
+            qTextHi.style.display = "none";
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        } else if (currentLang === "hi") {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "none";
+        } else {
+            qTextHi.style.display = "block";
+            qTextHi.textContent = q.q_hi;
+            qTextEn.style.display = "block";
+            qTextEn.textContent = q.q_en;
+        }
+
+        optContainer.innerHTML = "";
+        const labels = ["(A)", "(B)", "(C)", "(D)"];
+
+        for (let idx = 0; idx < 4; idx++) {
+            const item = document.createElement("div");
+            item.className = "option-item";
+
+            if (userAnswers[index] === idx) {
+                item.classList.add("selected");
+            }
+
+            if (currentMode === "practice" && userAnswers[index] !== null) {
+                if (idx === q.correct) {
+                    item.classList.add("correct");
+                } else if (userAnswers[index] === idx) {
+                    item.classList.add("incorrect");
+                }
+            }
+
+            let optContent = "";
+            if (currentLang === "en") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi" style="font-weight: 500;">${q.options_en[idx]}</span></div>`;
+            } else if (currentLang === "hi") {
+                optContent = `<div class="opt-text-container"><span class="opt-hi">${q.options_hi[idx]}</span></div>`;
+            } else {
+                optContent = `
+                    <div class="opt-text-container">
+                        <span class="opt-hi">${q.options_hi[idx]}</span>
+                        <span class="opt-en">${q.options_en[idx]}</span>
+                    </div>`;
+            }
+
+            item.innerHTML = `<span class="opt-label">${labels[idx]}</span> ${optContent}`;
+            item.onclick = () => selectOption(idx);
+            optContainer.appendChild(item);
+        }
+
+        if (currentMode === "practice" && userAnswers[index] !== null) {
+            showExplanation();
+        } else {
+            expContainer.classList.remove("show");
+        }
+
+        prevBtn.disabled = index === 0;
+        if (index === questions.length - 1) {
+            nextBtn.style.display = "none";
+            submitBtn.style.display = "inline-flex";
+        } else {
+            nextBtn.style.display = "inline-flex";
+            submitBtn.style.display = currentMode === "exam" ? "inline-flex" : "none";
+        }
+
+        markBtn.textContent = markedForReview[index] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        userAnswers[currentQuestionIdx] = optIdx;
+        loadQuestion(currentQuestionIdx);
+    }
+
+    function showExplanation() {
+        const q = questions[currentQuestionIdx];
+        const labels = ["A", "B", "C", "D"];
+        const correctLabel = labels[q.correct];
+
+        let html = `<strong>Correct Option: (${correctLabel}) ${q.options_hi[q.correct]} / ${q.options_en[q.correct]}</strong><br><br>`;
+        if (currentLang === "en") {
+            html += `<div class="exp-section"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        } else if (currentLang === "hi") {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>`;
+        } else {
+            html += `<div class="exp-section"><strong>हिंदी व्याख्या:</strong> ${q.exp_hi}</div>
+                     <div class="exp-section" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9em;"><strong>English Explanation:</strong> ${q.exp_en}</div>`;
+        }
+
+        expText.innerHTML = html;
+        expContainer.classList.add("show");
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIdx > 0) loadQuestion(currentQuestionIdx - 1);
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIdx < questions.length - 1) loadQuestion(currentQuestionIdx + 1);
+    }
+
+    function toggleMarkReview() {
+        markedForReview[currentQuestionIdx] = !markedForReview[currentQuestionIdx];
+        markBtn.textContent = markedForReview[currentQuestionIdx] ? "❌ चिह्नित हटाएं (Unmark)" : "🔖 समीक्षा हेतु चिह्नित (Mark)";
+        updatePalette();
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, idx) => {
+            if (userAnswers[idx] === null) {
+                unattempted++;
+            } else if (userAnswers[idx] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const percent = Math.round((correct / questions.length) * 100);
+
+        document.getElementById("res-score").textContent = correct;
+        document.getElementById("res-correct").textContent = correct;
+        document.getElementById("res-incorrect").textContent = incorrect;
+        document.getElementById("res-unattempted").textContent = unattempted;
+        document.getElementById("res-percent").textContent = `${percent}%`;
+
+        const badge = document.getElementById("res-qualification");
+        if (percent >= 50) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `🎉 उत्तीर्ण (Qualified - General & All Categories) — ${percent}% Marks`;
+        } else if (percent >= 40) {
+            badge.className = "qualification-badge badge-pass";
+            badge.textContent = `✅ आरक्षित वर्ग उत्तीर्ण (Qualified for BC/EBC/SC/ST/PwD/Women) — ${percent}% Marks`;
+        } else {
+            badge.className = "qualification-badge badge-fail";
+            badge.textContent = `⚠️ अनुत्तीर्ण (Not Qualified) — Minimum 40% required`;
+        }
+
+        try {
+            localStorage.setItem("bihar_let_unit_2_2_score", JSON.stringify({
+                score: correct,
+                total: questions.length,
+                percent: percent,
+                date: new Date().toLocaleDateString()
+            }));
+        } catch(e){}
+
+        resultModal.style.display = "block";
+        quizWorkspace.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function reviewQuestions() {
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        userAnswers = new Array(questions.length).fill(null);
+        markedForReview = new Array(questions.length).fill(false);
+        resultModal.style.display = "none";
+        quizWorkspace.style.display = "grid";
+        setMode("practice");
+        loadQuestion(0);
+    }
+
+    document.getElementById("reset-btn").addEventListener("click", () => {
+        if (confirm("Reset this test? All answers will be cleared. / क्या आप टेस्ट रीसेट करना चाहते हैं?")) {
+            restartTest();
+        }
+    });
+
+    function setupTheme() {
+        const toggleBtn = document.getElementById("theme-toggle");
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        toggleBtn.addEventListener("click", () => {
+            const cur = document.documentElement.getAttribute("data-theme");
+            const next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        });
+    }
+
+    init();
+</script>
+
+</body>
+</html>

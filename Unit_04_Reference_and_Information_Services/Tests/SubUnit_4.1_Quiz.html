@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4.1 Quiz: Types of Information Sources | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            background-color: var(--border);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .btn-review {
+            background-color: var(--review-btn);
+            color: white;
+        }
+
+        .controls-bar {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .switch-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+
+        .pill-tabs {
+            display: flex;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            padding: 2px;
+            border-radius: 8px;
+        }
+
+        .pill-tab {
+            padding: 0.3rem 0.75rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+        }
+
+        .pill-tab.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .timer-badge {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            background-color: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .test-layout {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 860px) {
+            .test-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .question-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .q-text-hi {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .q-text-en {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 1.25rem;
+            line-height: 1.45;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+        }
+
+        .opt-label {
+            font-weight: 700;
+            min-width: 26px;
+        }
+
+        .opt-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .opt-hi {
+            font-size: 0.95rem;
+        }
+
+        .opt-en {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-box h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .exp-section {
+            margin-bottom: 0.5rem;
+        }
+
+        .q-nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .palette-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .palette-card h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+        }
+
+        .palette-num {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background: var(--bg-primary);
+        }
+
+        .palette-num:hover {
+            border-color: var(--primary);
+        }
+
+        .palette-num.active {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .palette-num.answered {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .palette-num.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .palette-num.correct-state {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .palette-num.incorrect-state {
+            background-color: var(--danger);
+            color: white;
+            border-color: var(--danger);
+        }
+
+        .legend {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        #result-modal {
+            display: none;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #result-modal.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: "";
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background-color: var(--bg-card);
+        }
+
+        .score-num {
+            position: relative;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .score-total {
+            position: relative;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .stat-card {
+            padding: 0.75rem;
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+        }
+
+        .stat-val {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.45rem 1.25rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026</h1>
+            <p>Unit 4.1: Types of Information Sources | प्राथमिक, द्वितीयक एवं तृतीयक सूचना स्रोत</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-outline" id="theme-toggle" title="थीम बदलें">🌓 थीम</button>
+            <button class="btn btn-outline" id="reset-btn" title="टेस्ट रीसेट करें">🔄 रीसेट</button>
+            <a href="../Study_Notes/SubUnit_4.1_Types_of_Information_Sources.md" class="btn btn-outline" title="अध्ययन नोट्स">📖 नोट्स (Notes)</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल (Portal)</a>
+        </div>
+    </header>
+
+    <div class="controls-bar">
+        <div class="switch-group">
+            <span>मोड (Mode):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="tab-practice" onclick="setMode('practice')">💡 अभ्यास (Practice)</button>
+                <button class="pill-tab" id="tab-exam" onclick="setMode('exam')">⏱️ परीक्षा (Exam)</button>
+            </div>
+        </div>
+
+        <div class="switch-group">
+            <span>भाषा (Language):</span>
+            <div class="pill-tabs">
+                <button class="pill-tab active" id="lang-both" onclick="setLang('both')">द्विभाषी (Bilingual)</button>
+                <button class="pill-tab" id="lang-hi" onclick="setLang('hi')">हिंदी (Hindi)</button>
+                <button class="pill-tab" id="lang-en" onclick="setLang('en')">English</button>
+            </div>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <span class="timer-badge">⏳ <span id="timer">20:00</span></span>
+        </div>
+    </div>
+
+    <!-- Result / Scorecard -->
+    <div id="result-modal">
+        <h2>📊 परीक्षा परिणाम (Exam Scorecard)</h2>
+        <div class="score-circle">
+            <span class="score-num" id="res-score">0</span>
+            <span class="score-total">/ 15</span>
+        </div>
+        <div id="res-qualification" class="qualification-badge"></div>
+
+        <div class="result-stats">
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--success);" id="res-correct">0</div>
+                <div class="stat-label">सही उत्तर (Correct)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--danger);" id="res-incorrect">0</div>
+                <div class="stat-label">गलत उत्तर (Incorrect)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--text-muted);" id="res-unattempted">0</div>
+                <div class="stat-label">छोड़े गए (Skipped)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-val" style="color: var(--primary);" id="res-percent">0%</div>
+                <div class="stat-label">प्रतिशत (Score %)</div>
+            </div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            * बिहार LET अर्हक अंक: सामान्य वर्ग (UR) 50% (7.5/15), पिछड़ा वर्ग (BC) 45.5%, EBC 42.5%, SC/ST/दिव्यांग/महिला 40% (6/15).
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="reviewQuestions()">📝 सभी प्रश्नों की व्याख्या देखें (Review All)</button>
+            <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake Test)</button>
+        </div>
+    </div>
+
+    <div class="test-layout">
+        <main class="question-box">
+            <div class="q-meta">
+                <span>प्रश्न (Question) <span id="current-q-num">1</span> of 15</span>
+                <span id="question-tag" style="background: var(--bg-primary); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border);">सूचना स्रोतों के प्रकार</span>
+            </div>
+
+            <div class="q-text-hi" id="q-hi">Loading question...</div>
+            <div class="q-text-en" id="q-en">Loading question in English...</div>
+
+            <div class="options-list" id="options-container">
+                <!-- Injected via JS -->
+            </div>
+
+            <div class="explanation-box" id="explanation-container">
+                <h4>💡 विस्तृत व्याख्या (Detailed Explanation)</h4>
+                <div class="exp-section" id="exp-hi"></div>
+                <div class="exp-section" style="color: var(--text-muted); font-size: 0.88rem;" id="exp-en"></div>
+            </div>
+
+            <div class="q-nav-controls">
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                    <button class="btn btn-review" id="review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें (Mark Review)</button>
+                    <button class="btn btn-success" id="submit-btn" onclick="submitExam()" style="display: none;">🏁 परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="palette-card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- 15 buttons injected via JS -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--primary);"></div>
+                        <span>उत्तर दिया (Answered)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--review-btn);"></div>
+                        <span>समीक्षा हेतु (Marked for Review)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--bg-primary); border: 1px solid var(--border);"></div>
+                        <span>अनुत्तरित (Not Answered)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="palette-card" style="font-size: 0.82rem; color: var(--text-muted);">
+                <strong style="color: var(--text-main);">💡 मुख्य बिंदु (Key Tip):</strong>
+                <p style="margin-top: 0.4rem;">
+                    डेनिस ग्रोगन (Primary, Secondary, Tertiary) और सी.डब्ल्यू. हैनसन (Primary, Secondary) के वर्गीकरण में भेद याद रखें। पेटेंट और मानक सदैव प्राथमिक स्रोत होते हैं।
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer-nav">
+        <a href="../../Unit_03_Classification_and_Cataloguing/Tests/SubUnit_3.2_Quiz.html">⬅️ Unit 3.2 टेस्ट (Cataloguing Quiz)</a>
+        <a href="../../index.html">🏠 मुख्य डैशबोर्ड (Portal Dashboard)</a>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            id: 1,
+            q_hi: "सूचना स्रोतों को सर्वप्रथम 'प्राथमिक' (Primary), 'द्वितीयक' (Secondary) एवं 'तृतीयक' (Tertiary) तीन श्रेणियों में किसने वर्गीकृत किया था?",
+            q_en: "Who originally categorized documentary information sources into three distinct tiers: Primary, Secondary, and Tertiary?",
+            options_hi: [
+                "सी.डब्ल्यू. हैनसन (C.W. Hanson, 1971)",
+                "डेनिस ग्रोगन (Dennis Grogan, 1966)",
+                "डॉ. एस.आर. रंगनाथन",
+                "विलियम ए. काट्ज़ (William A. Katz)"
+            ],
+            options_en: [
+                "C.W. Hanson (1971)",
+                "Dennis Grogan (1966)",
+                "Dr. S.R. Ranganathan",
+                "William A. Katz"
+            ],
+            correct: 1,
+            exp_hi: "डेनिस ग्रोगन ने 1966 में अपनी पुस्तक 'Case Studies in Reference Work' में सूचना स्रोतों को तीन स्तरों—प्राथमिक, द्वितीयक एवं तृतीयक में वर्गीकृत किया। सी.डब्ल्यू. हैनसन ने केवल दो स्तर (प्राथमिक एवं द्वितीयक) माने थे।",
+            exp_en: "Dennis Grogan in 1966 classified information sources into three categories: Primary, Secondary, and Tertiary. In contrast, C.W. Hanson (1971) recognized only Primary and Secondary categories."
+        },
+        {
+            id: 2,
+            q_hi: "सी.डब्ल्यू. हैनसन (C.W. Hanson) ने 1971 में सूचना स्रोतों को कितनी श्रेणियों में विभाजित किया था?",
+            q_en: "Into how many categories did C.W. Hanson divide information sources in his 1971 work?",
+            options_hi: [
+                "दो श्रेणियों में: प्राथमिक एवं द्वितीयक",
+                "तीन श्रेणियों में: प्राथमिक, द्वितीयक एवं तृतीयक",
+                "चार श्रेणियों में: पारंपरिक, नव-पारंपरिक, अपारंपरिक एवं मेटा",
+                "पांच श्रेणियों में"
+            ],
+            options_en: [
+                "Two categories: Primary and Secondary",
+                "Three categories: Primary, Secondary, and Tertiary",
+                "Four categories: Conventional, Neo-conventional, Non-conventional, and Meta",
+                "Five categories"
+            ],
+            correct: 0,
+            exp_hi: "सी.डब्ल्यू. हैनसन ने सूचना स्रोतों को केवल दो श्रेणियों—'प्राथमिक स्रोत' (Primary Sources) तथा 'द्वितीयक स्रोत' (Secondary Sources) में बांटा था। उन्होंने ग्रोगन के तृतीयक स्रोतों को भी द्वितीयक श्रेणी में ही सम्मिलित माना था।",
+            exp_en: "C.W. Hanson divided information documents into two primary classes: Primary Sources and Secondary Sources (subsuming tertiary sources under secondary)."
+        },
+        {
+            id: 3,
+            q_hi: "विश्व की प्रथम दो वैज्ञानिक शोध पत्रिकाएं (Scientific Journals) किस वर्ष में प्रकाशित हुई थीं?",
+            q_en: "In which year were the world's first two scholarly research periodicals published?",
+            options_hi: [
+                "1665 ई. (Journal des Sçavans एवं Philosophical Transactions)",
+                "1765 ई.",
+                "1876 ई.",
+                "1905 ई."
+            ],
+            options_en: [
+                "1665 AD (Journal des Sçavans and Philosophical Transactions)",
+                "1765 AD",
+                "1876 AD",
+                "1905 AD"
+            ],
+            correct: 0,
+            exp_hi: "जनवरी 1665 में पेरिस से 'Journal des Sçavans' और मार्च 1665 में रॉयल सोसाइटी ऑफ लंदन से हेनरी ओल्डेनबर्ग के संपादन में 'Philosophical Transactions of the Royal Society' प्रकाशित हुई। ये प्राथमिक स्रोत हैं।",
+            exp_en: "The year 1665 witnessed the birth of the first two scholarly journals: 'Journal des Sçavans' (January 1665, Paris) and 'Philosophical Transactions of the Royal Society' (March 1665, London)."
+        },
+        {
+            id: 4,
+            q_hi: "भारतीय पेटेंट अधिनियम (Indian Patents Act, 1970) के अनुसार किसी नए आविष्कार हेतु पेटेंट की वैधता अवधि कितनी होती है?",
+            q_en: "According to the Indian Patents Act, what is the statutory term of validity of a registered patent in India?",
+            options_hi: [
+                "10 वर्ष",
+                "14 वर्ष",
+                "20 वर्ष (आवेदन दाखिल करने की तिथि से)",
+                "आजीवन (Lifetime)"
+            ],
+            options_en: [
+                "10 years",
+                "14 years",
+                "20 years (from filing date)",
+                "Lifetime"
+            ],
+            correct: 2,
+            exp_hi: "भारतीय पेटेंट अधिनियम 1970 (2005 संशोधन) के अनुसार किसी आविष्कार के पेटेंट की अवधि आवेदन दाखिल करने की तिथि (Filing Date) से 20 वर्ष तक मान्य होती है। पेटेंट एक प्राथमिक स्रोत है।",
+            exp_en: "Under the Indian Patents Act 1970 (amended in 2005 to align with TRIPS), the term of protection for every granted patent is 20 years from the date of filing. Patents are primary sources."
+        },
+        {
+            id: 5,
+            q_hi: "डॉ. एस.आर. रंगनाथन द्वारा प्रतिपादित प्रलेखों के वर्गीकरण में 'पेटेंट' (Patents) और 'मानक' (Standards) किस वर्ग के अंतर्गत आते हैं?",
+            q_en: "In Dr. S.R. Ranganathan's physical classification of documents, under which category do 'Patents' and 'Standards' fall?",
+            options_hi: [
+                "पारंपरिक प्रलेख (Conventional Documents)",
+                "नव-पारंपरिक प्रलेख (Neo-conventional Documents)",
+                "अपारंपरिक प्रलेख (Non-conventional Documents)",
+                "मेटा-दस्तावेज (Meta-documents)"
+            ],
+            options_en: [
+                "Conventional Documents",
+                "Neo-conventional Documents",
+                "Non-conventional Documents",
+                "Meta-documents"
+            ],
+            correct: 1,
+            exp_hi: "रंगनाथन ने पुस्तकों और पत्रिकाओं को पारंपरिक (Conventional) माना, जबकि पेटेंट, मानक (Standards), विनिर्देश और डेटा शीट्स को 'नव-पारंपरिक प्रलेख' (Neo-conventional Documents) की श्रेणी में रखा।",
+            exp_en: "Ranganathan categorized patents, standards, specifications, and data sheets as 'Neo-conventional Documents' because of their micro-thought content and specialized regulatory nature."
+        },
+        {
+            id: 6,
+            q_hi: "अनुसंधानकर्ताओं द्वारा डॉक्टरेट उपाधि (Ph.D.) हेतु प्रस्तुत किए जाने वाले शोध प्रबंध (Theses/Dissertations) किस प्रकार के स्रोत हैं?",
+            q_en: "Theses and Dissertations submitted for the award of doctoral degrees (Ph.D.) are categorized under which source?",
+            options_hi: [
+                "प्राथमिक सूचना स्रोत (Primary Sources)",
+                "द्वितीयक सूचना स्रोत (Secondary Sources)",
+                "तृतीयक सूचना स्रोत (Tertiary Sources)",
+                "गैर-प्रलेखीय स्रोत (Non-Documentary Sources)"
+            ],
+            options_en: [
+                "Primary Information Sources",
+                "Secondary Information Sources",
+                "Tertiary Information Sources",
+                "Non-Documentary Sources"
+            ],
+            correct: 0,
+            exp_hi: "शोध प्रबंध (Theses and Dissertations) पूर्णतः मौलिक शोध एवं नए तथ्यों पर आधारित होते हैं, अतः ये सूचना के 'प्राथमिक स्रोत' हैं। भारत में इनका राष्ट्रीय डिजिटल भंडार INFLIBNET का 'शोधगंगा' (Shodhganga) है।",
+            exp_en: "Theses and dissertations contain original experimental/analytical findings submitted for academic scrutiny, classifying them directly as Primary Information Sources."
+        },
+        {
+            id: 7,
+            q_hi: "अमेरिकन केमिकल सोसाइटी द्वारा 1907 से निरंतर प्रकाशित 'केमिकल एब्सट्रैक्ट्स' (Chemical Abstracts) किस प्रकार का सूचना स्रोत है?",
+            q_en: "The renowned 'Chemical Abstracts', published since 1907 by the American Chemical Society, is which kind of information source?",
+            options_hi: [
+                "प्राथमिक स्रोत",
+                "द्वितीयक स्रोत (Secondary Source - सारकरण पत्रिका)",
+                "तृतीयक स्रोत",
+                "अप्रकाशित स्रोत"
+            ],
+            options_en: [
+                "Primary Source",
+                "Secondary Source (Abstracting Journal)",
+                "Tertiary Source",
+                "Unpublished Source"
+            ],
+            correct: 1,
+            exp_hi: "'Chemical Abstracts' एक विश्वप्रसिद्ध सारकरण पत्रिका (Abstracting Journal) है। चूंकि यह प्राथमिक शोध पत्रों को पढ़कर उनका सारांश व ग्रंथपरक विवरण प्रस्तुत करती है, अतः यह 'द्वितीयक स्रोत' (Secondary Source) है।",
+            exp_en: "Chemical Abstracts is an abstracting service that synthesizes primary articles into structured summaries and citations, making it a classic Secondary Information Source."
+        },
+        {
+            id: 8,
+            q_hi: "वैज्ञानिकों एवं शोधकर्ताओं के मध्य अनौपचारिक संचार नेटवर्क को व्यक्त करने वाली 'अदृश्य महाविद्यालय' (Invisible Colleges) की अवधारणा किसने दी थी?",
+            q_en: "Who coined and popularized the sociological concept of 'Invisible Colleges' describing informal scientist communication networks?",
+            options_hi: [
+                "डेनिस ग्रोगन (Dennis Grogan)",
+                "डेरेक जे. डी सोला प्राइस (Derek J. de Solla Price, 1963)",
+                "एस.आर. रंगनाथन",
+                "यूजीन गारफील्ड"
+            ],
+            options_en: [
+                "Dennis Grogan",
+                "Derek J. de Solla Price (1963)",
+                "S.R. Ranganathan",
+                "Eugene Garfield"
+            ],
+            correct: 1,
+            exp_hi: "डेरेक जे. डी सोला प्राइस ने अपनी 1963 की पुस्तक 'Little Science, Big Science' में 'अदृश्य महाविद्यालय' (Invisible Colleges) शब्द का प्रयोग उन विशिष्ट वैज्ञानिकों के अनौपचारिक समूहों के लिए किया जो औपचारिक प्रकाशन से पूर्व ही शोध साझा करते हैं (गैर-प्रलेखीय स्रोत)।",
+            exp_en: "Derek J. de Solla Price formulated the concept of 'Invisible Colleges' in 'Little Science, Big Science' (1963) to characterize elite informal scientific circles and non-documentary communications."
+        },
+        {
+            id: 9,
+            q_hi: "थियोडोर बेस्टरमैन (Theodore Besterman) द्वारा संकलित विश्वप्रसिद्ध कृति 'ए वर्ल्ड बिब्लियोग्राफी ऑफ बिब्लियोग्राफीज' किस श्रेणी का सूचना स्रोत है?",
+            q_en: "Theodore Besterman's monumental compilation 'A World Bibliography of Bibliographies' is an example of which information source?",
+            options_hi: [
+                "प्राथमिक स्रोत (Primary)",
+                "द्वितीयक स्रोत (Secondary)",
+                "तृतीयक स्रोत (Tertiary Source)",
+                "मानक विनिर्देश (Standard)"
+            ],
+            options_en: [
+                "Primary Source",
+                "Secondary Source",
+                "Tertiary Source",
+                "Standard Specification"
+            ],
+            correct: 2,
+            exp_hi: "'A World Bibliography of Bibliographies' (1939-40) ग्रंथसूचियों की भी ग्रंथसूची (Bibliography of Bibliographies) है। चूंकि यह द्वितीयक स्रोतों की सूची प्रस्तुत करती है, इसलिए यह एक प्रामाणिक 'तृतीयक स्रोत' (Tertiary Source) है।",
+            exp_en: "Besterman's work is a 'bibliography of bibliographies' (a guide to secondary sources), which places it firmly in the Tertiary Information Source category."
+        },
+        {
+            id: 10,
+            q_hi: "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) द्वारा प्रकाशित 'गाइड टू रेफरेंस बुक्स' (मूल संकलनकर्ता: एलिस बी. क्रोगे, प्रसिद्ध संपादक: सी.एम. विंचेल) किस प्रकार का स्रोत है?",
+            q_en: "'Guide to Reference Books' published by ALA (originated by Alice B. Kroeger, edited famously by C.M. Winchell) is which type of source?",
+            options_hi: [
+                "प्राथमिक स्रोत",
+                "द्वितीयक स्रोत",
+                "तृतीयक स्रोत (साहित्य मार्गदर्शिका / Guide to Literature)",
+                "पारंपरिक शब्दकोश"
+            ],
+            options_en: [
+                "Primary Source",
+                "Secondary Source",
+                "Tertiary Source (Guide to Literature)",
+                "Conventional Dictionary"
+            ],
+            correct: 2,
+            exp_hi: "'Guide to Reference Books' संदर्भ ग्रंथों (विश्वकोशों, शब्दकोशों, ग्रंथसूचियों) की मार्गदर्शिका (Guide) है। संदर्भ साहित्य की सभी मार्गदर्शिकाएं (Guides to Reference Sources) 'तृतीयक स्रोत' (Tertiary Sources) कहलाती हैं।",
+            exp_en: "'Guide to Reference Books' directs users to relevant reference materials and secondary databases; hence, guides to literature are categorized as Tertiary Sources."
+        },
+        {
+            id: 11,
+            q_hi: "विश्व के सभी विश्वविद्यालयों, शोध संस्थानों, पुस्तकालयों और विद्वत परिषदों की जानकारी देने वाला 'वर्ल्ड ऑफ लर्निंग' (The World of Learning) क्या है?",
+            q_en: "'The World of Learning', which provides comprehensive information on universities, academies, and libraries worldwide, is:",
+            options_hi: [
+                "एक प्राथमिक शोध पत्रिका",
+                "एक संस्थागत निर्देशिका / तृतीयक स्रोत (Institutional Directory / Tertiary Source)",
+                "एक अमूर्त वैज्ञानिक पेटेंट",
+                "एक सरकारी गजट"
+            ],
+            options_en: [
+                "A Primary Research Journal",
+                "An Institutional Directory / Tertiary Source",
+                "An Abstract Scientific Patent",
+                "A Government Gazette"
+            ],
+            correct: 1,
+            exp_hi: "'The World of Learning' लंदन से प्रकाशित एक अंतरराष्ट्रीय संस्थागत निर्देशिका (Directory) है जो उच्च शिक्षा संस्थानों व पुस्तकालयों के पते, अधिकारी व संकायों का विवरण देती है। निर्देशिकाएं तृतीयक स्रोतों में आती हैं।",
+            exp_en: "'The World of Learning' is an authoritative global directory indexing academic, cultural, and scientific institutions, functioning as a Directory / Tertiary Source."
+        },
+        {
+            id: 12,
+            q_hi: "एक 'सारकरण पत्रिका' (Abstracting Journal) और 'अनुक्रमणीकरण पत्रिका' (Indexing Journal) के मध्य मुख्य अंतर क्या होता है?",
+            q_en: "What is the primary difference between an Abstracting Periodical and an Indexing Periodical?",
+            options_hi: [
+                "सारकरण पत्रिका प्रलेख के ग्रंथपरक विवरण के साथ उसका संक्षिप्त सार (Abstract) भी प्रदान करती है",
+                "अनुक्रमणीकरण पत्रिका में लेखक का नाम नहीं होता",
+                "सारकरण पत्रिका केवल व्यापारिक विज्ञापनों का संग्रह होती है",
+                "दोनों में कोई अंतर नहीं है"
+            ],
+            options_en: [
+                "Abstracting periodicals provide a substantive summary/abstract alongside bibliographical citations",
+                "Indexing periodicals do not record the author's name",
+                "Abstracting journals contain only trade commercials",
+                "There is no functional distinction"
+            ],
+            correct: 0,
+            exp_hi: "अनुक्रमणीकरण पत्रिका केवल प्रलेख का ग्रंथपरक विवरण (लेखक, शीर्षक, स्रोत) क्रमबद्ध करती है, जबकि सारकरण पत्रिका ग्रंथपरक विवरण के साथ-साथ शोध लेख की विषय-वस्तु का एक विश्लेषणात्मक सार (Abstract) भी देती है।",
+            exp_en: "Indexing journals provide only bibliographic metadata (author, title, source), whereas abstracting journals additionally furnish a concise, informative synopsis (abstract) of the research article."
+        },
+        {
+            id: 13,
+            q_hi: "सेंट्रल रेफरेंस लाइब्रेरी (CRL), कोलकाता द्वारा प्रकाशित 'इंडियन नेशनल बिब्लियोग्राफी' (INB) किस प्रकार का स्रोत है?",
+            q_en: "'Indian National Bibliography' (INB), published by the Central Reference Library (CRL), Kolkata, is which kind of information source?",
+            options_hi: [
+                "प्राथमिक स्रोत",
+                "द्वितीयक स्रोत (राष्ट्रीय ग्रंथसूची - National Bibliography)",
+                "तृतीयक स्रोत",
+                "गैर-प्रलेखीय स्रोत"
+            ],
+            options_en: [
+                "Primary Source",
+                "Secondary Source (National Bibliography)",
+                "Tertiary Source",
+                "Non-Documentary Source"
+            ],
+            correct: 1,
+            exp_hi: "ग्रंथसूचियां (Bibliographies) प्रकाशित प्राथमिक पुस्तकों के विवरण को व्यवस्थित करती हैं, अतः सभी राष्ट्रीय एवं व्यापारिक ग्रंथसूचियां 'द्वितीयक स्रोत' (Secondary Sources) होती हैं। INB 1957 से प्रकाशित हो रही है।",
+            exp_en: "Bibliographies list and organize books received under legal deposit; consequently, all national bibliographies like INB are categorized as Secondary Information Sources."
+        },
+        {
+            id: 14,
+            q_hi: "निम्न में से कौन-सा सूचना स्रोत 'प्राथमिक स्रोत' (Primary Source) का उदाहरण नहीं है?",
+            q_en: "Which of the following information sources is NOT an example of a Primary Source?",
+            options_hi: [
+                "वैज्ञानिक पेटेंट (Patent)",
+                "शोध पत्रिका में प्रकाशित शोध-पत्र (Research Article)",
+                "विश्वकोश (Encyclopedia)",
+                "सम्मेलन कार्यवाही (Conference Proceedings)"
+            ],
+            options_en: [
+                "Patent",
+                "Research Paper in a Peer-Reviewed Journal",
+                "Encyclopedia",
+                "Conference Proceedings"
+            ],
+            correct: 2,
+            exp_hi: "विश्वकोश (Encyclopedia) विभिन्न प्राथमिक और द्वितीयक स्रोतों से स्थापित ज्ञान को संकलित करके बनाया जाता है, इसलिए विश्वकोश 'द्वितीयक स्रोत' (Secondary Source) है, प्राथमिक नहीं। पेटेंट, शोध पत्र व सम्मेलन कार्यवाही प्राथमिक स्रोत हैं।",
+            exp_en: "An Encyclopedia synthesizes established knowledge from various works; it is a Secondary Reference Source, whereas patents, research articles, and conference proceedings are Primary Sources."
+        },
+        {
+            id: 15,
+            q_hi: "DIKW पदानुक्रम (Data-Information-Knowledge-Wisdom) के संबंध में निम्नलिखित में से कौन-सा कथन सत्य है?",
+            q_en: "Regarding the DIKW hierarchy (Data-Information-Knowledge-Wisdom), which statement is correct?",
+            options_hi: [
+                "डेटा सबसे शीर्ष पर होता है और ज्ञान सबसे नीचे",
+                "जब असंसाधित डेटा को संदर्भ और संरचना दी जाती है, तब वह 'सूचना' (Information) बनता है",
+                "सूचना और डेटा में कोई अंतर नहीं होता",
+                "प्रज्ञा (Wisdom) केवल कंप्यूटर द्वारा ही उत्पन्न की जा सकती है"
+            ],
+            options_en: [
+                "Data sits at the apex and Knowledge at the bottom",
+                "When raw data is contextualized and structured, it transforms into Information",
+                "There is no distinction between data and information",
+                "Wisdom can solely be generated by computers"
+            ],
+            correct: 1,
+            exp_hi: "DIKW पिरामिड का आधार 'डेटा' (असंसाधित तथ्य) है। जब डेटा को संदर्भ और अर्थ दिया जाता है, तो वह 'सूचना' बनती है। सूचना की समझ और अनुप्रयोग 'ज्ञान' है, और ज्ञान का विवेकपूर्ण उपयोग 'प्रज्ञा' (Wisdom) है।",
+            exp_en: "In the DIKW pyramid, raw unorganized facts (Data) when processed into a meaningful context become Information; understanding information leads to Knowledge, and its judicious application constitutes Wisdom."
+        }
+    ];
+
+    // App State
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let currentLang = 'both';
+    let timerInterval = null;
+    let timeLeft = 20 * 60;
+
+    const STORAGE_KEY = 'bihar_let_u4_1_quiz_state';
+
+    function init() {
+        renderPalette();
+        loadQuestion(currentIdx);
+        setupTheme();
+        loadPersistedState();
+    }
+
+    function setupTheme() {
+        const savedTheme = localStorage.getItem('bihar_let_theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const cur = document.documentElement.getAttribute('data-theme');
+            const next = cur === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('bihar_let_theme', next);
+        });
+    }
+
+    function setLang(lang) {
+        currentLang = lang;
+        document.querySelectorAll('.controls-bar .pill-tabs:nth-child(2) .pill-tab').forEach(b => b.classList.remove('active'));
+        if(lang === 'both') document.getElementById('lang-both').classList.add('active');
+        if(lang === 'hi') document.getElementById('lang-hi').classList.add('active');
+        if(lang === 'en') document.getElementById('lang-en').classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const hiElements = document.querySelectorAll('.q-text-hi, .opt-hi, #exp-hi');
+        const enElements = document.querySelectorAll('.q-text-en, .opt-en, #exp-en');
+
+        if (currentLang === 'both') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'block');
+        } else if (currentLang === 'hi') {
+            hiElements.forEach(el => el.style.display = 'block');
+            enElements.forEach(el => el.style.display = 'none');
+        } else if (currentLang === 'en') {
+            hiElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('tab-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('tab-exam').classList.toggle('active', mode === 'exam');
+
+        const timerContainer = document.getElementById('timer-container');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerContainer.style.display = 'flex';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+
+        loadQuestion(currentIdx);
+        updatePalette();
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("समय समाप्त! आपकी परीक्षा स्वतः सबमिट की जा रही है। (Time over! Your test is automatically submitted.)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        document.getElementById('timer').textContent = 
+            `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const grid = document.getElementById('palette-grid');
+        grid.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('div');
+            btn.className = 'palette-num';
+            btn.textContent = idx + 1;
+            btn.id = `pal-${idx}`;
+            btn.onclick = () => jumpToQuestion(idx);
+            grid.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+
+            btn.className = 'palette-num';
+            if (idx === currentIdx) btn.classList.add('active');
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (userAnswers[idx] === q.correct) {
+                        btn.classList.add('correct-state');
+                    } else {
+                        btn.classList.add('incorrect-state');
+                    }
+                } else {
+                    btn.classList.add('answered');
+                }
+            } else if (reviewMarks[idx]) {
+                btn.classList.add('review');
+            }
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('current-q-num').textContent = idx + 1;
+        document.getElementById('q-hi').textContent = `${q.id}. ${q.q_hi}`;
+        document.getElementById('q-en').textContent = `${q.id}. ${q.q_en}`;
+
+        const optsContainer = document.getElementById('options-container');
+        optsContainer.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+        q.options_hi.forEach((optHi, optIdx) => {
+            const optEn = q.options_en[optIdx];
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.id = `opt-${optIdx}`;
+
+            if (userAnswers[idx] !== null) {
+                if (currentMode === 'practice') {
+                    if (optIdx === q.correct) div.classList.add('correct');
+                    if (userAnswers[idx] === optIdx && optIdx !== q.correct) div.classList.add('incorrect');
+                } else {
+                    if (userAnswers[idx] === optIdx) div.classList.add('selected');
+                }
+            }
+
+            div.onclick = () => selectOption(optIdx);
+
+            div.innerHTML = `
+                <span class="opt-label">${letters[optIdx]}.</span>
+                <div class="opt-text-container">
+                    <span class="opt-hi">${optHi}</span>
+                    <span class="opt-en">${optEn}</span>
+                </div>
+            `;
+            optsContainer.appendChild(div);
+        });
+
+        const expBox = document.getElementById('explanation-container');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            document.getElementById('exp-hi').textContent = q.exp_hi;
+            document.getElementById('exp-en').textContent = q.exp_en;
+            expBox.classList.add('show');
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.style.backgroundColor = 'var(--warning)';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.style.backgroundColor = 'var(--review-btn)';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

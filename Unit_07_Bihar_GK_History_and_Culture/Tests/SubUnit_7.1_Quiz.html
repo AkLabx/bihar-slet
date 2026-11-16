@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7.1 Quiz: Bihar History & Freedom Movement | Bihar Librarian 2026</title>
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #dbeafe;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            --border: #e2e8f0;
+            --review-btn: #8b5cf6;
+            --review-light: #ede9fe;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e3a8a;
+            --success: #22c55e;
+            --success-light: #14532d;
+            --danger: #ef4444;
+            --danger-light: #7f1d1d;
+            --warning: #f59e0b;
+            --warning-light: #78350f;
+            --border: #334155;
+            --review-btn: #a78bfa;
+            --review-light: #4c1d95;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 1.5rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .header-title p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.45rem 0.85rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-review {
+            background-color: var(--review-light);
+            color: var(--review-btn);
+            border: 1px solid var(--review-btn);
+        }
+
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-primary);
+            padding: 0.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .mode-btn, .lang-btn {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .mode-btn.active, .lang-btn.active {
+            background-color: var(--bg-card);
+            color: var(--primary);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .timer-box {
+            font-size: 1rem;
+            font-weight: 700;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: var(--warning-light);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+            display: none;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
+        }
+
+        .q-num {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .q-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .options-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            background-color: var(--bg-primary);
+        }
+
+        .option-item:hover {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+        }
+
+        .option-item.selected {
+            border-color: var(--primary);
+            background-color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .option-item.correct {
+            border-color: var(--success) !important;
+            background-color: var(--success-light) !important;
+            color: var(--success) !important;
+            font-weight: 600;
+        }
+
+        .option-item.incorrect {
+            border-color: var(--danger) !important;
+            background-color: var(--danger-light) !important;
+            color: var(--danger) !important;
+        }
+
+        .opt-letter {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .explanation-box {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .explanation-title {
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .pal-btn {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pal-btn.current {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px var(--primary);
+        }
+
+        .pal-btn.answered {
+            background-color: var(--success);
+            color: white;
+            border-color: var(--success);
+        }
+
+        .pal-btn.review {
+            background-color: var(--review-btn);
+            color: white;
+            border-color: var(--review-btn);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.75rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .result-card {
+            display: none;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) calc(var(--percent) * 1%), var(--border) 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .score-circle-inner {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .score-val {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .qualification-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge-pass {
+            background-color: var(--success-light);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+
+        .badge-fail {
+            background-color: var(--danger-light);
+            color: var(--danger);
+            border: 1px solid var(--danger);
+        }
+
+        .cutoff-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .cutoff-table th, .cutoff-table td {
+            border: 1px solid var(--border);
+            padding: 0.5rem 0.75rem;
+        }
+
+        .cutoff-table th {
+            background-color: var(--bg-primary);
+        }
+
+        .lang-en { display: none; }
+        .lang-bilingual .lang-en { display: block; margin-top: 0.25rem; font-size: 0.9em; opacity: 0.85; }
+        .lang-bilingual .lang-hi { display: block; }
+
+        body.show-hi .lang-en { display: none !important; }
+        body.show-hi .lang-hi { display: block !important; }
+
+        body.show-en .lang-hi { display: none !important; }
+        body.show-en .lang-en { display: block !important; }
+    </style>
+</head>
+<body class="lang-bilingual">
+
+<div class="container">
+    <header>
+        <div class="header-title">
+            <h1>इकाई 7.1: बिहार का इतिहास एवं राष्ट्रीय आंदोलन</h1>
+            <p>Unit 7.1 Quiz: History of Bihar & Contribution to National Movement | Bihar Librarian 2026</p>
+        </div>
+        <div class="header-actions">
+            <div class="mode-toggle">
+                <button class="lang-btn active" onclick="setLanguage('bilingual')">द्विभाषी</button>
+                <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                <button class="lang-btn" onclick="setLanguage('en')">English</button>
+            </div>
+            <div class="mode-toggle">
+                <button class="mode-btn active" id="btn-practice" onclick="setMode('practice')">अभ्यास (Practice)</button>
+                <button class="mode-btn" id="btn-exam" onclick="setMode('exam')">परीक्षा (Exam)</button>
+            </div>
+            <div class="timer-box" id="timer-box">⏱️ 20:00</div>
+            <button class="btn btn-outline" id="theme-btn" onclick="toggleTheme()">🌓 थीम</button>
+            <a href="../Study_Notes/SubUnit_7.1_Bihar_History_and_National_Movement.md" class="btn btn-outline">📖 नोट्स</a>
+            <a href="../../index.html" class="btn btn-outline">🏠 पोर्टल</a>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <main>
+            <div class="card" id="question-card">
+                <div class="q-meta">
+                    <span class="q-num" id="q-number">प्रश्न 1 / 15</span>
+                    <button class="btn btn-outline" id="mark-review-btn" onclick="toggleReview()">🚩 समीक्षा हेतु चिह्नित करें</button>
+                </div>
+
+                <div class="q-text" id="q-text">
+                    <div class="lang-hi">प्रश्न लोड हो रहा है...</div>
+                    <div class="lang-en">Question loading...</div>
+                </div>
+
+                <div class="options-grid" id="options-grid"></div>
+
+                <div class="explanation-box" id="explanation-box">
+                    <div class="explanation-title">💡 विस्तृत विश्लेषणात्मक व्याख्या (Explanation):</div>
+                    <div id="explanation-text"></div>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()">⬅️ पिछला (Prev)</button>
+                    <button class="btn btn-outline" id="next-btn" onclick="nextQuestion()">अगला (Next) ➡️</button>
+                    <button class="btn btn-primary" id="submit-btn" style="display:none;" onclick="submitExam()">✅ परीक्षा समाप्त करें (Submit)</button>
+                </div>
+            </div>
+
+            <!-- RESULT MODAL / CARD -->
+            <div class="card result-card" id="result-modal">
+                <h2>📊 परीक्षा परिणाम (Exam Result)</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1.5rem;">बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026 - सामान्य ज्ञान खंड</p>
+
+                <div class="score-circle">
+                    <div class="score-circle-inner">
+                        <span class="score-val" id="res-score">0</span>
+                        <span style="font-size: 0.75rem; color:var(--text-muted);">/ 15 अंक</span>
+                    </div>
+                </div>
+
+                <div id="res-qualification" class="qualification-badge badge-pass">अर्हक स्थिति</div>
+
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div><strong>सही (Correct):</strong> <span id="res-correct" style="color:var(--success);">0</span></div>
+                    <div><strong>गलत (Incorrect):</strong> <span id="res-incorrect" style="color:var(--danger);">0</span></div>
+                    <div><strong>छोड़े गए (Skipped):</strong> <span id="res-unattempted" style="color:var(--warning);">0</span></div>
+                    <div><strong>प्रतिशत (Percentage):</strong> <span id="res-percent">0%</span></div>
+                </div>
+
+                <table class="cutoff-table">
+                    <thead>
+                        <tr>
+                            <th>श्रेणी (Category)</th>
+                            <th>न्यूनतम उत्तीर्णांक (%)</th>
+                            <th>इस टेस्ट में न्यूनतम आवश्यक अंक (15 में से)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सामान्य वर्ग (General / UR)</td><td>50%</td><td>7.5 अंक</td></tr>
+                        <tr><td>पिछड़ा वर्ग (BC)</td><td>45.5%</td><td>6.82 अंक</td></tr>
+                        <tr><td>अत्यंत पिछड़ा वर्ग (EBC)</td><td>42.5%</td><td>6.38 अंक</td></tr>
+                        <tr><td>SC / ST / दिव्यांग / महिला</td><td>40%</td><td>6.0 अंक</td></tr>
+                    </tbody>
+                </table>
+
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                    <button class="btn btn-primary" onclick="reviewQuestions()">🔍 उत्तरों की समीक्षा करें (Review)</button>
+                    <button class="btn btn-outline" onclick="restartTest()">🔄 पुनः प्रयास करें (Retake)</button>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h3>प्रश्न पैलेट (Question Palette)</h3>
+                <div class="palette-grid" id="palette-grid"></div>
+
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--success);"></div> हल किया गया (Answered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--review-btn);"></div> समीक्षा (Review)</div>
+                    <div class="legend-item"><div class="legend-dot" style="background:var(--border);"></div> अनुत्तरित (Unanswered)</div>
+                    <div class="legend-item"><div class="legend-dot" style="border:2px solid var(--primary);"></div> वर्तमान (Current)</div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <button class="btn btn-outline" style="width: 100%; justify-content: center;" id="reset-btn">🔄 टेस्ट रीसेट करें</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    const STORAGE_KEY = 'bihar_let_u7_1_quiz_state';
+
+    const questions = [
+        {
+            num: 1,
+            q_hi: "बिहार में 1857 के प्रथम स्वतंत्रता संग्राम का सर्वप्रमुख नेतृत्व निम्नलिखित में से किस महानायक ने किया था?",
+            q_en: "Who among the following was the foremost leader of the First War of Independence of 1857 in Bihar?",
+            options: [
+                { hi: "अमर सिंह", en: "Amar Singh" },
+                { hi: "बाबू वीर कुंवर सिंह", en: "Babu Veer Kunwar Singh" },
+                { hi: "पीर अली खान", en: "Pir Ali Khan" },
+                { hi: "हरे कृष्ण सिंह", en: "Hare Krishna Singh" }
+            ],
+            correct: 1,
+            exp_hi: "जगदीशपुर (भोजपुर/आरा) के 80 वर्षीय जमींदार बाबू वीर कुंवर सिंह ने बिहार में 1857 की क्रांति का नेतृत्व किया। उन्होंने 23 अप्रैल 1858 को ब्रिटिश कैप्टन ली ग्रांड की सेना को पराजित किया, जिसे बिहार में 'विजयोत्सव' के रूप में मनाया जाता है।",
+            exp_en: "The 80-year-old landlord of Jagdishpur (Bhojpur/Arrah), Babu Veer Kunwar Singh, led the 1857 revolt in Bihar. On 23 April 1858, he defeated Captain Le Grand's forces, celebrated as 'Vijayotsav' in Bihar."
+        },
+        {
+            num: 2,
+            q_hi: "पटना में 3 जुलाई 1857 को हुए व्यापक जनविद्रोह का नेतृत्व किसने किया था, जिसे कमिश्नर विलियम टेलर ने फांसी दी थी?",
+            q_en: "Who led the mass uprising in Patna on 3 July 1857, who was subsequently executed by Commissioner William Tayler?",
+            options: [
+                { hi: "मौलवी विलायत अली", en: "Maulvi Vilayat Ali" },
+                { hi: "इनायत अली", en: "Inayat Ali" },
+                { hi: "पीर अली (पुस्तक विक्रेता)", en: "Pir Ali (Bookseller)" },
+                { hi: "वारिस अली", en: "Waris Ali" }
+            ],
+            correct: 2,
+            exp_hi: "3 जुलाई 1857 को पटना सिटी के एक पुस्तक विक्रेता पीर अली के नेतृत्व में अंग्रेजों के विरुद्ध विद्रोह भड़का, जिसमें ब्रिटिश अफीम एजेंट डॉ. आर. लॉयल मारा गया। पटना कमिश्नर विलियम टेलर ने पीर अली को गिरफ्तार कर फांसी दे दी।",
+            exp_en: "On 3 July 1857, bookseller Pir Ali led an uprising in Patna City during which British opium agent Dr. R. Lyell was killed. Commissioner William Tayler arrested and executed Pir Ali."
+        },
+        {
+            num: 3,
+            q_hi: "प्रतिवर्ष 'बिहार दिवस' (Bihar Diwas) किस ऐतिहासिक घटना की स्मृति में 22 मार्च को मनाया जाता है?",
+            q_en: "On 22 March, 'Bihar Diwas' is celebrated annually to commemorate which historical event?",
+            options: [
+                { hi: "1947 में भारत की स्वतंत्रता", en: "Independence of India in 1947" },
+                { hi: "1912 में बंगाल प्रेसीडेंसी से बिहार को अलग राज्य बनाने की आधिकारिक अधिसूचना", en: "Official notification of carving Bihar out of Bengal Presidency in 1912" },
+                { hi: "1936 में उड़ीसा से बिहार का पृथक्करण", en: "Separation of Bihar from Orissa in 1936" },
+                { hi: "1916 में पटना उच्च न्यायालय की स्थापना", en: "Establishment of Patna High Court in 1916" }
+            ],
+            correct: 1,
+            exp_hi: "12 दिसंबर 1911 को दिल्ली दरबार में जॉर्ज पंचम की घोषणा के उपरांत 22 मार्च 1912 को बिहार एवं उड़ीसा को बंगाल से पृथक कर नया प्रांत बनाने की विधिवत अधिसूचना जारी हुई। इसी उपलक्ष्य में प्रतिवर्ष 22 मार्च को 'बिहार दिवस' मनाया जाता है।",
+            exp_en: "Following King George V's proclamation at Delhi Durbar, on 22 March 1912, the official gazette notification separating Bihar & Orissa from Bengal was issued. Hence, 22 March is celebrated as Bihar Diwas."
+        },
+        {
+            num: 4,
+            q_hi: "दिसंबर 1916 के कांग्रेस के लखनऊ अधिवेशन में चंपारण के किस किसान नेता ने महात्मा गांधी से मिलकर उन्हें चंपारण आने का निमंत्रण दिया था?",
+            q_en: "Which peasant leader from Champaran met Mahatma Gandhi at the December 1916 Lucknow Congress session and invited him to Champaran?",
+            options: [
+                { hi: "ब्रजकिशोर प्रसाद", en: "Brajkishore Prasad" },
+                { hi: "पंडित राजकुमार शुक्ल", en: "Pandit Rajkumar Shukla" },
+                { hi: "स्वामी सहजानंद सरस्वती", en: "Swami Sahjanand Saraswati" },
+                { hi: "अनुग्रह नारायण सिन्हा", en: "Anugrah Narayan Sinha" }
+            ],
+            correct: 1,
+            exp_hi: "चंपारण के मुरली भरहवा गांव निवासी पंडित राजकुमार शुक्ल ने 1916 के लखनऊ कांग्रेस अधिवेशन में गांधीजी से मुलाकात की और नीलहे गोरों द्वारा किसानों पर किए जा रहे अत्याचारों की जानकारी देकर उन्हें चंपारण आने को राजी किया।",
+            exp_en: "Pandit Rajkumar Shukla of Murli Bharhawa village met Gandhiji at the 1916 Lucknow Congress session, apprised him of the plight of indigo farmers under British planters, and persuaded him to visit Champaran."
+        },
+        {
+            num: 5,
+            q_hi: "चंपारण में प्रचलित 'तिनकठिया पद्धति' (Tinkathia System) का वास्तविक अर्थ क्या था?",
+            q_en: "What was the actual meaning of the 'Tinkathia System' prevalent in Champaran?",
+            options: [
+                { hi: "भूमि के 3/10 भाग पर अफीम की खेती", en: "Cultivating opium on 3/10th of land" },
+                { hi: "भूमि के 3/20 भाग (1 बीघा में 3 कट्ठा) पर अनिवार्य नील की खेती", en: "Compulsory cultivation of indigo on 3/20th portion (3 kathas per bigha)" },
+                { hi: "3 वर्षों तक कोई कर न देना", en: "No tax payment for 3 consecutive years" },
+                { hi: "उपज का 33% जमींदार को देना", en: "Giving 33% of produce to the landlord" }
+            ],
+            correct: 1,
+            exp_hi: "तिनकठिया पद्धति के तहत यूरोपीय नीलहे किसानों को अपनी कृषि योग्य भूमि के प्रत्येक बीघे (20 कट्ठा) में से 3 कट्ठा (3/20 भाग) पर अनिवार्य रूप से नील की खेती करने हेतु अनुबंध में बांधते थे।",
+            exp_en: "Under the Tinkathia system, European planters contractually obligated tenants to cultivate indigo on 3 kathas per bigha (i.e. 3/20th of their best agricultural holding)."
+        },
+        {
+            num: 6,
+            q_hi: "1917 के चंपारण सत्याग्रह की ऐतिहासिक सफलता के उपरांत किसने मोहनदास करमचंद गांधी को सर्वप्रथम 'महात्मा' की उपाधि दी थी?",
+            q_en: "Following the historic success of Champaran Satyagraha in 1917, who first conferred the title 'Mahatma' upon Mohandas Karamchand Gandhi?",
+            options: [
+                { hi: "डॉ. राजेन्द्र प्रसाद", en: "Dr. Rajendra Prasad" },
+                { hi: "रवीन्द्रनाथ टैगोर", en: "Rabindranath Tagore" },
+                { hi: "सुभाष चंद्र बोस", en: "Subhash Chandra Bose" },
+                { hi: "गोपाल कृष्ण गोखले", en: "Gopal Krishna Gokhale" }
+            ],
+            correct: 1,
+            exp_hi: "चंपारण सत्याग्रह भारत में गांधीजी का पहला सफल सविनय अवज्ञा आंदोलन था। इसकी अभूतपूर्व सफलता एवं किसानों के उद्धार से प्रभावित होकर रवीन्द्रनाथ टैगोर ने उन्हें 'महात्मा' की उपाधि दी थी।",
+            exp_en: "Champaran Satyagraha was Gandhiji's first successful civil disobedience movement in India. Impressed by this feat, Rabindranath Tagore conferred the title 'Mahatma' upon him."
+        },
+        {
+            num: 7,
+            q_hi: "असहयोग आंदोलन के दौरान पटना में 'सदाकत आश्रम' की स्थापना तथा राष्ट्रीय विचारों के प्रसार हेतु 'द मदरलैंड' (The Motherland) समाचार पत्र का प्रकाशन किसने किया था?",
+            q_en: "During the Non-Cooperation Movement, who established 'Sadaqat Ashram' in Patna and published the newspaper 'The Motherland'?",
+            options: [
+                { hi: "मौलाना मजहरुल हक", en: "Maulana Mazharul Haque" },
+                { hi: "डॉ. श्रीकृष्ण सिंह", en: "Dr. Shrikrishna Singh" },
+                { hi: "सैयद हसन इमाम", en: "Syed Hasan Imam" },
+                { hi: "सच्चिदानंद सिन्हा", en: "Sachchidananda Sinha" }
+            ],
+            correct: 0,
+            exp_hi: "मौलाना मजहरुल हक ने अपने मित्र खैरू मियां की जमीन पर सदाकत आश्रम की स्थापना की और सितंबर 1921 में राष्ट्रीय चेतना जागृत करने हेतु 'द मदरलैंड' नामक अंग्रेजी समाचार पत्र शुरू किया। वे बिहार विद्यापीठ के कुलाधिपति भी थे।",
+            exp_en: "Maulana Mazharul Haque founded Sadaqat Ashram on land donated by Khairu Mian and launched the nationalist newspaper 'The Motherland' in September 1921. He was also Chancellor of Bihar Vidyapeeth."
+        },
+        {
+            num: 8,
+            q_hi: "भारतीय राष्ट्रीय कांग्रेस का 37वां वार्षिक अधिवेशन 1922 में बिहार के किस शहर में देशबंधु चित्तरंजन दास की अध्यक्षता में आयोजित हुआ था?",
+            q_en: "The 37th annual session of the Indian National Congress in 1922 was held in which city of Bihar under the presidency of Deshbandhu Chittaranjan Das?",
+            options: [
+                { hi: "बांकीपुर (पटना)", en: "Bankipore (Patna)" },
+                { hi: "गया (Gaya)", en: "Gaya" },
+                { hi: "रामगढ़", en: "Ramgarh" },
+                { hi: "भागलपुर", en: "Bhagalpur" }
+            ],
+            correct: 1,
+            exp_hi: "1922 में कांग्रेस का 37वां अधिवेशन गया में चित्तरंजन दास (C.R. Das) की अध्यक्षता में हुआ था (नोट: बांकीपुर में 1912 में 27वां अधिवेशन आर.एन. माधोलकर की अध्यक्षता में हुआ था)। गया अधिवेशन के बाद ही स्वराज दल का गठन हुआ।",
+            exp_en: "The 37th session was held in Gaya in 1922 presided by C.R. Das (Note: The 27th session was at Bankipore in 1912 under R.N. Madholkar). Following Gaya, the Swaraj Party was born."
+        },
+        {
+            num: 9,
+            q_hi: "1930 के सविनय अवज्ञा आंदोलन के दौरान पटना में नमक सत्याग्रह का नेतृत्व 'नखास पिंड' (Nakhas Pond) नामक स्थल पर किसने किया था?",
+            q_en: "During the Civil Disobedience Movement in 1930, who led the Salt Satyagraha at 'Nakhas Pond' in Patna?",
+            options: [
+                { hi: "अंबिका कांत सिन्हा", en: "Ambika Kant Sinha" },
+                { hi: "रामवृक्ष बेनीपुरी", en: "Ramvriksh Benipuri" },
+                { hi: "कार्यानंद शर्मा", en: "Karyanand Sharma" },
+                { hi: "जगलाल चौधरी", en: "Jaglal Chaudhary" }
+            ],
+            correct: 0,
+            exp_hi: "पटना में 16 अप्रैल 1930 को अंबिका कांत सिन्हा के नेतृत्व में नखास पिंड पर नमक कानून भंग करने का सत्याग्रह प्रारंभ हुआ, जहां सत्याग्रहियों के जत्थे ने नमकीन मिट्टी से नमक तैयार किया।",
+            exp_en: "On 16 April 1930, Salt Satyagraha was launched at Nakhas Pond in Patna under the leadership of Ambika Kant Sinha, where volunteers prepared salt from saline soil."
+        },
+        {
+            num: 10,
+            q_hi: "नवंबर 1929 में सोनपुर मेले के ऐतिहासिक अवसर पर 'बिहार प्रांतीय किसान सभा' (BPKS) की स्थापना किसने की थी?",
+            q_en: "Who founded the 'Bihar Provincial Kisan Sabha' (BPKS) in November 1929 on the historic occasion of Sonpur Fair?",
+            options: [
+                { hi: "सहजानंद सरस्वती", en: "Swami Sahjanand Saraswati" },
+                { hi: "एन.जी. रंगा", en: "N.G. Ranga" },
+                { hi: "बाबा रामचंद्र", en: "Baba Ramchandra" },
+                { hi: "राहुल सांकृत्यायन", en: "Rahul Sankrityayan" }
+            ],
+            correct: 0,
+            exp_hi: "नवंबर 1929 में सोनपुर मेले में स्वामी सहजानंद सरस्वती ने बिहार प्रांतीय किसान सभा की स्थापना की। वे इसके अध्यक्ष तथा डॉ. श्रीकृष्ण सिंह इसके सचिव बने। स्वामी जी ने आगे चलकर 1936 में लखनऊ में 'अखिल भारतीय किसान सभा' की अध्यक्षता भी की।",
+            exp_en: "In November 1929 at Sonpur Fair, Swami Sahjanand Saraswati founded the Bihar Provincial Kisan Sabha as President, with Dr. Shrikrishna Singh as Secretary. He later presided over AIKS in Lucknow in 1936."
+        },
+        {
+            num: 11,
+            q_hi: "1934 में पटना के अंजुमन इस्लामिया हॉल में औपचारिक रूप से गठित 'बिहार सोशलिस्ट पार्टी' के अध्यक्ष और सचिव क्रमशः कौन थे?",
+            q_en: "Who were the President and Secretary respectively of the 'Bihar Socialist Party' formally constituted at Anjuman Islamia Hall, Patna in 1934?",
+            options: [
+                { hi: "जयप्रकाश नारायण (अध्यक्ष) एवं रामवृक्ष बेनीपुरी (सचिव)", en: "Jayaprakash Narayan (President) & Ramvriksh Benipuri (Secretary)" },
+                { hi: "आचार्य नरेन्द्र देव (अध्यक्ष) एवं जयप्रकाश नारायण (सचिव)", en: "Acharya Narendra Deva (President) & Jayaprakash Narayan (Secretary)" },
+                { hi: "डॉ. राजेन्द्र प्रसाद (अध्यक्ष) एवं अब्दुल बारी (सचिव)", en: "Dr. Rajendra Prasad (President) & Abdul Bari (Secretary)" },
+                { hi: "गंगा शरण सिंह (अध्यक्ष) एवं योगेंद्र शुक्ल (सचिव)", en: "Ganga Sharan Singh (President) & Yogendra Shukla (Secretary)" }
+            ],
+            correct: 1,
+            exp_hi: "1934 में अंजुमन इस्लामिया हॉल, पटना में बिहार सोशलिस्ट पार्टी की औपचारिक स्थापना हुई, जिसके अध्यक्ष आचार्य नरेन्द्र देव तथा सचिव जयप्रकाश नारायण (JP) चुने गए।",
+            exp_en: "In 1934 at Anjuman Islamia Hall, Patna, the Bihar Socialist Party was formally inaugurated with Acharya Narendra Deva as President and Jayaprakash Narayan as Secretary."
+        },
+        {
+            num: 12,
+            q_hi: "गवर्नमेंट ऑफ इंडिया एक्ट 1935 के तहत 1937 के चुनावों के बाद बिहार में प्रथम अंतरिम सरकार के 'प्रीमियर' (प्रधानमंत्री) कौन बने थे?",
+            q_en: "Under the Government of India Act 1935, following the 1937 elections, who became the first interim 'Premier' of Bihar?",
+            options: [
+                { hi: "डॉ. श्रीकृष्ण सिंह", en: "Dr. Shrikrishna Singh" },
+                { hi: "मोहम्मद यूनुस", en: "Mohammad Yunus" },
+                { hi: "अनुग्रह नारायण सिन्हा", en: "Anugrah Narayan Sinha" },
+                { hi: "सच्चिदानंद सिन्हा", en: "Sachchidananda Sinha" }
+            ],
+            correct: 1,
+            exp_hi: "1 अप्रैल 1937 को मोहम्मद यूनुस बिहार के प्रथम अंतरिम प्रधानमंत्री (प्रीमियर) बने। इसके पश्चात 20 जुलाई 1937 को कांग्रेस पार्टी के बहुमत के साथ डॉ. श्रीकृष्ण सिंह के नेतृत्व में प्रथम पूर्ण कांग्रेसी मंत्रिमंडल बना।",
+            exp_en: "On 1 April 1937, Mohammad Yunus took oath as Bihar's first interim Premier. Subsequently, on 20 July 1937, Dr. Shrikrishna Singh formed the first full Congress ministry."
+        },
+        {
+            num: 13,
+            q_hi: "भारत छोड़ो आंदोलन के दौरान 11 अगस्त 1942 को पटना सचिवालय गोलीकांड में किस ब्रिटिश जिला मजिस्ट्रेट के आदेश पर पुलिस ने छात्रों पर गोलियां चलाईं, जिसमें 7 छात्र शहीद हुए?",
+            q_en: "During the Quit India Movement, on 11 August 1942, on the order of which British District Magistrate did police open fire on students at Patna Secretariat, martyring 7 students?",
+            options: [
+                { hi: "विलियम टेलर (William Tayler)", en: "William Tayler" },
+                { hi: "डब्ल्यू. जी. आर्चर (W.G. Archer)", en: "W.G. Archer" },
+                { hi: "कैप्टन ली ग्रांड (Captain Le Grand)", en: "Captain Le Grand" },
+                { hi: "रॉबर्ट्स (Roberts)", en: "Roberts" }
+            ],
+            correct: 1,
+            exp_hi: "11 अगस्त 1942 को पटना सचिवालय के पूर्वी द्वार पर तिरंगा फहराने का प्रयास कर रहे निहत्थे छात्रों पर पटना के तत्कालीन डीएम डब्ल्यू. जी. आर्चर (W.G. Archer) के आदेश पर गोलियां चलाई गईं, जिसमें 7 अमर छात्र शहीद हुए।",
+            exp_en: "On 11 August 1942, District Magistrate W.G. Archer ordered firing on unarmed students attempting to unfurl the Tricolor on Patna Secretariat, resulting in the martyrdom of 7 brave students."
+        },
+        {
+            num: 14,
+            q_hi: "1942 के भारत छोड़ो आंदोलन के दौरान दीपावली की रात (9 नवंबर 1942) को जयप्रकाश नारायण अपने साथियों के साथ किस जेल की दीवार फांदकर फरार हुए थे?",
+            q_en: "During the 1942 Quit India Movement, on the night of Diwali (9 Nov 1942), from which jail did Jayaprakash Narayan escape along with his comrades by scaling the boundary wall?",
+            options: [
+                { hi: "बांकीपुर सेंट्रल जेल, पटना", en: "Bankipore Central Jail, Patna" },
+                { hi: "हजारीबाग सेंट्रल जेल", en: "Hazaribagh Central Jail" },
+                { hi: "भागलपुर कैंप जेल", en: "Bhagalpur Camp Jail" },
+                { hi: "बक्सर केंद्रीय कारा", en: "Buxar Central Jail" }
+            ],
+            correct: 1,
+            exp_hi: "9 नवंबर 1942 को दीपावली के दिन जयप्रकाश नारायण, रामानंद मिश्र, योगेंद्र शुक्ल, सूरज नारायण सिंह और गुलाब चंद गुप्ता के साथ हजारीबाग सेंट्रल जेल से दीवार फांदकर फरार हो गए और आंदोलन को भूमिगत नेतृत्व प्रदान किया।",
+            exp_en: "On 9 November 1942 (Diwali night), Jayaprakash Narayan along with Ramanand Mishra, Yogendra Shukla, Suraj Narayan Singh and others escaped from Hazaribagh Central Jail to lead the underground movement."
+        },
+        {
+            num: 15,
+            q_hi: "भारत छोड़ो आंदोलन में भूमिगत छापामार युद्ध और ब्रिटिश संचार तंत्र को नष्ट करने के उद्देश्य से नेपाल के जंगलों में 'आजाद दस्ता' का गठन किसने किया था?",
+            q_en: "Who formed the underground guerrilla organization 'Azad Dasta' in the forests of Nepal to disrupt British communication networks during the Quit India Movement?",
+            options: [
+                { hi: "सुभाष चंद्र बोस", en: "Subhash Chandra Bose" },
+                { hi: "जयप्रकाश नारायण", en: "Jayaprakash Narayan" },
+                { hi: "रामवृक्ष बेनीपुरी", en: "Ramvriksh Benipuri" },
+                { hi: "बैकुंठ शुक्ल", en: "Baikuntha Shukla" }
+            ],
+            correct: 1,
+            exp_hi: "नेपाल के राजविलास जंगल में जयप्रकाश नारायण ने 'आजाद दस्ता' की स्थापना की। इसके सैन्य प्रशिक्षण के निदेशक सरदार नित्यानंद सिंह थे तथा डॉ. राम मनोहर लोहिया इसके आजाद रेडियो संचालन के प्रमुख थे।",
+            exp_en: "In the Rajvilas forests of Nepal, Jayaprakash Narayan established 'Azad Dasta'. Sardar Nityanand Singh was the director of military training, and Dr. Ram Manohar Lohia led its underground radio operations."
+        }
+    ];
+
+    let currentIdx = 0;
+    let userAnswers = new Array(questions.length).fill(null);
+    let reviewMarks = new Array(questions.length).fill(false);
+    let currentMode = 'practice';
+    let timerInterval = null;
+    let timeLeft = 20 * 60; // 20 minutes
+
+    function init() {
+        renderPalette();
+        loadQuestion(0);
+        loadPersistedState();
+    }
+
+    function toggleTheme() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('bihar_theme', next);
+    }
+
+    const savedTheme = localStorage.getItem('bihar_theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    function setLanguage(lang) {
+        document.body.className = `lang-${lang}`;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+        applyLangVisibility();
+    }
+
+    function applyLangVisibility() {
+        const mode = document.body.className;
+        document.querySelectorAll('.lang-hi, .lang-en').forEach(el => {
+            if (mode === 'lang-hi') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'block';
+                if (el.classList.contains('lang-en')) el.style.display = 'none';
+            } else if (mode === 'lang-en') {
+                if (el.classList.contains('lang-hi')) el.style.display = 'none';
+                if (el.classList.contains('lang-en')) el.style.display = 'block';
+            } else {
+                el.style.display = 'block';
+            }
+        });
+    }
+
+    function setMode(mode) {
+        currentMode = mode;
+        document.getElementById('btn-practice').classList.toggle('active', mode === 'practice');
+        document.getElementById('btn-exam').classList.toggle('active', mode === 'exam');
+
+        const timerBox = document.getElementById('timer-box');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (mode === 'exam') {
+            timerBox.style.display = 'block';
+            submitBtn.style.display = 'inline-flex';
+            startTimer();
+        } else {
+            timerBox.style.display = 'none';
+            submitBtn.style.display = 'none';
+            clearInterval(timerInterval);
+        }
+        loadQuestion(currentIdx);
+    }
+
+    function startTimer() {
+        clearInterval(timerInterval);
+        timeLeft = 20 * 60;
+        updateTimerDisplay();
+        timerInterval = setInterval(() => {
+            timeLeft--;
+            updateTimerDisplay();
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                alert("⏱️ समय समाप्त! आपकी परीक्षा सबमिट की जा रही है। (Time is up!)");
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateTimerDisplay() {
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        document.getElementById('timer-box').textContent = `⏱️ ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function renderPalette() {
+        const pal = document.getElementById('palette-grid');
+        pal.innerHTML = '';
+        questions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'pal-btn';
+            btn.id = `pal-${idx}`;
+            btn.textContent = idx + 1;
+            btn.onclick = () => jumpToQuestion(idx);
+            pal.appendChild(btn);
+        });
+        updatePalette();
+    }
+
+    function updatePalette() {
+        questions.forEach((q, idx) => {
+            const btn = document.getElementById(`pal-${idx}`);
+            if (!btn) return;
+            btn.className = 'pal-btn';
+            if (idx === currentIdx) btn.classList.add('current');
+            if (userAnswers[idx] !== null) btn.classList.add('answered');
+            if (reviewMarks[idx]) btn.classList.add('review');
+        });
+    }
+
+    function loadQuestion(idx) {
+        currentIdx = idx;
+        const q = questions[idx];
+
+        document.getElementById('q-number').textContent = `प्रश्न ${idx + 1} / ${questions.length}`;
+
+        const qTextEl = document.getElementById('q-text');
+        qTextEl.innerHTML = `
+            <div class="lang-hi">${q.num}. ${q.q_hi}</div>
+            <div class="lang-en">${q.num}. ${q.q_en}</div>
+        `;
+
+        const optsGrid = document.getElementById('options-grid');
+        optsGrid.innerHTML = '';
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        q.options.forEach((opt, oIdx) => {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'option-item';
+            optDiv.id = `opt-${oIdx}`;
+
+            if (userAnswers[idx] === oIdx) {
+                optDiv.classList.add('selected');
+            }
+
+            if (currentMode === 'practice' && userAnswers[idx] !== null) {
+                if (oIdx === q.correct) {
+                    optDiv.classList.add('correct');
+                } else if (userAnswers[idx] === oIdx) {
+                    optDiv.classList.add('incorrect');
+                }
+            }
+
+            optDiv.innerHTML = `
+                <div class="opt-letter">${letters[oIdx]}</div>
+                <div>
+                    <div class="lang-hi">${opt.hi}</div>
+                    <div class="lang-en">${opt.en}</div>
+                </div>
+            `;
+
+            optDiv.onclick = () => selectOption(oIdx);
+            optsGrid.appendChild(optDiv);
+        });
+
+        const expBox = document.getElementById('explanation-box');
+        if (currentMode === 'practice' && userAnswers[idx] !== null) {
+            expBox.classList.add('show');
+            document.getElementById('explanation-text').innerHTML = `
+                <div class="lang-hi">${q.exp_hi}</div>
+                <div class="lang-en">${q.exp_en}</div>
+            `;
+        } else {
+            expBox.classList.remove('show');
+        }
+
+        document.getElementById('prev-btn').disabled = (idx === 0);
+        document.getElementById('next-btn').disabled = (idx === questions.length - 1);
+
+        const revBtn = document.getElementById('mark-review-btn');
+        if (reviewMarks[idx]) {
+            revBtn.className = 'btn btn-review';
+            revBtn.textContent = '🚩 चिह्नित हटाया (Unmark)';
+        } else {
+            revBtn.className = 'btn btn-outline';
+            revBtn.textContent = '🚩 समीक्षा हेतु चिह्नित करें (Mark Review)';
+        }
+
+        applyLangVisibility();
+        updatePalette();
+    }
+
+    function selectOption(optIdx) {
+        if (currentMode === 'practice' && userAnswers[currentIdx] !== null) return;
+
+        userAnswers[currentIdx] = optIdx;
+        persistState();
+
+        if (currentMode === 'practice') {
+            loadQuestion(currentIdx);
+        } else {
+            document.querySelectorAll('.option-item').forEach(el => el.classList.remove('selected'));
+            document.getElementById(`opt-${optIdx}`).classList.add('selected');
+            updatePalette();
+        }
+    }
+
+    function nextQuestion() {
+        if (currentIdx < questions.length - 1) loadQuestion(currentIdx + 1);
+    }
+
+    function prevQuestion() {
+        if (currentIdx > 0) loadQuestion(currentIdx - 1);
+    }
+
+    function jumpToQuestion(idx) {
+        loadQuestion(idx);
+    }
+
+    function toggleReview() {
+        reviewMarks[currentIdx] = !reviewMarks[currentIdx];
+        loadQuestion(currentIdx);
+    }
+
+    function submitExam() {
+        clearInterval(timerInterval);
+
+        let correct = 0;
+        let incorrect = 0;
+        let unattempted = 0;
+
+        questions.forEach((q, i) => {
+            if (userAnswers[i] === null) {
+                unattempted++;
+            } else if (userAnswers[i] === q.correct) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        });
+
+        const scorePercent = ((correct / questions.length) * 100).toFixed(1);
+
+        document.getElementById('res-score').textContent = correct;
+        document.getElementById('res-correct').textContent = correct;
+        document.getElementById('res-incorrect').textContent = incorrect;
+        document.getElementById('res-unattempted').textContent = unattempted;
+        document.getElementById('res-percent').textContent = `${scorePercent}%`;
+
+        const badge = document.getElementById('res-qualification');
+        const scoreCircle = document.querySelector('.score-circle');
+        scoreCircle.style.setProperty('--percent', scorePercent);
+
+        if (scorePercent >= 50.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.innerHTML = '🎉 बधाई! आप सामान्य वर्ग कटऑफ (50%) के अनुसार उत्तीर्ण हैं (Qualified for UR)';
+        } else if (scorePercent >= 40.0) {
+            badge.className = 'qualification-badge badge-pass';
+            badge.style.color = 'var(--warning)';
+            badge.style.borderColor = 'var(--warning)';
+            badge.innerHTML = '⚠️ आरक्षित श्रेणी अर्हता प्राप्त (Qualified for SC/ST/PwD/Women)';
+        } else {
+            badge.className = 'qualification-badge badge-fail';
+            badge.innerHTML = '❌ अनुत्तीर्ण (Not Qualified) - न्यूनतम 50% (UR) अथवा 40% (SC/ST) आवश्यक';
+        }
+
+        document.getElementById('result-modal').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function reviewQuestions() {
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    function restartTest() {
+        localStorage.removeItem(STORAGE_KEY);
+        userAnswers = new Array(questions.length).fill(null);
+        reviewMarks = new Array(questions.length).fill(false);
+        document.getElementById('result-modal').classList.remove('show');
+        setMode('practice');
+        loadQuestion(0);
+    }
+
+    document.getElementById('reset-btn').addEventListener('click', () => {
+        if (confirm("क्या आप वाकई इस टेस्ट को रीसेट करना चाहते हैं? (Reset test?)")) {
+            restartTest();
+        }
+    });
+
+    function persistState() {
+        const state = {
+            userAnswers,
+            reviewMarks,
+            currentIdx
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function loadPersistedState() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                const parsed = JSON.parse(saved);
+                if (parsed.userAnswers && parsed.userAnswers.length === questions.length) {
+                    userAnswers = parsed.userAnswers;
+                    reviewMarks = parsed.reviewMarks || reviewMarks;
+                    currentIdx = parsed.currentIdx || 0;
+                    loadQuestion(currentIdx);
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>

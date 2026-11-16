@@ -1,0 +1,35 @@
+name: Pre-Merge CI Test Suite
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ 'feature/**', 'fix/**' ]
+  workflow_dispatch:
+
+jobs:
+  validate-and-test:
+    name: Validate Content Schema & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Schema & Question Integrity Tests (Vitest)
+        run: npm test
+
+      - name: Run TypeScript Typecheck
+        run: npm run typecheck
+
+      - name: Test Production Build
+        run: npm run build

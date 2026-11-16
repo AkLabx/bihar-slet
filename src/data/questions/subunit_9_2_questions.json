@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u9_sub9_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "निम्नलिखित में से कौन सा एक 'ओपन सोर्स' (Open Source) ऑपरेटिंग सिस्टम है, जिसका सोर्स कोड सार्वजनिक रूप से निशुल्क उपलब्ध है?",
+    "q_en": "Which of the following is an 'Open Source' operating system whose source code is freely and publicly available for modification and redistribution?",
+    "options_hi": [
+      "माइक्रोसॉफ्ट विंडोज (Windows 11)",
+      "लिनक्स (Linux)",
+      "एप्पल मैक ओएस (macOS)",
+      "आईओएस (iOS)"
+    ],
+    "options_en": [
+      "Microsoft Windows 11",
+      "Linux",
+      "Apple macOS",
+      "Apple iOS"
+    ],
+    "options": [
+      {
+        "hi": "माइक्रोसॉफ्ट विंडोज (Windows 11)",
+        "en": "Microsoft Windows 11"
+      },
+      {
+        "hi": "लिनक्स (Linux)",
+        "en": "Linux"
+      },
+      {
+        "hi": "एप्पल मैक ओएस (macOS)",
+        "en": "Apple macOS"
+      },
+      {
+        "hi": "आईओएस (iOS)",
+        "en": "Apple iOS"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "लिनक्स (Linux) एक स्वतंत्र एवं ओपन सोर्स ऑपरेटिंग सिस्टम है, जिसके कर्नल का विकास लिनुस टॉर्वाल्ड्स ने 1991 में किया था। विंडोज, मैक ओएस और आईओएस प्रोप्राइटरी (क्लोज्ड सोर्स) हैं।",
+    "exp_en": "Linux is a free and open-source operating system kernel created by Linus Torvalds in 1991. Windows, macOS, and iOS are closed-source proprietary systems."
+  },
+  {
+    "globalId": "u9_sub9_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "माइक्रोसॉफ्ट वर्ड (MS Word) में टाइप किए गए टेक्स्ट की वर्तनी और व्याकरण की अशुद्धियों की जांच (Spelling & Grammar Check) हेतु कौन सी फंक्शन कुंजी प्रयुक्त होती है?",
+    "q_en": "Which function key is standardly utilized in Microsoft Word to initiate the automated Spelling and Grammar check tool?",
+    "options_hi": [
+      "F2",
+      "F5",
+      "F7 (F7 Key)",
+      "F12"
+    ],
+    "options_en": [
+      "F2",
+      "F5",
+      "F7 Key",
+      "F12"
+    ],
+    "options": [
+      {
+        "hi": "F2",
+        "en": "F2"
+      },
+      {
+        "hi": "F5",
+        "en": "F5"
+      },
+      {
+        "hi": "F7 (F7 Key)",
+        "en": "F7 Key"
+      },
+      {
+        "hi": "F12",
+        "en": "F12"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "MS Word में 'F7' दबाने से 'Spelling and Grammar Check' डायलॉग बॉक्स खुलता है। (Shift + F7 दबाने पर 'Thesaurus' अर्थात् पर्यायवाची/विलोम शब्दकोश खुलता है)।",
+    "exp_en": "Pressing 'F7' triggers the Spelling and Grammar proofing tool in MS Word. (Shift + F7 launches the Thesaurus research tool)."
+  },
+  {
+    "globalId": "u9_sub9_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "एमएस वर्ड दस्तावेज में किसी चयनित शब्द या वाक्य पर वेब लिंक या फाइल जोड़ने हेतु 'हाइपरलिंक प्रविष्ट' (Insert Hyperlink) करने का शॉर्टकट क्या है?",
+    "q_en": "In Microsoft Word, what is the default keyboard shortcut used to insert a Hyperlink to a web page or file on selected text?",
+    "options_hi": [
+      "Ctrl + H",
+      "Ctrl + K (Ctrl + K)",
+      "Ctrl + L",
+      "Ctrl + P"
+    ],
+    "options_en": [
+      "Ctrl + H",
+      "Ctrl + K",
+      "Ctrl + L",
+      "Ctrl + P"
+    ],
+    "options": [
+      {
+        "hi": "Ctrl + H",
+        "en": "Ctrl + H"
+      },
+      {
+        "hi": "Ctrl + K (Ctrl + K)",
+        "en": "Ctrl + K"
+      },
+      {
+        "hi": "Ctrl + L",
+        "en": "Ctrl + L"
+      },
+      {
+        "hi": "Ctrl + P",
+        "en": "Ctrl + P"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "MS Word में हाइपरलिंक इंसर्ट करने का शॉर्टकट 'Ctrl + K' है। (Ctrl + H 'रिप्लेस' का तथा Ctrl + L 'लेफ्ट अलाइन' का शॉर्टकट होता है)।",
+    "exp_en": "The standard shortcut for inserting a Hyperlink across MS Office applications is 'Ctrl + K'. (Ctrl + H is for Replace, Ctrl + L for Left align)."
+  },
+  {
+    "globalId": "u9_sub9_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "माइक्रोसॉफ्ट एक्सेल (MS Excel) में गणितीय गणना या विश्लेषण करने हेतु कोई भी फॉर्मूला हमेशा किस प्रतीक/चिह्न से अनिवार्य रूप से शुरू होना चाहिए?",
+    "q_en": "In Microsoft Excel, every calculation formula or mathematical function must mandatorily commence with which symbol?",
+    "options_hi": [
+      "प्लस चिह्न (+)",
+      "बराबर का चिह्न (=)",
+      "एट-द-रेट (@)",
+      "हैश चिह्न (#)"
+    ],
+    "options_en": [
+      "Plus sign (+)",
+      "Equal to sign (=)",
+      "At sign (@)",
+      "Hash sign (#)"
+    ],
+    "options": [
+      {
+        "hi": "प्लस चिह्न (+)",
+        "en": "Plus sign (+)"
+      },
+      {
+        "hi": "बराबर का चिह्न (=)",
+        "en": "Equal to sign (=)"
+      },
+      {
+        "hi": "एट-द-रेट (@)",
+        "en": "At sign (@)"
+      },
+      {
+        "hi": "हैश चिह्न (#)",
+        "en": "Hash sign (#)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "एक्सेल में कोई भी सूत्र/फॉर्मूला हमेशा बराबर के चिह्न (=) से प्रारंभ होता है (जैसे `=SUM(A1:A5)` या `=B2*C2`)। यदि बराबर का चिह्न न लगाया जाए, तो एक्सेल उसे सामान्य टेक्स्ट मान लेता है।",
+    "exp_en": "In Excel, the equal-to sign (=) instructs the software that the subsequent characters constitute an executable formula or function rather than plain text."
+  },
+  {
+    "globalId": "u9_sub9_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "एमएस एक्सेल में चयनित सेल श्रेणी (Range) के सभी मानों का तुरंत योग करने के लिए 'ऑटो-सम' (AutoSum) का त्वरित शॉर्टकट क्या है?",
+    "q_en": "What is the rapid keyboard shortcut in MS Excel to automatically insert the 'AutoSum' function for a column or row of numeric values?",
+    "options_hi": [
+      "Alt + = (Alt + Equal)",
+      "Ctrl + S",
+      "Shift + S",
+      "Ctrl + Shift + A"
+    ],
+    "options_en": [
+      "Alt + =",
+      "Ctrl + S",
+      "Shift + S",
+      "Ctrl + Shift + A"
+    ],
+    "options": [
+      {
+        "hi": "Alt + = (Alt + Equal)",
+        "en": "Alt + ="
+      },
+      {
+        "hi": "Ctrl + S",
+        "en": "Ctrl + S"
+      },
+      {
+        "hi": "Shift + S",
+        "en": "Shift + S"
+      },
+      {
+        "hi": "Ctrl + Shift + A",
+        "en": "Ctrl + Shift + A"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "एक्सेल में 'Alt + =' दबाने पर चयनित स्तंभ या पंक्ति के ठीक नीचे स्वतः `=SUM(...)` फॉर्मूला प्रविष्ट हो जाता है और एंटर दबाते ही योगफल आ जाता है।",
+    "exp_en": "Pressing 'Alt + =' automatically inserts the `=SUM()` formula over adjacent rows or columns, functioning as the AutoSum shortcut in Excel."
+  },
+  {
+    "globalId": "u9_sub9_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "एमएस पावरपॉइंट (MS PowerPoint) में खुली हुई प्रस्तुति (Presentation) के भीतर एक 'नई स्लाइड' (New Slide) जोड़ने का सही शॉर्टकट क्या है?",
+    "q_en": "In Microsoft PowerPoint, what is the exact keyboard shortcut used to insert a 'New Slide' into an existing presentation?",
+    "options_hi": [
+      "Ctrl + N",
+      "Ctrl + M (Ctrl + M)",
+      "Ctrl + S",
+      "Shift + N"
+    ],
+    "options_en": [
+      "Ctrl + N",
+      "Ctrl + M",
+      "Ctrl + S",
+      "Shift + N"
+    ],
+    "options": [
+      {
+        "hi": "Ctrl + N",
+        "en": "Ctrl + N"
+      },
+      {
+        "hi": "Ctrl + M (Ctrl + M)",
+        "en": "Ctrl + M"
+      },
+      {
+        "hi": "Ctrl + S",
+        "en": "Ctrl + S"
+      },
+      {
+        "hi": "Shift + N",
+        "en": "Shift + N"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पावरपॉइंट में नई स्लाइड जोड़ने का शॉर्टकट 'Ctrl + M' होता है। (ध्यान रहे: Ctrl + N एक पूरी नई प्रेजेंटेशन फाइल खोलता है)।",
+    "exp_en": "The shortcut to append a New Slide into the current presentation is 'Ctrl + M'. (Note: 'Ctrl + N' generates a completely new presentation file)."
+  },
+  {
+    "globalId": "u9_sub9_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "एमएस पावरपॉइंट में प्रेजेंटेशन को पहली स्लाइड के बजाय 'वर्तमान सक्रिय स्लाइड' (Current Slide) से स्लाइड शो मोड में चलाने का शॉर्टकट क्या है?",
+    "q_en": "In MS PowerPoint, which shortcut key sequence runs the Slide Show from the 'Current Slide' rather than from the beginning?",
+    "options_hi": [
+      "F5",
+      "Shift + F5 (Shift + F5)",
+      "Ctrl + F5",
+      "Alt + F5"
+    ],
+    "options_en": [
+      "F5",
+      "Shift + F5",
+      "Ctrl + F5",
+      "Alt + F5"
+    ],
+    "options": [
+      {
+        "hi": "F5",
+        "en": "F5"
+      },
+      {
+        "hi": "Shift + F5 (Shift + F5)",
+        "en": "Shift + F5"
+      },
+      {
+        "hi": "Ctrl + F5",
+        "en": "Ctrl + F5"
+      },
+      {
+        "hi": "Alt + F5",
+        "en": "Alt + F5"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "पावरपॉइंट में 'F5' दबाने पर स्लाइड शो पहली स्लाइड (आरंभ) से चलता है, जबकि 'Shift + F5' दबाने पर वर्तमान में चयनित स्लाइड से शो शुरू होता है।",
+    "exp_en": "Pressing 'F5' launches the slide show from the first slide. Pressing 'Shift + F5' commences playback directly from the active current slide."
+  },
+  {
+    "globalId": "u9_sub9_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "इंटरनेट पर मानव-पठनीय डोमेन नामों (जैसे `bihar.gov.in`) को संख्यात्मक आईपी पतों (जैसे `164.100.150.10`) में अनुवाद करने वाली प्रणाली कौन सी है?",
+    "q_en": "Which network protocol system translates human-friendly alphanumeric domain names into machine-readable numerical IP addresses?",
+    "options_hi": [
+      "DHCP",
+      "DNS (Domain Name System)",
+      "FTP",
+      "SMTP"
+    ],
+    "options_en": [
+      "DHCP",
+      "DNS (Domain Name System)",
+      "FTP",
+      "SMTP"
+    ],
+    "options": [
+      {
+        "hi": "DHCP",
+        "en": "DHCP"
+      },
+      {
+        "hi": "DNS (Domain Name System)",
+        "en": "DNS (Domain Name System)"
+      },
+      {
+        "hi": "FTP",
+        "en": "FTP"
+      },
+      {
+        "hi": "SMTP",
+        "en": "SMTP"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "DNS (डोमेन नेम सिस्टम) इंटरनेट की फोनबुक की तरह कार्य करता है, जो अक्षरों वाले वेबसाइट नाम (URL/Domain) को कंप्यूटर द्वारा समझे जाने वाले बाइनरी/संख्यात्मक IP पते में बदलता है।",
+    "exp_en": "The Domain Name System (DNS) functions as the Internet's directory, translating memorable hostnames into numerical IP addresses required for routing data packets."
+  },
+  {
+    "globalId": "u9_sub9_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "इंटरनेट पर ईमेल क्लाइंट से मेल सर्वर तक ईमेल संदेश को 'भेजने' (Outgoing / Sending Email) हेतु कौन सा प्रोटोकॉल प्रयुक्त होता है?",
+    "q_en": "Which networking protocol is universally employed for transmitting and sending outgoing electronic mail messages across the Internet?",
+    "options_hi": [
+      "POP3 (Post Office Protocol)",
+      "SMTP (Simple Mail Transfer Protocol)",
+      "HTTP",
+      "IMAP"
+    ],
+    "options_en": [
+      "POP3",
+      "SMTP (Simple Mail Transfer Protocol)",
+      "HTTP",
+      "IMAP"
+    ],
+    "options": [
+      {
+        "hi": "POP3 (Post Office Protocol)",
+        "en": "POP3"
+      },
+      {
+        "hi": "SMTP (Simple Mail Transfer Protocol)",
+        "en": "SMTP (Simple Mail Transfer Protocol)"
+      },
+      {
+        "hi": "HTTP",
+        "en": "HTTP"
+      },
+      {
+        "hi": "IMAP",
+        "en": "IMAP"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ईमेल भेजने (Outgoing) हेतु SMTP (Simple Mail Transfer Protocol - पोर्ट 25) का उपयोग होता है, जबकि इनबॉक्स में मेल प्राप्त करने (Incoming) हेतु POP3 या IMAP का उपयोग होता है।",
+    "exp_en": "SMTP handles outgoing mail transmission between clients and mail transfer agents (MTAs). POP3 and IMAP are used by clients to retrieve incoming mail from mailboxes."
+  },
+  {
+    "globalId": "u9_sub9_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "ईमेल भेजते समय 'BCC' (Blind Carbon Copy) फील्ड में दर्ज किए गए ईमेल पतों की क्या प्रमुख विशेषता होती है?",
+    "q_en": "When dispatching an email, what is the crucial privacy characteristic of recipient addresses placed in the 'BCC' (Blind Carbon Copy) field?",
+    "options_hi": [
+      "मेल बिना इंटरनेट के ऑफलाइन चला जाता है",
+      "BCC में दर्ज पते किसी भी अन्य प्राप्तकर्ता (To या CC) को दिखाई नहीं देते",
+      "मेल केवल स्पैम फोल्डर में जाता है",
+      "इसके साथ कोई फाइल अटैच नहीं की जा सकती"
+    ],
+    "options_en": [
+      "The email is sent offline without internet",
+      "Addresses entered in BCC remain confidential and invisible to all other recipients",
+      "The email is routed solely to spam folders",
+      "No attachment can be included"
+    ],
+    "options": [
+      {
+        "hi": "मेल बिना इंटरनेट के ऑफलाइन चला जाता है",
+        "en": "The email is sent offline without internet"
+      },
+      {
+        "hi": "BCC में दर्ज पते किसी भी अन्य प्राप्तकर्ता (To या CC) को दिखाई नहीं देते",
+        "en": "Addresses entered in BCC remain confidential and invisible to all other recipients"
+      },
+      {
+        "hi": "मेल केवल स्पैम फोल्डर में जाता है",
+        "en": "The email is routed solely to spam folders"
+      },
+      {
+        "hi": "इसके साथ कोई फाइल अटैच नहीं की जा सकती",
+        "en": "No attachment can be included"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "BCC (Blind Carbon Copy) में जिन लोगों का ईमेल आईडी डाला जाता है, उन्हें मेल तो मिलता है किंतु To और CC में शामिल अन्य किसी भी व्यक्ति को यह पता नहीं चलता कि यह मेल किसे भेजा गया है।",
+    "exp_en": "BCC conceals the identities of recipient email addresses placed in this field from all other recipients listed in 'To' or 'CC', ensuring privacy."
+  },
+  {
+    "globalId": "u9_sub9_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "एक द्वेषपूर्ण प्रोग्राम जो बाहर से उपयोगी व प्रामाणिक सॉफ्टवेयर होने का नाटक करता है, किंतु इंस्टॉल होने पर कंप्यूटर में अनधिकृत घुसपैठ (Backdoor) कराता है, क्या कहलाता है?",
+    "q_en": "A malicious program masquerading as legitimate and useful software that covertly installs backdoor exploits into the system upon execution is called what?",
+    "options_hi": [
+      "कंप्यूटर वॉर्म (Worm)",
+      "ट्रोजन हॉर्स (Trojan Horse)",
+      "कुकी (Cookie)",
+      "एंटीवायरस"
+    ],
+    "options_en": [
+      "Computer Worm",
+      "Trojan Horse",
+      "Cookie",
+      "Antivirus"
+    ],
+    "options": [
+      {
+        "hi": "कंप्यूटर वॉर्म (Worm)",
+        "en": "Computer Worm"
+      },
+      {
+        "hi": "ट्रोजन हॉर्स (Trojan Horse)",
+        "en": "Trojan Horse"
+      },
+      {
+        "hi": "कुकी (Cookie)",
+        "en": "Cookie"
+      },
+      {
+        "hi": "एंटीवायरस",
+        "en": "Antivirus"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ट्रोजन हॉर्स (ग्रीक पौराणिक कथा पर आधारित) एक धोखेबाज मैलवेयर है। यह किसी गेम या यूटिलिटी टूल का रूप धारण करता है, किंतु कंप्यूटर में प्रवेश कर हैकर को पूर्ण नियंत्रण सौंप देता है।",
+    "exp_en": "A Trojan Horse is deceptive malware disguised as bona fide software that tricks users into executing it, thereby opening backdoors and compromising system integrity."
+  },
+  {
+    "globalId": "u9_sub9_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "कंप्यूटर की सभी फाइलों को मजबूत क्रिप्टोग्राफी से 'एन्क्रिप्ट' (तालाबंद) कर उन्हें अनलॉक करने के बदले क्रिप्टोकरेंसी में फिरौती मांगने वाला खतरनाक मैलवेयर क्या कहलाता है?",
+    "q_en": "Malicious software that encrypts user data files with robust cryptography and demands a ransom payment in cryptocurrency to provide decryption keys is known as what?",
+    "options_hi": [
+      "स्पाइवेयर (Spyware)",
+      "रैंसमवेयर (Ransomware)",
+      "एडवेयर (Adware)",
+      "फ़िशिंग"
+    ],
+    "options_en": [
+      "Spyware",
+      "Ransomware",
+      "Adware",
+      "Phishing"
+    ],
+    "options": [
+      {
+        "hi": "स्पाइवेयर (Spyware)",
+        "en": "Spyware"
+      },
+      {
+        "hi": "रैंसमवेयर (Ransomware)",
+        "en": "Ransomware"
+      },
+      {
+        "hi": "एडवेयर (Adware)",
+        "en": "Adware"
+      },
+      {
+        "hi": "फ़िशिंग",
+        "en": "Phishing"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रैंसमवेयर (जैसे WannaCry, Petya) कंप्यूटर के डेटा को बंधक बनाकर फिरौती (Ransom) की मांग करता है। पैसे न देने पर डेटा नष्ट करने की धमकी दी जाती है।",
+    "exp_en": "Ransomware extorts victims by holding their sensitive files hostage via strong encryption algorithms, demanding a monetary ransom (often Bitcoin) for the decryption key."
+  },
+  {
+    "globalId": "u9_sub9_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "किसी प्रतिष्ठित बैंक या संस्थान जैसी दिखने वाली फर्जी वेबसाइट या ईमेल बनाकर उपयोगकर्ताओं के पासवर्ड, ओटीपी और क्रेडिट कार्ड विवरण चुराने का साइबर अपराध क्या कहलाता है?",
+    "q_en": "The fraudulent cyber practice of masquerading as a reputable institution via spoofed websites or emails to trick victims into divulging credentials and credit card details is called what?",
+    "options_hi": [
+      "हैकिंग",
+      "फ़िशिंग (Phishing)",
+      "क्रिप्टो-माइनिंग",
+      "डिबगिंग"
+    ],
+    "options_en": [
+      "Hacking",
+      "Phishing",
+      "Crypto-mining",
+      "Debugging"
+    ],
+    "options": [
+      {
+        "hi": "हैकिंग",
+        "en": "Hacking"
+      },
+      {
+        "hi": "फ़िशिंग (Phishing)",
+        "en": "Phishing"
+      },
+      {
+        "hi": "क्रिप्टो-माइनिंग",
+        "en": "Crypto-mining"
+      },
+      {
+        "hi": "डिबगिंग",
+        "en": "Debugging"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "फ़िशिंग (Phishing - चारा डालकर मछली फंसाने जैसा) एक सामाजिक इंजीनियरिंग साइबर हमला है जिसमें नकली लिंक भेजकर यूजर का यूजरनेम, पासवर्ड व बैंकिंग क्रेडेंशियल चुराया जाता है।",
+    "exp_en": "Phishing is a social engineering attack utilizing counterfeit emails, messages, or fraudulent web clones to deceive users into surrendering financial and private credentials."
+  },
+  {
+    "globalId": "u9_sub9_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "किसी निजी कंप्यूटर नेटवर्क (LAN) और बाहरी असुरक्षित नेटवर्क (इंटरनेट) के बीच अनधिकृत प्रवेश को रोकने हेतु डेटा ट्रैफिक को फिल्टर करने वाला सुरक्षा तंत्र क्या कहलाता है?",
+    "q_en": "Which network security mechanism monitors and filters incoming and outgoing traffic to shield private networks from unauthorized external intrusions?",
+    "options_hi": [
+      "हब (Hub)",
+      "फ़ायरवॉल (Firewall)",
+      "स्विच (Switch)",
+      "मॉडेम (Modem)"
+    ],
+    "options_en": [
+      "Hub",
+      "Firewall",
+      "Switch",
+      "Modem"
+    ],
+    "options": [
+      {
+        "hi": "हब (Hub)",
+        "en": "Hub"
+      },
+      {
+        "hi": "फ़ायरवॉल (Firewall)",
+        "en": "Firewall"
+      },
+      {
+        "hi": "स्विच (Switch)",
+        "en": "Switch"
+      },
+      {
+        "hi": "मॉडेम (Modem)",
+        "en": "Modem"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "फ़ायरवॉल (Firewall) हार्डवेयर अथवा सॉफ्टवेयर आधारित सुरक्षा दीवार है, जो पूर्व-निर्धारित सुरक्षा नियमों के आधार पर आने-जाने वाले नेटवर्क ट्रैफिक का विश्लेषण कर संदिग्ध ट्रैफिक को रोकती है।",
+    "exp_en": "A Firewall serves as a defensive perimeter barrier that scrutinizes packet traffic entering or leaving a network according to configured security policies to block unauthorized intrusion."
+  },
+  {
+    "globalId": "u9_sub9_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_09",
+    "unitNum": 9,
+    "subUnitNum": "9.2",
+    "unitTitle_hi": "बुनियादी कंप्यूटर ज्ञान एवं सूचना प्रौद्योगिकी",
+    "unitTitle_en": "Basic Computer Knowledge",
+    "subUnitTitle_hi": "इकाई 9.2: OS, MS Office, इंटरनेट एवं साइबर सुरक्षा",
+    "subUnitTitle_en": "Unit 9.2 Quiz: OS, MS Office, Internet, Email & Cyber Security | Bihar Librarian 2026",
+    "q_hi": "भारत में साइबर अपराध, इलेक्ट्रॉनिक वाणिज्य, डिजिटल हस्ताक्षर तथा हैकिंग पर कानूनी नियंत्रण हेतु कौन सा ऐतिहासिक कानून वर्ष 2000 में लागू किया गया था?",
+    "q_en": "Which landmark parliamentary legislation was enacted in India in the year 2000 to provide a comprehensive legal framework for cyber offenses, e-commerce, and data security?",
+    "options_hi": [
+      "भारतीय टेलीग्राफ अधिनियम",
+      "सूचना प्रौद्योगिकी अधिनियम, 2000 (IT Act, 2000)",
+      "उपभोक्ता संरक्षण अधिनियम",
+      "डिजिटल इंडिया एक्ट"
+    ],
+    "options_en": [
+      "Indian Telegraph Act",
+      "Information Technology Act, 2000 (IT Act)",
+      "Consumer Protection Act",
+      "Digital India Act"
+    ],
+    "options": [
+      {
+        "hi": "भारतीय टेलीग्राफ अधिनियम",
+        "en": "Indian Telegraph Act"
+      },
+      {
+        "hi": "सूचना प्रौद्योगिकी अधिनियम, 2000 (IT Act, 2000)",
+        "en": "Information Technology Act, 2000 (IT Act)"
+      },
+      {
+        "hi": "उपभोक्ता संरक्षण अधिनियम",
+        "en": "Consumer Protection Act"
+      },
+      {
+        "hi": "डिजिटल इंडिया एक्ट",
+        "en": "Digital India Act"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "भारत में 17 अक्टूबर 2000 को 'सूचना प्रौद्योगिकी अधिनियम, 2000' (IT Act 2000) लागू हुआ। इसकी धारा 66 कंप्यूटर हैकिंग, धारा 66E निजता उल्लंघन तथा धारा 67 अश्लील सामग्री प्रसार को संज्ञेय अपराध बनाती है।",
+    "exp_en": "The Information Technology Act, 2000 (IT Act 2000) was enacted on 17 October 2000 to grant legal validity to electronic governance and penalize cybercrimes such as hacking and identity theft."
+  }
+]

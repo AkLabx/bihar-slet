@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u5_sub5_4_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "विश्वविद्यालय अनुदान आयोग (UGC) द्वारा 'इनफ्लिबनेट' (INFLIBNET) को किस वर्ष एक स्वायत्त अंतर-विश्वविद्यालय केंद्र (Autonomous IUC) के रूप में पंजीकृत किया गया था?",
+    "q_en": "In which year was INFLIBNET formally registered as an autonomous Inter-University Centre (IUC) of the UGC?",
+    "options_hi": [
+      "अप्रैल 1991 में (परियोजना के रूप में)",
+      "जून 1996 में (स्वायत्त केंद्र के रूप में)",
+      "वर्ष 2000 में",
+      "वर्ष 2013 में"
+    ],
+    "options_en": [
+      "April 1991 (initiated as a project)",
+      "June 1996 (as an autonomous IUC)",
+      "Year 2000",
+      "Year 2013"
+    ],
+    "options": [
+      {
+        "hi": "अप्रैल 1991 में (परियोजना के रूप में)",
+        "en": "April 1991 (initiated as a project)"
+      },
+      {
+        "hi": "जून 1996 में (स्वायत्त केंद्र के रूप में)",
+        "en": "June 1996 (as an autonomous IUC)"
+      },
+      {
+        "hi": "वर्ष 2000 में",
+        "en": "Year 2000"
+      },
+      {
+        "hi": "वर्ष 2013 में",
+        "en": "Year 2013"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "INFLIBNET की शुरुआत अप्रैल 1991 में UGC की एक परियोजना के रूप में हुई थी, जिसे जून 1996 में एक स्वायत्त अंतर-विश्वविद्यालय केंद्र (Autonomous IUC) के रूप में औपचारिक रूप से स्थापित किया गया।",
+    "exp_en": "INFLIBNET originated as a UGC project in April 1991 and was incorporated as an autonomous Inter-University Centre of the UGC in June 1996."
+  },
+  {
+    "globalId": "u5_sub5_4_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "वर्तमान में 'इनफ्लिबनेट केंद्र' (INFLIBNET Centre) का स्थायी मुख्यालय कहां स्थित है?",
+    "q_en": "Where is the permanent headquarters of the INFLIBNET Centre currently located?",
+    "options_hi": [
+      "अहमदाबाद, गुजरात",
+      "इन्फोसिटी, गांधीनगर, गुजरात (Infocity, Gandhinagar)",
+      "नई दिल्ली",
+      "पुणे, महाराष्ट्र"
+    ],
+    "options_en": [
+      "Ahmedabad, Gujarat",
+      "Infocity, Gandhinagar, Gujarat",
+      "New Delhi",
+      "Pune, Maharashtra"
+    ],
+    "options": [
+      {
+        "hi": "अहमदाबाद, गुजरात",
+        "en": "Ahmedabad, Gujarat"
+      },
+      {
+        "hi": "इन्फोसिटी, गांधीनगर, गुजरात (Infocity, Gandhinagar)",
+        "en": "Infocity, Gandhinagar, Gujarat"
+      },
+      {
+        "hi": "नई दिल्ली",
+        "en": "New Delhi"
+      },
+      {
+        "hi": "पुणे, महाराष्ट्र",
+        "en": "Pune, Maharashtra"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "प्रारंभ में INFLIBNET गुजरात विश्वविद्यालय (अहमदाबाद) के परिसर में था, परंतु जनवरी 2013 से यह अपने स्थायी अत्याधुनिक परिसर 'इन्फोसिटी, गांधीनगर (गुजरात)' में स्थानांतरित हो चुका है।",
+    "exp_en": "INFLIBNET Centre operates from its permanent state-of-the-art green campus located in Infocity, Gandhinagar, Gujarat (relocated from Ahmedabad in 2013)."
+  },
+  {
+    "globalId": "u5_sub5_4_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "दिसंबर 2015 में उच्च शिक्षा हेतु गठित राष्ट्रीय ई-रिसोर्स कंसोर्टियम 'e-ShodhSindhu' (ई-शोधसिंधु) का निर्माण किन तीन पूर्ववर्ती कंसोर्टिया का विलय करके किया गया था?",
+    "q_en": "'e-ShodhSindhu', formed in December 2015 for higher education e-resources, was created by amalgamating which three consortia?",
+    "options_hi": [
+      "UGC-INFONET, N-LIST एवं INDEST-AICTE",
+      "DELNET, CALIBNET एवं MALIBNET",
+      "ERNET, NICNET एवं INFLIBNET",
+      "OCLC, RLG एवं JANET"
+    ],
+    "options_en": [
+      "UGC-INFONET, N-LIST, and INDEST-AICTE",
+      "DELNET, CALIBNET, and MALIBNET",
+      "ERNET, NICNET, and INFLIBNET",
+      "OCLC, RLG, and JANET"
+    ],
+    "options": [
+      {
+        "hi": "UGC-INFONET, N-LIST एवं INDEST-AICTE",
+        "en": "UGC-INFONET, N-LIST, and INDEST-AICTE"
+      },
+      {
+        "hi": "DELNET, CALIBNET एवं MALIBNET",
+        "en": "DELNET, CALIBNET, and MALIBNET"
+      },
+      {
+        "hi": "ERNET, NICNET एवं INFLIBNET",
+        "en": "ERNET, NICNET, and INFLIBNET"
+      },
+      {
+        "hi": "OCLC, RLG एवं JANET",
+        "en": "OCLC, RLG, and JANET"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "दिसंबर 2015 में शिक्षा मंत्रालय ने तीन मौजूदा कंसोर्टिया—UGC-INFONET Digital Library Consortium, N-LIST और INDEST-AICTE Consortium—का विलय कर 'e-ShodhSindhu' का गठन किया।",
+    "exp_en": "e-ShodhSindhu was established in December 2015 by merging UGC-INFONET, INDEST-AICTE, and N-LIST under the Ministry of Education to streamline academic subscription licensing."
+  },
+  {
+    "globalId": "u5_sub5_4_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "भारत के विश्वविद्यालयों, शोध संस्थानों एवं प्रयोगशालाओं में कार्यरत वैज्ञानिकों और प्राध्यापकों की प्रोफाइल का राष्ट्रीय विशेषज्ञ डेटाबेस 'विद्वान' (Vidwan) किसके द्वारा प्रबंधित किया जाता है?",
+    "q_en": "'Vidwan', the premier national database of profiles of scientists, researchers, and faculty members in India, is maintained by:",
+    "options_hi": [
+      "इनफ्लिबनेट केंद्र (INFLIBNET Centre)",
+      "सीएसआईआर (CSIR)",
+      "नीति आयोग",
+      "आईआईटी दिल्ली"
+    ],
+    "options_en": [
+      "INFLIBNET Centre",
+      "CSIR",
+      "NITI Aayog",
+      "IIT Delhi"
+    ],
+    "options": [
+      {
+        "hi": "इनफ्लिबनेट केंद्र (INFLIBNET Centre)",
+        "en": "INFLIBNET Centre"
+      },
+      {
+        "hi": "सीएसआईआर (CSIR)",
+        "en": "CSIR"
+      },
+      {
+        "hi": "नीति आयोग",
+        "en": "NITI Aayog"
+      },
+      {
+        "hi": "आईआईटी दिल्ली",
+        "en": "IIT Delhi"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'Vidwan' (विद्वान) INFLIBNET द्वारा विकसित भारतीय विशेषज्ञों का राष्ट्रीय डेटाबेस है, जो वैज्ञानिकों, नीति निर्माताओं और वित्त पोषण एजेंसियों को विशेषज्ञों से जोड़ने का कार्य करता है।",
+    "exp_en": "Vidwan is an expert profile database developed and maintained by the INFLIBNET Centre with financial support from the National Mission on Education through ICT (NMEICT)."
+  },
+  {
+    "globalId": "u5_sub5_4_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "डेलनेट (DELNET — Developing Library Network) की स्थापना जनवरी 1988 में किसके वित्तीय समर्थन से हुई थी और इसके संस्थापक निदेशक कौन थे?",
+    "q_en": "Under whose financial sponsorship was DELNET established in January 1988, and who was its founding director?",
+    "options_hi": [
+      "NISSAT / DSIR के समर्थन से; संस्थापक निदेशक: डॉ. एच.के. कौल (Dr. H.K. Kaul)",
+      "UGC के समर्थन से; प्रो. यशपाल",
+      "यूनेस्को के समर्थन से; डॉ. एस.आर. रंगनाथन",
+      "आईबीएम के समर्थन से; फ्रेड किलगोर"
+    ],
+    "options_en": [
+      "Sponsored by NISSAT/DSIR; Founding Director: Dr. H.K. Kaul",
+      "Sponsored by UGC; Prof. Yash Pal",
+      "Sponsored by UNESCO; Dr. S.R. Ranganathan",
+      "Sponsored by IBM; Fred Kilgour"
+    ],
+    "options": [
+      {
+        "hi": "NISSAT / DSIR के समर्थन से; संस्थापक निदेशक: डॉ. एच.के. कौल (Dr. H.K. Kaul)",
+        "en": "Sponsored by NISSAT/DSIR; Founding Director: Dr. H.K. Kaul"
+      },
+      {
+        "hi": "UGC के समर्थन से; प्रो. यशपाल",
+        "en": "Sponsored by UGC; Prof. Yash Pal"
+      },
+      {
+        "hi": "यूनेस्को के समर्थन से; डॉ. एस.आर. रंगनाथन",
+        "en": "Sponsored by UNESCO; Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "आईबीएम के समर्थन से; फ्रेड किलगोर",
+        "en": "Sponsored by IBM; Fred Kilgour"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "DELNET की शुरुआत जनवरी 1988 में NISSAT/DSIR के सहयोग से हुई थी और इसके दूरदर्शी संस्थापक निदेशक डॉ. एच.के. कौल (Dr. H.K. Kaul) थे। 1992 में यह सोसायटी के रूप में पंजीकृत हुआ।",
+    "exp_en": "DELNET was launched in January 1988 with NISSAT/DSIR backing and formally registered in 1992, spearheaded by its founding director Dr. H.K. Kaul."
+  },
+  {
+    "globalId": "u5_sub5_4_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "वर्ष 1988 में स्थापना के समय डेलनेट (DELNET) का मूल नाम क्या था, जिसे वर्ष 2000 में बदलकर 'डेवलपिंग लाइब्रेरी नेटवर्क' किया गया?",
+    "q_en": "What was the original registered name of DELNET at its inception in 1988 prior to its 2000 rebranding?",
+    "options_hi": [
+      "दिल्ली लाइब्रेरी नेटवर्क (Delhi Library Network)",
+      "डिजिटल लाइब्रेरी नेटवर्क",
+      "डायनामिक लाइब्रेरी नेटवर्क",
+      "डेक्कन लाइब्रेरी नेटवर्क"
+    ],
+    "options_en": [
+      "Delhi Library Network",
+      "Digital Library Network",
+      "Dynamic Library Network",
+      "Deccan Library Network"
+    ],
+    "options": [
+      {
+        "hi": "दिल्ली लाइब्रेरी नेटवर्क (Delhi Library Network)",
+        "en": "Delhi Library Network"
+      },
+      {
+        "hi": "डिजिटल लाइब्रेरी नेटवर्क",
+        "en": "Digital Library Network"
+      },
+      {
+        "hi": "डायनामिक लाइब्रेरी नेटवर्क",
+        "en": "Dynamic Library Network"
+      },
+      {
+        "hi": "डेक्कन लाइब्रेरी नेटवर्क",
+        "en": "Deccan Library Network"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "प्रारंभ में दिल्ली के पुस्तकालयों को जोड़ने हेतु इसका नाम 'Delhi Library Network' था। वर्ष 2000 में जब इसमें देश-विदेश के हजारों पुस्तकालय जुड़ने लगे, तो इसका नाम 'Developing Library Network' कर दिया गया।",
+    "exp_en": "DELNET was originally christened 'Delhi Library Network'. In September 2000, its name was amended to 'Developing Library Network' to reflect its pan-Indian and international expansion."
+  },
+  {
+    "globalId": "u5_sub5_4_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "भारत में स्थापित होने वाला 'प्रथम महानगरीय पुस्तकालय नेटवर्क' (First Metropolitan Library Network) कौन-सा था?",
+    "q_en": "Which was the very first metropolitan library network initiative launched in India?",
+    "options_hi": [
+      "कैलिबनेट (CALIBNET - Calcutta Library Network, 1986)",
+      "डेलनेट (DELNET, 1988)",
+      "बोनेट (BONET, 1992)",
+      "मालिबनेट (MALIBNET, 1993)"
+    ],
+    "options_en": [
+      "CALIBNET (Calcutta Library Network, 1986)",
+      "DELNET (1988)",
+      "BONET (1992)",
+      "MALIBNET (1993)"
+    ],
+    "options": [
+      {
+        "hi": "कैलिबनेट (CALIBNET - Calcutta Library Network, 1986)",
+        "en": "CALIBNET (Calcutta Library Network, 1986)"
+      },
+      {
+        "hi": "डेलनेट (DELNET, 1988)",
+        "en": "DELNET (1988)"
+      },
+      {
+        "hi": "बोनेट (BONET, 1992)",
+        "en": "BONET (1992)"
+      },
+      {
+        "hi": "मालिबनेट (MALIBNET, 1993)",
+        "en": "MALIBNET (1993)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "भारत का प्रथम महानगरीय पुस्तकालय नेटवर्क 'CALIBNET' (कोलकाता) था, जिसकी योजना NISSAT द्वारा 1986 में बनाई गई थी। DELNET 1988 में दूसरा नेटवर्क था।",
+    "exp_en": "CALIBNET (Calcutta Library Network), conceived by NISSAT in 1986, holds the distinction of being India's first metropolitan library network initiative."
+  },
+  {
+    "globalId": "u5_sub5_4_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "विश्व के सबसे बड़े सहकारी पुस्तकालय नेटवर्क 'ओसीएलसी' (OCLC) की स्थापना 1967 में किसके द्वारा की गई थी?",
+    "q_en": "Who was the visionary founder who established OCLC in Ohio, USA in July 1967?",
+    "options_hi": [
+      "फ्रेडरिक जी. किलगोर (Frederick G. Kilgour / Fred Kilgour)",
+      "मेलविल डेवी",
+      "हंस पीटर लूह्न",
+      "चार्ल्स एमी कटर"
+    ],
+    "options_en": [
+      "Frederick G. Kilgour (Fred Kilgour)",
+      "Melvil Dewey",
+      "Hans Peter Luhn",
+      "Charles Ammi Cutter"
+    ],
+    "options": [
+      {
+        "hi": "फ्रेडरिक जी. किलगोर (Frederick G. Kilgour / Fred Kilgour)",
+        "en": "Frederick G. Kilgour (Fred Kilgour)"
+      },
+      {
+        "hi": "मेलविल डेवी",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "हंस पीटर लूह्न",
+        "en": "Hans Peter Luhn"
+      },
+      {
+        "hi": "चार्ल्स एमी कटर",
+        "en": "Charles Ammi Cutter"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "OCLC की स्थापना 5 जुलाई 1967 को फ्रेड किलगोर (Fred Kilgour) द्वारा ओहियो में 'Ohio College Library Center' के रूप में की गई थी, ताकि पुस्तकालयों में साझा ऑनलाइन कैटलॉगिंग हो सके।",
+    "exp_en": "Frederick G. Kilgour founded OCLC on July 5, 1967 as the Ohio College Library Center, pioneering computerized cooperative online shared cataloging."
+  },
+  {
+    "globalId": "u5_sub5_4_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "किस वर्ष में 'ओहियो कॉलेज लाइब्रेरी सेंटर' का नाम बदलकर 'ऑनलाइन कंप्यूटर लाइब्रेरी सेंटर' (OCLC) किया गया?",
+    "q_en": "In which year was 'Ohio College Library Center' officially renamed to 'Online Computer Library Center' (OCLC)?",
+    "options_hi": [
+      "1971 ई.",
+      "1981 ई. (1981)",
+      "1988 ई.",
+      "1995 ई."
+    ],
+    "options_en": [
+      "1971",
+      "1981",
+      "1988",
+      "1995"
+    ],
+    "options": [
+      {
+        "hi": "1971 ई.",
+        "en": "1971"
+      },
+      {
+        "hi": "1981 ई. (1981)",
+        "en": "1981"
+      },
+      {
+        "hi": "1988 ई.",
+        "en": "1988"
+      },
+      {
+        "hi": "1995 ई.",
+        "en": "1995"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "वर्ष 1981 में जब ओहियो राज्य से बाहर पूरे अमेरिका और अन्य देशों के पुस्तकालय इससे जुड़ गए, तो इसके संक्षिप्त नाम (OCLC) को बनाए रखते हुए इसका नाम 'Online Computer Library Center' कर दिया गया।",
+    "exp_en": "In 1981, as membership expanded nationwide and internationally beyond Ohio, the consortium's legal name was formally changed to Online Computer Library Center, Inc."
+  },
+  {
+    "globalId": "u5_sub5_4_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "ओसीएलसी (OCLC) द्वारा 1971 में प्रारंभ किया गया 'वर्ल्डकैट' (WorldCat) क्या है?",
+    "q_en": "What is 'WorldCat', the flagship service inaugurated by OCLC in 1971?",
+    "options_hi": [
+      "विश्व का सबसे बड़ा ऑनलाइन संघ सूची / ग्रंथपरक डेटाबेस (World's largest Online Union Catalog)",
+      "एक सर्च इंजन जैसे गूगल",
+      "एक मुद्रित पुस्तक विक्रेता",
+      "एक कंप्यूटर ऑपरेटिंग सिस्टम"
+    ],
+    "options_en": [
+      "World's largest Online Bibliographic Union Catalog",
+      "A general search engine like Google",
+      "A printed book vendor",
+      "A computer operating system"
+    ],
+    "options": [
+      {
+        "hi": "विश्व का सबसे बड़ा ऑनलाइन संघ सूची / ग्रंथपरक डेटाबेस (World's largest Online Union Catalog)",
+        "en": "World's largest Online Bibliographic Union Catalog"
+      },
+      {
+        "hi": "एक सर्च इंजन जैसे गूगल",
+        "en": "A general search engine like Google"
+      },
+      {
+        "hi": "एक मुद्रित पुस्तक विक्रेता",
+        "en": "A printed book vendor"
+      },
+      {
+        "hi": "एक कंप्यूटर ऑपरेटिंग सिस्टम",
+        "en": "A computer operating system"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "WorldCat विश्व का सबसे विशाल ऑनलाइन संघ कैटलॉग (Union Catalog) है, जिसमें 50 करोड़ से अधिक पुस्तकों और प्रलेखों के ग्रंथपरक रिकॉर्ड्स तथा अरबों पुस्तकालय होल्डिंग्स दर्ज हैं।",
+    "exp_en": "WorldCat is the world's most comprehensive online bibliographic database and union catalog, indexing hundreds of millions of items across thousands of member libraries."
+  },
+  {
+    "globalId": "u5_sub5_4_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "वर्ष 1988 से 'डेवी दशमलव वर्गीकरण' (DDC) प्रणाली के कॉपीराइट और संपादन का स्वामित्व किस संस्था के पास है?",
+    "q_en": "Which global organization has owned the copyright and editorial maintenance of the Dewey Decimal Classification (DDC) since 1988?",
+    "options_hi": [
+      "ओसीएलसी (OCLC)",
+      "अमेरिकन लाइब्रेरी एसोसिएशन (ALA)",
+      "लाइब्रेरी ऑफ कांग्रेस (LC)",
+      "यूनेस्को"
+    ],
+    "options_en": [
+      "OCLC (Online Computer Library Center)",
+      "American Library Association (ALA)",
+      "Library of Congress (LC)",
+      "UNESCO"
+    ],
+    "options": [
+      {
+        "hi": "ओसीएलसी (OCLC)",
+        "en": "OCLC (Online Computer Library Center)"
+      },
+      {
+        "hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA)",
+        "en": "American Library Association (ALA)"
+      },
+      {
+        "hi": "लाइब्रेरी ऑफ कांग्रेस (LC)",
+        "en": "Library of Congress (LC)"
+      },
+      {
+        "hi": "यूनेस्को",
+        "en": "UNESCO"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "1988 में OCLC ने फॉरेस्ट प्रेस का अधिग्रहण कर DDC के समस्त सर्वाधिकार अपने हाथ में ले लिए और वर्तमान में WebDewey का संचालन OCLC द्वारा ही किया जाता है।",
+    "exp_en": "OCLC acquired Forest Press in 1988, thereby securing full intellectual property ownership, copyright stewardship, and editorial governance over the DDC system."
+  },
+  {
+    "globalId": "u5_sub5_4_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "कंप्यूटर नेटवर्किंग में वह टोपोलॉजी जिसमें सभी कंप्यूटर एक केंद्रीय हब या स्विच (Central Switch) से जुड़े होते हैं, क्या कहलाती है?",
+    "q_en": "In computer networking, which topology features all workstation nodes directly connected to a single central hub or switch?",
+    "options_hi": [
+      "स्टार टोपोलॉजी (Star Topology)",
+      "बस टोपोलॉजी",
+      "रिंग टोपोलॉजी",
+      "मेश टोपोलॉजी"
+    ],
+    "options_en": [
+      "Star Topology",
+      "Bus Topology",
+      "Ring Topology",
+      "Mesh Topology"
+    ],
+    "options": [
+      {
+        "hi": "स्टार टोपोलॉजी (Star Topology)",
+        "en": "Star Topology"
+      },
+      {
+        "hi": "बस टोपोलॉजी",
+        "en": "Bus Topology"
+      },
+      {
+        "hi": "रिंग टोपोलॉजी",
+        "en": "Ring Topology"
+      },
+      {
+        "hi": "मेश टोपोलॉजी",
+        "en": "Mesh Topology"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "स्टार टोपोलॉजी में सभी नोड्स एक केंद्रीय हब या स्विच से जुड़े होते हैं। यदि कोई एक केबल या नोड खराब हो जाए, तो शेष नेटवर्क अप्रभावित रहता है। पुस्तकालय LAN में यही सर्वाधिक प्रयुक्त होती है।",
+    "exp_en": "In a Star Topology, each network host is connected to a central multiport switch; node cable failures isolate only that specific machine without disrupting the remaining network."
+  },
+  {
+    "globalId": "u5_sub5_4_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "INFLIBNET केंद्र की 'एन-लिस्ट' (N-LIST) परियोजना का मुख्य उद्देश्य क्या है?",
+    "q_en": "What is the primary objective of the 'N-LIST' programme operated by INFLIBNET Centre?",
+    "options_hi": [
+      "मान्यता प्राप्त भारतीय कॉलेजों के छात्रों एवं प्राध्यापकों को रियायती दर पर ई-जर्नल्स एवं ई-पुस्तकों की पहुंच देना",
+      "केवल प्राथमिक विद्यालयों में मुफ्त भोजन बांटना",
+      "पुस्तकालय भवनों का रंग-रोगन करना",
+      "केवल विदेशी पर्यटकों को पुस्तकें बेचना"
+    ],
+    "options_en": [
+      "Providing affordable access to thousands of e-journals and e-books for college students and faculty",
+      "Distributing mid-day meals in primary schools",
+      "Painting library buildings",
+      "Selling books to foreign tourists"
+    ],
+    "options": [
+      {
+        "hi": "मान्यता प्राप्त भारतीय कॉलेजों के छात्रों एवं प्राध्यापकों को रियायती दर पर ई-जर्नल्स एवं ई-पुस्तकों की पहुंच देना",
+        "en": "Providing affordable access to thousands of e-journals and e-books for college students and faculty"
+      },
+      {
+        "hi": "केवल प्राथमिक विद्यालयों में मुफ्त भोजन बांटना",
+        "en": "Distributing mid-day meals in primary schools"
+      },
+      {
+        "hi": "पुस्तकालय भवनों का रंग-रोगन करना",
+        "en": "Painting library buildings"
+      },
+      {
+        "hi": "केवल विदेशी पर्यटकों को पुस्तकें बेचना",
+        "en": "Selling books to foreign tourists"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "N-LIST (National Library and Information Services Infrastructure for Scholarly Content) कॉलेजों के छात्रों, शोधार्थियों और शिक्षकों को 6,000+ ई-जर्नल्स और 1,99,500+ ई-पुस्तकों तक सस्ती पहुंच उपलब्ध कराती है।",
+    "exp_en": "N-LIST provides cross-subscription access to authorized e-resources (e-books and scholarly peer-reviewed e-journals) to undergraduate and postgraduate colleges across India."
+  },
+  {
+    "globalId": "u5_sub5_4_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "उच्च शिक्षण संस्थानों में साहित्यिक चोरी (Plagiarism) रोकने हेतु केंद्रीय शिक्षा मंत्रालय द्वारा INFLIBNET के माध्यम से संचालित सेवा का क्या नाम है?",
+    "q_en": "What is the name of the plagiarism detection service provided by the Ministry of Education through INFLIBNET to Indian universities?",
+    "options_hi": [
+      "शोध शुद्धि (Shodh Shuddhi - PDS)",
+      "शोधगंगा",
+      "शोधगंगोत्री",
+      "स्वयं प्रभा"
+    ],
+    "options_en": [
+      "Shodh Shuddhi (Plagiarism Detection Service)",
+      "Shodhganga",
+      "Shodhgangotri",
+      "SWAYAM Prabha"
+    ],
+    "options": [
+      {
+        "hi": "शोध शुद्धि (Shodh Shuddhi - PDS)",
+        "en": "Shodh Shuddhi (Plagiarism Detection Service)"
+      },
+      {
+        "hi": "शोधगंगा",
+        "en": "Shodhganga"
+      },
+      {
+        "hi": "शोधगंगोत्री",
+        "en": "Shodhgangotri"
+      },
+      {
+        "hi": "स्वयं प्रभा",
+        "en": "SWAYAM Prabha"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'Shodh Shuddhi' (पूर्व नाम PDS) के तहत केंद्रीय शिक्षा मंत्रालय द्वारा भारत के 1,000 से अधिक विश्वविद्यालयों और संस्थानों को साहित्यिक चोरी जांचने हेतु प्लेग्यारिज्म डिटेक्शन सॉफ्टवेयर (जैसे DrillBit/Ouriginal) निःशुल्क प्रदान किया गया है।",
+    "exp_en": "Shodh Shuddhi is the Ministry of Education's national Plagiarism Detection Service (PDS) executed by INFLIBNET, equipping Indian academic institutions with anti-plagiarism tools."
+  },
+  {
+    "globalId": "u5_sub5_4_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_05",
+    "unitNum": 5,
+    "subUnitNum": "5.4",
+    "unitTitle_hi": "सूचना प्रौद्योगिकी, ऑटोमेशन एवं नेटवर्किंग",
+    "unitTitle_en": "IT and Library Automation",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 5.4: Library Networks & Consortia | इनफ्लिबनेट (INFLIBNET), डेलनेट (DELNET), ओसीएलसी (OCLC) एवं e-ShodhSindhu",
+    "q_hi": "भारत में 1986 में शैक्षणिक एवं वैज्ञानिक अनुसंधान संस्थानों को जोड़ने हेतु स्थापित 'अरनेट' (ERNET) का पूर्ण रूप क्या है?",
+    "q_en": "What is the full expansion of 'ERNET', established in India in 1986 to interconnect academic and research communities?",
+    "options_hi": [
+      "एजुकेशन एंड रिसर्च नेटवर्क (Education and Research Network)",
+      "इलेक्ट्रॉनिक रिसोर्स नेटवर्क",
+      "एंटरप्राइज रिसोर्स नेटवर्क",
+      "एलिमेंट्री रिसर्च नेटवर्क"
+    ],
+    "options_en": [
+      "Education and Research Network",
+      "Electronic Resource Network",
+      "Enterprise Resource Network",
+      "Elementary Research Network"
+    ],
+    "options": [
+      {
+        "hi": "एजुकेशन एंड रिसर्च नेटवर्क (Education and Research Network)",
+        "en": "Education and Research Network"
+      },
+      {
+        "hi": "इलेक्ट्रॉनिक रिसोर्स नेटवर्क",
+        "en": "Electronic Resource Network"
+      },
+      {
+        "hi": "एंटरप्राइज रिसोर्स नेटवर्क",
+        "en": "Enterprise Resource Network"
+      },
+      {
+        "hi": "एलिमेंट्री रिसर्च नेटवर्क",
+        "en": "Elementary Research Network"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ERNET (Education and Research Network) की स्थापना 1986 में भारत सरकार के इलेक्ट्रॉनिकी विभाग और संयुक्त राष्ट्र विकास कार्यक्रम (UNDP) द्वारा भारतीय विश्वविद्यालयों और IITs को इंटरनेट से जोड़ने हेतु की गई थी।",
+    "exp_en": "ERNET stands for Education and Research Network, initiated in 1986 by the Department of Electronics (GoI) with UNDP assistance as India's pioneer academic computer network."
+  }
+]

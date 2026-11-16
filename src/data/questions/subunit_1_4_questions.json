@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u1_sub1_4_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "भारतीय पुस्तकालय संघ (ILA - Indian Library Association) की स्थापना 13 सितंबर 1933 को किस शहर में आयोजित प्रथम अखिल भारतीय पुस्तकालय सम्मेलन में हुई थी?",
+    "q_en": "The Indian Library Association (ILA) was founded on 13 September 1933 during the First All India Library Conference held in which city?",
+    "options_hi": [
+      "मद्रास",
+      "कलकत्ता",
+      "नई दिल्ली",
+      "बॉम्बे"
+    ],
+    "options_en": [
+      "Madras",
+      "Calcutta",
+      "New Delhi",
+      "Bombay"
+    ],
+    "options": [
+      {
+        "hi": "मद्रास",
+        "en": "Madras"
+      },
+      {
+        "hi": "कलकत्ता",
+        "en": "Calcutta"
+      },
+      {
+        "hi": "नई दिल्ली",
+        "en": "New Delhi"
+      },
+      {
+        "hi": "बॉम्बे",
+        "en": "Bombay"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ILA की स्थापना 13 सितंबर 1933 को एशियाटिक सोसाइटी हॉल, कलकत्ता में आयोजित प्रथम अखिल भारतीय पुस्तकालय सम्मेलन में हुई थी। इसके प्रथम अध्यक्ष डॉ. एम.ओ. थॉमस और प्रथम सचिव के.एम. असदुल्लाह थे।",
+    "exp_en": "The ILA was established on 13 September 1933 at the Asiatic Society Hall, Calcutta during the First All India Library Conference. Dr. M.O. Thomas was its first President and K.M. Asadullah was its first Secretary."
+  },
+  {
+    "globalId": "u1_sub1_4_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "भारत में प्रतिवर्ष 'राष्ट्रीय पुस्तकालय सप्ताह' (National Library Week) 14 से 20 नवंबर के मध्य किस संस्था द्वारा 1968 से मनाया जाता है?",
+    "q_en": "In India, 'National Library Week' is celebrated annually from 14 to 20 November since 1968 by which organization?",
+    "options_hi": [
+      "आईयास्लिक (IASLIC)",
+      "भारतीय पुस्तकालय संघ (ILA)",
+      "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+      "राष्ट्रीय पुस्तकालय, कोलकाता"
+    ],
+    "options_en": [
+      "IASLIC",
+      "Indian Library Association (ILA)",
+      "Raja Rammohun Roy Library Foundation (RRRLF)",
+      "National Library of India, Kolkata"
+    ],
+    "options": [
+      {
+        "hi": "आईयास्लिक (IASLIC)",
+        "en": "IASLIC"
+      },
+      {
+        "hi": "भारतीय पुस्तकालय संघ (ILA)",
+        "en": "Indian Library Association (ILA)"
+      },
+      {
+        "hi": "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF)",
+        "en": "Raja Rammohun Roy Library Foundation (RRRLF)"
+      },
+      {
+        "hi": "राष्ट्रीय पुस्तकालय, कोलकाता",
+        "en": "National Library of India, Kolkata"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ILA द्वारा वर्ष 1968 से प्रतिवर्ष 14 से 20 नवंबर तक 'राष्ट्रीय पुस्तकालय सप्ताह' मनाया जाता है। इसका शुभारंभ पंडित जवाहरलाल नेहरू के जन्मदिवस (14 नवंबर) के उपलक्ष्य में किया गया था।",
+    "exp_en": "National Library Week is observed across India from 14 to 20 November every year by the Indian Library Association (ILA) since 1968, starting on Pt. Jawaharlal Nehru's birthday."
+  },
+  {
+    "globalId": "u1_sub1_4_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "विश्व का सबसे पुराना और सबसे बड़ा राष्ट्रीय पुस्तकालय संघ कौन-सा है?",
+    "q_en": "Which is the oldest and largest national library association in the world?",
+    "options_hi": [
+      "द लाइब्रेरी एसोसिएशन (LA - UK)",
+      "अमेरिकन लाइब्रेरी एसोसिएशन (ALA - USA)",
+      "इफ़्ला (IFLA)",
+      "भारतीय पुस्तकालय संघ (ILA)"
+    ],
+    "options_en": [
+      "The Library Association (LA - UK)",
+      "American Library Association (ALA - USA)",
+      "IFLA",
+      "Indian Library Association (ILA)"
+    ],
+    "options": [
+      {
+        "hi": "द लाइब्रेरी एसोसिएशन (LA - UK)",
+        "en": "The Library Association (LA - UK)"
+      },
+      {
+        "hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA - USA)",
+        "en": "American Library Association (ALA - USA)"
+      },
+      {
+        "hi": "इफ़्ला (IFLA)",
+        "en": "IFLA"
+      },
+      {
+        "hi": "भारतीय पुस्तकालय संघ (ILA)",
+        "en": "Indian Library Association (ILA)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) की स्थापना 6 अक्टूबर 1876 को फिलाडेल्फिया में मेल्विल डेवी, जस्टिन विंसर व अन्य द्वारा की गई थी। यह विश्व का सबसे पहला और विशालतम पुस्तकालय संघ है।",
+    "exp_en": "The American Library Association (ALA), established on 6 October 1876 in Philadelphia by Melvil Dewey, Justin Winsor, and others, is the oldest and largest library association globally."
+  },
+  {
+    "globalId": "u1_sub1_4_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "अंतरराष्ट्रीय पुस्तकालय संघ एवं संस्थान महासंघ (IFLA - International Federation of Library Associations) का स्थायी मुख्यालय कहाँ स्थित है?",
+    "q_en": "Where is the permanent headquarters of IFLA (International Federation of Library Associations and Institutions) located?",
+    "options_hi": [
+      "पेरिस, फ्रांस",
+      "द हेग, नीदरलैंड्स",
+      "जिनेवा, स्विट्जरलैंड",
+      "लंदन, यूके"
+    ],
+    "options_en": [
+      "Paris, France",
+      "The Hague, Netherlands",
+      "Geneva, Switzerland",
+      "London, UK"
+    ],
+    "options": [
+      {
+        "hi": "पेरिस, फ्रांस",
+        "en": "Paris, France"
+      },
+      {
+        "hi": "द हेग, नीदरलैंड्स",
+        "en": "The Hague, Netherlands"
+      },
+      {
+        "hi": "जिनेवा, स्विट्जरलैंड",
+        "en": "Geneva, Switzerland"
+      },
+      {
+        "hi": "लंदन, यूके",
+        "en": "London, UK"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "IFLA की स्थापना 30 सितंबर 1927 को एडिनबर्ग (स्कॉटलैंड) में हुई थी, परंतु इसका स्थायी मुख्यालय 'द हेग' (The Hague, Netherlands) में नीदरलैंड्स के राष्ट्रीय पुस्तकालय परिसर में स्थित है।",
+    "exp_en": "IFLA was founded on 30 September 1927 in Edinburgh, Scotland. Its permanent headquarters is located at The Hague, Netherlands, hosted by the National Library of the Netherlands."
+  },
+  {
+    "globalId": "u1_sub1_4_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "भारत में विशेष पुस्तकालयों के संवर्धन हेतु समर्पित संघ 'IASLIC' की स्थापना 1955 में किस शहर में हुई थी?",
+    "q_en": "In which city was IASLIC (Indian Association of Special Libraries and Information Centres) established in 1955?",
+    "options_hi": [
+      "नई दिल्ली",
+      "कोलकाता",
+      "बेंगलुरु",
+      "हैदराबाद"
+    ],
+    "options_en": [
+      "New Delhi",
+      "Kolkata",
+      "Bangalore",
+      "Hyderabad"
+    ],
+    "options": [
+      {
+        "hi": "नई दिल्ली",
+        "en": "New Delhi"
+      },
+      {
+        "hi": "कोलकाता",
+        "en": "Kolkata"
+      },
+      {
+        "hi": "बेंगलुरु",
+        "en": "Bangalore"
+      },
+      {
+        "hi": "हैदराबाद",
+        "en": "Hyderabad"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "IASLIC की स्थापना 3 सितंबर 1955 को कोलकाता में हुई थी। इसके प्रथम अध्यक्ष डॉ. एस.एल. होरा और प्रथम सचिव जे. साहा थे। इसे 'भारत का अस्लिब' (ASLIB of India) भी कहा जाता है।",
+    "exp_en": "IASLIC was founded on 3 September 1955 in Kolkata. Dr. S.L. Hora was its first President and J. Saha was its first Honorary General Secretary. It is known as the 'ASLIB of India'."
+  },
+  {
+    "globalId": "u1_sub1_4_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "पुस्तकालय एवं सूचना विज्ञान के क्षेत्र में भारत की एकमात्र राष्ट्रीय सारकरण पत्रिका 'Indian Library Science Abstracts' (ILSA) का प्रकाशन किसके द्वारा किया जाता है?",
+    "q_en": "The only national abstracting periodical in Library and Information Science in India, 'Indian Library Science Abstracts' (ILSA), is published by:",
+    "options_hi": [
+      "ILA",
+      "IASLIC",
+      "INFLIBNET",
+      "DRTC"
+    ],
+    "options_en": [
+      "ILA",
+      "IASLIC",
+      "INFLIBNET",
+      "DRTC"
+    ],
+    "options": [
+      {
+        "hi": "ILA",
+        "en": "ILA"
+      },
+      {
+        "hi": "IASLIC",
+        "en": "IASLIC"
+      },
+      {
+        "hi": "INFLIBNET",
+        "en": "INFLIBNET"
+      },
+      {
+        "hi": "DRTC",
+        "en": "DRTC"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ILSA (Indian Library Science Abstracts) का प्रकाशन वर्ष 1967 से IASLIC (कोलकाता) द्वारा किया जा रहा है। यह भारतीय पत्रिकाओं में प्रकाशित LIS शोध आलेखों का सार प्रस्तुत करता है।",
+    "exp_en": "ILSA (Indian Library Science Abstracts) has been published since 1967 by IASLIC, Kolkata. It covers abstracts of LIS literature published in Indian periodicals."
+  },
+  {
+    "globalId": "u1_sub1_4_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "डॉ. एस.आर. रंगनाथन द्वारा संपादित ऐतिहासिक त्रैमासिक पत्रिका 'ABGILA' (Annals, Bulletin, and Granthalaya of ILA) किस अवधि में प्रकाशित हुई थी?",
+    "q_en": "During which period was the landmark quarterly journal 'ABGILA' (Annals, Bulletin, and Granthalaya of ILA) edited and published by Dr. S.R. Ranganathan?",
+    "options_hi": [
+      "1933–1937",
+      "1944–1947",
+      "1949–1953",
+      "1960–1965"
+    ],
+    "options_en": [
+      "1933–1937",
+      "1944–1947",
+      "1949–1953",
+      "1960–1965"
+    ],
+    "options": [
+      {
+        "hi": "1933–1937",
+        "en": "1933–1937"
+      },
+      {
+        "hi": "1944–1947",
+        "en": "1944–1947"
+      },
+      {
+        "hi": "1949–1953",
+        "en": "1949–1953"
+      },
+      {
+        "hi": "1960–1965",
+        "en": "1960–1965"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डॉ. रंगनाथन के ILA अध्यक्षीय कार्यकाल (1944–1953) के दौरान वर्ष 1949 से 1953 तक 'ABGILA' का प्रकाशन हुआ। इसके तीन भाग थे— Annals (शोध), Bulletin (संघीय समाचार), और Granthalaya (हिंदी खंड)।",
+    "exp_en": "ABGILA was edited and published by Dr. S.R. Ranganathan during his presidency of ILA from 1949 to 1953. It had three sections: Annals, Bulletin, and Granthalaya."
+  },
+  {
+    "globalId": "u1_sub1_4_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "राजा राममोहन राय लाइब्रेरी फाउंडेशन (RRRLF) द्वारा राज्यों को दी जाने वाली 'मैचिंग सहायता योजना' (Matching Scheme) के अंतर्गत सामान्य राज्यों हेतु केंद्र-राज्य वित्तीय अनुपात क्या है?",
+    "q_en": "Under the Matching Assistance Scheme provided by RRRLF to states for public libraries, what is the central-state sharing ratio for general states?",
+    "options_hi": [
+      "90:10",
+      "50:50",
+      "75:25",
+      "60:40"
+    ],
+    "options_en": [
+      "90:10",
+      "50:50",
+      "75:25",
+      "60:40"
+    ],
+    "options": [
+      {
+        "hi": "90:10",
+        "en": "90:10"
+      },
+      {
+        "hi": "50:50",
+        "en": "50:50"
+      },
+      {
+        "hi": "75:25",
+        "en": "75:25"
+      },
+      {
+        "hi": "60:40",
+        "en": "60:40"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "RRRLF की मैचिंग योजनाओं के तहत सामान्य राज्यों के लिए 50:50 का अनुपात होता है, जबकि पूर्वोत्तर व विशेष श्रेणी राज्यों के लिए यह अनुपात 90:10 या 60:40 होता है।",
+    "exp_en": "Under RRRLF's matching grant schemes, the financial sharing ratio between the Foundation and general state governments is 50:50 (and 90:10 for North Eastern states)."
+  },
+  {
+    "globalId": "u1_sub1_4_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "यूनिवर्सल डेसिमल वर्गीकरण (UDC) का विकास किस अंतरराष्ट्रीय संस्था द्वारा 1895 से किया गया था?",
+    "q_en": "The Universal Decimal Classification (UDC) was developed by which international organization founded in 1895?",
+    "options_hi": [
+      "IFLA",
+      "FID (मूल नाम IIB)",
+      "UNESCO",
+      "ALA"
+    ],
+    "options_en": [
+      "IFLA",
+      "FID (Originally IIB)",
+      "UNESCO",
+      "ALA"
+    ],
+    "options": [
+      {
+        "hi": "IFLA",
+        "en": "IFLA"
+      },
+      {
+        "hi": "FID (मूल नाम IIB)",
+        "en": "FID (Originally IIB)"
+      },
+      {
+        "hi": "UNESCO",
+        "en": "UNESCO"
+      },
+      {
+        "hi": "ALA",
+        "en": "ALA"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "FID की स्थापना 12 सितंबर 1895 को पॉल ऑटलेट और हेनरी ला फोंटेन द्वारा ब्रुसेल्स में 'IIB' के रूप में की गई थी। इसी संस्था ने मेल्विल डेवी की DDC का विस्तार कर UDC (1905) का विकास किया था।",
+    "exp_en": "FID was established as IIB in Brussels on 12 September 1895 by Paul Otlet and Henri La Fontaine. It developed the Universal Decimal Classification (UDC) based on DDC."
+  },
+  {
+    "globalId": "u1_sub1_4_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "यूनेस्को (UNESCO) द्वारा ग्रंथपरक डेटाबेस प्रबंधन हेतु 1985 में विकसित किए गए बहुचर्चित निःशुल्क सॉफ्टवेयर का क्या नाम है?",
+    "q_en": "What is the name of the renowned bibliographic database management software developed and released by UNESCO in 1985?",
+    "options_hi": [
+      "KOHA",
+      "CDS/ISIS",
+      "SOUL",
+      "DSpace"
+    ],
+    "options_en": [
+      "KOHA",
+      "CDS/ISIS",
+      "SOUL",
+      "DSpace"
+    ],
+    "options": [
+      {
+        "hi": "KOHA",
+        "en": "KOHA"
+      },
+      {
+        "hi": "CDS/ISIS",
+        "en": "CDS/ISIS"
+      },
+      {
+        "hi": "SOUL",
+        "en": "SOUL"
+      },
+      {
+        "hi": "DSpace",
+        "en": "DSpace"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "यूनेस्को ने 1985 में विकासशील देशों के पुस्तकालयों में ग्रंथपरक सूचना प्रबंधन हेतु CDS/ISIS (Computerized Documentation Service / Integrated Set of Information Systems) सॉफ्टवेयर जारी किया था।",
+    "exp_en": "UNESCO developed and released CDS/ISIS in 1985 as a specialized, free software package for managing non-numerical, variable-length bibliographic databases."
+  },
+  {
+    "globalId": "u1_sub1_4_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "इफ़्ला (IFLA) द्वारा वैश्विक ग्रंथपरक मानकीकरण हेतु विकसित 'ISBD' का पूर्ण रूप क्या है?",
+    "q_en": "What is the full form of 'ISBD' developed by IFLA for universal bibliographic standardization?",
+    "options_hi": [
+      "International Standard Book Description",
+      "International Standard Bibliographic Description",
+      "Indian Standard Bibliographic Details",
+      "Integrated System for Book Documentation"
+    ],
+    "options_en": [
+      "International Standard Book Description",
+      "International Standard Bibliographic Description",
+      "Indian Standard Bibliographic Details",
+      "Integrated System for Book Documentation"
+    ],
+    "options": [
+      {
+        "hi": "International Standard Book Description",
+        "en": "International Standard Book Description"
+      },
+      {
+        "hi": "International Standard Bibliographic Description",
+        "en": "International Standard Bibliographic Description"
+      },
+      {
+        "hi": "Indian Standard Bibliographic Details",
+        "en": "Indian Standard Bibliographic Details"
+      },
+      {
+        "hi": "Integrated System for Book Documentation",
+        "en": "Integrated System for Book Documentation"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ISBD का पूर्ण रूप 'International Standard Bibliographic Description' है। इसे IFLA ने 1970 के दशक में सभी प्रकार की पाठन सामग्री के अंतरराष्ट्रीय स्तर पर एकरूप सूचीकरण हेतु तैयार किया था।",
+    "exp_en": "ISBD stands for International Standard Bibliographic Description. It was developed by IFLA to provide a standard format for bibliographic entries in national bibliographies and catalogues."
+  },
+  {
+    "globalId": "u1_sub1_4_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) द्वारा बाल साहित्य (Children's Literature) में विशिष्ट योगदान हेतु 1922 से कौन-सा प्रसिद्ध पुरस्कार दिया जाता है?",
+    "q_en": "Which prestigious medal has been awarded annually by the ALA since 1922 for distinguished contribution to children's literature?",
+    "options_hi": [
+      "मेल्विल डेवी मेडल",
+      "न्यूबेरी मेडल (Newbery Medal)",
+      "कैल्डेकॉट मेडल (Caldecott Medal)",
+      "पुित्ज़र पुरस्कार"
+    ],
+    "options_en": [
+      "Melvil Dewey Medal",
+      "Newbery Medal",
+      "Caldecott Medal",
+      "Pulitzer Prize"
+    ],
+    "options": [
+      {
+        "hi": "मेल्विल डेवी मेडल",
+        "en": "Melvil Dewey Medal"
+      },
+      {
+        "hi": "न्यूबेरी मेडल (Newbery Medal)",
+        "en": "Newbery Medal"
+      },
+      {
+        "hi": "कैल्डेकॉट मेडल (Caldecott Medal)",
+        "en": "Caldecott Medal"
+      },
+      {
+        "hi": "पुित्ज़र पुरस्कार",
+        "en": "Pulitzer Prize"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "न्यूबेरी मेडल (Newbery Medal) की शुरुआत ALA द्वारा 1922 में 18वीं सदी के अंग्रेजी प्रकाशक जॉन न्यूबेरी के सम्मान में की गई थी। यह बाल साहित्य का विश्व का पहला और प्रतिष्ठित पुरस्कार है। (सचित्र पुस्तकों हेतु कैल्डेकॉट 1938 से है)।",
+    "exp_en": "The Newbery Medal was instituted by ALA in 1922, named after 18th-century bookseller John Newbery. It is awarded annually to the author of the most distinguished American children's book."
+  },
+  {
+    "globalId": "u1_sub1_4_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "दिल्ली पब्लिक लाइब्रेरी (DPL, 1951) की स्थापना भारत सरकार ने किस अंतरराष्ट्रीय संस्था के पायलट प्रोजेक्ट के तहत की थी?",
+    "q_en": "Delhi Public Library (DPL, 1951) was established by the Government of India under a pilot project in collaboration with which international agency?",
+    "options_hi": [
+      "IFLA",
+      "UNESCO",
+      "ALA",
+      "ब्रिटिश काउंसिल"
+    ],
+    "options_en": [
+      "IFLA",
+      "UNESCO",
+      "ALA",
+      "British Council"
+    ],
+    "options": [
+      {
+        "hi": "IFLA",
+        "en": "IFLA"
+      },
+      {
+        "hi": "UNESCO",
+        "en": "UNESCO"
+      },
+      {
+        "hi": "ALA",
+        "en": "ALA"
+      },
+      {
+        "hi": "ब्रिटिश काउंसिल",
+        "en": "British Council"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "दिल्ली पब्लिक लाइब्रेरी (DPL) की स्थापना 1951 में भारत सरकार और यूनेस्को (UNESCO) के संयुक्त पायलट प्रोजेक्ट के रूप में हुई थी, ताकि एशिया के नव-स्वतंत्र देशों के लिए एक मॉडल सार्वजनिक पुस्तकालय प्रस्तुत किया जा सके।",
+    "exp_en": "Delhi Public Library was established in 1951 as a joint pilot project between the Government of India and UNESCO to serve as an exemplar model public library for developing nations in Asia."
+  },
+  {
+    "globalId": "u1_sub1_4_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "इफ़्ला (IFLA) का सुप्रसिद्ध कार्यक्रम 'UAP' (1979) किस अवधारणा पर आधारित है?",
+    "q_en": "The renowned IFLA programme 'UAP' initiated in 1979 stands for and is based on which concept?",
+    "options_hi": [
+      "Universal Access to Periodicals",
+      "Universal Availability of Publications (प्रकाशनों की सार्वभौमिक सुलभता)",
+      "Union of Academic Publishers",
+      "Unified Automation Programme"
+    ],
+    "options_en": [
+      "Universal Access to Periodicals",
+      "Universal Availability of Publications",
+      "Union of Academic Publishers",
+      "Unified Automation Programme"
+    ],
+    "options": [
+      {
+        "hi": "Universal Access to Periodicals",
+        "en": "Universal Access to Periodicals"
+      },
+      {
+        "hi": "Universal Availability of Publications (प्रकाशनों की सार्वभौमिक सुलभता)",
+        "en": "Universal Availability of Publications"
+      },
+      {
+        "hi": "Union of Academic Publishers",
+        "en": "Union of Academic Publishers"
+      },
+      {
+        "hi": "Unified Automation Programme",
+        "en": "Unified Automation Programme"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "UAP का पूर्ण रूप 'Universal Availability of Publications' (प्रकाशनों की सार्वभौमिक सुलभता) है। इसका उद्देश्य यह सुनिश्चित करना है कि विश्व में कहीं भी किसी भी उपयोगकर्ता को आवश्यक मुद्रित या इलेक्ट्रॉनिक प्रकाशन सुलभ हो सके।",
+    "exp_en": "UAP stands for Universal Availability of Publications. Launched by IFLA in 1979, its objective is to ensure the widest possible availability of published material to intending users worldwide."
+  },
+  {
+    "globalId": "u1_sub1_4_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_01",
+    "unitNum": 1,
+    "subUnitNum": "1.4",
+    "unitTitle_hi": "पुस्तकालय की नींव एवं समाज",
+    "unitTitle_en": "Foundations of Library Science",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 1.4: National & International Library Associations | राष्ट्रीय एवं अंतरराष्ट्रीय पुस्तकालय संघ",
+    "q_hi": "अमेरिकन लाइब्रेरी एसोसिएशन (ALA) के प्रथम सचिव कौन थे, जिन्होंने 1876 से 1890 तक इस पद पर कार्य किया?",
+    "q_en": "Who was the first Secretary of the American Library Association (ALA), serving from 1876 to 1890?",
+    "options_hi": [
+      "जस्टिन विंसर (Justin Winsor)",
+      "मेल्विल डेवी (Melvil Dewey)",
+      "चार्ल्स एम्मी कटर (C.A. Cutter)",
+      "विलियम फ्रेडरिक पूले"
+    ],
+    "options_en": [
+      "Justin Winsor",
+      "Melvil Dewey",
+      "C.A. Cutter",
+      "William Frederick Poole"
+    ],
+    "options": [
+      {
+        "hi": "जस्टिन विंसर (Justin Winsor)",
+        "en": "Justin Winsor"
+      },
+      {
+        "hi": "मेल्विल डेवी (Melvil Dewey)",
+        "en": "Melvil Dewey"
+      },
+      {
+        "hi": "चार्ल्स एम्मी कटर (C.A. Cutter)",
+        "en": "C.A. Cutter"
+      },
+      {
+        "hi": "विलियम फ्रेडरिक पूले",
+        "en": "William Frederick Poole"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "ALA के प्रथम सचिव मेल्विल डेवी (Melvil Dewey) थे (1876 से 1890 तक)। प्रथम अध्यक्ष जस्टिन विंसर थे। बाद में मेल्विल डेवी 1890–1893 तक ALA के अध्यक्ष भी रहे।",
+    "exp_en": "Melvil Dewey served as the first Secretary of the ALA from its inception in 1876 until 1890 (Justin Winsor was President). Dewey later served as ALA President from 1890 to 1893."
+  }
+]

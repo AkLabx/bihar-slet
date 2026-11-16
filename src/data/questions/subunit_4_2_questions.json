@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u4_sub4_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "'एन्साइक्लोपीडिया ब्रिटैनिका' (Encyclopaedia Britannica) का प्रथम संस्करण किस वर्ष में और कहां से 3 खंडों में प्रकाशित हुआ था?",
+    "q_en": "In which year and from where was the first edition of 'Encyclopaedia Britannica' published in 3 volumes?",
+    "options_hi": [
+      "1768-1771 ई. (एडिनबर्ग, स्कॉटलैंड)",
+      "1829 ई. (न्यू यॉर्क, अमेरिका)",
+      "1876 ई. (लंदन, इंग्लैंड)",
+      "1901 ई. (पेरिस, फ्रांस)"
+    ],
+    "options_en": [
+      "1768-1771 AD (Edinburgh, Scotland)",
+      "1829 AD (New York, USA)",
+      "1876 AD (London, England)",
+      "1901 AD (Paris, France)"
+    ],
+    "options": [
+      {
+        "hi": "1768-1771 ई. (एडिनबर्ग, स्कॉटलैंड)",
+        "en": "1768-1771 AD (Edinburgh, Scotland)"
+      },
+      {
+        "hi": "1829 ई. (न्यू यॉर्क, अमेरिका)",
+        "en": "1829 AD (New York, USA)"
+      },
+      {
+        "hi": "1876 ई. (लंदन, इंग्लैंड)",
+        "en": "1876 AD (London, England)"
+      },
+      {
+        "hi": "1901 ई. (पेरिस, फ्रांस)",
+        "en": "1901 AD (Paris, France)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "एन्साइक्लोपीडिया ब्रिटैनिका का प्रथम संस्करण 1768 से 1771 के मध्य एडिनबर्ग (स्कॉटलैंड) की 'सोसाइटी ऑफ जेंटलमेन' द्वारा कॉलिन मैकफार्कहर एवं एंड्रयू बेल द्वारा 3 खंडों में प्रकाशित किया गया था।",
+    "exp_en": "Encyclopaedia Britannica was first published in Edinburgh, Scotland between 1768 and 1771 in 3 volumes by Colin Macfarquhar and Andrew Bell."
+  },
+  {
+    "globalId": "u4_sub4_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "'द न्यू एन्साइक्लोपीडिया ब्रिटैनिका' के 15वें संस्करण (1974) को किन तीन भागों में विभाजित किया गया था?",
+    "q_en": "Into which three distinct parts was the 15th edition of 'The New Encyclopaedia Britannica' (1974) divided?",
+    "options_hi": [
+      "प्रोपीडिया, माइक्रोपीडिया एवं मैक्रोपीडिया (Propaedia, Micropaedia, Macropaedia)",
+      "प्राथमिक, द्वितीयक एवं तृतीयक भाग",
+      "एटलस, गजेटियर एवं शब्दकोश",
+      "विषयानुक्रम, लेखकानुक्रम एवं अनुक्रमणिका"
+    ],
+    "options_en": [
+      "Propaedia, Micropaedia, and Macropaedia",
+      "Primary, Secondary, and Tertiary parts",
+      "Atlas, Gazetteer, and Dictionary",
+      "Classified, Author, and Index parts"
+    ],
+    "options": [
+      {
+        "hi": "प्रोपीडिया, माइक्रोपीडिया एवं मैक्रोपीडिया (Propaedia, Micropaedia, Macropaedia)",
+        "en": "Propaedia, Micropaedia, and Macropaedia"
+      },
+      {
+        "hi": "प्राथमिक, द्वितीयक एवं तृतीयक भाग",
+        "en": "Primary, Secondary, and Tertiary parts"
+      },
+      {
+        "hi": "एटलस, गजेटियर एवं शब्दकोश",
+        "en": "Atlas, Gazetteer, and Dictionary"
+      },
+      {
+        "hi": "विषयानुक्रम, लेखकानुक्रम एवं अनुक्रमणिका",
+        "en": "Classified, Author, and Index parts"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "1974 में 15वें संस्करण को 3 भागों में बांटा गया: (1) Propaedia (1 खंड - ज्ञान की रूपरेखा), (2) Micropaedia (त्वरित संदर्भ हेतु 10/12 खंड), (3) Macropaedia (गहन ज्ञान हेतु 19/17 खंड), साथ ही 2 खंडों का इंडेक्स।",
+    "exp_en": "The 15th edition of Britannica was famously partitioned into three tiers: Propaedia (Outline of Knowledge, 1 vol), Micropaedia (Ready Reference, 10/12 vols), and Macropaedia (Knowledge in Depth, 19/17 vols)."
+  },
+  {
+    "globalId": "u4_sub4_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "एन्साइक्लोपीडिया ब्रिटैनिका ने कितने वर्षों के निरंतर इतिहास के बाद मार्च 2012 में अपने मुद्रित (Print) संस्करण को स्थायी रूप से बंद कर दिया?",
+    "q_en": "After how many continuous years did Encyclopaedia Britannica permanently cease its print edition in March 2012?",
+    "options_hi": [
+      "100 वर्ष",
+      "150 वर्ष",
+      "244 वर्ष (1768 से 2012)",
+      "300 वर्ष"
+    ],
+    "options_en": [
+      "100 years",
+      "150 years",
+      "244 years (from 1768 to 2012)",
+      "300 years"
+    ],
+    "options": [
+      {
+        "hi": "100 वर्ष",
+        "en": "100 years"
+      },
+      {
+        "hi": "150 वर्ष",
+        "en": "150 years"
+      },
+      {
+        "hi": "244 वर्ष (1768 से 2012)",
+        "en": "244 years (from 1768 to 2012)"
+      },
+      {
+        "hi": "300 वर्ष",
+        "en": "300 years"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "ब्रिटैनिका ने 1768 से प्रारंभ होकर 244 वर्षों के गौरवशाली मुद्रण इतिहास के उपरांत मार्च 2012 में प्रिंट संस्करण बंद कर दिया और अब यह पूर्णतः डिजिटल/ऑनलाइन उपलब्ध है। इसका अंतिम प्रिंट 2010 संस्करण (32 खंड) था।",
+    "exp_en": "In March 2012, Encyclopaedia Britannica announced the cessation of its print edition after 244 years of publication (1768-2012), transitioning entirely to an online service."
+  },
+  {
+    "globalId": "u4_sub4_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "पुस्तकालय एवं सूचना विज्ञान का विश्वप्रसिद्ध वृहद संदर्भ ग्रंथ 'Encyclopedia of Library and Information Science' (ELIS) मूल रूप से किसके संपादन में 1968 में प्रारंभ हुआ था?",
+    "q_en": "Under whose editorship was the monumental 'Encyclopedia of Library and Information Science' (ELIS) originally initiated in 1968?",
+    "options_hi": [
+      "एलेन केंट एवं हेरोल्ड लैनकॉर (Allen Kent & Harold Lancour)",
+      "एस.आर. रंगनाथन एवं पी.एन. कौला",
+      "मेलविल डेवी एवं सी.ए. कटर",
+      "विलियम ए. काट्ज़"
+    ],
+    "options_en": [
+      "Allen Kent and Harold Lancour",
+      "S.R. Ranganathan and P.N. Kaula",
+      "Melvil Dewey and C.A. Cutter",
+      "William A. Katz"
+    ],
+    "options": [
+      {
+        "hi": "एलेन केंट एवं हेरोल्ड लैनकॉर (Allen Kent & Harold Lancour)",
+        "en": "Allen Kent and Harold Lancour"
+      },
+      {
+        "hi": "एस.आर. रंगनाथन एवं पी.एन. कौला",
+        "en": "S.R. Ranganathan and P.N. Kaula"
+      },
+      {
+        "hi": "मेलविल डेवी एवं सी.ए. कटर",
+        "en": "Melvil Dewey and C.A. Cutter"
+      },
+      {
+        "hi": "विलियम ए. काट्ज़",
+        "en": "William A. Katz"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "ELIS की शुरुआत 1968 में मार्सेल डेकर (Marcel Dekker) द्वारा एलेन केंट (Allen Kent) और हेरोल्ड लैनकॉर (Harold Lancour) के मुख्य संपादन में हुई थी। यह 73 से अधिक खंडों में विस्तृत है।",
+    "exp_en": "The Encyclopedia of Library and Information Science (ELIS) was launched in 1968 by Marcel Dekker under the founding editorship of Allen Kent and Harold Lancour."
+  },
+  {
+    "globalId": "u4_sub4_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "ऐतिहासिक सिद्धांतों पर आधारित विश्व का सबसे विस्तृत शब्दकोश 'ऑक्सफोर्ड इंग्लिश डिक्शनरी' (OED) के प्रथम संपादक कौन थे?",
+    "q_en": "Who was the legendary first primary editor of the 'Oxford English Dictionary' (OED) on Historical Principles?",
+    "options_hi": [
+      "सैमुअल जॉनसन (Samuel Johnson)",
+      "सर जेम्स ए.एच. मरे (Sir James A.H. Murray)",
+      "नोआ वेबस्टर (Noah Webster)",
+      "पीटर मार्क रॉगेट (Peter Mark Roget)"
+    ],
+    "options_en": [
+      "Samuel Johnson",
+      "Sir James A.H. Murray",
+      "Noah Webster",
+      "Peter Mark Roget"
+    ],
+    "options": [
+      {
+        "hi": "सैमुअल जॉनसन (Samuel Johnson)",
+        "en": "Samuel Johnson"
+      },
+      {
+        "hi": "सर जेम्स ए.एच. मरे (Sir James A.H. Murray)",
+        "en": "Sir James A.H. Murray"
+      },
+      {
+        "hi": "नोआ वेबस्टर (Noah Webster)",
+        "en": "Noah Webster"
+      },
+      {
+        "hi": "पीटर मार्क रॉगेट (Peter Mark Roget)",
+        "en": "Peter Mark Roget"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "OED (New English Dictionary on Historical Principles) के मुख्य संपादक सर जेम्स मरे (James Murray) थे। यह कार्य 1884 से 1928 तक 12 खंडों एवं 1 पूरक खंड में पूर्ण हुआ।",
+    "exp_en": "Sir James A.H. Murray served as the chief editor directing the creation of the Oxford English Dictionary from 1879 until his death in 1915; the first edition completed in 1928."
+  },
+  {
+    "globalId": "u4_sub4_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "पीटर मार्क रॉगेट द्वारा 1852 में रचित प्रसिद्ध संदर्भ ग्रंथ 'रॉगेट्स थिसॉरस' (Roget's Thesaurus) में शब्दों की व्यवस्था किस आधार पर की गई है?",
+    "q_en": "In Peter Mark Roget's classic reference work 'Roget's Thesaurus' (1852), how are words organized?",
+    "options_hi": [
+      "कड़ाई से वर्णमाला क्रम में (Alphabetical order)",
+      "विचारों एवं संकल्पनाओं के आधार पर समूहीकृत (Grouped by ideas and concepts)",
+      "कालानुक्रम में (Chronological order)",
+      "शब्द की लंबाई के अनुसार"
+    ],
+    "options_en": [
+      "Strictly alphabetical order",
+      "Grouped according to ideas and concepts (Conceptual Classification)",
+      "Chronological order",
+      "According to length of words"
+    ],
+    "options": [
+      {
+        "hi": "कड़ाई से वर्णमाला क्रम में (Alphabetical order)",
+        "en": "Strictly alphabetical order"
+      },
+      {
+        "hi": "विचारों एवं संकल्पनाओं के आधार पर समूहीकृत (Grouped by ideas and concepts)",
+        "en": "Grouped according to ideas and concepts (Conceptual Classification)"
+      },
+      {
+        "hi": "कालानुक्रम में (Chronological order)",
+        "en": "Chronological order"
+      },
+      {
+        "hi": "शब्द की लंबाई के अनुसार",
+        "en": "According to length of words"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "रॉगेट के थिसॉरस में शब्दों को वर्णानुक्रम में नहीं, बल्कि दार्शनिक विचारों एवं संकल्पनाओं (Concepts and Ideas) के आधार पर व्यवस्थित किया गया है, ताकि एक विचार से जुड़े पर्यायवाची व विलोम शब्द एक साथ मिल सकें।",
+    "exp_en": "Roget arranged words not alphabetically, but according to abstract philosophical classes and concepts, grouping synonyms and related concepts logically."
+  },
+  {
+    "globalId": "u4_sub4_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "विश्व के सभी देशों की सांख्यिकी, राजनीतिक व्यवस्था एवं अंतरराष्ट्रीय संगठनों की प्रामाणिक जानकारी देने वाली 'यूरोपा वर्ल्ड ईयर बुक' (The Europa World Year Book) कितने खंडों में प्रकाशित होती है?",
+    "q_en": "In how many volumes is 'The Europa World Year Book', the authoritative annual reference source on global nations and organizations, published?",
+    "options_hi": [
+      "1 खंड में",
+      "2 खंडों में (Two Volumes)",
+      "4 खंडों में",
+      "12 खंडों में"
+    ],
+    "options_en": [
+      "1 Volume",
+      "2 Volumes",
+      "4 Volumes",
+      "12 Volumes"
+    ],
+    "options": [
+      {
+        "hi": "1 खंड में",
+        "en": "1 Volume"
+      },
+      {
+        "hi": "2 खंडों में (Two Volumes)",
+        "en": "2 Volumes"
+      },
+      {
+        "hi": "4 खंडों में",
+        "en": "4 Volumes"
+      },
+      {
+        "hi": "12 खंडों में",
+        "en": "12 Volumes"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'The Europa World Year Book' (1926 से प्रारंभ, Routledge) प्रतिवर्ष 2 खंडों में प्रकाशित होती है: खंड 1 में अंतरराष्ट्रीय संगठन एवं देश A-K, तथा खंड 2 में देश L-Z का संपूर्ण विवरण होता है।",
+    "exp_en": "The Europa World Year Book is published annually in 2 hefty volumes covering international organizations and country-by-country economic, political, and statistical surveys."
+  },
+  {
+    "globalId": "u4_sub4_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "ब्रिटेन से 1868 से प्रतिवर्ष प्रकाशित होने वाला विश्वविख्यात सामान्य ज्ञान एवं खगोलीय पंचांग 'व्हिटेकर्स पंचांग' (Whitaker's Almanack) के संस्थापक कौन थे?",
+    "q_en": "Who was the founder of the globally renowned British reference annual 'Whitaker's Almanack', published since 1868?",
+    "options_hi": [
+      "जोसेफ व्हिटेकर (Joseph Whitaker)",
+      "कॉलिन मैकफार्कहर",
+      "विलियम स्मेलिए",
+      "थॉमस ग्रिफिथ"
+    ],
+    "options_en": [
+      "Joseph Whitaker",
+      "Colin Macfarquhar",
+      "William Smellie",
+      "Thomas Griffith"
+    ],
+    "options": [
+      {
+        "hi": "जोसेफ व्हिटेकर (Joseph Whitaker)",
+        "en": "Joseph Whitaker"
+      },
+      {
+        "hi": "कॉलिन मैकफार्कहर",
+        "en": "Colin Macfarquhar"
+      },
+      {
+        "hi": "विलियम स्मेलिए",
+        "en": "William Smellie"
+      },
+      {
+        "hi": "थॉमस ग्रिफिथ",
+        "en": "Thomas Griffith"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'Whitaker's Almanack' की स्थापना 1868 में जोसेफ व्हिटेकर (Joseph Whitaker) द्वारा लंदन में की गई थी। यह यूके, राष्ट्रमंडल और विश्व के त्वरित सांख्यिकी व खगोलीय तथ्यों का पंचांग है।",
+    "exp_en": "Whitaker's Almanack was founded in 1868 by English publisher Joseph Whitaker, providing comprehensive facts, calendars, astronomy, and government directories."
+  },
+  {
+    "globalId": "u4_sub4_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "विश्व के समस्त विश्वविद्यालयों, शोध संस्थानों, अकादमियों एवं राष्ट्रीय पुस्तकालयों की वैश्विक निर्देशिका 'द वर्ल्ड ऑफ लर्निंग' (The World of Learning) कहां से प्रकाशित होती है?",
+    "q_en": "From where is 'The World of Learning', the premier global directory of universities, colleges, academies, and libraries, published?",
+    "options_hi": [
+      "वाशिंगटन (ALA द्वारा)",
+      "लंदन (Europa Publications / Routledge द्वारा)",
+      "पेरिस (UNESCO द्वारा)",
+      "जिनेवा (UN द्वारा)"
+    ],
+    "options_en": [
+      "Washington (by ALA)",
+      "London (by Europa Publications / Routledge)",
+      "Paris (by UNESCO)",
+      "Geneva (by UN)"
+    ],
+    "options": [
+      {
+        "hi": "वाशिंगटन (ALA द्वारा)",
+        "en": "Washington (by ALA)"
+      },
+      {
+        "hi": "लंदन (Europa Publications / Routledge द्वारा)",
+        "en": "London (by Europa Publications / Routledge)"
+      },
+      {
+        "hi": "पेरिस (UNESCO द्वारा)",
+        "en": "Paris (by UNESCO)"
+      },
+      {
+        "hi": "जिनेवा (UN द्वारा)",
+        "en": "Geneva (by UN)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'The World of Learning' लंदन से यूरोपा पब्लिकेशंस (अब टेलर एंड फ्रांसिस / रूटलेज समूह) द्वारा 1947 से वार्षिक प्रकाशित की जाती है। यह उच्च शिक्षण संस्थानों की विश्व प्रसिद्ध निर्देशिका है।",
+    "exp_en": "'The World of Learning' is published in London by Europa Publications (Routledge), providing directory data on higher education and research institutions worldwide."
+  },
+  {
+    "globalId": "u4_sub4_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "लंदन से 1849 से प्रतिवर्ष प्रकाशित 'हूज़ हू' (Who's Who - A&C Black) में किस प्रकार के व्यक्तियों की जीवनियां संकलित होती हैं?",
+    "q_en": "What category of individuals is strictly documented in the annual biographical dictionary 'Who's Who' (A&C Black, London, since 1849)?",
+    "options_hi": [
+      "केवल मृत ऐतिहासिक विभूतियों की (Deceased persons only)",
+      "केवल वर्तमान में जीवित प्रसिद्ध व्यक्तियों की (Living personalities only)",
+      "केवल नोबेल पुरस्कार विजेताओं की",
+      "केवल ब्रिटिश राजाओं की"
+    ],
+    "options_en": [
+      "Deceased historical figures only",
+      "Living prominent personalities only",
+      "Nobel laureates only",
+      "British monarchs only"
+    ],
+    "options": [
+      {
+        "hi": "केवल मृत ऐतिहासिक विभूतियों की (Deceased persons only)",
+        "en": "Deceased historical figures only"
+      },
+      {
+        "hi": "केवल वर्तमान में जीवित प्रसिद्ध व्यक्तियों की (Living personalities only)",
+        "en": "Living prominent personalities only"
+      },
+      {
+        "hi": "केवल नोबेल पुरस्कार विजेताओं की",
+        "en": "Nobel laureates only"
+      },
+      {
+        "hi": "केवल ब्रिटिश राजाओं की",
+        "en": "British monarchs only"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "'Who's Who' में केवल **वर्तमान में जीवित (Living)** प्रसिद्ध व्यक्तियों के संक्षिप्त जीवन-वृत्त प्रकाशित होते हैं। किसी व्यक्ति के निधन के उपरांत उसकी प्रविष्टि को 'Who Was Who' में स्थानांतरित कर दिया जाता है।",
+    "exp_en": "'Who's Who' exclusively profiles distinguished living persons; upon their demise, their biographies are transferred to the companion retrospective publication 'Who Was Who'."
+  },
+  {
+    "globalId": "u4_sub4_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "'इम्पीरियल गजेटियर ऑफ इंडिया' (Imperial Gazetteer of India) के 1907-1909 के नवीन महान संस्करण में कुल कितने खंड (Volumes) थे?",
+    "q_en": "How many total volumes comprise the authoritative 1907-1909 new edition of the 'Imperial Gazetteer of India'?",
+    "options_hi": [
+      "9 खंड",
+      "14 खंड",
+      "26 खंड (Twenty-Six Volumes)",
+      "32 खंड"
+    ],
+    "options_en": [
+      "9 Volumes",
+      "14 Volumes",
+      "26 Volumes",
+      "32 Volumes"
+    ],
+    "options": [
+      {
+        "hi": "9 खंड",
+        "en": "9 Volumes"
+      },
+      {
+        "hi": "14 खंड",
+        "en": "14 Volumes"
+      },
+      {
+        "hi": "26 खंड (Twenty-Six Volumes)",
+        "en": "26 Volumes"
+      },
+      {
+        "hi": "32 खंड",
+        "en": "32 Volumes"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "सर विलियम विल्सन हंटर द्वारा प्रारंभ किए गए 'इम्पीरियल गजेटियर ऑफ इंडिया' का 1907-1909 का नया संस्करण कुल 26 खंडों में प्रकाशित हुआ (खंड 1-4 भारतीय साम्राज्य, खंड 5-24 वर्णानुक्रमिक गजेटियर, खंड 25 अनुक्रमणिका, खंड 26 एटलस)।",
+    "exp_en": "The definitive 1907-1909 edition of the Imperial Gazetteer of India spans 26 volumes (Vols 1-4: The Indian Empire, Vols 5-24: Alphabetical Gazetteer, Vol 25: Index, Vol 26: Atlas)."
+  },
+  {
+    "globalId": "u4_sub4_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "भारत में राष्ट्रीय एटलस एवं विषयक मानचित्रण संगठन (NATMO) का मुख्यालय कहां स्थित है?",
+    "q_en": "Where is the headquarters of the National Atlas and Thematic Mapping Organisation (NATMO) located in India?",
+    "options_hi": [
+      "नई दिल्ली",
+      "कोलकाता (Kolkata)",
+      "देहरादून",
+      "चेन्नई"
+    ],
+    "options_en": [
+      "New Delhi",
+      "Kolkata",
+      "Dehradun",
+      "Chennai"
+    ],
+    "options": [
+      {
+        "hi": "नई दिल्ली",
+        "en": "New Delhi"
+      },
+      {
+        "hi": "कोलकाता (Kolkata)",
+        "en": "Kolkata"
+      },
+      {
+        "hi": "देहरादून",
+        "en": "Dehradun"
+      },
+      {
+        "hi": "चेन्नई",
+        "en": "Chennai"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "NATMO (National Atlas and Thematic Mapping Organisation) का मुख्यालय कोलकाता में स्थित है। इसकी स्थापना 1956 में प्रो. एस.पी. चटर्जी के नेतृत्व में 'नेशनल एटलस ऑफ इंडिया' के निर्माण हेतु हुई थी।",
+    "exp_en": "NATMO is headquartered in Kolkata, West Bengal. Established in 1956 under Prof. S.P. Chatterjee, it operates under the Department of Science and Technology, Govt of India."
+  },
+  {
+    "globalId": "u4_sub4_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "किसी विशिष्ट स्थान के नाम, भौगोलिक स्थिति, देशांतर-अक्षांश, नदियों, जनसंख्या और इतिहास की जानकारी देने वाला वर्णानुक्रमिक स्रोत क्या कहलाता है?",
+    "q_en": "An alphabetical reference source providing geographic names, latitude-longitude coordinates, population, rivers, and topography is called a:",
+    "options_hi": [
+      "थिसॉरस (Thesaurus)",
+      "गजेटियर / भौगोलिक शब्दकोश (Gazetteer)",
+      "पंचांग (Almanac)",
+      "वार्षिकी (Yearbook)"
+    ],
+    "options_en": [
+      "Thesaurus",
+      "Gazetteer (Geographical Dictionary)",
+      "Almanac",
+      "Yearbook"
+    ],
+    "options": [
+      {
+        "hi": "थिसॉरस (Thesaurus)",
+        "en": "Thesaurus"
+      },
+      {
+        "hi": "गजेटियर / भौगोलिक शब्दकोश (Gazetteer)",
+        "en": "Gazetteer (Geographical Dictionary)"
+      },
+      {
+        "hi": "पंचांग (Almanac)",
+        "en": "Almanac"
+      },
+      {
+        "hi": "वार्षिकी (Yearbook)",
+        "en": "Yearbook"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "स्थानों के वर्णानुक्रमिक भौगोलिक शब्दकोश को 'गजेटियर' (Gazetteer) कहा जाता है (उदा. Imperial Gazetteer of India, Webster's New Geographical Dictionary)।",
+    "exp_en": "A geographical dictionary arranged alphabetically describing geographical entities, coordinates, administrative data, and history is termed a Gazetteer."
+  },
+  {
+    "globalId": "u4_sub4_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "भारत सरकार के सूचना एवं प्रसारण मंत्रालय द्वारा प्रतिवर्ष प्रकाशित होने वाली आधिकारिक संदर्भ पुस्तक का क्या नाम है?",
+    "q_en": "What is the official reference annual published every year by the Publications Division, Ministry of I&B, Government of India?",
+    "options_hi": [
+      "इंडिया: ए रेफरेंस एनुअल (India: A Reference Annual / भारत)",
+      "मनोरमा ईयर बुक (Manorama Yearbook)",
+      "स्टेट्समैन्स ईयर बुक",
+      "टाइम्स ऑफ इंडिया एनुअल"
+    ],
+    "options_en": [
+      "India: A Reference Annual (Bharat: Ek Sandarbh)",
+      "Manorama Yearbook",
+      "Statesman's Yearbook",
+      "Times of India Annual"
+    ],
+    "options": [
+      {
+        "hi": "इंडिया: ए रेफरेंस एनुअल (India: A Reference Annual / भारत)",
+        "en": "India: A Reference Annual (Bharat: Ek Sandarbh)"
+      },
+      {
+        "hi": "मनोरमा ईयर बुक (Manorama Yearbook)",
+        "en": "Manorama Yearbook"
+      },
+      {
+        "hi": "स्टेट्समैन्स ईयर बुक",
+        "en": "Statesman's Yearbook"
+      },
+      {
+        "hi": "टाइम्स ऑफ इंडिया एनुअल",
+        "en": "Times of India Annual"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "प्रकाशन विभाग (Publications Division), भारत सरकार द्वारा 1953 से प्रतिवर्ष 'India: A Reference Annual' (हिंदी में 'भारत') प्रकाशित की जाती है, जो भारत के मंत्रालयों, नीतियों व सांख्यिकी का आधिकारिक दस्तावेज है।",
+    "exp_en": "'India: A Reference Annual' (and its Hindi counterpart 'Bharat') is published annually by the Publications Division of the Ministry of Information & Broadcasting since 1953."
+  },
+  {
+    "globalId": "u4_sub4_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_04",
+    "unitNum": 4,
+    "subUnitNum": "4.2",
+    "unitTitle_hi": "संदर्भ एवं सूचना सेवाएं",
+    "unitTitle_en": "Reference and Information Services",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 4.2: Reference Sources | विश्वकोश, शब्दकोश, निर्देशिका, वार्षिकी, पंचांग एवं गजेटियर",
+    "q_hi": "लुइस शोर्स (Louis Shores) और विलियम ए. काट्ज़ के अनुसार किसी संदर्भ ग्रंथ के मूल्यांकन का कौन-सा मानदंड लेखक या संपादक की योग्यता, प्रतिष्ठा और प्राधिकार की जांच करता है?",
+    "q_en": "According to Louis Shores and William A. Katz, which evaluation criterion examines the qualifications, credibility, and reputation of the author/publisher?",
+    "options_hi": [
+      "प्राधिकार / प्रामाणिकता (Authority)",
+      "क्षेत्र (Scope)",
+      "व्यवस्था (Arrangement)",
+      "भौतिक स्वरूप (Format)"
+    ],
+    "options_en": [
+      "Authority",
+      "Scope",
+      "Arrangement",
+      "Format"
+    ],
+    "options": [
+      {
+        "hi": "प्राधिकार / प्रामाणिकता (Authority)",
+        "en": "Authority"
+      },
+      {
+        "hi": "क्षेत्र (Scope)",
+        "en": "Scope"
+      },
+      {
+        "hi": "व्यवस्था (Arrangement)",
+        "en": "Arrangement"
+      },
+      {
+        "hi": "भौतिक स्वरूप (Format)",
+        "en": "Format"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "'Authority' (प्राधिकार/प्रामाणिकता) के अंतर्गत लेखक, संकलनकर्ता, संपादक और प्रकाशक की साख, योग्यता, पूर्वाग्रह-रहित दृष्टिकोण एवं अकादमिक प्रतिष्ठा का परीक्षण किया जाता है।",
+    "exp_en": "The criterion of 'Authority' evaluates the credentials, intellectual standing, organizational sponsorship, and reputation of the authors, editors, and publishers."
+  }
+]

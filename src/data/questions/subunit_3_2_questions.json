@@ -1,0 +1,707 @@
+[
+  {
+    "globalId": "u3_sub3_2_q1",
+    "id": 1,
+    "num": 1,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "चार्ल्स एमी कटर (C.A. Cutter) ने 1876 में 'रूल्स फॉर ए डिक्शनरी कैटलॉग' (RDC) में पुस्तकालय सूची के कितने मुख्य उद्देश्य (Objects) प्रतिपादित किए थे?",
+    "q_en": "How many main objects of a library catalogue were formulated by Charles Ammi Cutter in his 1876 work 'Rules for a Dictionary Catalog'?",
+    "options_hi": [
+      "2 उद्देश्य (Two objects)",
+      "3 उद्देश्य (Three objects)",
+      "5 उद्देश्य (Five objects)",
+      "7 उद्देश्य (Seven objects)"
+    ],
+    "options_en": [
+      "2 Objects",
+      "3 Objects",
+      "5 Objects",
+      "7 Objects"
+    ],
+    "options": [
+      {
+        "hi": "2 उद्देश्य (Two objects)",
+        "en": "2 Objects"
+      },
+      {
+        "hi": "3 उद्देश्य (Three objects)",
+        "en": "3 Objects"
+      },
+      {
+        "hi": "5 उद्देश्य (Five objects)",
+        "en": "5 Objects"
+      },
+      {
+        "hi": "7 उद्देश्य (Seven objects)",
+        "en": "7 Objects"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "कटर ने 1876 में सूची के 3 प्रमुख उद्देश्य बताए: (1) किसी ज्ञात पुस्तक को लेखक, आख्या या विषय द्वारा खोजना (To find a book), (2) पुस्तकालय में किसी लेखक, विषय या साहित्य प्रकार की कौन-सी कृतियां हैं यह दर्शाना (To show what the library has), और (3) पुस्तक के संस्करण या चरित्र के आधार पर चयन में पाठक की सहायता करना (To assist in choice).",
+    "exp_en": "C.A. Cutter formulated 3 cardinal objects of a library catalog in 1876: (1) To enable a person to find a book by Author, Title, or Subject; (2) To show what the library has; and (3) To assist in the choice of a book."
+  },
+  {
+    "globalId": "u3_sub3_2_q2",
+    "id": 2,
+    "num": 2,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "मानक सूची पत्रक (Standard Catalogue Card) का अंतरराष्ट्रीय स्तर पर स्वीकृत आकार (Size) कितना होता है?",
+    "q_en": "What is the internationally accepted standard physical dimension of a Library Catalogue Card?",
+    "options_hi": [
+      "10 सेमी × 5 सेमी (4 × 2 इंच)",
+      "12.5 सेमी × 7.5 सेमी (5 × 3 इंच)",
+      "15 सेमी × 10 सेमी (6 × 4 इंच)",
+      "20 सेमी × 12.5 सेमी (8 × 5 इंच)"
+    ],
+    "options_en": [
+      "10 cm × 5 cm (4 × 2 inches)",
+      "12.5 cm × 7.5 cm (5 × 3 inches)",
+      "15 cm × 10 cm (6 × 4 inches)",
+      "20 cm × 12.5 cm (8 × 5 inches)"
+    ],
+    "options": [
+      {
+        "hi": "10 सेमी × 5 सेमी (4 × 2 इंच)",
+        "en": "10 cm × 5 cm (4 × 2 inches)"
+      },
+      {
+        "hi": "12.5 सेमी × 7.5 सेमी (5 × 3 इंच)",
+        "en": "12.5 cm × 7.5 cm (5 × 3 inches)"
+      },
+      {
+        "hi": "15 सेमी × 10 सेमी (6 × 4 इंच)",
+        "en": "15 cm × 10 cm (6 × 4 inches)"
+      },
+      {
+        "hi": "20 सेमी × 12.5 सेमी (8 × 5 इंच)",
+        "en": "20 cm × 12.5 cm (8 × 5 inches)"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "सूची पत्रक का अंतरराष्ट्रीय मानक आकार 12.5 सेमी × 7.5 सेमी (5 × 3 इंच) होता है, जिसके निचले केंद्र में 6 मिमी का छिद्र (Punched hole) लॉकिंग रॉड हेतु होता है।",
+    "exp_en": "The standard catalog card size recognized internationally is 12.5 cm × 7.5 cm (approximately 5 × 3 inches), with a circular punch-hole at the bottom center."
+  },
+  {
+    "globalId": "u3_sub3_2_q3",
+    "id": 3,
+    "num": 3,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "डॉ. एस.आर. रंगनाथन द्वारा रचित 'क्लासिफाइड कैटलॉग कोड' (CCC) की मुख्य प्रविष्टि (Main Entry) में कुल कितने अनुभाग (Sections) होते हैं?",
+    "q_en": "How many sections are there in the Main Entry of Classified Catalogue Code (CCC) authored by Dr. S.R. Ranganathan?",
+    "options_hi": [
+      "4 अनुभाग (Four sections)",
+      "5 अनुभाग (Five sections)",
+      "6 अनुभाग (Six sections)",
+      "8 अनुभाग (Eight sections)"
+    ],
+    "options_en": [
+      "4 Sections",
+      "5 Sections",
+      "6 Sections",
+      "8 Sections"
+    ],
+    "options": [
+      {
+        "hi": "4 अनुभाग (Four sections)",
+        "en": "4 Sections"
+      },
+      {
+        "hi": "5 अनुभाग (Five sections)",
+        "en": "5 Sections"
+      },
+      {
+        "hi": "6 अनुभाग (Six sections)",
+        "en": "6 Sections"
+      },
+      {
+        "hi": "8 अनुभाग (Eight sections)",
+        "en": "8 Sections"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "CCC की मुख्य प्रविष्टि में कुल 6 अनुभाग होते हैं: (1) अग्र अनुच्छेद (Leading Section - कॉल नंबर पेंसिल से), (2) शीर्षक (Heading), (3) आख्या (Title), (4) टिप्पणी (Note), (5) परिग्रहण संख्या (Accession Number - सबसे नीचे की रेखा पर), और (6) संसूचक/ट्रेसिंग (Tracing - पत्रक के पीछे/Reverse side).",
+    "exp_en": "CCC Main Entry comprises 6 distinct sections: (1) Leading Section, (2) Heading Section, (3) Title Section, (4) Note Section, (5) Accession Number Section, and (6) Tracing Section (recorded on the reverse)."
+  },
+  {
+    "globalId": "u3_sub3_2_q4",
+    "id": 4,
+    "num": 4,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "CCC में मुख्य प्रविष्टि का कौन-सा अनुभाग अनिवार्य रूप से केवल पेंसिल (Pencil) से लिखा जाता है?",
+    "q_en": "Which section of the Main Entry in Classified Catalogue Code (CCC) is strictly recorded in pencil only?",
+    "options_hi": [
+      "शीर्षक अनुभाग (Heading Section)",
+      "अग्र अनुच्छेद / कॉल नंबर (Leading Section)",
+      "परिग्रहण संख्या (Accession Number)",
+      "आख्या अनुभाग (Title Section)"
+    ],
+    "options_en": [
+      "Heading Section",
+      "Leading Section (Call Number)",
+      "Accession Number Section",
+      "Title Section"
+    ],
+    "options": [
+      {
+        "hi": "शीर्षक अनुभाग (Heading Section)",
+        "en": "Heading Section"
+      },
+      {
+        "hi": "अग्र अनुच्छेद / कॉल नंबर (Leading Section)",
+        "en": "Leading Section (Call Number)"
+      },
+      {
+        "hi": "परिग्रहण संख्या (Accession Number)",
+        "en": "Accession Number Section"
+      },
+      {
+        "hi": "आख्या अनुभाग (Title Section)",
+        "en": "Title Section"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "CCC में अग्र अनुच्छेद (Leading Section) में ग्रंथ का कॉलग्राम/क्रमांक (Call Number) लिखा जाता है। चूंकि पुस्तक का संस्करण या वर्गीकरण भविष्य में बदल सकता है, इसलिए इसे केवल पेंसिल से लिखा जाता है।",
+    "exp_en": "In CCC, the Leading Section contains the Call Number and is recorded solely in pencil so it can be erased and updated whenever classification numbers change."
+  },
+  {
+    "globalId": "u3_sub3_2_q5",
+    "id": 5,
+    "num": 5,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "एंग्लो-अमेरिकन कैटलॉगिंग रूल्स-2 (AACR-2) के अनुसार, यदि किसी पुस्तक के चार (4) या उससे अधिक लेखक हों, तो मुख्य प्रविष्टि (Main Entry) किसके अंतर्गत बनेगी?",
+    "q_en": "According to AACR-2, if a book is authored by four (4) or more personal authors, under which heading should the Main Entry be prepared?",
+    "options_hi": [
+      "प्रथम लेखक के नाम के अंतर्गत",
+      "पुस्तक की आख्या / शीर्षक (Title) के अंतर्गत",
+      "प्रकाशक के नाम के अंतर्गत",
+      "संपादक के नाम के अंतर्गत"
+    ],
+    "options_en": [
+      "Under the first named author",
+      "Under the Title of the book",
+      "Under the Publisher's name",
+      "Under the Editor's name"
+    ],
+    "options": [
+      {
+        "hi": "प्रथम लेखक के नाम के अंतर्गत",
+        "en": "Under the first named author"
+      },
+      {
+        "hi": "पुस्तक की आख्या / शीर्षक (Title) के अंतर्गत",
+        "en": "Under the Title of the book"
+      },
+      {
+        "hi": "प्रकाशक के नाम के अंतर्गत",
+        "en": "Under the Publisher's name"
+      },
+      {
+        "hi": "संपादक के नाम के अंतर्गत",
+        "en": "Under the Editor's name"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "AACR-2 में 'तीन का नियम' (Rule of Three) लागू होता है: यदि लेखक 1 से 3 हों तो मुख्य प्रविष्टि प्रथम लेखक के नाम से बनती है। यदि लेखक 3 से अधिक (4 या अधिक) हों, तो मुख्य प्रविष्टि 'आख्या' (Title) के अंतर्गत बनती है और प्रथम लेखक के नाम से सहायक प्रविष्टि बनती है (साथ में '... [et al.]' जोड़कर)।",
+    "exp_en": "Under AACR-2's Rule of Three, when responsibility is shared among more than three authors, the Main Entry is entered under the Title, and an added entry is made under the first named author followed by '... [et al.]'."
+  },
+  {
+    "globalId": "u3_sub3_2_q6",
+    "id": 6,
+    "num": 6,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "संसाधन विवरण एवं पहुंच (RDA - Resource Description and Access) किस पूर्ववर्ती सूचीकरण संहिता का आधुनिक उत्तराधिकारी है?",
+    "q_en": "Resource Description and Access (RDA), released in 2010, is the modern successor to which prior cataloguing code?",
+    "options_hi": [
+      "CCC (Classified Catalogue Code)",
+      "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)",
+      "कटर की RDC",
+      "पनिजी के 91 नियम"
+    ],
+    "options_en": [
+      "CCC (Classified Catalogue Code)",
+      "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)",
+      "Cutter's RDC",
+      "Panizzi's 91 Rules"
+    ],
+    "options": [
+      {
+        "hi": "CCC (Classified Catalogue Code)",
+        "en": "CCC (Classified Catalogue Code)"
+      },
+      {
+        "hi": "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)",
+        "en": "AACR-2 (Anglo-American Cataloguing Rules, 2nd ed.)"
+      },
+      {
+        "hi": "कटर की RDC",
+        "en": "Cutter's RDC"
+      },
+      {
+        "hi": "पनिजी के 91 नियम",
+        "en": "Panizzi's 91 Rules"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "RDA वर्ष 2010 में प्रकाशित हुआ जो AACR-2 (1978) का प्रत्यक्ष उत्तराधिकारी है। यह डिजिटल युग में मेटाडेटा निर्माण हेतु IFLA के FRBR (Functional Requirements for Bibliographic Records) मॉडल पर आधारित है।",
+    "exp_en": "RDA was published in 2010 as the direct successor to AACR-2. Designed for the digital networked environment, it is grounded in IFLA's FRBR entity-relationship conceptual model."
+  },
+  {
+    "globalId": "u3_sub3_2_q7",
+    "id": 7,
+    "num": 7,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "IFLA के FRBR वैचारिक मॉडल में 'WEMI' समूह-1 संस्थाओं का सही पदानुक्रम क्या है?",
+    "q_en": "What is the correct hierarchical order of Group 1 entities in IFLA's FRBR model (WEMI)?",
+    "options_hi": [
+      "Work -> Expression -> Manifestation -> Item",
+      "Work -> Manifestation -> Expression -> Item",
+      "Item -> Manifestation -> Expression -> Work",
+      "Expression -> Work -> Manifestation -> Item"
+    ],
+    "options_en": [
+      "Work -> Expression -> Manifestation -> Item",
+      "Work -> Manifestation -> Expression -> Item",
+      "Item -> Manifestation -> Expression -> Work",
+      "Expression -> Work -> Manifestation -> Item"
+    ],
+    "options": [
+      {
+        "hi": "Work -> Expression -> Manifestation -> Item",
+        "en": "Work -> Expression -> Manifestation -> Item"
+      },
+      {
+        "hi": "Work -> Manifestation -> Expression -> Item",
+        "en": "Work -> Manifestation -> Expression -> Item"
+      },
+      {
+        "hi": "Item -> Manifestation -> Expression -> Work",
+        "en": "Item -> Manifestation -> Expression -> Work"
+      },
+      {
+        "hi": "Expression -> Work -> Manifestation -> Item",
+        "en": "Expression -> Work -> Manifestation -> Item"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "FRBR में बौद्धिक एवं कलात्मक कृतियों को 4 स्तरों पर परिभाषित किया गया है (WEMI): Work (बौद्धिक कृति का अमूर्त विचार) -> Expression (भाषा या लिपि में अभिव्यक्ति) -> Manifestation (भौतिक रूप/संस्करण) -> Item (पुस्तकालय में रखी गई वास्तविक एक प्रति)।",
+    "exp_en": "The FRBR Group 1 entities follow the strict hierarchy: Work (distinct intellectual creation) -> Expression (realization of a work) -> Manifestation (physical embodiment) -> Item (single exemplar of a manifestation)."
+  },
+  {
+    "globalId": "u3_sub3_2_q8",
+    "id": 8,
+    "num": 8,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "मशीन-पठनीय सूचीकरण (MARC-21) में टैग '245' (Tag 245) किस ग्रंथपरक विवरण के लिए आरक्षित है?",
+    "q_en": "In the MARC-21 bibliographic format, Tag 245 is designated for which bibliographic information?",
+    "options_hi": [
+      "ISBN (अंतरराष्ट्रीय मानक पुस्तक संख्या)",
+      "व्यक्तिगत मुख्य प्रविष्टि (Main Entry - Personal Author)",
+      "आख्या एवं उत्तरदायित्व कथन (Title Statement)",
+      "विषय शीर्षक (Subject Heading)"
+    ],
+    "options_en": [
+      "ISBN (Tag 020)",
+      "Main Entry - Personal Name (Tag 100)",
+      "Title Statement (Title and Statement of Responsibility)",
+      "Subject Added Entry - Topical Term (Tag 650)"
+    ],
+    "options": [
+      {
+        "hi": "ISBN (अंतरराष्ट्रीय मानक पुस्तक संख्या)",
+        "en": "ISBN (Tag 020)"
+      },
+      {
+        "hi": "व्यक्तिगत मुख्य प्रविष्टि (Main Entry - Personal Author)",
+        "en": "Main Entry - Personal Name (Tag 100)"
+      },
+      {
+        "hi": "आख्या एवं उत्तरदायित्व कथन (Title Statement)",
+        "en": "Title Statement (Title and Statement of Responsibility)"
+      },
+      {
+        "hi": "विषय शीर्षक (Subject Heading)",
+        "en": "Subject Added Entry - Topical Term (Tag 650)"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "MARC-21 में Tag 245 'Title Statement' (आख्या, उप-आख्या तथा लेखक/उत्तरदायित्व कथन) के लिए प्रयुक्त होता है। Tag 020=ISBN, Tag 100=व्यक्तिगत लेखक, Tag 260/264=प्रकाशन विवरण, Tag 650=विषय शीर्षक।",
+    "exp_en": "Tag 245 in MARC-21 stores the Title Statement ($a Title, $b Subtitle, $c Statement of Responsibility). Other key tags include 020 for ISBN, 100 for Author, and 650 for Topical Subject."
+  },
+  {
+    "globalId": "u3_sub3_2_q9",
+    "id": 9,
+    "num": 9,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "MARC-21 में अंतरराष्ट्रीय मानक पुस्तक संख्या (ISBN) दर्ज करने हेतु किस चर फ़ील्ड टैग (Variable Field Tag) का उपयोग किया जाता है?",
+    "q_en": "Which variable field tag is utilized in MARC-21 to record the International Standard Book Number (ISBN)?",
+    "options_hi": [
+      "Tag 020",
+      "Tag 022",
+      "Tag 082",
+      "Tag 300"
+    ],
+    "options_en": [
+      "Tag 020",
+      "Tag 022 (ISSN)",
+      "Tag 082 (DDC Number)",
+      "Tag 300 (Physical Description)"
+    ],
+    "options": [
+      {
+        "hi": "Tag 020",
+        "en": "Tag 020"
+      },
+      {
+        "hi": "Tag 022",
+        "en": "Tag 022 (ISSN)"
+      },
+      {
+        "hi": "Tag 082",
+        "en": "Tag 082 (DDC Number)"
+      },
+      {
+        "hi": "Tag 300",
+        "en": "Tag 300 (Physical Description)"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "MARC-21 में Tag 020 का उपयोग ISBN (पुस्तक) तथा Tag 022 का उपयोग ISSN (पत्रिका) दर्ज करने हेतु किया जाता है। Tag 082 डेवी दशमलव वर्गीकरण संख्या (DDC) के लिए है।",
+    "exp_en": "Tag 020 in MARC-21 is dedicated to ISBN. Tag 022 is for ISSN, Tag 082 records DDC numbers, and Tag 300 records physical description/collation."
+  },
+  {
+    "globalId": "u3_sub3_2_q10",
+    "id": 10,
+    "num": 10,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "डॉ. एस.आर. रंगनाथन द्वारा 1938 में अपनी पुस्तक 'थ्योरी ऑफ लाइब्रेरी कैटलॉग' में किस विषय अनुक्रमणीकरण पद्धति का आविष्कार किया गया था?",
+    "q_en": "Which subject indexing method was invented by Dr. S.R. Ranganathan in 1938 in his book 'Theory of Library Catalogue'?",
+    "options_hi": [
+      "प्रेसी (PRECIS)",
+      "पॉपसी (POPSI)",
+      "शृंखला अनुक्रमणीकरण (Chain Indexing)",
+      "क्विक (KWIC)"
+    ],
+    "options_en": [
+      "PRECIS",
+      "POPSI",
+      "Chain Indexing / Chain Procedure",
+      "KWIC"
+    ],
+    "options": [
+      {
+        "hi": "प्रेसी (PRECIS)",
+        "en": "PRECIS"
+      },
+      {
+        "hi": "पॉपसी (POPSI)",
+        "en": "POPSI"
+      },
+      {
+        "hi": "शृंखला अनुक्रमणीकरण (Chain Indexing)",
+        "en": "Chain Indexing / Chain Procedure"
+      },
+      {
+        "hi": "क्विक (KWIC)",
+        "en": "KWIC"
+      }
+    ],
+    "correct": 2,
+    "exp_hi": "डॉ. रंगनाथन ने 1938 में 'Chain Indexing' (शृंखला प्रक्रिया) का आविष्कार किया, जिसमें ग्रंथ की वर्ग संख्या (Class Number) की कड़ियों का विश्लेषण करके विषय प्रविष्टियां व्युत्पन्न की जाती हैं।",
+    "exp_en": "Dr. S.R. Ranganathan developed Chain Indexing (Chain Procedure) in 1938, deriving alphabetized subject headings directly from the faceted links of a book's class number."
+  },
+  {
+    "globalId": "u3_sub3_2_q11",
+    "id": 11,
+    "num": 11,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "शृंखला अनुक्रमणीकरण (Chain Indexing) में वह कड़ी जिसके आधार पर उपयोगकर्ता सामान्यतः प्रलेख की खोज नहीं करता, क्या कहलाती है?",
+    "q_en": "In Chain Indexing, a link under which a searcher is not expected to look for document is termed as:",
+    "options_hi": [
+      "मिथ्या कड़ी (False Link)",
+      "अप्रार्थित कड़ी (Unsought Link)",
+      "प्रार्थित कड़ी (Sought Link)",
+      "लुप्त कड़ी (Missing Link)"
+    ],
+    "options_en": [
+      "False Link",
+      "Unsought Link",
+      "Sought Link",
+      "Missing Link"
+    ],
+    "options": [
+      {
+        "hi": "मिथ्या कड़ी (False Link)",
+        "en": "False Link"
+      },
+      {
+        "hi": "अप्रार्थित कड़ी (Unsought Link)",
+        "en": "Unsought Link"
+      },
+      {
+        "hi": "प्रार्थित कड़ी (Sought Link)",
+        "en": "Sought Link"
+      },
+      {
+        "hi": "लुप्त कड़ी (Missing Link)",
+        "en": "Missing Link"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "शृंखला अनुक्रमणीकरण में 4 प्रकार की कड़ियां होती हैं: (1) Sought Link (प्रार्थित - जिससे पाठक खोजेगा), (2) Unsought Link (अप्रार्थित - जिस पर पाठक नहीं खोजेगा), (3) False Link (मिथ्या - जो योजक चिह्न या गैर-अर्थपूर्ण अंक हो), (4) Missing Link (लुप्त - जो श्रृंखला में छूट गई हो)।",
+    "exp_en": "The 4 links in Chain Indexing are: Sought Link (substantive heading user seeks), Unsought Link (unlikely search point), False Link (connecting symbol without independent meaning), and Missing Link."
+  },
+  {
+    "globalId": "u3_sub3_2_q12",
+    "id": 12,
+    "num": 12,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "ब्रिटिश नेशनल बिब्लियोग्राफी (BNB) हेतु वर्ष 1974 में 'प्रेसी' (PRECIS) अनुक्रमणीकरण प्रणाली का विकास किसके द्वारा किया गया था?",
+    "q_en": "By whom was the PRECIS (Preserved Context Index System) developed in 1974 for the British National Bibliography (BNB)?",
+    "options_hi": [
+      "हंस पीटर लूह्न (H.P. Luhn)",
+      "डेरेक ऑस्टिन (Derek Austin)",
+      "गणेश भट्टाचार्य (Ganesh Bhattacharyya)",
+      "यूजीन गारफील्ड (Eugene Garfield)"
+    ],
+    "options_en": [
+      "H.P. Luhn",
+      "Derek Austin",
+      "Ganesh Bhattacharyya",
+      "Eugene Garfield"
+    ],
+    "options": [
+      {
+        "hi": "हंस पीटर लूह्न (H.P. Luhn)",
+        "en": "H.P. Luhn"
+      },
+      {
+        "hi": "डेरेक ऑस्टिन (Derek Austin)",
+        "en": "Derek Austin"
+      },
+      {
+        "hi": "गणेश भट्टाचार्य (Ganesh Bhattacharyya)",
+        "en": "Ganesh Bhattacharyya"
+      },
+      {
+        "hi": "यूजीन गारफील्ड (Eugene Garfield)",
+        "en": "Eugene Garfield"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "PRECIS (Preserved Context Index System) का विकास डेरेक ऑस्टिन (Derek Austin) ने 1974 में BNB में शृंखला अनुक्रमणीकरण के स्थान पर कंप्यूटर-आधारित संदर्भ सूचकांक निर्माण हेतु किया था।",
+    "exp_en": "Derek Austin devised PRECIS (Preserved Context Index System) in 1974 at the British Library to replace Chain Indexing in the computer-generated British National Bibliography (BNB)."
+  },
+  {
+    "globalId": "u3_sub3_2_q13",
+    "id": 13,
+    "num": 13,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "डीआरटीसी (DRTC), बेंगलुरु में वर्ष 1979 में 'पॉपसी' (POPSI - Postulate-based Permuted Subject Indexing) का विकास किसने किया था?",
+    "q_en": "Who developed POPSI (Postulate-based Permuted Subject Indexing) at DRTC, Bangalore in 1979?",
+    "options_hi": [
+      "डॉ. एस.आर. रंगनाथन",
+      "प्रो. गणेश भट्टाचार्य (G. Bhattacharyya)",
+      "ए. नीलगमेघन (A. Neelameghan)",
+      "पी.एन. कौला (P.N. Kaula)"
+    ],
+    "options_en": [
+      "Dr. S.R. Ranganathan",
+      "Prof. Ganesh Bhattacharyya",
+      "A. Neelameghan",
+      "P.N. Kaula"
+    ],
+    "options": [
+      {
+        "hi": "डॉ. एस.आर. रंगनाथन",
+        "en": "Dr. S.R. Ranganathan"
+      },
+      {
+        "hi": "प्रो. गणेश भट्टाचार्य (G. Bhattacharyya)",
+        "en": "Prof. Ganesh Bhattacharyya"
+      },
+      {
+        "hi": "ए. नीलगमेघन (A. Neelameghan)",
+        "en": "A. Neelameghan"
+      },
+      {
+        "hi": "पी.एन. कौला (P.N. Kaula)",
+        "en": "P.N. Kaula"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "POPSI का विकास प्रो. गणेश भट्टाचार्य ने 1979 में DRTC में किया। यह रंगनाथन के सामान्य सिद्धांतों एवं पक्षात्मक अभिधारणाओं (Discipline, Entity, Action, Property - DEAP) पर आधारित एक चक्रीय विषय अनुक्रमणीकरण पद्धति है।",
+    "exp_en": "POPSI was formulated in 1979 by Prof. Ganesh Bhattacharyya at DRTC Bangalore. It is grounded on Ranganathan's postulates and categorizes concepts into DEAP (Discipline, Entity, Action, Property)."
+  },
+  {
+    "globalId": "u3_sub3_2_q14",
+    "id": 14,
+    "num": 14,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "कंप्यूटर-आधारित 'क्विक' (KWIC - KeyWord In Context) अनुक्रमणीकरण पद्धति का आविष्कार 1959 में किसने किया था?",
+    "q_en": "Who invented the computer-generated KWIC (KeyWord In Context) indexing technique in 1959 at IBM?",
+    "options_hi": [
+      "एच.पी. लूह्न (H.P. Luhn)",
+      "मोर्टिमर टॉबे (Mortimer Taube)",
+      "वाननेवर बुश (Vannevar Bush)",
+      "यूजीन गारफील्ड (Eugene Garfield)"
+    ],
+    "options_en": [
+      "H.P. Luhn",
+      "Mortimer Taube",
+      "Vannevar Bush",
+      "Eugene Garfield"
+    ],
+    "options": [
+      {
+        "hi": "एच.पी. लूह्न (H.P. Luhn)",
+        "en": "H.P. Luhn"
+      },
+      {
+        "hi": "मोर्टिमर टॉबे (Mortimer Taube)",
+        "en": "Mortimer Taube"
+      },
+      {
+        "hi": "वाननेवर बुश (Vannevar Bush)",
+        "en": "Vannevar Bush"
+      },
+      {
+        "hi": "यूजीन गारफील्ड (Eugene Garfield)",
+        "en": "Eugene Garfield"
+      }
+    ],
+    "correct": 0,
+    "exp_hi": "KWIC का आविष्कार आईबीएम (IBM) के वैज्ञानिक हंस पीटर लूह्न (H.P. Luhn) ने 1959 में किया था। इसमें कंप्यूटर आख्या (Title) के प्रत्येक महत्वपूर्ण कीवर्ड को वर्णमाला क्रम में केंद्र में रखकर चक्रीय अनुक्रमणिका बनाता है।",
+    "exp_en": "KWIC was introduced in 1959 by Hans Peter Luhn at IBM. It extracts keywords from document titles and rotates them alphabetically into a fixed central column."
+  },
+  {
+    "globalId": "u3_sub3_2_q15",
+    "id": 15,
+    "num": 15,
+    "unitId": "unit_03",
+    "unitNum": 3,
+    "subUnitNum": "3.2",
+    "unitTitle_hi": "ज्ञान संगठन: वर्गीकरण एवं सूचीकरण",
+    "unitTitle_en": "Classification and Cataloguing",
+    "subUnitTitle_hi": "बिहार विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा 2026",
+    "subUnitTitle_en": "Unit 3.2: Cataloguing, Metadata & Indexing | सूचीकरण, मेटाडेटा मानक एवं विषय अनुक्रमणीकरण",
+    "q_hi": "उद्धरण अनुक्रमणीकरण (Citation Indexing) के जनक के रूप में 'साइंस साइटेशन इंडेक्स' (SCI) की स्थापना 1964 में किसने की थी?",
+    "q_en": "As the pioneer of Citation Indexing, who established the Science Citation Index (SCI) in 1964 at ISI?",
+    "options_hi": [
+      "डेरेक डी सोला प्राइस (Derek de Solla Price)",
+      "यूजीन गारफील्ड (Eugene Garfield)",
+      "सैम्युअल सी. ब्रैडफोर्ड (S.C. Bradford)",
+      "अल्फ्रेड जे. लोटका (Alfred J. Lotka)"
+    ],
+    "options_en": [
+      "Derek de Solla Price",
+      "Eugene Garfield",
+      "Samuel C. Bradford",
+      "Alfred J. Lotka"
+    ],
+    "options": [
+      {
+        "hi": "डेरेक डी सोला प्राइस (Derek de Solla Price)",
+        "en": "Derek de Solla Price"
+      },
+      {
+        "hi": "यूजीन गारफील्ड (Eugene Garfield)",
+        "en": "Eugene Garfield"
+      },
+      {
+        "hi": "सैम्युअल सी. ब्रैडफोर्ड (S.C. Bradford)",
+        "en": "Samuel C. Bradford"
+      },
+      {
+        "hi": "अल्फ्रेड जे. लोटका (Alfred J. Lotka)",
+        "en": "Alfred J. Lotka"
+      }
+    ],
+    "correct": 1,
+    "exp_hi": "डॉ. यूजीन गारफील्ड (Eugene Garfield) ने 1960 में इंस्टीट्यूट फॉर साइंटिफिक इंफॉर्मेशन (ISI) की स्थापना की तथा 1964 में विश्व का प्रथम 'साइंस साइटेशन इंडेक्स' (SCI) प्रकाशित किया।",
+    "exp_en": "Dr. Eugene Garfield founded the Institute for Scientific Information (ISI) in 1960 and launched the ground-breaking Science Citation Index (SCI) in 1964, establishing citation indexing."
+  }
+]
