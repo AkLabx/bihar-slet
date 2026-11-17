@@ -50,20 +50,22 @@ d:\library study notes artifects\
 │   ├── types/index.ts         # TypeScript interfaces
 │   ├── store/useQuizStore.ts  # Zustand store (state, cutoffs, persistence)
 │   ├── components/
-│   │   ├── Navbar.tsx         # Category selector, 3-way language toggle, theme switcher
-│   │   └── MarkdownRenderer.tsx # Custom robust parser for notes & tables
+│   │   ├── Navbar.tsx         # Category selector, centralized language toggle, theme switcher
+│   │   ├── LanguageSwitcher.tsx # Centralized 3-state segmented pill language switcher
+│   │   └── MarkdownRenderer.tsx # Language-aware parser adapting headers, tables, callouts & notes
 │   ├── pages/
-│   │   ├── HomePage.tsx       # Master dashboard, 10 units grid, stats cards
-│   │   ├── StudyPage.tsx      # Comprehensive study notes viewer with print support
-│   │   ├── QuizPage.tsx       # Dual-mode quiz engine (Practice + 20-min Exam)
-│   │   ├── GrandMockPage.tsx  # 150-question full simulation with 150-min timer
-│   │   └── BookmarksPage.tsx  # Saved questions revision hub
+│   │   ├── HomePage.tsx       # Master dashboard, 10 units grid, stats cards, language switcher
+│   │   ├── StudyPage.tsx      # Comprehensive study notes viewer with sticky/floating language switcher
+│   │   ├── QuizPage.tsx       # Dual-mode quiz engine (Practice + 20-min Exam) with language switcher
+│   │   ├── GrandMockPage.tsx  # 150-question full simulation with 150-min timer & live language switch
+│   │   └── BookmarksPage.tsx  # Saved questions revision hub with live language switch
 │   ├── data/
-│   │   ├── manifest.json      # Complete syllabus metadata
+│   │   ├── manifest.json      # Complete syllabus metadata (30 subunits with pure Hindi & pure English titles)
 │   │   ├── notes/             # 30 Markdown study note files (1.1.md - 10.2.md)
 │   │   └── questions/         # 30 SubUnit JSON question files + all_questions.json
 │   └── test/
-│       └── questions.test.ts  # 5 Vitest tests verifying all 445 MCQs schema
+│       ├── questions.test.ts  # 5 Vitest tests verifying all 445 MCQs schema
+│       └── language.test.ts   # 3 Vitest tests verifying centralized language state, titles & notes
 ├── scripts/
 │   └── extract-content.mjs    # Parser script converting HTML/MD into structured JSON
 ├── Unit_01_... to Unit_10_... # Legacy unit directories with original MD notes and HTML quizzes
