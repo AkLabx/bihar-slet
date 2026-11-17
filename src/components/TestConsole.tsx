@@ -29,7 +29,6 @@ import {
   Bookmark,
   BookmarkCheck,
   CheckCircle2,
-  ArrowLeft,
   ChevronLeft,
   ChevronRight,
   Eye,
@@ -39,6 +38,8 @@ import {
   X,
   LogOut,
   AlertTriangle,
+  Zap,
+  FileCheck,
 } from 'lucide-react';
 
 export interface TestConsoleProps {
@@ -54,6 +55,7 @@ export interface TestConsoleProps {
     total: number;
     percentage: number;
     selectedAnswers: Record<number, number>;
+    mode: QuizMode;
   }) => void;
   onExit: () => void;
 }
@@ -69,7 +71,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
   onComplete,
   onExit,
 }) => {
-  const { language, isBookmarked, toggleBookmark, category } = useQuizStore();
+  const { language, isBookmarked, toggleBookmark } = useQuizStore();
 
   const [mode, setMode] = useState<QuizMode>(initialMode);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -86,6 +88,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
   const [showPauseModal, setShowPauseModal] = useState(false);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [modeSwitchCandidate, setModeSwitchCandidate] = useState<QuizMode | null>(null);
   const [resumePromptSession, setResumePromptSession] = useState<ActiveTestSession | null>(null);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -93,10 +96,13 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
   const warned5MinRef = useRef(false);
   const warned1MinRef = useRef(false);
 
-  // Check for existing unfinished session in IndexedDB on mount
+  // Isolate active sessions by mode to ensure 100% context separation
+  const activeSessionKey = `${sessionId}_${mode}`;
+
+  // Check for existing unfinished session in IndexedDB on mount or mode change
   useEffect(() => {
     let isMounted = true;
-    getActiveSession(sessionId).then((saved) => {
+    getActiveSession(activeSessionKey).then((saved) => {
       if (!isMounted || !saved) return;
       const hasAnswers = Object.keys(saved.selectedAnswers || {}).length > 0;
       const hasTime = saved.timeLeft > 0 && saved.timeLeft < totalDurationSeconds;
@@ -107,7 +113,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
     return () => {
       isMounted = false;
     };
-  }, [sessionId, totalDurationSeconds]);
+  }, [activeSessionKey, totalDurationSeconds]);
 
   // Handle restoring saved session
   const handleResumeSession = (saved: ActiveTestSession) => {
@@ -116,12 +122,11 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
     setVisitedQuestions(saved.visitedQuestions || { 0: true });
     setCurrentIdx(Math.min(saved.currentIdx || 0, questions.length - 1));
     setTimeLeft(saved.timeLeft || totalDurationSeconds);
-    setMode(saved.mode || initialMode);
     setResumePromptSession(null);
   };
 
   const handleDiscardSavedSession = () => {
-    clearActiveSession(sessionId);
+    clearActiveSession(activeSessionKey);
     setResumePromptSession(null);
   };
 
@@ -149,7 +154,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
     setSoundMuted(next);
   };
 
-  // Timer countdown
+  // Timer countdown (only runs when in 'exam' mode)
   useEffect(() => {
     if (mode !== 'exam' || isPaused || timeLeft <= 0 || Boolean(resumePromptSession)) return;
 
@@ -179,11 +184,11 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
     return () => clearInterval(timer);
   }, [mode, isPaused, timeLeft, resumePromptSession]);
 
-  // Sync state to IndexedDB every 5 seconds or upon meaningful change
+  // Sync state to IndexedDB under the isolated mode session key
   useEffect(() => {
     if (resumePromptSession) return;
     const sessionData: ActiveTestSession = {
-      sessionId,
+      sessionId: activeSessionKey,
       type: sessionId.startsWith('subunit') ? 'subunit' : 'grand-mock',
       mode,
       currentIdx,
@@ -196,7 +201,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
       updatedAt: Date.now(),
     };
     saveActiveSession(sessionData);
-  }, [sessionId, mode, currentIdx, selectedAnswers, markedForReview, visitedQuestions, timeLeft, isPaused, questions.length, resumePromptSession]);
+  }, [activeSessionKey, sessionId, mode, currentIdx, selectedAnswers, markedForReview, visitedQuestions, timeLeft, isPaused, questions.length, resumePromptSession]);
 
   // Mark question visited whenever currentIdx changes
   useEffect(() => {
@@ -210,16 +215,69 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
   const isAnswered = userSelected !== undefined;
   const isMarked = Boolean(markedForReview[currentIdx]);
 
+  // Robust Mode Switcher with zero context mixing
+  const handleRequestModeSwitch = (newMode: QuizMode) => {
+    if (newMode === mode) return;
+
+    const hasAnswers = Object.keys(selectedAnswers).length > 0;
+    if (hasAnswers) {
+      setModeSwitchCandidate(newMode);
+    } else {
+      executeModeSwitch(newMode);
+    }
+  };
+
+  const executeModeSwitch = async (newMode: QuizMode) => {
+    // 1. Save current session before switching
+    const currentSession: ActiveTestSession = {
+      sessionId: activeSessionKey,
+      type: sessionId.startsWith('subunit') ? 'subunit' : 'grand-mock',
+      mode,
+      currentIdx,
+      selectedAnswers,
+      markedForReview,
+      visitedQuestions,
+      timeLeft,
+      isPaused,
+      totalQuestions: questions.length,
+      updatedAt: Date.now(),
+    };
+    await saveActiveSession(currentSession);
+
+    // 2. Switch mode and reset timers
+    setMode(newMode);
+    setModeSwitchCandidate(null);
+    warned5MinRef.current = false;
+    warned1MinRef.current = false;
+
+    // 3. Load isolated session for target mode
+    const newSessionKey = `${sessionId}_${newMode}`;
+    const targetSession = await getActiveSession(newSessionKey);
+    if (targetSession) {
+      setSelectedAnswers(targetSession.selectedAnswers || {});
+      setMarkedForReview(targetSession.markedForReview || {});
+      setVisitedQuestions(targetSession.visitedQuestions || { 0: true });
+      setCurrentIdx(Math.min(targetSession.currentIdx || 0, questions.length - 1));
+      setTimeLeft(targetSession.timeLeft || totalDurationSeconds);
+    } else {
+      setSelectedAnswers({});
+      setMarkedForReview({});
+      setVisitedQuestions({ 0: true });
+      setCurrentIdx(0);
+      setTimeLeft(totalDurationSeconds);
+    }
+  };
+
   // Handle Option Click
   const handleSelectOption = (optIdx: number) => {
     if (isPaused) return;
 
     playOptionClickSound();
-    triggerHaptic('light');
 
     setSelectedAnswers((prev) => ({ ...prev, [currentIdx]: optIdx }));
 
     if (mode === 'practice') {
+      // Instant Answers Mode: validate with audio/haptics immediately
       if (optIdx === currentQ.correct) {
         playSuccessChime();
         triggerHaptic('success');
@@ -227,6 +285,9 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
         playIncorrectChime();
         triggerHaptic('warning');
       }
+    } else {
+      // Answer on Submission Mode: neutral feedback only, zero spoilers
+      triggerHaptic('light');
     }
   };
 
@@ -290,7 +351,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
   // Final Submit
   const handleFinalSubmit = async () => {
     setShowSubmitModal(false);
-    await clearActiveSession(sessionId);
+    await clearActiveSession(activeSessionKey);
 
     let score = 0;
     questions.forEach((q, idx) => {
@@ -308,6 +369,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
       total: questions.length,
       percentage,
       selectedAnswers,
+      mode,
     });
   };
 
@@ -329,11 +391,18 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
     let markedOnly = 0;
     let markedAndAnswered = 0;
     let notVisited = 0;
+    let correctPractice = 0;
+    let wrongPractice = 0;
 
-    questions.forEach((_, idx) => {
+    questions.forEach((q, idx) => {
       const isAns = selectedAnswers[idx] !== undefined;
       const isRev = Boolean(markedForReview[idx]);
       const isVis = Boolean(visitedQuestions[idx]);
+
+      if (isAns) {
+        if (selectedAnswers[idx] === q.correct) correctPractice++;
+        else wrongPractice++;
+      }
 
       if (isAns && isRev) markedAndAnswered++;
       else if (isRev) markedOnly++;
@@ -348,6 +417,8 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
       markedOnly,
       markedAndAnswered,
       notVisited,
+      correctPractice,
+      wrongPractice,
       totalAnswered: answered + markedAndAnswered,
     };
   }, [questions, selectedAnswers, markedForReview, visitedQuestions]);
@@ -364,10 +435,10 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
       className="fixed inset-0 z-50 bg-slate-100 dark:bg-slate-950 flex flex-col h-[100dvh] w-full overflow-hidden select-none font-sans text-gray-900 dark:text-gray-100"
     >
       {/* 1. TOP CONSOLE BAR - STICKY & IMMERSIVE */}
-      <header className="h-14 sm:h-16 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 px-3 sm:px-6 flex items-center justify-between shrink-0 shadow-xs z-30">
+      <header className="h-14 sm:h-16 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 px-2.5 sm:px-6 flex items-center justify-between shrink-0 shadow-xs z-30 gap-2">
         
         {/* Left: Exit + Title + Section */}
-        <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+        <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
           <button
             onClick={() => setShowExitModal(true)}
             className="p-1.5 sm:p-2 rounded-lg text-gray-500 hover:text-red-600 dark:text-gray-400 dark:hover:text-red-400 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors cursor-pointer shrink-0"
@@ -377,7 +448,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
           </button>
 
           <div className="min-w-0">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2">
               <h2 className="font-extrabold text-xs sm:text-base text-gray-900 dark:text-white truncate">
                 {title}
               </h2>
@@ -395,11 +466,47 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
           </div>
         </div>
 
-        {/* Center: Timer Countdown & Pause Button */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Center: Mode Selector + Timer Countdown */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Robust Mode Selector Pill */}
+          <div
+            role="group"
+            aria-label="Test Mode Selection"
+            className="inline-flex items-center bg-gray-100 dark:bg-slate-800 p-0.5 rounded-lg border border-gray-200 dark:border-slate-700 shadow-2xs shrink-0"
+          >
+            <button
+              onClick={() => handleRequestModeSwitch('practice')}
+              className={`px-2 sm:px-2.5 py-1 rounded-md text-xs transition-all flex items-center gap-1 cursor-pointer ${
+                mode === 'practice'
+                  ? 'bg-amber-500 text-white font-bold shadow-2xs'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              }`}
+              title="Instant Answers: Immediate validation and explanation per question"
+            >
+              <Zap className="w-3 h-3 text-yellow-300 shrink-0" />
+              <span className="hidden sm:inline">{language === 'english' ? 'Instant Answers' : 'त्वरित उत्तर'}</span>
+              <span className="sm:hidden">{language === 'english' ? 'Instant' : 'त्वरित'}</span>
+            </button>
+
+            <button
+              onClick={() => handleRequestModeSwitch('exam')}
+              className={`px-2 sm:px-2.5 py-1 rounded-md text-xs transition-all flex items-center gap-1 cursor-pointer ${
+                mode === 'exam'
+                  ? 'bg-amber-500 text-white font-bold shadow-2xs'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              }`}
+              title="Answer on Submission: Official CBT mode. Explanations shown only on final submission."
+            >
+              <FileCheck className="w-3 h-3 text-blue-200 shrink-0" />
+              <span className="hidden sm:inline">{language === 'english' ? 'On Submission' : 'सबमिशन पर'}</span>
+              <span className="sm:hidden">{language === 'english' ? 'Exam' : 'परीक्षा'}</span>
+            </button>
+          </div>
+
+          {/* Timer Display (Exam Mode) */}
           {mode === 'exam' && (
             <div
-              className={`flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-xl font-mono font-bold text-xs sm:text-sm border shadow-2xs transition-colors ${
+              className={`flex items-center gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl font-mono font-bold text-xs sm:text-sm border shadow-2xs transition-colors shrink-0 ${
                 timeLeft < 180
                   ? 'bg-red-50 dark:bg-red-950/50 text-red-600 border-red-300 dark:border-red-900 animate-pulse'
                   : timeLeft < 600
@@ -407,16 +514,16 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                   : 'bg-gray-50 dark:bg-slate-800 text-gray-800 dark:text-gray-200 border-gray-200 dark:border-slate-700'
               }`}
             >
-              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500 shrink-0" />
+              <Clock className="w-3.5 h-3.5 text-amber-500 shrink-0" />
               <span>{formatTime(timeLeft)}</span>
             </div>
           )}
 
-          {/* Pause / Resume Button */}
+          {/* Pause / Resume Button (Exam Mode) */}
           {mode === 'exam' && (
             <button
               onClick={handlePause}
-              className="p-1.5 sm:p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-gray-700 dark:text-gray-300 transition-colors cursor-pointer"
+              className="p-1.5 sm:p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-gray-700 dark:text-gray-300 transition-colors cursor-pointer shrink-0"
               title="Pause Test"
             >
               <Pause className="w-4 h-4 text-amber-600 dark:text-amber-400" />
@@ -425,7 +532,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
         </div>
 
         {/* Right: Audio Toggle, Language, Fullscreen, Palette Drawer (Mobile) */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Sound Effect Toggle */}
           <button
             onClick={toggleSound}
@@ -472,12 +579,14 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                 {language === 'english' ? `Q ${currentIdx + 1} of ${questions.length}` : `प्रश्न ${currentIdx + 1} / ${questions.length}`}
               </span>
               <span className="text-[11px] text-gray-500 dark:text-gray-400 hidden sm:inline">
-                Marks: +1.00, -0.00
+                {mode === 'practice'
+                  ? (language === 'english' ? 'Instant Practice Mode' : 'त्वरित अभ्यास मोड')
+                  : (language === 'english' ? 'Marks: +1.00, -0.00' : 'अंक: +1.00, -0.00')}
               </span>
             </div>
 
             <div className="flex items-center gap-2">
-              {/* Mark for Review Button in Question Bar */}
+              {/* Mark for Review Button */}
               <button
                 onClick={handleToggleMarkReview}
                 className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors cursor-pointer ${
@@ -538,6 +647,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                 let optClass = "border-gray-200 dark:border-slate-800 hover:border-amber-400 bg-white dark:bg-slate-900 text-gray-800 dark:text-gray-200";
 
                 if (mode === 'practice' && isAnswered) {
+                  // Instant Answers Mode: Green for correct, Red for chosen wrong option
                   if (isCorrect) {
                     optClass = "border-emerald-500 bg-emerald-50/70 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 font-bold ring-2 ring-emerald-500";
                   } else if (isSelected && !isCorrect) {
@@ -546,6 +656,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                     optClass = "opacity-50 border-gray-200 dark:border-slate-800";
                   }
                 } else if (isSelected) {
+                  // Answer on Submission Mode: neutral highlight only, zero correctness leaks
                   optClass = "border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 font-bold ring-2 ring-amber-500";
                 }
 
@@ -571,15 +682,32 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
               })}
             </div>
 
-            {/* Instant Analytical Explanation (Practice Mode) */}
+            {/* Instant Analytical Explanation (ONLY in Instant Answers Practice Mode) */}
             {mode === 'practice' && isAnswered && (
-              <div className="p-3.5 sm:p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 space-y-1.5 text-xs">
+              <div className="p-3.5 sm:p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 space-y-2 text-xs animate-in fade-in duration-200">
+                {/* Result header */}
+                <div className="flex items-center gap-1.5 font-bold">
+                  {userSelected === currentQ.correct ? (
+                    <span className="text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                      {language === 'english' ? 'Correct Answer!' : 'सही उत्तर!'}
+                    </span>
+                  ) : (
+                    <span className="text-red-600 dark:text-red-400 flex items-center gap-1">
+                      <X className="w-4 h-4 text-red-500 shrink-0" />
+                      {language === 'english'
+                        ? `Incorrect. Correct Option: (${['A', 'B', 'C', 'D'][currentQ.correct]})`
+                        : `गलत उत्तर। सही विकल्प: (${['A', 'B', 'C', 'D'][currentQ.correct]})`}
+                    </span>
+                  )}
+                </div>
+
                 <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-300">
-                  <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
+                  <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
                   <span>
                     {language === 'english'
-                      ? `Correct Answer: Option (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_en[currentQ.correct] || currentQ.options_hi[currentQ.correct]}`
-                      : `सही उत्तर: विकल्प (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_hi[currentQ.correct]}`}
+                      ? `Explanation: Option (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_en[currentQ.correct] || currentQ.options_hi[currentQ.correct]}`
+                      : `विश्लेषण: विकल्प (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_hi[currentQ.correct]}`}
                   </span>
                 </div>
                 {(language === 'bilingual' || language === 'hindi') && (
@@ -673,6 +801,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
             onSelectQuestion={handleJumpToQuestion}
             onSubmitClick={() => setShowSubmitModal(true)}
             language={language}
+            mode={mode}
           />
         </aside>
 
@@ -690,6 +819,9 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
               <span className="font-bold text-sm text-gray-900 dark:text-white flex items-center gap-2">
                 <LayoutGrid className="w-4 h-4 text-amber-500" />
                 {language === 'english' ? 'Question Palette' : 'प्रश्न पैलेट'}
+                <span className="text-[11px] font-normal text-gray-500 dark:text-gray-400">
+                  ({mode === 'practice' ? 'Instant Answers' : 'On Submission'})
+                </span>
               </span>
               <button
                 onClick={() => setIsPaletteOpen(false)}
@@ -715,13 +847,61 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                   setShowSubmitModal(true);
                 }}
                 language={language}
+                mode={mode}
               />
             </div>
           </div>
         </div>
       )}
 
-      {/* 4. DIALOG: PAUSE MODAL */}
+      {/* 4. DIALOG: MODE SWITCH CONFIRMATION (Robust Context Isolation) */}
+      {modeSwitchCandidate && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="mode-switch-title"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md"
+        >
+          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-6 sm:p-7 max-w-sm w-full space-y-4 shadow-2xl text-center">
+            <div className="w-12 h-12 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-600 mx-auto flex items-center justify-center">
+              <Zap className="w-6 h-6" />
+            </div>
+
+            <h3 id="mode-switch-title" className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
+              {language === 'english' ? 'Switch Test Mode?' : 'टेस्ट मोड बदलें?'}
+            </h3>
+
+            <p className="text-xs text-gray-600 dark:text-gray-300">
+              {language === 'english'
+                ? `Your current progress will be preserved in IndexedDB. You are switching to ${
+                    modeSwitchCandidate === 'practice' ? '⚡ Instant Answers' : '📝 Answer on Submission'
+                  } mode.`
+                : `आपकी वर्तमान प्रगति सुरक्षित कर दी जाएगी। आप ${
+                    modeSwitchCandidate === 'practice' ? '⚡ त्वरित उत्तर' : '📝 सबमिशन पर उत्तर'
+                  } मोड में जा रहे हैं। दोनों मोड के उत्तर अलग-अलग रहेंगे।`}
+            </p>
+
+            <div className="flex items-center gap-2 pt-2">
+              <button
+                onClick={() => setModeSwitchCandidate(null)}
+                className="flex-1 py-2 px-3 rounded-xl border border-gray-200 dark:border-slate-700 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 cursor-pointer"
+              >
+                {language === 'english' ? 'Cancel' : 'रद्द करें'}
+              </button>
+
+              <button
+                autoFocus
+                onClick={() => executeModeSwitch(modeSwitchCandidate)}
+                className="flex-1 py-2 px-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold shadow-xs cursor-pointer"
+              >
+                {language === 'english' ? 'Switch Mode' : 'मोड बदलें'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. DIALOG: PAUSE MODAL */}
       {showPauseModal && (
         <div
           role="dialog"
@@ -768,7 +948,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
         </div>
       )}
 
-      {/* 5. DIALOG: SUBMIT CONFIRMATION MODAL */}
+      {/* 6. DIALOG: SUBMIT CONFIRMATION MODAL */}
       {showSubmitModal && (
         <div
           role="dialog"
@@ -799,15 +979,19 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
               </div>
 
               <div className="bg-gray-50 dark:bg-slate-800 p-2.5 rounded-xl border border-gray-200 dark:border-slate-700 text-center">
-                <span className="text-xl font-extrabold text-gray-700 dark:text-gray-300">{formatTime(timeLeft)}</span>
-                <p className="text-[11px] text-gray-500">{language === 'english' ? 'Time Remaining' : 'शेष समय'}</p>
+                <span className="text-xl font-extrabold text-gray-700 dark:text-gray-300">
+                  {mode === 'exam' ? formatTime(timeLeft) : 'Practice'}
+                </span>
+                <p className="text-[11px] text-gray-500">
+                  {mode === 'exam' ? (language === 'english' ? 'Time Remaining' : 'शेष समय') : 'मोड'}
+                </p>
               </div>
             </div>
 
             <p className="text-xs text-center text-gray-500 dark:text-gray-400">
               {language === 'english'
-                ? 'Are you sure you want to finish the test? You cannot change your answers after submission.'
-                : 'क्या आप निश्चित रूप से टेस्ट सबमिट करना चाहते हैं? इसके बाद उत्तर बदले नहीं जा सकेंगे।'}
+                ? 'Are you sure you want to finish the test? Complete solutions & performance report will be generated.'
+                : 'क्या आप निश्चित रूप से टेस्ट सबमिट करना चाहते हैं? इसके बाद सम्पूर्ण व्याख्या सहित रिपोर्ट प्रदर्शित होगी।'}
             </p>
 
             <div className="flex items-center gap-2 pt-2">
@@ -815,7 +999,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
                 onClick={() => setShowSubmitModal(false)}
                 className="flex-1 py-2.5 px-4 rounded-xl border border-gray-200 dark:border-slate-700 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
               >
-                {language === 'english' ? 'Resume Test' : 'वापस टेस्ट पर'}
+                {language === 'english' ? 'Return to Test' : 'वापस टेस्ट पर'}
               </button>
 
               <button
@@ -830,7 +1014,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
         </div>
       )}
 
-      {/* 6. DIALOG: EXIT CONFIRMATION MODAL */}
+      {/* 7. DIALOG: EXIT CONFIRMATION MODAL */}
       {showExitModal && (
         <div
           role="dialog"
@@ -873,7 +1057,7 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
         </div>
       )}
 
-      {/* 7. DIALOG: RESUME IN-PROGRESS PROMPT MODAL */}
+      {/* 8. DIALOG: RESUME IN-PROGRESS PROMPT MODAL */}
       {resumePromptSession && (
         <div
           role="dialog"
@@ -886,13 +1070,17 @@ export const TestConsole: React.FC<TestConsoleProps> = ({
             </div>
 
             <h3 className="text-lg font-extrabold text-gray-900 dark:text-white">
-              {language === 'english' ? 'Resume In-Progress Test?' : 'अधूरी परीक्षा पुनः जारी रखें?'}
+              {language === 'english' ? 'Resume In-Progress Session?' : 'अधूरी परीक्षा पुनः जारी रखें?'}
             </h3>
 
             <p className="text-xs text-gray-600 dark:text-gray-300">
               {language === 'english'
-                ? `An active session was found with ${Object.keys(resumePromptSession.selectedAnswers || {}).length} answered questions and ${formatTime(resumePromptSession.timeLeft)} remaining.`
-                : `आपकी पिछली परीक्षा का सत्र सुरक्षित है (${Object.keys(resumePromptSession.selectedAnswers || {}).length} प्रश्न हल किए गए, ${formatTime(resumePromptSession.timeLeft)} शेष)।`}
+                ? `An active ${mode === 'practice' ? 'Instant Answers' : 'On Submission'} session was found with ${
+                    Object.keys(resumePromptSession.selectedAnswers || {}).length
+                  } answered questions and ${formatTime(resumePromptSession.timeLeft)} remaining.`
+                : `आपकी पिछली परीक्षा का सत्र सुरक्षित है (${
+                    Object.keys(resumePromptSession.selectedAnswers || {}).length
+                  } प्रश्न हल किए गए, ${formatTime(resumePromptSession.timeLeft)} शेष)।`}
             </p>
 
             <div className="flex items-center gap-2 pt-2">
@@ -933,6 +1121,7 @@ interface PaletteContentProps {
   onSelectQuestion: (idx: number) => void;
   onSubmitClick: () => void;
   language: string;
+  mode: QuizMode;
 }
 
 const PaletteContent: React.FC<PaletteContentProps> = ({
@@ -942,10 +1131,10 @@ const PaletteContent: React.FC<PaletteContentProps> = ({
   markedForReview,
   visitedQuestions,
   counts,
-  sections,
   onSelectQuestion,
   onSubmitClick,
   language,
+  mode,
 }) => {
   return (
     <div className="flex flex-col h-full space-y-4">
@@ -954,41 +1143,76 @@ const PaletteContent: React.FC<PaletteContentProps> = ({
         <h4 className="font-bold text-gray-400 uppercase tracking-wider text-[10px]">
           {language === 'english' ? 'Legend' : 'संकेतक (Legend)'}
         </h4>
-        <div className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-gray-300">
-          <div className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded bg-emerald-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
-              {counts.answered}
-            </span>
-            <span className="truncate">{language === 'english' ? 'Answered' : 'उत्तर दिए'}</span>
-          </div>
 
-          <div className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded bg-red-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
-              {counts.notAnswered}
-            </span>
-            <span className="truncate">{language === 'english' ? 'Not Answered' : 'अनुत्तरित'}</span>
-          </div>
+        {mode === 'practice' ? (
+          /* Legend in Instant Answers Practice Mode */
+          <div className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-gray-300">
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-emerald-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.correctPractice}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Correct' : 'सही उत्तर'}</span>
+            </div>
 
-          <div className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded-full bg-purple-600 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
-              {counts.markedOnly}
-            </span>
-            <span className="truncate">{language === 'english' ? 'Marked' : 'समीक्षा हेतु'}</span>
-          </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-red-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.wrongPractice}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Incorrect' : 'गलत उत्तर'}</span>
+            </div>
 
-          <div className="flex items-center gap-1.5">
-            <span className="w-5 h-5 rounded bg-gray-200 dark:bg-slate-700 text-gray-600 dark:text-gray-300 font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
-              {counts.notVisited}
-            </span>
-            <span className="truncate">{language === 'english' ? 'Not Visited' : 'अनदेखे'}</span>
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded-full bg-purple-600 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.markedOnly}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Marked' : 'समीक्षा हेतु'}</span>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-gray-200 dark:bg-slate-700 text-gray-600 dark:text-gray-300 font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {questions.length - counts.totalAnswered}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Unanswered' : 'अनुत्तरित'}</span>
+            </div>
           </div>
-        </div>
+        ) : (
+          /* Legend in Answer on Submission Exam Mode */
+          <div className="grid grid-cols-2 gap-1.5 text-gray-700 dark:text-gray-300">
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-emerald-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.answered}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Answered' : 'उत्तर दिए'}</span>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-red-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.notAnswered}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Not Answered' : 'अनुत्तरित'}</span>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded-full bg-purple-600 text-white font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.markedOnly}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Marked' : 'समीक्षा हेतु'}</span>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <span className="w-5 h-5 rounded bg-gray-200 dark:bg-slate-700 text-gray-600 dark:text-gray-300 font-mono text-[10px] font-bold flex items-center justify-center shrink-0">
+                {counts.notVisited}
+              </span>
+              <span className="truncate">{language === 'english' ? 'Not Visited' : 'अनदेखे'}</span>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Question Number Grid */}
       <div className="flex-1 overflow-y-auto pr-1">
         <div className="grid grid-cols-5 sm:grid-cols-6 gap-1.5">
-          {questions.map((_, idx) => {
+          {questions.map((q, idx) => {
             const isAns = selectedAnswers[idx] !== undefined;
             const isRev = Boolean(markedForReview[idx]);
             const isVis = Boolean(visitedQuestions[idx]);
@@ -996,14 +1220,24 @@ const PaletteContent: React.FC<PaletteContentProps> = ({
 
             let btnClass = "bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 border-transparent";
 
-            if (isAns && isRev) {
-              btnClass = "bg-purple-600 text-white ring-2 ring-emerald-400";
-            } else if (isRev) {
-              btnClass = "bg-purple-600 text-white rounded-full";
-            } else if (isAns) {
-              btnClass = "bg-emerald-600 text-white";
-            } else if (isVis) {
-              btnClass = "bg-red-500 text-white";
+            if (mode === 'practice' && isAns) {
+              // Instant Answers: show immediate green / red status in palette
+              if (selectedAnswers[idx] === q.correct) {
+                btnClass = "bg-emerald-600 text-white font-bold";
+              } else {
+                btnClass = "bg-red-500 text-white font-bold";
+              }
+            } else {
+              // Answer on Submission: standard CBT palette (zero correctness leaks)
+              if (isAns && isRev) {
+                btnClass = "bg-purple-600 text-white ring-2 ring-emerald-400";
+              } else if (isRev) {
+                btnClass = "bg-purple-600 text-white rounded-full";
+              } else if (isAns) {
+                btnClass = "bg-emerald-600 text-white";
+              } else if (isVis) {
+                btnClass = "bg-red-500 text-white";
+              }
             }
 
             if (isCurrent) {

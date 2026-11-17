@@ -14,6 +14,8 @@ import {
   Award,
   Sparkles,
   BookOpen,
+  Zap,
+  FileCheck,
 } from 'lucide-react';
 
 const questionModules = import.meta.glob('../data/questions/subunit_*_questions.json', { eager: true, import: 'default' }) as Record<string, Question[]>;
@@ -147,6 +149,20 @@ export const QuizPage: React.FC = () => {
             }`}
           >
             <Award className="w-8 h-8" />
+          </div>
+
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-700 dark:text-gray-300">
+            {mode === 'practice' ? (
+              <>
+                <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                <span>{language === 'english' ? 'Instant Answers Mode' : 'तुरंत उत्तर मोड (Instant)'}</span>
+              </>
+            ) : (
+              <>
+                <FileCheck className="w-3.5 h-3.5 text-blue-500" />
+                <span>{language === 'english' ? 'Answer on Submission Mode' : 'अंतिम जमा पर उत्तर मोड (Exam)'}</span>
+              </>
+            )}
           </div>
 
           <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white">
