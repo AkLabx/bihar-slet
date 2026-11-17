@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import allQuestions from '../data/questions/all_questions.json';
 import { useQuizStore, CATEGORY_CUTOFFS } from '../store/useQuizStore';
-import { Question } from '../types';
+import { Question, QuizMode } from '../types';
 import { TestConsole } from '../components/TestConsole';
 import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import {
@@ -11,12 +11,15 @@ import {
   Bookmark,
   BookmarkCheck,
   RotateCcw,
+  Zap,
+  FileCheck,
 } from 'lucide-react';
 
 export const GrandMockPage: React.FC = () => {
   const navigate = useNavigate();
   const { language, category, isBookmarked, toggleBookmark } = useQuizStore();
 
+  const [mode, setMode] = useState<QuizMode>('exam');
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [reviewFilter, setReviewFilter] = useState<'all' | 'wrong' | 'bookmarked'>('all');
@@ -54,7 +57,7 @@ export const GrandMockPage: React.FC = () => {
             : '150 प्रश्न • 150 मिनट • आधिकारिक परीक्षा पैटर्न'
         }
         questions={examQuestions}
-        mode="exam"
+        mode={mode}
         totalDurationSeconds={150 * 60}
         sections={[
           {
@@ -72,6 +75,7 @@ export const GrandMockPage: React.FC = () => {
         ]}
         onComplete={(result) => {
           setSelectedAnswers(result.selectedAnswers);
+          setMode(result.mode);
           setIsSubmitted(true);
           window.scrollTo(0, 0);
         }}
@@ -124,6 +128,20 @@ export const GrandMockPage: React.FC = () => {
             }`}
           >
             <Award className="w-10 h-10" />
+          </div>
+
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-700 dark:text-gray-300">
+            {mode === 'practice' ? (
+              <>
+                <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                <span>{language === 'english' ? 'Instant Answers Mode' : 'तुरंत उत्तर मोड (Instant)'}</span>
+              </>
+            ) : (
+              <>
+                <FileCheck className="w-3.5 h-3.5 text-blue-500" />
+                <span>{language === 'english' ? 'Answer on Submission Mode' : 'अंतिम जमा पर उत्तर मोड (Exam)'}</span>
+              </>
+            )}
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">

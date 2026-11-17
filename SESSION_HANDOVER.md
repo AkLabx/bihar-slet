@@ -24,9 +24,11 @@
 * **Frontend:** React 18/19, TypeScript, Vite 6
 * **Routing:** `HashRouter` from `react-router-dom` (Crucial for GitHub Pages to prevent 404s on deep reload)
 * **State Management:** Zustand with `persist` middleware (Stores language, theme, category, bookmarks, quiz history, answers)
-* **Styling:** Tailwind CSS with Dark/Light mode support
+* **Local Persistence:** IndexedDB (`BiharSLET_IndexedDB_v1` via `db.ts`) storing active test sessions and completed attempts with mode-isolated keys (`${sessionId}_${mode}`)
+* **Audio & Haptics:** Pure Web Audio API synthesizers (`sound.ts`) for harmonic chimes and Web Vibration API (`haptics.ts`) for tactile feedback
+* **Styling:** Tailwind CSS with Dark/Light mode support & high-density mobile ergonomics
 * **Icons:** `lucide-react`
-* **Test Suite:** Vitest (automated schema verification for all 445 questions)
+* **Test Suite:** Vitest (12 automated tests verifying MCQ schemas, note content, audio toggles, haptics, and mode isolation)
 * **CI/CD:** GitHub Actions
   * `.github/workflows/ci.yml`: Runs on PRs to `main` (Vitest schema validation, typecheck, build test).
   * `.github/workflows/deploy.yml`: Runs on push to `main` (builds `dist/` and deploys to GitHub Pages).
@@ -52,12 +54,17 @@ d:\library study notes artifects\
 │   ├── components/
 │   │   ├── Navbar.tsx         # Category selector, centralized language toggle, theme switcher
 │   │   ├── LanguageSwitcher.tsx # Centralized 3-state segmented pill language switcher
-│   │   └── MarkdownRenderer.tsx # Language-aware parser adapting headers, tables, callouts & notes
+│   │   ├── MarkdownRenderer.tsx # Language-aware parser adapting headers, tables, callouts & notes
+│   │   └── TestConsole.tsx    # Dedicated sticky CBT test interface with isolated dual-modes & palette
+│   ├── services/
+│   │   ├── db.ts              # IndexedDB persistence layer for active sessions & attempts
+│   │   ├── sound.ts           # Web Audio API synthesizers for chimes, buzzers, and clicks
+│   │   └── haptics.ts         # Web Vibration API tactile triggers
 │   ├── pages/
 │   │   ├── HomePage.tsx       # Master dashboard, 10 units grid, stats cards, language switcher
 │   │   ├── StudyPage.tsx      # Comprehensive study notes viewer with sticky/floating language switcher
-│   │   ├── QuizPage.tsx       # Dual-mode quiz engine (Practice + 20-min Exam) with language switcher
-│   │   ├── GrandMockPage.tsx  # 150-question full simulation with 150-min timer & live language switch
+│   │   ├── QuizPage.tsx       # Subunit quiz launcher with Instant Answers vs Exam modes & scorecard
+│   │   ├── GrandMockPage.tsx  # 150-question CBT simulation with section breakdown & mode tracking
 │   │   └── BookmarksPage.tsx  # Saved questions revision hub with live language switch
 │   ├── data/
 │   │   ├── manifest.json      # Complete syllabus metadata (30 subunits with pure Hindi & pure English titles)
