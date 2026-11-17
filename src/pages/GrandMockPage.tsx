@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import allQuestions from '../data/questions/all_questions.json';
 import { useQuizStore, CATEGORY_CUTOFFS } from '../store/useQuizStore';
 import { Question } from '../types';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import { ArrowLeft, Clock, Award, CheckCircle2, ChevronLeft, ChevronRight, Eye, Bookmark, BookmarkCheck, RotateCcw, AlertTriangle, Sparkles } from 'lucide-react';
 
 export const GrandMockPage: React.FC = () => {
@@ -119,6 +120,7 @@ export const GrandMockPage: React.FC = () => {
         </button>
 
         <div className="flex items-center gap-3">
+          <LanguageSwitcher size="sm" />
           {!isSubmitted && (
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono font-bold text-sm bg-amber-50 dark:bg-amber-950/50 text-amber-900 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
               <Clock className="w-4 h-4 text-amber-500" />

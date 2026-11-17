@@ -3,7 +3,8 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import manifest from '../data/manifest.json';
 import { useQuizStore } from '../store/useQuizStore';
 import { MarkdownRenderer } from '../components/MarkdownRenderer';
-import { ArrowLeft, HelpCircle, BookOpen, Share2, Printer } from 'lucide-react';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
+import { ArrowLeft, HelpCircle, Printer } from 'lucide-react';
 import { UnitMeta } from '../types';
 
 // Eagerly import all markdown notes as raw text via Vite
@@ -39,16 +40,18 @@ export const StudyPage: React.FC = () => {
   if (!currentSubUnit) {
     return (
       <div className="text-center py-20 space-y-4">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">उप-इकाई नहीं मिली</h2>
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+          {language === 'english' ? 'Sub-Unit Not Found' : 'उप-इकाई नहीं मिली'}
+        </h2>
         <Link to="/" className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-lg">
-          <ArrowLeft className="w-4 h-4" /> मुख्य पृष्ठ पर लौटें
+          <ArrowLeft className="w-4 h-4" /> {language === 'english' ? 'Return to Home' : 'मुख्य पृष्ठ पर लौटें'}
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6 pb-20">
+    <div className="max-w-4xl mx-auto space-y-6 pb-20 relative">
       
       {/* Top Navigation & Action Bar */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 dark:border-slate-800 pb-4">
@@ -60,10 +63,14 @@ export const StudyPage: React.FC = () => {
           <span>{language === 'english' ? 'All Units (Back to Syllabus)' : 'सभी इकाइयां (Back to Syllabus)'}</span>
         </button>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Centralized Language Switcher */}
+          <LanguageSwitcher size="sm" />
+
           <button
             onClick={() => window.print()}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+            title={language === 'english' ? 'Print or Save PDF' : 'प्रिंट या PDF के रूप में सहेजें'}
           >
             <Printer className="w-3.5 h-3.5" />
             <span>{language === 'english' ? 'Print' : 'प्रिंट (Print)'}</span>
@@ -109,12 +116,20 @@ export const StudyPage: React.FC = () => {
       {/* Study Note Body */}
       <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 shadow-xs">
         {noteContent ? (
-          <MarkdownRenderer content={noteContent} />
+          <MarkdownRenderer content={noteContent} language={language} stripTopHeader={true} />
         ) : (
           <div className="text-center py-12 text-gray-500">
             {language === 'english' ? 'Unable to load study notes.' : 'नोट्स लोड करने में असमर्थ।'}
           </div>
         )}
+      </div>
+
+      {/* Floating Quick Language Switcher Bar on Study Notes */}
+      <div className="fixed bottom-5 right-5 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-3 py-2 rounded-2xl shadow-xl border border-amber-300/80 dark:border-slate-700 flex items-center gap-2 transition-all hover:scale-102">
+        <span className="text-xs font-bold text-amber-700 dark:text-amber-400 hidden sm:inline">
+          {language === 'english' ? 'Language:' : 'भाषा:'}
+        </span>
+        <LanguageSwitcher size="sm" showIcon={false} />
       </div>
 
       {/* Bottom CTA Card */}
