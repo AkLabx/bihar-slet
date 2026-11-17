@@ -7,8 +7,11 @@ import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import { ArrowLeft, HelpCircle, Printer } from 'lucide-react';
 import { UnitMeta } from '../types';
 
-// Eagerly import all markdown notes as raw text via Vite
-const rawNotes = import.meta.glob('../data/notes/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+// Eagerly import readymade markdown notes for all languages via Vite
+const rawNotesEn = import.meta.glob('../data/notes/en/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const rawNotesHi = import.meta.glob('../data/notes/hi/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const rawNotesBi = import.meta.glob('../data/notes/bilingual/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const rawNotesLegacy = import.meta.glob('../data/notes/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 
 export const StudyPage: React.FC = () => {
   const { subUnitNum } = useParams<{ subUnitNum: string }>();
@@ -33,9 +36,15 @@ export const StudyPage: React.FC = () => {
     }
   }
 
-  // Lookup note content
-  const noteKey = `../data/notes/${subUnitNum}.md`;
-  const noteContent = rawNotes[noteKey] || '';
+  // Lookup readymade note content matching current language
+  let noteContent = '';
+  if (language === 'english') {
+    noteContent = rawNotesEn[`../data/notes/en/${subUnitNum}.md`] || rawNotesLegacy[`../data/notes/${subUnitNum}.md`] || '';
+  } else if (language === 'hindi') {
+    noteContent = rawNotesHi[`../data/notes/hi/${subUnitNum}.md`] || rawNotesLegacy[`../data/notes/${subUnitNum}.md`] || '';
+  } else {
+    noteContent = rawNotesBi[`../data/notes/bilingual/${subUnitNum}.md`] || rawNotesLegacy[`../data/notes/${subUnitNum}.md`] || '';
+  }
 
   if (!currentSubUnit) {
     return (

@@ -41,13 +41,42 @@ describe('Bilingual & Language Centralization Tests', () => {
     });
   });
 
-  it('should verify all 30 study notes exist and contain substantial content', () => {
+  it('should verify all 30 readymade English study notes have ZERO Devanagari characters', () => {
     manifest.forEach((unit) => {
       unit.subUnits.forEach((sub) => {
-        const notePath = path.resolve(__dirname, '../data/notes', sub.noteFile);
-        expect(fs.existsSync(notePath), `Note file ${sub.noteFile} must exist`).toBe(true);
-        const content = fs.readFileSync(notePath, 'utf8');
-        expect(content.trim().length, `Note file ${sub.noteFile} should have content`).toBeGreaterThan(100);
+        const enPath = path.resolve(__dirname, '../data/notes/en', sub.noteFile);
+        expect(fs.existsSync(enPath), `English note ${enPath} must exist`).toBe(true);
+
+        const content = fs.readFileSync(enPath, 'utf8');
+        expect(content.trim().length).toBeGreaterThan(200);
+
+        // Crucial validation: English notes must contain absolutely 0 Devanagari characters
+        const devanagariMatch = content.match(/[\u0900-\u097F]/g);
+        expect(
+          devanagariMatch,
+          `English study note '${sub.noteFile}' must not contain Hindi/Devanagari characters`
+        ).toBeNull();
+      });
+    });
+  });
+
+  it('should verify all 30 readymade Hindi and Bilingual study notes exist with substantial content', () => {
+    manifest.forEach((unit) => {
+      unit.subUnits.forEach((sub) => {
+        const hiPath = path.resolve(__dirname, '../data/notes/hi', sub.noteFile);
+        const biPath = path.resolve(__dirname, '../data/notes/bilingual', sub.noteFile);
+
+        expect(fs.existsSync(hiPath), `Hindi note ${hiPath} must exist`).toBe(true);
+        expect(fs.existsSync(biPath), `Bilingual note ${biPath} must exist`).toBe(true);
+
+        const hiContent = fs.readFileSync(hiPath, 'utf8');
+        const biContent = fs.readFileSync(biPath, 'utf8');
+
+        expect(hiContent.trim().length).toBeGreaterThan(200);
+        expect(biContent.trim().length).toBeGreaterThan(200);
+
+        // Hindi notes must have Devanagari content
+        expect(/[\u0900-\u097F]/.test(hiContent), `Hindi note '${sub.noteFile}' must contain Hindi text`).toBe(true);
       });
     });
   });

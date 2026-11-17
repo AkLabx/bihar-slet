@@ -61,13 +61,18 @@ d:\library study notes artifects\
 │   │   └── BookmarksPage.tsx  # Saved questions revision hub with live language switch
 │   ├── data/
 │   │   ├── manifest.json      # Complete syllabus metadata (30 subunits with pure Hindi & pure English titles)
-│   │   ├── notes/             # 30 Markdown study note files (1.1.md - 10.2.md)
+│   │   ├── notes/             # 30 Base Markdown study note files (1.1.md - 10.2.md)
+│   │   │   ├── en/            # 30 Pure English readymade notes (0 Devanagari characters)
+│   │   │   ├── hi/            # 30 Pure Hindi readymade notes
+│   │   │   └── bilingual/     # 30 Structured bilingual readymade notes
 │   │   └── questions/         # 30 SubUnit JSON question files + all_questions.json
 │   └── test/
 │       ├── questions.test.ts  # 5 Vitest tests verifying all 445 MCQs schema
-│       └── language.test.ts   # 3 Vitest tests verifying centralized language state, titles & notes
+│       └── language.test.ts   # 4 Vitest tests verifying 0 Devanagari in en notes, hi/bilingual notes, and state
 ├── scripts/
-│   └── extract-content.mjs    # Parser script converting HTML/MD into structured JSON
+│   ├── extract-content.mjs    # Parser script converting HTML/MD into structured JSON
+│   ├── fix-titles.mjs         # Normalizer script for titles
+│   └── verify-notes.mjs       # Validator script for note file existence & pure English regex
 ├── Unit_01_... to Unit_10_... # Legacy unit directories with original MD notes and HTML quizzes
 ├── index.html                 # Vite entry HTML
 ├── legacy_index.html          # Backup of original single-file static portal
