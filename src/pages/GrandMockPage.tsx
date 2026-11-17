@@ -110,47 +110,59 @@ export const GrandMockPage: React.FC = () => {
     <div className="max-w-4xl mx-auto space-y-6 pb-20">
       
       {/* Top Header */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 dark:border-slate-800 pb-3">
+      <div className="flex items-center justify-between gap-2 border-b border-gray-200 dark:border-slate-800 pb-2.5 sm:pb-3">
         <button
           onClick={() => navigate('/')}
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+          className="inline-flex items-center gap-1 sm:gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors cursor-pointer py-1"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>{language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}</span>
+          <ArrowLeft className="w-4 h-4 shrink-0" />
+          <span className="hidden sm:inline">
+            {language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}
+          </span>
+          <span className="sm:hidden">
+            {language === 'english' ? 'Back' : 'मुख्य'}
+          </span>
         </button>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher size="sm" />
           {!isSubmitted && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono font-bold text-sm bg-amber-50 dark:bg-amber-950/50 text-amber-900 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
-              <Clock className="w-4 h-4 text-amber-500" />
+            <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl font-mono font-bold text-xs sm:text-sm bg-amber-50 dark:bg-amber-950/50 text-amber-900 dark:text-amber-300 border border-amber-200 dark:border-amber-900 shrink-0">
+              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500 shrink-0" />
               <span>{formatTime(timeLeft)}</span>
             </div>
           )}
         </div>
       </div>
 
-      {/* Banner */}
-      <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-amber-700 text-white rounded-2xl p-6 shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* Banner - Compact on mobile */}
+      <div className="bg-gradient-to-r from-orange-600 via-amber-600 to-amber-700 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
         <div>
-          <span className="bg-white/20 px-2.5 py-0.5 rounded text-[11px] font-bold uppercase tracking-wide">
+          <span className="bg-white/20 px-2 sm:px-2.5 py-0.5 rounded text-[10px] sm:text-[11px] font-bold uppercase tracking-wide">
             {language === 'english' ? 'Bihar SLET 2026 Full Mock Exam' : 'बिहार SLET 2026 संपूर्ण मॉक परीक्षा'}
           </span>
-          <h1 className="text-xl sm:text-2xl font-extrabold mt-1">
-            {language === 'english' ? 'Grand Mock Test (150 Multiple Choice Questions)' : 'ग्रैंड मॉक टेस्ट (150 बहुविकल्पीय प्रश्न)'}
+          <h1 className="text-lg sm:text-2xl font-extrabold mt-1 leading-snug">
+            {language === 'english' ? 'Grand Mock Test (150 MCQs)' : 'ग्रैंड मॉक टेस्ट (150 प्रश्न)'}
           </h1>
           <p className="text-amber-100 text-xs sm:text-sm mt-1">
-            {language === 'english'
-              ? 'Part-1: 100 Questions (Library Science) + Part-2: 50 Questions (General Studies & Reasoning) • Duration: 150 Mins'
-              : 'भाग-1: 100 प्रश्न (पुस्तकालय विज्ञान) + भाग-2: 50 प्रश्न (सामान्य ज्ञान एवं तार्किक क्षमता) • समय: 150 मिनट'}
+            <span className="hidden sm:inline">
+              {language === 'english'
+                ? 'Part-1: 100 Questions (Library Science) + Part-2: 50 Questions (General Studies & Reasoning) • Duration: 150 Mins'
+                : 'भाग-1: 100 प्रश्न (पुस्तकालय विज्ञान) + भाग-2: 50 प्रश्न (सामान्य ज्ञान एवं तार्किक क्षमता) • समय: 150 मिनट'}
+            </span>
+            <span className="sm:hidden">
+              {language === 'english'
+                ? '150 Questions • 150 Mins (100 Part-1 + 50 Part-2)'
+                : '150 प्रश्न • 150 मिनट (भाग-1: 100 + भाग-2: 50)'}
+            </span>
           </p>
         </div>
 
-        <div className="text-right shrink-0">
-          <p className="text-xs text-amber-200">
-            {language === 'english' ? 'Category Cutoff Benchmark:' : 'श्रेणीवार उत्तीर्णांक मानक:'}
+        <div className="text-left sm:text-right shrink-0">
+          <p className="text-[11px] sm:text-xs text-amber-200">
+            {language === 'english' ? 'Cutoff Benchmark:' : 'उत्तीर्णांक मानक:'}
           </p>
-          <p className="text-sm font-bold bg-white/10 px-3 py-1 rounded-lg mt-1 border border-white/20">
+          <p className="text-xs sm:text-sm font-bold bg-white/10 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-lg mt-0.5 border border-white/20 inline-block">
             {language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}: {currentCutoff.minPercent}% ({currentCutoff.minMarks} {language === 'english' ? 'Marks' : 'अंक'})
           </p>
         </div>
@@ -344,39 +356,49 @@ export const GrandMockPage: React.FC = () => {
       ) : (
         /* Question Solver */
         <div className="space-y-6">
-          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xs">
-            <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-3 text-xs">
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-                  {language === 'english' ? `Question ${currentIdx + 1} / 150` : `प्रश्न ${currentIdx + 1} / 150`}
+          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-7 space-y-4 sm:space-y-6 shadow-2xs">
+            <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-2.5 sm:pb-3 text-xs">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs">
+                  {language === 'english' ? `Q ${currentIdx + 1} / 150` : `प्रश्न ${currentIdx + 1} / 150`}
                 </span>
-                <span className="text-gray-500 font-medium hidden sm:inline">
+                <span className="text-gray-500 font-medium hidden sm:inline text-xs">
                   {currentIdx < 100
                     ? (language === 'english' ? 'Part-1: Library Science' : 'भाग-1: पुस्तकालय विज्ञान')
                     : (language === 'english' ? 'Part-2: General Knowledge & Reasoning' : 'भाग-2: सामान्य ज्ञान व रीजनिंग')}
                 </span>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <button
                   onClick={handleToggleReview}
-                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-md transition-colors ${
+                  className={`inline-flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-md transition-colors cursor-pointer text-[11px] sm:text-xs ${
                     markedForReview[currentIdx]
                       ? 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 font-bold'
                       : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-800'
                   }`}
                 >
-                  <Eye className="w-3.5 h-3.5" />
+                  <Eye className="w-3.5 h-3.5 shrink-0" />
                   <span>
-                    {markedForReview[currentIdx]
-                      ? (language === 'english' ? 'Marked' : 'चिह्नित है')
-                      : (language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित')}
+                    {markedForReview[currentIdx] ? (
+                      language === 'english' ? 'Marked' : 'चिह्नित है'
+                    ) : (
+                      <>
+                        <span className="hidden sm:inline">
+                          {language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित'}
+                        </span>
+                        <span className="sm:hidden">
+                          {language === 'english' ? 'Review' : 'समीक्षा'}
+                        </span>
+                      </>
+                    )}
                   </span>
                 </button>
 
                 <button
                   onClick={() => toggleBookmark(currentQ.globalId)}
-                  className="p-1 rounded-md text-gray-400 hover:text-amber-500"
+                  className="p-1 rounded-md text-gray-400 hover:text-amber-500 transition-colors cursor-pointer"
+                  title="Bookmark question"
                 >
                   {isBookmarked(currentQ.globalId) ? <BookmarkCheck className="w-4 h-4 text-amber-500" /> : <Bookmark className="w-4 h-4" />}
                 </button>
@@ -384,21 +406,21 @@ export const GrandMockPage: React.FC = () => {
             </div>
 
             {/* Question Text in Solver */}
-            <div className="space-y-2">
+            <div className="space-y-1.5 sm:space-y-2">
               {(language === 'bilingual' || language === 'hindi') && (
-                <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
                   {currentQ.q_hi}
                 </h3>
               )}
               {(language === 'bilingual' || language === 'english') && (
-                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic">
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic leading-relaxed">
                   {currentQ.q_en}
                 </p>
               )}
             </div>
 
-            {/* Options in Solver */}
-            <div className="space-y-3">
+            {/* Options in Solver - Min 44px tap targets */}
+            <div className="space-y-2.5 sm:space-y-3">
               {currentQ.options_hi.map((optHi, optIdx) => {
                 const optEn = currentQ.options_en[optIdx] || optHi;
                 const isSelected = userSelected === optIdx;
@@ -407,21 +429,21 @@ export const GrandMockPage: React.FC = () => {
                   <button
                     key={optIdx}
                     onClick={() => handleSelectOption(optIdx)}
-                    className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${
+                    className={`w-full text-left p-3 sm:p-4 min-h-[44px] rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer ${
                       isSelected
                         ? 'border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 font-bold ring-2 ring-amber-500'
                         : 'border-gray-200 dark:border-slate-800 hover:border-amber-300 bg-white dark:bg-slate-900 text-gray-800 dark:text-gray-200'
                     }`}
                   >
-                    <span className="font-mono font-bold text-xs sm:text-sm shrink-0 w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center">
+                    <span className="font-mono font-bold text-xs sm:text-sm shrink-0 w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center mt-0.5">
                       {['A', 'B', 'C', 'D'][optIdx]}
                     </span>
                     <div className="space-y-0.5">
                       {(language === 'bilingual' || language === 'hindi') && (
-                        <div className="text-xs sm:text-sm font-semibold">{optHi}</div>
+                        <div className="text-xs sm:text-sm font-semibold leading-snug">{optHi}</div>
                       )}
                       {(language === 'bilingual' || language === 'english') && (
-                        <div className="text-[11px] opacity-75">{optEn}</div>
+                        <div className="text-[11px] opacity-75 leading-snug">{optEn}</div>
                       )}
                     </div>
                   </button>
@@ -429,44 +451,55 @@ export const GrandMockPage: React.FC = () => {
               })}
             </div>
 
-            <div className="flex items-center justify-between border-t border-gray-100 dark:border-slate-800 pt-4">
+            {/* Navigation buttons - Compact on Mobile */}
+            <div className="flex items-center justify-between border-t border-gray-100 dark:border-slate-800 pt-3 sm:pt-4">
               <button
                 disabled={currentIdx === 0}
                 onClick={() => setCurrentIdx(currentIdx - 1)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
+                className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
               >
-                <ChevronLeft className="w-4 h-4" /> {language === 'english' ? 'Previous' : 'पिछला'}
+                <ChevronLeft className="w-4 h-4 shrink-0" />
+                <span className="hidden sm:inline">{language === 'english' ? 'Previous' : 'पिछला'}</span>
+                <span className="sm:hidden">{language === 'english' ? 'Prev' : 'पिछला'}</span>
               </button>
 
               <button
                 onClick={handleSubmit}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-xs text-xs cursor-pointer"
+                className="inline-flex items-center gap-1 sm:gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-xs text-xs cursor-pointer"
               >
-                <CheckCircle2 className="w-4 h-4" /> {language === 'english' ? 'Submit Test (150 Questions)' : 'टेस्ट सबमिट करें (150 प्रश्न)'}
+                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                <span className="hidden sm:inline">
+                  {language === 'english' ? 'Submit Test (150 Questions)' : 'टेस्ट सबमिट करें (150 प्रश्न)'}
+                </span>
+                <span className="sm:hidden">
+                  {language === 'english' ? 'Submit' : 'सबमिट करें'}
+                </span>
               </button>
 
               <button
                 disabled={currentIdx === examQuestions.length - 1}
                 onClick={() => setCurrentIdx(currentIdx + 1)}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-xs text-xs disabled:opacity-30 cursor-pointer"
+                className="inline-flex items-center gap-1 sm:gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-2xs text-xs disabled:opacity-30 cursor-pointer"
               >
-                {language === 'english' ? 'Next' : 'अगला'} <ChevronRight className="w-4 h-4" />
+                <span className="hidden sm:inline">{language === 'english' ? 'Next' : 'अगला'}</span>
+                <span className="sm:hidden">{language === 'english' ? 'Next' : 'अगला'}</span>
+                <ChevronRight className="w-4 h-4 shrink-0" />
               </button>
             </div>
           </div>
 
-          {/* Palette */}
-          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-5 space-y-3 shadow-xs">
-            <div className="flex items-center justify-between">
-              <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-                150 प्रश्न पैलेट
+          {/* Palette - Responsive grid */}
+          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl sm:rounded-2xl p-3.5 sm:p-5 space-y-2.5 sm:space-y-3 shadow-2xs">
+            <div className="flex items-center justify-between text-xs">
+              <h4 className="font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide text-[11px] sm:text-xs">
+                {language === 'english' ? '150 Question Palette' : '150 प्रश्न पैलेट'}
               </h4>
-              <span className="text-xs text-emerald-600 font-bold">
-                {Object.keys(selectedAnswers).length} / 150 हल किए गए
+              <span className="text-[11px] sm:text-xs text-emerald-600 dark:text-emerald-400 font-bold">
+                {Object.keys(selectedAnswers).length} / 150 {language === 'english' ? 'solved' : 'हल किए गए'}
               </span>
             </div>
 
-            <div className="grid grid-cols-10 sm:grid-cols-15 gap-1.5 max-h-56 overflow-y-auto p-1">
+            <div className="grid grid-cols-6 sm:grid-cols-10 md:grid-cols-15 gap-1.5 max-h-56 overflow-y-auto p-1">
               {examQuestions.map((_, idx) => {
                 const isAns = selectedAnswers[idx] !== undefined;
                 const isRev = markedForReview[idx];
@@ -481,7 +514,7 @@ export const GrandMockPage: React.FC = () => {
                   <button
                     key={idx}
                     onClick={() => setCurrentIdx(idx)}
-                    className={`h-7 rounded text-[10px] font-mono font-semibold transition-all cursor-pointer ${btnClass}`}
+                    className={`h-7 sm:h-7 rounded text-[10px] font-mono font-semibold transition-all cursor-pointer ${btnClass}`}
                   >
                     {idx + 1}
                   </button>

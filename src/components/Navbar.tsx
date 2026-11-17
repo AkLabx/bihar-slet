@@ -108,19 +108,42 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
       
-      {/* Mobile Cutoff Indicator Bar */}
-      <div className="bg-amber-50/70 dark:bg-slate-800/60 border-t border-amber-200/50 dark:border-slate-800 px-4 py-1.5 text-[11px] flex justify-between items-center text-amber-900 dark:text-amber-200">
+      {/* Cutoff Indicator Bar - Compact on Mobile */}
+      <div className="bg-amber-50/70 dark:bg-slate-800/60 border-t border-amber-200/50 dark:border-slate-800 px-3 sm:px-4 py-1 sm:py-1.5 text-[11px] flex justify-between items-center text-amber-900 dark:text-amber-200">
         <span className="flex items-center gap-1 font-medium">
-          <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-          <span>
+          <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+          <span className="hidden sm:inline">
             {language === 'english' ? 'Passing Cutoff Criteria: ' : 'उत्तीर्णांक मानदंड: '}
-            <strong>{language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}</strong>
           </span>
+          <span className="sm:hidden text-gray-500 dark:text-gray-400">
+            {language === 'english' ? 'Cutoff: ' : 'कटऑफ: '}
+          </span>
+          {/* Mobile category picker */}
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value as Category)}
+            className="sm:hidden font-bold bg-transparent text-amber-900 dark:text-amber-200 underline cursor-pointer text-[11px] focus:outline-none"
+            aria-label="Reservation Category"
+          >
+            {Object.entries(CATEGORY_CUTOFFS).map(([key, val]) => (
+              <option key={key} value={key} className="bg-white dark:bg-slate-900 text-gray-900 dark:text-white">
+                {key} ({val.minPercent}%)
+              </option>
+            ))}
+          </select>
+          <strong className="hidden sm:inline">
+            {language === 'english' ? currentCutoff.label_en : currentCutoff.label_hi}
+          </strong>
         </span>
-        <span className="font-bold bg-amber-200 dark:bg-amber-900/60 px-2 py-0.5 rounded text-amber-800 dark:text-amber-300">
-          {language === 'english'
-            ? `Min ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 Marks)`
-            : `न्यूनतम ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 अंक)`}
+        <span className="font-bold bg-amber-200 dark:bg-amber-900/60 px-2 py-0.5 rounded text-amber-800 dark:text-amber-300 text-[10px] sm:text-[11px] shrink-0">
+          <span className="hidden sm:inline">
+            {language === 'english'
+              ? `Min ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 Marks)`
+              : `न्यूनतम ${currentCutoff.minPercent}% (${currentCutoff.minMarks}/150 अंक)`}
+          </span>
+          <span className="sm:hidden">
+            {currentCutoff.minPercent}% ({currentCutoff.minMarks}/150)
+          </span>
         </span>
       </div>
     </header>

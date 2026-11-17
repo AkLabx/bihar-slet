@@ -20,7 +20,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     {
       id: 'bilingual',
       label: 'द्विभाषी',
-      short: 'द्विभाषी',
+      short: 'Both',
       title: 'द्विभाषी / Bilingual (Hindi & English)',
     },
     {
@@ -43,7 +43,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     <div
       role="group"
       aria-label="Language selector"
-      className={`inline-flex items-center bg-gray-100 dark:bg-slate-800 rounded-lg p-0.5 border border-gray-200 dark:border-slate-700 shadow-2xs ${className}`}
+      className={`inline-flex items-center bg-gray-100 dark:bg-slate-800 rounded-lg p-0.5 border border-gray-200 dark:border-slate-700 shadow-2xs shrink-0 ${className}`}
     >
       {showIcon && (
         <span className="hidden sm:inline-flex items-center pl-1.5 pr-1 text-gray-500 dark:text-gray-400">
@@ -67,8 +67,8 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200/50 dark:hover:bg-slate-700/50'
             }`}
           >
-            <span className="hidden xs:inline">{opt.label}</span>
-            <span className="xs:hidden">{opt.short}</span>
+            <span className="hidden sm:inline">{opt.label}</span>
+            <span className="sm:hidden">{opt.short}</span>
           </button>
         );
       })}

@@ -17,35 +17,41 @@ export const BookmarksPage: React.FC = () => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6 pb-20">
+    <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 pb-20">
       
-      {/* Top Bar */}
-      <div className="flex items-center justify-between border-b border-gray-200 dark:border-slate-800 pb-3">
+      {/* Top Bar - Compact on Mobile */}
+      <div className="flex items-center justify-between gap-2 border-b border-gray-200 dark:border-slate-800 pb-2.5 sm:pb-3">
         <button
           onClick={() => navigate('/')}
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400"
+          className="inline-flex items-center gap-1 sm:gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer py-1"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>{language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}</span>
+          <ArrowLeft className="w-4 h-4 shrink-0" />
+          <span className="hidden sm:inline">{language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}</span>
+          <span className="sm:hidden">{language === 'english' ? 'Back' : 'मुख्य'}</span>
         </button>
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher size="sm" />
-          <span className="text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-            {language === 'english' ? `Total Bookmarks: ${bookmarkedQuestions.length}` : `कुल बुकमार्क: ${bookmarkedQuestions.length}`}
+          <span className="text-[11px] sm:text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md shrink-0">
+            <span className="hidden sm:inline">
+              {language === 'english' ? `Total Bookmarks: ${bookmarkedQuestions.length}` : `कुल बुकमार्क: ${bookmarkedQuestions.length}`}
+            </span>
+            <span className="sm:hidden">
+              {language === 'english' ? `Saved: ${bookmarkedQuestions.length}` : `सहेजे: ${bookmarkedQuestions.length}`}
+            </span>
           </span>
         </div>
       </div>
 
-      {/* Header */}
-      <div className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 dark:from-slate-800/80 dark:to-slate-900 border border-amber-200/60 dark:border-slate-800 rounded-2xl p-6 shadow-xs">
-        <div className="flex items-center gap-2 mb-2">
-          <BookmarkCheck className="w-5 h-5 text-amber-600" />
-          <h1 className="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-white">
-            {language === 'english' ? 'Saved Questions (Bookmarked Revision Hub)' : 'सहेजे गए प्रश्न (Bookmarked Revision Hub)'}
+      {/* Header - Compact on mobile */}
+      <div className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 dark:from-slate-800/80 dark:to-slate-900 border border-amber-200/60 dark:border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xs">
+        <div className="flex items-center gap-2 mb-1 sm:mb-2">
+          <BookmarkCheck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 shrink-0" />
+          <h1 className="text-lg sm:text-2xl font-extrabold text-gray-900 dark:text-white leading-snug">
+            {language === 'english' ? 'Saved Questions' : 'सहेजे गए प्रश्न'}
           </h1>
         </div>
-        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 hidden sm:block">
           {language === 'english'
             ? 'Revise difficult or important questions here with complete solutions and analysis.'
             : 'कठिन या महत्वपूर्ण प्रश्नों को यहां एक स्थान पर दोहराएं और उनके द्विभाषी विश्लेषण को समझें।'}
@@ -79,14 +85,14 @@ export const BookmarksPage: React.FC = () => {
             return (
               <div
                 key={q.globalId}
-                className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs"
+                className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-3 sm:space-y-4 shadow-2xs"
               >
                 <div className="flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-2">
-                    <span className="font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 px-2 py-0.5 rounded">
-                      {language === 'english' ? `Bookmark #${idx + 1}` : `बुकमार्क #${idx + 1}`}
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <span className="font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 px-1.5 sm:px-2 py-0.5 rounded text-[10px] sm:text-xs shrink-0">
+                      #{idx + 1}
                     </span>
-                    <span className="text-gray-500">
+                    <span className="text-[11px] sm:text-xs text-gray-500 truncate max-w-[200px] sm:max-w-none">
                       {language === 'english'
                         ? `${q.unitTitle_en} • ${q.subUnitTitle_en}`
                         : `${q.unitTitle_hi} • ${q.subUnitTitle_hi}`}
@@ -95,7 +101,7 @@ export const BookmarksPage: React.FC = () => {
 
                   <button
                     onClick={() => toggleBookmark(q.globalId)}
-                    className="inline-flex items-center gap-1 text-red-500 hover:text-red-700 text-xs font-semibold"
+                    className="inline-flex items-center gap-1 text-red-500 hover:text-red-700 text-xs font-semibold cursor-pointer shrink-0"
                   >
                     <Trash2 className="w-3.5 h-3.5" />
                     <span>{language === 'english' ? 'Remove' : 'हटाएं'}</span>
@@ -105,10 +111,10 @@ export const BookmarksPage: React.FC = () => {
                 {/* Question */}
                 <div className="space-y-1">
                   {(language === 'bilingual' || language === 'hindi') && (
-                    <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-white leading-relaxed">{q.q_hi}</h3>
+                    <h3 className="text-xs sm:text-base font-bold text-gray-900 dark:text-white leading-relaxed">{q.q_hi}</h3>
                   )}
                   {(language === 'bilingual' || language === 'english') && (
-                    <p className="text-xs text-gray-500 dark:text-gray-400 italic">{q.q_en}</p>
+                    <p className="text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 italic leading-snug">{q.q_en}</p>
                   )}
                 </div>
 
@@ -135,13 +141,13 @@ export const BookmarksPage: React.FC = () => {
                       <button
                         key={optIdx}
                         onClick={() => setSelectedAnswers({ ...selectedAnswers, [q.globalId]: optIdx })}
-                        className={`w-full text-left p-3 rounded-xl border text-xs sm:text-sm flex items-start gap-2.5 transition-all ${optClass}`}
+                        className={`w-full text-left p-2.5 sm:p-3 min-h-[44px] rounded-xl border text-xs sm:text-sm flex items-start gap-2.5 transition-all cursor-pointer ${optClass}`}
                       >
                         <span className="font-mono font-bold shrink-0">{['A', 'B', 'C', 'D'][optIdx]}</span>
                         <div className="space-y-0.5">
-                          {(language === 'bilingual' || language === 'hindi') && <div>{optHi}</div>}
+                          {(language === 'bilingual' || language === 'hindi') && <div className="leading-snug">{optHi}</div>}
                           {(language === 'bilingual' || language === 'english') && (
-                            <div className="text-[11px] opacity-75">{optEn}</div>
+                            <div className="text-[11px] opacity-75 leading-snug">{optEn}</div>
                           )}
                         </div>
                       </button>
