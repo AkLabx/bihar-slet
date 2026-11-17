@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
+import { SUBUNIT_TITLES } from './fix-titles.mjs';
 
 const rootDir = process.cwd();
 const questionsOutDir = path.join(rootDir, 'src', 'data', 'questions');
@@ -75,14 +76,9 @@ for (const unit of unitsMeta) {
       const rawQuestions = sandbox.questions || [];
       totalQuestions += rawQuestions.length;
 
-      // Extract titles
-      let title_hi = `उप-इकाई ${subUnitNum}`;
-      let title_en = `SubUnit ${subUnitNum}`;
-      const titleMatch = htmlContent.match(/<div class="header-title">[\s\S]*?<h1>(.*?)<\/h1>[\s\S]*?<p>(.*?)<\/p>/i);
-      if (titleMatch) {
-        title_hi = titleMatch[1].replace(/<[^>]+>/g, '').trim();
-        title_en = titleMatch[2].replace(/<[^>]+>/g, '').trim();
-      }
+      // Extract titles with fallback to SUBUNIT_TITLES dictionary
+      let title_hi = SUBUNIT_TITLES[subUnitNum]?.title_hi || `उप-इकाई ${subUnitNum}`;
+      let title_en = SUBUNIT_TITLES[subUnitNum]?.title_en || `SubUnit ${subUnitNum}`;
 
       // Normalize questions to strict uniform schema
       const enrichedQuestions = rawQuestions.map((q, idx) => {
