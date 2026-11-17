@@ -22,10 +22,10 @@ export const Navbar: React.FC = () => {
             </div>
             <div>
               <span className="font-extrabold text-base sm:text-lg bg-gradient-to-r from-amber-600 to-orange-600 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
-                बिहार SLET 2026
+                {language === 'english' ? 'Bihar SLET 2026' : 'बिहार SLET 2026'}
               </span>
               <p className="text-[11px] text-gray-500 dark:text-gray-400 hidden sm:block font-medium">
-                School Librarian Eligibility Portal
+                {language === 'english' ? 'School Librarian Eligibility Portal' : 'विद्यालय पुस्तकालयाध्यक्ष पात्रता परीक्षा पोर्टल'}
               </p>
             </div>
           </Link>

@@ -104,11 +104,6 @@ export const StudyPage: React.FC = () => {
             {currentSubUnit.title_en}
           </p>
         )}
-        {language === 'english' && (
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 font-medium">
-            {currentSubUnit.title_hi}
-          </p>
-        )}
       </div>
 
       {/* Study Note Body */}
