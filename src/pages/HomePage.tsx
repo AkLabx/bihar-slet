@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import manifest from '../data/manifest.json';
 import { useQuizStore, CATEGORY_CUTOFFS } from '../store/useQuizStore';
 import { UnitMeta } from '../types';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import { BookOpen, HelpCircle, CheckCircle2, Award, Clock, ArrowRight, ShieldCheck, Flame, BookmarkCheck, BarChart3 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
@@ -185,37 +186,40 @@ export const HomePage: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-2 bg-gray-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-semibold self-start sm:self-auto">
-          <button
-            onClick={() => setFilterPart('all')}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
-              filterPart === 'all'
-                ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-            }`}
-          >
-            {language === 'english' ? 'All (150 Marks)' : 'संपूर्ण (150 अंक)'}
-          </button>
-          <button
-            onClick={() => setFilterPart(1)}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
-              filterPart === 1
-                ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-            }`}
-          >
-            {language === 'english' ? 'Part-1: Library Science (100 Marks)' : 'भाग-1: पुस्तकालय विज्ञान (100 अंक)'}
-          </button>
-          <button
-            onClick={() => setFilterPart(2)}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
-              filterPart === 2
-                ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
-                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-            }`}
-          >
-            {language === 'english' ? 'Part-2: General Studies (50 Marks)' : 'भाग-2: सामान्य ज्ञान (50 अंक)'}
-          </button>
+        <div className="flex flex-wrap items-center gap-3 self-start sm:self-auto">
+          <LanguageSwitcher size="sm" />
+          <div className="flex items-center gap-2 bg-gray-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-semibold">
+            <button
+              onClick={() => setFilterPart('all')}
+              className={`px-3 py-1.5 rounded-lg transition-all ${
+                filterPart === 'all'
+                  ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              }`}
+            >
+              {language === 'english' ? 'All (150 Marks)' : 'संपूर्ण (150 अंक)'}
+            </button>
+            <button
+              onClick={() => setFilterPart(1)}
+              className={`px-3 py-1.5 rounded-lg transition-all ${
+                filterPart === 1
+                  ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              }`}
+            >
+              {language === 'english' ? 'Part-1: Library Science (100 Marks)' : 'भाग-1: पुस्तकालय विज्ञान (100 अंक)'}
+            </button>
+            <button
+              onClick={() => setFilterPart(2)}
+              className={`px-3 py-1.5 rounded-lg transition-all ${
+                filterPart === 2
+                  ? 'bg-white dark:bg-slate-900 text-amber-700 dark:text-amber-400 shadow-xs'
+                  : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+              }`}
+            >
+              {language === 'english' ? 'Part-2: General Studies (50 Marks)' : 'भाग-2: सामान्य ज्ञान (50 अंक)'}
+            </button>
+          </div>
         </div>
       </div>
 

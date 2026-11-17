@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useQuizStore, CATEGORY_CUTOFFS } from '../store/useQuizStore';
-import { Category, Language } from '../types';
+import { Category } from '../types';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { BookOpen, Award, BookmarkCheck, Sun, Moon, Sparkles, GraduationCap } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const location = useLocation();
-  const { language, setLanguage, theme, toggleTheme, category, setCategory, bookmarks } = useQuizStore();
+  const { language, theme, toggleTheme, category, setCategory, bookmarks } = useQuizStore();
 
   const currentCutoff = CATEGORY_CUTOFFS[category];
 
@@ -91,39 +92,8 @@ export const Navbar: React.FC = () => {
               </select>
             </div>
 
-            {/* Language Switcher */}
-            <div className="flex items-center bg-gray-100 dark:bg-slate-800 rounded-lg p-0.5 border border-gray-200 dark:border-slate-700 text-xs font-semibold">
-              <button
-                onClick={() => setLanguage('bilingual')}
-                className={`px-2 py-1 rounded-md transition-all ${
-                  language === 'bilingual'
-                    ? 'bg-amber-500 text-white shadow-xs font-bold'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                द्विभाषी
-              </button>
-              <button
-                onClick={() => setLanguage('hindi')}
-                className={`px-2 py-1 rounded-md transition-all ${
-                  language === 'hindi'
-                    ? 'bg-amber-500 text-white shadow-xs font-bold'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                हिं
-              </button>
-              <button
-                onClick={() => setLanguage('english')}
-                className={`px-2 py-1 rounded-md transition-all ${
-                  language === 'english'
-                    ? 'bg-amber-500 text-white shadow-xs font-bold'
-                    : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                EN
-              </button>
-            </div>
+            {/* Centralized Language Switcher */}
+            <LanguageSwitcher size="sm" />
 
             {/* Theme Toggle */}
             <button

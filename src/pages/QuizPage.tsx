@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import manifest from '../data/manifest.json';
 import { useQuizStore, CATEGORY_CUTOFFS } from '../store/useQuizStore';
 import { Question, QuizMode, UnitMeta } from '../types';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import { ArrowLeft, Clock, CheckCircle2, XCircle, Bookmark, BookmarkCheck, RotateCcw, Award, ChevronLeft, ChevronRight, Eye, Sparkles, BookOpen } from 'lucide-react';
 
 const questionModules = import.meta.glob('../data/questions/subunit_*_questions.json', { eager: true, import: 'default' }) as Record<string, Question[]>;
@@ -11,7 +12,7 @@ export const QuizPage: React.FC = () => {
   const { subUnitNum } = useParams<{ subUnitNum: string }>();
   const navigate = useNavigate();
 
-  const { language, setLanguage, category, isBookmarked, toggleBookmark, recordQuizAttempt, quizHistory } = useQuizStore();
+  const { language, category, isBookmarked, toggleBookmark, recordQuizAttempt, quizHistory } = useQuizStore();
 
   const [mode, setMode] = useState<QuizMode>('practice');
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -225,33 +226,8 @@ export const QuizPage: React.FC = () => {
           </button>
         </div>
 
-        {/* Language Selector */}
-        <div className="flex items-center bg-gray-100 dark:bg-slate-800 p-1 rounded-lg text-xs font-semibold">
-          <button
-            onClick={() => setLanguage('bilingual')}
-            className={`px-2.5 py-1 rounded-md transition-all ${
-              language === 'bilingual' ? 'bg-white dark:bg-slate-900 text-amber-600 dark:text-amber-400 shadow-xs font-bold' : 'text-gray-500'
-            }`}
-          >
-            द्विभाषी
-          </button>
-          <button
-            onClick={() => setLanguage('hindi')}
-            className={`px-2.5 py-1 rounded-md transition-all ${
-              language === 'hindi' ? 'bg-white dark:bg-slate-900 text-amber-600 dark:text-amber-400 shadow-xs font-bold' : 'text-gray-500'
-            }`}
-          >
-            हिंदी
-          </button>
-          <button
-            onClick={() => setLanguage('english')}
-            className={`px-2.5 py-1 rounded-md transition-all ${
-              language === 'english' ? 'bg-white dark:bg-slate-900 text-amber-600 dark:text-amber-400 shadow-xs font-bold' : 'text-gray-500'
-            }`}
-          >
-            English
-          </button>
-        </div>
+        {/* Centralized Language Switcher */}
+        <LanguageSwitcher size="sm" />
 
       </div>
 

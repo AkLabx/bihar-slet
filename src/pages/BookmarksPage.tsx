@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import allQuestions from '../data/questions/all_questions.json';
 import { useQuizStore } from '../store/useQuizStore';
 import { Question } from '../types';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 import { ArrowLeft, BookmarkCheck, Trash2, Sparkles, HelpCircle } from 'lucide-react';
 
 export const BookmarksPage: React.FC = () => {
@@ -28,9 +29,12 @@ export const BookmarksPage: React.FC = () => {
           <span>{language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}</span>
         </button>
 
-        <span className="text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-          {language === 'english' ? `Total Bookmarks: ${bookmarkedQuestions.length}` : `कुल बुकमार्क: ${bookmarkedQuestions.length}`}
-        </span>
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher size="sm" />
+          <span className="text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
+            {language === 'english' ? `Total Bookmarks: ${bookmarkedQuestions.length}` : `कुल बुकमार्क: ${bookmarkedQuestions.length}`}
+          </span>
+        </div>
       </div>
 
       {/* Header */}
