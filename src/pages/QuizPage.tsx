@@ -150,79 +150,99 @@ export const QuizPage: React.FC = () => {
     <div className="max-w-4xl mx-auto space-y-6 pb-20">
       
       {/* Top Header Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-200 dark:border-slate-800 pb-3">
+      <div className="flex items-center justify-between gap-2 border-b border-gray-200 dark:border-slate-800 pb-2.5 sm:pb-3">
         <button
           onClick={() => navigate('/')}
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors"
+          className="inline-flex items-center gap-1 sm:gap-1.5 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors py-1 cursor-pointer"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>मुख्य पृष्ठ (Back)</span>
+          <ArrowLeft className="w-4 h-4 shrink-0" />
+          <span className="hidden sm:inline">
+            {language === 'english' ? 'Back to Syllabus' : 'मुख्य पृष्ठ (Back)'}
+          </span>
+          <span className="sm:hidden">
+            {language === 'english' ? 'Back' : 'मुख्य'}
+          </span>
         </button>
 
         <div className="flex items-center gap-2">
           <Link
             to={`/study/${subUnitNum}`}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 transition-colors shrink-0"
           >
-            <BookOpen className="w-3.5 h-3.5 text-blue-500" />
-            <span>अध्ययन नोट्स पढ़ें</span>
+            <BookOpen className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+            <span className="hidden sm:inline">
+              {language === 'english' ? 'Read Study Notes' : 'अध्ययन नोट्स पढ़ें'}
+            </span>
+            <span className="sm:hidden">
+              {language === 'english' ? 'Notes' : 'नोट्स'}
+            </span>
           </Link>
         </div>
       </div>
 
-      {/* Subunit Quiz Title Card */}
-      <div className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 dark:from-slate-800/80 dark:to-slate-900 border border-amber-200/60 dark:border-slate-800 rounded-2xl p-5 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* Subunit Quiz Title Card - Compact on mobile */}
+      <div className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 dark:from-slate-800/80 dark:to-slate-900 border border-amber-200/60 dark:border-slate-800 rounded-xl sm:rounded-2xl p-3.5 sm:p-5 shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
         <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">
-              उप-इकाई {subUnitNum}
+          <div className="flex items-center gap-1.5 sm:gap-2 mb-1">
+            <span className="bg-amber-600 text-white text-[10px] font-bold px-1.5 sm:px-2 py-0.5 rounded shrink-0">
+              {language === 'english' ? `Unit ${subUnitNum}` : `उप-इकाई ${subUnitNum}`}
             </span>
-            <span className="text-xs text-gray-500 dark:text-gray-400">
-              {currentUnit?.title_hi}
+            <span className="text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 truncate">
+              {language === 'english' ? currentUnit?.title_en : currentUnit?.title_hi}
             </span>
           </div>
-          <h1 className="text-lg sm:text-xl font-extrabold text-gray-900 dark:text-white">
+          <h1 className="text-base sm:text-xl font-extrabold text-gray-900 dark:text-white leading-snug">
             {language === 'english' ? currentSubUnit?.title_en : currentSubUnit?.title_hi}
           </h1>
         </div>
 
         {/* Mode & Timer Indicators */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 self-start sm:self-center shrink-0">
           {mode === 'exam' && !isSubmitted && (
-            <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-mono font-bold text-sm shadow-xs ${
+            <div className={`flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg sm:rounded-xl font-mono font-bold text-xs sm:text-sm shadow-2xs ${
               timeLeft < 300 ? 'bg-red-100 text-red-700 animate-pulse' : 'bg-gray-100 dark:bg-slate-800 text-gray-800 dark:text-gray-200'
             }`}>
-              <Clock className="w-4 h-4 text-amber-500" />
+              <Clock className="w-3.5 h-3.5 text-amber-500 shrink-0" />
               <span>{formatTime(timeLeft)}</span>
             </div>
           )}
         </div>
       </div>
 
-      {/* Controls Bar: Mode Switch & Language Switch */}
-      <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl p-3 flex flex-wrap items-center justify-between gap-3 shadow-xs">
+      {/* Controls Bar: Mode Switch & Language Switch - Compact on mobile */}
+      <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl p-2 sm:p-3 flex items-center justify-between gap-2 shadow-2xs">
         
         {/* Mode Selector */}
-        <div className="flex items-center bg-gray-100 dark:bg-slate-800 p-1 rounded-lg text-xs font-semibold">
+        <div className="flex items-center bg-gray-100 dark:bg-slate-800 p-0.5 sm:p-1 rounded-lg text-xs font-semibold shrink-0">
           <button
             onClick={() => { setMode('practice'); setIsSubmitted(false); }}
-            className={`px-3 py-1.5 rounded-md transition-all ${
+            className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-md transition-all cursor-pointer ${
               mode === 'practice'
-                ? 'bg-amber-500 text-white shadow-xs font-bold'
+                ? 'bg-amber-500 text-white shadow-2xs font-bold'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
             }`}
           >
-            अभ्यास मोड (Practice)
+            <span className="hidden sm:inline">
+              {language === 'english' ? 'Practice Mode' : 'अभ्यास मोड (Practice)'}
+            </span>
+            <span className="sm:hidden">
+              {language === 'english' ? 'Practice' : 'अभ्यास'}
+            </span>
           </button>
           <button
             onClick={() => { setMode('exam'); setIsSubmitted(false); }}
-            className={`px-3 py-1.5 rounded-md transition-all ${
+            className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-md transition-all cursor-pointer ${
               mode === 'exam'
-                ? 'bg-amber-500 text-white shadow-xs font-bold'
+                ? 'bg-amber-500 text-white shadow-2xs font-bold'
                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
             }`}
           >
-            परीक्षा मोड (20 Min Exam)
+            <span className="hidden sm:inline">
+              {language === 'english' ? 'Exam Mode (20 Min)' : 'परीक्षा मोड (20 Min Exam)'}
+            </span>
+            <span className="sm:hidden">
+              {language === 'english' ? 'Exam (20m)' : 'परीक्षा (20m)'}
+            </span>
           </button>
         </div>
 
@@ -398,35 +418,44 @@ export const QuizPage: React.FC = () => {
         /* LIVE QUESTION SOLVER */
         <div className="space-y-6">
           
-          {/* Question Card */}
-          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xs">
+          {/* Question Card - Compact on Mobile */}
+          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl sm:rounded-2xl p-4 sm:p-7 space-y-4 sm:space-y-6 shadow-2xs">
             
             {/* Question Progress & Review Toggle */}
-            <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-3 text-xs">
-              <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2.5 py-1 rounded-md">
-                {language === 'english' ? `Question ${currentIdx + 1} / ${questions.length}` : `प्रश्न ${currentIdx + 1} / ${questions.length}`}
+            <div className="flex items-center justify-between border-b border-gray-100 dark:border-slate-800 pb-2.5 sm:pb-3 text-xs">
+              <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md text-[11px] sm:text-xs">
+                {language === 'english' ? `Q ${currentIdx + 1} / ${questions.length}` : `प्रश्न ${currentIdx + 1} / ${questions.length}`}
               </span>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <button
                   onClick={handleToggleReview}
-                  className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-md transition-colors ${
+                  className={`inline-flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-md transition-colors cursor-pointer text-[11px] sm:text-xs ${
                     markedForReview[currentIdx]
                       ? 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300 font-bold'
                       : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-slate-800'
                   }`}
                 >
-                  <Eye className="w-3.5 h-3.5" />
+                  <Eye className="w-3.5 h-3.5 shrink-0" />
                   <span>
-                    {markedForReview[currentIdx]
-                      ? (language === 'english' ? 'Marked' : 'चिह्नित है')
-                      : (language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित')}
+                    {markedForReview[currentIdx] ? (
+                      language === 'english' ? 'Marked' : 'चिह्नित है'
+                    ) : (
+                      <>
+                        <span className="hidden sm:inline">
+                          {language === 'english' ? 'Mark for Review' : 'समीक्षा हेतु चिह्नित'}
+                        </span>
+                        <span className="sm:hidden">
+                          {language === 'english' ? 'Review' : 'समीक्षा'}
+                        </span>
+                      </>
+                    )}
                   </span>
                 </button>
 
                 <button
                   onClick={() => toggleBookmark(currentQ.globalId)}
-                  className="p-1 rounded-md text-gray-400 hover:text-amber-500 transition-colors"
+                  className="p-1 rounded-md text-gray-400 hover:text-amber-500 transition-colors cursor-pointer"
                   title="Bookmark question"
                 >
                   {isBookmarked(currentQ.globalId) ? (
@@ -439,9 +468,9 @@ export const QuizPage: React.FC = () => {
             </div>
 
             {/* Question Text */}
-            <div className="space-y-2">
+            <div className="space-y-1.5 sm:space-y-2">
               {(language === 'bilingual' || language === 'hindi') && (
-                <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 dark:text-white leading-relaxed">
                   {currentQ.q_hi}
                 </h3>
               )}
@@ -452,8 +481,8 @@ export const QuizPage: React.FC = () => {
               )}
             </div>
 
-            {/* Options */}
-            <div className="space-y-3">
+            {/* Options - Minimum 44px tap targets */}
+            <div className="space-y-2.5 sm:space-y-3">
               {currentQ.options_hi.map((optHi, optIdx) => {
                 const optEn = currentQ.options_en[optIdx] || optHi;
                 const isSelected = userSelected === optIdx;
@@ -478,17 +507,17 @@ export const QuizPage: React.FC = () => {
                   <button
                     key={optIdx}
                     onClick={() => handleSelectOption(optIdx)}
-                    className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3 cursor-pointer ${optClass}`}
+                    className={`w-full text-left p-3 sm:p-4 min-h-[44px] rounded-xl border transition-all flex items-start gap-2.5 sm:gap-3 cursor-pointer ${optClass}`}
                   >
-                    <span className="font-mono font-bold text-xs sm:text-sm shrink-0 w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center">
+                    <span className="font-mono font-bold text-xs sm:text-sm shrink-0 w-6 h-6 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center mt-0.5">
                       {['A', 'B', 'C', 'D'][optIdx]}
                     </span>
                     <div className="space-y-0.5">
                       {(language === 'bilingual' || language === 'hindi') && (
-                        <div className="text-xs sm:text-sm font-semibold">{optHi}</div>
+                        <div className="text-xs sm:text-sm font-semibold leading-snug">{optHi}</div>
                       )}
                       {(language === 'bilingual' || language === 'english') && (
-                        <div className="text-[11px] sm:text-xs opacity-80">{optEn}</div>
+                        <div className="text-[11px] sm:text-xs opacity-80 leading-snug">{optEn}</div>
                       )}
                     </div>
                   </button>
@@ -498,62 +527,82 @@ export const QuizPage: React.FC = () => {
 
             {/* Instant Explanation in Practice Mode */}
             {mode === 'practice' && isAnswered && (
-              <div className="p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 space-y-2 text-xs">
-                <div className="flex items-center gap-2 font-bold text-amber-900 dark:text-amber-300">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
+              <div className="p-3.5 sm:p-4 rounded-xl bg-amber-50/80 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 space-y-1.5 sm:space-y-2 text-xs">
+                <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-300">
+                  <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500 shrink-0" />
                   <span>
                     {language === 'english'
-                      ? `Correct Answer: Option (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_en[currentQ.correct] || currentQ.options_hi[currentQ.correct]}`
+                      ? `Correct: Option (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_en[currentQ.correct] || currentQ.options_hi[currentQ.correct]}`
                       : `सही उत्तर: विकल्प (${['A', 'B', 'C', 'D'][currentQ.correct]}) ${currentQ.options_hi[currentQ.correct]}`}
                   </span>
                 </div>
                 {(language === 'bilingual' || language === 'hindi') && (
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{currentQ.exp_hi}</p>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-[11px] sm:text-xs">{currentQ.exp_hi}</p>
                 )}
                 {(language === 'bilingual' || language === 'english') && (
-                  <p className={`text-gray-500 dark:text-gray-400 italic ${language === 'bilingual' ? 'pt-1 border-t border-amber-200/50 dark:border-amber-900/50' : ''}`}>
+                  <p className={`text-gray-500 dark:text-gray-400 italic text-[11px] sm:text-xs ${language === 'bilingual' ? 'pt-1 border-t border-amber-200/50 dark:border-amber-900/50' : ''}`}>
                     {currentQ.exp_en}
                   </p>
                 )}
               </div>
             )}
 
-            {/* Next / Previous / Submit Navigation */}
-            <div className="flex items-center justify-between border-t border-gray-100 dark:border-slate-800 pt-4">
+            {/* Next / Previous / Submit Navigation - Compact on Mobile */}
+            <div className="flex items-center justify-between border-t border-gray-100 dark:border-slate-800 pt-3 sm:pt-4">
               <button
                 disabled={currentIdx === 0}
                 onClick={() => setCurrentIdx(currentIdx - 1)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
+                className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-gray-200 dark:border-slate-700 text-xs font-semibold disabled:opacity-30 cursor-pointer"
               >
-                <ChevronLeft className="w-4 h-4" /> {language === 'english' ? 'Previous' : 'पिछला (Prev)'}
+                <ChevronLeft className="w-4 h-4 shrink-0" />
+                <span className="hidden sm:inline">
+                  {language === 'english' ? 'Previous' : 'पिछला (Prev)'}
+                </span>
+                <span className="sm:hidden">
+                  {language === 'english' ? 'Prev' : 'पिछला'}
+                </span>
               </button>
 
               {currentIdx === questions.length - 1 ? (
                 <button
                   onClick={handleSubmit}
-                  className="inline-flex items-center gap-1.5 px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md text-xs transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1 sm:gap-1.5 px-4 sm:px-5 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-xs text-xs transition-colors cursor-pointer"
                 >
-                  <CheckCircle2 className="w-4 h-4" /> {language === 'english' ? 'Submit Test' : 'टेस्ट सबमिट करें (Submit)'}
+                  <CheckCircle2 className="w-4 h-4 shrink-0" />
+                  <span>
+                    {language === 'english' ? 'Submit' : 'सबमिट करें'}
+                  </span>
                 </button>
               ) : (
                 <button
                   onClick={() => setCurrentIdx(currentIdx + 1)}
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-xs text-xs transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1 sm:gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-2xs text-xs transition-colors cursor-pointer"
                 >
-                  {language === 'english' ? 'Next' : 'अगला (Next)'} <ChevronRight className="w-4 h-4" />
+                  <span className="hidden sm:inline">
+                    {language === 'english' ? 'Next' : 'अगला (Next)'}
+                  </span>
+                  <span className="sm:hidden">
+                    {language === 'english' ? 'Next' : 'अगला'}
+                  </span>
+                  <ChevronRight className="w-4 h-4 shrink-0" />
                 </button>
               )}
             </div>
 
           </div>
 
-          {/* Question Palette Grid */}
-          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-2xl p-5 space-y-3 shadow-xs">
-            <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
-              प्रश्न पैलेट (Question Palette)
-            </h4>
+          {/* Question Palette Grid - Compact on Mobile */}
+          <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl sm:rounded-2xl p-3.5 sm:p-5 space-y-2.5 sm:space-y-3 shadow-2xs">
+            <div className="flex items-center justify-between text-xs">
+              <h4 className="font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide text-[11px] sm:text-xs">
+                {language === 'english' ? 'Question Palette' : 'प्रश्न पैलेट'}
+              </h4>
+              <span className="text-[11px] text-gray-400">
+                {selectedAnswers ? Object.keys(selectedAnswers).length : 0}/{questions.length} {language === 'english' ? 'answered' : 'उत्तर दिए'}
+              </span>
+            </div>
 
-            <div className="grid grid-cols-5 sm:grid-cols-10 gap-2">
+            <div className="grid grid-cols-5 sm:grid-cols-10 gap-1.5 sm:gap-2">
               {questions.map((_, idx) => {
                 const isAns = selectedAnswers[idx] !== undefined;
                 const isRev = markedForReview[idx];
@@ -574,7 +623,7 @@ export const QuizPage: React.FC = () => {
                   <button
                     key={idx}
                     onClick={() => setCurrentIdx(idx)}
-                    className={`h-9 rounded-lg text-xs font-mono font-semibold transition-all cursor-pointer ${btnClass}`}
+                    className={`h-8 sm:h-9 rounded-lg text-xs font-mono font-semibold transition-all cursor-pointer ${btnClass}`}
                   >
                     {idx + 1}
                   </button>
